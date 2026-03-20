@@ -359,6 +359,34 @@
                 }
               ],
               "mandate_tags": []
+            },
+            {
+              "name": "Enroll in an ignition interlock program",
+              "desc": "Participate in a mandatory ignition interlock program after an impaired driving suspension or Criminal Code conviction. Device prevents vehicle from starting if alcohol is detected.",
+              "users": "Drivers with impaired driving suspensions or convictions",
+              "user_groups": [
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: IRS ignition interlock",
+                  "url": "https://www.alberta.ca/immediate-roadside-sanctions-fail-ignition-interlock-program"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: mandatory ignition interlock",
+                  "url": "https://www.alberta.ca/mandatory-ignition-interlock-program"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PAPA",
+                  "color": "#8e24aa",
+                  "full_name": "Provincial Administrative Penalties Act  -  Ignition Interlock Programs"
+                }
+              ],
+              "mandate_tags": []
             }
           ]
         },
@@ -1058,6 +1086,24 @@
               ],
               "legislation": [],
               "mandate_tags": []
+            },
+            {
+              "name": "Check high-risk offender notifications",
+              "desc": "View public notifications about monitored high-risk offenders in your community.",
+              "users": "Members of the public concerned about community safety",
+              "user_groups": [
+                "Individuals",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: high-risk offenders",
+                  "url": "https://www.alberta.ca/high-risk-offenders"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
             }
           ]
         }
@@ -1344,6 +1390,23 @@
                   "full_name": "Family Law Act  -  Dispute Resolution Options"
                 }
               ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Meet with a clinician for a high-conflict parenting dispute",
+              "desc": "The Brief Conflict Intervention program provides a meeting with a clinician to help parents in high-conflict separation manage interactions and reduce conflict.",
+              "users": "Parents in high-conflict parenting disputes",
+              "user_groups": [
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: Brief Conflict Intervention",
+                  "url": "https://www.alberta.ca/brief-conflict-intervention-program"
+                }
+              ],
+              "legislation": [],
               "mandate_tags": []
             }
           ]
@@ -1684,6 +1747,24 @@
                   "type": "ch-find",
                   "label": "alberta.ca: escaping abuse",
                   "url": "https://www.alberta.ca/family-violence-costs-leave"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Get a Safer Spaces Certificate to break a lease",
+              "desc": "Break a residential lease without penalty when fleeing domestic violence.",
+              "users": "Tenants fleeing family violence",
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: Safer Spaces Certificate",
+                  "url": "https://www.alberta.ca/safer-spaces-certificate"
                 }
               ],
               "legislation": [],
