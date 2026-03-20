@@ -46,6 +46,23 @@
   to = "/alss/legislation.html"
   status = 200
 
+# Ministry shortcut: /jus → service map
+[[redirects]]
+  from = "/jus"
+  to = "/jus/service-map.html"
+  status = 200
+
+[[redirects]]
+  from = "/jus/"
+  to = "/jus/service-map"
+  status = 301
+
+# Clean URLs for Justice pages
+[[redirects]]
+  from = "/jus/service-map"
+  to = "/jus/service-map.html"
+  status = 200
+
 # Headers
 [[headers]]
   for = "/data/*.json"

@@ -10,5 +10,11 @@
     "name": "Assisted Living and Social Services",
     "short_name": "Assisted Living & Social Services",
     "blurb": "Supports Albertans through employment supports, disability supports, prevention of elder abuse, community well-being, housing stability, health benefits, and financial assistance programs."
+  },
+  {
+    "prefix": "jus",
+    "name": "Justice",
+    "short_name": "Justice",
+    "blurb": "Ensures a fair and accessible justice system for all Albertans -- administering courts, prosecuting criminal offences, resolving family disputes, enforcing support orders, overseeing legal aid, registering land titles, and supporting victims of crime."
   }
 ]

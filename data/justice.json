@@ -1,0 +1,1908 @@
+{
+  "prefix": "jus",
+  "full_name": "Justice",
+  "short_name": "Justice",
+  "blurb": "Ensures a fair and accessible justice system for all Albertans -- administering courts, prosecuting criminal offences, resolving family disputes, enforcing support orders, overseeing legal aid, registering land titles, and investigating sudden or unexplained deaths.",
+  "nav_name": "Justice",
+  "has_registry_agents": true,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "title": "GOAL 1",
+      "short_name": "Albertans' rights and interests are protected",
+      "legend_label": "Rights & interests",
+      "description": "The ministry stands up for Albertans by challenging unconstitutional federal legislation, advocating for responsible firearms policy, and protecting individual rights and freedoms.",
+      "metrics": [
+        {
+          "id": "1.a Performance Measure",
+          "name": "Possession and Acquisition Licences processed within target timeline",
+          "target": "70%",
+          "target_label": "-> 90% by 2027-28"
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get a firearms licence or authorization",
+          "supporting": [
+            {
+              "name": "Apply for a Possession and Acquisition Licence (PAL)",
+              "desc": "Apply for a new PAL or Restricted PAL to legally possess and acquire firearms. Requires completing the Canadian Firearms Safety Course. Applications reviewed by the Alberta Chief Firearms Office before federal processing.",
+              "users": "Albertans 18+ seeking to own firearms",
+              "user_groups": [
+                "Individuals",
+                "Firearms owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "RCMP application form (PDF)",
+                  "url": "https://www.rcmp-grc.gc.ca/en/firearms/licence-application"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail to Chief Firearms Office",
+                  "url": null
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: firearms licences",
+                  "url": "https://www.alberta.ca/firearms-licences-authorizations"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#455a64",
+                  "full_name": "Firearms Act (federal)  -  s.5-12: Eligibility and Licensing"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "tip": "Defend Albertans' right to lawful and safe possession of firearms"
+                }
+              ]
+            },
+            {
+              "name": "Renew a firearms licence",
+              "desc": "Renew your PAL or RPAL before it expires. Renewal applications are processed through the Alberta Chief Firearms Office.",
+              "users": "Current PAL/RPAL holders",
+              "user_groups": [
+                "Firearms owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "RCMP online: renew licence",
+                  "url": "https://www.rcmp-grc.gc.ca/en/firearms/renew-firearms-licence"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail renewal form",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#455a64",
+                  "full_name": "Firearms Act (federal)  -  s.5-12: Eligibility and Licensing"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "tip": "Defend Albertans' right to lawful and safe possession of firearms"
+                }
+              ]
+            },
+            {
+              "name": "Take a firearms safety course",
+              "desc": "Complete the Canadian Firearms Safety Course (CFSC) or Canadian Restricted Firearms Safety Course (CRFSC), required before applying for a licence.",
+              "users": "Prospective firearms owners",
+              "user_groups": [
+                "Individuals",
+                "Firearms owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: safety courses",
+                  "url": "https://www.alberta.ca/firearms-safety-courses"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Licensed instructor",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#455a64",
+                  "full_name": "Firearms Act (federal)  -  s.7: Safety Training"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Access Alberta's laws and legal information",
+          "supporting": [
+            {
+              "name": "Browse Alberta's laws and regulations online",
+              "desc": "Access the full text of Alberta's statutes, regulations, and codes through the Laws Online Catalogue, maintained by the Alberta King's Printer.",
+              "users": "Legal professionals, researchers, general public",
+              "user_groups": [
+                "Individuals",
+                "Legal professionals",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: Laws Online Catalogue",
+                  "url": "https://www.alberta.ca/laws-online-catalogue"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "King's Printer: legislation",
+                  "url": "https://kings-printer.alberta.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Learn about your rights under the Alberta Bill of Rights",
+              "desc": "Access information about the rights and freedoms protected by the Alberta Bill of Rights, including protections for personal autonomy, property rights, and consent to medical treatment.",
+              "users": "All Albertans",
+              "user_groups": [
+                "Individuals",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: Bill of Rights",
+                  "url": "https://www.alberta.ca/alberta-bill-of-rights"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ABRA",
+                  "color": "#0070c0",
+                  "full_name": "Alberta Bill of Rights Act  -  Fundamental Rights and Freedoms"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ],
+          "foundational": [
+            {
+              "name": "Challenge unconstitutional federal legislation",
+              "desc": "Legal challenges to federal laws that may infringe on Alberta's constitutional jurisdiction, including the Impact Assessment Act, emissions cap, and firearms prohibition legislation.",
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Use every legal means to overturn harmful federal legislation"
+                }
+              ]
+            },
+            {
+              "name": "Administer the Canadian Firearms Program for Alberta",
+              "desc": "The Alberta Chief Firearms Office reviews PAL applications, investigates and makes regulatory decisions. Investment of $8.6M in 2025-26.",
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#455a64",
+                  "full_name": "Firearms Act (federal)  -  Provincial administration"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "tip": "Defend Albertans' right to lawful and safe possession of firearms"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "css_class": "goal-1"
+    },
+    {
+      "number": 2,
+      "color": "#007a3d",
+      "title": "GOAL 2",
+      "short_name": "Alberta's justice system is fair and accessible",
+      "legend_label": "Fair & accessible justice",
+      "description": "Albertans deserve a justice system that is fair and accessible. The ministry is increasing the availability of online services, implementing pre-charge assessment, and streamlining court processes.",
+      "metrics": [
+        {
+          "id": "2.a Performance Measure",
+          "name": "Court of Justice lead time to trial for serious and violent matters",
+          "target": "24 weeks",
+          "target_label": "-> 22 weeks by 2027-28"
+        },
+        {
+          "id": "2.b Performance Measure",
+          "name": "Traffic ticket matters handled online by the Advanced Projects and Traffic Office",
+          "target": "10%",
+          "target_label": "-> 14% by 2027-28"
+        },
+        {
+          "id": "$",
+          "name": "Investment in online services, digital platforms and video conferencing",
+          "target": "$12M"
+        },
+        {
+          "id": "$",
+          "name": "SafeRoads program for alcohol/drug-related driving matters",
+          "target": "$7.5M"
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "File and access court documents",
+          "supporting": [
+            {
+              "name": "File documents with the Court of King's Bench digitally",
+              "desc": "Submit civil and family court filings digitally through the KB Filing service. Includes document type selection (150+ types), PDF upload, automated fee calculation, credit card payment, and download of stamped documents after clerk approval.",
+              "users": "Lawyers, legal assistants",
+              "user_groups": [
+                "Legal professionals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "KB Digital Filing: submit and pay",
+                  "url": "https://qb-filing.alberta.ca/"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Court registry counter",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CKBA",
+                  "color": "#795548",
+                  "full_name": "Court of King's Bench Act  -  Civil Filing and Procedure"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Strengthen justice system and expand virtual and online accessibility"
+                }
+              ]
+            },
+            {
+              "name": "Search Court of Justice civil records",
+              "desc": "Search civil case records from the Court of Justice (formerly Provincial Court). $25 per search.",
+              "users": "Lawyers, public, employers",
+              "user_groups": [
+                "Legal professionals",
+                "Individuals",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "eServices: CoJ civil search",
+                  "url": "https://eservices.alberta.ca/court-of-justice-civil-search.html"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CJA",
+                  "color": "#c65102",
+                  "full_name": "Court of Justice Act  -  Records and Information"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Strengthen justice system and expand virtual and online accessibility"
+                }
+              ]
+            },
+            {
+              "name": "Search Court of King's Bench civil records",
+              "desc": "Search civil case records from the Court of King's Bench. $25 per search.",
+              "users": "Lawyers, public, employers",
+              "user_groups": [
+                "Legal professionals",
+                "Individuals",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "eServices: KB civil search",
+                  "url": "https://eservices.alberta.ca/court-of-kb-civil-search-request.html"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CKBA",
+                  "color": "#795548",
+                  "full_name": "Court of King's Bench Act  -  Records and Information"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Search Court of King's Bench criminal records",
+              "desc": "Search criminal case records from the Court of King's Bench. Not a criminal record check. $25 per search.",
+              "users": "Lawyers, public",
+              "user_groups": [
+                "Legal professionals",
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "eServices: KB criminal search",
+                  "url": "https://eservices.alberta.ca/court-of-kb-criminal-search-request.html"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CKBA",
+                  "color": "#795548",
+                  "full_name": "Court of King's Bench Act  -  Records and Information"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Order a courtroom transcript",
+              "desc": "Order a written transcript of court proceedings. Select turnaround time (affects price), pay by credit card. Clerks validate and assign to contracted transcribers. Payment settled on delivery based on word count.",
+              "users": "Lawyers, parties to a case, public",
+              "user_groups": [
+                "Legal professionals",
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Transcripts Digital Service: order and pay",
+                  "url": "https://www.alberta.ca/order-courtroom-transcript"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Strengthen justice system and expand virtual and online accessibility"
+                }
+              ]
+            },
+            {
+              "name": "Get help preparing court forms",
+              "desc": "Access assistance with court form preparation through Court and Justice Services staff.",
+              "users": "Self-represented litigants",
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: court form help",
+                  "url": "https://www.alberta.ca/support-preparing-court-forms"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Court and Justice Services: 1-855-738-4747",
+                  "url": null
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Court registry",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Handle a traffic matter",
+          "supporting": [
+            {
+              "name": "Handle a traffic ticket online",
+              "desc": "Review your traffic ticket, enter a plea, negotiate with a prosecutor, or pay a fine online through the Traffic Ticket Digital Service. Available 24/7. Eliminates need for in-person courthouse visits.",
+              "users": "Drivers who received a traffic ticket",
+              "user_groups": [
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Traffic Ticket Digital Service: pay or plead",
+                  "url": "https://traffictickets.alberta.ca/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "POPA",
+                  "color": "#8e24aa",
+                  "full_name": "Provincial Offences Procedure Act  -  Traffic Ticket Processing"
+                },
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  Part 5: General Operation of Vehicles"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Strengthen justice system and expand virtual and online accessibility"
+                }
+              ]
+            },
+            {
+              "name": "Challenge a driving penalty through SafeRoads Alberta",
+              "desc": "Request a review of administrative penalties, licence suspensions, or vehicle seizures related to alcohol or drug-impaired driving through SafeRoads Alberta.",
+              "users": "Drivers facing administrative driving penalties",
+              "user_groups": [
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "SafeRoads Alberta: file review",
+                  "url": "https://saferoads.alberta.ca"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  Part 4: Disqualification from Driving"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Serve on a jury",
+          "supporting": [
+            {
+              "name": "Respond to a jury summons",
+              "desc": "Complete your juror questionnaire online (Edmonton) or by mail. Eligibility: Canadian citizen, 18+, Alberta resident. Jury pay is $50/day.",
+              "users": "Alberta residents summoned for jury duty",
+              "user_groups": [
+                "Individuals",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "KBJM Juror Portal: respond online",
+                  "url": "https://jury.alberta.ca/"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail questionnaire",
+                  "url": null
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: jury duty",
+                  "url": "https://www.alberta.ca/jury-duty"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "JA",
+                  "color": "#00838f",
+                  "full_name": "Jury Act  -  Juror Selection and Service"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Claim jury duty expenses",
+              "desc": "Submit expense claims for meals, mileage, parking, transit, and accommodations incurred during jury service.",
+              "users": "Jurors who served on a trial",
+              "user_groups": [
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "eServices: jury expense claim",
+                  "url": "https://eservices.alberta.ca/jury-expense-request-english.html"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "JA",
+                  "color": "#00838f",
+                  "full_name": "Jury Act  -  Juror Compensation"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "name": "Find a court or learn about court processes",
+          "supporting": [
+            {
+              "name": "Find a courthouse location",
+              "desc": "Locate Court of Appeal, Court of King's Bench, and Court of Justice locations across Alberta with addresses and contact information.",
+              "users": "All court users",
+              "user_groups": [
+                "Individuals",
+                "Legal professionals",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: court locations",
+                  "url": "https://www.alberta.ca/alberta-court-locations"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Court and Justice Services: 1-855-738-4747",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Learn about court procedures and etiquette",
+              "desc": "Access guides on how courts work, what to expect, courtroom etiquette, and how to prepare for your court appearance.",
+              "users": "Self-represented litigants, witnesses, first-time court users",
+              "user_groups": [
+                "Individuals",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: court procedures",
+                  "url": "https://www.alberta.ca/court-procedures"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: courtroom etiquette",
+                  "url": "https://www.alberta.ca/courtroom-etiquette"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Appeal a court decision",
+              "desc": "File an appeal to the Court of King's Bench (from Court of Justice decisions) or the Court of Appeal (from King's Bench decisions). Court of Appeal civil appeal filing fee: $600.",
+              "users": "Parties to a case, lawyers",
+              "user_groups": [
+                "Individuals",
+                "Legal professionals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: court appeals",
+                  "url": "https://www.alberta.ca/court-appeals"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Court registry: file appeal",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CKBA",
+                  "color": "#795548",
+                  "full_name": "Court of King's Bench Act  -  Appeals Jurisdiction"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "name": "Register land titles and property documents",
+          "supporting": [
+            {
+              "name": "Register a land title document or plan",
+              "desc": "Register documents that create or terminate legal rights in property through the Torrens System land registry. Authorized users can digitally sign and submit certain documents.",
+              "users": "Lawyers, conveyancers, property owners",
+              "user_groups": [
+                "Legal professionals",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "SPIN2: submit documents",
+                  "url": "https://spin.alt.alberta.ca/"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Land Titles Office",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "LTA",
+                  "color": "#e65100",
+                  "full_name": "Land Titles Act  -  Document Registration"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Search land title records online",
+              "desc": "Look up land title certificates, property ownership, registered interests, and plans through the Alberta Land Titles Online system (SPIN2).",
+              "users": "Lawyers, realtors, lenders, property buyers",
+              "user_groups": [
+                "Legal professionals",
+                "Property owners",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "SPIN2: search titles",
+                  "url": "https://spin.alt.alberta.ca/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "LTA",
+                  "color": "#e65100",
+                  "full_name": "Land Titles Act  -  Public Record Access"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "name": "Become a notary public or commissioner for oaths",
+          "supporting": [
+            {
+              "name": "Apply for appointment as a notary public",
+              "desc": "Apply to be appointed as a notary public to administer oaths, certify documents, and witness document execution. Must be 18+, Alberta resident, Canadian citizen or permanent resident.",
+              "users": "Professionals seeking notary designation",
+              "user_groups": [
+                "Individuals",
+                "Legal professionals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-email",
+                  "label": "Official Documents and Appointments",
+                  "url": null
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: notaries public",
+                  "url": "https://www.alberta.ca/notaries-public"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "NCA",
+                  "color": "#616161",
+                  "full_name": "Notaries and Commissioners Act  -  Appointment and Duties"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Apply to become a commissioner for oaths",
+              "desc": "Apply for commissioner for oaths status to administer oaths and take statutory declarations.",
+              "users": "Professionals needing oath administration authority",
+              "user_groups": [
+                "Individuals",
+                "Legal professionals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: commissioners for oaths",
+                  "url": "https://www.alberta.ca/commissioners-for-oaths"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Official Documents and Appointments",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "NCA",
+                  "color": "#616161",
+                  "full_name": "Notaries and Commissioners Act  -  Commissioners for Oaths"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        }
+      ],
+      "foundational_services": [
+        {
+          "id": "f-1",
+          "name": "Prosecute criminal offences",
+          "desc": "Alberta Crown Prosecution Service conducts criminal prosecutions across 13 offices. Handles Criminal Code, Youth Criminal Justice Act, and provincial statute matters. Includes specialized units for commercial crime, organized crime, environmental law, and technology crimes.",
+          "users": "Justice system participants, public safety",
+          "channels": [
+            {
+              "type": "ch-phone",
+              "label": "Crown Prosecution offices"
+            },
+            {
+              "type": "ch-find",
+              "label": "alberta.ca: Crown Prosecution",
+              "url": "https://www.alberta.ca/alberta-crown-prosecution-service"
+            },
+            {
+              "type": "ch-transact",
+              "label": "Electronic Disclosure Service",
+              "url": "https://www.alberta.ca/electronic-disclosure"
+            }
+          ],
+          "legislation": [],
+          "mandate_tags": [
+            {
+              "number": 6,
+              "tip": "Advocate for federal bail reform and Criminal Code changes"
+            }
+          ]
+        },
+        {
+          "id": "f-2",
+          "name": "Administer court scheduling and operations",
+          "desc": "Court and Justice Services manages daily court operations including courtroom scheduling (CJJS), real-time courtroom event recording (CDS), docket management, and adjournment processing across all Alberta courts.",
+          "users": "Judges, clerks, lawyers, court staff",
+          "channels": [
+            {
+              "type": "ch-phone",
+              "label": "Court and Justice Services: 1-855-738-4747"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "CJA",
+              "color": "#c65102",
+              "full_name": "Court of Justice Act  -  Court Administration"
+            },
+            {
+              "abbrev": "CKBA",
+              "color": "#795548",
+              "full_name": "Court of King's Bench Act  -  Court Administration"
+            }
+          ],
+          "mandate_tags": [
+            {
+              "number": 3,
+              "tip": "Strengthen justice system and expand virtual and online accessibility"
+            }
+          ]
+        },
+        {
+          "id": "f-3",
+          "name": "Process pre-charge assessments",
+          "desc": "Prosecutors review charges before they are laid by police, ensuring only viable matters enter the court system and creating capacity within Alberta's courts.",
+          "users": "Law enforcement, prosecutors",
+          "channels": [],
+          "legislation": [],
+          "mandate_tags": [
+            {
+              "number": 3,
+              "tip": "Strengthen justice system and expand virtual and online accessibility"
+            }
+          ]
+        },
+        {
+          "id": "f-4",
+          "name": "Administer the surrogate grant process",
+          "desc": "Digital service for applying for and receiving surrogate grants (court-issued documents allowing executors to access deceased estates). Multi-role workflow: lawyer applies, executor certifies, clerk reviews in two stages, justice approves. Reduced turnaround from 6-8 months to 2-3 weeks. Serves ~8,400 grants/year.",
+          "users": "Lawyers, executors, beneficiaries, court staff",
+          "channels": [
+            {
+              "type": "ch-apply",
+              "label": "Surrogate Digital Service: apply",
+              "url": null
+            }
+          ],
+          "legislation": [],
+          "mandate_tags": []
+        }
+      ],
+      "css_class": "goal-2"
+    },
+    {
+      "number": 3,
+      "color": "#c65102",
+      "title": "GOAL 3",
+      "short_name": "Albertans are supported in their interactions with the justice system",
+      "legend_label": "Support & family justice",
+      "description": "The ministry supports individuals and families through targeted programs like drug treatment courts, expanding family justice services, and modernizing death investigations to provide timely answers to families.",
+      "metrics": [
+        {
+          "id": "3.a Performance Measure",
+          "name": "Drug treatment court utilization rate",
+          "target": "70%",
+          "target_label": "-> 90% by 2027-28"
+        },
+        {
+          "id": "3.b Performance Measure",
+          "name": "Family matters resolved by Alberta Justice dispute resolution programs",
+          "target": "72%",
+          "target_label": "-> 74% by 2027-28"
+        },
+        {
+          "id": "$",
+          "name": "Investment in drug treatment courts",
+          "target": "$4M"
+        },
+        {
+          "id": "$",
+          "name": "Investment in family resolution services",
+          "target": "$3.2M"
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Resolve a family dispute without going to court",
+          "supporting": [
+            {
+              "name": "Assess your family law options online",
+              "desc": "Use the Family Resolution Hub to answer a guided questionnaire (approx. 10 minutes) and receive a personalized action plan with steps, forms, and requirements. No login required, no personal information collected. Includes Quick Exit button for safety.",
+              "users": "Self-represented litigants dealing with family law matters",
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Family Resolution Hub",
+                  "url": "https://familyresolution.alberta.ca/"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: Family Resolution Hub",
+                  "url": "https://www.alberta.ca/family-resolution-hub"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FLA",
+                  "color": "#0070c0",
+                  "full_name": "Family Law Act  -  Family Dispute Resolution"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Complete the Parenting After Separation course",
+              "desc": "Take the required 6-hour Parenting After Separation (PAS) course before filing divorce or Family Law Act applications. High-conflict version (PASHC) also available (3 hours).",
+              "users": "Parents filing for divorce or family law orders",
+              "user_groups": [
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Resolution Services Learning Centre: register",
+                  "url": "http://pas.albertacourts.ab.ca/"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "pas@gov.ab.ca",
+                  "url": "mailto:pas@gov.ab.ca"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: PAS course",
+                  "url": "https://www.alberta.ca/pas"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FLA",
+                  "color": "#0070c0",
+                  "full_name": "Family Law Act  -  Pre-Court Requirements"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Access free family mediation",
+              "desc": "Free mediation program for parents, grandparents, guardians, or others with significant roles in a child's life, to resolve parenting disputes without court.",
+              "users": "Parents and guardians in parenting disputes",
+              "user_groups": [
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: family mediation",
+                  "url": "https://www.alberta.ca/family-mediation"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Court and Justice Services: 1-855-738-4747",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FLA",
+                  "color": "#0070c0",
+                  "full_name": "Family Law Act  -  Dispute Resolution"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Get help resolving child support",
+              "desc": "Free Child Support Resolution Program helps parents reach agreement on child support amounts. Available in Edmonton, Calgary, Red Deer, Grande Prairie, and other locations.",
+              "users": "Parents needing to establish or adjust child support",
+              "user_groups": [
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: child support resolution",
+                  "url": "https://www.alberta.ca/child-support-resolution-program"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Resolution Services office",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FLA",
+                  "color": "#0070c0",
+                  "full_name": "Family Law Act  -  Child Support Obligations"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Get family court assistance",
+              "desc": "Family court counsellors help self-represented persons prepare for court, navigate the system, and resolve parenting disputes.",
+              "users": "Self-represented family law litigants",
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: family court assistance",
+                  "url": "https://www.alberta.ca/family-court-assistance"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Courthouse family services",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FLA",
+                  "color": "#0070c0",
+                  "full_name": "Family Law Act  -  Court Assistance"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Apply for family law orders",
+          "supporting": [
+            {
+              "name": "Apply for a parenting or custody order",
+              "desc": "Apply to the court to establish guardianship decisions and parenting time arrangements for your child.",
+              "users": "Parents, guardians",
+              "user_groups": [
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: parenting orders",
+                  "url": "https://www.alberta.ca/apply-parenting-order"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Court registry: file application",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FLA",
+                  "color": "#0070c0",
+                  "full_name": "Family Law Act  -  Part 2: Guardianship and Parenting"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Apply for child or spousal support",
+              "desc": "Apply for a court order for child support or spousal/partner support based on parental income and child needs. Requires tax returns, Notice of Assessment, and pay stubs.",
+              "users": "Parents, spouses, partners",
+              "user_groups": [
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: child support",
+                  "url": "https://www.alberta.ca/apply-child-support"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: spousal support",
+                  "url": "https://www.alberta.ca/apply-spousal-partner-support"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Court registry: file application",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FLA",
+                  "color": "#0070c0",
+                  "full_name": "Family Law Act  -  Part 4: Child Support and Part 5: Spousal/Partner Support"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Apply for a divorce",
+              "desc": "Start the divorce process, including filing for divorce, dividing property, and resolving custody and support. Parenting After Separation course required.",
+              "users": "Spouses seeking divorce",
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: divorce and separation",
+                  "url": "https://www.alberta.ca/divorce-separation"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Court of King's Bench registry",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "DA",
+                  "color": "#455a64",
+                  "full_name": "Divorce Act (federal)  -  Divorce and Corollary Relief"
+                },
+                {
+                  "abbrev": "FLA",
+                  "color": "#0070c0",
+                  "full_name": "Family Law Act  -  Non-Divorce Matters"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Apply for child guardianship",
+              "desc": "Apply for legal guardianship of a child you've cared for at least 6 months, if neither a parent nor existing guardian.",
+              "users": "Non-parents caring for a child",
+              "user_groups": [
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: child guardianship",
+                  "url": "https://www.alberta.ca/apply-child-guardianship"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Court registry: file application",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FLA",
+                  "color": "#0070c0",
+                  "full_name": "Family Law Act  -  Part 2: Guardianship"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Collect or pay court-ordered support",
+          "supporting": [
+            {
+              "name": "Register with the Maintenance Enforcement Program",
+              "desc": "Register as a payor or recipient to have court-ordered child, spousal, or partner support collected and distributed through MEP. Either party can register independently.",
+              "users": "Support payors and recipients",
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca: MEP registration",
+                  "url": "https://www.alberta.ca/mep-how-to-register"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "MEP: 780-422-5555 (310-0000 toll-free)",
+                  "url": null
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail to MEP, 7th Floor, 10365 97 St NW, Edmonton",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MEA",
+                  "color": "#007a3d",
+                  "full_name": "Maintenance Enforcement Act  -  Registration and Enforcement"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Manage your MEP account online",
+              "desc": "View account status, update your file, contact your compliance officer, and track payment history through the MEP online portal.",
+              "users": "Registered MEP payors and recipients",
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "MEP Accounts Online",
+                  "url": "https://www.alberta.ca/mep-accounts-online"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "MEP: 780-422-5555 (310-0000 toll-free)",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MEA",
+                  "color": "#007a3d",
+                  "full_name": "Maintenance Enforcement Act  -  Account Management"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "name": "Get a protection or restraining order",
+          "supporting": [
+            {
+              "name": "Get an emergency protection order",
+              "desc": "Immediate protection in urgent family violence situations. Police can apply on your behalf. Granted by a justice of the peace or judge, reviewed within 9 days.",
+              "users": "Victims of family violence in urgent situations",
+              "user_groups": [
+                "Individuals",
+                "Families",
+                "Victims of crime"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Police (call 911 for emergencies)",
+                  "url": null
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: protection orders",
+                  "url": "https://www.alberta.ca/restraining-protection-orders"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FLA",
+                  "color": "#0070c0",
+                  "full_name": "Family Law Act  -  Part 7: Protection Orders"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Apply for a family violence restraining order",
+              "desc": "Court of King's Bench order for ongoing family violence situations. No notice to other party required. Can be 3+ months or permanent. No filing fee.",
+              "users": "Victims of family violence",
+              "user_groups": [
+                "Individuals",
+                "Families",
+                "Victims of crime"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Court of King's Bench registry",
+                  "url": null
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: restraining orders",
+                  "url": "https://www.alberta.ca/restraining-protection-orders"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FLA",
+                  "color": "#0070c0",
+                  "full_name": "Family Law Act  -  Part 7: Protection Orders"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Get a peace bond",
+              "desc": "Non-emergency court order requiring someone to keep the peace for up to 1 year. For situations involving neighbours, coworkers, or dating relationships.",
+              "users": "Individuals feeling threatened or harassed",
+              "user_groups": [
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Court of Justice",
+                  "url": null
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: peace bonds",
+                  "url": "https://www.alberta.ca/restraining-protection-orders"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "name": "Get help as a victim of crime",
+          "supporting": [
+            {
+              "name": "Apply for financial assistance as a crime victim",
+              "desc": "Apply for emergency assistance, security enhancements, counselling, medical treatment, and other supports through the Victims of Crime Assistance Program (VOCAP). Crime must be reported to police. Apply within 2 years.",
+              "users": "Victims of serious Criminal Code offences",
+              "user_groups": [
+                "Individuals",
+                "Victims of crime"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca: VOCAP application",
+                  "url": "https://www.alberta.ca/victims-of-crime-assistance-program"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "voca@gov.ab.ca",
+                  "url": "mailto:voca@gov.ab.ca"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "780-427-7217 (310-0000 toll-free)",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "VCPSA",
+                  "color": "#d32f2f",
+                  "full_name": "Victims of Crime and Public Safety Act  -  Victim Assistance"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Submit a victim impact statement",
+              "desc": "Prepare and submit a statement describing how a crime affected you, for the judge to consider before sentencing. Submit to courthouse clerk, victim services, or police before sentencing.",
+              "users": "Victims of crime before offender sentencing",
+              "user_groups": [
+                "Victims of crime"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Victim impact statement form",
+                  "url": null
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Courthouse clerk or victim services",
+                  "url": null
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: victim impact statements",
+                  "url": "https://www.alberta.ca/victim-impact-statement"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "VCPSA",
+                  "color": "#d32f2f",
+                  "full_name": "Victims of Crime and Public Safety Act  -  Victim Rights"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Apply for victim restitution from an offender",
+              "desc": "Request court-ordered compensation from an offender for crime-related expenses including lost wages, property damage, counselling, physiotherapy, moving costs, and identity theft recovery.",
+              "users": "Victims of crime seeking restitution",
+              "user_groups": [
+                "Victims of crime"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Statement on Restitution form",
+                  "url": "https://cfr.forms.gov.ab.ca/form/VIC12466"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Crown Prosecution, victim services, or police",
+                  "url": null
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: victim restitution",
+                  "url": "https://www.alberta.ca/victim-restitution-and-recovery"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "VCPSA",
+                  "color": "#d32f2f",
+                  "full_name": "Victims of Crime and Public Safety Act  -  Restitution"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Find a victim services organization near you",
+              "desc": "Locate a victim serving organization in your area. Four regional societies (south, central, east, west) align with RCMP districts.",
+              "users": "Victims of crime, families",
+              "user_groups": [
+                "Individuals",
+                "Victims of crime"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: find victim services",
+                  "url": "https://www.alberta.ca/lookup/find-a-victim-serving-organization.aspx"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: help for victims",
+                  "url": "https://www.alberta.ca/help-for-victims-of-crime"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "VCPSA",
+                  "color": "#d32f2f",
+                  "full_name": "Victims of Crime and Public Safety Act  -  Victim Services"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "name": "Get legal representation if you can't afford it",
+          "supporting": [
+            {
+              "name": "Apply for Legal Aid Alberta",
+              "desc": "Apply for legal representation at reduced or no cost for criminal, family, and civil matters. Means test required based on income and assets.",
+              "users": "Albertans who cannot afford legal representation",
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: legal aid",
+                  "url": "https://www.alberta.ca/legal-supports-and-assistance"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Legal Aid Alberta",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Access a free legal clinic",
+              "desc": "Six legal clinics across Alberta provide free legal help for people who don't qualify for Legal Aid but can't afford a lawyer.",
+              "users": "Low-income Albertans with legal issues",
+              "user_groups": [
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: legal supports",
+                  "url": "https://www.alberta.ca/legal-supports-and-assistance"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Legal clinic location",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "name": "Get death investigation information",
+          "supporting": [
+            {
+              "name": "Request death investigation documents",
+              "desc": "Request documents related to a death investigation conducted by the Office of the Chief Medical Examiner. OCME investigates approximately 20,000 deaths and conducts 4,000+ autopsies annually.",
+              "users": "Families of deceased, lawyers, insurance companies",
+              "user_groups": [
+                "Individuals",
+                "Families",
+                "Legal professionals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: order death documents",
+                  "url": "https://www.alberta.ca/order-death-documents-related-to-an-investigation"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "OCME Edmonton: 780-427-4987",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "OCME Calgary: 403-297-8123",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FIA",
+                  "color": "#6a1b9a",
+                  "full_name": "Fatality Inquiries Act  -  Death Investigation and Documents"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Order CODE 2 or CODE 4 reports",
+              "desc": "Order specific medical examiner reports through eServices. CODE 2 and CODE 4 reports provide different levels of investigation detail.",
+              "users": "Families, lawyers, insurance companies",
+              "user_groups": [
+                "Individuals",
+                "Families",
+                "Legal professionals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "eServices: CODE 2 reports",
+                  "url": "https://eservices.alberta.ca/code2-reports.html"
+                },
+                {
+                  "type": "ch-transact",
+                  "label": "eServices: CODE 4 reports",
+                  "url": "https://eservices.alberta.ca/code4-reports.html"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FIA",
+                  "color": "#6a1b9a",
+                  "full_name": "Fatality Inquiries Act  -  Investigation Reports"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "name": "Resolve a dispute outside of court",
+          "supporting": [
+            {
+              "name": "Resolve a condominium dispute",
+              "desc": "Use the Condominium Dispute Resolution Tribunal (CDRT) for guided negotiation, mediation, or adjudication of condominium-related disputes.",
+              "users": "Condo owners, condo boards",
+              "user_groups": [
+                "Individuals",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: condo dispute resolution",
+                  "url": "https://www.alberta.ca/condominium-dispute-resolution-tribunal"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Resolve a residential tenancy dispute",
+              "desc": "Use the Residential Tenancy Dispute Resolution Service (RTDRS) as a faster alternative to court for landlord-tenant disputes.",
+              "users": "Landlords and tenants",
+              "user_groups": [
+                "Individuals",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: tenancy dispute resolution",
+                  "url": "https://www.alberta.ca/residential-tenancy-dispute-resolution-service"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Resolve a municipal boundary or tax dispute",
+              "desc": "Access intermunicipal dispute resolution services for boundary, tax-sharing, or service-sharing disagreements between municipalities.",
+              "users": "Municipalities",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: municipal dispute resolution",
+                  "url": "https://www.alberta.ca/municipal-dispute-resolution-services"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            }
+          ]
+        }
+      ],
+      "foundational_services": [
+        {
+          "id": "f-5",
+          "name": "Operate drug treatment courts",
+          "desc": "Seven drug treatment courts across Alberta bring together criminal justice, drug treatment, and community partners to help eligible offenders break the cycle of criminal behaviour driven by addiction. $4M investment in 2025-26.",
+          "users": "Eligible offenders with addiction challenges",
+          "channels": [
+            {
+              "type": "ch-inperson",
+              "label": "Drug treatment court locations"
+            }
+          ],
+          "legislation": [],
+          "mandate_tags": []
+        },
+        {
+          "id": "f-6",
+          "name": "Investigate sudden, unexpected, or unexplained deaths",
+          "desc": "The Office of the Chief Medical Examiner conducts forensic death investigations, autopsies, and toxicology analysis. Operates 24/7 from Edmonton and Calgary offices with the Medical Investigator Unit.",
+          "users": "Law enforcement, medical professionals, families",
+          "channels": [
+            {
+              "type": "ch-phone",
+              "label": "OCME 24/7"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "FIA",
+              "color": "#6a1b9a",
+              "full_name": "Fatality Inquiries Act  -  Death Investigation Authority"
+            }
+          ],
+          "mandate_tags": []
+        }
+      ],
+      "css_class": "goal-3"
+    }
+  ],
+  "mandate_date": "September 25, 2025",
+  "mandate_minister": "Mickey Amery",
+  "mandate_pdf": "https://open.alberta.ca/dataset/b0769b96-7a45-40b5-b57c-415ff82aca49/resource/c4f304b2-e662-4397-a967-80cd282a360d/download/jus-mandate-letter-justice-2025.pdf",
+  "cross_cutting": [
+    "Court and Justice Services contact centre (1-855-738-4747)",
+    "Alberta.ca legal information pages",
+    "Laws Online Catalogue",
+    "Court locations directory",
+    "Justice Digital sign-in (for legal professionals)",
+    "eServices Alberta portal",
+    "Alberta Notify email service",
+    "Pre-charge assessment system",
+    "Electronic Disclosure Service",
+    "Annual reports & business plans",
+    "Red tape reduction"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Use every legal means to overturn harmful federal legislation (C-69, emissions cap, clean electricity regs, C-48, carbon tax, plastics, C-59, fertilizer regs, EV mandate)",
+      "mapping": "-> Foundational: challenge unconstitutional federal legislation"
+    },
+    {
+      "number": 2,
+      "text": "Introduce MAID legislation with safeguards; prohibit MAID based solely on mental illness",
+      "mapping": "-> No direct citizen service  |  Legislative initiative"
+    },
+    {
+      "number": 3,
+      "text": "Strengthen justice system: increase applications judges, support staff, innovative approaches, expand virtual and online accessibility",
+      "mapping": "-> File court documents digitally; Handle a traffic ticket online; Order a courtroom transcript; Foundational: court operations"
+    },
+    {
+      "number": 4,
+      "text": "Defend Albertans' right to lawful and safe possession of firearms and affirm right of self-defence",
+      "mapping": "-> Get a firearms licence or authorization; Foundational: administer firearms program"
+    },
+    {
+      "number": 5,
+      "text": "Introduce free speech legislation for all provincially regulated professionals",
+      "mapping": "-> No direct citizen service  |  Legislative initiative"
+    },
+    {
+      "number": 6,
+      "text": "Advocate for federal bail reform and Criminal Code changes for public safety",
+      "mapping": "-> Foundational: prosecute criminal offences  |  Cross-ministry: Public Safety"
+    },
+    {
+      "number": 7,
+      "text": "Remove National Capital Region residency requirements for federal court judges",
+      "mapping": "-> No direct citizen service  |  Federal advocacy"
+    },
+    {
+      "number": 8,
+      "text": "Review and reform DEI hiring in Alberta public institutions to ensure merit-based practices",
+      "mapping": "-> No direct citizen service  |  Cross-ministry initiative"
+    },
+    {
+      "number": 9,
+      "text": "Work with Infrastructure on courthouse assessment, renewal, and construction (supporting)",
+      "mapping": "-> Foundational: court operations  |  Cross-ministry: Infrastructure"
+    },
+    {
+      "number": 10,
+      "text": "Assess academic freedom and free expression legislation with Advanced Education (supporting)",
+      "mapping": "-> No direct citizen service  |  Cross-ministry: Advanced Education"
+    },
+    {
+      "number": 11,
+      "text": "Defend Alberta's energy and natural resource interests against federal overreach (supporting)",
+      "mapping": "-> Foundational: constitutional challenges  |  Cross-ministry: Energy, Environment"
+    },
+    {
+      "number": 12,
+      "text": "Create a policing priority framework with Public Safety (supporting)",
+      "mapping": "-> No direct citizen service  |  Cross-ministry: Public Safety"
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-transact",
+      "label": "Online transaction",
+      "bg_color": "#c8e6c9",
+      "text_color": "#1b5e20"
+    },
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-email",
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    {
+      "code": "ch-mail",
+      "label": "Mail",
+      "bg_color": "#f3e5f5",
+      "text_color": "#6a1b9a"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    },
+    {
+      "code": "ch-pub",
+      "label": "Publication",
+      "bg_color": "#f5f5f5",
+      "text_color": "#616161"
+    }
+  ],
+  "user_group_filters": [
+    "Individuals",
+    "Families",
+    "General public",
+    "Legal professionals",
+    "Victims of crime",
+    "Firearms owners",
+    "Property owners",
+    "Businesses & employers"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg_color": "#c8e6c9",
+      "text_color": "#1b5e20"
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg_color": "#e0f2f1",
+      "text_color": "#00695c"
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg_color": "#f3e5f5",
+      "text_color": "#6a1b9a"
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    "ch-registry": {
+      "label": "Registry agent",
+      "bg_color": "#fff8e1",
+      "text_color": "#f57f17"
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg_color": "#f5f5f5",
+      "text_color": "#616161"
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg_color": "#e1bee7",
+      "text_color": "#6a1b9a"
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    }
+  },
+  "digital_channels": [
+    "ch-email",
+    "ch-web",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-transact",
+    "ch-app",
+    "ch-apply"
+  ]
+}
