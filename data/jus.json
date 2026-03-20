@@ -30,10 +30,7 @@
               "name": "Apply for a Possession and Acquisition Licence (PAL)",
               "desc": "Apply for a new PAL or Restricted PAL to legally possess and acquire firearms. Requires completing the Canadian Firearms Safety Course. Applications reviewed by the Alberta Chief Firearms Office before federal processing.",
               "users": "Albertans 18+ seeking to own firearms",
-              "user_groups": [
-                "Individuals",
-                "Firearms owners"
-              ],
+              "user_groups": ["Individuals", "Firearms owners"],
               "channels": [
                 {
                   "type": "ch-pdf",
@@ -69,9 +66,7 @@
               "name": "Renew a firearms licence",
               "desc": "Renew your PAL or RPAL before it expires. Renewal applications are processed through the Alberta Chief Firearms Office.",
               "users": "Current PAL/RPAL holders",
-              "user_groups": [
-                "Firearms owners"
-              ],
+              "user_groups": ["Firearms owners"],
               "channels": [
                 {
                   "type": "ch-transact",
@@ -102,10 +97,7 @@
               "name": "Take a firearms safety course",
               "desc": "Complete the Canadian Firearms Safety Course (CFSC) or Canadian Restricted Firearms Safety Course (CRFSC), required before applying for a licence.",
               "users": "Prospective firearms owners",
-              "user_groups": [
-                "Individuals",
-                "Firearms owners"
-              ],
+              "user_groups": ["Individuals", "Firearms owners"],
               "channels": [
                 {
                   "type": "ch-find",
@@ -161,10 +153,7 @@
               "name": "Learn about your rights under the Alberta Bill of Rights",
               "desc": "Access information about the rights and freedoms protected by the Alberta Bill of Rights, including protections for personal autonomy, property rights, and consent to medical treatment.",
               "users": "All Albertans",
-              "user_groups": [
-                "Individuals",
-                "General public"
-              ],
+              "user_groups": ["Individuals", "General public"],
               "channels": [
                 {
                   "type": "ch-find",
@@ -256,9 +245,7 @@
               "name": "File documents with the Court of King's Bench digitally",
               "desc": "Submit civil and family court filings digitally through the KB Filing service. Includes document type selection (150+ types), PDF upload, automated fee calculation, credit card payment, and download of stamped documents after clerk approval.",
               "users": "Lawyers, legal assistants",
-              "user_groups": [
-                "Legal professionals"
-              ],
+              "user_groups": ["Legal professionals"],
               "channels": [
                 {
                   "type": "ch-transact",
@@ -344,10 +331,7 @@
               "name": "Search Court of King's Bench criminal records",
               "desc": "Search criminal case records from the Court of King's Bench. Not a criminal record check. $25 per search.",
               "users": "Lawyers, public",
-              "user_groups": [
-                "Legal professionals",
-                "Individuals"
-              ],
+              "user_groups": ["Legal professionals", "Individuals"],
               "channels": [
                 {
                   "type": "ch-transact",
@@ -368,10 +352,7 @@
               "name": "Order a courtroom transcript",
               "desc": "Order a written transcript of court proceedings. Select turnaround time (affects price), pay by credit card. Clerks validate and assign to contracted transcribers. Payment settled on delivery based on word count.",
               "users": "Lawyers, parties to a case, public",
-              "user_groups": [
-                "Legal professionals",
-                "Individuals"
-              ],
+              "user_groups": ["Legal professionals", "Individuals"],
               "channels": [
                 {
                   "type": "ch-transact",
@@ -391,10 +372,7 @@
               "name": "Get help preparing court forms",
               "desc": "Access assistance with court form preparation through Court and Justice Services staff.",
               "users": "Self-represented litigants",
-              "user_groups": [
-                "Individuals",
-                "Families"
-              ],
+              "user_groups": ["Individuals", "Families"],
               "channels": [
                 {
                   "type": "ch-find",
@@ -425,9 +403,7 @@
               "name": "Handle a traffic ticket online",
               "desc": "Review your traffic ticket, enter a plea, negotiate with a prosecutor, or pay a fine online through the Traffic Ticket Digital Service. Available 24/7. Eliminates need for in-person courthouse visits.",
               "users": "Drivers who received a traffic ticket",
-              "user_groups": [
-                "Individuals"
-              ],
+              "user_groups": ["Individuals"],
               "channels": [
                 {
                   "type": "ch-transact",
@@ -458,9 +434,7 @@
               "name": "Challenge a driving penalty through SafeRoads Alberta",
               "desc": "Request a review of administrative penalties, licence suspensions, or vehicle seizures related to alcohol or drug-impaired driving through SafeRoads Alberta.",
               "users": "Drivers facing administrative driving penalties",
-              "user_groups": [
-                "Individuals"
-              ],
+              "user_groups": ["Individuals"],
               "channels": [
                 {
                   "type": "ch-transact",
@@ -492,10 +466,7 @@
               "name": "Respond to a jury summons",
               "desc": "Complete your juror questionnaire online (Edmonton) or by mail. Eligibility: Canadian citizen, 18+, Alberta resident. Jury pay is $50/day.",
               "users": "Alberta residents summoned for jury duty",
-              "user_groups": [
-                "Individuals",
-                "General public"
-              ],
+              "user_groups": ["Individuals", "General public"],
               "channels": [
                 {
                   "type": "ch-check",
@@ -526,9 +497,7 @@
               "name": "Claim jury duty expenses",
               "desc": "Submit expense claims for meals, mileage, parking, transit, and accommodations incurred during jury service.",
               "users": "Jurors who served on a trial",
-              "user_groups": [
-                "Individuals"
-              ],
+              "user_groups": ["Individuals"],
               "channels": [
                 {
                   "type": "ch-transact",
@@ -579,10 +548,7 @@
               "name": "Learn about court procedures and etiquette",
               "desc": "Access guides on how courts work, what to expect, courtroom etiquette, and how to prepare for your court appearance.",
               "users": "Self-represented litigants, witnesses, first-time court users",
-              "user_groups": [
-                "Individuals",
-                "General public"
-              ],
+              "user_groups": ["Individuals", "General public"],
               "channels": [
                 {
                   "type": "ch-find",
@@ -602,10 +568,7 @@
               "name": "Appeal a court decision",
               "desc": "File an appeal to the Court of King's Bench (from Court of Justice decisions) or the Court of Appeal (from King's Bench decisions). Court of Appeal civil appeal filing fee: $600.",
               "users": "Parties to a case, lawyers",
-              "user_groups": [
-                "Individuals",
-                "Legal professionals"
-              ],
+              "user_groups": ["Individuals", "Legal professionals"],
               "channels": [
                 {
                   "type": "ch-find",
@@ -637,10 +600,7 @@
               "name": "Register a land title document or plan",
               "desc": "Register documents that create or terminate legal rights in property through the Torrens System land registry. Authorized users can digitally sign and submit certain documents.",
               "users": "Lawyers, conveyancers, property owners",
-              "user_groups": [
-                "Legal professionals",
-                "Property owners"
-              ],
+              "user_groups": ["Legal professionals", "Property owners"],
               "channels": [
                 {
                   "type": "ch-transact",
@@ -697,10 +657,7 @@
               "name": "Apply for appointment as a notary public",
               "desc": "Apply to be appointed as a notary public to administer oaths, certify documents, and witness document execution. Must be 18+, Alberta resident, Canadian citizen or permanent resident.",
               "users": "Professionals seeking notary designation",
-              "user_groups": [
-                "Individuals",
-                "Legal professionals"
-              ],
+              "user_groups": ["Individuals", "Legal professionals"],
               "channels": [
                 {
                   "type": "ch-email",
@@ -726,10 +683,7 @@
               "name": "Apply to become a commissioner for oaths",
               "desc": "Apply for commissioner for oaths status to administer oaths and take statutory declarations.",
               "users": "Professionals needing oath administration authority",
-              "user_groups": [
-                "Individuals",
-                "Legal professionals"
-              ],
+              "user_groups": ["Individuals", "Legal professionals"],
               "channels": [
                 {
                   "type": "ch-find",
@@ -886,10 +840,7 @@
               "name": "Assess your family law options online",
               "desc": "Use the Family Resolution Hub to answer a guided questionnaire (approx. 10 minutes) and receive a personalized action plan with steps, forms, and requirements. No login required, no personal information collected. Includes Quick Exit button for safety.",
               "users": "Self-represented litigants dealing with family law matters",
-              "user_groups": [
-                "Individuals",
-                "Families"
-              ],
+              "user_groups": ["Individuals", "Families"],
               "channels": [
                 {
                   "type": "ch-check",
@@ -915,9 +866,7 @@
               "name": "Complete the Parenting After Separation course",
               "desc": "Take the required 6-hour Parenting After Separation (PAS) course before filing divorce or Family Law Act applications. High-conflict version (PASHC) also available (3 hours).",
               "users": "Parents filing for divorce or family law orders",
-              "user_groups": [
-                "Families"
-              ],
+              "user_groups": ["Families"],
               "channels": [
                 {
                   "type": "ch-transact",
@@ -948,9 +897,7 @@
               "name": "Access free family mediation",
               "desc": "Free mediation program for parents, grandparents, guardians, or others with significant roles in a child's life, to resolve parenting disputes without court.",
               "users": "Parents and guardians in parenting disputes",
-              "user_groups": [
-                "Families"
-              ],
+              "user_groups": ["Families"],
               "channels": [
                 {
                   "type": "ch-find",
@@ -976,9 +923,7 @@
               "name": "Get help resolving child support",
               "desc": "Free Child Support Resolution Program helps parents reach agreement on child support amounts. Available in Edmonton, Calgary, Red Deer, Grande Prairie, and other locations.",
               "users": "Parents needing to establish or adjust child support",
-              "user_groups": [
-                "Families"
-              ],
+              "user_groups": ["Families"],
               "channels": [
                 {
                   "type": "ch-find",
@@ -1004,10 +949,7 @@
               "name": "Get family court assistance",
               "desc": "Family court counsellors help self-represented persons prepare for court, navigate the system, and resolve parenting disputes.",
               "users": "Self-represented family law litigants",
-              "user_groups": [
-                "Individuals",
-                "Families"
-              ],
+              "user_groups": ["Individuals", "Families"],
               "channels": [
                 {
                   "type": "ch-find",
@@ -1039,9 +981,7 @@
               "name": "Apply for a parenting or custody order",
               "desc": "Apply to the court to establish guardianship decisions and parenting time arrangements for your child.",
               "users": "Parents, guardians",
-              "user_groups": [
-                "Families"
-              ],
+              "user_groups": ["Families"],
               "channels": [
                 {
                   "type": "ch-find",
@@ -1067,9 +1007,7 @@
               "name": "Apply for child or spousal support",
               "desc": "Apply for a court order for child support or spousal/partner support based on parental income and child needs. Requires tax returns, Notice of Assessment, and pay stubs.",
               "users": "Parents, spouses, partners",
-              "user_groups": [
-                "Families"
-              ],
+              "user_groups": ["Families"],
               "channels": [
                 {
                   "type": "ch-find",
@@ -1100,10 +1038,7 @@
               "name": "Apply for a divorce",
               "desc": "Start the divorce process, including filing for divorce, dividing property, and resolving custody and support. Parenting After Separation course required.",
               "users": "Spouses seeking divorce",
-              "user_groups": [
-                "Individuals",
-                "Families"
-              ],
+              "user_groups": ["Individuals", "Families"],
               "channels": [
                 {
                   "type": "ch-find",
@@ -1134,9 +1069,7 @@
               "name": "Apply for child guardianship",
               "desc": "Apply for legal guardianship of a child you've cared for at least 6 months, if neither a parent nor existing guardian.",
               "users": "Non-parents caring for a child",
-              "user_groups": [
-                "Families"
-              ],
+              "user_groups": ["Families"],
               "channels": [
                 {
                   "type": "ch-find",
@@ -1168,10 +1101,7 @@
               "name": "Register with the Maintenance Enforcement Program",
               "desc": "Register as a payor or recipient to have court-ordered child, spousal, or partner support collected and distributed through MEP. Either party can register independently.",
               "users": "Support payors and recipients",
-              "user_groups": [
-                "Individuals",
-                "Families"
-              ],
+              "user_groups": ["Individuals", "Families"],
               "channels": [
                 {
                   "type": "ch-apply",
@@ -1202,10 +1132,7 @@
               "name": "Manage your MEP account online",
               "desc": "View account status, update your file, contact your compliance officer, and track payment history through the MEP online portal.",
               "users": "Registered MEP payors and recipients",
-              "user_groups": [
-                "Individuals",
-                "Families"
-              ],
+              "user_groups": ["Individuals", "Families"],
               "channels": [
                 {
                   "type": "ch-check",
@@ -1237,11 +1164,7 @@
               "name": "Get an emergency protection order",
               "desc": "Immediate protection in urgent family violence situations. Police can apply on your behalf. Granted by a justice of the peace or judge, reviewed within 9 days.",
               "users": "Victims of family violence in urgent situations",
-              "user_groups": [
-                "Individuals",
-                "Families",
-                "Victims of crime"
-              ],
+              "user_groups": ["Individuals", "Families", "Victims of crime"],
               "channels": [
                 {
                   "type": "ch-phone",
@@ -1267,11 +1190,7 @@
               "name": "Apply for a family violence restraining order",
               "desc": "Court of King's Bench order for ongoing family violence situations. No notice to other party required. Can be 3+ months or permanent. No filing fee.",
               "users": "Victims of family violence",
-              "user_groups": [
-                "Individuals",
-                "Families",
-                "Victims of crime"
-              ],
+              "user_groups": ["Individuals", "Families", "Victims of crime"],
               "channels": [
                 {
                   "type": "ch-inperson",
@@ -1297,9 +1216,7 @@
               "name": "Get a peace bond",
               "desc": "Non-emergency court order requiring someone to keep the peace for up to 1 year. For situations involving neighbours, coworkers, or dating relationships.",
               "users": "Individuals feeling threatened or harassed",
-              "user_groups": [
-                "Individuals"
-              ],
+              "user_groups": ["Individuals"],
               "channels": [
                 {
                   "type": "ch-inperson",
@@ -1325,10 +1242,7 @@
               "name": "Apply for financial assistance as a crime victim",
               "desc": "Apply for emergency assistance, security enhancements, counselling, medical treatment, and other supports through the Victims of Crime Assistance Program (VOCAP). Crime must be reported to police. Apply within 2 years.",
               "users": "Victims of serious Criminal Code offences",
-              "user_groups": [
-                "Individuals",
-                "Victims of crime"
-              ],
+              "user_groups": ["Individuals", "Victims of crime"],
               "channels": [
                 {
                   "type": "ch-apply",
@@ -1359,9 +1273,7 @@
               "name": "Submit a victim impact statement",
               "desc": "Prepare and submit a statement describing how a crime affected you, for the judge to consider before sentencing. Submit to courthouse clerk, victim services, or police before sentencing.",
               "users": "Victims of crime before offender sentencing",
-              "user_groups": [
-                "Victims of crime"
-              ],
+              "user_groups": ["Victims of crime"],
               "channels": [
                 {
                   "type": "ch-pdf",
@@ -1392,9 +1304,7 @@
               "name": "Apply for victim restitution from an offender",
               "desc": "Request court-ordered compensation from an offender for crime-related expenses including lost wages, property damage, counselling, physiotherapy, moving costs, and identity theft recovery.",
               "users": "Victims of crime seeking restitution",
-              "user_groups": [
-                "Victims of crime"
-              ],
+              "user_groups": ["Victims of crime"],
               "channels": [
                 {
                   "type": "ch-pdf",
@@ -1425,10 +1335,7 @@
               "name": "Find a victim services organization near you",
               "desc": "Locate a victim serving organization in your area. Four regional societies (south, central, east, west) align with RCMP districts.",
               "users": "Victims of crime, families",
-              "user_groups": [
-                "Individuals",
-                "Victims of crime"
-              ],
+              "user_groups": ["Individuals", "Victims of crime"],
               "channels": [
                 {
                   "type": "ch-find",
@@ -1460,10 +1367,7 @@
               "name": "Apply for Legal Aid Alberta",
               "desc": "Apply for legal representation at reduced or no cost for criminal, family, and civil matters. Means test required based on income and assets.",
               "users": "Albertans who cannot afford legal representation",
-              "user_groups": [
-                "Individuals",
-                "Families"
-              ],
+              "user_groups": ["Individuals", "Families"],
               "channels": [
                 {
                   "type": "ch-find",
@@ -1483,9 +1387,7 @@
               "name": "Access a free legal clinic",
               "desc": "Six legal clinics across Alberta provide free legal help for people who don't qualify for Legal Aid but can't afford a lawyer.",
               "users": "Low-income Albertans with legal issues",
-              "user_groups": [
-                "Individuals"
-              ],
+              "user_groups": ["Individuals"],
               "channels": [
                 {
                   "type": "ch-find",
@@ -1511,11 +1413,7 @@
               "name": "Request death investigation documents",
               "desc": "Request documents related to a death investigation conducted by the Office of the Chief Medical Examiner. OCME investigates approximately 20,000 deaths and conducts 4,000+ autopsies annually.",
               "users": "Families of deceased, lawyers, insurance companies",
-              "user_groups": [
-                "Individuals",
-                "Families",
-                "Legal professionals"
-              ],
+              "user_groups": ["Individuals", "Families", "Legal professionals"],
               "channels": [
                 {
                   "type": "ch-find",
@@ -1546,11 +1444,7 @@
               "name": "Order CODE 2 or CODE 4 reports",
               "desc": "Order specific medical examiner reports through eServices. CODE 2 and CODE 4 reports provide different levels of investigation detail.",
               "users": "Families, lawyers, insurance companies",
-              "user_groups": [
-                "Individuals",
-                "Families",
-                "Legal professionals"
-              ],
+              "user_groups": ["Individuals", "Families", "Legal professionals"],
               "channels": [
                 {
                   "type": "ch-transact",
@@ -1582,10 +1476,7 @@
               "name": "Resolve a condominium dispute",
               "desc": "Use the Condominium Dispute Resolution Tribunal (CDRT) for guided negotiation, mediation, or adjudication of condominium-related disputes.",
               "users": "Condo owners, condo boards",
-              "user_groups": [
-                "Individuals",
-                "Property owners"
-              ],
+              "user_groups": ["Individuals", "Property owners"],
               "channels": [
                 {
                   "type": "ch-find",
@@ -1600,10 +1491,7 @@
               "name": "Resolve a residential tenancy dispute",
               "desc": "Use the Residential Tenancy Dispute Resolution Service (RTDRS) as a faster alternative to court for landlord-tenant disputes.",
               "users": "Landlords and tenants",
-              "user_groups": [
-                "Individuals",
-                "Property owners"
-              ],
+              "user_groups": ["Individuals", "Property owners"],
               "channels": [
                 {
                   "type": "ch-find",
@@ -1618,9 +1506,7 @@
               "name": "Resolve a municipal boundary or tax dispute",
               "desc": "Access intermunicipal dispute resolution services for boundary, tax-sharing, or service-sharing disagreements between municipalities.",
               "users": "Municipalities",
-              "user_groups": [
-                "General public"
-              ],
+              "user_groups": ["General public"],
               "channels": [
                 {
                   "type": "ch-find",
