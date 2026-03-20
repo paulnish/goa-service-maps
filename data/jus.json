@@ -125,6 +125,34 @@
               ],
               "legislation": [],
               "mandate_tags": []
+            },
+            {
+              "name": "Register or transfer a firearm",
+              "desc": "Register restricted or prohibited firearms, or complete the legal process to transfer ownership of a firearm to another person.",
+              "users": "Firearms owners buying, selling, or registering firearms",
+              "user_groups": [
+                "Firearms owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: register a firearm",
+                  "url": "https://www.alberta.ca/register-a-firearm"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: transfer a firearm",
+                  "url": "https://www.alberta.ca/transfer-a-firearm"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#455a64",
+                  "full_name": "Firearms Act (federal)  -  Registration and Transfer"
+                }
+              ],
+              "mandate_tags": []
             }
           ]
         },
@@ -714,6 +742,28 @@
               ],
               "legislation": [],
               "mandate_tags": []
+            },
+            {
+              "name": "Apply to waive a court filing fee",
+              "desc": "Request a fee waiver if you cannot afford court filing fees.",
+              "users": "Self-represented litigants with financial hardship",
+              "user_groups": [
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: waive filing fee",
+                  "url": "https://www.alberta.ca/waive-filing-fee"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Court registry",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
             }
           ]
         },
@@ -963,6 +1013,47 @@
                   "type": "ch-find",
                   "label": "alberta.ca: Indigenous court work",
                   "url": "https://www.alberta.ca/alberta-indigenous-court-work-program"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "name": "File a complaint about policing",
+          "supporting": [
+            {
+              "name": "File a policing complaint or compliment",
+              "desc": "Complain about police conduct or commend an officer. Complaints go to the police service's professional standards unit.",
+              "users": "Members of the public who interacted with police",
+              "user_groups": [
+                "Individuals",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: policing complaints",
+                  "url": "https://www.alberta.ca/policing-complaints-appeals-and-compliments"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Appeal a police complaint decision",
+              "desc": "Appeal a complaint decision to the Law Enforcement Review Board (LERB), an independent civilian oversight body.",
+              "users": "Complainants dissatisfied with a police complaint outcome",
+              "user_groups": [
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: Law Enforcement Review Board",
+                  "url": "https://www.alberta.ca/law-enforcement-review-board"
                 }
               ],
               "legislation": [],
@@ -1551,6 +1642,52 @@
                 }
               ],
               "mandate_tags": []
+            },
+            {
+              "name": "Find family violence supports",
+              "desc": "Access the Family Violence Info Line (310-1818), shelters, counselling, and intervention programs for people experiencing family violence.",
+              "users": "People experiencing or at risk of family violence",
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Family Violence Info Line: 310-1818",
+                  "url": null
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: family violence supports",
+                  "url": "https://www.alberta.ca/family-violence-find-supports"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: find shelters",
+                  "url": "https://www.alberta.ca/find-shelters"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Apply for the Escaping Abuse Benefit",
+              "desc": "Financial help to establish a household after leaving an abusive situation.",
+              "users": "People leaving abusive relationships",
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: escaping abuse",
+                  "url": "https://www.alberta.ca/family-violence-costs-leave"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
             }
           ]
         },
@@ -1725,6 +1862,23 @@
               ],
               "legislation": [],
               "mandate_tags": []
+            },
+            {
+              "name": "Get support as a family of a missing or murdered Indigenous person",
+              "desc": "The Family Information Liaison Unit provides dedicated support and information for families affected by missing or murdered Indigenous people.",
+              "users": "Families of missing or murdered Indigenous people",
+              "user_groups": [
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: Family Information Liaison Unit",
+                  "url": "https://www.alberta.ca/family-information-liaison-unit"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
             }
           ]
         },
@@ -1795,6 +1949,40 @@
                   "abbrev": "POA",
                   "color": "#6a1b9a",
                   "full_name": "Powers of Attorney Act  -  Financial Decision-Making"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Explore decision-making alternatives to guardianship",
+              "desc": "Learn about co-decision-making, supported decision-making, and specific decision-making as less restrictive alternatives to full guardianship or trusteeship.",
+              "users": "Families of adults who need decision-making support",
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: co-decision-making",
+                  "url": "https://www.alberta.ca/co-decision-making"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: supported decision-making",
+                  "url": "https://www.alberta.ca/supported-decision-making"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: specific decision-making",
+                  "url": "https://www.alberta.ca/specific-decision-making"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AGTA",
+                  "color": "#6a1b9a",
+                  "full_name": "Adult Guardianship and Trusteeship Act  -  Decision-Making Alternatives"
                 }
               ],
               "mandate_tags": []
@@ -1879,6 +2067,25 @@
               ],
               "legislation": [],
               "mandate_tags": []
+            },
+            {
+              "name": "Resolve a condominium dispute",
+              "desc": "Use the Condominium Dispute Resolution Tribunal (CDRT) for guided negotiation, mediation, or adjudication of condominium-related disputes. Launching April 1, 2026.",
+              "users": "Condo owners, condo boards",
+              "user_groups": [
+                "Individuals",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: condo dispute resolution",
+                  "url": "https://www.alberta.ca/condominium-dispute-resolution-tribunal"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "status": "coming"
             }
           ]
         },
