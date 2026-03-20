@@ -2,7 +2,7 @@
 
 Static site visualizing how Alberta government ministries deliver services to the public. Built by Paul and Tom as part of the Government of Alberta Design System initiative.
 
-**Live site:** [Netlify URL TBD]
+**Live site:** https://goa-service-maps.netlify.app
 **Paul's working copy:** [2asku.com](https://2asku.com)
 
 ## Running Locally
