@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Ministries - Service Maps</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="nav-bar">
+      <span class="current">All Ministries</span>
+    </div>
+
+    <div class="header">
+      <p class="subtitle">Government of Alberta</p>
+      <h1>Service Maps</h1>
+      <p>
+        Explore how Alberta government ministries deliver services to the
+        public.
+      </p>
+    </div>
+
+    <div class="container">
+      <h2
+        style="
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 24px;
+          color: #333;
+        "
+      >
+        Ministries
+      </h2>
+      <div
+        id="ministryGrid"
+        style="
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          gap: 24px;
+        "
+      >
+        <div style="color: #888; font-size: 14px">Loading ministries…</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Government of Alberta Service Maps | March 2026</p>
+    </div>
+
+    <script>
+      function escapeHtml(str) {
+        if (!str) return "";
+        return String(str)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+
+      document.addEventListener("DOMContentLoaded", async () => {
+        try {
+          const resp = await fetch("data/ministries.json");
+          if (!resp.ok) throw new Error("Failed to load ministries");
+          const ministries = await resp.json();
+
+          const grid = document.getElementById("ministryGrid");
+          grid.innerHTML = ministries
+            .map(
+              (m) => `
+      <div style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; background: white; transition: box-shadow 0.15s;">
+        <h3 style="font-size: 16px; font-weight: 600; color: #333; margin-bottom: 8px;">
+          <a href="${escapeHtml(m.prefix)}/service-map" style="color: #00405c; text-decoration: none;">
+            ${escapeHtml(m.short_name)}
+          </a>
+        </h3>
+        <p style="font-size: 13px; color: #666; margin-bottom: 12px; line-height: 1.5;">
+          ${escapeHtml(m.name)}
+        </p>
+        ${m.blurb ? `<p style="font-size: 12px; color: #888; margin-bottom: 16px; line-height: 1.5;">${escapeHtml(m.blurb)}</p>` : ""}
+        <a href="${escapeHtml(m.prefix)}/service-map" style="display: inline-block; padding: 8px 16px; background: #00405c; color: white; text-decoration: none; border-radius: 4px; font-size: 13px; font-weight: 500;">
+          View Service Map
+        </a>
+      </div>
+    `,
+            )
+            .join("");
+        } catch (err) {
+          document.getElementById("ministryGrid").innerHTML =
+            '<div style="color: #c00; font-size: 14px;">Error loading ministries. Check that data/ministries.json exists.</div>';
+        }
+      });
+    </script>
+  </body>
+</html>

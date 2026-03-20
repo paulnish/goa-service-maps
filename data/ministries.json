@@ -1,0 +1,14 @@
+[
+  {
+    "prefix": "tec",
+    "name": "Transportation and Economic Corridors",
+    "short_name": "Transportation & Economic Corridors",
+    "blurb": "Plans, builds, operates, and maintains Alberta's highway network, trade corridors, water infrastructure, and municipal transportation -- connecting communities and enabling economic growth."
+  },
+  {
+    "prefix": "alss",
+    "name": "Assisted Living and Social Services",
+    "short_name": "Assisted Living & Social Services",
+    "blurb": "Supports Albertans through employment supports, disability supports, prevention of elder abuse, community well-being, housing stability, health benefits, and financial assistance programs."
+  }
+]

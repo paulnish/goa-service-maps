@@ -1,0 +1,60 @@
+[build]
+  publish = "."
+
+# Clean URLs — replaces .htaccess rewrite rules
+
+# Ministry shortcut: /tec → service map
+[[redirects]]
+  from = "/tec"
+  to = "/tec/service-map.html"
+  status = 200
+
+[[redirects]]
+  from = "/tec/"
+  to = "/tec/service-map"
+  status = 301
+
+# Ministry shortcut: /alss → service map
+[[redirects]]
+  from = "/alss"
+  to = "/alss/service-map.html"
+  status = 200
+
+[[redirects]]
+  from = "/alss/"
+  to = "/alss/service-map"
+  status = 301
+
+# Clean URLs for ministry pages
+[[redirects]]
+  from = "/tec/service-map"
+  to = "/tec/service-map.html"
+  status = 200
+
+[[redirects]]
+  from = "/tec/legislation"
+  to = "/tec/legislation.html"
+  status = 200
+
+[[redirects]]
+  from = "/alss/service-map"
+  to = "/alss/service-map.html"
+  status = 200
+
+[[redirects]]
+  from = "/alss/legislation"
+  to = "/alss/legislation.html"
+  status = 200
+
+# Headers
+[[headers]]
+  for = "/data/*.json"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"

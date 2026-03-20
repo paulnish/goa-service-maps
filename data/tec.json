@@ -1,0 +1,1868 @@
+{
+  "prefix": "tec",
+  "full_name": "Transportation and Economic Corridors",
+  "short_name": "Transportation & Economic Corridors",
+  "blurb": "Plans, builds, operates, and maintains Alberta's highway network, trade corridors, water infrastructure, and municipal transportation -- connecting communities and enabling economic growth.",
+  "nav_name": "Transportation and Economic Corridors",
+  "has_registry_agents": true,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "title": "GOAL 1",
+      "short_name": "Alberta has a safe and efficient transportation system",
+      "legend_label": "Safe & efficient transportation",
+      "description": "The transportation system is safe and secure, supported by policies, programs, educational opportunities, and enhanced services protecting public safety",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get a driver's licence",
+          "supporting": [
+            {
+              "name": "Get a driver's licence (for a car)",
+              "desc": "The full Class 5 journey: learner's permit (Class 7) → knowledge and road tests → GDL probationary licence → full Class 5 after 2-year probation period. New residents can exchange an out-of-province licence.",
+              "users": "New drivers (16+), GDL holders upgrading to full licence, new residents exchanging out-of-province licences",
+              "user_groups": ["Individuals", "Drivers & vehicle owners"],
+              "channels": [
+                {
+                  "type": "ch-registry",
+                  "label": "Registry agent: knowledge & road tests",
+                  "url": null
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/class-5-drivers-licence",
+                  "url": "https://www.alberta.ca/class-5-drivers-licence"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: GDL steps",
+                  "url": "https://www.alberta.ca/get-drivers-licence-steps"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  s.51: Operator's Licences (Part 3, Div 1)"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Get a driver's licence (for a motorcycle)",
+              "desc": "GDL steps: Class 6 learner → Class 6 GDL → full Class 6 after 2-year probation period",
+              "users": "Motorcycle riders (16+, must hold at least a Class 7 learner)",
+              "user_groups": ["Drivers & vehicle owners"],
+              "channels": [
+                {
+                  "type": "ch-registry",
+                  "label": "Registry agent: knowledge & road tests",
+                  "url": null
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/class-6-motorcycle-licence",
+                  "url": "https://www.alberta.ca/class-6-motorcycle-licence"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  s.51: Operator's Licences (Part 3, Div 1)"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Get a commercial driver's licence",
+              "desc": "Obtain a Class 1, 2, 3, or 4 licence through knowledge and road testing. Includes mandatory entry-level training (MELT) for Class 1 and Class 2 licences.",
+              "users": "Licensed drivers seeking Class 1-4",
+              "user_groups": ["Drivers & vehicle owners"],
+              "channels": [
+                {
+                  "type": "ch-registry",
+                  "label": "Registry agent",
+                  "url": null
+                },
+                {
+                  "type": "ch-transact",
+                  "label": "eServices: book road test",
+                  "url": "https://eservices.alberta.ca/book-a-drivers-road-test.html"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Licensed training provider",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  s.51: Operator's Licences (Part 3, Div 1)"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Find and enrol in driver training",
+              "desc": "Locate a licensed driver training school and complete required courses",
+              "users": "Learner drivers, parents of teen drivers",
+              "user_groups": ["Drivers & vehicle owners"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: training school directory",
+                  "url": "https://www.alberta.ca/licensed-driver-training-schools"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  s.51: Operator's Licences (Part 3, Div 1)"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Book and take a road test",
+              "desc": "Schedule and sit a road test for any licence class",
+              "users": "All licence applicants",
+              "user_groups": ["Drivers & vehicle owners"],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "eServices: book road test",
+                  "url": "https://eservices.alberta.ca/book-a-drivers-road-test.html"
+                },
+                {
+                  "type": "ch-registry",
+                  "label": "Registry agent",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  s.51: Operator's Licences (Part 3, Div 1)"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Manage your driving documents",
+          "supporting": [
+            {
+              "name": "Renew or replace a driver's licence",
+              "desc": "Expired, lost, stolen or destroyed licence renewal",
+              "users": "All licensed drivers",
+              "user_groups": ["Drivers & vehicle owners"],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "eServices: renew licence",
+                  "url": "https://eservices.alberta.ca/driver-licence-renewals.html"
+                },
+                {
+                  "type": "ch-registry",
+                  "label": "Registry agent",
+                  "url": null
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail (form REG11197)",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  s.51: Operator's Licences (Part 3, Div 1)"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Update driving documents",
+              "desc": "Address/name changes within 14 days of change",
+              "users": "Drivers with name or address changes",
+              "user_groups": ["Drivers & vehicle owners"],
+              "channels": [
+                {
+                  "type": "ch-registry",
+                  "label": "Registry agent only",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Get a driver's abstract",
+              "desc": "Driving record, merit/demerit points, convictions, suspensions",
+              "users": "Drivers, employers, insurers",
+              "user_groups": [
+                "Drivers & vehicle owners",
+                "Industry & contractors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "eServices: buy abstract",
+                  "url": "https://eservices.alberta.ca/driver-abstract-standard.html"
+                },
+                {
+                  "type": "ch-registry",
+                  "label": "Registry agent",
+                  "url": null
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail (if outside AB)",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  s.8-11: Release of Information (Div 2)"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Get a Driver's Licence History Report",
+              "desc": "Summary of licences issued since May 2003",
+              "users": "Drivers, employers",
+              "user_groups": [
+                "Drivers & vehicle owners",
+                "Industry & contractors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-registry",
+                  "label": "Registry agent",
+                  "url": null
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail (if outside AB)",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  s.8-11: Release of Information (Div 2)"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Sign up for renewal reminders",
+              "desc": "Email reminders for licence and registration renewals",
+              "users": "All licensed drivers",
+              "user_groups": ["Drivers & vehicle owners"],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "eServices: renewal reminders",
+                  "url": "https://www.alberta.ca/vehicle-registration-renewal-reminders"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Reinstate a suspended or cancelled licence",
+              "desc": "Complete reinstatement requirements (fees, courses, medical clearance) after a suspension period ends",
+              "users": "Drivers with suspended or cancelled licences",
+              "user_groups": ["Drivers & vehicle owners"],
+              "channels": [
+                {
+                  "type": "ch-registry",
+                  "label": "Registry agent",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Driver Fitness & Monitoring",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  s.51: Operator's Licences (Part 3, Div 1)"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Register and maintain a vehicle",
+          "supporting": [
+            {
+              "name": "Register, renew, or transfer a vehicle",
+              "desc": "Complete vehicle registration and keep it current",
+              "users": "Vehicle owners",
+              "user_groups": ["Drivers & vehicle owners"],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "eServices: renew registration",
+                  "url": "https://eservices.alberta.ca/renew-passenger-vehicle-registration.html"
+                },
+                {
+                  "type": "ch-registry",
+                  "label": "Registry agent",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  s.52-53: Vehicle Registration and Plates (Part 3, Div 1)"
+                },
+                {
+                  "abbrev": "MVACA",
+                  "color": "#c65102",
+                  "full_name": "Motor Vehicle Accident Claims Act  -  s.2-3: Owner Fees and Registration"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Obtain or replace licence plates",
+              "desc": "Get valid plates for display on your vehicle",
+              "users": "Vehicle owners",
+              "user_groups": ["Drivers & vehicle owners"],
+              "channels": [
+                {
+                  "type": "ch-registry",
+                  "label": "Registry agent",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  s.52-53: Vehicle Registration and Plates (Part 3, Div 1)"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Get a vehicle inspected",
+              "desc": "Verify safety compliance for out-of-province or flagged vehicles",
+              "users": "Out-of-province or flagged vehicle owners",
+              "user_groups": ["Drivers & vehicle owners"],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Authorized inspection station",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  s.65-67: Equipment and Inspection (Part 3, Div 2)"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Check vehicle history and lien status",
+              "desc": "Look up registration, lien, and ownership information",
+              "users": "Vehicle buyers",
+              "user_groups": ["Drivers & vehicle owners"],
+              "channels": [
+                {
+                  "type": "ch-registry",
+                  "label": "Registry agent",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  s.8-11: Release of Information (Div 2)"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Transfer vehicle ownership for a private sale",
+              "desc": "Complete the registration transfer at a registry agent when buying or selling a vehicle privately",
+              "users": "Private buyers and sellers",
+              "user_groups": ["Drivers & vehicle owners"],
+              "channels": [
+                {
+                  "type": "ch-registry",
+                  "label": "Registry agent",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  s.52-53: Vehicle Registration and Plates (Part 3, Div 1)"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Get an in-transit permit",
+              "desc": "Buy a temporary permit online to move an unregistered, salvage, or unplated vehicle for up to 7 days",
+              "users": "Vehicle owners, dealers, repair shops",
+              "user_groups": [
+                "Drivers & vehicle owners",
+                "Industry & contractors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "eServices: in-transit permit",
+                  "url": "https://eservices.alberta.ca/vehicles-and-transport"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  s.52-53: Vehicle Registration and Plates (Part 3, Div 1)"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "name": "Plan a safe trip on Alberta's roads",
+          "supporting": [
+            {
+              "name": "Check highway conditions before travelling",
+              "desc": "Get real-time road, construction, and incident updates",
+              "users": "Travellers, commuters, truckers",
+              "user_groups": [
+                "Drivers & vehicle owners",
+                "Industry & contractors",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Dial 511",
+                  "url": null
+                },
+                {
+                  "type": "ch-check",
+                  "label": "511: road conditions",
+                  "url": "https://511.alberta.ca"
+                },
+                {
+                  "type": "ch-app",
+                  "label": "511 mobile app",
+                  "url": "https://511.alberta.ca/about/mobileapp"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  Part 5: General Operation of Vehicles"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 11,
+                  "tip": "Build and operate a safer transportation system"
+                }
+              ]
+            },
+            {
+              "name": "Check road restrictions and seasonal bans",
+              "desc": "Verify whether roads are open, restricted, or closed due to conditions or maintenance",
+              "users": "Commercial carriers, travellers",
+              "user_groups": ["Industry & contractors", "General public"],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "511: road conditions",
+                  "url": "https://511.alberta.ca"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Email subscription",
+                  "url": "https://511.alberta.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  s.13-17: Municipalities and Other Authorities (Div 3)"
+                },
+                {
+                  "abbrev": "HDPA",
+                  "color": "#007a3d",
+                  "full_name": "Highways Development and Protection Act  -  s.11-23: Controlled Highways and Access"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Find road safety information",
+              "desc": "Access guidance on impaired driving, distracted driving, pedestrian and cyclist safety, and school zones",
+              "users": "All road users, educators",
+              "user_groups": ["General public"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: driving safety",
+                  "url": "https://www.alberta.ca/driving-safety-topic"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  Part 5: General Operation of Vehicles"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 11,
+                  "tip": "Build and operate a safer transportation system"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "name": "Deal with a traffic incident or violation",
+          "supporting": [
+            {
+              "name": "Pay a traffic fine",
+              "desc": "Resolve fines and penalties",
+              "users": "Traffic offenders",
+              "user_groups": ["Drivers & vehicle owners"],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "SafeRoads Alberta: pay fine",
+                  "url": "https://saferoads.alberta.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  Part 4: Disqualification from Driving"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Report a vehicle collision online",
+              "desc": "File a collision report for non-injury incidents meeting the $5,000 damage threshold and receive a digital damage sticker for insurance and repair",
+              "users": "Drivers involved in minor collisions",
+              "user_groups": ["Drivers & vehicle owners"],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Report My Collision",
+                  "url": "https://report-my-collision.alberta.ca"
+                },
+                {
+                  "type": "ch-transact",
+                  "label": "eCollision",
+                  "url": "https://report-my-collision.alberta.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  s.69-75: Accidents (Part 3, Div 2)"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 11,
+                  "tip": "Build and operate a safer transportation system"
+                }
+              ]
+            },
+            {
+              "name": "Report a road hazard or safety concern",
+              "desc": "Report potholes, damaged signs, unsafe intersections, or other highway maintenance issues to the regional office",
+              "users": "All road users",
+              "user_groups": ["General public"],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Regional offices",
+                  "url": null
+                },
+                {
+                  "type": "ch-email",
+                  "label": "311 / regional contacts",
+                  "url": "https://www.alberta.ca/driving-safety-topic"
+                },
+                {
+                  "type": "ch-app",
+                  "label": "511 Highway Reporter app",
+                  "url": "https://511.alberta.ca/about/mobileapp"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HDPA",
+                  "color": "#007a3d",
+                  "full_name": "Highways Development and Protection Act  -  s.11-23: Controlled Highways and Access"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 11,
+                  "tip": "Build and operate a safer transportation system"
+                }
+              ]
+            },
+            {
+              "name": "Appeal a driving penalty or suspension",
+              "desc": "Request a review of administrative penalties, licence suspensions, or vehicle seizures through SafeRoads Alberta",
+              "users": "Drivers facing suspension or penalties",
+              "user_groups": ["Drivers & vehicle owners"],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "SafeRoads Alberta: file appeal",
+                  "url": "https://saferoads.alberta.ca"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  Part 2: Reviews"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Request a copy of a collision report",
+              "desc": "Order your official Alberta Collision Report for insurance or legal purposes ($15 fee)",
+              "users": "Drivers involved in collisions, insurers",
+              "user_groups": [
+                "Drivers & vehicle owners",
+                "Industry & contractors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "eServices: collision report",
+                  "url": "https://eservices.alberta.ca/alberta-collision-report.html"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  s.69-75: Accidents (Part 3, Div 2)"
+                },
+                {
+                  "abbrev": "MVACA",
+                  "color": "#c65102",
+                  "full_name": "Motor Vehicle Accident Claims Act  -  s.5-17: Claims Process"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "name": "Run a commercial vehicle operation",
+          "supporting": [
+            {
+              "name": "Start a commercial carrier operation",
+              "desc": "Complete pre-entry requirements to operate as a commercial carrier",
+              "users": "New commercial carriers",
+              "user_groups": ["Industry & contractors"],
+              "channels": [
+                {
+                  "type": "ch-mail",
+                  "label": "Mail application",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Phone",
+                  "url": null
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Email",
+                  "url": "mailto:carrier.services@gov.ab.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  Part 7, Div 1: Operation of Commercial Vehicles"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Get a permit for an oversized or overweight load",
+              "desc": "Get authorization for vehicles exceeding standard dimension/weight limits",
+              "users": "Carriers with oversized loads",
+              "user_groups": ["Industry & contractors"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "TRAVIS: apply for permits",
+                  "url": "https://eservices.alberta.ca/oversize-and-overweight-permits.html"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "TRAVIS agents",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Central Permit Office",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  s.62: Permits (Part 3, Div 1)"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Register for inter-provincial vehicle operation",
+              "desc": "Calculate and pay registration fees for inter-provincial/international travel",
+              "users": "Inter-provincial carriers",
+              "user_groups": ["Industry & contractors"],
+              "channels": [
+                {
+                  "type": "ch-registry",
+                  "label": "Registry agent",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  Part 7, Div 1: Operation of Commercial Vehicles"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Get certified to transport dangerous goods",
+              "desc": "Meet provincial regulations for moving dangerous goods on Alberta roads",
+              "users": "Dangerous goods carriers",
+              "user_groups": ["Industry & contractors"],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta EDGE (24/7)",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "DGTHA",
+                  "color": "#d32f2f",
+                  "full_name": "Dangerous Goods Transportation and Handling Act  -  s.1-5: Definitions and Administration"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Get authorization to haul logs",
+              "desc": "Get authorization to operate log trucks above standard dimension/weight limits",
+              "users": "Forestry haulers",
+              "user_groups": ["Industry & contractors"],
+              "channels": [
+                {
+                  "type": "ch-email",
+                  "label": "Email",
+                  "url": "mailto:carrier.services@gov.ab.ca"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Phone",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HDPA",
+                  "color": "#007a3d",
+                  "full_name": "Highways Development and Protection Act  -  s.6-8: Forestry Roads"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Check your carrier safety rating",
+              "desc": "View your National Safety Code profile, safety fitness rating, and audit results",
+              "users": "Active commercial carriers",
+              "user_groups": ["Industry & contractors"],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Carrier Profile portal",
+                  "url": "https://www.alberta.ca/carrier-profiles-and-monitoring"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Carrier Services",
+                  "url": null
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Email",
+                  "url": "mailto:carrier.services@gov.ab.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  Part 7, Div 2: Commercial Vehicle Compliance"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "name": "Operate a ride-for-hire service",
+          "supporting": [
+            {
+              "name": "Register as a ride-for-hire driver or company",
+              "desc": "Meet driver, vehicle, insurance, and recordkeeping requirements",
+              "users": "New TNC drivers and companies",
+              "user_groups": ["Industry & contractors"],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "TNC application form (PDF)",
+                  "url": "https://www.alberta.ca/system/files/custom_downloaded_images/tr-tnc-application-form.pdf"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail to Red Deer",
+                  "url": null
+                },
+                {
+                  "type": "ch-email",
+                  "label": "nsc@gov.ab.ca",
+                  "url": "mailto:nsc@gov.ab.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  Part 6.1: Transportation Network Companies"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Demonstrate vehicle and insurance compliance",
+              "desc": "Prove TNC vehicles meet provincial operating standards",
+              "users": "Active TNC operators",
+              "user_groups": ["Industry & contractors"],
+              "channels": [
+                {
+                  "type": "ch-mail",
+                  "label": "Mail",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Phone",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#0070c0",
+                  "full_name": "Traffic Safety Act  -  Part 6.1: Transportation Network Companies"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "id": "2.a Performance Measure",
+          "name": "Combined fatal & major injury collision rate per 100,000 population",
+          "target": "47.0",
+          "target_label": "-> 42.1 by 2027-28"
+        }
+      ],
+      "css_class": "goal-1"
+    },
+    {
+      "number": 2,
+      "color": "#007a3d",
+      "title": "GOAL 2",
+      "short_name": "Alberta's economic corridors are expanded to enable market access",
+      "legend_label": "Economic corridors & market access",
+      "description": "Strategic economic corridor investments and innovation support Alberta's economic growth",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Move goods to market via trade corridors",
+          "supporting": [
+            {
+              "name": "Find trade corridor plans and routes",
+              "desc": "View the province's CANAMEX, Asia-Pacific, and East-West corridor strategies, route maps, and investment rationale",
+              "users": "Industry, trade associations, municipalities",
+              "user_groups": ["Industry & contractors", "Municipalities"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: economic corridors",
+                  "url": "https://www.alberta.ca/economic-corridors"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "economic.corridors@gov.ab.ca",
+                  "url": "mailto:economic.corridors@gov.ab.ca"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "780-638-4718",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HDPA",
+                  "color": "#007a3d",
+                  "full_name": "Highways Development and Protection Act  -  s.2-5: Designation of Highways"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 8,
+                  "tip": "Develop economic corridors incl. Highway 686"
+                }
+              ]
+            },
+            {
+              "name": "See where highway investment is planned",
+              "desc": "Access published corridor capital project rankings, criteria, and the Provincial Construction Program",
+              "users": "Industry, government partners, municipalities",
+              "user_groups": ["Industry & contractors", "Municipalities"],
+              "channels": [
+                {
+                  "type": "ch-pub",
+                  "label": "Publication (PDF)",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HDPA",
+                  "color": "#007a3d",
+                  "full_name": "Highways Development and Protection Act  -  s.2-5: Designation of Highways"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 5,
+                  "tip": "Remove barriers to airport growth and expand international connectivity"
+                }
+              ]
+            },
+            {
+              "name": "Get your railway inspected and certified",
+              "desc": "Ensure railways are properly constructed, investigate incidents, enforce legislation",
+              "users": "Railway operators",
+              "user_groups": ["Industry & contractors"],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Phone",
+                  "url": null
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Email",
+                  "url": "mailto:railway.safety@gov.ab.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "RAA",
+                  "color": "#795548",
+                  "full_name": "Railway (Alberta) Act  -  Part 1: Approvals Governing Railways"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ],
+          "foundational": [
+            {
+              "name": "Highway twinning and capacity expansion",
+              "desc": "Multi-year construction programs to increase capacity on critical trade routes (e.g., Highway 3 Taber-Lethbridge, Highway 686 northern corridor)",
+              "legislation": [
+                {
+                  "abbrev": "HDPA",
+                  "color": "#007a3d",
+                  "full_name": "Highways Development and Protection Act - s.9: Construction and Maintenance"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 8,
+                  "tip": "Develop economic corridors incl. Highway 686"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Compete for highway construction projects",
+          "supporting": [
+            {
+              "name": "See upcoming highway construction projects",
+              "desc": "Publish 3-year capital plan ($2.8B roads/bridges, $2B rehabilitation in Budget 2026)",
+              "users": "Construction industry, public",
+              "user_groups": ["Industry & contractors", "General public"],
+              "channels": [
+                {
+                  "type": "ch-pub",
+                  "label": "Capital plan PDF",
+                  "url": null
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: capital plan",
+                  "url": "https://www.alberta.ca/capital-plan"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HDPA",
+                  "color": "#007a3d",
+                  "full_name": "Highways Development and Protection Act  -  s.9: Construction and Maintenance"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 9,
+                  "tip": "Expand and improve Alberta's highway network and bridge infrastructure"
+                }
+              ]
+            },
+            {
+              "name": "Find and bid on highway construction contracts",
+              "desc": "Procure contractors for highway and bridge projects",
+              "users": "Contractors, suppliers",
+              "user_groups": ["Industry & contractors"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Alberta Purchasing Connection: tender",
+                  "url": "https://purchasing.alberta.ca"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: gov contracts",
+                  "url": "https://www.alberta.ca/find-and-compete-for-government-contracts"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HDPA",
+                  "color": "#007a3d",
+                  "full_name": "Highways Development and Protection Act  -  s.9: Construction and Maintenance"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ],
+          "foundational": [
+            {
+              "name": "Highway pavement resurfacing and repair",
+              "desc": "Rehabilitation and surface treatment across 64,000+ lane km of provincial highways to maintain ride quality and safety",
+              "mandate_tags": [
+                {
+                  "number": 9,
+                  "tip": "Expand and improve Alberta's highway network and bridge infrastructure"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HDPA",
+                  "color": "#007a3d",
+                  "full_name": "Highways Development and Protection Act  -  s.9: Construction and Maintenance (foundational)"
+                }
+              ]
+            },
+            {
+              "name": "Bridge inspection, construction, and rehabilitation",
+              "desc": "Ongoing maintenance and lifecycle management of ~4,900 provincial bridges and interchanges",
+              "mandate_tags": [
+                {
+                  "number": 9,
+                  "tip": "Expand and improve Alberta's highway network and bridge infrastructure"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HDPA",
+                  "color": "#007a3d",
+                  "full_name": "Highways Development and Protection Act  -  s.9: Construction and Maintenance (foundational)"
+                }
+              ]
+            },
+            {
+              "name": "Regional highway construction delivery",
+              "desc": "Project delivery across North Central, Central, Peace, and South regions - managed by regional offices with contracted construction firms",
+              "legislation": [
+                {
+                  "abbrev": "HDPA",
+                  "color": "#007a3d",
+                  "full_name": "Highways Development and Protection Act - s.9: Construction and Maintenance"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 9,
+                  "tip": "Expand and improve Alberta's highway network and bridge infrastructure"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Follow Alberta's passenger rail plans",
+          "supporting": [
+            {
+              "name": "See what's planned for passenger rail",
+              "desc": "Access the provincial rail strategy, proposed routes (intercity, commuter, mountain, airport), and 15-year delivery timeline",
+              "users": "General public, commuters",
+              "user_groups": ["General public"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: passenger rail",
+                  "url": "https://www.alberta.ca/passenger-rail"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "passengerrail@gov.ab.ca",
+                  "url": "mailto:passengerrail@gov.ab.ca"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Rail vision PDF",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "RAA",
+                  "color": "#795548",
+                  "full_name": "Railway (Alberta) Act  -  Part 2, Div 1: Operation of All Railways"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Finalize planning and timelines for the Passenger Rail Strategy"
+                }
+              ]
+            },
+            {
+              "name": "Have your say on passenger rail plans",
+              "desc": "Provide input on proposed intercity, commuter, and mountain routes and station locations",
+              "users": "Route-area residents, commuters",
+              "user_groups": ["General public"],
+              "channels": [
+                {
+                  "type": "ch-engage",
+                  "label": "Rail engagement portal",
+                  "url": "https://www.alberta.ca/passenger-rail-engagement"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "passengerrail@gov.ab.ca",
+                  "url": "mailto:passengerrail@gov.ab.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "RAA",
+                  "color": "#795548",
+                  "full_name": "Railway (Alberta) Act  -  Part 2, Div 1: Operation of All Railways"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Finalize planning and timelines for the Passenger Rail Strategy"
+                }
+              ]
+            },
+            {
+              "name": "Access rail corridor studies and data",
+              "desc": "Access completed and in-progress studies for Calgary-Edmonton, metro commuter, mountain, and airport connector corridors",
+              "users": "Municipalities, transit agencies",
+              "user_groups": ["Municipalities"],
+              "channels": [
+                {
+                  "type": "ch-pub",
+                  "label": "Feasibility studies",
+                  "url": null
+                },
+                {
+                  "type": "ch-email",
+                  "label": "passengerrail@gov.ab.ca",
+                  "url": "mailto:passengerrail@gov.ab.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "RAA",
+                  "color": "#795548",
+                  "full_name": "Railway (Alberta) Act  -  Part 2, Div 2: Public Railways"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Finalize planning and timelines for the Passenger Rail Strategy"
+                },
+                {
+                  "number": 4,
+                  "tip": "Plan YEG Airport connector to Edmonton's LRT"
+                }
+              ]
+            },
+            {
+              "name": "Align your LRT plans with provincial rail",
+              "desc": "Work with the province to align Calgary and Edmonton light rail expansion with the future provincial rail network",
+              "users": "Calgary & Edmonton transit agencies",
+              "user_groups": ["Municipalities"],
+              "channels": [
+                {
+                  "type": "ch-email",
+                  "label": "passengerrail@gov.ab.ca",
+                  "url": "mailto:passengerrail@gov.ab.ca"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Ministry contact",
+                  "url": "https://www.alberta.ca/transportation-and-economic-corridors"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "RAA",
+                  "color": "#795548",
+                  "full_name": "Railway (Alberta) Act  -  Part 2, Div 2: Public Railways"
+                },
+                {
+                  "abbrev": "PTGIPA",
+                  "color": "#8e24aa",
+                  "full_name": "Public Transit and Green Infrastructure Project Act  -  s.1-7: Transit Funding Commitments"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 2,
+                  "tip": "Advance Blue Line LRT extension  -  complete by 2030"
+                },
+                {
+                  "number": 3,
+                  "tip": "Complete the downtown-to-Shepherd Green Line"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "id": "1.a Performance Measure",
+          "name": "% of TEC capital plan allocated to existing or planned economic corridors",
+          "target": "75%",
+          "target_label": "target (2025-28)"
+        },
+        {
+          "id": "1.b Performance Measure",
+          "name": "% of commercial truck driver job vacancies vs. licensed commercial drivers",
+          "target": "1.36%",
+          "target_label": "-> 1.32% by 2027-28"
+        }
+      ],
+      "css_class": "goal-2"
+    },
+    {
+      "number": 3,
+      "color": "#c65102",
+      "title": "GOAL 3",
+      "short_name": "Alberta communities are supported with reliable infrastructure",
+      "legend_label": "Community & municipal support",
+      "description": "Alberta's transportation network and water management infrastructure is maintained effectively and responsibly, ensuring long-term sustainability and affordability",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get provincial funding for municipal infrastructure",
+          "supporting": [
+            {
+              "name": "Apply for road and bridge grants",
+              "desc": "Request STIP funding for local roads, bridges, and transit projects",
+              "users": "Municipal governments",
+              "user_groups": ["Municipalities"],
+              "channels": [
+                {
+                  "type": "ch-email",
+                  "label": "Regional Infrastructure Managers",
+                  "url": "https://www.alberta.ca/grants-and-funding-for-municipalities"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Regional offices",
+                  "url": null
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Nov 30 deadline",
+                  "url": null
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "Municipal Grants Mgmt App: apply",
+                  "url": "https://www.alberta.ca/municipal-grants-management-application"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 10,
+                  "tip": "Partner with rural municipalities on water, bridge, and road infrastructure"
+                }
+              ]
+            },
+            {
+              "name": "Find grants you're eligible for",
+              "desc": "Browse the grants portal to identify eligible funding programs",
+              "users": "Municipal grant coordinators",
+              "user_groups": ["Municipalities"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: grants & funding",
+                  "url": "https://www.alberta.ca/grants-and-funding-for-municipalities"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "See how much grant funding your area received",
+              "desc": "View provincial and federal grant allocations across Alberta",
+              "users": "Municipal officials, MLAs",
+              "user_groups": ["Municipalities"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: grants & funding",
+                  "url": "https://www.alberta.ca/grants-and-funding-for-municipalities"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Grant allocation reports",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Borrow for municipal capital projects",
+              "desc": "Request Government of Alberta loans for eligible municipal capital projects",
+              "users": "Municipal treasurers",
+              "user_groups": ["Municipalities"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: local authority loans",
+                  "url": "https://www.alberta.ca/loans-to-local-authorities"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Loan application forms (PDF)",
+                  "url": "https://www.alberta.ca/loans-to-local-authorities#jumplinks-2"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "localauthorityloans@gov.ab.ca",
+                  "url": "mailto:localauthorityloans@gov.ab.ca"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Phone",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Apply for water and wastewater infrastructure funding",
+              "desc": "Request grants for municipal water supply, treatment, disposal facilities, and regional water systems through the Water for Life program",
+              "users": "Municipalities, Métis Settlements, regional water commissions",
+              "user_groups": ["Municipalities", "Indigenous communities"],
+              "channels": [
+                {
+                  "type": "ch-email",
+                  "label": "Transportation Regional Office",
+                  "url": "https://www.alberta.ca/grants-and-funding-for-municipalities"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail application",
+                  "url": null
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "Municipal Grants Mgmt App: apply",
+                  "url": "https://www.alberta.ca/municipal-grants-management-application"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 10,
+                  "tip": "Partner with rural municipalities on water, bridge, and road infrastructure"
+                },
+                {
+                  "number": 6,
+                  "tip": "Implement First Nations Regional Drinking Water Tie-In Program"
+                }
+              ]
+            }
+          ],
+          "foundational": [
+            {
+              "name": "Flood mitigation infrastructure delivery",
+              "desc": "Design and construction of flood barriers, berms, diversions, and dry dams across southern Alberta (post-2013 flood program)",
+              "legislation": [],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Access provincial community funding programs",
+          "supporting": [
+            {
+              "name": "Apply for FCSS funding",
+              "desc": "Request Family and Community Support Services grants for preventive social programs",
+              "users": "Municipalities, Métis Settlements",
+              "user_groups": ["Municipalities", "Indigenous communities"],
+              "channels": [
+                {
+                  "type": "ch-email",
+                  "label": "fcssadmin@gov.ab.ca",
+                  "url": "mailto:fcssadmin@gov.ab.ca"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "FCSS portal: apply & report",
+                  "url": "https://www.alberta.ca/family-and-community-support-services-fcss-program"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Phone",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FCSSA",
+                  "color": "#00838f",
+                  "full_name": "Family and Community Support Services Act  -  s.2-6: Municipal FCSS Programs"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Set up a community revitalization levy",
+              "desc": "Request CRL designation to catalyse investment in underserved areas using incremental tax revenue",
+              "users": "Municipalities with CRL zones",
+              "user_groups": ["Municipalities"],
+              "channels": [
+                {
+                  "type": "ch-email",
+                  "label": "crlprogram@gov.ab.ca",
+                  "url": "mailto:crlprogram@gov.ab.ca"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Phone",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Apply for provincial transit capital funding",
+              "desc": "Request legislated provincial funding for LRT and other public transit expansion projects",
+              "users": "Calgary, Edmonton, other transit authorities",
+              "user_groups": ["Municipalities"],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Ministry contact",
+                  "url": "https://www.alberta.ca/transportation-and-economic-corridors"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Ministry contact",
+                  "url": "https://www.alberta.ca/transportation-and-economic-corridors"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PTGIPA",
+                  "color": "#8e24aa",
+                  "full_name": "Public Transit and Green Infrastructure Project Act  -  s.1-7: Transit Funding Commitments"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 2,
+                  "tip": "Advance Blue Line LRT extension  -  complete by 2030"
+                },
+                {
+                  "number": 3,
+                  "tip": "Complete the downtown-to-Shepherd Green Line"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "id": "3.a Performance Measure",
+          "name": "Physical condition of provincial highway surfaces",
+          "target": "58%",
+          "target_label": "good (target 2025-28)"
+        },
+        {
+          "id": "3.b Performance Measure",
+          "name": "Winter maintenance completed within contract requirements",
+          "target": "95%",
+          "target_label": "target (2025-28)"
+        },
+        {
+          "id": "3.c Performance Measure",
+          "name": "Tonnes of asphalt surface treatment on paved highways",
+          "target": "85,000",
+          "target_label": "tonnes target (2025-28)"
+        }
+      ],
+      "css_class": "goal-3"
+    }
+  ],
+  "mandate_date": "September 22, 2025",
+  "mandate_minister": "Devin Dreeshen",
+  "mandate_pdf": "https://open.alberta.ca/dataset/b0769b96-7a45-40b5-b57c-415ff82aca49/resource/71a5bc04-ce3d-4436-b15f-ca0b6f2a0f19/download/tec-mandate-letter-transportation-and-economic-corridors-2025.pdf",
+  "cross_cutting": [
+    "Transportation policies & technical guidelines",
+    "Election signs on highways",
+    "Alberta.ca Account (eServices)",
+    "Registry agent network",
+    "SafeRoads Alberta",
+    "Registrar reconsideration process",
+    "Provincial construction program data",
+    "Annual reports & business plans",
+    "Automated traffic enforcement oversight",
+    "Red tape reduction"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Finalize planning and timelines for the Passenger Rail Strategy",
+      "mapping": "-> Travel by passenger rail (Learn about vision, Participate in engagement, Review feasibility)"
+    },
+    {
+      "number": 2,
+      "text": "Advance the Blue Line LRT extension  -  construction complete by 2030",
+      "mapping": "-> Fund municipal public transit expansion; Coordinate municipal LRT integration"
+    },
+    {
+      "number": 3,
+      "text": "Complete the downtown-to-Shepherd Green Line",
+      "mapping": "-> Fund municipal public transit expansion; Coordinate municipal LRT integration"
+    },
+    {
+      "number": 4,
+      "text": "Plan YEG Airport connector to Edmonton's LRT system",
+      "mapping": "-> Review corridor feasibility assessments"
+    },
+    {
+      "number": 5,
+      "text": "Remove barriers to airport growth and expand international connectivity",
+      "mapping": "-> Prioritize corridor capital investments  |  Cross-ministry: Jobs/Economy/Trade, Tourism"
+    },
+    {
+      "number": 6,
+      "text": "Implement First Nations Regional Drinking Water Tie-In Program",
+      "mapping": "-> Apply for regional water supply grants  |  Cross-ministry: Indigenous Relations"
+    },
+    {
+      "number": 7,
+      "text": "Accelerate integrated water program for residential, industrial, and agricultural use",
+      "mapping": "-> Plan and deliver flood mitigation projects  |  Cross-ministry: Associate Minister of Water, Municipal Affairs"
+    },
+    {
+      "number": 8,
+      "text": "Develop economic corridors including Highway 686",
+      "mapping": "-> Plan and develop trade corridor infrastructure; Twin and expand key trade highways"
+    },
+    {
+      "number": 9,
+      "text": "Expand and improve Alberta's highway network and bridge infrastructure",
+      "mapping": "-> Build and maintain highway network (Plan, Deliver, Inspect bridges, Resurface)"
+    },
+    {
+      "number": 10,
+      "text": "Partner with rural municipalities on water, bridge, and local road infrastructure",
+      "mapping": "-> Apply for transportation infrastructure grants; Apply for water/wastewater funding; Regional water supply"
+    },
+    {
+      "number": 11,
+      "text": "Build and operate a safer transportation system",
+      "mapping": "-> Check highway conditions; Report traffic safety concerns"
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-transact",
+      "label": "Online transaction",
+      "bg_color": "#c8e6c9",
+      "text_color": "#1b5e20"
+    },
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-app",
+      "label": "Mobile app",
+      "bg_color": "#e0f2f1",
+      "text_color": "#00695c"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-email",
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    {
+      "code": "ch-mail",
+      "label": "Mail",
+      "bg_color": "#f3e5f5",
+      "text_color": "#6a1b9a"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    {
+      "code": "ch-registry",
+      "label": "Registry agent",
+      "bg_color": "#fff8e1",
+      "text_color": "#f57f17"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    },
+    {
+      "code": "ch-pub",
+      "label": "Publication",
+      "bg_color": "#f5f5f5",
+      "text_color": "#616161"
+    },
+    {
+      "code": "ch-engage",
+      "label": "Engage",
+      "bg_color": "#e1bee7",
+      "text_color": "#6a1b9a"
+    }
+  ],
+  "user_group_filters": [
+    "Individuals",
+    "General public",
+    "Municipalities",
+    "Indigenous communities",
+    "Industry & contractors",
+    "Drivers & vehicle owners"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg_color": "#c8e6c9",
+      "text_color": "#1b5e20"
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg_color": "#e0f2f1",
+      "text_color": "#00695c"
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg_color": "#f3e5f5",
+      "text_color": "#6a1b9a"
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    "ch-registry": {
+      "label": "Registry agent",
+      "bg_color": "#fff8e1",
+      "text_color": "#f57f17"
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg_color": "#f5f5f5",
+      "text_color": "#616161"
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg_color": "#e1bee7",
+      "text_color": "#6a1b9a"
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    }
+  },
+  "digital_channels": [
+    "ch-email",
+    "ch-web",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-transact",
+    "ch-app",
+    "ch-apply"
+  ]
+}
