@@ -1,0 +1,1832 @@
+{
+  "prefix": "fp",
+  "full_name": "Forestry and Parks",
+  "short_name": "Forestry & Parks",
+  "blurb": "Protects and manages Alberta's forests, wildfire response, and provincial parks — overseeing sustainable forest management, timber allocation, wildfire prevention and suppression, and outdoor recreation on public lands.",
+  "nav_name": "Forestry & Parks",
+  "has_registry_agents": false,
+  "_status": "COMPLETE — Pass 2. 3 goals, 29 supporting services, 0 ministry foundational, 6 goal-level foundational. All 29 services have legislation tags, reach estimates, and economic_impact. Channel audit added 6 phone channels. User group audit expanded 7 services.",
+  "foundational_services": [],
+  "goals": [
+    {
+      "number": 1,
+      "color": "#2e7d32",
+      "title": "OUTCOME 1: Alberta's forests are sustainably managed and support a responsible forest products sector",
+      "short_name": "Sustainable forest management",
+      "legend_label": "Forests",
+      "description": "The ministry manages Alberta's forests as a long-term public resource — setting management standards, certifying forestry professionals, training the workforce, allocating timber harvesting rights through the forest tenure system, collecting Crown fees and dues, and supporting Alberta's forest business and trade access.",
+      "foundational_services": [
+        {
+          "name": "Monitor and manage forest health threats",
+          "desc": "Surveillance and management of mountain pine beetle, spruce budworm, and other forest pests and diseases across Alberta's forests.",
+          "users": "Government forest managers, researchers, industry",
+          "user_groups": [
+            "Businesses & employers",
+            "Researchers & academics"
+          ],
+          "taxonomy": {
+            "track": "business",
+            "tier": "industry_specific",
+            "domain": "forestry",
+            "relationships": []
+          },
+          "channels": [
+            {
+              "type": "ch-find",
+              "label": "alberta.ca/forest-health-and-adaptation",
+              "url": "https://www.alberta.ca/forest-health-and-adaptation"
+            },
+            {
+              "type": "ch-find",
+              "label": "alberta.ca/mountain-pine-beetle-in-alberta",
+              "url": "https://www.alberta.ca/mountain-pine-beetle-in-alberta"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "FA",
+              "color": "#2e7d32",
+              "full_name": "Forests Act"
+            }
+          ],
+          "mandate_tags": [
+            {
+              "number": 4,
+              "tip": "Complete the active forestry management plan for forest health, biodiversity, and carbon sequestration"
+            }
+          ]
+        },
+        {
+          "name": "Manage reforestation and seed programs",
+          "desc": "Tree improvement, seed collection, genetic resource management, and reforestation standards to maintain forest renewal after harvest or disturbance.",
+          "users": "Forest industry operators, government silviculturists",
+          "user_groups": [
+            "Businesses & employers",
+            "Researchers & academics"
+          ],
+          "taxonomy": {
+            "track": "business",
+            "tier": "industry_specific",
+            "domain": "forestry",
+            "relationships": []
+          },
+          "channels": [
+            {
+              "type": "ch-find",
+              "label": "alberta.ca/tree-improvement-and-adaptation",
+              "url": "https://www.alberta.ca/tree-improvement-and-adaptation"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "FA",
+              "color": "#2e7d32",
+              "full_name": "Forests Act"
+            }
+          ],
+          "mandate_tags": [
+            {
+              "number": 4,
+              "tip": "Complete the active forestry management plan for forest health, biodiversity, and carbon sequestration"
+            }
+          ]
+        },
+        {
+          "name": "Conduct prescribed burns for forest management",
+          "desc": "Planned and controlled burns to reduce fuel loads, maintain wildlife habitat, and promote healthy, resilient forests.",
+          "users": "Government wildfire and forest managers",
+          "user_groups": [
+            "Communities"
+          ],
+          "taxonomy": {
+            "track": "individual",
+            "tier": "societal_needs_supports",
+            "domain": "safety_emergencies",
+            "relationships": []
+          },
+          "channels": [
+            {
+              "type": "ch-find",
+              "label": "alberta.ca/prescribed-fire",
+              "url": "https://www.alberta.ca/prescribed-fire"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "FA",
+              "color": "#2e7d32",
+              "full_name": "Forests Act"
+            },
+            {
+              "abbrev": "FPPA",
+              "color": "#e65100",
+              "full_name": "Forest and Prairie Protection Act"
+            }
+          ],
+          "mandate_tags": [
+            {
+              "number": 3,
+              "tip": "Advance wildfire mitigation through proactive harvesting, public education, and expanded FireSmart/fireguard programs"
+            }
+          ]
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Manage Alberta's forests sustainably",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Access forest management standards and guidelines",
+              "desc": "Plans, guidelines, and standards for sustainable forest management in Alberta, including the Forest Management Planning Standard.",
+              "users": "Forest industry operators, professionals, and researchers",
+              "user_groups": [
+                "Businesses & employers",
+                "Researchers & academics"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Access wildfire maps and data",
+                    "ministry": "fp"
+                  }
+                ]
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/forest-management-manuals-and-guidelines",
+                  "url": "https://www.alberta.ca/forest-management-manuals-and-guidelines"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#2e7d32",
+                  "full_name": "Forests Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "tip": "Complete the active forestry management plan for forest health, biodiversity, and carbon sequestration"
+                }
+              ],
+              "reach": {
+                "tier": "medium",
+                "estimate": "~5,000 users/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Underpins $8B/yr forest sector GDP and 28,000 direct jobs"
+              }
+            },
+            {
+              "name": "Find a regulated forestry professional",
+              "desc": "Professionals regulated under the Regulated Forest Management Profession Act work with government and industry to apply sound forestry principles in Alberta.",
+              "users": "Forest industry, landowners, and the public",
+              "user_groups": [
+                "Businesses & employers",
+                "General public",
+                "Workers & job seekers"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/regulated-forestry-professionals",
+                  "url": "https://www.alberta.ca/regulated-forestry-professionals"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#2e7d32",
+                  "full_name": "Forests Act"
+                }
+              ],
+              "mandate_tags": [],
+              "reach": {
+                "tier": "low",
+                "estimate": "~500 lookups/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Workforce",
+                "category": "workforce",
+                "note": "Professional regulation ensures qualified practitioners manage Alberta's ~28M hectares of forest"
+              }
+            },
+            {
+              "name": "Get forestry and wildfire training",
+              "desc": "Technical and safety training programs for forest and wildfire management, currently delivered at the Hinton Training Centre.",
+              "users": "Forest and wildfire workers, industry partners, First Nations communities",
+              "user_groups": [
+                "Workers & job seekers",
+                "Businesses & employers",
+                "Communities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/hinton-training-centre",
+                  "url": "https://www.alberta.ca/hinton-training-centre"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#2e7d32",
+                  "full_name": "Forests Act"
+                },
+                {
+                  "abbrev": "FPPA",
+                  "color": "#e65100",
+                  "full_name": "Forest and Prairie Protection Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Advance wildfire mitigation through proactive harvesting, public education, and expanded FireSmart/fireguard programs"
+                }
+              ],
+              "reach": {
+                "tier": "medium",
+                "estimate": "~2,000 trainees/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Workforce",
+                "category": "workforce",
+                "note": "Trains wildfire and forestry workforce (~1,500 seasonal firefighters, ~5,000 forestry workers)"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Allocate timber harvesting rights",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for a timber quota",
+              "desc": "Long-term timber harvesting tenure granted under the Forests Act. Timber quotas are one of Alberta's three forest tenure systems.",
+              "users": "Forest companies and commercial timber operators",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/timber-quotas",
+                  "url": "https://www.alberta.ca/timber-quotas"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#2e7d32",
+                  "full_name": "Forests Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "tip": "Complete the active forestry management plan for forest health, biodiversity, and carbon sequestration"
+                },
+                {
+                  "number": 8,
+                  "tip": "Develop a value-added forestry tax incentive program with Jobs, Economy, Trade and Immigration"
+                }
+              ],
+              "reach": {
+                "tier": "low",
+                "estimate": "~200 quota holders",
+                "basis": "active"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Quota holders manage ~80% of Alberta's annual allowable cut; supports mill operations and rural employment"
+              }
+            },
+            {
+              "name": "Apply for a timber permit",
+              "desc": "Shorter-term commercial timber harvesting authorizations granted under the Forests Act.",
+              "users": "Forest companies, small operators, and contractors",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/timber-permits",
+                  "url": "https://www.alberta.ca/timber-permits"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#2e7d32",
+                  "full_name": "Forests Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "tip": "Complete the active forestry management plan for forest health, biodiversity, and carbon sequestration"
+                },
+                {
+                  "number": 8,
+                  "tip": "Develop a value-added forestry tax incentive program with Jobs, Economy, Trade and Immigration"
+                }
+              ],
+              "reach": {
+                "tier": "medium",
+                "estimate": "~3,000 permits/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Timber permits support sawmill supply chains and rural economic activity"
+              }
+            },
+            {
+              "name": "Pay timber dues and Crown fees",
+              "desc": "Fees paid to the Crown for timber harvested under quotas, permits, and forest management agreements.",
+              "users": "Forest industry operators",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/timber-dues-and-crown-fees",
+                  "url": "https://www.alberta.ca/timber-dues-and-crown-fees"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#2e7d32",
+                  "full_name": "Forests Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 8,
+                  "tip": "Develop a value-added forestry tax incentive program with Jobs, Economy, Trade and Immigration"
+                }
+              ],
+              "reach": {
+                "tier": "medium",
+                "estimate": "~3,200 payments/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Crown timber revenue (~$200M/yr) funds forest management and renewal"
+              }
+            },
+            {
+              "name": "Report timber damage assessment",
+              "desc": "Damage assessment process for timber lost to fire, insect, or other causes, used to adjust Crown fees and harvesting plans.",
+              "users": "Forest industry operators",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/timber-damage-assessment",
+                  "url": "https://www.alberta.ca/timber-damage-assessment"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Forestry area office",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#2e7d32",
+                  "full_name": "Forests Act"
+                }
+              ],
+              "mandate_tags": [],
+              "reach": {
+                "tier": "low",
+                "estimate": "~300 reports/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "TDA tables adjust Crown fees after natural damage; ensures fair timber royalty calculations"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Cut trees for personal use",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get a personal-use tree cutting permit",
+              "desc": "Non-commercial permits for firewood collection, transplants, and Christmas trees on Crown land, including area maps and rules.",
+              "users": "Alberta residents collecting firewood or trees for personal use",
+              "user_groups": [
+                "General public"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/tree-cutting",
+                  "url": "https://www.alberta.ca/tree-cutting"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#2e7d32",
+                  "full_name": "Forests Act"
+                }
+              ],
+              "mandate_tags": [],
+              "reach": {
+                "tier": "medium",
+                "estimate": "~8,000 permits/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Social ROI",
+                "category": "social_roi",
+                "note": "Free firewood and Christmas trees provide household cost savings; ~8,000 families/yr"
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "name": "Operate a forestry business",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Access forest business, market, and trade information",
+              "desc": "Information on Alberta's forest products sector, markets, and trade access.",
+              "users": "Forest companies, investors, and researchers",
+              "user_groups": [
+                "Businesses & employers",
+                "Researchers & academics",
+                "Workers & job seekers"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/forest-business",
+                  "url": "https://www.alberta.ca/forest-business"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#2e7d32",
+                  "full_name": "Forests Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 8,
+                  "tip": "Develop a value-added forestry tax incentive program with Jobs, Economy, Trade and Immigration"
+                }
+              ],
+              "reach": {
+                "tier": "medium",
+                "estimate": "~2,000 users/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Supports Alberta's $4B/yr in forest product exports"
+              }
+            },
+            {
+              "name": "Access forestry directives and standard operating procedures",
+              "desc": "Policy directives and SOPs that provide formal direction for Alberta's forest policy and legislation.",
+              "users": "Forest industry operators and professionals",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/forestry-directives-and-standard-operating-procedures",
+                  "url": "https://www.alberta.ca/forestry-directives-and-standard-operating-procedures"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#2e7d32",
+                  "full_name": "Forests Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "tip": "Complete the active forestry management plan for forest health, biodiversity, and carbon sequestration"
+                }
+              ],
+              "reach": {
+                "tier": "medium",
+                "estimate": "~4,000 users/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Operational compliance enables continuous harvest and reforestation cycle"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "title": "OUTCOME 2: Albertans and visitors enjoy accessible, safe outdoor recreation",
+      "short_name": "Outdoor recreation & parks",
+      "legend_label": "Parks & recreation",
+      "description": "The ministry operates Alberta's provincial parks system (500+ sites, 27,525 km²) and manages recreation access to public lands, including camping, trails, and public land use zones.",
+      "foundational_services": [
+        {
+          "name": "Maintain and develop park and trail infrastructure",
+          "desc": "Capital construction, maintenance, and upgrades to campgrounds, trails, day-use areas, and visitor facilities across the provincial parks system.",
+          "users": "Government park operations staff",
+          "user_groups": [
+            "Communities"
+          ],
+          "taxonomy": {
+            "track": "individual",
+            "tier": "societal_needs_supports",
+            "domain": "recreation_culture",
+            "relationships": []
+          },
+          "channels": [],
+          "legislation": [
+            {
+              "abbrev": "PPA",
+              "color": "#00695c",
+              "full_name": "Provincial Parks Act"
+            }
+          ],
+          "mandate_tags": [
+            {
+              "number": 5,
+              "tip": "Build 900+ new campsites by 2033 (300+ by 2027)"
+            },
+            {
+              "number": 7,
+              "tip": "Continue Kananaskis Country trail upgrades, including Highway 742"
+            }
+          ]
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Visit a provincial park",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Plan a visit to a provincial park",
+              "desc": "Provincial park locations, rules, events, maps, and planning resources across Alberta's parks and protected areas network.",
+              "users": "Alberta residents and visitors",
+              "user_groups": [
+                "General public",
+                "Visitors"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "albertaparks.ca",
+                  "url": "https://www.albertaparks.ca"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/parks-campgrounds",
+                  "url": "https://www.alberta.ca/parks-campgrounds"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PPA",
+                  "color": "#00695c",
+                  "full_name": "Provincial Parks Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Complete the Recreation and Conservation Strategy to expand public access to natural spaces"
+                }
+              ],
+              "reach": {
+                "tier": "very_high",
+                "estimate": "~10M visits/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Alberta Parks contribute ~$3.5B/yr in tourism spending"
+              }
+            },
+            {
+              "name": "Reserve a campsite",
+              "desc": "Reserve campsites, group camping areas, and comfort camping units in Alberta's provincial parks — online or by phone.",
+              "users": "Alberta residents and visitors",
+              "user_groups": [
+                "General public",
+                "Visitors"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "shop.albertaparks.ca",
+                  "url": "https://shop.albertaparks.ca"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Parks reservation line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PPA",
+                  "color": "#00695c",
+                  "full_name": "Provincial Parks Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 5,
+                  "tip": "Build 900+ new campsites by 2033 (300+ by 2027)"
+                }
+              ],
+              "reach": {
+                "tier": "very_high",
+                "estimate": "~800,000 reservations/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Campground fees and surrounding tourism spending support rural economies"
+              }
+            },
+            {
+              "name": "Buy a park conservation pass",
+              "desc": "Daily or yearly pass required in designated conservation areas. Currently covers Kananaskis Country and the Bow Valley Corridor; additional areas may be added. Revenue supports conservation.",
+              "users": "Visitors to designated park conservation areas",
+              "user_groups": [
+                "General public",
+                "Visitors"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "alberta.ca/kananaskis-conservation-pass",
+                  "url": "https://www.alberta.ca/kananaskis-conservation-pass"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PPA",
+                  "color": "#00695c",
+                  "full_name": "Provincial Parks Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 6,
+                  "tip": "Expand trails, campsites, and public land use opportunities with Alberta entrepreneurs in high-traffic areas"
+                },
+                {
+                  "number": 7,
+                  "tip": "Continue Kananaskis Country trail upgrades, including Highway 742"
+                }
+              ],
+              "reach": {
+                "tier": "very_high",
+                "estimate": "~600,000 passes/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Conservation pass revenue funds park operations and infrastructure"
+              }
+            },
+            {
+              "name": "Check park advisories and closures",
+              "desc": "Current advisories, fire bans, public safety notices, and closures in provincial parks.",
+              "users": "Alberta residents and visitors",
+              "user_groups": [
+                "General public",
+                "Visitors",
+                "Communities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "albertaparks.ca — advisories and public safety",
+                  "url": "https://www.albertaparks.ca/albertaparks-ca/advisories-and-public-safety/"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Parks info line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PPA",
+                  "color": "#00695c",
+                  "full_name": "Provincial Parks Act"
+                }
+              ],
+              "mandate_tags": [],
+              "reach": {
+                "tier": "very_high",
+                "estimate": "~500,000 checks/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Timely advisories prevent visitor injuries and reduce search-and-rescue incidents"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Camp and explore public land",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get a Public Lands Camping Pass",
+              "desc": "Required for anyone 18 and older who random camps along the Eastern Slopes of the Rocky Mountains.",
+              "users": "Alberta residents and visitors who random camp on Crown land",
+              "user_groups": [
+                "General public"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/public-lands-camping-pass",
+                  "url": "https://www.alberta.ca/public-lands-camping-pass"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "310-LAND (310-5263)",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PLA",
+                  "color": "#5d4037",
+                  "full_name": "Public Lands Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 6,
+                  "tip": "Expand trails, campsites, and public land use opportunities with Alberta entrepreneurs in high-traffic areas"
+                }
+              ],
+              "reach": {
+                "tier": "high",
+                "estimate": "~50,000 passes/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Pass revenue supports Crown land recreation infrastructure"
+              }
+            },
+            {
+              "name": "Find a public land recreation area or trail",
+              "desc": "Designated public land recreation areas, trails, and day-use sites across Alberta's Crown land.",
+              "users": "Alberta residents and visitors",
+              "user_groups": [
+                "General public",
+                "Visitors"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/public-land-recreation-areas-and-trails",
+                  "url": "https://www.alberta.ca/public-land-recreation-areas-and-trails"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PLA",
+                  "color": "#5d4037",
+                  "full_name": "Public Lands Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Complete the Recreation and Conservation Strategy to expand public access to natural spaces"
+                },
+                {
+                  "number": 6,
+                  "tip": "Expand trails, campsites, and public land use opportunities with Alberta entrepreneurs in high-traffic areas"
+                },
+                {
+                  "number": 7,
+                  "tip": "Continue Kananaskis Country trail upgrades, including Highway 742"
+                }
+              ],
+              "reach": {
+                "tier": "very_high",
+                "estimate": "~500,000 lookups/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Social ROI",
+                "category": "social_roi",
+                "note": "Outdoor recreation linked to $3.3B/yr in health cost savings through physical activity"
+              }
+            },
+            {
+              "name": "Check Public Land Use Zone rules",
+              "desc": "Permitted activities and regulations for recreational use within Public Land Use Zones (PLUZs).",
+              "users": "Alberta residents and visitors",
+              "user_groups": [
+                "General public"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "alberta.ca/public-land-use-zones",
+                  "url": "https://www.alberta.ca/public-land-use-zones"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "310-LAND (310-5263)",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PLA",
+                  "color": "#5d4037",
+                  "full_name": "Public Lands Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Complete the Recreation and Conservation Strategy to expand public access to natural spaces"
+                }
+              ],
+              "reach": {
+                "tier": "high",
+                "estimate": "~100,000 checks/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Social ROI",
+                "category": "social_roi",
+                "note": "Clear rules reduce user conflicts and protect sensitive environmental areas"
+              }
+            },
+            {
+              "name": "Check public land closures and advisories",
+              "desc": "Current trail, area, and road closures on Crown land.",
+              "users": "Alberta residents and visitors",
+              "user_groups": [
+                "General public",
+                "Visitors"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "alberta.ca/public-land-closures",
+                  "url": "https://www.alberta.ca/public-land-closures"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "310-LAND (310-5263)",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PLA",
+                  "color": "#5d4037",
+                  "full_name": "Public Lands Act"
+                }
+              ],
+              "mandate_tags": [],
+              "reach": {
+                "tier": "high",
+                "estimate": "~80,000 checks/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Closure compliance prevents injuries and protects recovering ecosystems"
+              }
+            },
+            {
+              "name": "Access outdoor recreation maps and guides",
+              "desc": "Downloadable maps, fact sheets, and guides to help plan recreation activities on Alberta's public land.",
+              "users": "Alberta residents and visitors",
+              "user_groups": [
+                "General public",
+                "Visitors"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/lookup/outdoor-recreation-resources.aspx",
+                  "url": "https://www.alberta.ca/lookup/outdoor-recreation-resources.aspx"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PLA",
+                  "color": "#5d4037",
+                  "full_name": "Public Lands Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Complete the Recreation and Conservation Strategy to expand public access to natural spaces"
+                }
+              ],
+              "reach": {
+                "tier": "very_high",
+                "estimate": "~300,000 downloads/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Social ROI",
+                "category": "social_roi",
+                "note": "Supports safe recreational use and tourism dispersal across the province"
+              }
+            },
+            {
+              "name": "Search Crown land enforcement history",
+              "desc": "Look up enforcement records taken against a company or individual by the Lands Division. Shared delivery with Environment and Protected Areas.",
+              "users": "General public, researchers, due-diligence users",
+              "user_groups": [
+                "General public",
+                "Researchers & academics"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/lookup/crown-land-enforcement-historical-search.aspx",
+                  "url": "https://www.alberta.ca/lookup/crown-land-enforcement-historical-search.aspx"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PLA",
+                  "color": "#5d4037",
+                  "full_name": "Public Lands Act"
+                }
+              ],
+              "mandate_tags": [],
+              "reach": {
+                "tier": "low",
+                "estimate": "~1,000 lookups/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Social ROI",
+                "category": "social_roi",
+                "note": "Transparency tool supports due diligence and public accountability for Crown land use"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#e65100",
+      "title": "OUTCOME 3: Wildfire management protects communities and forest ecosystems",
+      "short_name": "Wildfire prevention & response",
+      "legend_label": "Wildfire",
+      "description": "Alberta Wildfire prevents, prepares for, and responds to wildfires in the Forest Protection Area — protecting communities, critical infrastructure, and forest ecosystems.",
+      "foundational_services": [
+        {
+          "name": "Operate wildfire detection and dispatch systems",
+          "desc": "Fire lookout towers, aerial detection patrols, lightning detection, and dispatch operations that enable early wildfire detection across the Forest Protection Area.",
+          "users": "Government wildfire operations staff",
+          "user_groups": [
+            "Communities"
+          ],
+          "taxonomy": {
+            "track": "individual",
+            "tier": "societal_needs_supports",
+            "domain": "safety_emergencies",
+            "relationships": []
+          },
+          "channels": [],
+          "legislation": [
+            {
+              "abbrev": "FPPA",
+              "color": "#e65100",
+              "full_name": "Forest and Prairie Protection Act"
+            }
+          ],
+          "mandate_tags": [
+            {
+              "number": 2,
+              "tip": "Secure a federal wildfire mitigation agreement focused on Banff, Jasper, and Waterton"
+            }
+          ]
+        },
+        {
+          "name": "Deploy and manage wildfire suppression resources",
+          "desc": "Coordination of wildfire crews, air tankers, helicopters, heavy equipment, and incident management teams during active wildfire response.",
+          "users": "Government wildfire operations staff, mutual aid partners",
+          "user_groups": [
+            "Communities"
+          ],
+          "taxonomy": {
+            "track": "individual",
+            "tier": "societal_needs_supports",
+            "domain": "safety_emergencies",
+            "relationships": []
+          },
+          "channels": [],
+          "legislation": [
+            {
+              "abbrev": "FPPA",
+              "color": "#e65100",
+              "full_name": "Forest and Prairie Protection Act"
+            }
+          ],
+          "mandate_tags": [
+            {
+              "number": 2,
+              "tip": "Secure a federal wildfire mitigation agreement focused on Banff, Jasper, and Waterton"
+            }
+          ]
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Help prevent wildfires",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get a fire permit",
+              "desc": "Required for any burning in the Forest Protection Area from March 1 to October 31, with the exception of a campfire.",
+              "users": "Residents, industry, and contractors burning in the Forest Protection Area",
+              "user_groups": [
+                "General public",
+                "Businesses & employers"
+              ],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "societal_needs_supports",
+                  "domain": "safety_emergencies"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "safety_codes_standards"
+                },
+                "relationships": [
+                  {
+                    "type": "universal_regulation",
+                    "service": "Check current fire bans and restrictions",
+                    "ministry": "fp"
+                  }
+                ]
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/get-a-fire-permit",
+                  "url": "https://www.alberta.ca/get-a-fire-permit"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FPPA",
+                  "color": "#e65100",
+                  "full_name": "Forest and Prairie Protection Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Advance wildfire mitigation through proactive harvesting, public education, and expanded FireSmart/fireguard programs"
+                }
+              ],
+              "reach": {
+                "tier": "high",
+                "estimate": "~25,000 permits/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Regulated burning prevents escaped fires; avg wildfire suppression costs $500M-$1B/yr"
+              }
+            },
+            {
+              "name": "Check current fire bans and restrictions",
+              "desc": "Live list of fire advisories, restrictions, and bans across Alberta's Forest Protection Area and parks.",
+              "users": "Alberta residents, visitors, and industry",
+              "user_groups": [
+                "General public",
+                "Visitors"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": [
+                  {
+                    "type": "universal_regulation",
+                    "service": "Get a fire permit",
+                    "ministry": "fp"
+                  }
+                ]
+              },
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "albertafirebans.ca",
+                  "url": "https://albertafirebans.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FPPA",
+                  "color": "#e65100",
+                  "full_name": "Forest and Prairie Protection Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Advance wildfire mitigation through proactive harvesting, public education, and expanded FireSmart/fireguard programs"
+                }
+              ],
+              "reach": {
+                "tier": "very_high",
+                "estimate": "~1M checks/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Compliance with bans prevents human-caused wildfires (~40% of all fires)"
+              }
+            },
+            {
+              "name": "Practise safe burning",
+              "desc": "Guidance on burning debris, agricultural burning, and other controlled burns to reduce wildfire risk.",
+              "users": "Alberta residents, farmers, and landowners",
+              "user_groups": [
+                "General public",
+                "Businesses & employers",
+                "Communities"
+              ],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "societal_needs_supports",
+                  "domain": "safety_emergencies"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "safety_codes_standards"
+                },
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/safe-burning",
+                  "url": "https://www.alberta.ca/safe-burning"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FPPA",
+                  "color": "#e65100",
+                  "full_name": "Forest and Prairie Protection Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Advance wildfire mitigation through proactive harvesting, public education, and expanded FireSmart/fireguard programs"
+                }
+              ],
+              "reach": {
+                "tier": "high",
+                "estimate": "~25,000 users/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Safe burning practices reduce escaped-fire incidents"
+              }
+            },
+            {
+              "name": "Prepare your property for wildfire (FireSmart)",
+              "desc": "FireSmart Alberta community and homeowner program to reduce wildfire risk to homes, neighbourhoods, and critical infrastructure.",
+              "users": "Homeowners, communities, and municipalities",
+              "user_groups": [
+                "General public",
+                "Communities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/firesmart",
+                  "url": "https://www.alberta.ca/firesmart"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Local FireSmart coordinator",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FPPA",
+                  "color": "#e65100",
+                  "full_name": "Forest and Prairie Protection Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Advance wildfire mitigation through proactive harvesting, public education, and expanded FireSmart/fireguard programs"
+                }
+              ],
+              "reach": {
+                "tier": "high",
+                "estimate": "~15,000 assessments/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "FireSmart reduces structure loss; 2023 Jasper/Edson fires cost $1B+ in damages"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Respond to wildfires",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Report a wildfire",
+              "desc": "Report a wildfire in Alberta's Forest Protection Area by calling 310-FIRE (310-3473) or using the online form.",
+              "users": "Alberta residents and visitors",
+              "user_groups": [
+                "General public",
+                "Visitors"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "310-FIRE (310-3473)",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/report-a-wildfire",
+                  "url": "https://www.alberta.ca/report-a-wildfire"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FPPA",
+                  "color": "#e65100",
+                  "full_name": "Forest and Prairie Protection Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 2,
+                  "tip": "Secure a federal wildfire mitigation agreement focused on Banff, Jasper, and Waterton"
+                }
+              ],
+              "reach": {
+                "tier": "medium",
+                "estimate": "~1,200 reports/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Early detection dramatically reduces suppression cost and area burned"
+              }
+            },
+            {
+              "name": "Check wildfire status",
+              "desc": "Live dashboard of current wildfire locations, sizes, status, and response in Alberta.",
+              "users": "Alberta residents, visitors, municipalities, and media",
+              "user_groups": [
+                "General public",
+                "Visitors",
+                "Communities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "alberta.ca/wildfire-status",
+                  "url": "https://www.alberta.ca/wildfire-status"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FPPA",
+                  "color": "#e65100",
+                  "full_name": "Forest and Prairie Protection Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Advance wildfire mitigation through proactive harvesting, public education, and expanded FireSmart/fireguard programs"
+                }
+              ],
+              "reach": {
+                "tier": "very_high",
+                "estimate": "~2M checks/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Public awareness enables timely evacuation and reduces emergency response costs"
+              }
+            },
+            {
+              "name": "Access wildfire maps and data",
+              "desc": "Wildfire maps, historical data, and GIS resources for research, planning, and operational use.",
+              "users": "Researchers, municipalities, industry, and the public",
+              "user_groups": [
+                "Researchers & academics",
+                "Communities",
+                "Businesses & employers",
+                "General public"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Access forest management standards and guidelines",
+                    "ministry": "fp"
+                  }
+                ]
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/wildfire-maps-and-data",
+                  "url": "https://www.alberta.ca/wildfire-maps-and-data"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FPPA",
+                  "color": "#e65100",
+                  "full_name": "Forest and Prairie Protection Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Advance wildfire mitigation through proactive harvesting, public education, and expanded FireSmart/fireguard programs"
+                }
+              ],
+              "reach": {
+                "tier": "very_high",
+                "estimate": "~500,000 views/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Data supports municipal emergency planning and insurance risk modelling"
+              }
+            },
+            {
+              "name": "Help with wildfire response",
+              "desc": "Pathways for individuals and organizations to help during active wildfire response, including contract services and volunteer opportunities.",
+              "users": "Contractors, volunteers, and partner organizations",
+              "user_groups": [
+                "Workers & job seekers",
+                "Businesses & employers",
+                "Communities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/how-you-can-help-with-wildfire-response",
+                  "url": "https://www.alberta.ca/how-you-can-help-with-wildfire-response"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FPPA",
+                  "color": "#e65100",
+                  "full_name": "Forest and Prairie Protection Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Advance wildfire mitigation through proactive harvesting, public education, and expanded FireSmart/fireguard programs"
+                }
+              ],
+              "reach": {
+                "tier": "medium",
+                "estimate": "~5,000 volunteers/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Contract crews and volunteers augment provincial capacity during peak fire seasons"
+              }
+            },
+            {
+              "name": "Apply to become a wildland firefighter",
+              "desc": "Recruitment for Alberta Wildfire's seasonal and permanent wildland firefighting positions.",
+              "users": "Job seekers interested in wildland firefighting",
+              "user_groups": [
+                "Workers & job seekers"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/alberta-wildfire-recruitment",
+                  "url": "https://www.alberta.ca/alberta-wildfire-recruitment"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FPPA",
+                  "color": "#e65100",
+                  "full_name": "Forest and Prairie Protection Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Advance wildfire mitigation through proactive harvesting, public education, and expanded FireSmart/fireguard programs"
+                }
+              ],
+              "reach": {
+                "tier": "medium",
+                "estimate": "~3,000 applicants/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Workforce",
+                "category": "workforce",
+                "note": "~1,500 seasonal wildland firefighters deployed annually; critical provincial capacity"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-transact",
+      "label": "Online transaction",
+      "bg_color": "#c8e6c9",
+      "text_color": "#1b5e20"
+    },
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Visitors",
+    "Businesses & employers",
+    "Workers & job seekers",
+    "Researchers & academics",
+    "Communities"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg_color": "#c8e6c9",
+      "text_color": "#1b5e20"
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-web"
+  ],
+  "mandate_date": "September 17, 2025",
+  "mandate_minister": "Todd Loewen",
+  "mandate_pdf": "https://open.alberta.ca/dataset/b0769b96-7a45-40b5-b57c-415ff82aca49/resource/1bdc566f-abed-4d64-8527-6f7269dd9827/download/fp-mandate-letter-forestry-and-parks-2025.pdf",
+  "cross_cutting": [
+    "Alberta Wildfire (operational brand)",
+    "Alberta Parks (operational brand; albertaparks.ca)",
+    "Hinton Training Centre",
+    "Forest Resource Improvement Association of Alberta (FRIAA)",
+    "Three forest tenure systems (FMA, quota, permit)",
+    "Forest Protection Area (FPA)",
+    "Eastern Slopes Public Lands Camping Pass",
+    "Kananaskis Conservation Pass"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Complete the Recreation and Conservation Strategy to expand public access to natural spaces",
+      "mapping": "-> Plan a visit to a provincial park; Find a public land recreation area or trail; Check Public Land Use Zone rules; Access outdoor recreation maps and guides"
+    },
+    {
+      "number": 2,
+      "text": "Secure a federal wildfire mitigation agreement focused on Banff, Jasper, and Waterton",
+      "mapping": "-> Report a wildfire"
+    },
+    {
+      "number": 3,
+      "text": "Advance wildfire mitigation through proactive harvesting, public education, and expanded FireSmart/fireguard programs",
+      "mapping": "-> Get forestry and wildfire training; Get a fire permit; Check current fire bans and restrictions; Practise safe burning; Prepare your property for wildfire (FireSmart); Check wildfire status; Access wildfire maps and data; Help with wildfire response; Apply to become a wildland firefighter"
+    },
+    {
+      "number": 4,
+      "text": "Complete the active forestry management plan for forest health, biodiversity, and carbon sequestration",
+      "mapping": "-> Access forest management standards and guidelines; Apply for a timber quota; Apply for a timber permit; Access forestry directives and standard operating procedures"
+    },
+    {
+      "number": 5,
+      "text": "Build 900+ new campsites by 2033 (300+ by 2027)",
+      "mapping": "-> Reserve a campsite"
+    },
+    {
+      "number": 6,
+      "text": "Expand trails, campsites, and public land use opportunities with Alberta entrepreneurs in high-traffic areas",
+      "mapping": "-> Buy a park conservation pass; Get a Public Lands Camping Pass; Find a public land recreation area or trail"
+    },
+    {
+      "number": 7,
+      "text": "Continue Kananaskis Country trail upgrades, including Highway 742",
+      "mapping": "-> Buy a park conservation pass; Find a public land recreation area or trail"
+    },
+    {
+      "number": 8,
+      "text": "Develop a value-added forestry tax incentive program with Jobs, Economy, Trade and Immigration",
+      "mapping": "-> Apply for a timber quota; Apply for a timber permit; Pay timber dues and Crown fees; Access forest business, market, and trade information"
+    },
+    {
+      "number": 9,
+      "text": "Maintain healthy fish and game populations using ecological knowledge and science",
+      "mapping": "(Fish and wildlife management is under FP — hunting/angling licensing services not yet in skeleton; future expansion needed)"
+    }
+  ]
+}

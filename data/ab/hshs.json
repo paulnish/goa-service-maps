@@ -1,0 +1,487 @@
+{
+  "prefix": "hshs",
+  "full_name": "Hospital and Surgical Health Services",
+  "short_name": "Hospital & Surgical Health",
+  "blurb": "Delivers emergency, hospital, and surgical care to Albertans \u2014 overseeing acute care facilities, surgical wait times, cancer care, organ and tissue donation, health system quality, and patient advocacy through the Office of the Alberta Health Advocates.",
+  "nav_name": "Hospital & Surgical Health",
+  "has_registry_agents": false,
+  "_status": "draft",
+  "foundational_services": [],
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "OUTCOME 1: Albertans can access timely hospital and surgical care",
+      "short_name": "Hospital & surgical access",
+      "legend_label": "Hospital & surgical access",
+      "description": "The ministry ensures Albertans can access emergency departments, hospital care, and timely surgical and diagnostic procedures across the province.",
+      "foundational_services": [
+        {
+          "name": "Plan and fund hospital and surgical capacity across Alberta",
+          "desc": "Develops provincial plans for hospital capacity, surgical volumes, and emergency services. Works with health entities to manage bed capacity, operating room schedules, and emergency department resources to meet population demand.",
+          "users": "Government, hospitals, health system administrators",
+          "user_groups": [
+            "Government"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/hospital-and-surgical-health-services",
+              "url": "https://www.alberta.ca/hospital-and-surgical-health-services"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "HA",
+              "color": "#1565c0",
+              "full_name": "Hospitals Act"
+            }
+          ],
+          "mandate_tags": [
+            "hospital-care"
+          ],
+          "taxonomy": {
+            "relationships": [],
+            "track": "individual",
+            "tier": "core_human_needs",
+            "domain": "health_wellbeing"
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Access emergency and hospital care information",
+          "supporting": [
+            {
+              "name": "Find a hospital or emergency department",
+              "desc": "Albertans can locate hospitals, urgent care centres, and emergency departments across the province, including facility details, services offered, and contact information.",
+              "users": "All Albertans needing emergency or hospital care",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Facility locator",
+                  "url": "https://www.alberta.ca/find-health-care"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Health Link 811",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HA",
+                  "color": "#1565c0",
+                  "full_name": "Hospitals Act"
+                }
+              ],
+              "mandate_tags": [
+                "hospital-care"
+              ],
+              "reach_estimate": {
+                "tier": "very_high",
+                "estimate": "Millions of emergency visits and hospital admissions annually",
+                "basis": "All Albertans may need emergency or hospital care at any time"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "hospital-care",
+                "note": "Emergency and acute care is the safety net of the health system"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing"
+              }
+            },
+            {
+              "name": "Check surgical and diagnostic wait times",
+              "desc": "Albertans can view estimated wait times for surgeries and diagnostic procedures by procedure type and location. Helps patients and physicians plan care and manage expectations.",
+              "users": "Patients waiting for procedures, referring physicians",
+              "user_groups": [
+                "General public",
+                "Health providers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Alberta wait times reporting",
+                  "url": "https://www.alberta.ca/wait-times"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "surgical-care"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of searches annually",
+                "basis": "High public interest in wait time information for surgical and diagnostic care"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "surgical-care",
+                "note": "Transparency supports informed patient choice and system accountability"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Access cancer care and organ donation services",
+          "supporting": [
+            {
+              "name": "Learn about cancer care programs and find treatment centres",
+              "desc": "Alberta provides comprehensive cancer care through regional cancer centres and community oncology clinics. Albertans can find treatment locations, learn about screening programs, and access information on cancer prevention, diagnosis, and treatment.",
+              "users": "Cancer patients, families, referring physicians",
+              "user_groups": [
+                "General public",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Find a cancer care centre",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Cancer care information",
+                  "url": "https://www.alberta.ca/cancer"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Health Link 811",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "hospital-care"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Over 20,000 new cancer diagnoses in Alberta annually",
+                "basis": "Cancer is among the most common health conditions requiring specialized hospital care"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "hospital-care",
+                "note": "Timely cancer care directly affects survival and quality of life"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing"
+              }
+            },
+            {
+              "name": "Register as an organ and tissue donor",
+              "desc": "Albertans can register their decision to be an organ and tissue donor. The provincial organ and tissue donation program coordinates donation and transplantation services across Alberta's hospitals.",
+              "users": "All Albertans, transplant patients, families",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Online donor registration",
+                  "url": "https://myhealth.alberta.ca"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Organ donation information",
+                  "url": "https://www.alberta.ca/organ-and-tissue-donation"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "hospital-care"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Over 1 million registered donors in Alberta",
+                "basis": "Ongoing public campaigns to increase donor registration"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "hospital-care",
+                "note": "Organ donation saves lives and reduces the cost of long-term therapies like dialysis"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "title": "OUTCOME 2: Health system quality and safety are maintained",
+      "short_name": "Quality & safety",
+      "legend_label": "Quality & safety",
+      "description": "The ministry oversees health system quality, patient safety, health data and research, and provides independent advocacy for Albertans with health system concerns.",
+      "foundational_services": [
+        {
+          "name": "Develop health system policy, standards, and performance measurement",
+          "desc": "Sets health system standards, develops performance measures, commissions health research, and publishes health system data to support evidence-based policy making and continuous quality improvement across the health system.",
+          "users": "Government, health system administrators, researchers",
+          "user_groups": [
+            "Government"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/health",
+              "url": "https://www.alberta.ca/health"
+            }
+          ],
+          "legislation": [],
+          "mandate_tags": [
+            "health-system"
+          ],
+          "taxonomy": {
+            "relationships": [],
+            "track": "individual",
+            "tier": "core_human_needs",
+            "domain": "health_wellbeing"
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Access health data, research, and system performance information",
+          "supporting": [
+            {
+              "name": "Access health research data and apply for research funding",
+              "desc": "The ministry supports health research through data access, funding programs, and partnerships. Researchers can access de-identified health data and apply for provincial health research grants.",
+              "users": "Health researchers, academic institutions, health system planners",
+              "user_groups": [
+                "Researchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Research funding application",
+                  "url": "https://www.alberta.ca/health-research"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Health data and analytics",
+                  "url": "https://www.alberta.ca/health-research"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "health-information"
+              ],
+              "reach_estimate": {
+                "tier": "low",
+                "estimate": "Hundreds of research applications and data requests annually",
+                "basis": "Specialized audience of health researchers and academics"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "health-information",
+                "note": "Health research drives innovation, improves care quality, and attracts research investment"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing"
+              }
+            },
+            {
+              "name": "Report a patient safety concern at a health facility",
+              "desc": "Albertans can report patient safety concerns, infection control issues, and quality of care problems at hospitals and health facilities. Reports support continuous quality improvement and regulatory oversight.",
+              "users": "Patients, family members, health care workers",
+              "user_groups": [
+                "General public",
+                "Health providers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Health facility complaints line",
+                  "url": null
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Patient safety reporting",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/patient-safety",
+                  "url": "https://www.alberta.ca/patient-safety"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HA",
+                  "color": "#1565c0",
+                  "full_name": "Hospitals Act"
+                }
+              ],
+              "mandate_tags": [
+                "health-system"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Thousands of patient safety reports annually",
+                "basis": "Provincial oversight of all hospital and health facility operations"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "health-system",
+                "note": "Safety reporting drives quality improvement and prevents future incidents"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get help from the Health Advocate with a health system concern",
+          "supporting": [
+            {
+              "name": "Contact the Health Advocate for help with a concern",
+              "desc": "The Office of the Alberta Health Advocates provides independent assistance to Albertans who have concerns about health services, hospital care, or mental health and addiction services. Advocates help navigate the system and resolve complaints.",
+              "users": "Patients, family members, caregivers with health system concerns",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Health Advocate office",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/health-advocate",
+                  "url": "https://www.alberta.ca/health-advocate"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Health Advocate email",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "health-system"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Thousands of contacts annually",
+                "basis": "Independent advocacy office serving Albertans with health system concerns"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "health-system",
+                "note": "Provides independent complaint resolution and systemic recommendations for improvement"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-transact",
+      "label": "Online transaction"
+    },
+    {
+      "code": "ch-apply",
+      "label": "Apply"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website"
+    },
+    {
+      "code": "ch-email",
+      "label": "Email"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Families",
+    "Health providers",
+    "Researchers",
+    "Government"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "type": "digital"
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "type": "digital"
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "type": "digital"
+    },
+    "ch-web": {
+      "label": "Website",
+      "type": "digital"
+    },
+    "ch-email": {
+      "label": "Email",
+      "type": "digital"
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "type": "non-digital"
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-find",
+    "ch-web",
+    "ch-email"
+  ]
+}

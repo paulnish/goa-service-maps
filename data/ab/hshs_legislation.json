@@ -1,0 +1,64 @@
+{
+  "prefix": "hshs",
+  "name": "Hospital and Surgical Health Services",
+  "short_name": "Hospital & Surgical Health",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "Hospital & surgical access",
+      "legend_label": "Hospital & surgical access",
+      "main_services": [
+        {"number": 1, "name": "Access emergency and hospital care information"},
+        {"number": 2, "name": "Access cancer care and organ donation services"}
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "short_name": "Quality & safety",
+      "legend_label": "Quality & safety",
+      "main_services": [
+        {"number": 1, "name": "Access health data, research, and system performance information"},
+        {"number": 2, "name": "Get help from the Health Advocate with a health system concern"}
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "HA",
+      "full_name": "Hospitals Act",
+      "color": "#1565c0",
+      "citation": "RSA 2000, c H-12",
+      "summary": "Governs the establishment, operation, and licensing of hospitals in Alberta, including standards for patient care, accommodation requirements, hospitalization benefits, and hospital foundations.",
+      "full_text": "<h3>Hospitals Act</h3><p><strong>Citation:</strong> RSA 2000, c H-12</p><p>The Hospitals Act is Alberta's principal statute governing the operation of hospitals. It provides the legal framework for facility licensing, care standards, and the hospitalization benefits plan.</p><h4>Structure (4 Parts)</h4><ul><li><strong>Part 1 — Non-regional Hospitals:</strong> Governs the establishment, licensing, and operation of hospitals that are not operated by regional health authorities. Includes provisions for private hospitals, auxiliary hospitals, and nursing homes, including licensing requirements, standards of care, accommodation standards, and inspection powers.</li><li><strong>Part 2 — Operation of Approved Hospitals:</strong> Sets out the governance, operation, and administration of approved (public) hospitals. Includes provisions for hospital boards, medical staff bylaws, patient admission and discharge, patient rights, and the relationship between hospitals and the provincial health system.</li><li><strong>Part 3 — Hospitalization Benefits Plan:</strong> Establishes the provincial hospitalization benefits plan that funds insured hospital services for Alberta residents. Defines what hospital services are publicly funded (standard ward, nursing, diagnostic, surgical facilities) and the financial arrangements between the province and hospitals.</li><li><strong>Part 4 — Hospital Foundations:</strong> Provides the legal framework for establishing hospital foundations — charitable organizations that raise funds for hospital equipment, facilities, and programs. Governs foundation governance, financial reporting, and the relationship between foundations and their associated hospitals.</li></ul><p>The Hospitals Act is supported by the Hospitals Act General Regulation, the Nursing Homes Operation Regulation, and the Continuing Care Health Service Standards.</p>",
+      "sections": [
+        {
+          "ref": "Part 2",
+          "title": "Operation of Approved Hospitals",
+          "description": "Governs the operation and administration of public hospitals, including hospital boards, medical staff bylaws, patient admission and discharge, patient rights, and care standards.",
+          "anchor_id": "sec-ha-p2",
+          "services": [
+            {"name": "Find a hospital or emergency department", "type": "supporting", "goal_number": 1, "goal_color": "#1565c0", "ms_number": 1, "ms_name": "Access emergency and hospital care information"},
+            {"name": "Report a patient safety concern at a health facility", "type": "supporting", "goal_number": 2, "goal_color": "#00695c", "ms_number": 1, "ms_name": "Access health data, research, and system performance information"}
+          ]
+        },
+        {
+          "ref": "Part 3",
+          "title": "Hospitalization Benefits Plan",
+          "description": "Establishes the provincial hospitalization benefits plan that funds insured hospital services for Alberta residents, defining covered services and financial arrangements between the province and hospitals.",
+          "anchor_id": "sec-ha-p3",
+          "services": [
+            {"name": "Check surgical and diagnostic wait times", "type": "supporting", "goal_number": 1, "goal_color": "#1565c0", "ms_number": 1, "ms_name": "Access emergency and hospital care information"}
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 1,
+    "sections_count": 2,
+    "services_with_leg_count": 3,
+    "services_multi_act_count": 0
+  }
+}

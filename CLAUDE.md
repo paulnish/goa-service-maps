@@ -123,7 +123,8 @@ Cross-reference between legislation (acts/sections) and services:
 4. Create `{prefix}/service-map.html` (copy from an existing ministry, update the page)
 5. Optionally create `{prefix}/legislation.html`
 6. Add redirect rules to `netlify.toml` for the new prefix
-7. Push to `main` to deploy
+7. **Review every service name** (foundational, main, and supporting) to ensure none include the name of an agency or program. Service names describe what the service does for the user. Agencies and programs are delivery mechanisms — they belong in descriptions, channels, or legislation references, not in the service title. For example: "Coordinate provincial sport policy and funding" not "Oversee Alberta Sport Connection"; "Apply for community recreation facility capital funding" not "Apply for Community Recreation Centre Infrastructure Program funding".
+8. Push to `main` to deploy
 
 ## Branch Strategy
 
@@ -132,15 +133,19 @@ Cross-reference between legislation (acts/sections) and services:
 
 ## Running Locally
 
-No build step. Use any static file server:
+No build step. From the repo root:
 
 ```bash
-python3 -m http.server 8000
-# or
-npx serve .
+npm start
 ```
 
-Clean URLs (`/tec/service-map`) rely on Netlify redirects and won't work locally. Use `.html` extensions directly (e.g., `tec/service-map.html`).
+This runs `serve` on port 8000 with clean URL support, so links like `/fp/service-map` work the same way they do on Netlify. Open `http://localhost:8000`.
+
+## Workflow Rules
+
+- **Do not change the developer's local tooling, server commands, or workflow without explicit approval.** If a new tool or process is needed, explain why and get confirmation before suggesting it.
+- When in doubt, match existing patterns. Copy what works before inventing something new.
+- **Web research:** Use the Chrome browser connection (Claude in Chrome / Control Chrome MCP tools) for all web research instead of the sandbox WebSearch/WebFetch tools. The Chrome connection can actually visit and read alberta.ca and other government sites that the sandbox tools cannot reliably reach.
 
 ## build.py
 

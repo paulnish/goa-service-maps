@@ -1,0 +1,1147 @@
+{
+  "prefix": "em",
+  "full_name": "Energy and Minerals",
+  "short_name": "Energy & Minerals",
+  "blurb": "Manages the development of Alberta's energy and mineral resources, grants industry the right to explore and develop oil, natural gas, oil sands, coal, and minerals, administers royalty and fiscal systems, and advances market access, hydrogen, CCUS, and critical minerals.",
+  "nav_name": "Energy & Minerals",
+  "has_registry_agents": false,
+  "_status": "draft",
+  "foundational_services": [],
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "OUTCOME 1: Alberta's energy and mineral resources are developed responsibly and generate maximum value for Albertans",
+      "short_name": "Responsible resource stewardship",
+      "legend_label": "Resource stewardship",
+      "description": "The ministry manages Crown mineral rights through a competitive tenure system, collects royalties on behalf of Albertans, and ensures fiscal frameworks keep Alberta attractive for investment while maximizing public benefit.",
+      "foundational_services": [
+        {
+          "name": "Design and maintain royalty and fiscal frameworks for energy and mineral resources",
+          "desc": "Develops, evaluates, and updates Alberta's royalty regimes for conventional oil and gas, oil sands, coal, and metallic/industrial minerals. Ensures fiscal competitiveness while maximizing resource revenue for Albertans.",
+          "users": "Government policy staff, Treasury Board and Finance",
+          "user_groups": [
+            "Government"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/energy-and-minerals",
+              "url": "https://www.alberta.ca/energy-and-minerals"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "MMA",
+              "color": "#1565c0",
+              "full_name": "Mines and Minerals Act"
+            }
+          ],
+          "mandate_tags": [
+            "royalty-frameworks"
+          ],
+          "taxonomy": {
+            "relationships": [
+              {
+                "type": "shared_information",
+                "service": "Access oil and gas production and reserves data",
+                "ministry": "em"
+              },
+              {
+                "type": "shared_information",
+                "service": "Purchase mineral and surface rights mapping and information",
+                "ministry": "em"
+              }
+            ],
+            "track": "business",
+            "tier": "industry_specific",
+            "domain": "energy_minerals"
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Acquire petroleum and natural gas rights",
+          "supporting": [
+            {
+              "name": "Bid on petroleum and natural gas rights at public sale",
+              "desc": "Alberta holds regular public offerings of Crown petroleum and natural gas rights through a competitive bidding process. Companies submit sealed bids on posted parcels; highest qualified bid wins the lease. Sales are held on set schedules throughout the year.",
+              "users": "Oil and gas exploration companies, producers",
+              "user_groups": [
+                "Energy companies"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Electronic Transfer System (ETS)",
+                  "url": "https://www.alberta.ca/electronic-transfer-system"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/petroleum-and-natural-gas-tenure",
+                  "url": "https://www.alberta.ca/petroleum-and-natural-gas-tenure"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "780-427-7770"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MMA",
+                  "color": "#1565c0",
+                  "full_name": "Mines and Minerals Act"
+                }
+              ],
+              "mandate_tags": [
+                "resource-development"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "~3,000 lease parcels sold/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "very_high",
+                "category": "Revenue generation",
+                "note": "Bonus bid revenue typically $500M–$1.5B/yr; unlocks exploration investment"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals"
+              }
+            },
+            {
+              "name": "Request a direct purchase of petroleum and natural gas rights",
+              "desc": "Companies may request to purchase specific Crown petroleum and natural gas rights outside the regular public sale process through a direct purchase request (posting request). The department evaluates and may post the requested parcel at a subsequent sale.",
+              "users": "Oil and gas companies seeking specific parcels",
+              "user_groups": [
+                "Energy companies"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Electronic Transfer System (ETS)",
+                  "url": "https://www.alberta.ca/electronic-transfer-system"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "pngtenure@gov.ab.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MMA",
+                  "color": "#1565c0",
+                  "full_name": "Mines and Minerals Act"
+                }
+              ],
+              "mandate_tags": [
+                "resource-development"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~500 posting requests/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "high",
+                "category": "Revenue generation",
+                "note": "Enables targeted exploration in areas not yet posted"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals"
+              }
+            },
+            {
+              "name": "Transfer or maintain your petroleum and natural gas agreement",
+              "desc": "Holders of Crown petroleum and natural gas agreements can transfer, continue, or group their leases. The Electronic Transfer System (ETS) supports agreement transfers, continuations, amalgamations, and amendments.",
+              "users": "Petroleum and natural gas agreement holders",
+              "user_groups": [
+                "Energy companies"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Electronic Transfer System (ETS)",
+                  "url": "https://www.alberta.ca/electronic-transfer-system"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "780-427-7770"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MMA",
+                  "color": "#1565c0",
+                  "full_name": "Mines and Minerals Act"
+                }
+              ],
+              "mandate_tags": [
+                "resource-development"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "~10,000 transactions/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "high",
+                "category": "Operational efficiency",
+                "note": "Enables orderly transfer and consolidation of mineral rights"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Acquire oil sands, coal, and mineral rights",
+          "supporting": [
+            {
+              "name": "Bid on oil sands rights at public sale",
+              "desc": "The ministry holds competitive public offerings of Crown oil sands rights. Companies submit bids on posted parcels in Alberta's three major oil sands deposits (Athabasca, Cold Lake, Peace River). Results are published after each sale.",
+              "users": "Oil sands producers and exploration companies",
+              "user_groups": [
+                "Energy companies"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Electronic Transfer System (ETS)",
+                  "url": "https://www.alberta.ca/electronic-transfer-system"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/oil-sands",
+                  "url": "https://www.alberta.ca/oil-sands"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MMA",
+                  "color": "#1565c0",
+                  "full_name": "Mines and Minerals Act"
+                }
+              ],
+              "mandate_tags": [
+                "resource-development"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~200 oil sands parcels posted/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "very_high",
+                "category": "Revenue generation",
+                "note": "Oil sands represent ~158.9B barrels of proven reserves; tenure enables multi-billion dollar projects"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals"
+              }
+            },
+            {
+              "name": "Acquire coal leases and maintain coal agreements",
+              "desc": "Companies can acquire Crown coal rights through direct purchase or posting request, and maintain existing coal leases. The department administers coal leasing on Crown lands and tracks lease maintenance, payments, and renewals.",
+              "users": "Coal mining companies",
+              "user_groups": [
+                "Energy companies"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Electronic Transfer System (ETS)",
+                  "url": "https://www.alberta.ca/electronic-transfer-system"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "780-427-7707"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "cmd.energy@gov.ab.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MMA",
+                  "color": "#1565c0",
+                  "full_name": "Mines and Minerals Act"
+                }
+              ],
+              "mandate_tags": [
+                "resource-development"
+              ],
+              "reach_estimate": {
+                "tier": "low",
+                "estimate": "~30 active coal leases",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "medium",
+                "category": "Revenue generation",
+                "note": "Alberta produces metallurgical and thermal coal; modernization initiative underway"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals"
+              }
+            },
+            {
+              "name": "Apply for metallic and industrial mineral permits and leases",
+              "desc": "Companies can apply for permits to explore for metallic and industrial minerals, and convert permits to leases for production. Covers lithium, potash, limestone, salt, gemstones, and other non-energy minerals. Includes brine-hosted mineral public offerings.",
+              "users": "Mining and exploration companies",
+              "user_groups": [
+                "Energy companies",
+                "Mining companies"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/minerals",
+                  "url": "https://www.alberta.ca/minerals"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "780-427-7707"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "cmd.energy@gov.ab.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MMA",
+                  "color": "#1565c0",
+                  "full_name": "Mines and Minerals Act"
+                }
+              ],
+              "mandate_tags": [
+                "critical-minerals"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~150 mineral permits and leases active",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "very_high",
+                "category": "Economic diversification",
+                "note": "Lithium potential alone could be one of world's largest resources; critical mineral supply chain"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Report and pay royalties on energy and mineral production",
+          "supporting": [
+            {
+              "name": "Report and pay conventional oil and gas royalties",
+              "desc": "Producers report monthly production and calculate royalties owing on conventional crude oil, natural gas, and natural gas liquids extracted from Crown mineral rights. The Crown Royalty Information System processes returns and payments.",
+              "users": "Conventional oil and gas producers",
+              "user_groups": [
+                "Energy companies"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Petrinex (production reporting)",
+                  "url": "https://www.petrinex.ca"
+                },
+                {
+                  "type": "ch-transact",
+                  "label": "Electronic Transfer System (ETS)",
+                  "url": "https://www.alberta.ca/electronic-transfer-system"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "780-427-7770"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MMA",
+                  "color": "#1565c0",
+                  "full_name": "Mines and Minerals Act"
+                },
+                {
+                  "abbrev": "PMA",
+                  "color": "#00695c",
+                  "full_name": "Petroleum Marketing Act"
+                }
+              ],
+              "mandate_tags": [
+                "royalty-frameworks"
+              ],
+              "reach_estimate": {
+                "tier": "very_high",
+                "estimate": "~20,000 active wells reporting monthly",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "very_high",
+                "category": "Revenue generation",
+                "note": "Non-renewable resource revenue is a major source of provincial income, typically $10B+/yr"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals"
+              }
+            },
+            {
+              "name": "Report and pay oil sands royalties",
+              "desc": "Oil sands operators report production and costs under the Oil Sands Royalty Regime. Pre-payout projects pay a lower gross royalty rate; post-payout projects pay the greater of gross or net royalty. The ministry audits returns and manages project-specific Crown agreements.",
+              "users": "Oil sands operators",
+              "user_groups": [
+                "Energy companies"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Oil Sands Royalty System",
+                  "url": "https://www.alberta.ca/oil-sands"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "osreport@gov.ab.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MMA",
+                  "color": "#1565c0",
+                  "full_name": "Mines and Minerals Act"
+                }
+              ],
+              "mandate_tags": [
+                "royalty-frameworks"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "~40 major oil sands projects reporting",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "very_high",
+                "category": "Revenue generation",
+                "note": "Oil sands royalties typically represent the largest single component of non-renewable resource revenue"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals"
+              }
+            },
+            {
+              "name": "Report and pay coal and mineral royalties",
+              "desc": "Coal producers and mineral lessees report production volumes and pay royalties to the Crown. Coal royalties are based on mine-mouth value; mineral royalties vary by commodity. Reporting forms and schedules are available online.",
+              "users": "Coal and mineral producers",
+              "user_groups": [
+                "Energy companies",
+                "Mining companies"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Royalty reporting forms",
+                  "url": "https://www.alberta.ca/coal"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "cmd.energy@gov.ab.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MMA",
+                  "color": "#1565c0",
+                  "full_name": "Mines and Minerals Act"
+                }
+              ],
+              "mandate_tags": [
+                "royalty-frameworks"
+              ],
+              "reach_estimate": {
+                "tier": "low",
+                "estimate": "~20 producing coal and mineral operations",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "medium",
+                "category": "Revenue generation",
+                "note": "Coal and mineral royalties complement oil and gas resource revenue"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "title": "OUTCOME 2: Alberta's energy reaches global markets and attracts investment",
+      "short_name": "Market access & investment",
+      "legend_label": "Market access",
+      "description": "The ministry advocates for pipeline capacity, LNG development, and broader market access to ensure Alberta's energy resources reach domestic and international buyers, while promoting investment in the energy sector.",
+      "foundational_services": [
+        {
+          "name": "Advocate for market access and defend Alberta's energy interests",
+          "desc": "Leads provincial advocacy for pipeline approvals, LNG export terminals, and trade corridors. Engages with federal government, other provinces, Indigenous communities, and international partners to secure market access and counter energy-related policy threats.",
+          "users": "Government, energy industry associations, trade delegations",
+          "user_groups": [
+            "Government"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/energy-and-minerals",
+              "url": "https://www.alberta.ca/energy-and-minerals"
+            }
+          ],
+          "legislation": [],
+          "mandate_tags": [
+            "market-access"
+          ],
+          "taxonomy": {
+            "relationships": [],
+            "track": "business",
+            "tier": "industry_specific",
+            "domain": "energy_minerals"
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Access energy market and industry data",
+          "supporting": [
+            {
+              "name": "Access oil and gas production and reserves data",
+              "desc": "Publicly available data on Alberta's oil, gas, and oil sands production volumes, reserves, well counts, and historical trends. Includes monthly production reports, reserve estimates, and statistical bulletins published by the ministry and the Alberta Energy Regulator.",
+              "users": "Industry analysts, investors, researchers, journalists",
+              "user_groups": [
+                "General public",
+                "Energy companies",
+                "Researchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/energy-and-minerals",
+                  "url": "https://www.alberta.ca/energy-and-minerals"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "AER statistical reports",
+                  "url": "https://www.aer.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "market-access"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "~100,000 data downloads/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "high",
+                "category": "Investment attraction",
+                "note": "Transparent data supports investor confidence and capital allocation decisions"
+              },
+              "taxonomy": {
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Design and maintain royalty and fiscal frameworks for energy and mineral resources",
+                    "ministry": "em"
+                  }
+                ],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals"
+              }
+            },
+            {
+              "name": "Purchase mineral and surface rights mapping and information",
+              "desc": "Payment, maps and information services provides mineral and surface rights mapping, energy information letters, subscription services, and other online resources. Mineral ownership data helps companies, lawyers, and landowners verify who holds rights.",
+              "users": "Land agents, lawyers, oil and gas companies, landowners",
+              "user_groups": [
+                "Energy companies",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Payment, Maps & Information Services",
+                  "url": "https://www.alberta.ca/petroleum-and-natural-gas-tenure"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "780-427-7770"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MMA",
+                  "color": "#1565c0",
+                  "full_name": "Mines and Minerals Act"
+                }
+              ],
+              "mandate_tags": [
+                "resource-development"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "~50,000 map and information orders/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "medium",
+                "category": "Operational efficiency",
+                "note": "Mineral ownership data supports land transactions and reduces disputes"
+              },
+              "taxonomy": {
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Design and maintain royalty and fiscal frameworks for energy and mineral resources",
+                    "ministry": "em"
+                  }
+                ],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals"
+              }
+            },
+            {
+              "name": "Search metallic and industrial mineral assessment reports",
+              "desc": "Companies and researchers can search publicly available mineral assessment reports submitted by permit holders. Reports include geological surveys, drilling results, and resource assessments for Alberta's non-energy mineral deposits.",
+              "users": "Geologists, mining companies, investors, researchers",
+              "user_groups": [
+                "Energy companies",
+                "Mining companies",
+                "Researchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/minerals",
+                  "url": "https://www.alberta.ca/minerals"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MMA",
+                  "color": "#1565c0",
+                  "full_name": "Mines and Minerals Act"
+                }
+              ],
+              "mandate_tags": [
+                "critical-minerals"
+              ],
+              "reach_estimate": {
+                "tier": "low",
+                "estimate": "~2,000 report searches/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "medium",
+                "category": "Investment attraction",
+                "note": "Assessment data supports mineral exploration investment decisions"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Understand royalty obligations and freehold mineral tax",
+          "supporting": [
+            {
+              "name": "Access royalty rate and program information",
+              "desc": "Information on Alberta's royalty rates, incentive programs, and calculation methodologies for conventional oil and gas, oil sands, coal, and minerals. Includes rate schedules, royalty reduction programs, and reference prices.",
+              "users": "Producers, accountants, industry analysts, investors",
+              "user_groups": [
+                "Energy companies"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/energy-and-minerals",
+                  "url": "https://www.alberta.ca/energy-and-minerals"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "780-427-7770"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MMA",
+                  "color": "#1565c0",
+                  "full_name": "Mines and Minerals Act"
+                }
+              ],
+              "mandate_tags": [
+                "royalty-frameworks"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "~30,000 page views/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "high",
+                "category": "Revenue generation",
+                "note": "Clear royalty information supports compliance and investment planning"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals"
+              }
+            },
+            {
+              "name": "Pay freehold mineral rights tax",
+              "desc": "Owners of freehold mineral rights that produce oil or gas pay an annual tax based on production value. The ministry issues assessments, collects payments, and handles appeals. Approximately 18% of Alberta's mineral rights are freehold.",
+              "users": "Freehold mineral rights owners",
+              "user_groups": [
+                "Mineral rights owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Freehold mineral rights tax portal"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Assessment notices by mail"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "780-427-7770"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FMRTA",
+                  "color": "#c62828",
+                  "full_name": "Freehold Mineral Rights Tax Act"
+                }
+              ],
+              "mandate_tags": [
+                "royalty-frameworks"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~12,000 freehold mineral tax accounts",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "medium",
+                "category": "Revenue generation",
+                "note": "Freehold mineral rights tax generates ~$100M+/yr in provincial revenue"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "title": "OUTCOME 3: Alberta leads in energy innovation, diversification, and emissions reduction",
+      "short_name": "Energy diversification & innovation",
+      "legend_label": "Energy innovation",
+      "description": "The ministry supports the growth of hydrogen, carbon capture utilization and storage (CCUS), critical minerals like lithium, and coal modernization to diversify Alberta's energy economy and reduce emissions while maintaining competitiveness.",
+      "foundational_services": [
+        {
+          "name": "Develop energy diversification and emissions reduction policy",
+          "desc": "Policy development for hydrogen strategy, CCUS frameworks, critical minerals roadmap, coal industry modernization, and methane reduction. Coordinates with federal government and industry on clean energy policy.",
+          "users": "Government policy staff, clean energy industry",
+          "user_groups": [
+            "Government"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/energy-and-minerals",
+              "url": "https://www.alberta.ca/energy-and-minerals"
+            }
+          ],
+          "legislation": [],
+          "mandate_tags": [
+            "energy-diversification"
+          ],
+          "taxonomy": {
+            "relationships": [],
+            "track": "business",
+            "tier": "industry_specific",
+            "domain": "energy_minerals"
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Engage with hydrogen and clean energy opportunities",
+          "supporting": [
+            {
+              "name": "Learn about Alberta's hydrogen roadmap and investment opportunities",
+              "desc": "Information on Alberta's hydrogen strategy including five target markets (gas utilities, transportation, industrial, power generation, exports), seven policy pillars, and investment opportunities. Alberta is the largest hydrogen producer in Canada.",
+              "users": "Clean energy companies, investors, researchers, municipalities",
+              "user_groups": [
+                "Energy companies",
+                "Investors",
+                "Researchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/hydrogen-roadmap",
+                  "url": "https://www.alberta.ca/hydrogen-roadmap"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Hydrogen Roadmap publication"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "energy-diversification"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~20,000 page views/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "very_high",
+                "category": "Economic diversification",
+                "note": "Global hydrogen market estimated at $2.5T/yr by 2050; Alberta positioned as major supplier"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals"
+              }
+            },
+            {
+              "name": "Learn about carbon capture, utilization, and storage opportunities",
+              "desc": "Information on Alberta's CCUS framework, including pore space tenure, storage hub development, and regulatory requirements for companies seeking to develop carbon storage projects. Alberta has decades of CCUS experience and extensive geological storage capacity.",
+              "users": "Large emitters, CCUS developers, investors",
+              "user_groups": [
+                "Energy companies",
+                "Investors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/ccus",
+                  "url": "https://www.alberta.ca/energy-and-minerals"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "CCUS policy publications"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MMA",
+                  "color": "#1565c0",
+                  "full_name": "Mines and Minerals Act"
+                }
+              ],
+              "mandate_tags": [
+                "energy-diversification"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~15,000 page views/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "very_high",
+                "category": "Emissions reduction",
+                "note": "CCUS hubs could store billions of tonnes of CO₂; attract multi-billion dollar investment"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Participate in critical minerals and coal modernization",
+          "supporting": [
+            {
+              "name": "Explore lithium and critical mineral development opportunities",
+              "desc": "Information on Alberta's critical mineral potential including lithium extracted from oilfield brines, potash, rare earth elements, and helium. The Alberta Geological Survey confirms Alberta has one of the world's largest lithium resources. Brine-hosted mineral public offerings available.",
+              "users": "Mining companies, clean technology manufacturers, investors",
+              "user_groups": [
+                "Mining companies",
+                "Energy companies",
+                "Investors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/minerals",
+                  "url": "https://www.alberta.ca/minerals"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "Brine-hosted minerals offerings"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MMA",
+                  "color": "#1565c0",
+                  "full_name": "Mines and Minerals Act"
+                }
+              ],
+              "mandate_tags": [
+                "critical-minerals"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~10,000 page views/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "very_high",
+                "category": "Economic diversification",
+                "note": "Critical minerals vital for EV batteries, electronics; Alberta positioned for global supply chain role"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals"
+              }
+            },
+            {
+              "name": "Learn about coal industry modernization",
+              "desc": "Information on the Coal Industry Modernization Initiative (CIMI), which establishes a modern legislative and regulatory framework for responsible coal mining in Alberta. Covers transition from thermal to metallurgical coal, environmental protection, and community engagement.",
+              "users": "Coal companies, communities near coal operations, environmental groups",
+              "user_groups": [
+                "Energy companies",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/coal",
+                  "url": "https://www.alberta.ca/coal"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "CIMI publications"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MMA",
+                  "color": "#1565c0",
+                  "full_name": "Mines and Minerals Act"
+                }
+              ],
+              "mandate_tags": [
+                "energy-diversification"
+              ],
+              "reach_estimate": {
+                "tier": "low",
+                "estimate": "~5,000 page views/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "medium",
+                "category": "Economic diversification",
+                "note": "Modernizing coal framework supports metallurgical coal exports and responsible development"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals"
+              }
+            },
+            {
+              "name": "Access information on methane reduction and emissions management",
+              "desc": "Alberta's made-in-Alberta approach to methane reduction in oil and gas operations. Information on the provincial regulatory framework, emission reduction targets, industry reporting requirements, and technology solutions for reducing methane emissions.",
+              "users": "Oil and gas producers, environmental consultants",
+              "user_groups": [
+                "Energy companies"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/energy-and-minerals",
+                  "url": "https://www.alberta.ca/energy-and-minerals"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "energy-diversification"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~8,000 page views/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "high",
+                "category": "Emissions reduction",
+                "note": "Alberta's methane framework supports responsible production and global competitiveness"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-transact",
+      "label": "Online transaction"
+    },
+    {
+      "code": "ch-apply",
+      "label": "Apply"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website"
+    },
+    {
+      "code": "ch-email",
+      "label": "Email"
+    },
+    {
+      "code": "ch-pub",
+      "label": "Publication"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone"
+    },
+    {
+      "code": "ch-mail",
+      "label": "Mail"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Energy companies",
+    "Mining companies",
+    "Mineral rights owners",
+    "Investors",
+    "Researchers"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "type": "digital"
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "type": "digital"
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "type": "digital"
+    },
+    "ch-web": {
+      "label": "Website",
+      "type": "digital"
+    },
+    "ch-email": {
+      "label": "Email",
+      "type": "digital"
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "type": "non-digital"
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "type": "non-digital"
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "type": "non-digital"
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-find",
+    "ch-web",
+    "ch-email"
+  ]
+}

@@ -1,0 +1,1112 @@
+{
+  "prefix": "ts",
+  "full_name": "Tourism and Sport",
+  "short_name": "Tourism & Sport",
+  "blurb": "Grows Alberta's visitor economy, develops tourism destinations, supports sport and recreation participation, funds community recreation infrastructure, and ensures fairness and safety in sport.",
+  "nav_name": "Tourism & Sport",
+  "has_registry_agents": false,
+  "_status": "COMPLETE — Pass 2. 2 goals, 17 supporting services, 0 ministry foundational, 2 goal-level foundational. All services have legislation tags, reach estimates, and economic_impact. Channel audit complete. User group audit complete.",
+  "foundational_services": [],
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "OUTCOME 1: Alberta is a globally recognized tourism destination with a thriving visitor economy",
+      "short_name": "Thriving visitor economy",
+      "legend_label": "Tourism",
+      "description": "The ministry works with Travel Alberta and industry partners to grow Alberta's visitor economy toward $25 billion in annual spending by 2035, developing new destinations, attracting investment, collecting the tourism levy, and protecting travellers.",
+      "foundational_services": [
+        {
+          "name": "Develop and implement Alberta's tourism strategy",
+          "desc": "Long-term strategic planning to grow Alberta's visitor economy, including research, data analysis, market intelligence, and coordination with Travel Alberta and industry partners.",
+          "users": "Government policy staff, Travel Alberta, tourism industry associations",
+          "user_groups": [
+            "Businesses & employers",
+            "Industry associations"
+          ],
+          "taxonomy": {
+            "track": "business",
+            "tier": "industry_specific",
+            "domain": "tourism_hospitality",
+            "relationships": []
+          },
+          "channels": [
+            {
+              "type": "ch-find",
+              "label": "alberta.ca/tourism-and-sport",
+              "url": "https://www.alberta.ca/tourism-and-sport"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "TAA",
+              "color": "#1565c0",
+              "full_name": "Travel Alberta Act"
+            }
+          ],
+          "mandate_tags": [
+            {
+              "number": 1,
+              "tip": "Continue working with Travel Alberta to reach $25B in visitor spending"
+            }
+          ]
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Plan travel and get help with travel problems",
+          "supporting": [
+            {
+              "name": "Access Travel Alberta's destination marketing and visitor information",
+              "desc": "Travel Alberta markets the province as a tourism destination through digital campaigns, visitor centres, and the travelalberta.com platform. Visitors can find trip ideas, accommodations, and experiences across the province.",
+              "users": "Domestic and international travellers, tourism operators",
+              "user_groups": [
+                "General public",
+                "Visitors & tourists"
+              ],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "societal_needs_supports",
+                  "domain": "recreation_culture"
+                },
+                "business": {
+                  "tier": "industry_specific",
+                  "domain": "tourism_hospitality"
+                },
+                "relationships": []
+              },
+              "reach": {
+                "tier": "very_high",
+                "estimate": "~37M website visits/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Tourism generated $10.1B in visitor spending in 2023 and targets $25B by 2035"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "travelalberta.com",
+                  "url": "https://www.travelalberta.com"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "Travel Alberta industry portal",
+                  "url": "https://industry.travelalberta.com"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Visitor information centres"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Travel Alberta: 1-800-252-3782"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TAA",
+                  "color": "#1565c0",
+                  "full_name": "Travel Alberta Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Continue working with Travel Alberta to reach $25B in visitor spending"
+                }
+              ]
+            },
+            {
+              "name": "Check if a travel agent or tour operator is registered",
+              "desc": "Alberta requires travel agents and tour operators to be registered. Consumers can verify registration status before booking travel services, providing protection against fraud and financial loss.",
+              "users": "Consumers booking travel services",
+              "user_groups": [
+                "General public",
+                "Visitors & tourists"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "immigration_settling",
+                "relationships": [
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "Apply for a film distribution licence",
+                    "ministry": "acsw"
+                  },
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "Register as a tourism levy collector",
+                    "ministry": "ts"
+                  }
+                ]
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Consumer protection prevents fraud losses in the travel services industry"
+              },
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "alberta.ca/protecting-travellers-and-supporting-tourism",
+                  "url": "https://www.alberta.ca/protecting-travellers-and-supporting-tourism"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Tourism and Sport ministry: 780-427-4928"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TAA",
+                  "color": "#1565c0",
+                  "full_name": "Travel Alberta Act"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Report a travel-related complaint",
+              "desc": "File a complaint about a registered travel agent, tour operator, or accommodation provider. The ministry investigates complaints and can take enforcement action to protect consumers.",
+              "users": "Travellers who have experienced issues with travel services",
+              "user_groups": [
+                "General public",
+                "Visitors & tourists"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "immigration_settling",
+                "relationships": [
+                  {
+                    "type": "complainant_regulated_party",
+                    "service": "Apply for a film distribution licence",
+                    "ministry": "acsw"
+                  }
+                ]
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Complaint resolution and enforcement protects consumers and maintains industry standards"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/protecting-travellers-and-supporting-tourism",
+                  "url": "https://www.alberta.ca/protecting-travellers-and-supporting-tourism"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Tourism and Sport ministry: 780-427-4928"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TAA",
+                  "color": "#1565c0",
+                  "full_name": "Travel Alberta Act"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Grow tourism investment and destinations",
+          "supporting": [
+            {
+              "name": "Invest in or develop a tourism product or experience",
+              "desc": "The Tourism Investment Program provides funding to develop new and competitive tourism products, attractions, and experiences across the province, encouraging private-sector investment in tourism infrastructure.",
+              "users": "Tourism operators, entrepreneurs, municipalities, Indigenous communities",
+              "user_groups": [
+                "Businesses & employers",
+                "Municipalities",
+                "Indigenous communities"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "tourism_hospitality",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "medium",
+                "estimate": "~50 projects/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "$12M Tourism Investment Program driving private-sector tourism infrastructure"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Travel Alberta: apply for investment",
+                  "url": "https://industry.travelalberta.com/programs-and-services/apply-for-investment"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Tourism and Sport ministry: 780-427-4928"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "tourism.investment@gov.ab.ca",
+                  "url": "mailto:tourism.investment@gov.ab.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TAA",
+                  "color": "#1565c0",
+                  "full_name": "Travel Alberta Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Continue working with Travel Alberta to reach $25B in visitor spending"
+                }
+              ]
+            },
+            {
+              "name": "Propose an all-season resort development",
+              "desc": "Under the All-Season Resorts Act, developers can propose four-season commercial tourism developments on designated Crown lands. The ministry reviews applications, conducts impact assessments, and oversees the approval process.",
+              "users": "Resort developers, investors, tourism operators",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "tourism_hospitality",
+                "relationships": []
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "All-season resorts expected to generate billions in private investment and thousands of jobs"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/all-season-resorts",
+                  "url": "https://www.alberta.ca/all-season-resorts"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/all-season-resorts-public-notice",
+                  "url": "https://www.alberta.ca/all-season-resorts-public-notice"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Tourism and Sport ministry: 780-427-4928"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ASRA",
+                  "color": "#2e7d32",
+                  "full_name": "All-Season Resorts Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 2,
+                  "tip": "Implement All-Season Resorts Act and expand resort development"
+                }
+              ]
+            },
+            {
+              "name": "Get information about all-season resort areas",
+              "desc": "Learn about designated all-season resort areas in the Alberta Rockies, including Kananaskis, Crowsnest Pass, David Thompson corridor, and Grande Cache. Find policies, regulations, environmental requirements, and Indigenous consultation processes.",
+              "users": "General public, municipalities, Indigenous communities, environmental groups",
+              "user_groups": [
+                "General public",
+                "Municipalities",
+                "Indigenous communities"
+              ],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "societal_needs_supports",
+                  "domain": "recreation_culture"
+                },
+                "business": {
+                  "tier": "industry_specific",
+                  "domain": "tourism_hospitality"
+                },
+                "relationships": []
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Public transparency supports responsible resort development balancing economic and environmental interests"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/all-season-resorts",
+                  "url": "https://www.alberta.ca/all-season-resorts"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "All-Season Resorts Policy (PDF)",
+                  "url": "https://open.alberta.ca/dataset/f3e34b53-35fe-48d4-9b1b-3c2ae3cf272e/resource/0ff432dd-02e1-4f05-a84e-c2693b5c8b92/download/ts-all-seasons-resorts-policy-2025-12.pdf"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ASRA",
+                  "color": "#2e7d32",
+                  "full_name": "All-Season Resorts Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 2,
+                  "tip": "Implement All-Season Resorts Act and expand resort development"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Collect and administer the tourism levy",
+          "supporting": [
+            {
+              "name": "Register as a tourism levy collector",
+              "desc": "Operators of temporary accommodation (hotels, motels, B&Bs, short-term rentals) and online booking platforms must register with Alberta Tax and Revenue Administration to collect the tourism levy.",
+              "users": "Accommodation operators, short-term rental hosts, online booking platforms",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "reporting_obligations",
+                "relationships": [
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "Check if a travel agent or tour operator is registered",
+                    "ministry": "ts"
+                  }
+                ]
+              },
+              "reach": {
+                "tier": "high",
+                "estimate": "~10,000 operators",
+                "basis": "active"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Tourism levy generates ~$200M/yr funding Travel Alberta and tourism initiatives"
+              },
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "alberta.ca/tourism-levy",
+                  "url": "https://www.alberta.ca/tourism-levy"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Tax and Revenue Administration: 780-427-3044"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TLA",
+                  "color": "#e65100",
+                  "full_name": "Tourism Levy Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 5,
+                  "tip": "Ensure visitors contribute fairly to taxes and fees"
+                }
+              ]
+            },
+            {
+              "name": "File and remit the tourism levy",
+              "desc": "Registered operators must collect the 6% tourism levy on accommodation purchases and remit it to Alberta Tax and Revenue Administration on a monthly or quarterly basis through the online filing system.",
+              "users": "Registered accommodation operators and online brokers",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "reporting_obligations",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "high",
+                "estimate": "~10,000 operators",
+                "basis": "active"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Levy rate increased from 4% to 6% effective April 2026 to expand tourism funding"
+              },
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "alberta.ca/tourism-levy",
+                  "url": "https://www.alberta.ca/tourism-levy"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Tax and Revenue Administration: 780-427-3044"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Tourism levy return form"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TLA",
+                  "color": "#e65100",
+                  "full_name": "Tourism Levy Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 5,
+                  "tip": "Ensure visitors contribute fairly to taxes and fees"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "title": "OUTCOME 2: Albertans are active and have access to sport, physical activity, and recreation",
+      "short_name": "Active Albertans",
+      "legend_label": "Sport & Recreation",
+      "description": "The ministry supports sport, physical activity, and recreation participation through grant programs, youth accessibility initiatives, community recreation infrastructure, and regulatory oversight to ensure fairness and safety in sport.",
+      "foundational_services": [
+        {
+          "name": "Coordinate provincial sport policy and funding",
+          "desc": "Alberta Sport Connection is the arm's-length agency that advises the minister on sport policy, distributes funding to provincial sport organizations, and coordinates the provincial sport system.",
+          "users": "Provincial sport organizations, recreation associations, government",
+          "user_groups": [
+            "Industry associations",
+            "Non-profit organizations"
+          ],
+          "taxonomy": {
+            "track": "individual",
+            "tier": "societal_needs_supports",
+            "domain": "recreation_culture",
+            "relationships": []
+          },
+          "channels": [
+            {
+              "type": "ch-find",
+              "label": "alberta.ca/sport-physical-activity-and-recreation-stakeholder-services",
+              "url": "https://www.alberta.ca/sport-physical-activity-and-recreation-stakeholder-services"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "ASCA",
+              "color": "#6a1b9a",
+              "full_name": "Alberta Sport Connection Act"
+            }
+          ],
+          "mandate_tags": []
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Fund sport, physical activity and recreation organizations",
+          "supporting": [
+            {
+              "name": "Apply for a sport, physical activity, or recreation operating grant",
+              "desc": "Provincial Sport Organizations and non-profit physical activity and recreation organizations can apply for operating grants to deliver programs across Alberta. Multiple grant streams support different organizational types, from elite sport pathways to community-based active living programs.",
+              "users": "Provincial Sport Organizations, non-profit recreation and physical activity organizations",
+              "user_groups": [
+                "Non-profit organizations",
+                "Industry associations"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "high",
+                "estimate": "~120 organizations funded",
+                "basis": "active"
+              },
+              "economic_impact": {
+                "tag": "Social ROI",
+                "category": "social_roi",
+                "note": "Sport and physical activity participation linked to improved health outcomes and reduced healthcare costs"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/sport-physical-activity-and-recreation-grant-programs",
+                  "url": "https://www.alberta.ca/sport-physical-activity-and-recreation-grant-programs"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/physical-activity-and-recreation-grants",
+                  "url": "https://www.alberta.ca/physical-activity-and-recreation-grants"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "SPAR branch: 780-415-0294"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ASCA",
+                  "color": "#6a1b9a",
+                  "full_name": "Alberta Sport Connection Act"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Apply for a sport and recreation participation grant",
+              "desc": "Non-profit sport and recreation organizations can apply for grants to reduce costs and increase participation, particularly among children, youth, and underrepresented groups including Indigenous youth, newcomers, persons with disabilities, and low-income families.",
+              "users": "Non-profit sport and recreation organizations",
+              "user_groups": [
+                "Non-profit organizations"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "medium",
+                "estimate": "~200 organizations/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Social ROI",
+                "category": "social_roi",
+                "note": "Reducing barriers to participation improves equity, health, and social inclusion"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/every-kid-can-play-program",
+                  "url": "https://www.alberta.ca/every-kid-can-play-program"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/sport-participation-support-program",
+                  "url": "https://www.alberta.ca/sport-participation-support-program"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "SPAR branch: 780-415-0294"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ASCA",
+                  "color": "#6a1b9a",
+                  "full_name": "Alberta Sport Connection Act"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Apply for a major sport events grant",
+              "desc": "Non-profit organizations can apply for funding to host national and international sport events in Alberta. The program supports event planning, marketing, venue preparation, and legacy initiatives.",
+              "users": "Non-profit sport event organizers, host municipalities",
+              "user_groups": [
+                "Non-profit organizations",
+                "Municipalities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "low",
+                "estimate": "~15–20 events/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Major sport events generate visitor spending, media exposure, and venue legacy benefits"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/major-sport-events-grant-program",
+                  "url": "https://www.alberta.ca/major-sport-events-grant-program"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "SPAR branch: 780-415-0294"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ASCA",
+                  "color": "#6a1b9a",
+                  "full_name": "Alberta Sport Connection Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "tip": "Create provincial bidding policy for major sport events with transparency requirements"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get financial help for children's sport and recreation registration",
+          "supporting": [
+            {
+              "name": "Apply for financial assistance for children's sport and recreation fees",
+              "desc": "Alberta families can apply for up to $350 per child to help cover sport, physical activity, and recreation registration fees, reducing financial barriers to youth participation.",
+              "users": "Alberta families with children",
+              "user_groups": [
+                "Families",
+                "Youth"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "very_high",
+                "estimate": "~50,000 children/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Social ROI",
+                "category": "social_roi",
+                "note": "$8M program reducing barriers to youth sport participation across all income levels"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/every-kid-can-play-program",
+                  "url": "https://www.alberta.ca/every-kid-can-play-program"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "SPAR branch: 780-415-0294"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Fund community recreation facilities",
+          "supporting": [
+            {
+              "name": "Apply for community recreation facility capital funding",
+              "desc": "Municipalities and non-profit organizations can apply for capital grants to build new or upgrade existing small and mid-sized recreation facilities across Alberta, including arenas, pools, gyms, and community halls.",
+              "users": "Municipalities, non-profit facility operators",
+              "user_groups": [
+                "Municipalities",
+                "Non-profit organizations"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "$30M program creating construction jobs and long-term community recreation assets"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/active-communities-initiative",
+                  "url": "https://www.alberta.ca/active-communities-initiative"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Tourism and Sport ministry: 780-427-4928"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "name": "Ensure fairness and safety in sport",
+          "supporting": [
+            {
+              "name": "Get information about the Fairness and Safety in Sport Act",
+              "desc": "Learn about Alberta's requirements for fairness and safety in sport, including rules for sport participation categories, athlete protections, and support for mixed-sex leagues and divisions.",
+              "users": "Athletes, parents, coaches, general public",
+              "user_groups": [
+                "General public",
+                "Families",
+                "Youth"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "economic_impact": {
+                "tag": "Social ROI",
+                "category": "social_roi",
+                "note": "Clear rules protect athlete safety, support fair competition, and maintain public trust in sport"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/ensuring-fairness-safety-and-inclusivity-in-sport",
+                  "url": "https://www.alberta.ca/ensuring-fairness-safety-and-inclusivity-in-sport"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Tourism and Sport ministry: 780-427-4928"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FSSA",
+                  "color": "#d32f2f",
+                  "full_name": "Fairness and Safety in Sport Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Ensure full implementation of the Fairness and Safety in Sport Act"
+                }
+              ]
+            },
+            {
+              "name": "Comply with fairness and safety in sport requirements (organizations)",
+              "desc": "Provincial Sport Organizations, post-secondary institutions, and school authorities must comply with the Fairness and Safety in Sport Act and regulation, including policies for participation categories and athlete safety.",
+              "users": "Provincial Sport Organizations, post-secondary institutions, school authorities",
+              "user_groups": [
+                "Non-profit organizations",
+                "Post-secondary institutions",
+                "School authorities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "high",
+                "estimate": "~500 organizations",
+                "basis": "active"
+              },
+              "economic_impact": {
+                "tag": "Social ROI",
+                "category": "social_roi",
+                "note": "Regulatory compliance ensures consistent fairness standards across Alberta's sport system"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/ensuring-fairness-safety-and-inclusivity-in-sport",
+                  "url": "https://www.alberta.ca/ensuring-fairness-safety-and-inclusivity-in-sport"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Fairness and Safety in Sport Regulation",
+                  "url": "https://www.canlii.org/en/ab/laws/regu/alta-reg-124-2025/latest/alta-reg-124-2025.html"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Tourism and Sport ministry: 780-427-4928"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FSSA",
+                  "color": "#d32f2f",
+                  "full_name": "Fairness and Safety in Sport Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Ensure full implementation of the Fairness and Safety in Sport Act"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "name": "Recognize contributions to sport and recreation",
+          "supporting": [
+            {
+              "name": "Nominate someone for a sport or recreation award",
+              "desc": "Recognize outstanding contributions to sport, physical activity, and recreation in Alberta. Award programs honour athletes, coaches, officials, volunteers, and organizations.",
+              "users": "Sport and recreation community members",
+              "user_groups": [
+                "General public",
+                "Non-profit organizations"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "economic_impact": {
+                "tag": "Social ROI",
+                "category": "social_roi",
+                "note": "Recognition programs incentivize volunteerism and sustained participation in sport"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/sport-physical-activity-and-recreation-award-programs",
+                  "url": "https://www.alberta.ca/sport-physical-activity-and-recreation-award-programs"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "SPAR branch: 780-415-0294"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ASCA",
+                  "color": "#6a1b9a",
+                  "full_name": "Alberta Sport Connection Act"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-transact",
+      "label": "Online transaction",
+      "bg_color": "#c8e6c9",
+      "text_color": "#1b5e20"
+    },
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-pub",
+      "label": "Publication",
+      "bg_color": "#f5f5f5",
+      "text_color": "#616161"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-email",
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Visitors & tourists",
+    "Businesses & employers",
+    "Families",
+    "Youth",
+    "Municipalities",
+    "Non-profit organizations",
+    "Indigenous communities",
+    "Industry associations",
+    "Post-secondary institutions",
+    "School authorities"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg_color": "#c8e6c9",
+      "text_color": "#1b5e20"
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg_color": "#e0f2f1",
+      "text_color": "#00695c"
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg_color": "#e1bee7",
+      "text_color": "#6a1b9a"
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg_color": "#f3e5f5",
+      "text_color": "#6a1b9a"
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    "ch-registry": {
+      "label": "Registry agent",
+      "bg_color": "#fff8e1",
+      "text_color": "#f57f17"
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg_color": "#f5f5f5",
+      "text_color": "#616161"
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-pub"
+  ],
+  "mandate_date": "September 17, 2025",
+  "mandate_minister": "Andrew Boitchenko",
+  "mandate_pdf": "https://open.alberta.ca/dataset/b0769b96-7a45-40b5-b57c-415ff82aca49/resource/3ffa6e01-c8f6-4f13-bdbe-094b379a97cb/download/ts-mandate-letter-tourism-and-sport-2025.pdf",
+  "cross_cutting": [
+    "Travel Alberta Corporation (destination marketing agency)",
+    "Alberta Sport Connection (sport system advisory)",
+    "Sport, Physical Activity and Recreation (SPAR) branch",
+    "Tourism Investment Program",
+    "Alberta 10-Year Tourism Strategy",
+    "Annual reports & business plans",
+    "Red tape reduction"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Continue working with Travel Alberta to reach $25 billion in visitor spending target by 2035",
+      "mapping": "-> Access Travel Alberta's destination marketing and visitor information; Invest in or develop a tourism product or experience"
+    },
+    {
+      "number": 2,
+      "text": "Implement the All-Season Resorts Act and expand resort development in Kananaskis, Crowsnest Pass, David Thompson, and Grande Cache",
+      "mapping": "-> Propose an all-season resort development; Get information about all-season resort areas"
+    },
+    {
+      "number": 3,
+      "text": "Ensure full implementation of the Fairness and Safety in Sport Act using all available legal and constitutional tools",
+      "mapping": "-> Get information about the Fairness and Safety in Sport Act; Comply with fairness and safety in sport requirements (organizations)"
+    },
+    {
+      "number": 4,
+      "text": "Create a provincial bidding policy for major sport events with transparent public disclosure and mandatory referenda for affected communities",
+      "mapping": "-> Apply for a Major Sport Events grant"
+    },
+    {
+      "number": 5,
+      "text": "Work with Treasury Board and Finance to ensure visitors contribute fairly through taxes and fees",
+      "mapping": "-> Register as a tourism levy collector; File and remit the tourism levy"
+    }
+  ]
+}

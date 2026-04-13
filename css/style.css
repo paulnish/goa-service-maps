@@ -96,6 +96,56 @@ body {
   margin-bottom: 4px;
 }
 
+/* Hierarchy banner for deep dive pages */
+.hierarchy-banner {
+  padding: 12px 48px;
+  background: #f0f4f8;
+  border-bottom: 1px solid #d0d7de;
+  font-size: 13px;
+  color: #444;
+  line-height: 1.6;
+}
+.hierarchy-path {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.hierarchy-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #888;
+  margin-right: 4px;
+}
+.hierarchy-link {
+  color: #00405c;
+  text-decoration: none;
+  font-weight: 600;
+}
+.hierarchy-link:hover {
+  text-decoration: underline;
+}
+.hierarchy-sep {
+  color: #aaa;
+  font-size: 11px;
+}
+.hierarchy-goal {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.hierarchy-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.hierarchy-ms {
+  color: #555;
+}
+
 /* Legend bar at top */
 .legend-bar {
   padding: 12px 48px;
@@ -292,13 +342,15 @@ body {
 
 /* Supporting cards */
 .supporting-card {
-  padding: 14px 16px;
+  padding: 0;
   background: white;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   transition:
     box-shadow 0.15s,
     opacity 0.15s;
+  display: flex;
+  flex-direction: column;
 }
 .supporting-card:hover {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
@@ -311,21 +363,98 @@ body {
   font-weight: 600;
   color: #333;
   margin-bottom: 2px;
+  padding: 14px 16px 0;
 }
 .supporting-card .sc-desc {
   font-size: 12px;
   color: #888;
-  margin-bottom: 8px;
   line-height: 1.4;
+  padding: 0 16px 10px;
+  border-bottom: 1px solid #f0f0f0;
 }
 .supporting-card .sc-users {
   font-size: 11px;
   color: #999;
-  margin-bottom: 8px;
+  padding: 10px 16px 10px;
+  border-bottom: 1px solid #f0f0f0;
 }
 .supporting-card .sc-users span {
   color: #333;
   font-weight: 500;
+}
+
+/* When impact row follows users, remove the users border */
+.sc-users:has(+ .sc-impact) {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Impact indicators (reach + economic) */
+.sc-impact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 6px 16px 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.impact-reach,
+.impact-econ {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+  letter-spacing: 0.3px;
+}
+
+/* Reach tiers */
+.impact-reach {
+  border: 1px solid;
+}
+.impact-very_high {
+  background: #eff6ff;
+  color: #1e40af;
+  border-color: #bfdbfe;
+}
+.impact-high {
+  background: #f0fdf4;
+  color: #166534;
+  border-color: #bbf7d0;
+}
+.impact-medium {
+  background: #fffbeb;
+  color: #92400e;
+  border-color: #fde68a;
+}
+.impact-low {
+  background: #fef2f2;
+  color: #991b1b;
+  border-color: #fecaca;
+}
+
+/* Economic impact categories */
+.impact-econ {
+  border: 1px solid;
+}
+.impact-cat-direct_economic {
+  background: #ecfdf5;
+  color: #065f46;
+  border-color: #a7f3d0;
+}
+.impact-cat-workforce {
+  background: #eff6ff;
+  color: #1e3a8a;
+  border-color: #bfdbfe;
+}
+.impact-cat-cost_avoidance {
+  background: #fefce8;
+  color: #713f12;
+  border-color: #fef08a;
+}
+.impact-cat-social_roi {
+  background: #fdf4ff;
+  color: #6b21a8;
+  border-color: #e9d5ff;
 }
 
 /* Service status badges */
@@ -445,7 +574,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-bottom: 8px;
+  padding: 10px 16px;
 }
 .ch {
   display: inline-block;
@@ -517,6 +646,10 @@ a.ch:hover {
 .ch-inperson {
   background: #e3f2fd;
   color: #1565c0;
+}
+.ch-web {
+  background: #e8eaf6;
+  color: #283593;
 }
 .ch-pub {
   background: #f5f5f5;
@@ -685,12 +818,23 @@ a.ch:hover {
   transition: opacity 0.2s;
 }
 
+/* Card footer (legislation + mandate) */
+.sc-footer {
+  margin-top: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 16px 12px;
+  border-top: 1px solid #f0f0f0;
+}
+
 /* Legislation tags */
 .leg-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-bottom: 8px;
+  margin-left: auto;
 }
 .leg-tag {
   display: inline-flex;
@@ -755,69 +899,14 @@ a.ch:hover {
   display: flex;
   gap: 3px;
   flex-wrap: wrap;
-  margin-top: 4px;
 }
 
-/* Foundational services (matches TEC) */
-.foundational-service {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  padding: 12px 16px;
-  margin: 4px 14px 4px;
-  background: #f5f5f0;
-  border: 1px dashed #ccc;
-  border-radius: 6px;
+/* Foundational service containers (same structure as main services) */
+.foundational-head {
+  background: #6b7280 !important;
 }
-.foundational-service:last-child {
-  margin-bottom: 14px;
-}
-.fs-icon {
-  font-size: 16px;
-  flex-shrink: 0;
-  margin-top: 1px;
-  opacity: 0.6;
-}
-.fs-content {
-  flex: 1;
-}
-.fs-name {
-  font-size: 13px;
-  font-weight: 600;
-  color: #555;
-}
-.fs-desc {
-  font-size: 12px;
-  color: #888;
-  line-height: 1.4;
-  margin-top: 2px;
-}
-.foundational-service .leg-tag {
-  align-self: center;
-}
-.foundational-service .mandate-tags {
-  margin-top: 0;
-  align-self: center;
-}
-
-/* Foundational services section */
-.foundational-section {
-  margin: 32px 14px 24px;
-  padding: 24px 0 0;
-  border-top: 2px solid #e0e0e0;
-}
-.foundational-header {
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #555;
-  margin-bottom: 4px;
-}
-.foundational-desc {
-  font-size: 12px;
-  color: #999;
-  margin-bottom: 16px;
+.foundational-card {
+  border-style: dashed;
 }
 
 /* Cross-cutting components */
@@ -1653,4 +1742,24 @@ a.leg-service-name:hover {
     width: 100%;
     right: -100%;
   }
+}
+
+/* Deep-dive link */
+.deep-dive-link {
+  display: block;
+  margin-top: 10px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #00405c;
+  background: #f0f6fa;
+  border: 1px solid #d0dfe8;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.15s, border-color 0.15s;
+}
+.deep-dive-link:hover {
+  background: #ddeaf2;
+  border-color: #a0c0d4;
 }

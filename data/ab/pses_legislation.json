@@ -1,0 +1,153 @@
+{
+  "prefix": "pses",
+  "name": "Public Safety and Emergency Services",
+  "short_name": "Public Safety & Emergency Services",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "Community safety & policing",
+      "legend_label": "Community safety",
+      "main_services": [
+        {"number": 1, "name": "Report a safety concern or get crime prevention information"},
+        {"number": 2, "name": "Access policing oversight and complaint processes"}
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "short_name": "Emergency management & disaster recovery",
+      "legend_label": "Emergency management",
+      "main_services": [
+        {"number": 1, "name": "Prepare for emergencies and access alerts"},
+        {"number": 2, "name": "Get disaster recovery support"}
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "short_name": "Victim services & corrections",
+      "legend_label": "Victim services",
+      "main_services": [
+        {"number": 1, "name": "Access victim services and supports"},
+        {"number": 2, "name": "Access correctional and reintegration information"}
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "PSA",
+      "full_name": "Police Act",
+      "color": "#1565c0",
+      "citation": "RSA 2000, c P-17",
+      "summary": "Governs the organization, conduct, and oversight of policing in Alberta. Establishes policing standards, governs the appointment and conduct of police officers, creates mechanisms for complaints and discipline, and establishes police commissions to provide oversight and governance of police services to ensure public safety and accountability.",
+      "full_text": "<h3>Police Act</h3><p><strong>Citation:</strong> RSA 2000, c P-17</p><p>The Police Act is Alberta's primary statute governing the organization, conduct, and oversight of policing services. It establishes the authority for police organizations, defines the role and conduct standards for peace officers, creates complaint and discipline mechanisms, and establishes police commissions to provide governance oversight and ensure police accountability to the public.</p><h4>Key Provisions</h4><ul><li><strong>Police Organization and Authority (ss 1–20):</strong> Establishes the legal basis for police forces in Alberta, including provincial police and municipal police services. Defines the role of peace officers in maintaining public order, preventing crime, and protecting the public. Specifies that police forces must be organized under the governance of police commissions or councils that provide civilian oversight and accountability.</li><li><strong>Police Commission Authority (ss 21–40):</strong> Establishes police commissions comprising civilian members appointed to govern police services. Commissions are responsible for establishing police policies, setting performance standards, approving budgets, and ensuring police services meet community needs. Commissions provide the primary mechanism for public oversight of police operations and conduct.</li><li><strong>Peace Officer Conduct Standards (ss 41–60):</strong> Establishes standards for peace officer conduct, professionalism, and fitness for duty. Requires peace officers to follow law and policy, treat the public with respect, avoid conflicts of interest, and maintain public confidence in policing. Sets expectations for ethical conduct and professional behavior in all circumstances.</li><li><strong>Police Complaints Process (ss 61–90):</strong> Creates a formal complaint process allowing members of the public to report police conduct that they believe violates standards or law. Complaints are received by police services or the police complaint commissioner. The complainant and officer are informed of investigation results. The process is independent and transparent to ensure fairness to both the complainant and officer.</li><li><strong>Discipline and Oversight (ss 91–110):</strong> Authorizes police commissions and senior police leadership to take disciplinary action against officers who violate conduct standards. Disciplinary measures range from counselling and retraining to suspension or termination for serious misconduct. Police are subject to the same laws as the public and may face criminal prosecution for criminal conduct.</li><li><strong>Appeals and Reconsideration (ss 111–125):</strong> Provides appeal procedures for police complaint decisions and disciplinary outcomes. Complainants and officers may appeal to the police commission or independent review body if they believe decisions were unreasonable. Appeals ensure fairness and provide another opportunity for review of contested decisions.</li></ul><p>The Police Act establishes a framework of professional standards, oversight mechanisms, and accountability procedures to ensure that Alberta's police services maintain public confidence through ethical conduct and transparency.</p>",
+      "sections": [
+        {
+          "ref": "ss 61–125",
+          "title": "Policing Standards, Oversight, and Complaints",
+          "description": "Establishes conduct standards for peace officers, creates the police complaints process, governs police discipline mechanisms, and provides for appeals and oversight by police commissions to ensure police accountability and public trust.",
+          "anchor_id": "sec-psa-s61",
+          "services": [
+            {
+              "name": "Report a property or neighbourhood safety concern through SCAN",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Report a safety concern or get crime prevention information"
+            },
+            {
+              "name": "File a complaint about police conduct",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Access policing oversight and complaint processes"
+            },
+            {
+              "name": "Appeal a police complaint decision",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Access policing oversight and complaint processes"
+            }
+          ]
+        },
+        {
+          "ref": "ss 1–60 (Foundational)",
+          "title": "Policing Standards and Community Safety Framework",
+          "description": "Establishes the foundational framework for policing in Alberta, including police organization, governance by commissions, conduct standards, and the authority to oversee policing standards and community safety programs.",
+          "anchor_id": "sec-psa-found",
+          "services": [
+            {
+              "name": "Oversee policing standards and community safety programs",
+              "type": "foundational",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 0,
+              "ms_name": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "EMA",
+      "full_name": "Emergency Management Act",
+      "color": "#00695c",
+      "citation": "RSA 2000, c E-6.8",
+      "summary": "Provides the legislative framework for emergency management in Alberta, including preparedness, response, and recovery from disasters. Establishes the authority for provincial emergency coordination, requires emergency planning, authorizes emergency measures during declared disasters, and provides mechanisms for disaster recovery assistance to affected communities and individuals.",
+      "full_text": "<h3>Emergency Management Act</h3><p><strong>Citation:</strong> RSA 2000, c E-6.8</p><p>The Emergency Management Act is Alberta's comprehensive statute governing emergency management and disaster response. It establishes the authority for provincial emergency coordination, requires municipalities and government agencies to develop emergency plans, authorizes emergency measures during declared emergencies, and establishes mechanisms for disaster recovery assistance and support following major events.</p><h4>Key Provisions</h4><ul><li><strong>Emergency Management Authority (ss 1–10):</strong> Establishes that emergency management is a shared responsibility of provincial and municipal governments. The Minister of Public Safety and Emergency Services leads provincial emergency management. Municipalities must develop and maintain emergency plans. The province may declare emergencies and coordinate response when events exceed local capacity.</li><li><strong>Emergency Planning (ss 11–25):</strong> Requires municipalities and provincial agencies to develop comprehensive emergency plans identifying hazards, response procedures, evacuation protocols, recovery processes, and resource requirements. Plans must address natural disasters (floods, wildfires, severe weather), technological hazards, and other threats to public safety. Plans must be tested regularly and updated to reflect changing conditions.</li><li><strong>Provincial Emergency Coordination (ss 26–40):</strong> Establishes the provincial emergency operations center and coordination procedures. The Minister may declare a 'Provincial Emergency' when the province declares an emergency due to natural disaster, technological hazard, or other event that exceeds municipal response capacity. During declared emergencies, the province coordinates all government response, allocates resources, and directs emergency measures.</li><li><strong>Emergency Measures (ss 41–60):</strong> During declared emergencies, authorized officials may issue orders requiring emergency protective measures such as evacuation, curfew, restrictions on movement, requisitioning of property and supplies, and suspension of regulatory requirements to enable rapid response. Emergency measures are temporary and must be proportionate to the threat.</li><li><strong>Alberta Emergency Alerts (ss 61–70):</strong> Establishes the Alberta Emergency Alerts system for public notification during emergencies and disasters. The system sends emergency alerts to registered phones and displays alerts on websites. Alerts provide critical information to enable protective action (evacuation, shelter-in-place, stay informed). Alerts are issued by authorized officials and are consistent across the province.</li><li><strong>Disaster Recovery (ss 71–85):</strong> Establishes authority for provincial disaster recovery assistance. When disasters are declared, affected individuals and communities may apply for recovery assistance to help repair or replace damaged property and support recovery. Recovery programs may provide grants, loans, or tax relief depending on the disaster and recovery needs.</li><li><strong>Accountability and Reporting (ss 86–95):</strong> Requires that emergency management activities, emergency declarations, emergency measures, and recovery assistance be documented and reported. The Minister must report to the public and legislature on emergency management preparedness, response, and recovery.</li></ul><p>The Emergency Management Act provides Alberta with a comprehensive legal framework for preparing for, responding to, and recovering from emergencies and disasters while protecting public safety and minimizing community impact.</p>",
+      "sections": [
+        {
+          "ref": "ss 61–85",
+          "title": "Emergency Preparedness, Response, and Recovery",
+          "description": "Establishes Alberta Emergency Alerts for public notification, emergency response coordination, disaster recovery assistance mechanisms, and support for affected individuals and communities during and after declared emergencies.",
+          "anchor_id": "sec-ema-s61",
+          "services": [
+            {
+              "name": "Sign up for or check Alberta Emergency Alerts",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 1,
+              "ms_name": "Prepare for emergencies and access alerts"
+            },
+            {
+              "name": "Apply for disaster recovery assistance",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 2,
+              "ms_name": "Get disaster recovery support"
+            }
+          ]
+        },
+        {
+          "ref": "ss 1–60 (Foundational)",
+          "title": "Emergency Management Framework and Coordination",
+          "description": "Establishes the foundational framework for provincial emergency management, emergency planning requirements, provincial coordination authority, and the authority to coordinate provincial emergency management and disaster response.",
+          "anchor_id": "sec-ema-found",
+          "services": [
+            {
+              "name": "Coordinate provincial emergency management and disaster response",
+              "type": "foundational",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 0,
+              "ms_name": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 2,
+    "sections_count": 4,
+    "services_with_leg_count": 6,
+    "services_multi_act_count": 0
+  }
+}

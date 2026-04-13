@@ -1,0 +1,19 @@
+# GoA Service Maps — Apache rewrite rules
+# Replaces netlify.toml redirects for standard web hosting (DreamHost, etc.)
+
+RewriteEngine On
+
+# ─── Legacy redirects ────────────────────────────────────────────────
+RewriteRule ^health/?$ /pphs/service-map [R=301,L]
+RewriteRule ^health/(.+)$ /pphs/$1 [R=301,L]
+RewriteRule ^im/?$ /jeti/service-map [R=301,L]
+RewriteRule ^im/(.+)$ /jeti/$1 [R=301,L]
+
+# ─── Ministry shortcut ───────────────────────────────────────────────
+# /tec or /tec/ → serve /tec/service-map.html
+RewriteRule ^(tec|alss|jus|ae|edu|cfs|fp|ts|acsw|au|ag|em|epa|pphs|hshs|mha|cpe|jeti|ir|infra|tbf|ma|pses|sa|ti|alss_dia|test)/?$ $1/service-map.html [L]
+
+# ─── Clean URLs ──────────────────────────────────────────────────────
+# /tec/service-map → /tec/service-map.html
+# /tec/legislation → /tec/legislation.html
+RewriteRule ^([^/]+)/(service-map|legislation)$ $1/$2.html [L]

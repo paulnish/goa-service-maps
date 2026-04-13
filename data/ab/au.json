@@ -1,0 +1,910 @@
+{
+  "prefix": "au",
+  "full_name": "Affordability and Utilities",
+  "short_name": "Affordability & Utilities",
+  "blurb": "Leads cross-government efforts to make everyday life more affordable, manages policy for Alberta's electricity and natural gas markets, supports utility consumers, and oversees rural utility infrastructure.",
+  "nav_name": "Affordability & Utilities",
+  "has_registry_agents": false,
+  "_status": "COMPLETE — Pass 1. 2 goals, 12 supporting services, 0 ministry foundational, 2 goal-level foundational. Channel audit complete. User group audit complete.",
+  "foundational_services": [],
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "OUTCOME 1: Everyday life is more affordable for Albertans",
+      "short_name": "Affordable everyday life",
+      "legend_label": "Affordability",
+      "description": "The ministry coordinates cross-government affordability efforts, provides financial literacy resources, and delivers targeted relief programs for fuel and heating costs to reduce the cost of living for Albertans.",
+      "foundational_services": [
+        {
+          "name": "Coordinate cross-government affordability strategy",
+          "desc": "Strategic coordination of affordability measures across government ministries, including monitoring cost-of-living pressures, evaluating program effectiveness, and developing new initiatives to reduce financial strain on Albertans.",
+          "users": "Government policy staff, interministerial committees",
+          "user_groups": [
+            "Industry associations"
+          ],
+          "taxonomy": {
+            "track": "individual",
+            "tier": "core_human_needs",
+            "domain": "money_taxes_benefits",
+            "relationships": []
+          },
+          "channels": [
+            {
+              "type": "ch-find",
+              "label": "alberta.ca/affordability-and-utilities",
+              "url": "https://www.alberta.ca/affordability-and-utilities"
+            }
+          ],
+          "legislation": [],
+          "mandate_tags": [
+            {
+              "number": 1,
+              "tip": "Lead and coordinate government affordability efforts"
+            }
+          ]
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get financial guidance and affordability advice",
+          "supporting": [
+            {
+              "name": "Access financial literacy resources and online courses",
+              "desc": "Free financial literacy tools, guides, and online courses covering budgeting, debt management, savings strategies, credit building, and planning for life events such as home buying, family planning, job loss, and retirement.",
+              "users": "Students, working families, seniors, anyone managing personal finances",
+              "user_groups": [
+                "General public",
+                "Youth",
+                "Seniors"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "high",
+                "estimate": "~100,000 page views/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Social ROI",
+                "category": "social_roi",
+                "note": "Financial literacy reduces household debt, bankruptcy, and demand for social supports"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/affordability",
+                  "url": "https://www.alberta.ca/affordability"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Lead and coordinate government affordability efforts"
+                }
+              ]
+            },
+            {
+              "name": "Find ways to reduce everyday costs",
+              "desc": "Practical guidance on reducing costs for food, housing, utilities, transportation, and childcare. Includes tips for lowering energy bills, accessing government benefits, and finding community supports.",
+              "users": "Alberta households, low-income families, seniors",
+              "user_groups": [
+                "General public",
+                "Families",
+                "Seniors"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "~500,000 page views/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Helping households reduce costs prevents financial hardship and reduces demand for emergency supports"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/affordability",
+                  "url": "https://www.alberta.ca/affordability"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Lead and coordinate government affordability efforts"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Apply for fuel and heating cost relief",
+          "supporting": [
+            {
+              "name": "Apply for the farm fuel tax exemption",
+              "desc": "Eligible agricultural producers can apply for a 9-cent-per-litre provincial fuel tax exemption on marked (dyed) gasoline and diesel fuel used for farming operations, reducing input costs for Alberta's agricultural sector.",
+              "users": "Farmers, ranchers, agricultural producers",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "high",
+                "estimate": "~40,000 producers",
+                "basis": "active"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Fuel tax exemption reduces operating costs for Alberta's agricultural sector"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/affordability-and-utilities",
+                  "url": "https://www.alberta.ca/affordability-and-utilities"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Farm Fuel Benefit: 780-422-9167"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "affb@gov.ab.ca",
+                  "url": "mailto:affb@gov.ab.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Apply for the remote area heating allowance",
+              "desc": "Albertans in areas without access to natural gas can apply for a rebate of up to 25% on heating oil and propane costs, helping offset higher heating expenses in rural and remote communities.",
+              "users": "Rural households without natural gas access",
+              "user_groups": [
+                "General public"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "medium",
+                "estimate": "~5,000 households",
+                "basis": "active"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Heating rebate reduces energy poverty in communities without natural gas service"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/affordability-and-utilities",
+                  "url": "https://www.alberta.ca/affordability-and-utilities"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Rural Utilities: 780-427-0125"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "ruralutilities@gov.ab.ca",
+                  "url": "mailto:ruralutilities@gov.ab.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "title": "OUTCOME 2: Albertans have access to reliable, affordable utility services",
+      "short_name": "Reliable & affordable utilities",
+      "legend_label": "Utilities",
+      "description": "The ministry develops policy for Alberta's deregulated electricity and natural gas markets, supports utility consumers through the Utilities Consumer Advocate, and maintains rural utility infrastructure across the province.",
+      "foundational_services": [
+        {
+          "name": "Develop utility market policy and regulation",
+          "desc": "Policy development for Alberta's deregulated electricity and natural gas markets, including generation capacity planning, transmission policy, retail market oversight, and coordination with the Alberta Utilities Commission and Alberta Electric System Operator.",
+          "users": "Government policy staff, utilities industry, regulators",
+          "user_groups": [
+            "Industry associations"
+          ],
+          "taxonomy": {
+            "track": "business",
+            "tier": "regulatory_compliance",
+            "domain": "safety_codes_standards",
+            "relationships": [
+              {
+                "type": "consumer_regulated_provider",
+                "service": "Compare electricity retailers and plans",
+                "ministry": "au"
+              },
+              {
+                "type": "consumer_regulated_provider",
+                "service": "Compare natural gas retailers and plans",
+                "ministry": "au"
+              },
+              {
+                "type": "consumer_regulated_provider",
+                "service": "Get help resolving a utility dispute",
+                "ministry": "au"
+              }
+            ]
+          },
+          "channels": [
+            {
+              "type": "ch-find",
+              "label": "alberta.ca/affordability-and-utilities",
+              "url": "https://www.alberta.ca/affordability-and-utilities"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "EUA",
+              "color": "#1565c0",
+              "full_name": "Electric Utilities Act"
+            },
+            {
+              "abbrev": "GUA",
+              "color": "#e65100",
+              "full_name": "Gas Utilities Act"
+            }
+          ],
+          "mandate_tags": [
+            {
+              "number": 2,
+              "tip": "Ensure reliable electricity system and adequate generation capacity"
+            }
+          ]
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Understand and compare energy providers",
+          "supporting": [
+            {
+              "name": "Compare electricity retailers and plans",
+              "desc": "Alberta's deregulated electricity market allows consumers to choose their electricity retailer. The Utilities Consumer Advocate provides tools to compare rates, contract terms, and retailer performance to help consumers find the best plan.",
+              "users": "Residential consumers, small businesses, farms",
+              "user_groups": [
+                "General public",
+                "Businesses & employers"
+              ],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "scenario_dependent",
+                  "domain": "housing_property"
+                },
+                "business": {
+                  "tier": "core_business_needs",
+                  "domain": "finances_taxes"
+                },
+                "relationships": [
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "Develop utility market policy and regulation",
+                    "ministry": "au"
+                  }
+                ]
+              },
+              "reach": {
+                "tier": "very_high",
+                "estimate": "~1.8M households",
+                "basis": "active"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Informed consumer choice drives competition and lowers energy costs"
+              },
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "ucahelps.alberta.ca",
+                  "url": "https://ucahelps.alberta.ca"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Utilities Consumer Advocate: 310-4822"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EUA",
+                  "color": "#1565c0",
+                  "full_name": "Electric Utilities Act"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Compare natural gas retailers and plans",
+              "desc": "Alberta consumers can choose their natural gas retailer. The Utilities Consumer Advocate provides rate comparison tools and information about contract options to help consumers make informed choices about their gas supply.",
+              "users": "Residential consumers, small businesses, farms",
+              "user_groups": [
+                "General public",
+                "Businesses & employers"
+              ],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "scenario_dependent",
+                  "domain": "housing_property"
+                },
+                "business": {
+                  "tier": "core_business_needs",
+                  "domain": "finances_taxes"
+                },
+                "relationships": [
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "Develop utility market policy and regulation",
+                    "ministry": "au"
+                  }
+                ]
+              },
+              "reach": {
+                "tier": "very_high",
+                "estimate": "~1.5M households",
+                "basis": "active"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Informed consumer choice in the deregulated gas market helps manage energy costs"
+              },
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "ucahelps.alberta.ca",
+                  "url": "https://ucahelps.alberta.ca"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Utilities Consumer Advocate: 310-4822"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "GUA",
+                  "color": "#e65100",
+                  "full_name": "Gas Utilities Act"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Learn about micro-generation and renewable energy options",
+              "desc": "Albertans who generate their own electricity from renewable sources (solar, wind, micro-hydro) can connect to the grid and receive credit for excess power. Information about eligibility, equipment, and the application process is available.",
+              "users": "Homeowners, businesses, farms considering renewable energy",
+              "user_groups": [
+                "General public",
+                "Businesses & employers"
+              ],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "scenario_dependent",
+                  "domain": "housing_property"
+                },
+                "business": {
+                  "tier": "core_business_needs",
+                  "domain": "finances_taxes"
+                },
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "low",
+                "estimate": "~5,000 applicants/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Micro-generation reduces household energy costs and supports clean energy transition"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/micro-generation",
+                  "url": "https://www.alberta.ca/micro-generation"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Affordability and Utilities: 780-427-0125"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EUA",
+                  "color": "#1565c0",
+                  "full_name": "Electric Utilities Act"
+                },
+                {
+                  "abbrev": "HEEA",
+                  "color": "#7b1fa2",
+                  "full_name": "Hydro and Electric Energy Act"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get help with a utility problem",
+          "supporting": [
+            {
+              "name": "Get help resolving a utility dispute",
+              "desc": "The Utilities Consumer Advocate provides free, independent assistance to residential, farm, and small business consumers with utility billing disputes, retailer complaints, and questions about their energy services. Interpreter services are available.",
+              "users": "Residential consumers, farm consumers, small businesses",
+              "user_groups": [
+                "General public",
+                "Businesses & employers"
+              ],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "scenario_dependent",
+                  "domain": "housing_property"
+                },
+                "business": {
+                  "tier": "core_business_needs",
+                  "domain": "finances_taxes"
+                },
+                "relationships": [
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "Develop utility market policy and regulation",
+                    "ministry": "au"
+                  }
+                ]
+              },
+              "reach": {
+                "tier": "high",
+                "estimate": "~25,000 contacts/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Consumer advocacy resolves billing disputes and protects consumers from unfair practices"
+              },
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Utilities Consumer Advocate: 310-4822"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "UCAhelps@gov.ab.ca",
+                  "url": "mailto:UCAhelps@gov.ab.ca"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "ucahelps.alberta.ca",
+                  "url": "https://ucahelps.alberta.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EUA",
+                  "color": "#1565c0",
+                  "full_name": "Electric Utilities Act"
+                },
+                {
+                  "abbrev": "GUA",
+                  "color": "#e65100",
+                  "full_name": "Gas Utilities Act"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Get help preventing utility disconnection",
+              "desc": "Consumers at risk of having their electricity or natural gas disconnected can contact the Utilities Consumer Advocate for help understanding their rights, negotiating payment arrangements, and accessing financial assistance programs.",
+              "users": "Consumers facing utility disconnection",
+              "user_groups": [
+                "General public"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "medium",
+                "estimate": "~5,000 cases/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Preventing disconnection avoids health risks, reconnection fees, and emergency housing costs"
+              },
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Utilities Consumer Advocate: 310-4822"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "ucahelps.alberta.ca",
+                  "url": "https://ucahelps.alberta.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EUA",
+                  "color": "#1565c0",
+                  "full_name": "Electric Utilities Act"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Access rural utility services",
+          "supporting": [
+            {
+              "name": "Get information about rural electrification",
+              "desc": "Alberta supports 32 Rural Electrification Associations that deliver electricity to rural areas. The Rural Electric Program provides grants to help farmers and rural residents access electricity at reasonable cost.",
+              "users": "Rural residents, farmers, Rural Electrification Associations",
+              "user_groups": [
+                "General public",
+                "Businesses & employers"
+              ],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "scenario_dependent",
+                  "domain": "housing_property"
+                },
+                "business": {
+                  "tier": "industry_specific",
+                  "domain": "agriculture"
+                },
+                "relationships": []
+              },
+              "reach": {
+                "tier": "high",
+                "estimate": "~32 REAs provincewide",
+                "basis": "active"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Rural electrification supports agricultural productivity and quality of life in rural communities"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/affordability-and-utilities",
+                  "url": "https://www.alberta.ca/affordability-and-utilities"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Rural Utilities: 780-427-0125"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "ruralutilities@gov.ab.ca",
+                  "url": "mailto:ruralutilities@gov.ab.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EUA",
+                  "color": "#1565c0",
+                  "full_name": "Electric Utilities Act"
+                },
+                {
+                  "abbrev": "HEEA",
+                  "color": "#7b1fa2",
+                  "full_name": "Hydro and Electric Energy Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Support rural utility infrastructure"
+                }
+              ]
+            },
+            {
+              "name": "Get information about rural natural gas service",
+              "desc": "Alberta oversees 85 rural natural gas utilities serving more than 380,000 consumers. The ministry ensures safe design, construction, and operation of rural gas distribution systems.",
+              "users": "Rural residents, gas co-op members, rural gas utilities",
+              "user_groups": [
+                "General public",
+                "Businesses & employers"
+              ],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "scenario_dependent",
+                  "domain": "housing_property"
+                },
+                "business": {
+                  "tier": "core_business_needs",
+                  "domain": "finances_taxes"
+                },
+                "relationships": []
+              },
+              "reach": {
+                "tier": "very_high",
+                "estimate": "~380,000 consumers",
+                "basis": "active"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Rural gas service provides affordable heating and supports rural economic development"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/affordability-and-utilities",
+                  "url": "https://www.alberta.ca/affordability-and-utilities"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Rural Utilities: 780-427-0125"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "ruralutilities@gov.ab.ca",
+                  "url": "mailto:ruralutilities@gov.ab.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "GUA",
+                  "color": "#e65100",
+                  "full_name": "Gas Utilities Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Support rural utility infrastructure"
+                }
+              ]
+            },
+            {
+              "name": "Get information about rural water co-operatives",
+              "desc": "Alberta supports more than 170 water co-operatives that provide treated water to rural communities. The ministry provides technical and governance support to ensure safe and reliable water service.",
+              "users": "Rural residents, water co-op members, water co-operative boards",
+              "user_groups": [
+                "General public"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "high",
+                "estimate": "~170 co-ops provincewide",
+                "basis": "active"
+              },
+              "economic_impact": {
+                "tag": "Social ROI",
+                "category": "social_roi",
+                "note": "Rural water co-operatives provide essential safe drinking water to underserved communities"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/affordability-and-utilities",
+                  "url": "https://www.alberta.ca/affordability-and-utilities"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Rural Utilities: 780-427-0125"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "ruralutilities@gov.ab.ca",
+                  "url": "mailto:ruralutilities@gov.ab.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Support rural utility infrastructure"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-email",
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Families",
+    "Youth",
+    "Seniors",
+    "Businesses & employers",
+    "Industry associations"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg_color": "#c8e6c9",
+      "text_color": "#1b5e20"
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg_color": "#e0f2f1",
+      "text_color": "#00695c"
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg_color": "#e1bee7",
+      "text_color": "#6a1b9a"
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg_color": "#f3e5f5",
+      "text_color": "#6a1b9a"
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    "ch-registry": {
+      "label": "Registry agent",
+      "bg_color": "#fff8e1",
+      "text_color": "#f57f17"
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg_color": "#f5f5f5",
+      "text_color": "#616161"
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    }
+  },
+  "digital_channels": [
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-email"
+  ],
+  "mandate_date": "September 17, 2025",
+  "mandate_minister": "Nathan Neudorf",
+  "mandate_pdf": "https://open.alberta.ca/dataset/b0769b96-7a45-40b5-b57c-415ff82aca49/resource/ca616716-cdfc-4627-b109-66222530d27d/download/au-mandate-letter-affordability-and-utilities-2025.pdf",
+  "cross_cutting": [
+    "Utilities Consumer Advocate (UCA)",
+    "Alberta Utilities Commission (AUC)",
+    "Alberta Electric System Operator (AESO)",
+    "Rural Electrification Associations (32 REAs)",
+    "Rural natural gas utilities (85 utilities)",
+    "Water co-operatives (170+ co-ops)",
+    "Alberta SuperNet broadband network",
+    "Annual reports & business plans",
+    "Red tape reduction"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Lead and coordinate government efforts to make everyday life more affordable for Albertans",
+      "mapping": "-> Access financial literacy resources and online courses; Find ways to reduce everyday costs; Coordinate cross-government affordability strategy"
+    },
+    {
+      "number": 2,
+      "text": "Ensure a reliable electricity system with adequate generation capacity to meet Alberta's growing demand",
+      "mapping": "-> Develop utility market policy and regulation"
+    },
+    {
+      "number": 3,
+      "text": "Support rural utility infrastructure including electrification, natural gas distribution, and water co-operatives",
+      "mapping": "-> Get information about rural electrification; Get information about rural natural gas service; Get information about rural water co-operatives"
+    }
+  ]
+}

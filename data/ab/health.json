@@ -1,0 +1,860 @@
+{
+  "prefix": "health",
+  "full_name": "Health",
+  "short_name": "Health",
+  "blurb": "Provides health care coverage and benefits to Albertans, administers the health care insurance plan, regulates health professions, manages drug benefits and continuing care, delivers public health programs, and supports primary care access across the province.",
+  "nav_name": "Health",
+  "has_registry_agents": true,
+  "_status": "draft",
+  "foundational_services": [],
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "OUTCOME 1: Albertans have access to health care coverage and benefits",
+      "short_name": "Health coverage & benefits",
+      "legend_label": "Coverage & benefits",
+      "description": "The ministry ensures all eligible Albertans have health care insurance coverage and access to supplementary health benefits including drug coverage, aids to daily living, and programs for children, adults, and seniors.",
+      "foundational_services": [
+        {
+          "name": "Administer health insurance policy and benefits program design",
+          "desc": "Develops policy for the Alberta Health Care Insurance Plan, sets benefit schedules and physician fee schedules, negotiates with health professional associations, and administers the overall insurance framework that funds medically necessary services.",
+          "users": "Government policy staff, health professional associations",
+          "user_groups": ["Government"],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/ahcip",
+              "url": "https://www.alberta.ca/ahcip"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "AHCIA",
+              "color": "#1565c0",
+              "full_name": "Alberta Health Care Insurance Act"
+            }
+          ],
+          "mandate_tags": ["health-coverage"]
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Register for and manage your health care insurance",
+          "supporting": [
+            {
+              "name": "Register for the Alberta Health Care Insurance Plan",
+              "desc": "New Alberta residents, newborns, and returning Canadians can register for AHCIP to receive publicly funded health care coverage. Registration provides a personal health number and Alberta health care card.",
+              "users": "New Alberta residents, parents of newborns, returning Canadians",
+              "user_groups": ["Individuals", "Families"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Online AHCIP registration",
+                  "url": "https://www.alberta.ca/ahcip-apply"
+                },
+                {
+                  "type": "ch-registry",
+                  "label": "Registry agent offices"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "AHCIP inquiry line",
+                  "url": null
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail registration form",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AHCIA",
+                  "color": "#1565c0",
+                  "full_name": "Alberta Health Care Insurance Act"
+                }
+              ],
+              "mandate_tags": ["health-coverage"],
+              "reach_estimate": {
+                "tier": "very_high",
+                "estimate": "4.6 million Albertans covered",
+                "basis": "All eligible Alberta residents are enrolled in AHCIP"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "health-coverage",
+                "note": "Foundational public health insurance providing access to medically necessary services for all Albertans"
+              }
+            },
+            {
+              "name": "Update your health care insurance information or replace your card",
+              "desc": "Albertans can update their address, name, or other personal information on their AHCIP registration, and request replacement Alberta health care cards when lost or damaged.",
+              "users": "All insured Albertans",
+              "user_groups": ["Individuals"],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Online update",
+                  "url": "https://www.alberta.ca/ahcip-update"
+                },
+                {
+                  "type": "ch-registry",
+                  "label": "Registry agent offices"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "AHCIP inquiry line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AHCIA",
+                  "color": "#1565c0",
+                  "full_name": "Alberta Health Care Insurance Act"
+                }
+              ],
+              "mandate_tags": ["health-coverage"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of updates annually",
+                "basis": "Albertans frequently move, change names, or lose cards"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "health-coverage",
+                "note": "Ensures continuous access to insured services by keeping records current"
+              }
+            },
+            {
+              "name": "Check your health coverage status or claim history",
+              "desc": "Albertans and health care providers can verify coverage status, check claim history, and confirm eligibility for insured services through online portals and phone inquiries.",
+              "users": "Insured Albertans, health care providers, billing staff",
+              "user_groups": ["Individuals", "Health providers"],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "MyHealth Records portal",
+                  "url": "https://myhealth.alberta.ca"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "AHCIP inquiry line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AHCIA",
+                  "color": "#1565c0",
+                  "full_name": "Alberta Health Care Insurance Act"
+                }
+              ],
+              "mandate_tags": ["health-coverage"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Millions of eligibility verifications annually",
+                "basis": "Every insured visit triggers a coverage check"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "health-coverage",
+                "note": "Supports efficient billing and prevents service denials due to registration gaps"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Access supplementary health benefits and drug coverage",
+          "supporting": [
+            {
+              "name": "Apply for coverage under a government drug benefit program",
+              "desc": "Albertans who qualify can apply for drug coverage through programs such as Non-Group Coverage, Coverage for Seniors, Alberta Child Health Benefit, or Alberta Adult Health Benefit. These programs cover prescription drugs listed on the Alberta Drug Benefit List.",
+              "users": "Seniors, low-income adults, families with children, individuals without employer drug plans",
+              "user_groups": ["Individuals", "Seniors", "Families"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Drug benefit program application",
+                  "url": "https://www.alberta.ca/drug-coverage-programs"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Blue Cross inquiry line",
+                  "url": null
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail application form",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AHCIA",
+                  "color": "#1565c0",
+                  "full_name": "Alberta Health Care Insurance Act"
+                }
+              ],
+              "mandate_tags": ["drug-coverage"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Over 900,000 Albertans covered by government drug programs",
+                "basis": "Includes seniors, low-income, and uninsured Albertans"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "drug-coverage",
+                "note": "Provides affordable access to prescription drugs for vulnerable populations"
+              }
+            },
+            {
+              "name": "Look up whether a drug is covered on the Alberta Drug Benefit List",
+              "desc": "The Alberta Drug Benefit List is a searchable directory of prescription drugs and their coverage status under government drug benefit programs. Pharmacists, physicians, and patients use it to determine coverage eligibility.",
+              "users": "Pharmacists, physicians, patients enrolled in drug programs",
+              "user_groups": ["Individuals", "Health providers"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Alberta Drug Benefit List search",
+                  "url": "https://www.alberta.ca/alberta-drug-benefit-list"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["drug-coverage"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Thousands of lookups daily by providers and patients",
+                "basis": "Primary reference for drug coverage decisions across the province"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "drug-coverage",
+                "note": "Informs prescribing and dispensing decisions to ensure patients receive covered medications"
+              }
+            },
+            {
+              "name": "Apply for aids to daily living benefits",
+              "desc": "The Alberta Aids to Daily Living program helps Albertans with a chronic disability or illness by providing funding for basic medical equipment and supplies such as wheelchairs, respiratory equipment, prosthetics, and ostomy supplies.",
+              "users": "Albertans with chronic disabilities, home care clients, health providers",
+              "user_groups": ["Individuals", "Seniors"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "AADL application through authorized provider",
+                  "url": "https://www.alberta.ca/aadl"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "AADL inquiry line",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["health-benefits"],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Over 100,000 clients served annually",
+                "basis": "Long-standing program serving Albertans with chronic conditions"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "health-benefits",
+                "note": "Enables independent living and reduces hospital and care facility admissions"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "title": "OUTCOME 2: Albertans can access primary and preventive health care",
+      "short_name": "Primary & preventive care",
+      "legend_label": "Primary & preventive care",
+      "description": "The ministry supports access to primary care providers, administers public health programs including immunization and communicable disease prevention, and connects Albertans with health information and advice.",
+      "foundational_services": [
+        {
+          "name": "Plan and fund primary care delivery and health workforce",
+          "desc": "Develops funding models and delivery frameworks for primary care including physician compensation, primary care network governance, and health workforce planning to ensure Albertans have access to family doctors and primary care teams.",
+          "users": "Government, primary care networks, regional health authorities",
+          "user_groups": ["Government"],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/primary-health-care",
+              "url": "https://www.alberta.ca/primary-health-care"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "AHCIA",
+              "color": "#1565c0",
+              "full_name": "Alberta Health Care Insurance Act"
+            }
+          ],
+          "mandate_tags": ["primary-care"]
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Find primary care and get health advice",
+          "supporting": [
+            {
+              "name": "Find a family doctor or primary care provider",
+              "desc": "Albertans looking for a family doctor can search for physicians accepting new patients and learn about primary care options in their community, including Primary Care Networks and walk-in clinics.",
+              "users": "Albertans without a family doctor, new residents",
+              "user_groups": ["General public"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Find a doctor",
+                  "url": "https://www.alberta.ca/find-a-doctor"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Health Link 811",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["primary-care"],
+              "reach_estimate": {
+                "tier": "very_high",
+                "estimate": "Over 800,000 Albertans reported not having a family doctor",
+                "basis": "A significant proportion of the population seeks primary care access"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "primary-care",
+                "note": "Primary care access reduces emergency department visits and improves population health outcomes"
+              }
+            },
+            {
+              "name": "Get advice on a health concern",
+              "desc": "Health Link 811 is a 24/7 telephone service staffed by registered nurses providing health advice, symptom assessment, and direction to appropriate health services. Available to all Albertans.",
+              "users": "All Albertans seeking health advice",
+              "user_groups": ["General public"],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Health Link 811",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "MyHealth.Alberta.ca",
+                  "url": "https://myhealth.alberta.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["primary-care"],
+              "reach_estimate": {
+                "tier": "very_high",
+                "estimate": "Millions of calls annually",
+                "basis": "Primary health advice line for the province's population"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "primary-care",
+                "note": "Reduces unnecessary emergency visits by providing accessible nurse-led health advice"
+              }
+            },
+            {
+              "name": "Access your personal health records online",
+              "desc": "MyHealth Records allows Albertans to view their immunization history, lab results, medication dispensing history, and hospital visit records through a secure online portal.",
+              "users": "All insured Albertans",
+              "user_groups": ["Individuals"],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "MyHealth Records",
+                  "url": "https://myhealth.alberta.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["health-information"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Over 2 million registered users",
+                "basis": "Growing adoption of personal health record access"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "health-information",
+                "note": "Empowers patients with their own health information and reduces duplicate testing"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get immunizations and prevent communicable diseases",
+          "supporting": [
+            {
+              "name": "Get routine or travel immunizations",
+              "desc": "Alberta provides publicly funded routine immunizations for children and adults through public health offices, pharmacies, and physician offices. Travel immunizations are also available. The immunization schedule covers diseases from infancy through adulthood.",
+              "users": "Parents, children, adults, travellers",
+              "user_groups": ["General public", "Families"],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/immunization",
+                  "url": "https://www.alberta.ca/immunization"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Public health offices, pharmacies, physician offices"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Health Link 811",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PHA",
+                  "color": "#00695c",
+                  "full_name": "Public Health Act"
+                }
+              ],
+              "mandate_tags": ["public-health"],
+              "reach_estimate": {
+                "tier": "very_high",
+                "estimate": "Millions of immunizations administered annually",
+                "basis": "Routine childhood and adult immunization programs province-wide"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "public-health",
+                "note": "Prevents outbreaks and reduces long-term health system costs through disease prevention"
+              }
+            },
+            {
+              "name": "Report or learn about a notifiable disease",
+              "desc": "Health care providers are required to report notifiable communicable diseases to the Chief Medical Officer of Health. The ministry publishes surveillance reports and provides guidance on disease prevention and outbreak management.",
+              "users": "Health care providers, public, outbreak response teams",
+              "user_groups": ["Health providers", "General public"],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/notifiable-diseases",
+                  "url": "https://www.alberta.ca/notifiable-diseases"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Public health reporting line",
+                  "url": null
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Surveillance reports and bulletins"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PHA",
+                  "color": "#00695c",
+                  "full_name": "Public Health Act"
+                }
+              ],
+              "mandate_tags": ["public-health"],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Tens of thousands of reports annually",
+                "basis": "Mandatory reporting by all health providers for listed diseases"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "public-health",
+                "note": "Early detection and response prevents disease spread and protects population health"
+              }
+            },
+            {
+              "name": "Access health promotion and disease prevention resources",
+              "desc": "The ministry provides evidence-based resources on healthy living, chronic disease prevention, smoking cessation, cannabis health effects, and other public health topics to help Albertans make informed health choices.",
+              "users": "All Albertans, health educators, community organizations",
+              "user_groups": ["General public"],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/health-wellness",
+                  "url": "https://www.alberta.ca/health-wellness"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Health promotion publications"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["public-health"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of page views and resource downloads",
+                "basis": "Broad public health education mandate reaching diverse audiences"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "public-health",
+                "note": "Preventive health information reduces chronic disease burden and long-term health costs"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "title": "OUTCOME 3: Health services are regulated, safe, and sustainable",
+      "short_name": "Health system regulation & quality",
+      "legend_label": "Regulation & quality",
+      "description": "The ministry regulates health professions, licenses continuing care and health facilities, oversees health service quality and patient safety, and manages health data and research to support an accountable, high-performing health system.",
+      "foundational_services": [
+        {
+          "name": "Develop health system policy, standards, and performance measurement",
+          "desc": "Sets health system standards, develops performance measures, commissions health research, and publishes health system data to support evidence-based policy making and continuous quality improvement across the health system.",
+          "users": "Government, health system administrators, researchers",
+          "user_groups": ["Government"],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/health",
+              "url": "https://www.alberta.ca/health"
+            }
+          ],
+          "legislation": [],
+          "mandate_tags": ["health-system"]
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Register or verify a regulated health professional",
+          "supporting": [
+            {
+              "name": "Register as a regulated health professional in Alberta",
+              "desc": "Health professionals regulated under the Health Professions Act must register with their respective regulatory college. The ministry oversees the regulatory framework governing over 30 regulated health professions and their colleges.",
+              "users": "Physicians, nurses, pharmacists, dentists, and other regulated health professionals",
+              "user_groups": ["Health providers"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply through your regulatory college",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/health-professions",
+                  "url": "https://www.alberta.ca/health-professions"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HPA",
+                  "color": "#c62828",
+                  "full_name": "Health Professions Act"
+                }
+              ],
+              "mandate_tags": ["health-regulation"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Over 100,000 registered health professionals in Alberta",
+                "basis": "30+ regulated professions with mandatory registration"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "health-regulation",
+                "note": "Ensures only qualified professionals deliver health services, protecting patient safety"
+              }
+            },
+            {
+              "name": "Verify a health professional's registration status",
+              "desc": "Albertans can check whether a health professional is registered and in good standing with their regulatory college. Each college maintains a public register of members.",
+              "users": "Patients, employers, health facilities",
+              "user_groups": ["General public", "Health providers"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Search college public registers",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "College inquiry lines",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HPA",
+                  "color": "#c62828",
+                  "full_name": "Health Professions Act"
+                }
+              ],
+              "mandate_tags": ["health-regulation"],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Thousands of public register searches monthly",
+                "basis": "Public verification of health professional credentials"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "health-regulation",
+                "note": "Public transparency protects patients and supports employer due diligence"
+              }
+            },
+            {
+              "name": "File a complaint about a regulated health professional",
+              "desc": "Albertans can file complaints about the conduct, competence, or capacity of a regulated health professional with their respective regulatory college. The college investigates and may take disciplinary action.",
+              "users": "Patients, family members, other health providers",
+              "user_groups": ["General public"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Complaint form through regulatory college",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "College complaints intake",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HPA",
+                  "color": "#c62828",
+                  "full_name": "Health Professions Act"
+                }
+              ],
+              "mandate_tags": ["health-regulation"],
+              "reach_estimate": {
+                "tier": "low",
+                "estimate": "Thousands of complaints filed annually across all colleges",
+                "basis": "Self-regulatory complaints process for 30+ professions"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "health-regulation",
+                "note": "Accountability mechanism that maintains public trust in health professions"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Find or get licensed as a continuing care facility",
+          "supporting": [
+            {
+              "name": "Find a continuing care facility or home care provider",
+              "desc": "Albertans and families can search for licensed continuing care facilities including nursing homes, designated supportive living, and home care providers across the province. Results include facility details, accommodation types, and contact information.",
+              "users": "Seniors, family caregivers, discharge planners",
+              "user_groups": ["Seniors", "Families"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Continuing care facility search",
+                  "url": "https://www.alberta.ca/continuing-care"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Health Link 811",
+                  "url": null
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Continuing care intake through health zone"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HA",
+                  "color": "#c62828",
+                  "full_name": "Hospitals Act"
+                }
+              ],
+              "mandate_tags": ["continuing-care"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Tens of thousands of Albertans in continuing care annually",
+                "basis": "Aging population drives growing demand for continuing care placement"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "continuing-care",
+                "note": "Supports aging in the right place and reduces pressure on acute care hospitals"
+              }
+            },
+            {
+              "name": "Apply for a continuing care facility licence or comply with standards",
+              "desc": "Operators of nursing homes, designated supportive living, and other continuing care facilities must be licensed and meet provincial accommodation and care standards. The ministry conducts inspections and enforces compliance.",
+              "users": "Facility operators, health care administrators",
+              "user_groups": ["Industry"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Facility licensing application",
+                  "url": "https://www.alberta.ca/continuing-care"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Continuing care compliance inquiries",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HA",
+                  "color": "#c62828",
+                  "full_name": "Hospitals Act"
+                }
+              ],
+              "mandate_tags": ["continuing-care"],
+              "reach_estimate": {
+                "tier": "low",
+                "estimate": "Hundreds of licensed facilities province-wide",
+                "basis": "All continuing care operators require provincial licence"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "continuing-care",
+                "note": "Licensing protects vulnerable residents and ensures minimum care standards"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Access health data, research, and wait time information",
+          "supporting": [
+            {
+              "name": "Check surgical and diagnostic wait times",
+              "desc": "Albertans can view estimated wait times for surgeries and diagnostic procedures by procedure type and location. Helps patients and physicians plan care and manage expectations.",
+              "users": "Patients waiting for procedures, referring physicians",
+              "user_groups": ["General public", "Health providers"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Alberta wait times reporting",
+                  "url": "https://www.alberta.ca/wait-times"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["health-information"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of searches annually",
+                "basis": "High public interest in wait time information for surgical and diagnostic care"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "health-information",
+                "note": "Transparency supports informed patient choice and system accountability"
+              }
+            },
+            {
+              "name": "Access health research data and apply for research funding",
+              "desc": "The ministry supports health research through data access, funding programs, and partnerships. Researchers can access de-identified health data and apply for provincial health research grants.",
+              "users": "Health researchers, academic institutions, health system planners",
+              "user_groups": ["Researchers"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Research funding application",
+                  "url": "https://www.alberta.ca/health-research"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Health data and analytics",
+                  "url": "https://www.alberta.ca/health-research"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["health-information"],
+              "reach_estimate": {
+                "tier": "low",
+                "estimate": "Hundreds of research applications and data requests annually",
+                "basis": "Specialized audience of health researchers and academics"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "health-information",
+                "note": "Health research drives innovation, improves care quality, and attracts research investment"
+              }
+            },
+            {
+              "name": "Contact the Health Advocate for help with a concern",
+              "desc": "The Office of the Alberta Health Advocates provides independent assistance to Albertans who have concerns about health services, continuing care, or mental health and addiction services. Advocates help navigate the system and resolve complaints.",
+              "users": "Patients, family members, caregivers with health system concerns",
+              "user_groups": ["General public"],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Health Advocate office",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/health-advocate",
+                  "url": "https://www.alberta.ca/health-advocate"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Health Advocate email",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["health-system"],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Thousands of contacts annually",
+                "basis": "Independent advocacy office serving Albertans with health system concerns"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "health-system",
+                "note": "Provides independent complaint resolution and systemic recommendations for improvement"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "channel_filters": [
+    {"code": "ch-transact", "label": "Online transaction"},
+    {"code": "ch-apply", "label": "Apply"},
+    {"code": "ch-check", "label": "Check / portal"},
+    {"code": "ch-find", "label": "Find / search"},
+    {"code": "ch-web", "label": "Website"},
+    {"code": "ch-email", "label": "Email"},
+    {"code": "ch-pub", "label": "Publication"},
+    {"code": "ch-phone", "label": "Phone"},
+    {"code": "ch-mail", "label": "Mail"},
+    {"code": "ch-inperson", "label": "In person"},
+    {"code": "ch-registry", "label": "Registry agent"}
+  ],
+  "user_group_filters": ["General public", "Individuals", "Seniors", "Families", "Health providers", "Industry", "Researchers"],
+  "channel_types": {
+    "ch-transact": {"label": "Online transaction", "type": "digital"},
+    "ch-apply": {"label": "Apply", "type": "digital"},
+    "ch-check": {"label": "Check / portal", "type": "digital"},
+    "ch-find": {"label": "Find / search", "type": "digital"},
+    "ch-web": {"label": "Website", "type": "digital"},
+    "ch-email": {"label": "Email", "type": "digital"},
+    "ch-pub": {"label": "Publication", "type": "non-digital"},
+    "ch-phone": {"label": "Phone", "type": "non-digital"},
+    "ch-mail": {"label": "Mail", "type": "non-digital"},
+    "ch-inperson": {"label": "In person", "type": "non-digital"},
+    "ch-registry": {"label": "Registry agent", "type": "non-digital"}
+  },
+  "digital_channels": ["ch-transact", "ch-apply", "ch-check", "ch-find", "ch-web", "ch-email"]
+}

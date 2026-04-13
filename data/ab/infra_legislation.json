@@ -1,0 +1,145 @@
+{
+  "prefix": "infra",
+  "name": "Infrastructure",
+  "short_name": "Infrastructure",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "Capital planning & project delivery",
+      "legend_label": "Capital planning",
+      "main_services": [
+        {"number": 1, "name": "Track a school or health facility capital project"},
+        {"number": 2, "name": "Bid on or participate in a public infrastructure project"}
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "short_name": "Facility management & properties",
+      "legend_label": "Facilities & properties",
+      "main_services": [
+        {"number": 1, "name": "Access government property and leasing services"},
+        {"number": 2, "name": "Report a facility issue or access building services"}
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "short_name": "Financing & accountability",
+      "legend_label": "Financing & accountability",
+      "main_services": [
+        {"number": 1, "name": "Engage with public-private partnership and alternative financing opportunities"},
+        {"number": 2, "name": "Protect heritage resources during infrastructure development"}
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "PWA",
+      "full_name": "Public Works Act",
+      "color": "#1565c0",
+      "citation": "RSA 2000, c P-46",
+      "summary": "Governs how the Crown procures, builds, and pays for public infrastructure in Alberta. Establishes mandatory tendering procedures with public disclosure, prompt payment timelines for contractors and subcontractors, and adjudication mechanisms for payment disputes on public works projects.",
+      "full_text": "<h3>Public Works Act</h3><p><strong>Citation:</strong> RSA 2000, c P-46</p><p>The Public Works Act is Alberta's foundational statute governing Crown procurement of construction and infrastructure services. It establishes the legal framework for tendering, contracting, payment, land acquisition, and development area designation for public works projects.</p><h4>Structure (6 Parts)</h4><ul><li><strong>Part 1 — General:</strong> Defines key terms including 'contract,' 'contractor,' 'subcontractor,' 'public work,' and 'Minister.' Establishes that agreements cannot waive the Act's protections and that the Act binds the Crown.</li><li><strong>Part 2 — Contracts:</strong> Governs the procurement process from tender calls through contract award. The Minister may call for tenders for construction, demolition, alteration, repair, and material supply. Tenders may require security, and notices must specify instructions and deadlines. The identity of tenderers and successful bid amounts must be publicly disclosed. The Minister is not bound to accept the lowest or any tender. Contracts may include penalties for late completion, and no payment is made until the contract is signed and required security and insurance are furnished.</li><li><strong>Part 3 — Payment for Public Works and Adjudication:</strong> Establishes mandatory prompt payment timelines: the Crown must pay contractors within 28 days of a proper invoice, contractors must pay subcontractors within 35 days, and subcontractors must pay their sub-subcontractors within 42 days. Interest accrues at the Judgment Interest Act rate on amounts unpaid after 45 days. Creates a notice of claim procedure for unpaid parties and an adjudication framework applying Part 5 of the Prompt Payment and Construction Lien Act for resolving payment disputes.</li><li><strong>Part 4 — Expropriation:</strong> Authorizes the Crown to expropriate land required for public works. Land must be surveyed and planned. The Minister may enter land for surveys, explorations, material extraction, and diversion of watercourses or utilities.</li><li><strong>Part 5 — Public Works Development Areas:</strong> Allows the Lieutenant Governor in Council to declare development areas for phased land acquisition. Land may be acquired by purchase or expropriation. No improvements may be made in a development area without the Minister's written approval.</li><li><strong>Part 6 — Miscellaneous:</strong> Contains provisions for declaring property to be a public work (vesting title in the Crown), offences for interrupting surveys or damaging works, and regulation-making authority.</li></ul><p>The Act works alongside the Prompt Payment and Construction Lien Act (SA 2020, c P-26.4) to ensure fair and timely payment practices in public construction.</p>",
+      "sections": [
+        {
+          "ref": "Part 2",
+          "title": "Contracts",
+          "description": "Governs the Crown's procurement process for public works, including mandatory tendering procedures, public disclosure of bidders and bid amounts, performance security requirements, and contract execution conditions.",
+          "anchor_id": "sec-pwa-p2",
+          "services": [
+            {
+              "name": "Find and bid on government infrastructure tenders",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Bid on or participate in a public infrastructure project"
+            }
+          ]
+        },
+        {
+          "ref": "Part 3",
+          "title": "Payment for Public Works and Adjudication",
+          "description": "Establishes prompt payment timelines (28 days Crown-to-contractor, 35 days contractor-to-subcontractor, 42 days subcontractor-to-sub-subcontractor), notice of claim procedures for unpaid parties, and adjudication mechanisms under the Prompt Payment and Construction Lien Act.",
+          "anchor_id": "sec-pwa-p3",
+          "services": [
+            {
+              "name": "Resolve a payment dispute on a public works contract",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Bid on or participate in a public infrastructure project"
+            }
+          ]
+        },
+        {
+          "ref": "Part 6, s 31",
+          "title": "Declaration of Public Works and Disposal",
+          "description": "Authorizes the Lieutenant Governor in Council to declare property to be a public work, vesting title in the Crown. Provides the legal basis for Crown management and disposition of public properties.",
+          "anchor_id": "sec-pwa-p6",
+          "services": [
+            {
+              "name": "Buy surplus government property",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 1,
+              "ms_name": "Access government property and leasing services"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "HRA",
+      "full_name": "Historical Resources Act",
+      "color": "#c62828",
+      "citation": "RSA 2000, c H-9",
+      "summary": "Protects Alberta's historical resources — including archaeological sites, heritage buildings, and paleontological sites — by requiring impact assessments before development, establishing a designation and registry system for Provincial Historic Resources, and creating enforcement mechanisms for heritage conservation.",
+      "full_text": "<h3>Historical Resources Act</h3><p><strong>Citation:</strong> RSA 2000, c H-9</p><p>The Historical Resources Act is Alberta's principal heritage conservation statute. It establishes a comprehensive framework for identifying, designating, protecting, and managing the province's historical resources, including archaeological sites, heritage buildings, paleontological sites, and other resources of historical significance.</p><h4>Key Provisions</h4><ul><li><strong>Definitions and Interpretation (ss 1–2):</strong> Defines 'historic resource' broadly to include any work of nature or of humans that is primarily of value for its palaeontological, archaeological, prehistoric, historic, cultural, natural, scientific, or aesthetic interest. Also defines 'Provincial Historic Resource' and 'Registered Historic Resource.'</li><li><strong>Historic Resources Fund (ss 3–6):</strong> Establishes the Historic Resources Fund, administered by the Minister, to finance heritage conservation activities including research, acquisition, preservation, restoration, and public education related to historical resources.</li><li><strong>Heritage Survey and Inventory (ss 7–19):</strong> Authorizes the Minister to conduct surveys and maintain an inventory of historic resources across the province. Any person who discovers a historic resource must report it. The Minister may acquire historic resources by purchase, gift, or other means.</li><li><strong>Designation of Provincial Historic Resources (ss 20–25):</strong> Empowers the Minister to designate any historic resource as a Provincial Historic Resource, providing the highest level of statutory protection. Designation may apply to buildings, structures, sites, objects, or areas. Once designated, no person may destroy, disturb, alter, or otherwise interfere with the resource without the Minister's written approval. Designations are registered against land titles, binding subsequent owners. The Minister may also designate Provincial Historic Areas through regulation.</li><li><strong>Registered Historic Resources (ss 26–30):</strong> Provides a second tier of protection through registration. Owners may apply for or consent to registration, which triggers notice requirements before alteration or demolition.</li><li><strong>Impact Assessments and Development Approvals (ss 31–37):</strong> Requires that before any development on lands where a historic resource may exist, the proponent must conduct a heritage resource impact assessment. The Minister may order an assessment, require mitigation measures, or prohibit development to protect the resource. This applies to Crown land dispositions, energy development, and other activities that may affect historic resources.</li><li><strong>Enforcement and Offences (ss 38–45):</strong> Creates offences for damaging or destroying historic resources without authorization, failing to report discoveries, and contravening designation orders. Penalties include fines and imprisonment. The Minister may issue stop orders to prevent imminent damage to historic resources.</li><li><strong>Regulations (ss 46–48):</strong> Authorizes regulations on permits, fees, standards for conservation, and other matters necessary for administering the Act.</li></ul><p>The Act is administered by the Ministry of Infrastructure, which maintains the Alberta Register of Historic Places — a comprehensive inventory of designated and registered historic resources across the province.</p>",
+      "sections": [
+        {
+          "ref": "ss 31–37",
+          "title": "Impact Assessments and Development Approvals",
+          "description": "Requires heritage resource impact assessments before development on lands where a historic resource may exist. The Minister may order assessments, require mitigation measures, or prohibit development to protect heritage resources.",
+          "anchor_id": "sec-hra-s31",
+          "services": [
+            {
+              "name": "Request a heritage resource impact assessment for a project",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 2,
+              "ms_name": "Protect heritage resources during infrastructure development"
+            }
+          ]
+        },
+        {
+          "ref": "ss 20–30",
+          "title": "Designation and Registration of Historic Resources",
+          "description": "Empowers the Minister to designate Provincial Historic Resources and maintain a registry of heritage buildings, sites, and objects. Designations are registered against land titles and bind subsequent owners, providing statutory protection against unauthorized alteration or demolition.",
+          "anchor_id": "sec-hra-s20",
+          "services": [
+            {
+              "name": "Look up designated heritage buildings and provincial historic sites",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 2,
+              "ms_name": "Protect heritage resources during infrastructure development"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 2,
+    "sections_count": 5,
+    "services_with_leg_count": 5,
+    "services_multi_act_count": 0
+  }
+}

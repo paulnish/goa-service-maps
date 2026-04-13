@@ -1,0 +1,926 @@
+{
+  "prefix": "cfs",
+  "full_name": "Children and Family Services",
+  "short_name": "Children & Family Services",
+  "blurb": "Helps build strong, resilient families and communities through child intervention services, foster and kinship care, adoption, youth transitions, and family violence prevention.",
+  "nav_name": "Children and Family Services",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "title": "OUTCOME 1: Addressing Needs",
+      "short_name": "Services and supports are accessible and responsive",
+      "legend_label": "Addressing needs",
+      "description": "High-quality, timely, flexible, and coordinated services are delivered in a manner that is respectful of and builds on the strengths of the individual, family, and the community to reduce reliance on intensive supports in the long-term.",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Report and respond to child safety concerns",
+          "supporting": [
+            {
+              "name": "Report concerns about child abuse or neglect",
+              "desc": "Anyone who suspects a child is being abused or neglected is legally required to report it. The 24/7 hotline connects you to trained intake workers.",
+              "users": "Anyone concerned about a child's safety",
+              "user_groups": [
+                "General public",
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "high",
+                "estimate": "~30,000 reports/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Early identification prevents escalation to higher-cost interventions"
+              },
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Child Abuse Hotline: 1-800-387-5437 (24/7)"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Child Intervention emergency: 1-800-638-0715 (after hours)"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/child-intervention",
+                  "url": "https://www.alberta.ca/how-child-intervention-works"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CYFEA",
+                  "color": "#0070c0",
+                  "full_name": "Child, Youth and Family Enhancement Act"
+                },
+                {
+                  "abbrev": "DECA",
+                  "color": "#007a3d",
+                  "full_name": "Drug-endangered Children Act"
+                },
+                {
+                  "abbrev": "PSECA",
+                  "color": "#8e24aa",
+                  "full_name": "Protection of Sexually Exploited Children Act"
+                },
+                {
+                  "abbrev": "PChAD",
+                  "color": "#455a64",
+                  "full_name": "Protection of Children Abusing Drugs Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "text": "Review the Child, Youth and Family Enhancement Act"
+                }
+              ]
+            },
+            {
+              "name": "Get family preservation support",
+              "desc": "When children can safely remain at home, caseworkers provide family enhancement agreements, connecting families with counselling, parenting support, and community resources.",
+              "users": "Families involved with child intervention",
+              "user_groups": [
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "medium",
+                "estimate": "~6,000 families/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Keeping families together avoids ~$50K+/yr per child in out-of-home care"
+              },
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Local Children and Family Services office"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Local office (varies by region)"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CYFEA",
+                  "color": "#0070c0",
+                  "full_name": "Child, Youth and Family Enhancement Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "text": "Review the Child, Youth and Family Enhancement Act"
+                }
+              ]
+            },
+            {
+              "name": "Get connected to local family support services",
+              "desc": "Community-based Family Resource Networks provide prevention and early intervention support including parenting programs, home visitation, and family counselling — before child intervention is needed.",
+              "users": "Families seeking support",
+              "user_groups": [
+                "Families",
+                "General public"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "high",
+                "estimate": "~50,000 families/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Prevention programs reduce need for formal child intervention"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/family-resource-networks",
+                  "url": "https://www.alberta.ca/family-resource-networks"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Local family resource centre"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Local family resource centre"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CYFEA",
+                  "color": "#0070c0",
+                  "full_name": "Child, Youth and Family Enhancement Act"
+                },
+                {
+                  "abbrev": "FCSSA",
+                  "color": "#c65102",
+                  "full_name": "Family and Community Support Services Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 6,
+                  "text": "Continue collaboration with Ministry of Indigenous Relations on culturally appropriate services"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get support with family violence",
+          "supporting": [
+            {
+              "name": "Get help if you're experiencing family violence",
+              "desc": "Access emergency shelters, counselling, safety planning, and community-based supports. Alberta's family violence information line connects you to local resources.",
+              "users": "Individuals and families experiencing family violence",
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "high",
+                "estimate": "~20,000 contacts/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Social ROI",
+                "category": "social_roi",
+                "note": "Family violence costs Alberta an estimated $7.5B/yr in health, justice, and lost productivity"
+              },
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Family Violence Info Line: 310-1818 (24/7)"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/family-violence-find-supports",
+                  "url": "https://www.alberta.ca/family-violence-find-supports"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Emergency shelters and community organizations"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PAFVA",
+                  "color": "#d32f2f",
+                  "full_name": "Protection Against Family Violence Act"
+                },
+                {
+                  "abbrev": "CYFEA",
+                  "color": "#0070c0",
+                  "full_name": "Child, Youth and Family Enhancement Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 2,
+                  "text": "Invest additional funding in women's shelters and sexual assault centres"
+                },
+                {
+                  "number": 5,
+                  "text": "Develop and implement supports for victims of domestic violence"
+                }
+              ]
+            },
+            {
+              "name": "Get support after sexual violence",
+              "desc": "Connect with sexual assault centres, counselling, and community supports across Alberta.",
+              "users": "Survivors of sexual violence",
+              "user_groups": [
+                "Individuals"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "medium",
+                "estimate": "~5,000 contacts/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Social ROI",
+                "category": "social_roi",
+                "note": "Trauma-informed supports reduce long-term health and justice system costs"
+              },
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta's One Line for Sexual Violence: 1-866-403-8000"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/sexual-violence-get-help",
+                  "url": "https://www.alberta.ca/sexual-violence-get-help"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Sexual assault centres"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PAFVA",
+                  "color": "#d32f2f",
+                  "full_name": "Protection Against Family Violence Act"
+                },
+                {
+                  "abbrev": "PSECA",
+                  "color": "#8e24aa",
+                  "full_name": "Protection of Sexually Exploited Children Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 2,
+                  "text": "Invest additional funding in women's shelters and sexual assault centres"
+                },
+                {
+                  "number": 5,
+                  "text": "Develop and implement supports for victims of domestic violence"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "name": "Support youth aging out of care",
+          "supporting": [
+            {
+              "name": "Get housing and life skills support after leaving care",
+              "desc": "Young adults aged 18-22 who were in care receive financial support, life skills coaching, mentorship, and help with housing, education, and employment.",
+              "users": "Youth aging out of care (18-22)",
+              "user_groups": [
+                "Youth"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "low",
+                "estimate": "~800 youth/yr",
+                "basis": "active"
+              },
+              "economic_impact": {
+                "tag": "Workforce",
+                "category": "workforce",
+                "note": "Stable housing and skills training reduce homelessness and build workforce readiness"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/transition-to-adulthood-program",
+                  "url": "https://www.alberta.ca/transition-to-adulthood-program"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Local Children and Family Services office"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Local office or TAP worker"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CYFEA",
+                  "color": "#0070c0",
+                  "full_name": "Child, Youth and Family Enhancement Act"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Get funding for post-secondary education after care",
+              "desc": "Former youth in care aged 22-31 can access financial support to pursue post-secondary education or upgrading, with living allowances and tuition coverage.",
+              "users": "Former youth in care pursuing education (22-31)",
+              "user_groups": [
+                "Youth"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "low",
+                "estimate": "~600 youth/yr",
+                "basis": "active"
+              },
+              "economic_impact": {
+                "tag": "Workforce",
+                "category": "workforce",
+                "note": "Post-secondary completion increases lifetime earnings and tax contribution"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/advancing-futures",
+                  "url": "https://www.alberta.ca/advancing-futures"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Local Children and Family Services office"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CYFEA",
+                  "color": "#0070c0",
+                  "full_name": "Child, Youth and Family Enhancement Act"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#548235",
+      "title": "OUTCOME 2: Safety",
+      "short_name": "Vulnerable children, youth and individuals are safe and supported",
+      "legend_label": "Safety",
+      "description": "The ministry is committed to working with its partners to prevent family and sexual violence, helping families stay together or reunite and ensuring vulnerable children, youth and individuals are protected from abuse and neglect, whether at home or in care.",
+      "main_services": [
+        {
+          "number": 3,
+          "name": "Provide care for children who need it",
+          "supporting": [
+            {
+              "name": "Become a foster caregiver",
+              "desc": "Apply to become a foster caregiver to provide temporary, safe homes for children who can't stay with their families. Training and ongoing support are provided.",
+              "users": "Adults interested in fostering",
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "medium",
+                "estimate": "~4,200 caregivers",
+                "basis": "active"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/foster-and-kinship-care",
+                  "url": "https://www.alberta.ca/foster-and-kinship-care"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Local Children and Family Services office"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Local office"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CYFEA",
+                  "color": "#0070c0",
+                  "full_name": "Child, Youth and Family Enhancement Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "text": "Continue implementing enhanced supports for foster and kinship caregivers"
+                }
+              ]
+            },
+            {
+              "name": "Arrange kinship care for a family member's child",
+              "desc": "If a child in your extended family or community can't stay with their parents, kinship care lets them stay with someone they know and trust. Financial support and training are available.",
+              "users": "Extended family members and close community members",
+              "user_groups": [
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "medium",
+                "estimate": "~3,500 placements",
+                "basis": "active"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Kinship placements cost significantly less than foster care and produce better child outcomes"
+              },
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Local Children and Family Services office"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Local office"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/become-a-kinship-caregiver",
+                  "url": "https://www.alberta.ca/become-a-kinship-caregiver"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CYFEA",
+                  "color": "#0070c0",
+                  "full_name": "Child, Youth and Family Enhancement Act"
+                },
+                {
+                  "abbrev": "FLA",
+                  "color": "#795548",
+                  "full_name": "Family Law Act"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Get support as a foster or kinship caregiver",
+              "desc": "Caregivers receive skill fees, support payments, training, respite care, and access to mental health supports. Caregiver support workers help with challenges.",
+              "users": "Current foster and kinship caregivers",
+              "user_groups": [
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "medium",
+                "estimate": "~7,500 caregivers",
+                "basis": "active"
+              },
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Caregiver support worker"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Local office"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/support-for-foster-and-kinship-caregivers",
+                  "url": "https://www.alberta.ca/support-for-foster-and-kinship-caregivers"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CYFEA",
+                  "color": "#0070c0",
+                  "full_name": "Child, Youth and Family Enhancement Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "text": "Continue implementing enhanced supports for foster and kinship caregivers"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "name": "Find a permanent home for a child",
+          "supporting": [
+            {
+              "name": "Adopt a child in government care",
+              "desc": "Children who cannot return to their birth families need permanent adoptive homes. The ministry matches children with prospective adoptive families and provides post-adoption support.",
+              "users": "Prospective adoptive parents",
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "low",
+                "estimate": "~300 adoptions/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Permanent placement ends ongoing government care costs"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/adopt-a-child-in-government-care",
+                  "url": "https://www.alberta.ca/adopt-a-child-in-government-care"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Local Children and Family Services office"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Local office"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CYFEA",
+                  "color": "#0070c0",
+                  "full_name": "Child, Youth and Family Enhancement Act"
+                },
+                {
+                  "abbrev": "FLA",
+                  "color": "#795548",
+                  "full_name": "Family Law Act"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Pursue a private or international adoption",
+              "desc": "For private domestic or international adoptions, licensed adoption agencies facilitate the process. The ministry provides oversight and post-placement support.",
+              "users": "Families pursuing non-government adoption",
+              "user_groups": [
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "low",
+                "estimate": "~150 adoptions/yr",
+                "basis": "annual"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/adoption",
+                  "url": "https://www.alberta.ca/adoption"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Licensed adoption agencies"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CYFEA",
+                  "color": "#0070c0",
+                  "full_name": "Child, Youth and Family Enhancement Act"
+                },
+                {
+                  "abbrev": "FLA",
+                  "color": "#795548",
+                  "full_name": "Family Law Act"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Get post-adoption support",
+              "desc": "Adoptive families can access support services including counselling, respite, and financial assistance after an adoption is finalized.",
+              "users": "Adoptive families",
+              "user_groups": [
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "low",
+                "estimate": "~500 families",
+                "basis": "active"
+              },
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Local Children and Family Services office"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Local office"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CYFEA",
+                  "color": "#0070c0",
+                  "full_name": "Child, Youth and Family Enhancement Act"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Oversee delegated child intervention agencies",
+      "desc": "Work with Delegated First Nation Agencies and Métis organizations to deliver culturally appropriate child intervention services to Indigenous children and families",
+      "users": "First Nations and Métis communities",
+      "user_groups": [
+        "General public"
+      ],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "core_human_needs",
+        "domain": "family_relationships",
+        "relationships": []
+      },
+      "channels": [],
+      "legislation": [
+        {
+          "abbrev": "CYFEA",
+          "color": "#0070c0",
+          "full_name": "Child, Youth and Family Enhancement Act"
+        },
+        {
+          "abbrev": "C-92",
+          "color": "#6a1b9a",
+          "full_name": "An Act respecting First Nations, Inuit and Métis Children, Youth and Families"
+        }
+      ],
+      "mandate_tags": [
+        {
+          "number": 4,
+          "text": "Implement An Act respecting First Nations, Inuit and Metis children, youth and families"
+        },
+        {
+          "number": 6,
+          "text": "Continue collaboration with Ministry of Indigenous Relations on culturally appropriate services"
+        }
+      ]
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Individuals",
+    "Families",
+    "Youth"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg_color": "#c8e6c9",
+      "text_color": "#1b5e20"
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg_color": "#e0f2f1",
+      "text_color": "#00695c"
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg_color": "#e1bee7",
+      "text_color": "#6a1b9a"
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg_color": "#f3e5f5",
+      "text_color": "#6a1b9a"
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    "ch-registry": {
+      "label": "Registry agent",
+      "bg_color": "#fff8e1",
+      "text_color": "#f57f17"
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg_color": "#f5f5f5",
+      "text_color": "#616161"
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    }
+  },
+  "digital_channels": [
+    "ch-apply",
+    "ch-find",
+    "ch-web"
+  ],
+  "mandate_date": "September 25, 2025",
+  "mandate_minister": "Searle Turton",
+  "mandate_pdf": "https://open.alberta.ca/dataset/b0769b96-7a45-40b5-b57c-415ff82aca49/resource/a4175b7c-990c-455a-aee7-1a70bb340746/download/cfs-mandate-letter-children-and-family-services-2025.pdf",
+  "cross_cutting": [
+    "Child Intervention Information and Statistics (quarterly)",
+    "Family Resource Networks (community-based prevention)",
+    "Delegated First Nation Agency framework",
+    "Children's Services contact centre",
+    "Advancing Futures bursary program",
+    "Child, Youth and Family Enhancement Act policy manual",
+    "Annual reports & business plans",
+    "Red tape reduction"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Continue implementing enhanced supports for foster and kinship caregivers, including increased caregiver rates",
+      "mapping": "-> Become a foster caregiver; Get support as a foster or kinship caregiver"
+    },
+    {
+      "number": 2,
+      "text": "Invest additional funding in women's shelters and sexual assault centres ($11.5M+)",
+      "mapping": "-> Get help if you're experiencing family violence; Get support after sexual violence"
+    },
+    {
+      "number": 3,
+      "text": "Review the Child, Youth and Family Enhancement Act",
+      "mapping": "-> Report concerns about child abuse or neglect; Get family preservation support (legislative framework)"
+    },
+    {
+      "number": 4,
+      "text": "Implement An Act respecting First Nations, Inuit and Metis children, youth and families",
+      "mapping": "-> Oversee delegated child intervention agencies"
+    },
+    {
+      "number": 5,
+      "text": "Develop and implement supports for victims of domestic violence — work with Arts, Culture and Status of Women",
+      "mapping": "-> Get help if you're experiencing family violence; Get support after sexual violence"
+    },
+    {
+      "number": 6,
+      "text": "Continue collaboration with Ministry of Indigenous Relations on culturally appropriate services",
+      "mapping": "-> Oversee delegated child intervention agencies; Get connected to local family support services"
+    }
+  ]
+}

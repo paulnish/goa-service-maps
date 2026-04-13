@@ -1,0 +1,81 @@
+{
+  "prefix": "mha",
+  "name": "Mental Health and Addiction",
+  "short_name": "Mental Health & Addiction",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "Mental health access & crisis",
+      "legend_label": "Mental health & crisis",
+      "main_services": [
+        {"number": 1, "name": "Get mental health crisis support or find counselling"},
+        {"number": 2, "name": "Access mental health support for children and youth"}
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "short_name": "Addiction treatment & recovery",
+      "legend_label": "Treatment & recovery",
+      "main_services": [
+        {"number": 1, "name": "Get treatment for addiction or substance use"},
+        {"number": 2, "name": "Access harm reduction and overdose prevention services"}
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "short_name": "Service quality & licensing",
+      "legend_label": "Quality & licensing",
+      "main_services": [
+        {"number": 1, "name": "Find a licensed treatment provider or report a concern"}
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "MHA",
+      "full_name": "Mental Health Act",
+      "color": "#1565c0",
+      "citation": "RSA 2000, c M-13",
+      "summary": "Governs the admission, treatment, and rights of persons with mental disorders in Alberta, including voluntary and involuntary admission to designated facilities, community treatment orders, treatment authorization, patient rights, independent review panels, and the Mental Health Patient Advocate.",
+      "full_text": "<h3>Mental Health Act</h3><p><strong>Citation:</strong> RSA 2000, c M-13</p><p>The Mental Health Act is Alberta's principal statute governing the care and treatment of persons with mental disorders. It provides the legal framework for admission to mental health facilities, patient rights, treatment authorization, and independent oversight of involuntary detention.</p><h4>Structure (7 Parts)</h4><ul><li><strong>Definitions (s 1):</strong> Defines key terms including 'admission certificate,' 'approved hospital,' 'community treatment order,' 'formal patient,' 'voluntary patient,' and 'mental disorder.' A mental disorder is defined as a substantial disorder of thought, mood, perception, orientation, or memory that grossly impairs judgment, behaviour, capacity to recognize reality, or ability to meet the ordinary demands of life.</li><li><strong>Part 1 — Admission and Detention (ss 2–12):</strong> Governs voluntary and involuntary admission to approved hospitals. Physicians may issue admission certificates when a person has a mental disorder, is likely to cause harm to themselves or others, and is unsuitable for admission as a voluntary patient. Two certificates are required for continued detention beyond 24 hours. Includes provisions for peace officer apprehension, emergency admission, and renewal certificates. Also establishes community treatment orders (s 9.1) allowing supervised treatment in the community as an alternative to hospitalization.</li><li><strong>Part 2 — Administration (ss 13–25):</strong> Governs the administration of approved hospitals and mental health programs. Includes provisions for the board of an approved hospital, patient property and finances, transfer between facilities, and interprovincial transfers. Addresses the management of patient belongings and financial affairs during hospitalization.</li><li><strong>Part 3 — Treatment and Control (ss 26–30):</strong> Establishes the framework for treatment authorization. Voluntary patients may refuse treatment. For formal (involuntary) patients, treatment may be authorized by the review panel if the patient is incapable of making treatment decisions. Addresses the use of restraints and seclusion, which may only be used to prevent serious bodily harm and must be reviewed regularly.</li><li><strong>Part 4 — Discharge (ss 31–33):</strong> Governs the discharge of patients from approved hospitals. Attending physicians must discharge formal patients when admission criteria are no longer met. Patients, their guardians, or the Minister may apply for discharge. Conditions may be placed on a conditional discharge.</li><li><strong>Part 5 — Review Panels (ss 34–43):</strong> Establishes independent Mental Health Review Panels to review the detention and treatment of formal patients. Panels include legal, medical, and public members. Patients and their representatives may request reviews. Panels have the power to order discharge, authorize or refuse treatment, and review community treatment orders. Provides procedural rights including the right to be heard and to have legal representation.</li><li><strong>Part 6 — Mental Health Patient Advocate (ss 44–47):</strong> Creates the position of the Mental Health Patient Advocate, who is independent of the government and health system. The Advocate investigates complaints from patients and their families, monitors compliance with the Act, educates patients about their rights, and makes recommendations to improve mental health services. The Advocate has the right to access any approved facility and patient records.</li><li><strong>Part 7 — General (ss 48–54):</strong> Contains miscellaneous provisions including confidentiality requirements, regulation-making authority, offences and penalties, and transition provisions. Provides that no action lies against a person acting in good faith under the Act.</li></ul><p>The Act is complemented by the Mental Health Regulation and works alongside the Mental Health Services Protection Act, which governs the licensing of private mental health and addiction treatment facilities.</p>",
+      "sections": [
+        {
+          "ref": "Part 1, ss 2–12",
+          "title": "Admission and Detention",
+          "description": "Governs voluntary and involuntary admission to approved hospitals, including admission certificates, peace officer apprehension, emergency admission, and community treatment orders as an alternative to hospitalization.",
+          "anchor_id": "sec-mha-p1",
+          "services": [
+            {"name": "Get crisis support for a mental health or addiction emergency", "type": "supporting", "goal_number": 1, "goal_color": "#1565c0", "ms_number": 1, "ms_name": "Get mental health crisis support or find counselling"}
+          ]
+        },
+        {
+          "ref": "Part 5, ss 34–43",
+          "title": "Review Panels",
+          "description": "Establishes independent Mental Health Review Panels to review the detention and treatment of involuntary patients. Panels have the power to order discharge, authorize or refuse treatment, and review community treatment orders.",
+          "anchor_id": "sec-mha-p5",
+          "services": [
+            {"name": "Report a concern about a mental health or addiction service provider", "type": "supporting", "goal_number": 3, "goal_color": "#c62828", "ms_number": 1, "ms_name": "Find a licensed treatment provider or report a concern"}
+          ]
+        },
+        {
+          "ref": "Part 6, ss 44–47",
+          "title": "Mental Health Patient Advocate",
+          "description": "Creates the independent Mental Health Patient Advocate who investigates patient complaints, monitors compliance with the Act, educates patients about their rights, and makes recommendations to improve mental health services.",
+          "anchor_id": "sec-mha-p6",
+          "services": [
+            {"name": "Find a licensed addiction or mental health treatment provider", "type": "supporting", "goal_number": 3, "goal_color": "#c62828", "ms_number": 1, "ms_name": "Find a licensed treatment provider or report a concern"}
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 1,
+    "sections_count": 3,
+    "services_with_leg_count": 3,
+    "services_multi_act_count": 0
+  }
+}

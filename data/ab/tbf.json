@@ -1,0 +1,820 @@
+{
+  "prefix": "tbf",
+  "full_name": "Treasury Board and Finance",
+  "short_name": "Treasury Board & Finance",
+  "blurb": "Manages Alberta's fiscal framework, administers provincial taxes and levies, oversees pensions, insurance, and financial regulation, manages unclaimed property, and regulates gaming, liquor, and cannabis — ensuring sound fiscal management and consumer protection.",
+  "nav_name": "Treasury Board & Finance",
+  "has_registry_agents": false,
+  "_status": "draft",
+  "foundational_services": [],
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "OUTCOME 1: Alberta has a fair and efficient tax system that funds public services",
+      "short_name": "Tax administration & revenue",
+      "legend_label": "Tax & revenue",
+      "description": "The ministry administers Alberta's provincial tax system including corporate income tax, personal income tax credits and benefits, fuel tax, tobacco tax, tourism levy, and other levies through Tax and Revenue Administration (TRA).",
+      "foundational_services": [
+        {
+          "name": "Administer provincial tax policy and revenue collection",
+          "desc": "Develops tax policy, administers tax legislation, collects provincial taxes and levies, and manages compliance and enforcement programs through Tax and Revenue Administration.",
+          "users": "Government policy staff, Treasury Board",
+          "user_groups": [
+            "Government"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/tax-and-revenue-administration",
+              "url": "https://www.alberta.ca/tax-and-revenue-administration"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "ACTA",
+              "color": "#1565c0",
+              "full_name": "Alberta Corporate Tax Act"
+            }
+          ],
+          "mandate_tags": [
+            "tax-administration"
+          ],
+          "taxonomy": {
+            "track": "business",
+            "tier": "core_business_needs",
+            "domain": "finances_taxes",
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "File and pay provincial taxes and levies",
+          "supporting": [
+            {
+              "name": "File and pay Alberta corporate income tax",
+              "desc": "Corporations operating in Alberta file corporate income tax returns and pay provincial corporate income tax through Tax and Revenue Administration. Alberta's corporate tax rate is among the lowest in Canada.",
+              "users": "Corporations, tax preparers, accountants",
+              "user_groups": [
+                "Business owners",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "TRA online filing (TRACS)",
+                  "url": "https://www.alberta.ca/tax-and-revenue-administration"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "TRA inquiry line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ACTA",
+                  "color": "#1565c0",
+                  "full_name": "Alberta Corporate Tax Act"
+                }
+              ],
+              "mandate_tags": [
+                "tax-administration"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Access the provincial budget and fiscal reports",
+                    "ministry": "tbf"
+                  }
+                ]
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of corporate filers",
+                "basis": "All corporations operating in Alberta must file provincial corporate income tax"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "tax-administration",
+                "note": "Corporate income tax is a major provincial revenue source funding public services"
+              }
+            },
+            {
+              "name": "File and pay fuel tax, tobacco tax, or tourism levy",
+              "desc": "Businesses that sell fuel, tobacco products, or provide tourism accommodation file returns and remit applicable levies to TRA. Includes fuel tax, tobacco tax, tourism levy, and the 911 levy.",
+              "users": "Fuel retailers, tobacco distributors, accommodation providers",
+              "user_groups": [
+                "Business owners",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "TRA online filing",
+                  "url": "https://www.alberta.ca/tax-and-revenue-administration"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "TRA inquiry line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FTA",
+                  "color": "#1565c0",
+                  "full_name": "Fuel Tax Act"
+                },
+                {
+                  "abbrev": "TTA",
+                  "color": "#1565c0",
+                  "full_name": "Tobacco Tax Act"
+                }
+              ],
+              "mandate_tags": [
+                "tax-administration"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Thousands of businesses file levies",
+                "basis": "Fuel tax and tobacco tax apply to all retailers and distributors in the province"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "tax-administration",
+                "note": "Levies fund transportation infrastructure, health programs, and emergency services"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Access tax credits, benefits, and exemptions",
+          "supporting": [
+            {
+              "name": "Check your eligibility for the Alberta Child and Family Benefit",
+              "desc": "Low- and middle-income families with children may be eligible for the Alberta Child and Family Benefit, a non-taxable quarterly payment. The benefit is calculated automatically based on federal income tax returns.",
+              "users": "Families with children, low-income Albertans",
+              "user_groups": [
+                "Families",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Alberta Child and Family Benefit information",
+                  "url": "https://www.alberta.ca/alberta-child-and-family-benefit"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Canada Revenue Agency (federal administers payment)",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "APITA",
+                  "color": "#1565c0",
+                  "full_name": "Alberta Personal Income Tax Act"
+                }
+              ],
+              "mandate_tags": [
+                "tax-benefits"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "very_high",
+                "estimate": "Hundreds of thousands of Alberta families",
+                "basis": "The ACFB supports families with adjusted net income below approximately $43,000"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "tax-benefits",
+                "note": "Direct income support reduces child poverty and supports family financial stability"
+              }
+            },
+            {
+              "name": "Apply for an Alberta Indian Tax Exemption",
+              "desc": "First Nations individuals with a Certificate of Indian Status can claim exemption from provincial fuel tax and tobacco tax on qualifying purchases made on-reserve or delivered to a reserve.",
+              "users": "First Nations individuals with status cards",
+              "user_groups": [
+                "Indigenous peoples"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Alberta Indian Tax Exemption information",
+                  "url": "https://www.alberta.ca/alberta-indian-tax-exemption"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Participating retailers on or near reserves"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FTA",
+                  "color": "#1565c0",
+                  "full_name": "Fuel Tax Act"
+                },
+                {
+                  "abbrev": "TTA",
+                  "color": "#1565c0",
+                  "full_name": "Tobacco Tax Act"
+                }
+              ],
+              "mandate_tags": [
+                "tax-benefits",
+                "indigenous"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Tens of thousands of eligible individuals",
+                "basis": "Alberta has over 100,000 registered First Nations members"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "tax-benefits",
+                "note": "Tax exemption upholds treaty rights and federal Indian Act provisions"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "title": "OUTCOME 2: Albertans' pensions and insurance are secure and well-regulated",
+      "short_name": "Pensions, insurance & financial regulation",
+      "legend_label": "Pensions & insurance",
+      "description": "The ministry regulates pensions, insurance, and financial services to protect Albertans' retirement savings and ensure insurance markets are fair and stable. Includes the Superintendent of Insurance, pension oversight, and securities regulation.",
+      "foundational_services": [
+        {
+          "name": "Regulate pensions, insurance, and financial services in Alberta",
+          "desc": "Oversees the registration and regulation of pension plans, licenses insurance companies and adjusters, supervises securities markets through the Alberta Securities Commission, and develops regulatory policy to protect consumers and ensure market stability.",
+          "users": "Pension plan administrators, insurance companies, securities firms, government regulators",
+          "user_groups": [
+            "Government"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/treasury-board-and-finance",
+              "url": "https://www.alberta.ca/treasury-board-and-finance"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "EPPA",
+              "color": "#00695c",
+              "full_name": "Employment Pension Plans Act"
+            },
+            {
+              "abbrev": "IA",
+              "color": "#00695c",
+              "full_name": "Insurance Act"
+            }
+          ],
+          "mandate_tags": [
+            "pensions",
+            "insurance"
+          ],
+          "taxonomy": {
+            "track": "business",
+            "tier": "regulatory_compliance",
+            "domain": "licences_permits",
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Access pension information or file a pension complaint",
+          "supporting": [
+            {
+              "name": "Find information about your employer pension plan",
+              "desc": "Albertans enrolled in a registered pension plan can access information about pension plan registration, member rights, plan governance, and what happens to your pension when you change jobs or retire. The Superintendent of Pensions oversees plan compliance.",
+              "users": "Pension plan members, retirees, employers with pension plans",
+              "user_groups": [
+                "Workers",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Pension plan information",
+                  "url": "https://www.alberta.ca/pension-plans"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Superintendent of Pensions inquiry line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EPPA",
+                  "color": "#00695c",
+                  "full_name": "Employment Pension Plans Act"
+                }
+              ],
+              "mandate_tags": [
+                "pensions"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of pension plan members",
+                "basis": "Over 800 registered pension plans in Alberta covering hundreds of thousands of members"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "pensions",
+                "note": "Pension oversight protects Albertans' retirement savings and plan integrity"
+              }
+            },
+            {
+              "name": "File a complaint about a pension plan",
+              "desc": "If you believe your employer pension plan is not being administered properly — such as missing contributions, incorrect benefit calculations, or governance concerns — you can file a complaint with the Superintendent of Pensions for investigation.",
+              "users": "Pension plan members with complaints",
+              "user_groups": [
+                "Workers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Pension complaint submission",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Superintendent of Pensions",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EPPA",
+                  "color": "#00695c",
+                  "full_name": "Employment Pension Plans Act"
+                }
+              ],
+              "mandate_tags": [
+                "pensions",
+                "enforcement"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "low",
+                "estimate": "Hundreds of complaints and inquiries annually",
+                "basis": "The Superintendent investigates pension plan compliance issues"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "pensions",
+                "note": "Complaint investigation deters pension plan mismanagement and protects members"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get insurance information or file an insurance complaint",
+          "supporting": [
+            {
+              "name": "Find information about insurance regulation and your rights",
+              "desc": "Albertans can access information about insurance regulation, policyholder rights, auto insurance, home insurance, and how insurance companies are supervised. The Superintendent of Insurance regulates the industry to ensure fair treatment of consumers.",
+              "users": "Insurance policyholders, consumers shopping for insurance",
+              "user_groups": [
+                "General public",
+                "Business owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Insurance regulation information",
+                  "url": "https://www.alberta.ca/insurance"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Superintendent of Insurance",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "IA",
+                  "color": "#00695c",
+                  "full_name": "Insurance Act"
+                }
+              ],
+              "mandate_tags": [
+                "insurance"
+              ],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "core_human_needs",
+                  "domain": "money_taxes_benefits"
+                },
+                "business": {
+                  "tier": "core_business_needs",
+                  "domain": "insurance_risk"
+                },
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "very_high",
+                "estimate": "Virtually all Alberta adults hold insurance policies",
+                "basis": "Auto insurance is mandatory; home, life, and health insurance are widespread"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "insurance",
+                "note": "Insurance regulation protects consumers and ensures market stability"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "title": "OUTCOME 3: Alberta's finances are managed transparently and public resources are well-stewarded",
+      "short_name": "Fiscal planning, gaming & accountability",
+      "legend_label": "Fiscal & gaming",
+      "description": "The ministry manages Alberta's fiscal framework, publishes the provincial budget, regulates gaming, liquor, and cannabis, administers unclaimed property, and ensures accountability and transparency in public finances.",
+      "foundational_services": [
+        {
+          "name": "Develop the provincial fiscal framework and budget",
+          "desc": "Develops the provincial budget, fiscal plan, and economic outlook. Manages the Heritage Savings Trust Fund and other fiscal reserves. Provides economic analysis and fiscal forecasting to support government decision-making.",
+          "users": "Government, Treasury Board, Legislature",
+          "user_groups": [
+            "Government"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/budget",
+              "url": "https://www.alberta.ca/budget"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "FPTA",
+              "color": "#c62828",
+              "full_name": "Fiscal Planning and Transparency Act"
+            }
+          ],
+          "mandate_tags": [
+            "fiscal-planning"
+          ],
+          "taxonomy": {
+            "track": "business",
+            "tier": "core_business_needs",
+            "domain": "finances_taxes",
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Access gaming, liquor, or cannabis licences and information",
+          "supporting": [
+            {
+              "name": "Apply for or renew a gaming, liquor, or cannabis licence",
+              "desc": "Businesses and non-profits can apply for licences to sell liquor, operate gaming activities (casinos, VLTs, raffles, bingos), or sell cannabis. The Alberta Gaming, Liquor and Cannabis Commission (AGLC) administers licensing, compliance, and enforcement.",
+              "users": "Restaurant and bar owners, gaming operators, cannabis retailers, non-profits running raffles",
+              "user_groups": [
+                "Business owners",
+                "Organizations"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "AGLC licensing portal",
+                  "url": "https://aglc.ca"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "AGLC inquiry line",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "AGLC licensing information",
+                  "url": "https://aglc.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "GLCA",
+                  "color": "#c62828",
+                  "full_name": "Gaming, Liquor and Cannabis Act"
+                }
+              ],
+              "mandate_tags": [
+                "gaming-liquor"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Tens of thousands of licensed establishments and gaming/raffle operators",
+                "basis": "AGLC licenses thousands of liquor, gaming, and cannabis establishments across Alberta"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "gaming-liquor",
+                "note": "Gaming and liquor licensing supports the hospitality industry and generates significant provincial revenue"
+              }
+            },
+            {
+              "name": "Report a concern about a licensed establishment",
+              "desc": "Albertans can report concerns about a licensed liquor establishment, gaming operator, or cannabis retailer to AGLC for investigation. This includes concerns about overcrowding, underage sales, intoxication, or licence violations.",
+              "users": "Members of the public, community organizations",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "AGLC complaint line",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "AGLC complaints",
+                  "url": "https://aglc.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "GLCA",
+                  "color": "#c62828",
+                  "full_name": "Gaming, Liquor and Cannabis Act"
+                }
+              ],
+              "mandate_tags": [
+                "gaming-liquor",
+                "enforcement"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Thousands of complaints and inspections annually",
+                "basis": "AGLC conducts compliance inspections and investigates complaints province-wide"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "gaming-liquor",
+                "note": "Compliance enforcement protects public safety and maintains industry standards"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Claim unclaimed property or access fiscal information",
+          "supporting": [
+            {
+              "name": "Search for and claim unclaimed property",
+              "desc": "Albertans can search a registry of unclaimed personal property — including forgotten bank accounts, insurance benefits, investments, and other financial assets — and submit a claim to recover their property. Over $168 million in unclaimed property is held by the province.",
+              "users": "All Albertans, estates and heirs of deceased Albertans",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Unclaimed property search",
+                  "url": "https://www.alberta.ca/unclaimed-property"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "Unclaimed property claim form",
+                  "url": "https://www.alberta.ca/unclaimed-property"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Unclaimed property inquiry line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "UPPVPA",
+                  "color": "#c62828",
+                  "full_name": "Unclaimed Personal Property and Vested Property Act"
+                }
+              ],
+              "mandate_tags": [
+                "unclaimed-property"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Over 340,000 unclaimed property items worth $168 million",
+                "basis": "Large and growing registry of unclaimed assets with broad public interest"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "unclaimed-property",
+                "note": "Returning unclaimed property to rightful owners strengthens financial security"
+              }
+            },
+            {
+              "name": "Access the provincial budget and fiscal reports",
+              "desc": "Albertans can access the provincial budget, quarterly fiscal updates, the Heritage Savings Trust Fund report, government financial statements, and the economic outlook to understand how public funds are managed and allocated.",
+              "users": "Taxpayers, media, researchers, business leaders",
+              "user_groups": [
+                "General public",
+                "Business owners",
+                "Researchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Alberta budget and fiscal reports",
+                  "url": "https://www.alberta.ca/budget"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Budget documents and economic outlook"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FPTA",
+                  "color": "#c62828",
+                  "full_name": "Fiscal Planning and Transparency Act"
+                }
+              ],
+              "mandate_tags": [
+                "fiscal-planning",
+                "accountability"
+              ],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "societal_needs_supports",
+                  "domain": "recreation_culture"
+                },
+                "business": {
+                  "tier": "core_business_needs",
+                  "domain": "finances_taxes"
+                },
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "File and pay Alberta corporate income tax",
+                    "ministry": "tbf"
+                  }
+                ]
+              },
+              "reach_estimate": {
+                "tier": "very_high",
+                "estimate": "Hundreds of thousands of Albertans access budget information",
+                "basis": "The provincial budget affects all Albertans and receives broad public and media attention"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "accountability",
+                "note": "Fiscal transparency builds public confidence in government financial management"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-transact",
+      "label": "Online transaction"
+    },
+    {
+      "code": "ch-apply",
+      "label": "Apply"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website"
+    },
+    {
+      "code": "ch-pub",
+      "label": "Publication"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Business owners",
+    "Industry",
+    "Workers",
+    "Families",
+    "Indigenous peoples",
+    "Organizations",
+    "Researchers",
+    "Government"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "type": "digital"
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "type": "digital"
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "type": "digital"
+    },
+    "ch-web": {
+      "label": "Website",
+      "type": "digital"
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "type": "non-digital"
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "type": "non-digital"
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "type": "non-digital"
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-find",
+    "ch-web"
+  ]
+}

@@ -1,0 +1,849 @@
+{
+  "prefix": "pses",
+  "full_name": "Public Safety and Emergency Services",
+  "short_name": "Public Safety & Emergency Services",
+  "blurb": "Delivers public safety, emergency management, and victim services. Oversees policing standards, emergency preparedness and response, disaster recovery support, victim assistance, and provincial correctional facilities to keep Albertans safe and supported.",
+  "nav_name": "Public Safety & Emergency Services",
+  "has_registry_agents": false,
+  "_status": "draft",
+  "foundational_services": [],
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "OUTCOME 1: Albertans are safe in their communities",
+      "short_name": "Community safety & policing",
+      "legend_label": "Community safety",
+      "description": "The ministry oversees policing standards, community safety programs, crime prevention initiatives, and public complaint processes. Works with police services to maintain public safety and responds to community concerns about policing.",
+      "foundational_services": [
+        {
+          "name": "Oversee policing standards and community safety programs",
+          "desc": "Sets and enforces policing standards across Alberta, coordinates community safety initiatives, manages police conduct oversight, and supports crime prevention programs to maintain public confidence in law enforcement.",
+          "users": "Police services, community safety coordinators, oversight bodies",
+          "user_groups": [
+            "Government"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/public-safety",
+              "url": "https://www.alberta.ca/public-safety"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "PSA",
+              "color": "#1565c0",
+              "full_name": "Police Act"
+            }
+          ],
+          "mandate_tags": [
+            "policing-oversight"
+          ],
+          "taxonomy": {
+            "track": "business",
+            "tier": "regulatory_compliance",
+            "domain": "licences_permits",
+            "relationships": [
+              {
+                "type": "complainant_regulated_party",
+                "service": "File a complaint about police conduct",
+                "ministry": "pses"
+              },
+              {
+                "type": "complainant_regulated_party",
+                "service": "Appeal a police complaint decision",
+                "ministry": "pses"
+              }
+            ]
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Report a safety concern or get crime prevention information",
+          "supporting": [
+            {
+              "name": "Report a property or neighbourhood safety concern through SCAN",
+              "desc": "Residents can report property crimes, neighbourhood safety concerns, or suspicious activity to police through the SCAN (Suspicious Activity) program. Reports help police identify crime patterns and deploy resources to address community concerns.",
+              "users": "Residents, property owners, neighbourhood associations",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "SCAN online reporting",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Non-emergency police line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PSA",
+                  "color": "#1565c0",
+                  "full_name": "Police Act"
+                }
+              ],
+              "mandate_tags": [
+                "community-safety",
+                "crime-reporting"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Thousands of reports annually from neighbourhoods across Alberta",
+                "basis": "Community policing programs receive reports from all major urban and rural areas"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "community-safety",
+                "note": "Effective crime reporting and prevention directly reduces property losses and criminal activity"
+              }
+            },
+            {
+              "name": "Access crime prevention resources and community safety programs",
+              "desc": "Albertans can access information and resources about crime prevention, personal safety, home security, and community safety programs. Includes guidance on cybercrime prevention, fraud awareness, and neighbourhood safety initiatives.",
+              "users": "Residents, students, seniors, business owners",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Crime prevention resources on alberta.ca",
+                  "url": "https://www.alberta.ca/public-safety"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Crime prevention guides and materials"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "community-safety",
+                "prevention"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of Albertans access crime prevention information annually",
+                "basis": "Province-wide availability and public interest in personal and property safety"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "community-safety",
+                "note": "Crime prevention education reduces victimization and criminal activity, lowering costs to society"
+              }
+            },
+            {
+              "name": "Report poaching, illegal hunting, or a wildlife concern",
+              "desc": "Albertans can report wildlife crimes including poaching, illegal hunting, or illegal trapping through the dedicated Report a Poacher line. Wildlife officers investigate reports to protect Alberta's wildlife resources and enforce hunting and trapping regulations.",
+              "users": "Hunters, trappers, landowners, outdoor enthusiasts",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Report a Poacher line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PSA",
+                  "color": "#1565c0",
+                  "full_name": "Police Act"
+                }
+              ],
+              "mandate_tags": [
+                "wildlife-enforcement",
+                "crime-reporting"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Hundreds of wildlife crime reports annually",
+                "basis": "Active enforcement line receives reports across the province"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "wildlife-enforcement",
+                "note": "Wildlife protection enforcement maintains ecological balance and supports hunting heritage"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Access policing oversight and complaint processes",
+          "supporting": [
+            {
+              "name": "File a complaint about police conduct",
+              "desc": "Albertans who believe a police officer has engaged in misconduct can file a formal complaint through the independent police complaint process. Complaints are investigated and decided by an impartial body to ensure police accountability.",
+              "users": "Members of the public with concerns about police conduct",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Police complaint form",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Complaints information line",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Police complaints information on alberta.ca",
+                  "url": "https://www.alberta.ca/public-safety"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PSA",
+                  "color": "#1565c0",
+                  "full_name": "Police Act"
+                }
+              ],
+              "mandate_tags": [
+                "policing-oversight",
+                "accountability"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": [
+                  {
+                    "type": "complainant_regulated_party",
+                    "service": "Oversee policing standards and community safety programs",
+                    "ministry": "pses"
+                  }
+                ]
+              },
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Hundreds of complaints filed annually",
+                "basis": "Complaints mechanisms are available to all Albertans with concerns about police conduct"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "policing-oversight",
+                "note": "Independent complaints process maintains public trust in policing and ensures officer accountability"
+              }
+            },
+            {
+              "name": "Appeal a police complaint decision",
+              "desc": "Complainants can appeal a police complaint decision if they disagree with the outcome of their initial complaint. The appeal process provides a further level of independent review and oversight.",
+              "users": "Individuals who have filed police complaints",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Appeal application",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PSA",
+                  "color": "#1565c0",
+                  "full_name": "Police Act"
+                }
+              ],
+              "mandate_tags": [
+                "policing-oversight",
+                "accountability"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": [
+                  {
+                    "type": "complainant_regulated_party",
+                    "service": "Oversee policing standards and community safety programs",
+                    "ministry": "pses"
+                  }
+                ]
+              },
+              "reach_estimate": {
+                "tier": "low",
+                "estimate": "Dozens to low hundreds of appeals annually",
+                "basis": "Appeal process available to those dissatisfied with initial complaint decisions"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "policing-oversight",
+                "note": "Appeal mechanisms strengthen oversight credibility and ensure fairness in complaint resolution"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "title": "OUTCOME 2: Albertans are prepared for and recover from emergencies and disasters",
+      "short_name": "Emergency management & disaster recovery",
+      "legend_label": "Emergency management",
+      "description": "The ministry coordinates emergency preparedness, response, and recovery across Alberta. Works with communities and partner agencies to prepare for hazards, respond to emergencies and disasters, and support recovery from major events.",
+      "foundational_services": [
+        {
+          "name": "Coordinate provincial emergency management and disaster response",
+          "desc": "Leads provincial emergency preparedness, response, and recovery coordination. Develops emergency plans, manages disaster response operations, allocates recovery resources, and works with municipalities and federal partners during emergencies.",
+          "users": "Municipal emergency coordinators, emergency responders, disaster recovery planners",
+          "user_groups": [
+            "Government",
+            "Municipalities"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/emergency-management",
+              "url": "https://www.alberta.ca/emergency-management"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "EMA",
+              "color": "#00695c",
+              "full_name": "Emergency Management Act"
+            }
+          ],
+          "mandate_tags": [
+            "emergency-management"
+          ],
+          "taxonomy": {
+            "track": "business",
+            "tier": "regulatory_compliance",
+            "domain": "reporting_obligations",
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Prepare for emergencies and access alerts",
+          "supporting": [
+            {
+              "name": "Get emergency preparedness information and make a plan",
+              "desc": "Albertans can access emergency preparedness information, including how to prepare for natural disasters, severe weather, and other emergencies. Resources include family emergency planning guides, emergency supply checklists, and guidance for vulnerable populations.",
+              "users": "Residents, families, seniors, people with disabilities",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Emergency preparedness on alberta.ca",
+                  "url": "https://www.alberta.ca/emergency-management"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Emergency preparedness guides and checklists"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "preparedness",
+                "public-education"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of Albertans access preparedness information",
+                "basis": "Province-wide emergency risks and public responsibility for family preparedness"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "preparedness",
+                "note": "Prepared families and communities reduce disaster impact, losses, and recovery time"
+              }
+            },
+            {
+              "name": "Sign up for or check Alberta Emergency Alerts",
+              "desc": "Albertans can receive emergency alerts about severe weather, wildfires, floods, and other emergencies through Alberta Emergency Alerts. Alerts are sent to registered phones and can be checked online to stay informed of threats and emergency information.",
+              "users": "All Albertans, residents in areas affected by emergencies",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Alberta Emergency Alerts website",
+                  "url": "https://www.alberta.ca/emergency-management"
+                },
+                {
+                  "type": "ch-app",
+                  "label": "Alberta Emergency Alerts mobile app"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EMA",
+                  "color": "#00695c",
+                  "full_name": "Emergency Management Act"
+                }
+              ],
+              "mandate_tags": [
+                "emergency-alerts",
+                "public-notification"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of Albertans registered for alerts",
+                "basis": "Statewide system with active uptake during severe weather and emergency seasons"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "emergency-alerts",
+                "note": "Timely emergency alerts enable rapid evacuation, protective action, and life-safety responses"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get disaster recovery support",
+          "supporting": [
+            {
+              "name": "Apply for disaster recovery assistance",
+              "desc": "Albertans affected by disasters (floods, wildfires, severe storms) can apply for provincial disaster recovery assistance to help with recovery costs. Applications are accepted through the disaster recovery program and assessed for eligibility and support.",
+              "users": "Disaster-affected residents, homeowners, agricultural operators",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Disaster recovery application",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Disaster recovery assistance line",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Disaster recovery program information",
+                  "url": "https://www.alberta.ca/emergency-management"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EMA",
+                  "color": "#00695c",
+                  "full_name": "Emergency Management Act"
+                }
+              ],
+              "mandate_tags": [
+                "disaster-recovery",
+                "recovery-support"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Thousands of recovery assistance applications during major disaster events",
+                "basis": "Provincial disaster recovery programs available after declared disasters"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "disaster-recovery",
+                "note": "Recovery assistance accelerates economic and community recovery, reducing long-term disaster impacts"
+              }
+            },
+            {
+              "name": "Access wildfire or flood status information",
+              "desc": "Albertans can check current wildfire and flood status, active incidents, evacuation orders, and impacts to communities and infrastructure. Status information is updated regularly during active incidents to keep the public informed.",
+              "users": "Residents in or near affected areas, emergency planners, media",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Wildfire and flood status portal",
+                  "url": "https://www.alberta.ca/emergency-management"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "Active incidents search",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EMA",
+                  "color": "#00695c",
+                  "full_name": "Emergency Management Act"
+                }
+              ],
+              "mandate_tags": [
+                "emergency-information",
+                "public-notification"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of accesses during wildfire and flood seasons",
+                "basis": "Critical information for residents in affected areas and provincial emergency coordination"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "emergency-information",
+                "note": "Real-time incident information enables rapid evacuation decisions and emergency response coordination"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "title": "OUTCOME 3: Victims and communities are supported through the justice and corrections systems",
+      "short_name": "Victim services & corrections",
+      "legend_label": "Victim services",
+      "description": "The ministry provides victim services and support throughout the justice and corrections systems. Operates provincial correctional facilities, offers victim assistance programs, facilitates community reintegration, and ensures public safety through corrections.",
+      "foundational_services": [
+        {
+          "name": "Operate correctional facilities and support community reintegration",
+          "desc": "Operates provincial correctional facilities, manages inmate custody, coordinates community supervision and reintegration programs, and administers restorative justice initiatives to reduce reoffending and support community safety.",
+          "users": "Inmates, community supervision clients, victim advocates, reintegration planners",
+          "user_groups": [
+            "Government"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/corrections",
+              "url": "https://www.alberta.ca/corrections"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "PSA",
+              "color": "#c62828",
+              "full_name": "Police Act"
+            }
+          ],
+          "mandate_tags": [
+            "corrections",
+            "reintegration"
+          ],
+          "taxonomy": {
+            "track": "business",
+            "tier": "regulatory_compliance",
+            "domain": "reporting_obligations",
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Access victim services and supports",
+          "supporting": [
+            {
+              "name": "Find victim services in your community",
+              "desc": "Crime victims can access a range of support services including victim counselling, crisis support, legal information, and referrals. Services are available across the province through victim services programs and community partners.",
+              "users": "Crime victims, family members of victims, survivors",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Victim services locator",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Victim services helpline",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "victim-services",
+                "support"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Thousands of victims access services annually",
+                "basis": "Crime victims across Alberta access counselling, legal support, and recovery services"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "victim-services",
+                "note": "Victim support services reduce trauma impact and facilitate recovery and community reintegration"
+              }
+            },
+            {
+              "name": "Access information about an offender in custody or on supervision",
+              "desc": "Members of the public and victims can access information about offenders in provincial custody or under community supervision, including release status and conditions. Information is available to support victim safety planning and public awareness.",
+              "users": "Crime victims, interested members of the public, community members",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Offender information portal",
+                  "url": "https://www.alberta.ca/corrections"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Offender inquiry line",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "victim-services",
+                "offender-information"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Hundreds of offender inquiries monthly",
+                "basis": "Victims and concerned members of the public access offender release and status information"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "victim-services",
+                "note": "Offender information access supports victim safety planning and community confidence in justice system"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Access correctional and reintegration information",
+          "supporting": [
+            {
+              "name": "Visit an inmate in a provincial correctional facility",
+              "desc": "Family members and visitors can arrange visits with inmates held in provincial correctional facilities. Visitor information includes facility locations, visiting schedules, identification requirements, and facility rules.",
+              "users": "Family members, friends, legal representatives of inmates",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Visiting information line",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Inmate visiting information on alberta.ca",
+                  "url": "https://www.alberta.ca/corrections"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Visiting at provincial correctional facilities"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "corrections",
+                "community-connection"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Thousands of visits to provincial facilities annually",
+                "basis": "Multiple correctional facilities across the province with regular visiting programs"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "corrections",
+                "note": "Family contact during incarceration supports inmate mental health and improves reintegration outcomes"
+              }
+            },
+            {
+              "name": "Access reintegration and community supervision information",
+              "desc": "Individuals on community supervision or release can access information about their conditions, supervision requirements, reintegration programs, and community resources. Information supports compliance and successful reintegration into the community.",
+              "users": "Individuals on release or community supervision, support workers, community partners",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Reintegration programs and information",
+                  "url": "https://www.alberta.ca/corrections"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Community supervision inquiry line",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "corrections",
+                "reintegration"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Hundreds of individuals access reintegration information monthly",
+                "basis": "Community supervision populations and reintegration program participants province-wide"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "reintegration",
+                "note": "Reintegration support reduces recidivism and supports successful community reentry, improving public safety"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-apply",
+      "label": "Apply"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website"
+    },
+    {
+      "code": "ch-pub",
+      "label": "Publication"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search"
+    },
+    {
+      "code": "ch-app",
+      "label": "Mobile app"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Government",
+    "Municipalities"
+  ],
+  "channel_types": {
+    "ch-apply": {
+      "label": "Apply",
+      "type": "digital"
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "type": "non-digital"
+    },
+    "ch-web": {
+      "label": "Website",
+      "type": "digital"
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "type": "non-digital"
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "type": "digital"
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "type": "digital"
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "type": "non-digital"
+    }
+  },
+  "digital_channels": [
+    "ch-apply",
+    "ch-web",
+    "ch-find",
+    "ch-app"
+  ]
+}

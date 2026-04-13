@@ -1,0 +1,643 @@
+{
+  "prefix": "ir",
+  "full_name": "Indigenous Relations",
+  "short_name": "Indigenous Relations",
+  "blurb": "Builds and maintains the Government of Alberta's relationships with First Nations, Métis Settlements, and Métis communities — managing Crown consultation on land and resource decisions, supporting Indigenous economic and community development, administering Métis Settlement governance, and leading reconciliation initiatives.",
+  "nav_name": "Indigenous Relations",
+  "has_registry_agents": false,
+  "_status": "draft",
+  "foundational_services": [],
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "OUTCOME 1: Indigenous communities are meaningfully consulted on land and resource decisions",
+      "short_name": "Consultation & land",
+      "legend_label": "Consultation & land",
+      "description": "The ministry manages Alberta's legal duty to consult with First Nations and Métis communities when provincial decisions on Crown land and natural resource management may affect Treaty rights, traditional uses, or harvesting activities.",
+      "foundational_services": [
+        {
+          "name": "Administer Crown consultation policy and the consultation assessment process",
+          "desc": "Operates the Aboriginal Consultation Office, which manages consultation assessments for resource development, infrastructure, and land management decisions across the province. Maintains consultation policies for First Nations (Treaties 6, 7, 8), Métis Settlements, and Credibly Asserted Métis Communities.",
+          "users": "Government regulators, industry proponents, Indigenous communities",
+          "user_groups": ["Government"],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/indigenous-relations",
+              "url": "https://www.alberta.ca/indigenous-relations"
+            }
+          ],
+          "legislation": [],
+          "mandate_tags": ["consultation"],
+          "taxonomy": {
+            "track": "both",
+            "individual": {
+              "tier": "societal_needs_supports",
+              "domain": "safety_emergencies"
+            },
+            "business": {
+              "tier": "regulatory_compliance",
+              "domain": "environmental_requirements"
+            },
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Participate in consultation on a land or resource decision",
+          "supporting": [
+            {
+              "name": "Respond to a consultation notification on a proposed project or land decision",
+              "desc": "When a land or resource decision may affect Treaty rights or traditional uses, First Nations and Métis communities receive notification and can participate in consultation. Communities can raise concerns, request information, and propose accommodation measures.",
+              "users": "First Nations and Métis community leadership, consultation coordinators",
+              "user_groups": ["First Nations", "Métis communities"],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "ACO Digital Service consultation portal",
+                  "url": "https://www.alberta.ca/indigenous-relations"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Aboriginal Consultation Office",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "ACO inquiry line",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["consultation"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Thousands of consultation assessments annually",
+                "basis": "All Crown land and resource decisions potentially affecting 48 First Nations and 8 Métis Settlements"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "consultation",
+                "note": "Meaningful consultation upholds Treaty rights and provides regulatory certainty for resource development"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Submit a consultation assessment request as a project proponent",
+              "desc": "Industry proponents and government agencies submit consultation assessment requests through the ACO Digital Service when a proposed project or decision triggers the duty to consult. The ACO determines the scope and level of consultation required.",
+              "users": "Energy, mining, forestry, and infrastructure proponents",
+              "user_groups": ["Industry"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "ACO Digital Service",
+                  "url": "https://www.alberta.ca/indigenous-relations"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Proponent guide to consultation procedures",
+                  "url": "https://www.alberta.ca/indigenous-relations"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["consultation"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Thousands of proponent submissions annually",
+                "basis": "All major resource and infrastructure projects in Alberta require consultation assessment"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "consultation",
+                "note": "Consultation assessment is a prerequisite for regulatory approval of resource projects"
+              },
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "environmental_requirements",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Respond to a consultation notification on a proposed project or land decision",
+                    "ministry": "ir"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Access consultation capacity funding as an Indigenous community",
+              "desc": "The Indigenous Consultation Capacity Program provides annual funding to First Nations and Métis communities to support their ability to participate effectively in Alberta's consultation process, including hiring staff, reviewing technical documents, and engaging in field studies.",
+              "users": "First Nations and Métis communities participating in consultation",
+              "user_groups": ["First Nations", "Métis communities"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Capacity funding application",
+                  "url": "https://www.alberta.ca/indigenous-relations"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "ACO inquiry line",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["consultation"],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Funding distributed to dozens of communities annually",
+                "basis": "Program supports all Indigenous communities engaged in consultation"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "consultation",
+                "note": "Capacity funding ensures communities can participate meaningfully in technical consultation processes"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "title": "OUTCOME 2: Indigenous communities have economic opportunities and strong community supports",
+      "short_name": "Economic & community development",
+      "legend_label": "Economic & community development",
+      "description": "The ministry supports Indigenous economic development through business investment, employment partnerships, development grants, reconciliation initiatives, and community safety programs — helping First Nations and Métis communities build prosperity and resilience.",
+      "foundational_services": [
+        {
+          "name": "Develop Indigenous economic development and reconciliation policy",
+          "desc": "Develops policy frameworks for Indigenous economic partnerships, coordinates the government's response to the Truth and Reconciliation Commission's Calls to Action and the National Inquiry into Missing and Murdered Indigenous Women and Girls, and supports cross-ministry Indigenous initiatives.",
+          "users": "Government policy staff, cross-ministry working groups",
+          "user_groups": ["Government"],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/indigenous-relations",
+              "url": "https://www.alberta.ca/indigenous-relations"
+            }
+          ],
+          "legislation": [],
+          "mandate_tags": ["reconciliation"],
+          "taxonomy": {
+            "track": "individual",
+            "tier": "societal_needs_supports",
+            "domain": "safety_emergencies",
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Access funding for Indigenous economic and community development",
+          "supporting": [
+            {
+              "name": "Apply for a First Nations community development grant",
+              "desc": "First Nations can apply for grants through the First Nations Development Fund for economic, social, and community development projects. The fund, sourced from First Nations gaming revenues, supports infrastructure, education, health, cultural preservation, and economic diversification.",
+              "users": "First Nations governments and community organizations",
+              "user_groups": ["First Nations"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "FNDF grant application",
+                  "url": "https://www.alberta.ca/indigenous-relations"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "FNDF inquiry line",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["economic-development"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Dozens of grants awarded annually across 48 First Nations",
+                "basis": "Major funding source for First Nations community development projects"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "economic-development",
+                "note": "Gaming-revenue grants fund critical community infrastructure and economic diversification"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Apply for Indigenous business investment funding",
+              "desc": "Indigenous community-owned businesses can apply for investment funding through the Aboriginal Business Investment Fund, which provides up to $10 million per year for business ventures that create employment and economic opportunities in Indigenous communities.",
+              "users": "Indigenous community-owned businesses and economic development corporations",
+              "user_groups": ["First Nations", "Métis communities"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Business investment fund application",
+                  "url": "https://www.alberta.ca/indigenous-relations"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Investment fund inquiries",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["economic-development"],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Dozens of investment applications annually",
+                "basis": "$10 million annual fund for Indigenous community business ventures"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "economic-development",
+                "note": "Business investment creates jobs and builds self-sustaining Indigenous economies"
+              },
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "exporting_trade",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Access employment and training supports for Indigenous workers",
+              "desc": "The Employment Partnership Program supports Indigenous people in accessing training, skills development, and employment opportunities. Funding supports community-based employment projects, skills training, and partnerships between Indigenous organizations and employers.",
+              "users": "Indigenous job seekers, training providers, employers, community organizations",
+              "user_groups": ["First Nations", "Métis communities", "Individuals"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Employment partnership application",
+                  "url": "https://www.alberta.ca/indigenous-relations"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Community-based training providers"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["employment", "economic-development"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of participants supported annually",
+                "basis": "Ongoing employment partnership projects across the province"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "employment",
+                "note": "Closing the Indigenous employment gap strengthens communities and the provincial economy"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Support Indigenous community safety and reconciliation",
+          "supporting": [
+            {
+              "name": "Apply for community safety funding addressing violence against Indigenous women and girls",
+              "desc": "Indigenous-led organizations can apply for funding through the Community Support Fund for projects that address violence and promote the safety and economic security of Indigenous women, girls, and two-spirit people, responding to the Calls for Justice from the National Inquiry into MMIWG.",
+              "users": "Indigenous-led organizations, community safety projects",
+              "user_groups": ["First Nations", "Métis communities", "Organizations"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Community support fund application",
+                  "url": "https://www.alberta.ca/indigenous-relations"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Community safety inquiries",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["community-safety", "reconciliation"],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Dozens of projects funded annually",
+                "basis": "Dedicated fund addressing Calls for Justice"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "community-safety",
+                "note": "Targeted funding addresses systemic safety gaps for Indigenous women, girls, and 2S+ people"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Access reconciliation and cultural preservation project funding",
+              "desc": "The Indigenous Reconciliation Initiative supports Indigenous-led cultural revitalization, language preservation, and reconciliation projects. Funding helps communities maintain and strengthen cultural practices, oral histories, and intergenerational knowledge transfer.",
+              "users": "Indigenous cultural organizations, community groups, elders' councils",
+              "user_groups": ["First Nations", "Métis communities"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Reconciliation initiative application",
+                  "url": "https://www.alberta.ca/indigenous-relations"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Reconciliation initiative information",
+                  "url": "https://www.alberta.ca/indigenous-relations"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["reconciliation"],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Dozens of cultural and reconciliation projects funded annually",
+                "basis": "Growing investment in reconciliation and cultural preservation"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "reconciliation",
+                "note": "Cultural preservation strengthens community identity and supports reconciliation goals"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "title": "OUTCOME 3: Métis Settlements are self-governing, sustainable communities",
+      "short_name": "Métis Settlements governance",
+      "legend_label": "Métis Settlements",
+      "description": "The ministry administers the Métis Settlements Act, supporting the governance, land management, and membership processes of Alberta's eight Métis Settlements — the only legislated Métis land base in Canada, covering 1.25 million acres.",
+      "foundational_services": [
+        {
+          "name": "Administer the Métis Settlements Act and support Settlement governance",
+          "desc": "Administers the legislative and regulatory framework for the eight Métis Settlements, supports the Métis Settlements General Council, coordinates the Joint Review Committee, and manages the provincial relationship with Settlement councils on governance, land, and financial administration.",
+          "users": "Métis Settlement councils, Métis Settlements General Council",
+          "user_groups": ["Government"],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/metis-settlements",
+              "url": "https://www.alberta.ca/metis-settlements"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "MSA",
+              "color": "#c62828",
+              "full_name": "Metis Settlements Act"
+            }
+          ],
+          "mandate_tags": ["metis-governance"],
+          "taxonomy": {
+            "track": "individual",
+            "tier": "societal_needs_supports",
+            "domain": "safety_emergencies",
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Access Métis Settlement membership and land services",
+          "supporting": [
+            {
+              "name": "Apply for membership in a Métis Settlement",
+              "desc": "Individuals who meet the eligibility criteria under the Métis Settlements Act can apply for membership in one of Alberta's eight Métis Settlements. Membership provides the right to reside on Settlement land, participate in governance, and access Settlement programs and services.",
+              "users": "Métis individuals eligible for Settlement membership",
+              "user_groups": ["Métis communities"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Membership application through Settlement council",
+                  "url": null
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Settlement council office"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Settlement council",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MSA",
+                  "color": "#c62828",
+                  "full_name": "Metis Settlements Act"
+                }
+              ],
+              "mandate_tags": ["metis-governance"],
+              "reach_estimate": {
+                "tier": "low",
+                "estimate": "Hundreds of membership applications across 8 settlements",
+                "basis": "Nearly 6,000 current Settlement members with ongoing new applications"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "metis-governance",
+                "note": "Membership is the foundation of Settlement self-governance and access to the Métis land base"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Obtain a land allocation or resolve a land matter on a Métis Settlement",
+              "desc": "Settlement members can apply for land allocations for residential or other purposes under the Métis Settlements Act. Land disputes and matters are handled through Settlement councils and, if needed, the Métis Settlements Appeal Tribunal.",
+              "users": "Métis Settlement members seeking land allocations or resolving disputes",
+              "user_groups": ["Métis communities"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Land allocation application through Settlement council",
+                  "url": null
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Settlement council office"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MSA",
+                  "color": "#c62828",
+                  "full_name": "Metis Settlements Act"
+                }
+              ],
+              "mandate_tags": ["metis-governance"],
+              "reach_estimate": {
+                "tier": "low",
+                "estimate": "Dozens of land matters annually across 8 settlements",
+                "basis": "1.25 million acres of Settlement land with ongoing allocation and management"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "metis-governance",
+                "note": "Secure land tenure is fundamental to Settlement sustainability and self-governance"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Appeal a Métis Settlement decision",
+          "supporting": [
+            {
+              "name": "Appeal a membership or land decision to the Métis Settlements Appeal Tribunal",
+              "desc": "Settlement members or applicants who disagree with a membership, land allocation, or other council decision can appeal to the independent Métis Settlements Appeal Tribunal established under the Métis Settlements Act.",
+              "users": "Settlement members or applicants challenging a council decision",
+              "user_groups": ["Métis communities"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Appeal submission to Tribunal",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Métis Settlements Appeal Tribunal",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MSA",
+                  "color": "#c62828",
+                  "full_name": "Metis Settlements Act"
+                }
+              ],
+              "mandate_tags": ["metis-governance"],
+              "reach_estimate": {
+                "tier": "low",
+                "estimate": "Dozens of appeals annually",
+                "basis": "Independent tribunal hearing appeals from 8 Settlement councils"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "metis-governance",
+                "note": "Independent appeal process ensures fairness and accountability in Settlement governance"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Access information about Métis Settlement governance and your rights",
+              "desc": "Settlement members and the public can access information about how Métis Settlements are governed, the role of Settlement councils and the General Council, land protection, financial administration, and the rights and obligations of Settlement members under the Métis Settlements Act.",
+              "users": "Settlement members, prospective members, researchers",
+              "user_groups": ["Métis communities", "General public"],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/metis-settlements",
+                  "url": "https://www.alberta.ca/metis-settlements"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Métis Settlements Act and regulations"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MSA",
+                  "color": "#c62828",
+                  "full_name": "Metis Settlements Act"
+                }
+              ],
+              "mandate_tags": ["metis-governance"],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Thousands of page views and information requests annually",
+                "basis": "Public interest in the unique Métis Settlement governance model"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "metis-governance",
+                "note": "Informed members participate more effectively in Settlement self-governance"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "channel_filters": [
+    {"code": "ch-apply", "label": "Apply"},
+    {"code": "ch-check", "label": "Check / portal"},
+    {"code": "ch-find", "label": "Find / search"},
+    {"code": "ch-web", "label": "Website"},
+    {"code": "ch-email", "label": "Email"},
+    {"code": "ch-pub", "label": "Publication"},
+    {"code": "ch-phone", "label": "Phone"},
+    {"code": "ch-inperson", "label": "In person"}
+  ],
+  "user_group_filters": ["General public", "First Nations", "Métis communities", "Industry", "Individuals", "Organizations"],
+  "channel_types": {
+    "ch-apply": {"label": "Apply", "type": "digital"},
+    "ch-check": {"label": "Check / portal", "type": "digital"},
+    "ch-find": {"label": "Find / search", "type": "digital"},
+    "ch-web": {"label": "Website", "type": "digital"},
+    "ch-email": {"label": "Email", "type": "digital"},
+    "ch-pub": {"label": "Publication", "type": "non-digital"},
+    "ch-phone": {"label": "Phone", "type": "non-digital"},
+    "ch-inperson": {"label": "In person", "type": "non-digital"}
+  },
+  "digital_channels": ["ch-apply", "ch-check", "ch-find", "ch-web", "ch-email"]
+}

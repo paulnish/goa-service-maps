@@ -46,7 +46,7 @@
         const pathSegments = window.location.pathname
           .split("/")
           .filter((s) => s);
-        return pathSegments[0] || "tec";
+        return pathSegments[0] || "jus";
       }
 
       // Fetch and render the service map
@@ -54,7 +54,7 @@
         const prefix = getPrefixFromPath();
 
         try {
-          const response = await fetch(`../data/${prefix}.json`);
+          const response = await fetch(`../data/ab/${prefix}.json`);
           if (!response.ok) {
             throw new Error(`Failed to fetch data: ${response.status}`);
           }
@@ -81,15 +81,40 @@
         <div class="nav-bar">
           <a href="/">All Ministries</a>
           <span class="sep">/</span>
-          <a href="/${escapeHtml(data.prefix)}/service-map">${escapeHtml(data.short_name)}</a>
-          <span class="sep">/</span>
-          <span class="current">Service Map</span>
+          ${data.parent_ministry ? `
+            <a href="/${escapeHtml(data.parent_ministry)}/service-map">${escapeHtml(data.parent_ministry_name || data.parent_ministry)}</a>
+            <span class="sep">/</span>
+            <a href="/${escapeHtml(data.parent_ministry)}/service-map">${escapeHtml(data.parent_goal_number + "." + data.parent_ms_number)} ${escapeHtml(data.parent_ms_name)}</a>
+            <span class="sep">/</span>
+            <span class="current">${escapeHtml(data.short_name)}</span>
+          ` : `
+            <a href="/${escapeHtml(data.prefix)}/service-map">${escapeHtml(data.short_name)}</a>
+            <span class="sep">/</span>
+            <span class="current">Service Map</span>
+          `}
         </div>
         <div class="header">
-          <p class="subtitle">Government of Alberta — Ministry Service Map</p>
+          <p class="subtitle">${data.parent_ministry ? "Government of Alberta — Detailed Service Map" : "Government of Alberta — Ministry Service Map"}</p>
           <h1>${escapeHtml(data.full_name)}</h1>
           ${data.blurb ? `<p>${escapeHtml(data.blurb)}</p>` : ""}
         </div>
+        ${data.parent_ministry ? `
+        <div class="hierarchy-banner">
+          <div class="hierarchy-path">
+            <span class="hierarchy-label">Part of</span>
+            <a href="/${escapeHtml(data.parent_ministry)}/service-map" class="hierarchy-link">${escapeHtml(data.parent_ministry_name || data.parent_ministry)}</a>
+            <span class="hierarchy-sep">→</span>
+            <span class="hierarchy-goal">
+              <span class="hierarchy-dot" style="background: ${escapeHtml(data.parent_goal_color || "#666")}"></span>
+              Outcome ${data.parent_goal_number}: ${escapeHtml(data.parent_goal_name)}
+            </span>
+            <span class="hierarchy-sep">→</span>
+            <span class="hierarchy-ms">${escapeHtml(data.parent_goal_number + "." + data.parent_ms_number)} ${escapeHtml(data.parent_ms_name)}</span>
+            <span class="hierarchy-sep">→</span>
+            <strong>${escapeHtml(data.parent_service)}</strong>
+          </div>
+        </div>
+        ` : ""}
         <div class="legend-bar">
           <div class="legend-row">
             <span class="legend-label">Goals</span>
@@ -109,7 +134,7 @@
             <div class="legend-notes">
               <span class="legend-note">⚖ = enabling legislation &nbsp;|&nbsp; <a href="/${escapeHtml(data.prefix)}/legislation" style="color:#00405c; font-weight:600;">View full legislation cross-reference →</a></span>
               <span class="legend-note"><span class="mandate-tag" style="display:inline-block;">M</span> Teal circles = <strong>Premier's mandate letter</strong> priority (hover for details)</span>
-              <span class="legend-note"><span style="display:inline-block; width:14px; height:14px; border:1.5px dashed #ccc; border-radius:3px; background:#f5f5f0; text-align:center; font-size:8px; line-height:14px;">⚙</span> Dashed border = <strong>foundational service</strong> (infrastructure/operations enabling user-facing services)</span>
+              <span class="legend-note"><span style="display:inline-block; width:14px; height:14px; border:1.5px dashed #e0e0e0; border-radius:3px; background:white; text-align:center; font-size:8px; line-height:14px;">⚙</span> Dashed border = <strong>foundational service</strong> (infrastructure/operations enabling user-facing services)</span>
             </div>
           </details>
         </div>
@@ -138,13 +163,28 @@
         <div class="container" id="serviceMapContainer">
           ${data.goals.map((goal) => renderGoalSection(goal, data)).join("")}
           ${
+            data.cross_cutting && data.cross_cutting.length > 0
+              ? `
+            <div class="cross-cutting">
+              <h3>Cross-cutting Components (supporting all services)</h3>
+              <div class="cross-tags">
+                ${data.cross_cutting.map((cc) => `<span class="cross-tag">${escapeHtml(typeof cc === "string" ? cc : cc.name)}</span>`).join("")}
+              </div>
+            </div>
+          `
+              : ""
+          }
+          ${
             data.foundational_services && data.foundational_services.length > 0
               ? `
-            <div class="foundational-section">
-              <h3 class="foundational-header">Foundational Services</h3>
-              <p class="foundational-desc">Infrastructure and operations enabling user-facing services across the ministry</p>
-              ${data.foundational_services.map((fs) => renderFoundationalService(fs, data)).join("")}
-            </div>
+            <details class="main-service-details foundational-details" open>
+              <summary class="main-service-head foundational-head">
+                <span class="ms-label">Ministry-wide Foundational Service</span>
+              </summary>
+              <div class="supporting-grid">
+                ${data.foundational_services.map((fs) => renderFoundationalService(fs, data)).join("")}
+              </div>
+            </details>
           `
               : ""
           }
@@ -173,18 +213,6 @@
           `
               : ""
           }
-          ${
-            data.cross_cutting && data.cross_cutting.length > 0
-              ? `
-            <div class="cross-cutting">
-              <h3>Cross-cutting Components (supporting all services)</h3>
-              <div class="cross-tags">
-                ${data.cross_cutting.map((cc) => `<span class="cross-tag">${escapeHtml(typeof cc === "string" ? cc : cc.name)}</span>`).join("")}
-              </div>
-            </div>
-          `
-              : ""
-          }
         </div>
         <div class="page-nav">
           <a href="/${escapeHtml(data.prefix)}/service-map" class="active">Service Map</a>
@@ -192,7 +220,7 @@
           <a href="/${escapeHtml(data.prefix)}/legislation">Legislation</a>
         </div>
         <div class="footer">
-          <p>March 2026 &nbsp;|&nbsp; <a href="/${escapeHtml(data.prefix)}/">Ministry overview</a> &nbsp;|&nbsp; Service analysis using Kate Tarling's framework</p>
+          <p>March 2026 &nbsp;|&nbsp; <a href="/${escapeHtml(data.prefix)}/service-map">Ministry overview</a> &nbsp;|&nbsp; Service analysis using Kate Tarling's framework</p>
         </div>
         ${renderDynamicGoalStyles(data)}
       `;
@@ -239,14 +267,21 @@
           `
               : ""
           }
-          ${goal.main_services.map((ms) => renderMainService(ms, goal, data)).join("")}
           ${
             goal.foundational_services && goal.foundational_services.length > 0
               ? `
-            ${goal.foundational_services.map((fs) => renderFoundationalService(fs, data)).join("")}
+            <details class="main-service-details foundational-details" open>
+              <summary class="main-service-head foundational-head">
+                <span class="ms-label">Foundational Service</span>
+              </summary>
+              <div class="supporting-grid">
+                ${goal.foundational_services.map((fs) => renderFoundationalService(fs, data)).join("")}
+              </div>
+            </details>
           `
               : ""
           }
+          ${goal.main_services.map((ms) => renderMainService(ms, goal, data)).join("")}
         </section>
       `;
       }
@@ -264,6 +299,20 @@
             ${ms.supporting.map((ss) => renderSupportingService(ss, data)).join("")}
           </div>
         </details>
+        ${
+          ms.foundational_services && ms.foundational_services.length > 0
+            ? `
+          <details class="main-service-details foundational-details" open>
+            <summary class="main-service-head foundational-head">
+              <span class="ms-label">Foundational Service</span>
+            </summary>
+            <div class="supporting-grid">
+              ${ms.foundational_services.map((fs) => renderFoundationalService(fs, data)).join("")}
+            </div>
+          </details>
+        `
+            : ""
+        }
       `;
       }
 
@@ -288,6 +337,12 @@
             ${ss.user_groups.map((ug) => `<span class="ug-badge" data-group="${escapeHtml(ug)}">${escapeHtml(ug)}</span>`).join("")}
             <span class="user-detail">${escapeHtml(ss.users)}</span>
           </div>
+          ${ss.reach || ss.economic_impact ? `
+          <div class="sc-impact">
+            ${ss.reach ? `<span class="impact-reach impact-${ss.reach.tier}" title="${escapeHtml(ss.reach.basis === 'active' ? 'Active caseload' : 'Annual volume')}">${escapeHtml(ss.reach.estimate)}</span>` : ""}
+            ${ss.economic_impact ? `<span class="impact-econ impact-cat-${escapeHtml(ss.economic_impact.category)}" title="${escapeHtml(ss.economic_impact.note || '')}">${escapeHtml(ss.economic_impact.tag)}</span>` : ""}
+          </div>
+          ` : ""}
           <div class="channels">
             ${ss.channels
               .map((ch) => {
@@ -301,9 +356,15 @@
               })
               .join("")}
           </div>
-          ${
-            ss.legislation && ss.legislation.length > 0
-              ? `
+          ${(ss.legislation && ss.legislation.length > 0) || (ss.mandate_tags && ss.mandate_tags.length > 0) || ss.deep_dive ? `
+          <div class="sc-footer">
+            ${ss.mandate_tags && ss.mandate_tags.length > 0 ? `
+            <div class="mandate-tags">
+              ${ss.mandate_tags.map((mt) => `<span class="mandate-tag" data-tip="${escapeHtml(mt.tip || mt.text)}">M${mt.number}</span>`).join("")}
+            </div>
+            ` : ""}
+            ${ss.deep_dive ? `<a class="deep-dive-link" href="/${escapeHtml(ss.deep_dive)}/service-map">View detailed service map →</a>` : ""}
+            ${ss.legislation && ss.legislation.length > 0 ? `
             <div class="leg-tags">
               ${ss.legislation
                 .map(
@@ -315,55 +376,64 @@
                 )
                 .join("")}
             </div>
-          `
-              : ""
-          }
-          ${
-            ss.mandate_tags && ss.mandate_tags.length > 0
-              ? `
-            <div class="mandate-tags">
-              ${ss.mandate_tags.map((mt) => `<span class="mandate-tag" data-tip="${escapeHtml(mt.tip || mt.text)}">M${mt.number}</span>`).join("")}
-            </div>
-          `
-              : ""
-          }
+            ` : ""}
+          </div>
+          ` : ""}
         </div>
       `;
       }
 
-      // Render a foundational service
+      // Render a foundational service (same card layout as supporting services)
       function renderFoundationalService(fs, data) {
         return `
-        <div class="foundational-service">
-          <div class="fs-icon">⚙</div>
-          <div class="fs-content">
-            <div class="fs-name">${escapeHtml(fs.name)}</div>
-            <div class="fs-desc">${escapeHtml(fs.description)}</div>
-          </div>
+        <div class="supporting-card foundational-card">
+          <div class="sc-name">${escapeHtml(fs.name)}</div>
+          <div class="sc-desc">${escapeHtml(fs.desc || fs.description || "")}</div>
           ${
-            fs.legislation && fs.legislation.length > 0
-              ? `
-            ${fs.legislation
-              .map(
-                (leg) => `
-              <a class="leg-tag" style="background:${escapeHtml(leg.color)}" href="/${data.prefix}/legislation" title="${escapeHtml(leg.full_name)}">
-                <span class="leg-icon">⚖</span> ${escapeHtml(leg.abbrev)}
-              </a>
-            `,
-              )
-              .join("")}
-          `
+            fs.users
+              ? `<div class="sc-users"><span class="user-detail">${escapeHtml(fs.users)}</span></div>`
               : ""
           }
           ${
-            fs.mandate_tags && fs.mandate_tags.length > 0
+            fs.channels && fs.channels.length > 0
               ? `
-            <div class="mandate-tags">
-              ${fs.mandate_tags.map((mt) => `<span class="mandate-tag" data-tip="${escapeHtml(mt.tip || mt.text)}">M${mt.number}</span>`).join("")}
+            <div class="channels">
+              ${fs.channels
+                .map((ch) => {
+                  const isDigitalChannel = DIGITAL_CHANNELS.has(ch.type) && ch.url;
+                  if (isDigitalChannel) {
+                    return `<a class="ch ${escapeHtml(ch.type)}" href="${escapeHtml(ch.url)}" target="_blank" title="${escapeHtml(ch.label)}">${escapeHtml(ch.label)}</a>`;
+                  } else {
+                    return `<span class="ch ${escapeHtml(ch.type)}" title="${escapeHtml(ch.label)}">${escapeHtml(ch.label)}</span>`;
+                  }
+                })
+                .join("")}
             </div>
           `
               : ""
           }
+          ${(fs.legislation && fs.legislation.length > 0) || (fs.mandate_tags && fs.mandate_tags.length > 0) ? `
+          <div class="sc-footer">
+            ${fs.mandate_tags && fs.mandate_tags.length > 0 ? `
+            <div class="mandate-tags">
+              ${fs.mandate_tags.map((mt) => `<span class="mandate-tag" data-tip="${escapeHtml(mt.tip || mt.text)}">M${mt.number}</span>`).join("")}
+            </div>
+            ` : ""}
+            ${fs.legislation && fs.legislation.length > 0 ? `
+            <div class="leg-tags">
+              ${fs.legislation
+                .map(
+                  (leg) => `
+                <a class="leg-tag" style="background:${escapeHtml(leg.color)}" href="/${data.prefix}/legislation" title="${escapeHtml(leg.full_name)}">
+                  <span class="leg-icon">⚖</span> ${escapeHtml(leg.abbrev)}
+                </a>
+              `,
+                )
+                .join("")}
+            </div>
+            ` : ""}
+          </div>
+          ` : ""}
         </div>
       `;
       }
@@ -464,13 +534,10 @@
           }
         });
 
-        // Hide foundational services when filters are active
+        // Hide foundational service containers when filters are active
         const anyFilterActive = chActive || ugActive;
-        document.querySelectorAll(".foundational-service").forEach((fs) => {
-          fs.style.display = anyFilterActive ? "none" : "";
-        });
-        document.querySelectorAll(".foundational-section").forEach((s) => {
-          s.style.display = anyFilterActive ? "none" : "";
+        document.querySelectorAll(".foundational-details").forEach((fd) => {
+          fd.style.display = anyFilterActive ? "none" : "";
         });
 
         // Hide main services with no visible supporting cards

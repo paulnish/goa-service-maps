@@ -1,0 +1,126 @@
+{
+  "prefix": "ir",
+  "name": "Indigenous Relations",
+  "short_name": "Indigenous Relations",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "Consultation & land",
+      "legend_label": "Consultation & land",
+      "main_services": [
+        {"number": 1, "name": "Participate in consultation on a land or resource decision"}
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "short_name": "Economic & community development",
+      "legend_label": "Economic & community development",
+      "main_services": [
+        {"number": 1, "name": "Access funding for Indigenous economic and community development"},
+        {"number": 2, "name": "Support Indigenous community safety and reconciliation"}
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "short_name": "Métis Settlements governance",
+      "legend_label": "Métis Settlements",
+      "main_services": [
+        {"number": 1, "name": "Access Métis Settlement membership and land services"},
+        {"number": 2, "name": "Appeal a Métis Settlement decision"}
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "MSA",
+      "full_name": "Metis Settlements Act",
+      "color": "#c62828",
+      "citation": "RSA 2000, c M-14",
+      "summary": "Alberta's foundational legislation establishing the governance, membership, land management, and financial administration framework for the province's eight Métis Settlements — the only legislated Métis land base in Canada, covering 1.25 million acres in central and northern Alberta.",
+      "full_text": "<h3>Metis Settlements Act</h3><p><strong>Citation:</strong> RSA 2000, c M-14</p><p>The Metis Settlements Act is Alberta's unique statute establishing a self-governance framework for the province's eight Métis Settlements. Rooted in the 1989 Alberta-Métis Settlements Accord and the Constitution of Alberta Amendment Act, 1990, it provides the only legislated Métis land base in Canada.</p><h4>Structure (13 Parts)</h4><ul><li><strong>Part 1 — Metis Settlements:</strong> Establishes the eight Métis Settlements (Buffalo Lake, East Prairie, Elizabeth, Fishing Lake, Gift Lake, Kikino, Paddle Prairie, Peavine) as legal entities. Defines their geographic boundaries and constitutional status as protected settlement areas.</li><li><strong>Part 2 — Settlement Council Decision Making:</strong> Governs how Settlement councils make bylaws, resolutions, and other decisions. Includes rules on council meetings, quorum, voting, and the recording and publication of decisions.</li><li><strong>Part 3 — Settlement Membership:</strong> Defines eligibility criteria for Settlement membership based on Métis ancestry and community connection. Sets out the application process, membership registers, and the rights and responsibilities of members.</li><li><strong>Part 4 — Settlement Land:</strong> Governs the allocation, use, and management of Settlement land. Covers land allotments to members, leases, easements, and surface rights. Includes protections against alienation of the Settlement land base, consistent with the constitutional protection of Métis Settlement lands.</li><li><strong>Part 5 — Fishing:</strong> Governs fishing rights within Métis Settlement areas, including regulations on harvesting and conservation measures.</li><li><strong>Part 6 — Financial Administration:</strong> Establishes financial management requirements for Settlement councils, including budgeting, accounting, auditing, and financial reporting. Ensures fiscal accountability and transparency in the use of Settlement funds.</li><li><strong>Part 7 — Metis Settlements Appeal Tribunal:</strong> Establishes the independent Metis Settlements Appeal Tribunal to hear appeals of membership decisions, land allocation disputes, and other matters arising under the Act. Defines the Tribunal's jurisdiction, composition, and procedures.</li><li><strong>Part 8 — Metis Settlements General Council:</strong> Establishes the Metis Settlements General Council as the central governance body representing all eight Settlements collectively. Defines its composition, powers, and role in coordinating inter-Settlement matters and representing Settlement interests to government.</li><li><strong>Part 9 — General Provisions:</strong> Contains miscellaneous provisions including interpretation rules, regulation-making authority, and general administrative matters.</li><li><strong>Part 10 — Regulations:</strong> Authorizes the Lieutenant Governor in Council and the Metis Settlements General Council to make regulations on membership, land management, financial administration, and other matters under the Act.</li><li><strong>Part 11 — Court Proceedings:</strong> Sets out rules for legal proceedings involving Settlements, including limitations on actions and special procedural requirements.</li><li><strong>Part 11.1 — Joint Review Committee:</strong> Establishes a Joint Review Committee comprising representatives of the Government of Alberta and the Metis Settlements General Council to review and make recommendations on the operation of the Act and related matters.</li><li><strong>Part 12 — Transitional Provisions:</strong> Addresses the transition from previous legislation and interim arrangements to the current framework.</li></ul><p>The Act works alongside the Metis Settlements Land Protection Act (which constitutionally protects the Settlement land base) and the Metis Settlements Accord Implementation Act. Together, these statutes form a unique constitutional and legislative framework for Métis self-governance in Alberta.</p>",
+      "sections": [
+        {
+          "ref": "Part 3",
+          "title": "Settlement Membership",
+          "description": "Defines eligibility criteria for Settlement membership based on Métis ancestry and community connection. Sets out the application process, membership registers, and the rights and responsibilities of members.",
+          "anchor_id": "sec-msa-p3",
+          "services": [
+            {
+              "name": "Apply for membership in a Métis Settlement",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 1,
+              "ms_name": "Access Métis Settlement membership and land services"
+            }
+          ]
+        },
+        {
+          "ref": "Part 4",
+          "title": "Settlement Land",
+          "description": "Governs the allocation, use, and management of Settlement land, including allotments to members, leases, easements, and protections against alienation of the constitutionally protected land base.",
+          "anchor_id": "sec-msa-p4",
+          "services": [
+            {
+              "name": "Obtain a land allocation or resolve a land matter on a Métis Settlement",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 1,
+              "ms_name": "Access Métis Settlement membership and land services"
+            }
+          ]
+        },
+        {
+          "ref": "Part 7",
+          "title": "Metis Settlements Appeal Tribunal",
+          "description": "Establishes the independent Metis Settlements Appeal Tribunal to hear appeals of membership decisions, land allocation disputes, and other matters arising under the Act.",
+          "anchor_id": "sec-msa-p7",
+          "services": [
+            {
+              "name": "Appeal a membership or land decision to the Métis Settlements Appeal Tribunal",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 2,
+              "ms_name": "Appeal a Métis Settlement decision"
+            }
+          ]
+        },
+        {
+          "ref": "Part 1",
+          "title": "Metis Settlements — Establishment and Governance Framework",
+          "description": "Establishes the eight Métis Settlements as legal entities, defines their geographic boundaries and constitutional status, and provides the foundational governance framework.",
+          "anchor_id": "sec-msa-p1",
+          "services": [
+            {
+              "name": "Access information about Métis Settlement governance and your rights",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 2,
+              "ms_name": "Appeal a Métis Settlement decision"
+            },
+            {
+              "name": "Administer the Métis Settlements Act and support Settlement governance",
+              "type": "foundational",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 0,
+              "ms_name": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 1,
+    "sections_count": 4,
+    "services_with_leg_count": 4,
+    "services_multi_act_count": 0
+  }
+}

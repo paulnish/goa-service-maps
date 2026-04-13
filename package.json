@@ -1,0 +1,7 @@
+{
+  "name": "goa-service-maps",
+  "private": true,
+  "scripts": {
+    "start": "npx serve -l 8000"
+  }
+}

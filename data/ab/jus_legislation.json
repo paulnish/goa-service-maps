@@ -1,0 +1,837 @@
+{
+  "prefix": "jus",
+  "name": "Justice",
+  "short_name": "Justice",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "Albertans' rights and interests are protected",
+      "legend_label": "Rights & interests",
+      "main_services": [
+        {"number": 1, "name": "Get a firearms licence or authorization"},
+        {"number": 2, "name": "Register and protect property rights"},
+        {"number": 3, "name": "Handle a traffic matter"},
+        {"number": 4, "name": "Get a professional licence or designation"}
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#007a3d",
+      "short_name": "Alberta's justice system is fair and accessible",
+      "legend_label": "Fair & accessible justice",
+      "main_services": [
+        {"number": 1, "name": "Resolve a civil dispute through the courts"},
+        {"number": 2, "name": "Serve on a jury"},
+        {"number": 3, "name": "Get legal representation or assistance"},
+        {"number": 4, "name": "File a complaint about policing or the justice process"}
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c65102",
+      "short_name": "Albertans are supported in their interactions with the justice system",
+      "legend_label": "Justice system support",
+      "main_services": [
+        {"number": 1, "name": "Resolve a family dispute without going to court"},
+        {"number": 2, "name": "Apply for family law orders"},
+        {"number": 3, "name": "Get help collecting or paying court-ordered support"},
+        {"number": 4, "name": "Get protection from violence"},
+        {"number": 5, "name": "Get help as a victim of crime"},
+        {"number": 6, "name": "Protect your rights and plan for the future"},
+        {"number": 7, "name": "Resolve a dispute outside of court"},
+        {"number": 8, "name": "Get death investigation information"}
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "AFA",
+      "full_name": "Alberta Firearms Act",
+      "color": "#0070c0",
+      "citation": "SA 2022, c A-14.5",
+      "summary": "Establishes Alberta's provincial framework for firearms administration, complementing the federal Firearms Act. Provides for the appointment of a provincial Chief Firearms Officer and regulates shooting ranges, firearms safety courses, and provincial firearms policy.",
+      "full_text": "<h3>Alberta Firearms Act</h3><p><strong>Citation:</strong> SA 2022, c A-14.5</p><p>The Alberta Firearms Act establishes provincial administration of firearms matters in Alberta, complementing the federal Firearms Act. It provides a framework for provincial firearms policy, the appointment of Alberta's Chief Firearms Officer, and regulation of firearms-related activities within provincial jurisdiction.</p><h4>Key Provisions</h4><ul><li><strong>Provincial Administration:</strong> Establishes the role of Alberta's Chief Firearms Officer (CFO) to administer federal firearms licensing at the provincial level, including reviewing licence applications, conducting background checks, and authorizing restricted firearms.</li><li><strong>Shooting Ranges:</strong> Authorizes regulation of shooting clubs and ranges within Alberta, including approval processes and safety requirements.</li><li><strong>Safety Courses:</strong> Provides for provincial administration of the Canadian Firearms Safety Course and Canadian Restricted Firearms Safety Course, which are prerequisites for firearms licensing.</li><li><strong>Provincial Policy:</strong> Enables the province to establish firearms policy within its constitutional jurisdiction, including coordination with federal authorities on licensing and enforcement matters.</li></ul>",
+      "sections": [
+        {
+          "ref": "Provincial Administration",
+          "title": "Provincial Firearms Administration and Licensing",
+          "description": "Establishes provincial administration of firearms licensing through the Chief Firearms Officer, including safety course certification, licence reviews, and shooting range regulation.",
+          "anchor_id": "sec-afa-admin",
+          "services": [
+            {
+              "name": "Apply for a Possession and Acquisition Licence (PAL)",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Get a firearms licence or authorization"
+            },
+            {
+              "name": "Renew a firearms licence",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Get a firearms licence or authorization"
+            },
+            {
+              "name": "Take a firearms safety course",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Get a firearms licence or authorization"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "LTA",
+      "full_name": "Land Titles Act",
+      "color": "#0070c0",
+      "citation": "RSA 2000, c L-4",
+      "summary": "Establishes Alberta's Torrens land registration system, providing government-guaranteed title to land. Governs the registration of land titles, transfers, mortgages, caveats, and other interests in land, and provides public access to land title records.",
+      "full_text": "<h3>Land Titles Act</h3><p><strong>Citation:</strong> RSA 2000, c L-4</p><p>The Land Titles Act is the foundational statute for Alberta's Torrens land registration system — one of the most important property law statutes in the province. Under this system, the government guarantees the accuracy of registered land titles.</p><h4>Part Structure</h4><ul><li><strong>Part 1 — Preliminary:</strong> Defines key terms and establishes the application of the Act.</li><li><strong>Part 2 — Land Titles Office and Registers:</strong> Establishes the Land Titles Office and the system of registers for recording land ownership and interests.</li><li><strong>Part 3 — Registration and Dealing with Land:</strong> Governs how land titles are registered, transferred, mortgaged, and otherwise dealt with. Includes rules for caveats, encumbrances, and other interests.</li><li><strong>Part 4 — Protection of Registered Owners:</strong> Provides the indefeasibility guarantee — registered owners hold title free from unregistered interests, with limited exceptions for fraud.</li><li><strong>Part 5 — Transfer, Mortgage and Liens:</strong> Details the procedures for transferring ownership, registering mortgages, and filing liens against land.</li><li><strong>Part 6 — Rectification and Indemnity:</strong> Provides for correction of errors in the register and compensation (from the Assurance Fund) for persons who suffer loss due to registration errors.</li><li><strong>Part 7 — General Provisions:</strong> Contains miscellaneous provisions including fees, regulations, and administrative matters.</li></ul>",
+      "sections": [
+        {
+          "ref": "Parts 2-5",
+          "title": "Land Title Registration, Transfer, and Search",
+          "description": "Governs the registration of land titles, transfers, mortgages, caveats, and other land interests. Provides public access to search land title records and guarantees the accuracy of registered titles.",
+          "anchor_id": "sec-lta-pt2-5",
+          "services": [
+            {
+              "name": "Register a land title document or plan",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Register and protect property rights"
+            },
+            {
+              "name": "Search land title records online",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Register and protect property rights"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "PPSA",
+      "full_name": "Personal Property Security Act",
+      "color": "#0070c0",
+      "citation": "RSA 2000, c P-7",
+      "summary": "Governs the registration and enforcement of security interests in personal property (movable assets) in Alberta. Establishes the Personal Property Registry for searching and registering liens on vehicles, equipment, and other personal property.",
+      "full_text": "<h3>Personal Property Security Act</h3><p><strong>Citation:</strong> RSA 2000, c P-7</p><p>The Personal Property Security Act (PPSA) governs security interests in personal property — assets other than land, such as vehicles, equipment, inventory, and accounts receivable. It establishes the Personal Property Registry where liens and security interests are registered and searchable.</p><h4>Key Provisions</h4><ul><li><strong>Registration:</strong> Creditors register financing statements at the Personal Property Registry to protect their security interests. Registration establishes priority over other creditors and provides public notice of the interest.</li><li><strong>Search:</strong> Anyone can search the Personal Property Registry to determine whether personal property is subject to existing security interests or liens. Searches are commonly conducted when purchasing vehicles, equipment, or businesses.</li><li><strong>Priority:</strong> Establishes rules for determining which creditor has priority when multiple security interests exist in the same property. Generally, the first to register has priority.</li><li><strong>Enforcement:</strong> Sets out the rights and remedies of secured parties when a debtor defaults, including seizure and sale of collateral, with protections for debtors.</li></ul>",
+      "sections": [
+        {
+          "ref": "Registration and Search",
+          "title": "Personal Property Lien Registration and Search",
+          "description": "Establishes the Personal Property Registry for registering, searching, and managing security interests and liens on personal property including vehicles, equipment, and other movable assets.",
+          "anchor_id": "sec-ppsa-reg",
+          "services": [
+            {
+              "name": "Register, search, or change a personal property lien",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Register and protect property rights"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "PAPA",
+      "full_name": "Provincial Administrative Penalties Act",
+      "color": "#0070c0",
+      "citation": "SA 2020, c P-30.8",
+      "summary": "Establishes the framework for administrative penalties in Alberta, including SafeRoads Alberta which adjudicates impaired driving sanctions, immediate roadside suspensions, vehicle seizures, and ignition interlock program requirements outside of the criminal court system.",
+      "full_text": "<h3>Provincial Administrative Penalties Act</h3><p><strong>Citation:</strong> SA 2020, c P-30.8</p><p>The Provincial Administrative Penalties Act (PAPA) establishes the framework for imposing administrative penalties for contraventions of provincial statutes. Its most significant application is SafeRoads Alberta, which handles impaired driving penalties through an administrative process rather than the criminal courts.</p><h4>Key Provisions</h4><ul><li><strong>Administrative Penalties Framework:</strong> Authorizes the Crown to impose administrative penalties including fines, sanctions, restrictions, and prohibitions for contraventions of prescribed enactments. Penalties are imposed administratively, outside of the court system.</li><li><strong>SafeRoads Alberta — Impaired Driving:</strong> Immediate roadside sanctions for impaired driving (alcohol and drugs) including licence suspensions, vehicle seizures, and mandatory education programs. Drivers who fail or refuse a breath test face immediate administrative consequences.</li><li><strong>Ignition Interlock Programs:</strong> Drivers subject to impaired driving sanctions may be required to participate in the ignition interlock program, which requires a breath-testing device installed in their vehicle before their driving privileges are restored.</li><li><strong>Adjudication:</strong> Drivers who wish to dispute administrative penalties can request a review by an independent adjudicator. The adjudicator reviews the evidence and may confirm, vary, or cancel the penalty.</li><li><strong>Relationship to Criminal Process:</strong> Administrative penalties under PAPA operate independently from criminal charges. A driver may face both administrative penalties and criminal prosecution for the same incident.</li></ul>",
+      "sections": [
+        {
+          "ref": "Impaired Driving and Ignition Interlock",
+          "title": "Administrative Penalties for Impaired Driving and Ignition Interlock",
+          "description": "Establishes the administrative penalty framework for impaired driving through SafeRoads Alberta, including immediate roadside sanctions, licence suspensions, vehicle seizures, and ignition interlock program requirements.",
+          "anchor_id": "sec-papa-driving",
+          "services": [
+            {
+              "name": "Pay or dispute an impaired driving penalty through SafeRoads Alberta",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 3,
+              "ms_name": "Handle a traffic matter"
+            },
+            {
+              "name": "Enroll in an ignition interlock program",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 3,
+              "ms_name": "Handle a traffic matter"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "SSIA",
+      "full_name": "Security Services and Investigators Act",
+      "color": "#0070c0",
+      "citation": "SA 2008, c S-4.7",
+      "summary": "Regulates the licensing of security services workers, private investigators, locksmiths, and security businesses in Alberta. Establishes licensing requirements, background checks, complaint procedures, and body armour permit requirements.",
+      "full_text": "<h3>Security Services and Investigators Act</h3><p><strong>Citation:</strong> SA 2008, c S-4.7</p><p>The Security Services and Investigators Act (SSIA) regulates the private security and investigation industry in Alberta. It requires individuals and businesses providing security, investigation, and locksmith services to be licensed, and provides a complaint mechanism for the public.</p><h4>Key Provisions</h4><ul><li><strong>Individual Licensing:</strong> Security services workers, private investigators, and locksmiths must hold a valid licence issued by the Registrar. Applicants must pass background checks and meet training requirements. Licences must be renewed periodically.</li><li><strong>Business Licensing:</strong> Businesses providing security, investigation, or locksmith services must hold a separate business licence. Business licensees are responsible for ensuring their employees hold valid individual licences.</li><li><strong>Body Armour Permits:</strong> Individuals who require body armour for employment or personal safety may apply for a body armour permit. Permits are required to possess body armour in Alberta.</li><li><strong>Complaints:</strong> Members of the public can file complaints about licensed security workers, investigators, or locksmiths. The Registrar investigates complaints and may suspend or cancel licences, impose conditions, or refer matters for further action.</li><li><strong>Enforcement:</strong> Penalties for operating without a licence, misrepresenting licensing status, or violating licence conditions.</li></ul>",
+      "sections": [
+        {
+          "ref": "Licensing and Complaints",
+          "title": "Licensing of Security Workers, Investigators, and Locksmiths",
+          "description": "Requires licensing for individuals and businesses providing security, investigation, and locksmith services. Establishes background check requirements, body armour permits, and a public complaint mechanism.",
+          "anchor_id": "sec-ssia-lic",
+          "services": [
+            {
+              "name": "Apply for a security service worker licence",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 4,
+              "ms_name": "Get a professional licence or designation"
+            },
+            {
+              "name": "Apply for a private investigator licence",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 4,
+              "ms_name": "Get a professional licence or designation"
+            },
+            {
+              "name": "Apply for a locksmith licence",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 4,
+              "ms_name": "Get a professional licence or designation"
+            },
+            {
+              "name": "Apply for a security, investigation, or locksmith business licence",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 4,
+              "ms_name": "Get a professional licence or designation"
+            },
+            {
+              "name": "Apply for a body armour permit",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 4,
+              "ms_name": "Get a professional licence or designation"
+            },
+            {
+              "name": "File a complaint about a security, locksmith, or investigation service",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 4,
+              "ms_name": "Get a professional licence or designation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "NCA",
+      "full_name": "Notaries and Commissioners Act",
+      "color": "#0070c0",
+      "citation": "RSA 2000, c N-6",
+      "summary": "Governs the appointment of commissioners for oaths and notaries public in Alberta. Commissioners for oaths administer oaths and affirmations for affidavits and statutory declarations; notaries public can additionally authenticate documents for international use.",
+      "full_text": "<h3>Notaries and Commissioners Act</h3><p><strong>Citation:</strong> RSA 2000, c N-6</p><p>The Notaries and Commissioners Act establishes the framework for appointing commissioners for oaths and notaries public in Alberta.</p><h4>Key Provisions</h4><ul><li><strong>Commissioners for Oaths:</strong> Individuals may apply for appointment as a commissioner for oaths, which authorizes them to administer oaths, affirmations, and declarations for affidavits and statutory declarations used in legal proceedings and official documents. Commissioners are appointed by the Minister of Justice.</li><li><strong>Notaries Public:</strong> Notaries public have broader powers than commissioners for oaths, including the ability to authenticate documents for use in other countries (notarial certification). Notary public appointments are typically limited to practising lawyers. The Minister appoints notaries public by commission.</li><li><strong>Duties and Responsibilities:</strong> Commissioners and notaries must verify the identity of persons making oaths or declarations, ensure the person understands the document, and maintain proper records of their notarial acts.</li></ul>",
+      "sections": [
+        {
+          "ref": "Appointment and Duties",
+          "title": "Appointment of Commissioners for Oaths and Notaries Public",
+          "description": "Establishes the process for appointment of commissioners for oaths and notaries public, their powers to administer oaths and authenticate documents, and their duties.",
+          "anchor_id": "sec-nca-appt",
+          "services": [
+            {
+              "name": "Apply to become a commissioner for oaths",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 4,
+              "ms_name": "Get a professional licence or designation"
+            },
+            {
+              "name": "Apply for appointment as a notary public",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 4,
+              "ms_name": "Get a professional licence or designation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CKBA",
+      "full_name": "Court of King's Bench Act",
+      "color": "#007a3d",
+      "citation": "RSA 2000, c C-31",
+      "summary": "Establishes and governs the Court of King's Bench of Alberta — the province's superior trial court with jurisdiction over civil, criminal, and family law matters. Provides for court administration, filing procedures, appeals, and public access to court records.",
+      "full_text": "<h3>Court of King's Bench Act</h3><p><strong>Citation:</strong> RSA 2000, c C-31</p><p>The Court of King's Bench Act establishes Alberta's superior trial court, the Court of King's Bench, which has jurisdiction over civil claims of any amount, family law matters, criminal trials for serious offences, and appeals from provincial courts and tribunals.</p><h4>Part Structure</h4><ul><li><strong>Part 1 — Establishment and Jurisdiction:</strong> Establishes the Court and defines its jurisdiction including civil, criminal, and family matters. The Court has inherent jurisdiction as a superior court.</li><li><strong>Part 2 — Organization and Administration:</strong> Governs the appointment of judges, court sittings, judicial districts, and administrative structure.</li><li><strong>Part 3 — Officers and Staff:</strong> Provides for the appointment of clerks, sheriffs, and other court officers who manage filings, records, and enforcement.</li><li><strong>Part 4 — Practice and Procedure:</strong> Authorizes the Alberta Rules of Court which govern how civil and family matters are filed, served, heard, and decided.</li><li><strong>Part 5 — Appeals:</strong> Establishes the Court's appellate jurisdiction over decisions from the Provincial Court, tribunals, and certain administrative bodies.</li><li><strong>Part 6 — Miscellaneous:</strong> Contains provisions for court records access, fees, and general administrative matters.</li></ul>",
+      "sections": [
+        {
+          "ref": "Parts 1, 4-5",
+          "title": "Civil Filing, Procedure, and Appeals",
+          "description": "Establishes the Court's jurisdiction, authorizes the Rules of Court governing civil procedure, and provides for appeals from lower courts and tribunals. Citizens interact with the Court by filing claims, applications, and appeals.",
+          "anchor_id": "sec-ckba-civil",
+          "services": [
+            {
+              "name": "File a civil claim or application in court",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#007a3d",
+              "ms_number": 1,
+              "ms_name": "Resolve a civil dispute through the courts"
+            },
+            {
+              "name": "Search court records online",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#007a3d",
+              "ms_number": 1,
+              "ms_name": "Resolve a civil dispute through the courts"
+            },
+            {
+              "name": "Appeal a court decision",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#007a3d",
+              "ms_number": 1,
+              "ms_name": "Resolve a civil dispute through the courts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CEA",
+      "full_name": "Civil Enforcement Act",
+      "color": "#007a3d",
+      "citation": "RSA 2000, c C-15",
+      "summary": "Governs the enforcement of civil judgments and court orders in Alberta, including seizure and sale of personal property, garnishment of wages and bank accounts, and registration of writs of enforcement against land.",
+      "full_text": "<h3>Civil Enforcement Act</h3><p><strong>Citation:</strong> RSA 2000, c C-15</p><p>The Civil Enforcement Act establishes the framework for enforcing civil judgments and court orders in Alberta. When a court awards a judgment and the debtor does not voluntarily comply, the creditor can use enforcement mechanisms under this Act.</p><h4>Key Provisions</h4><ul><li><strong>Writs of Enforcement:</strong> Judgment creditors register writs at the Personal Property Registry to enforce judgments against a debtor's personal property, or at Land Titles to enforce against real property.</li><li><strong>Seizure and Sale:</strong> Civil enforcement agencies (licensed bailiffs) may seize and sell a debtor's personal property to satisfy a judgment. The Act sets out procedures for notice, exemptions, and sale.</li><li><strong>Garnishment:</strong> Creditors can garnish wages, bank accounts, and other debts owed to the debtor. The Act establishes exemption amounts to protect debtors' basic needs.</li><li><strong>Exemptions:</strong> Protects essential property from seizure including a primary residence (up to prescribed equity), basic household goods, tools of trade, and vehicles up to prescribed values.</li></ul>",
+      "sections": [
+        {
+          "ref": "Seizure, Garnishment, and Enforcement",
+          "title": "Civil Judgment Enforcement",
+          "description": "Provides mechanisms for enforcing civil judgments including writs of enforcement, seizure and sale of property, garnishment, and debtor exemptions.",
+          "anchor_id": "sec-cea-enforce",
+          "services": [
+            {
+              "name": "Enforce a civil judgment or debt",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#007a3d",
+              "ms_number": 1,
+              "ms_name": "Resolve a civil dispute through the courts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "EAA",
+      "full_name": "Estate Administration Act",
+      "color": "#007a3d",
+      "citation": "SA 2014, c E-12.5",
+      "summary": "Governs the administration of deceased persons' estates in Alberta, including the granting of probate and administration orders, duties of personal representatives, and distribution of estate assets to beneficiaries.",
+      "full_text": "<h3>Estate Administration Act</h3><p><strong>Citation:</strong> SA 2014, c E-12.5</p><p>The Estate Administration Act governs how deceased persons' estates are administered in Alberta. It replaced the former Surrogate Rules and modernized the process for granting probate and administering estates.</p><h4>Key Provisions</h4><ul><li><strong>Grants of Probate:</strong> When a person dies with a will, the named executor applies to the Court of King's Bench for a grant of probate, which confirms their authority to administer the estate.</li><li><strong>Grants of Administration:</strong> When a person dies without a will (intestate), a family member or other interested person may apply for a grant of administration to manage and distribute the estate according to intestacy rules.</li><li><strong>Personal Representative Duties:</strong> Personal representatives must collect estate assets, pay debts and taxes, and distribute the remaining assets to beneficiaries according to the will or intestacy rules.</li><li><strong>Accounting and Reporting:</strong> Personal representatives must keep records and may be required to provide an accounting of estate administration to the court and beneficiaries.</li></ul>",
+      "sections": [
+        {
+          "ref": "Grants of Probate and Administration",
+          "title": "Estate Administration — Probate and Administration",
+          "description": "Establishes the process for obtaining grants of probate and administration to manage and distribute a deceased person's estate.",
+          "anchor_id": "sec-eaa-probate",
+          "services": [
+            {
+              "name": "Apply to administer a deceased person's estate",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#007a3d",
+              "ms_number": 1,
+              "ms_name": "Resolve a civil dispute through the courts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "JA",
+      "full_name": "Jury Act",
+      "color": "#007a3d",
+      "citation": "RSA 2000, c J-3",
+      "summary": "Governs the selection, qualification, service, and compensation of jurors for trials in Alberta's Court of King's Bench. Establishes the process for jury summons, exemptions, and juror responsibilities.",
+      "full_text": "<h3>Jury Act</h3><p><strong>Citation:</strong> RSA 2000, c J-3</p><p>The Jury Act establishes the framework for selecting and managing jurors for trials in the Court of King's Bench. Jury service is a civic duty and the Act provides the rules governing the process.</p><h4>Key Provisions</h4><ul><li><strong>Juror Selection:</strong> Potential jurors are randomly selected from the provincial voters list and other records. Jury panels are summoned by the sheriff for specific court sittings.</li><li><strong>Qualification and Exemptions:</strong> Canadian citizens aged 18+ residing in Alberta are eligible. Certain persons are exempt or disqualified (e.g., members of the Legislature, judges, persons with certain criminal records).</li><li><strong>Service:</strong> Summoned jurors must attend court on the specified date. Failure to attend without lawful excuse may result in a fine. Jurors who serve receive daily compensation.</li><li><strong>Compensation:</strong> Jurors receive per-day fees for service and may receive additional allowances for meals, transportation, and accommodation. Employers must not penalize employees for jury service.</li></ul>",
+      "sections": [
+        {
+          "ref": "Juror Selection and Service",
+          "title": "Jury Selection, Service, and Compensation",
+          "description": "Governs the selection of jurors from the population, service requirements, exemptions, and compensation for jury duty.",
+          "anchor_id": "sec-ja-service",
+          "services": [
+            {
+              "name": "Respond to a jury summons",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#007a3d",
+              "ms_number": 2,
+              "ms_name": "Serve on a jury"
+            },
+            {
+              "name": "Claim jury duty expenses",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#007a3d",
+              "ms_number": 2,
+              "ms_name": "Serve on a jury"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "FLA",
+      "full_name": "Family Law Act",
+      "color": "#c65102",
+      "citation": "SA 2003, c F-4.5",
+      "summary": "Alberta's comprehensive family law statute governing parentage, guardianship, parenting orders, contact orders, child and spousal support, protection orders, and family dispute resolution. Provides the legal framework for resolving family disputes both in and out of court.",
+      "full_text": "<h3>Family Law Act</h3><p><strong>Citation:</strong> SA 2003, c F-4.5</p><p>The Family Law Act (FLA) is Alberta's primary statute governing family law matters. It provides the legal framework for establishing parentage, determining guardianship and parenting arrangements for children, calculating child and spousal support, resolving family disputes through court and non-court processes, and obtaining protection orders.</p><h4>Part Structure</h4><ul><li><strong>Part 1 — Establishing Parentage:</strong> Defines who is a parent in law, including provisions for assisted reproduction, surrogacy, and parentage declarations.</li><li><strong>Part 2 — Guardianship, Parenting and Contact Orders:</strong> Governs who makes decisions for children (guardianship), where children live and how time is shared (parenting orders), and the rights of non-guardians to have contact with children. The best interests of the child are the paramount consideration.</li><li><strong>Part 3 — Support Obligations:</strong> Establishes child support obligations based on the Federal Child Support Guidelines and provincial tables. Also addresses spousal and partner support obligations. The Child Support Recalculation Program allows automatic recalculation of support based on updated income information.</li><li><strong>Part 4 — General Powers of Court:</strong> Grants the court broad powers to make family law orders, including interim orders, restraining orders, and orders for exclusive possession of the family home. Includes pre-court requirements such as the Parenting After Separation course.</li><li><strong>Part 5 — Other Actions:</strong> Addresses family dispute resolution including mediation, arbitration, and collaborative family law. Also provides for protection orders to protect family members from violence.</li><li><strong>Parts 6-7 — Regulations and Transitional Provisions:</strong> Regulation-making authority and transitional rules.</li></ul>",
+      "sections": [
+        {
+          "ref": "Part 2",
+          "title": "Guardianship, Parenting, and Contact Orders",
+          "description": "Governs guardianship of children, parenting orders determining where children live and how time is shared, and contact orders for non-guardians. Best interests of the child are the paramount consideration.",
+          "anchor_id": "sec-fla-pt2",
+          "services": [
+            {
+              "name": "Apply for a parenting or custody order",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 2,
+              "ms_name": "Apply for family law orders"
+            },
+            {
+              "name": "Apply for child guardianship",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 2,
+              "ms_name": "Apply for family law orders"
+            },
+            {
+              "name": "Assess your family law options online",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 1,
+              "ms_name": "Resolve a family dispute without going to court"
+            },
+            {
+              "name": "Complete the Parenting After Separation course",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 1,
+              "ms_name": "Resolve a family dispute without going to court"
+            }
+          ]
+        },
+        {
+          "ref": "Part 3",
+          "title": "Child and Spousal Support Obligations",
+          "description": "Establishes child support obligations using federal guidelines and provincial tables, spousal/partner support, and the Child Support Recalculation Program for automatic adjustments.",
+          "anchor_id": "sec-fla-pt3",
+          "services": [
+            {
+              "name": "Apply for child or spousal support",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 2,
+              "ms_name": "Apply for family law orders"
+            },
+            {
+              "name": "Resolve a child support dispute",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 1,
+              "ms_name": "Resolve a family dispute without going to court"
+            },
+            {
+              "name": "Register for automatic child support recalculation",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 1,
+              "ms_name": "Resolve a family dispute without going to court"
+            },
+            {
+              "name": "Change a court order for child support",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 2,
+              "ms_name": "Apply for family law orders"
+            }
+          ]
+        },
+        {
+          "ref": "Parts 4-5",
+          "title": "Dispute Resolution, Protection Orders, and Court Powers",
+          "description": "Provides for family dispute resolution (mediation, arbitration, collaborative law), pre-court requirements, protection orders against family violence, and general court powers including interim and restraining orders.",
+          "anchor_id": "sec-fla-pt4-5",
+          "services": [
+            {
+              "name": "Access free family mediation",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 1,
+              "ms_name": "Resolve a family dispute without going to court"
+            },
+            {
+              "name": "Get a divorce",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 2,
+              "ms_name": "Apply for family law orders"
+            },
+            {
+              "name": "Apply for a restraining order or other protection order",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 4,
+              "ms_name": "Get protection from violence"
+            },
+            {
+              "name": "Get family court counsellor assistance",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 1,
+              "ms_name": "Resolve a family dispute without going to court"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "MEA",
+      "full_name": "Maintenance Enforcement Act",
+      "color": "#c65102",
+      "citation": "RSA 2000, c M-1",
+      "summary": "Establishes the Maintenance Enforcement Program (MEP) to collect and enforce court-ordered child and spousal support payments in Alberta. Provides enforcement tools including wage garnishment, licence suspension, and asset seizure for non-payment.",
+      "full_text": "<h3>Maintenance Enforcement Act</h3><p><strong>Citation:</strong> RSA 2000, c M-1</p><p>The Maintenance Enforcement Act establishes the Maintenance Enforcement Program (MEP), Alberta's primary mechanism for collecting and enforcing court-ordered child and spousal support payments.</p><h4>Key Provisions</h4><ul><li><strong>Registration:</strong> Support recipients can register their court-ordered maintenance order with MEP for enforcement. Once registered, MEP takes over collection from the payor on behalf of the recipient.</li><li><strong>Enforcement Tools:</strong> When a payor falls behind, MEP has extensive enforcement powers including wage garnishment, federal benefit interception, licence suspension (driver's licence, recreational, passport referral), bank account seizure, and reporting to credit bureaus.</li><li><strong>Account Management:</strong> Both payors and recipients can track payment history, balances, and enforcement activity through the online MEP portal.</li><li><strong>Reciprocal Enforcement:</strong> Support orders made in other Canadian provinces or foreign jurisdictions can be registered and enforced in Alberta through reciprocal enforcement agreements.</li><li><strong>Director's Powers:</strong> The Director of Maintenance Enforcement has broad powers to investigate, demand financial information from employers and institutions, and take enforcement action without returning to court.</li></ul>",
+      "sections": [
+        {
+          "ref": "Registration and Enforcement",
+          "title": "Support Order Registration and Enforcement",
+          "description": "Establishes the process for registering maintenance orders with MEP and the enforcement mechanisms available when payors do not comply, including wage garnishment, licence suspension, and asset seizure.",
+          "anchor_id": "sec-mea-enforce",
+          "services": [
+            {
+              "name": "Set up enforcement for a support order",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 3,
+              "ms_name": "Get help collecting or paying court-ordered support"
+            },
+            {
+              "name": "Track and manage your support payments online",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 3,
+              "ms_name": "Get help collecting or paying court-ordered support"
+            },
+            {
+              "name": "Enforce support payments from outside Alberta",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 3,
+              "ms_name": "Get help collecting or paying court-ordered support"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "PAFVA",
+      "full_name": "Protection Against Family Violence Act",
+      "color": "#c65102",
+      "citation": "RSA 2000, c P-27",
+      "summary": "Provides emergency and long-term protection orders for victims of family violence in Alberta. Allows provincial court judges to issue emergency protection orders outside of court hours when there is an immediate risk of harm.",
+      "full_text": "<h3>Protection Against Family Violence Act</h3><p><strong>Citation:</strong> RSA 2000, c P-27</p><p>The Protection Against Family Violence Act (PAFVA) provides a civil remedy for victims of family violence, separate from the criminal justice process. It enables the granting of emergency and longer-term protection orders to ensure the safety of victims and their children.</p><h4>Key Provisions</h4><ul><li><strong>Emergency Protection Orders (EPOs):</strong> A designated justice of the peace or provincial court judge can grant an emergency protection order at any time, including outside regular court hours, when satisfied that family violence has occurred and the claimant or children are at risk. EPOs can order the respondent to vacate the home, prohibit contact, and grant temporary possession of personal property.</li><li><strong>Application Process:</strong> Police officers, victim services workers, or the victim themselves can apply for an EPO. Applications can be made by telephone when the situation is urgent.</li><li><strong>Queen's Bench Protection Orders:</strong> For longer-term protection, a victim can apply to the Court of King's Bench for a protection order with broader and longer-lasting terms.</li><li><strong>Family Violence Definition:</strong> Broadly defines family violence to include physical, sexual, emotional, and psychological abuse, as well as threats, stalking, property damage, and controlling behaviour.</li><li><strong>Enforcement:</strong> Breach of a protection order is a criminal offence. Law enforcement may arrest without warrant a person reasonably believed to be in breach of a protection order.</li></ul>",
+      "sections": [
+        {
+          "ref": "Emergency Protection Orders",
+          "title": "Emergency and Long-term Protection from Family Violence",
+          "description": "Provides for emergency protection orders that can be granted at any time, including outside court hours, when there is an immediate risk of family violence. Includes provisions for exclusion from the home, no-contact orders, and longer-term court protection orders.",
+          "anchor_id": "sec-pafva-epo",
+          "services": [
+            {
+              "name": "Get an emergency protection order",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 4,
+              "ms_name": "Get protection from violence"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CLDA",
+      "full_name": "Disclosure to Protect Against Domestic Violence (Clare's Law) Act",
+      "color": "#c65102",
+      "citation": "SA 2019, c D-13.5",
+      "summary": "Enables individuals who believe they may be at risk of domestic violence to request disclosure of a partner's violent history from police. Named after Clare Wood, a UK domestic violence victim, the Act established Canada's first Clare's Law.",
+      "full_text": "<h3>Disclosure to Protect Against Domestic Violence (Clare's Law) Act</h3><p><strong>Citation:</strong> SA 2019, c D-13.5</p><p>Alberta's Clare's Law, enacted in 2019, was the first of its kind in Canada. It allows individuals who believe they may be at risk of domestic violence to apply to police for information about a partner's history of violence or abuse.</p><h4>Key Provisions</h4><ul><li><strong>Right to Ask:</strong> An individual who fears for their safety in an intimate relationship can apply to a police service for disclosure of information about a partner's history of violent or abusive behaviour.</li><li><strong>Right to Know:</strong> Police may proactively disclose information about a person's violent history to someone they believe is at risk, even without an application.</li><li><strong>Disclosure Protocol:</strong> Applications are assessed by a multi-agency committee including police, victim services, and other experts who determine what information, if any, should be disclosed based on the risk to the applicant.</li><li><strong>Privacy Protections:</strong> Disclosure is subject to strict protocols to balance the safety of the person at risk with the privacy of the subject. Disclosed information must not be shared further.</li><li><strong>No Liability:</strong> Police services and committee members are protected from liability for good-faith disclosure decisions.</li></ul>",
+      "sections": [
+        {
+          "ref": "Disclosure Protocol",
+          "title": "Disclosure of Domestic Violence Risk Information",
+          "description": "Establishes the right for individuals to request and for police to proactively disclose information about a partner's violent history to protect against domestic violence.",
+          "anchor_id": "sec-clda-disc",
+          "services": [
+            {
+              "name": "Request information about a partner's violent history (Clare's Law)",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 4,
+              "ms_name": "Get protection from violence"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "VCPSA",
+      "full_name": "Victims of Crime and Public Safety Act",
+      "color": "#c65102",
+      "citation": "SA 2020, c V-6.01",
+      "summary": "Establishes the rights of victims of crime in Alberta's justice system, provides for financial assistance to victims, funds community-based victim services organizations, and creates mechanisms for victim impact statements and restitution.",
+      "full_text": "<h3>Victims of Crime and Public Safety Act</h3><p><strong>Citation:</strong> SA 2020, c V-6.01</p><p>The Victims of Crime and Public Safety Act (VCPSA) is Alberta's primary statute protecting and supporting victims of crime. It replaced the former Victims of Crime Act and expanded victim rights and services.</p><h4>Key Provisions</h4><ul><li><strong>Victim Rights:</strong> Establishes that victims have the right to information about the justice process, the status of their case, and available services. Victims have the right to be treated with courtesy, compassion, and respect for their dignity and privacy.</li><li><strong>Financial Assistance:</strong> Provides for financial benefits to eligible victims of crime to help cover costs related to the crime, including counselling, lost wages, and other expenses. Application is made to the ministry.</li><li><strong>Victim Impact Statements:</strong> Victims have the right to submit a victim impact statement describing the physical, emotional, and financial harm they suffered. Statements are considered by the court at sentencing.</li><li><strong>Restitution:</strong> Victims can request that the court order an offender to pay restitution for financial losses resulting from the crime. The Act strengthens enforcement of restitution orders.</li><li><strong>Victim Services:</strong> Funds community-based victim services organizations that provide support to victims including crisis intervention, court preparation, and referrals. Funding comes from provincial victim surcharge revenues.</li><li><strong>Community Impact Statements:</strong> Communities affected by crime may submit community impact statements for consideration at sentencing.</li></ul>",
+      "sections": [
+        {
+          "ref": "Victim Rights and Services",
+          "title": "Victim Rights, Financial Assistance, and Services",
+          "description": "Establishes victim rights in the justice system, provides financial assistance to crime victims, funds community-based victim services organizations, and provides for victim impact statements and restitution.",
+          "anchor_id": "sec-vcpsa-rights",
+          "services": [
+            {
+              "name": "Apply for financial assistance as a crime victim",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 5,
+              "ms_name": "Get help as a victim of crime"
+            },
+            {
+              "name": "Submit a victim impact statement",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 5,
+              "ms_name": "Get help as a victim of crime"
+            },
+            {
+              "name": "Request victim restitution from an offender",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 5,
+              "ms_name": "Get help as a victim of crime"
+            },
+            {
+              "name": "Find a victim services organization near you",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 5,
+              "ms_name": "Get help as a victim of crime"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "AGTA",
+      "full_name": "Adult Guardianship and Trusteeship Act",
+      "color": "#c65102",
+      "citation": "SA 2008, c A-4.2",
+      "summary": "Provides the legal framework for guardianship and trusteeship of adults who lack capacity to make personal or financial decisions. Establishes capacity assessment processes, decision-making alternatives, and complaint mechanisms to protect the rights of vulnerable adults.",
+      "full_text": "<h3>Adult Guardianship and Trusteeship Act</h3><p><strong>Citation:</strong> SA 2008, c A-4.2</p><p>The Adult Guardianship and Trusteeship Act (AGTA) provides the legal framework for making decisions on behalf of adults who lack capacity to make their own personal or financial decisions due to disability, illness, or injury.</p><h4>Part Structure</h4><ul><li><strong>Part 1 — Interpretation:</strong> Defines key terms including capacity, assisted adult, and the principles underlying the Act.</li><li><strong>Part 2 — Principles and Guardianship:</strong> Establishes fundamental principles including the presumption of capacity, the right to the least restrictive form of intervention, and respect for the adult's wishes and values. Provides for court-appointed guardians to make personal decisions (health care, living arrangements, social activities) on behalf of an adult who lacks capacity.</li><li><strong>Part 3 — General Powers of Court:</strong> Grants the court broad powers to make guardianship and trusteeship orders, including specific, limited, or plenary orders. Encourages co-decision-making and supported decision-making as alternatives to full guardianship.</li><li><strong>Part 4 — Trusteeship:</strong> Provides for court-appointed trustees to manage the financial affairs of adults who lack capacity to manage their own finances. Trustees must act in the adult's best interests and account for their management of assets.</li><li><strong>Part 5 — Final Provisions:</strong> Includes provisions for capacity assessments, complaints about guardians and trustees, and the role of the Office of the Public Guardian and Trustee.</li></ul>",
+      "sections": [
+        {
+          "ref": "Parts 2-4",
+          "title": "Guardianship, Trusteeship, and Capacity Assessment",
+          "description": "Establishes guardianship and trusteeship frameworks for adults who lack decision-making capacity, including capacity assessments, decision-making alternatives, and the duties and accountability of appointed guardians and trustees.",
+          "anchor_id": "sec-agta-guard",
+          "services": [
+            {
+              "name": "Apply for guardianship or trusteeship of an adult",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 6,
+              "ms_name": "Protect your rights and plan for the future"
+            },
+            {
+              "name": "Get a capacity assessment done",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 6,
+              "ms_name": "Protect your rights and plan for the future"
+            },
+            {
+              "name": "Explore decision-making alternatives to guardianship",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 6,
+              "ms_name": "Protect your rights and plan for the future"
+            },
+            {
+              "name": "File a complaint about a guardian, trustee, or agent",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 6,
+              "ms_name": "Protect your rights and plan for the future"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "PDA",
+      "full_name": "Personal Directives Act",
+      "color": "#c65102",
+      "citation": "RSA 2000, c P-6",
+      "summary": "Enables Albertans to create personal directives (living wills) that specify their wishes for personal care decisions — including health care, accommodation, and end-of-life care — in the event they lose capacity to make those decisions themselves.",
+      "full_text": "<h3>Personal Directives Act</h3><p><strong>Citation:</strong> RSA 2000, c P-6</p><p>The Personal Directives Act enables Albertans to plan ahead for personal care decisions by creating a personal directive (sometimes called a living will). A personal directive takes effect if the person loses capacity to make their own decisions.</p><h4>Key Provisions</h4><ul><li><strong>Creating a Personal Directive:</strong> Any competent adult can create a personal directive naming an agent (decision-maker) and/or specifying their wishes for personal care including health care treatment, accommodation, and end-of-life care.</li><li><strong>Agent Authority:</strong> Named agents make personal decisions on behalf of the maker when the maker lacks capacity. Agents must follow the wishes expressed in the directive and act in the maker's best interests.</li><li><strong>Activation:</strong> A personal directive takes effect when a health professional or designated capacity assessor determines that the maker lacks capacity to make the relevant decisions.</li><li><strong>Revocation and Amendment:</strong> A maker can revoke or amend their personal directive at any time while they have capacity.</li></ul>",
+      "sections": [
+        {
+          "ref": "Personal Directives",
+          "title": "Personal Directives and Advance Care Planning",
+          "description": "Enables Albertans to create personal directives naming agents and specifying wishes for personal care decisions in the event of incapacity.",
+          "anchor_id": "sec-pda-directives",
+          "services": [
+            {
+              "name": "Make a personal directive or enduring power of attorney",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 6,
+              "ms_name": "Protect your rights and plan for the future"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "RTA",
+      "full_name": "Residential Tenancies Act",
+      "color": "#c65102",
+      "citation": "SA 2004, c R-17.1",
+      "summary": "Governs the rights and obligations of residential landlords and tenants in Alberta, including lease terms, rent, security deposits, repairs, entry, termination, and dispute resolution through the Residential Tenancy Dispute Resolution Service.",
+      "full_text": "<h3>Residential Tenancies Act</h3><p><strong>Citation:</strong> SA 2004, c R-17.1</p><p>The Residential Tenancies Act (RTA) establishes the rights and obligations of landlords and tenants for residential rental properties in Alberta. It provides a framework for resolving disputes without the need for court.</p><h4>Key Provisions</h4><ul><li><strong>Lease Terms:</strong> Establishes rules for residential tenancy agreements including fixed-term and periodic tenancies, rent payment, and lease renewal.</li><li><strong>Security Deposits:</strong> Limits security deposits to one month's rent, requires deposits to be held in a trust account, and establishes rules for inspection reports and deposit return.</li><li><strong>Repairs and Maintenance:</strong> Landlords must maintain premises in a habitable condition. Tenants must keep the premises reasonably clean and report damage.</li><li><strong>Entry:</strong> Landlords may only enter rented premises with proper notice (generally 24 hours) except in emergencies.</li><li><strong>Termination:</strong> Sets notice periods for ending a tenancy and establishes grounds for early termination by landlord (e.g., non-payment, substantial breach) or tenant (e.g., domestic violence, health and safety).</li><li><strong>Dispute Resolution:</strong> The Residential Tenancy Dispute Resolution Service (RTDRS) provides a faster, less formal alternative to court for resolving landlord-tenant disputes. Decisions are binding.</li></ul>",
+      "sections": [
+        {
+          "ref": "Dispute Resolution",
+          "title": "Residential Tenancy Dispute Resolution",
+          "description": "Establishes the Residential Tenancy Dispute Resolution Service as an alternative to court for resolving landlord-tenant disputes, and sets out tenant and landlord rights regarding rent, deposits, repairs, and termination.",
+          "anchor_id": "sec-rta-disputes",
+          "services": [
+            {
+              "name": "Resolve a residential tenancy dispute",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 7,
+              "ms_name": "Resolve a dispute outside of court"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "FIA",
+      "full_name": "Fatality Inquiries Act",
+      "color": "#c65102",
+      "citation": "RSA 2000, c F-9",
+      "summary": "Establishes Alberta's death investigation system, requiring reporting and investigation of unexpected, unexplained, and violent deaths. Provides for the Medical Examiner's office, death investigation procedures, and public fatality inquiries to recommend measures to prevent similar deaths.",
+      "full_text": "<h3>Fatality Inquiries Act</h3><p><strong>Citation:</strong> RSA 2000, c F-9</p><p>The Fatality Inquiries Act establishes Alberta's system for investigating deaths that are sudden, unexpected, or potentially related to public safety concerns.</p><h4>Part Structure</h4><ul><li><strong>Part 1 — Interpretation:</strong> Defines key terms including types of reportable deaths (violent, unexplained, deaths in custody).</li><li><strong>Part 2 — General:</strong> Establishes mandatory reporting requirements for medical practitioners, police, and institutions when a death may require investigation. Provides for the Medical Examiner to investigate the cause and manner of death, including ordering autopsies.</li><li><strong>Part 3 — Inquests:</strong> The Minister of Justice may order a public fatality inquiry when a death raises questions about public safety, institutional practices, or systemic issues. Inquiries are conducted by a provincial court judge and may include witness examination and jury recommendations for preventing similar deaths.</li><li><strong>Part 4 — Miscellaneous:</strong> Contains provisions for access to investigation documents, the Fatality Review Board, and administrative matters.</li></ul>",
+      "sections": [
+        {
+          "ref": "Parts 2-3",
+          "title": "Death Investigation and Public Fatality Inquiries",
+          "description": "Requires reporting and investigation of unexpected, unexplained, and violent deaths. Provides for public fatality inquiries to examine deaths that raise public safety concerns and make recommendations to prevent similar deaths.",
+          "anchor_id": "sec-fia-invest",
+          "services": [
+            {
+              "name": "Report an unexpected or unexplained death",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 8,
+              "ms_name": "Get death investigation information"
+            },
+            {
+              "name": "Request death investigation documents",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 8,
+              "ms_name": "Get death investigation information"
+            },
+            {
+              "name": "Request a public fatality inquiry",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c65102",
+              "ms_number": 8,
+              "ms_name": "Get death investigation information"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 19,
+    "sections_count": 21,
+    "services_with_leg_count": 53,
+    "services_multi_act_count": 5
+  }
+}

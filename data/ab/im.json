@@ -1,0 +1,636 @@
+{
+  "prefix": "im",
+  "full_name": "Immigration and Multiculturalism",
+  "short_name": "Immigration & Multiculturalism",
+  "blurb": "Helps newcomers immigrate to and settle in Alberta through provincial nominee pathways, settlement and integration services, foreign credential recognition, and language supports, while fostering multiculturalism and inclusion across the province.",
+  "nav_name": "Immigration & Multiculturalism",
+  "has_registry_agents": false,
+  "_status": "draft",
+  "foundational_services": [],
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "OUTCOME 1: Newcomers can immigrate to Alberta through provincial pathways",
+      "short_name": "Immigration pathways",
+      "legend_label": "Immigration pathways",
+      "description": "The ministry operates the Alberta Advantage Immigration Program, which nominates skilled workers and entrepreneurs for permanent residence, and provides information on immigration streams, eligibility, and application processes.",
+      "foundational_services": [
+        {
+          "name": "Design and manage provincial immigration policy and nomination streams",
+          "desc": "Develops immigration stream criteria, manages nomination allocations with the federal government, monitors labour market needs, and adjusts program design to attract workers and entrepreneurs who meet Alberta's economic priorities.",
+          "users": "Government policy staff, federal immigration partners",
+          "user_groups": ["Government"],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/alberta-advantage-immigration-program",
+              "url": "https://www.alberta.ca/alberta-advantage-immigration-program"
+            }
+          ],
+          "legislation": [],
+          "mandate_tags": ["immigration"]
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Apply for provincial nomination as a skilled worker",
+          "supporting": [
+            {
+              "name": "Apply through the Alberta Opportunity Stream",
+              "desc": "Workers currently employed in Alberta in an eligible occupation can apply for a provincial nomination for permanent residence through the Alberta Opportunity Stream. Applicants must meet criteria for work experience, language proficiency, and education.",
+              "users": "Temporary foreign workers and residents working in Alberta",
+              "user_groups": ["Newcomers"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "AAIP online portal",
+                  "url": "https://www.alberta.ca/alberta-opportunity-stream"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Eligibility and stream information",
+                  "url": "https://www.alberta.ca/alberta-opportunity-stream"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["immigration"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Thousands of nominations annually",
+                "basis": "Major worker stream with significant allocation within Alberta's total nomination quota"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "immigration",
+                "note": "Addresses labour shortages by providing permanent residence pathways for workers already contributing to Alberta's economy"
+              }
+            },
+            {
+              "name": "Apply through the Alberta Express Entry Stream",
+              "desc": "Candidates in the federal Express Entry pool with strong ties to Alberta or skills in priority sectors (health care, technology, policing) can receive a provincial notification of interest and apply for an Alberta nomination, boosting their federal ranking.",
+              "users": "Federal Express Entry candidates with Alberta connections or priority skills",
+              "user_groups": ["Newcomers"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "AAIP online portal",
+                  "url": "https://www.alberta.ca/alberta-express-entry-stream"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Stream details and priority sectors",
+                  "url": "https://www.alberta.ca/alberta-express-entry-stream"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["immigration"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Thousands of nominations annually",
+                "basis": "High-demand stream targeting skilled workers in priority sectors"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "immigration",
+                "note": "Attracts highly skilled professionals in health care, technology, and other priority sectors"
+              }
+            },
+            {
+              "name": "Apply through the Rural Renewal Stream or Tourism and Hospitality Stream",
+              "desc": "Workers in rural Alberta communities or in tourism and hospitality roles can apply for nomination through dedicated streams designed to address labour needs in smaller communities and the service sector.",
+              "users": "Workers in rural Alberta or tourism/hospitality sector",
+              "user_groups": ["Newcomers"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "AAIP online portal",
+                  "url": "https://www.alberta.ca/alberta-advantage-immigration-program"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Stream eligibility details",
+                  "url": "https://www.alberta.ca/alberta-advantage-immigration-program"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["immigration", "rural"],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Hundreds of nominations annually per stream",
+                "basis": "Targeted streams for specific sectors and communities"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "immigration",
+                "note": "Sustains rural communities and tourism sector by addressing chronic labour shortages"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Apply for provincial nomination as an entrepreneur",
+          "supporting": [
+            {
+              "name": "Apply to start or buy a business in Alberta as an entrepreneur",
+              "desc": "International entrepreneurs can apply for provincial nomination through the Rural Entrepreneur Stream, Graduate Entrepreneur Stream, Farm Stream, or Foreign Graduate Entrepreneur Stream by proposing a viable business plan and investing in Alberta's economy.",
+              "users": "International entrepreneurs and investors seeking permanent residence",
+              "user_groups": ["Newcomers", "Business owners"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "AAIP entrepreneur portal",
+                  "url": "https://www.alberta.ca/alberta-advantage-immigration-program"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Entrepreneur stream details",
+                  "url": "https://www.alberta.ca/alberta-advantage-immigration-program"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["immigration", "economic-growth"],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Hundreds of entrepreneur applications annually",
+                "basis": "Multiple entrepreneur streams attracting business investment"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "economic-growth",
+                "note": "Entrepreneur immigration brings capital investment, job creation, and business diversification"
+              }
+            },
+            {
+              "name": "Check your immigration application status",
+              "desc": "Applicants to any Alberta Advantage Immigration Program stream can check the status of their application through the online portal. Processing times and application requirements vary by stream.",
+              "users": "AAIP applicants awaiting decisions",
+              "user_groups": ["Newcomers"],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "AAIP application status portal",
+                  "url": "https://www.alberta.ca/alberta-advantage-immigration-program"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["immigration"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Tens of thousands of status checks annually",
+                "basis": "All AAIP applicants check status multiple times during processing"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "immigration",
+                "note": "Transparent status tracking reduces applicant anxiety and inquiry volume"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "title": "OUTCOME 2: Newcomers can settle, integrate, and succeed in Alberta",
+      "short_name": "Settlement & integration",
+      "legend_label": "Settlement & integration",
+      "description": "The ministry supports newcomers in settling and integrating into Alberta communities through settlement services, language training, foreign credential recognition, employment mentorship, and information resources for living and working in the province.",
+      "foundational_services": [
+        {
+          "name": "Fund and coordinate settlement and integration services across Alberta",
+          "desc": "Administers the Alberta Settlement and Integration Program, which funds community organizations to deliver settlement services, language training, employment supports, and community connections for newcomers across the province.",
+          "users": "Settlement service agencies, community organizations",
+          "user_groups": ["Government"],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/immigration",
+              "url": "https://www.alberta.ca/immigration"
+            }
+          ],
+          "legislation": [],
+          "mandate_tags": ["settlement"]
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get help settling in Alberta as a newcomer",
+          "supporting": [
+            {
+              "name": "Find settlement services and newcomer supports in your community",
+              "desc": "Newcomers can find funded settlement organizations in their community that provide orientation, language assessment, employment assistance, and community connections to help them establish their new life in Alberta.",
+              "users": "New immigrants, refugees, temporary residents transitioning to permanent residence",
+              "user_groups": ["Newcomers", "Families"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Settlement service locator",
+                  "url": "https://www.alberta.ca/immigration"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Settlement agency contact lines",
+                  "url": null
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Settlement offices across Alberta"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["settlement"],
+              "reach_estimate": {
+                "tier": "very_high",
+                "estimate": "Tens of thousands of newcomers served annually",
+                "basis": "Alberta receives over 50,000 new permanent residents per year"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "settlement",
+                "note": "Effective settlement accelerates economic participation and reduces social costs"
+              }
+            },
+            {
+              "name": "Access language training and assessment",
+              "desc": "Newcomers can access English language training, language assessment services, and bridging programs funded through provincial settlement programs. Language proficiency is key to employment and community integration.",
+              "users": "Newcomers needing English language support",
+              "user_groups": ["Newcomers"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Language training providers",
+                  "url": "https://www.alberta.ca/immigration"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Language training centres across Alberta"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["settlement"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Thousands of learners enrolled annually",
+                "basis": "Language training is among the most-used settlement services"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "settlement",
+                "note": "Language proficiency directly correlates with employment outcomes and earnings for newcomers"
+              }
+            },
+            {
+              "name": "Get information on living and working in Alberta before you arrive",
+              "desc": "Prospective and incoming immigrants can access guides, videos, and resources about life in Alberta including housing, health care, education, transportation, and workplace culture through the Opportunity Alberta hub.",
+              "users": "Prospective immigrants, approved applicants preparing to move",
+              "user_groups": ["Newcomers"],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Opportunity Alberta / newcomer guides",
+                  "url": "https://www.alberta.ca/immigration"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Newcomer's Guide to Working in Alberta"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["settlement"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of page views and downloads",
+                "basis": "Pre-arrival information is heavily used by approved immigrants and prospective applicants"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "settlement",
+                "note": "Pre-arrival preparation reduces settlement challenges and accelerates integration"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get your foreign credentials recognized in Alberta",
+          "supporting": [
+            {
+              "name": "Get your international qualifications assessed",
+              "desc": "The International Qualifications Assessment Service (IQAS) assesses foreign educational credentials against Alberta standards. An IQAS certificate is often required for immigration applications, professional licensing, and employment.",
+              "users": "Internationally educated professionals, immigration applicants, employers",
+              "user_groups": ["Newcomers", "Health providers"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "IQAS assessment application",
+                  "url": "https://www.alberta.ca/international-qualifications-assessment"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "IQAS inquiry line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FRPA",
+                  "color": "#00695c",
+                  "full_name": "Fair Registration Practices Act"
+                }
+              ],
+              "mandate_tags": ["credentials"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Tens of thousands of assessments annually",
+                "basis": "IQAS is a primary credential assessment service for Alberta immigration and licensing"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "credentials",
+                "note": "Credential assessment is the gateway to professional licensing and skilled employment for newcomers"
+              }
+            },
+            {
+              "name": "Navigate the licensing process for your regulated profession",
+              "desc": "Internationally trained professionals in over 80 regulated occupations can access guidance on the licensing process, connect with their Professional Regulatory Organization, and access bridging programs and financial supports to help them complete requirements.",
+              "users": "Internationally trained professionals in regulated occupations",
+              "user_groups": ["Newcomers", "Health providers"],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Foreign qualification recognition guide",
+                  "url": "https://www.alberta.ca/foreign-qualification-recognition"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Credential navigation programs (Bredin Centre, Bow Valley College)"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "FQR inquiry line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FRPA",
+                  "color": "#00695c",
+                  "full_name": "Fair Registration Practices Act"
+                }
+              ],
+              "mandate_tags": ["credentials"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Thousands of professionals navigating licensing annually",
+                "basis": "80+ regulated professions with internationally trained applicants"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "credentials",
+                "note": "Fair credential recognition unlocks skilled employment and addresses professional labour shortages"
+              }
+            },
+            {
+              "name": "Find employment mentorship and career supports for newcomers",
+              "desc": "Newcomers can access career mentorship programs, job search workshops, and employment bridging supports that help them understand the Alberta labour market, build professional networks, and find work matching their skills and experience.",
+              "users": "Job-seeking newcomers, internationally trained workers",
+              "user_groups": ["Newcomers"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Mentorship and career support programs",
+                  "url": "https://www.alberta.ca/immigration"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Community employment service providers"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["settlement", "employment"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Thousands of newcomers participating annually",
+                "basis": "Employment integration is a top priority for new immigrants"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "employment",
+                "note": "Mentorship and career support reduce the gap between newcomer skills and Alberta employment"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "title": "OUTCOME 3: Alberta is an inclusive, welcoming, and diverse province",
+      "short_name": "Multiculturalism & inclusion",
+      "legend_label": "Multiculturalism & inclusion",
+      "description": "The ministry promotes multiculturalism, combats racism and discrimination, supports cultural community organizations, and recognizes the contributions of immigrants to Alberta's social and economic fabric.",
+      "foundational_services": [
+        {
+          "name": "Develop multiculturalism, anti-racism, and inclusion policy",
+          "desc": "Develops provincial policy on multiculturalism, anti-racism, and inclusion. Coordinates the Anti-Racism Advisory Council and the Premier's Council on Multiculturalism. Administers grant programs supporting cultural community organizations.",
+          "users": "Government policy staff, advisory councils, cultural organizations",
+          "user_groups": ["Government"],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/multiculturalism",
+              "url": "https://www.alberta.ca/immigration"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "AHRA",
+              "color": "#c62828",
+              "full_name": "Alberta Human Rights Act"
+            }
+          ],
+          "mandate_tags": ["multiculturalism"]
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Access multiculturalism and community inclusion supports",
+          "supporting": [
+            {
+              "name": "Apply for a multiculturalism or community inclusion grant",
+              "desc": "Cultural and community organizations can apply for grants to support events, programs, and initiatives that promote cross-cultural understanding, celebrate diversity, and build inclusive communities across Alberta.",
+              "users": "Cultural organizations, community groups, non-profits",
+              "user_groups": ["Organizations"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Multiculturalism grant application",
+                  "url": "https://www.alberta.ca/immigration"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Grant program inquiries",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["multiculturalism"],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Hundreds of grant applications annually",
+                "basis": "Provincial grant programs supporting cultural community organizations"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "multiculturalism",
+                "note": "Community grants strengthen social cohesion and support cultural organizations province-wide"
+              }
+            },
+            {
+              "name": "Nominate an immigrant for an Alberta recognition award",
+              "desc": "Albertans can nominate outstanding immigrants who have made significant contributions to their communities for recognition through the Alberta Immigrant Impact Awards, celebrating the achievements and contributions of newcomers.",
+              "users": "Community members, organizations, employers wishing to recognize immigrant contributions",
+              "user_groups": ["General public", "Organizations"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Awards nomination form",
+                  "url": "https://www.alberta.ca/immigration"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Awards program information",
+                  "url": "https://www.alberta.ca/immigration"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["multiculturalism"],
+              "reach_estimate": {
+                "tier": "low",
+                "estimate": "Hundreds of nominations annually",
+                "basis": "Annual recognition program for immigrant community contributions"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "multiculturalism",
+                "note": "Public recognition builds welcoming culture and encourages immigrant civic participation"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Report discrimination or learn about your human rights",
+          "supporting": [
+            {
+              "name": "File a human rights complaint about discrimination",
+              "desc": "Albertans who have experienced discrimination based on race, colour, ancestry, place of origin, religious beliefs, gender, disability, or other protected grounds can file a complaint with the Alberta Human Rights Commission for investigation and resolution.",
+              "users": "Individuals who have experienced discrimination in employment, services, or housing",
+              "user_groups": ["General public", "Newcomers"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Human rights complaint form",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Human Rights Commission",
+                  "url": null
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Commission offices in Edmonton and Calgary"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AHRA",
+                  "color": "#c62828",
+                  "full_name": "Alberta Human Rights Act"
+                }
+              ],
+              "mandate_tags": ["human-rights"],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Thousands of complaints and inquiries annually",
+                "basis": "Alberta Human Rights Commission receives complaints from across the province"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "human-rights",
+                "note": "Complaint mechanism enforces anti-discrimination protections and deters discriminatory practices"
+              }
+            },
+            {
+              "name": "Learn about human rights protections and anti-racism resources",
+              "desc": "Albertans can access educational resources on human rights protections, anti-racism initiatives, and cultural diversity. Resources include guides on protected grounds, employer obligations, and how to promote inclusive workplaces and communities.",
+              "users": "All Albertans, employers, educators, community leaders",
+              "user_groups": ["General public", "Industry", "Organizations"],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Alberta Human Rights Commission resources",
+                  "url": null
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Human rights and anti-racism publications"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AHRA",
+                  "color": "#c62828",
+                  "full_name": "Alberta Human Rights Act"
+                }
+              ],
+              "mandate_tags": ["human-rights", "multiculturalism"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of resource views and downloads",
+                "basis": "Broad public interest in human rights education and workplace inclusion"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "human-rights",
+                "note": "Human rights education prevents discrimination and fosters inclusive communities and workplaces"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "channel_filters": [
+    {"code": "ch-apply", "label": "Apply"},
+    {"code": "ch-check", "label": "Check / portal"},
+    {"code": "ch-find", "label": "Find / search"},
+    {"code": "ch-web", "label": "Website"},
+    {"code": "ch-email", "label": "Email"},
+    {"code": "ch-pub", "label": "Publication"},
+    {"code": "ch-phone", "label": "Phone"},
+    {"code": "ch-mail", "label": "Mail"},
+    {"code": "ch-inperson", "label": "In person"}
+  ],
+  "user_group_filters": ["General public", "Newcomers", "Families", "Business owners", "Health providers", "Organizations", "Industry"],
+  "channel_types": {
+    "ch-apply": {"label": "Apply", "type": "digital"},
+    "ch-check": {"label": "Check / portal", "type": "digital"},
+    "ch-find": {"label": "Find / search", "type": "digital"},
+    "ch-web": {"label": "Website", "type": "digital"},
+    "ch-email": {"label": "Email", "type": "digital"},
+    "ch-pub": {"label": "Publication", "type": "non-digital"},
+    "ch-phone": {"label": "Phone", "type": "non-digital"},
+    "ch-mail": {"label": "Mail", "type": "non-digital"},
+    "ch-inperson": {"label": "In person", "type": "non-digital"}
+  },
+  "digital_channels": ["ch-apply", "ch-check", "ch-find", "ch-web", "ch-email"]
+}

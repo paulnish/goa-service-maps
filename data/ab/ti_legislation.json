@@ -1,0 +1,78 @@
+{
+  "prefix": "ti",
+  "name": "Technology and Innovation",
+  "short_name": "Technology & Innovation",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "Digital connectivity & services",
+      "legend_label": "Digital connectivity",
+      "main_services": [
+        {"number": 1, "name": "Access broadband and connectivity services"},
+        {"number": 2, "name": "Use digital government services"}
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "short_name": "Technology & innovation ecosystem",
+      "legend_label": "Innovation ecosystem",
+      "main_services": [
+        {"number": 1, "name": "Access innovation and research funding"},
+        {"number": 2, "name": "Attract and support data centre and AI investment"}
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "short_name": "Privacy & data protection",
+      "legend_label": "Privacy & data",
+      "main_services": [
+        {"number": 1, "name": "Understand your privacy rights"}
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "PPA",
+      "full_name": "Protection of Privacy Act",
+      "color": "#c62828",
+      "citation": "SA 2024, c P-26.5",
+      "summary": "Establishes comprehensive privacy protections for personal information collected, used, and disclosed by Alberta government organizations. Prescribes rules for lawful collection, use, disclosure, retention, access, and security of personal information, and creates an independent Privacy Commissioner oversight mechanism.",
+      "full_text": "<h3>Protection of Privacy Act</h3><p><strong>Citation:</strong> SA 2024, c P-26.5</p><p>The Protection of Privacy Act is Alberta's foundational privacy statute governing how government organizations collect, use, disclose, retain, and protect personal information about Albertans. It establishes individual privacy rights, government obligations, and independent oversight through the Privacy Commissioner.</p><h4>Key Provisions</h4><ul><li><strong>Purpose and Scope (ss 1–10):</strong> Establishes the object of the Act: protecting privacy rights of individuals and ensuring transparent, responsible government use of personal information. The Act applies to all Alberta government organizations, including Crown corporations, departments, and other public sector bodies. Exemptions may apply to law enforcement investigations, national security, health research, and other limited circumstances defined in regulations.</li><li><strong>Collection of Personal Information (ss 15–35):</strong> Government organizations may collect personal information only for lawful purposes directly related to their functions. Collection must be limited to what is necessary and proportionate. Collection requires legal authority (legislation, regulation, or common law authority) and individuals should be advised of the purpose and legal basis at the time of collection. Sensitive personal information (health, biometric, financial) is subject to heightened protections.</li><li><strong>Use and Disclosure (ss 40–60):</strong> Personal information collected for a stated purpose may be used only for that purpose or a consistent purpose unless the individual consents or legislation authorizes use for another purpose. Disclosure to third parties is restricted and requires legal authority or consent. Routine disclosures (to other government bodies) must be authorized by statute or regulation. No disclosure to private entities without consent or legal authority.</li><li><strong>Retention and Destruction (ss 65–75):</strong> Personal information must not be retained longer than necessary to fulfill the lawful purpose. Government organizations must establish retention schedules and securely destroy information after the retention period expires. Exceptions apply for archival records and legal holds.</li><li><strong>Information Security and Safeguards (ss 80–100):</strong> Government organizations must implement reasonable security measures to protect personal information from unauthorized access, use, disclosure, loss, theft, or destruction. Measures must be proportionate to the sensitivity of information and include physical security, access controls, encryption, and training. Data breaches involving unauthorized access or loss must be reported to affected individuals and the Privacy Commissioner without unreasonable delay.</li><li><strong>Access by Individuals (ss 105–125):</strong> Individuals have the right to request access to their personal information held by government organizations. Requests must be processed within prescribed timeframes (typically 30 days). Organizations must provide information in an accessible format and may refuse access only if permitted by law (privacy of others, law enforcement information, etc.). No fees may be charged for reasonable access requests.</li><li><strong>Correction of Inaccurate Information (ss 130–140):</strong> Individuals may request correction of inaccurate, incomplete, or misleading personal information. Organizations must make corrections if requested information is factually inaccurate. If an organization disputes a correction request, the individual may add a statement of disagreement to their file.</li><li><strong>Accountability and Privacy Impact Assessment (ss 145–160):</strong> Government organizations must designate a privacy officer responsible for compliance. Organizations must conduct Privacy Impact Assessments (PIAs) for new programs, systems, or information-sharing initiatives. PIAs must assess privacy risks and mitigation measures. Results must be made publicly available.</li><li><strong>Privacy Commissioner Authority (ss 165–200):</strong> An independent Privacy Commissioner investigates privacy complaints, conducts audits, provides guidance to organizations, and publicly reports on privacy issues and trends. The Commissioner may order organizations to comply with the Act and may issue compliance orders. Annual reports to the Legislative Assembly are required.</li><li><strong>Offences and Enforcement (ss 205–220):</strong> Violations include unauthorized collection, use, or disclosure of personal information; failure to implement security measures; failure to grant access; and obstruction of the Commissioner. Penalties include fines for individuals and organizations.</li></ul><p>The Act is administered by the Privacy Commissioner of Alberta, an independent officer of the Legislature responsible for investigating complaints, auditing compliance, and advancing privacy protections across government.</p>",
+      "sections": [
+        {
+          "ref": "ss 1–100",
+          "title": "Privacy Protections for Personal Information",
+          "description": "Establishes government obligations to collect personal information lawfully, use and disclose it only for authorized purposes, retain it only as necessary, and implement reasonable security measures. Grants individuals rights to access their information, request corrections, and know how government uses their data.",
+          "anchor_id": "sec-ppa-protections",
+          "services": [
+            {
+              "name": "Learn about how government collects and uses your personal information",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 1,
+              "ms_name": "Understand your privacy rights"
+            },
+            {
+              "name": "Develop privacy, data ethics, and cybersecurity policy",
+              "type": "foundational",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 0,
+              "ms_name": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 1,
+    "sections_count": 1,
+    "services_with_leg_count": 2,
+    "services_multi_act_count": 0
+  }
+}

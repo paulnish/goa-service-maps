@@ -1,0 +1,428 @@
+{
+  "prefix": "mha",
+  "full_name": "Mental Health and Addiction",
+  "short_name": "Mental Health & Addiction",
+  "blurb": "Manages Alberta's recovery-oriented system of mental health and addiction care — providing crisis support, counselling, addiction treatment, recovery communities, harm reduction services, and child and youth mental health programs.",
+  "nav_name": "Mental Health & Addiction",
+  "has_registry_agents": false,
+  "_status": "draft",
+  "foundational_services": [],
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "OUTCOME 1: Albertans can access mental health support and crisis services",
+      "short_name": "Mental health access & crisis",
+      "legend_label": "Mental health & crisis",
+      "description": "The ministry ensures Albertans can access mental health services including crisis intervention, counselling, and community-based support for adults, children, and youth.",
+      "foundational_services": [
+        {
+          "name": "Plan and fund the recovery-oriented system of mental health care",
+          "desc": "Develops policy and funding models for Alberta's recovery-oriented mental health system, including commissioning services through Recovery Alberta, licensing service providers, and measuring system performance outcomes.",
+          "users": "Government, Recovery Alberta, service providers",
+          "user_groups": ["Government"],
+          "channels": [
+            {"type": "ch-web", "label": "alberta.ca/mental-health-and-addiction", "url": "https://www.alberta.ca/mental-health-and-addiction"}
+          ],
+          "legislation": [{"abbrev": "MHA", "color": "#1565c0", "full_name": "Mental Health Act"}],
+          "mandate_tags": ["mental-health"],
+          "taxonomy": {
+            "track": "individual",
+            "tier": "core_human_needs",
+            "domain": "health_wellbeing",
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get mental health crisis support or find counselling",
+          "supporting": [
+            {
+              "name": "Get crisis support for a mental health or addiction emergency",
+              "desc": "Albertans in mental health or addiction crisis can access immediate help through 211 Alberta (24/7, over 250 languages), Kids Help Phone (ages 11–25), and emergency services. Crisis support includes phone, text, and online chat.",
+              "users": "Albertans in crisis, family members, bystanders",
+              "user_groups": ["General public"],
+              "channels": [
+                {"type": "ch-phone", "label": "211 Alberta (24/7 crisis line)", "url": null},
+                {"type": "ch-phone", "label": "Kids Help Phone 1-800-668-6868", "url": null},
+                {"type": "ch-web", "label": "211 Alberta online chat", "url": "https://ab.211.ca"}
+              ],
+              "legislation": [{"abbrev": "MHA", "color": "#1565c0", "full_name": "Mental Health Act"}],
+              "mandate_tags": ["mental-health", "crisis"],
+              "reach_estimate": {"tier": "very_high", "estimate": "Tens of thousands of crisis contacts annually", "basis": "24/7 crisis lines serving all Albertans in over 250 languages"},
+              "economic_impact": {"tag": "essential", "category": "mental-health", "note": "Crisis intervention prevents hospitalization, self-harm, and reduces emergency department demand"},
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Find affordable counselling for mental health or substance use",
+              "desc": "Counselling Alberta provides affordable, accessible in-person and online counselling services with no waitlist. Sliding-scale fees ensure services are available regardless of income. Recovery Alberta also provides community-based counselling.",
+              "users": "Adults, youth, and families seeking mental health or substance use counselling",
+              "user_groups": ["General public", "Families"],
+              "channels": [
+                {"type": "ch-phone", "label": "Counselling Alberta 1-833-827-4230", "url": null},
+                {"type": "ch-web", "label": "Counselling Alberta online booking", "url": null},
+                {"type": "ch-inperson", "label": "In-person counselling locations"}
+              ],
+              "legislation": [],
+              "mandate_tags": ["mental-health"],
+              "reach_estimate": {"tier": "high", "estimate": "Hundreds of thousands of Albertans access mental health counselling annually", "basis": "Growing demand for accessible mental health services across the province"},
+              "economic_impact": {"tag": "essential", "category": "mental-health", "note": "Early counselling intervention prevents escalation to crisis and reduces long-term system costs"},
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Find community mental health services near you",
+              "desc": "Recovery Alberta and community partners deliver outpatient mental health services across the province including assessment, therapy, day programs, and psychiatric consultation. Services are available in person and virtually.",
+              "users": "Albertans with mental health concerns, family members",
+              "user_groups": ["General public"],
+              "channels": [
+                {"type": "ch-find", "label": "Find mental health services", "url": null},
+                {"type": "ch-phone", "label": "211 Alberta referral line", "url": null},
+                {"type": "ch-inperson", "label": "Community mental health clinics"}
+              ],
+              "legislation": [],
+              "mandate_tags": ["mental-health"],
+              "reach_estimate": {"tier": "high", "estimate": "Tens of thousands of clients served through community programs", "basis": "Province-wide network of outpatient mental health services"},
+              "economic_impact": {"tag": "essential", "category": "mental-health", "note": "Community-based care keeps people in their communities and reduces hospital admissions"},
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Access mental health support for children and youth",
+          "supporting": [
+            {
+              "name": "Get mental health support for a child or youth",
+              "desc": "Kickstand provides free, confidential mental health and addiction services for ages 11–25, including peer support, Indigenous wellness, and social services. CASA Mental Health offers school-based therapy and residential programs for children and youth.",
+              "users": "Children, youth aged 11–25, parents, caregivers",
+              "user_groups": ["Families", "Youth"],
+              "channels": [
+                {"type": "ch-web", "label": "Kickstand online services", "url": null},
+                {"type": "ch-inperson", "label": "Kickstand centres and CASA programs"},
+                {"type": "ch-phone", "label": "Kids Help Phone 1-800-668-6868", "url": null}
+              ],
+              "legislation": [],
+              "mandate_tags": ["youth-mental-health"],
+              "reach_estimate": {"tier": "high", "estimate": "Thousands of children and youth served annually", "basis": "Growing demand for youth mental health services across the province"},
+              "economic_impact": {"tag": "essential", "category": "youth-mental-health", "note": "Early intervention in youth mental health prevents lifelong chronic conditions and system dependency"},
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Find resources for supporting a young person with mental health challenges",
+              "desc": "Parents, caregivers, and educators can access resources, information, and support for helping children and youth manage mental health and substance use challenges, including bullying support and crisis safety planning.",
+              "users": "Parents, caregivers, educators, school counsellors",
+              "user_groups": ["Families"],
+              "channels": [
+                {"type": "ch-web", "label": "Youth mental health resources", "url": "https://www.alberta.ca/mental-health-and-addiction"},
+                {"type": "ch-phone", "label": "211 Alberta parent support line", "url": null}
+              ],
+              "legislation": [],
+              "mandate_tags": ["youth-mental-health"],
+              "reach_estimate": {"tier": "high", "estimate": "Hundreds of thousands of parents and educators", "basis": "Universal concern among families with children and youth"},
+              "economic_impact": {"tag": "enabling", "category": "youth-mental-health", "note": "Empowered caregivers improve early identification and reduce crisis escalation"},
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "title": "OUTCOME 2: Albertans can access addiction treatment and recovery services",
+      "short_name": "Addiction treatment & recovery",
+      "legend_label": "Treatment & recovery",
+      "description": "The ministry provides a continuum of addiction services from harm reduction and crisis intervention through treatment and long-term recovery, delivered through Recovery Alberta and community partners.",
+      "foundational_services": [
+        {
+          "name": "Commission and fund addiction treatment and recovery services",
+          "desc": "Funds and oversees the continuum of addiction services including detoxification, opioid agonist treatment, residential treatment, recovery communities, and community-based outpatient programs through Recovery Alberta and contracted providers.",
+          "users": "Government, Recovery Alberta, treatment providers",
+          "user_groups": ["Government"],
+          "channels": [
+            {"type": "ch-web", "label": "alberta.ca/mental-health-and-addiction", "url": "https://www.alberta.ca/mental-health-and-addiction"}
+          ],
+          "legislation": [],
+          "mandate_tags": ["addiction-treatment"],
+          "taxonomy": {
+            "track": "individual",
+            "tier": "core_human_needs",
+            "domain": "health_wellbeing",
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get treatment for addiction or substance use",
+          "supporting": [
+            {
+              "name": "Access addiction treatment or detoxification services",
+              "desc": "Recovery Alberta provides free detoxification and addiction treatment through community-based outpatient programs, day programs, and residential facilities. Treatment options include medically supported withdrawal management, counselling, and opioid agonist treatment.",
+              "users": "Albertans with substance use disorders, family members",
+              "user_groups": ["General public"],
+              "channels": [
+                {"type": "ch-phone", "label": "211 Alberta referral line", "url": null},
+                {"type": "ch-inperson", "label": "Recovery Alberta intake centres"},
+                {"type": "ch-web", "label": "Addiction treatment information", "url": "https://www.alberta.ca/mental-health-and-addiction"}
+              ],
+              "legislation": [],
+              "mandate_tags": ["addiction-treatment"],
+              "reach_estimate": {"tier": "high", "estimate": "Tens of thousands of Albertans access treatment annually", "basis": "Significant and growing demand for addiction services province-wide"},
+              "economic_impact": {"tag": "essential", "category": "addiction-treatment", "note": "Addiction treatment reduces emergency visits, crime, and social costs while restoring productive lives"},
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Access same-day virtual addiction medicine through the opioid dependency program",
+              "desc": "The Virtual Opioid Dependency Program (VODP) provides same-day access to addiction medicine specialists by phone for Albertans with opioid use disorder. Available 8am–8pm daily, no referral required.",
+              "users": "Albertans with opioid use disorder",
+              "user_groups": ["General public"],
+              "channels": [
+                {"type": "ch-phone", "label": "VODP line 1-844-383-7688", "url": null}
+              ],
+              "legislation": [],
+              "mandate_tags": ["addiction-treatment"],
+              "reach_estimate": {"tier": "medium", "estimate": "Thousands of calls annually", "basis": "Targeted program for opioid use disorder with no-referral access"},
+              "economic_impact": {"tag": "essential", "category": "addiction-treatment", "note": "Same-day access to opioid treatment reduces overdose risk and emergency department burden"},
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Apply to a recovery community for long-term residential treatment",
+              "desc": "Alberta's recovery communities provide up to one year of free, live-in treatment including opioid agonist medication, counselling, employment training, financial and housing support, and peer mentorship. Currently four communities are operational, with more planned including five in partnership with Indigenous nations.",
+              "users": "Albertans with severe addiction, families",
+              "user_groups": ["General public"],
+              "channels": [
+                {"type": "ch-apply", "label": "Recovery community application", "url": null},
+                {"type": "ch-phone", "label": "211 Alberta referral", "url": null},
+                {"type": "ch-inperson", "label": "Navigation and Support Centres (Edmonton, Calgary)"}
+              ],
+              "legislation": [],
+              "mandate_tags": ["addiction-treatment", "recovery"],
+              "reach_estimate": {"tier": "medium", "estimate": "Hundreds of residential beds across 4+ communities", "basis": "New program expanding to 11 communities including Indigenous-led sites"},
+              "economic_impact": {"tag": "essential", "category": "addiction-treatment", "note": "Long-term residential recovery produces sustained outcomes and reduces chronic service use"},
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Access harm reduction and overdose prevention services",
+          "supporting": [
+            {
+              "name": "Get a free naloxone kit",
+              "desc": "Free naloxone kits are available at over 2,000 locations across Alberta including pharmacies, health centres, and community organizations. Naloxone reverses the effects of an opioid overdose and can save lives.",
+              "users": "People who use opioids, friends, family members, community members",
+              "user_groups": ["General public"],
+              "channels": [
+                {"type": "ch-inperson", "label": "Pharmacies and 2,000+ distribution sites"},
+                {"type": "ch-find", "label": "Find a naloxone distribution site", "url": null}
+              ],
+              "legislation": [],
+              "mandate_tags": ["harm-reduction"],
+              "reach_estimate": {"tier": "very_high", "estimate": "Hundreds of thousands of kits distributed annually", "basis": "Province-wide distribution through 2,000+ sites"},
+              "economic_impact": {"tag": "essential", "category": "harm-reduction", "note": "Naloxone directly prevents overdose deaths — the most immediate life-saving intervention available"},
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Access supervised drug consumption or overdose prevention services",
+              "desc": "Supervised drug consumption services operate in Calgary, Edmonton, Grande Prairie, and Lethbridge, providing a safe space to use substances under medical supervision. The Digital Overdose Response System (DORS) app is also available for solo users.",
+              "users": "People who use drugs, community members",
+              "user_groups": ["General public"],
+              "channels": [
+                {"type": "ch-inperson", "label": "Drug consumption service sites"},
+                {"type": "ch-app", "label": "DORS app for solo users", "url": null}
+              ],
+              "legislation": [],
+              "mandate_tags": ["harm-reduction"],
+              "reach_estimate": {"tier": "medium", "estimate": "Tens of thousands of visits to supervised consumption sites annually", "basis": "Four sites operating across major Alberta centres"},
+              "economic_impact": {"tag": "essential", "category": "harm-reduction", "note": "Supervised consumption prevents overdose deaths and connects users with treatment pathways"},
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Learn about substance risks and drug safety information",
+              "desc": "The ministry provides evidence-based information about the risks of alcohol, cannabis, opioids, methamphetamine, and other substances through the DrugSafe program and online resources, supporting informed decisions about substance use.",
+              "users": "All Albertans, parents, educators, health providers",
+              "user_groups": ["General public", "Families"],
+              "channels": [
+                {"type": "ch-web", "label": "DrugSafe substance information", "url": "https://www.alberta.ca/mental-health-and-addiction"},
+                {"type": "ch-pub", "label": "Drug safety publications and fact sheets"}
+              ],
+              "legislation": [],
+              "mandate_tags": ["harm-reduction"],
+              "reach_estimate": {"tier": "high", "estimate": "Hundreds of thousands of page views and resource downloads", "basis": "Broad public interest in substance use information, especially among parents"},
+              "economic_impact": {"tag": "enabling", "category": "harm-reduction", "note": "Evidence-based information reduces risky substance use and supports earlier help-seeking"},
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "title": "OUTCOME 3: Mental health and addiction services are safe and accountable",
+      "short_name": "Service quality & licensing",
+      "legend_label": "Quality & licensing",
+      "description": "The ministry licenses and regulates addiction and mental health service providers, ensures service quality, and supports evidence-based system improvement through the Canadian Centre of Recovery Excellence.",
+      "foundational_services": [
+        {
+          "name": "License and regulate addiction and mental health service providers",
+          "desc": "Licenses addiction treatment facilities and mental health service providers to ensure services meet safety, quality, and evidence-based standards. Conducts inspections and enforces compliance.",
+          "users": "Government, service providers, facility operators",
+          "user_groups": ["Government"],
+          "channels": [
+            {"type": "ch-web", "label": "alberta.ca/mental-health-and-addiction", "url": "https://www.alberta.ca/mental-health-and-addiction"}
+          ],
+          "legislation": [{"abbrev": "MHA", "color": "#1565c0", "full_name": "Mental Health Act"}],
+          "mandate_tags": ["service-regulation"],
+          "taxonomy": {
+            "track": "business",
+            "tier": "regulatory_compliance",
+            "domain": "licences_permits",
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Find a licensed treatment provider or report a concern",
+          "supporting": [
+            {
+              "name": "Find a licensed addiction or mental health treatment provider",
+              "desc": "Albertans can search for licensed addiction and mental health service providers across the province, including residential treatment facilities, outpatient programs, and recovery services.",
+              "users": "Albertans seeking treatment, family members, referral agencies",
+              "user_groups": ["General public"],
+              "channels": [
+                {"type": "ch-find", "label": "Licensed provider search", "url": null},
+                {"type": "ch-phone", "label": "211 Alberta", "url": null}
+              ],
+              "legislation": [],
+              "mandate_tags": ["service-regulation"],
+              "reach_estimate": {"tier": "high", "estimate": "Tens of thousands of searches annually", "basis": "Albertans and families searching for quality-assured treatment options"},
+              "economic_impact": {"tag": "enabling", "category": "service-regulation", "note": "Licensing gives Albertans confidence that providers meet safety and quality standards"},
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": [
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "License and regulate addiction and mental health service providers",
+                    "ministry": "mha"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Report a concern about a mental health or addiction service provider",
+              "desc": "Albertans can report safety, quality, or conduct concerns about licensed addiction and mental health service providers to the ministry for investigation.",
+              "users": "Clients, family members, community members",
+              "user_groups": ["General public"],
+              "channels": [
+                {"type": "ch-phone", "label": "Provider complaints line", "url": null},
+                {"type": "ch-email", "label": "Service quality complaints", "url": null}
+              ],
+              "legislation": [{"abbrev": "MHA", "color": "#1565c0", "full_name": "Mental Health Act"}],
+              "mandate_tags": ["service-regulation"],
+              "reach_estimate": {"tier": "low", "estimate": "Hundreds of complaints annually", "basis": "Regulatory oversight of licensed treatment facilities"},
+              "economic_impact": {"tag": "enabling", "category": "service-regulation", "note": "Accountability protects vulnerable clients and maintains public trust in the treatment system"},
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": [
+                  {
+                    "type": "complainant_regulated_party",
+                    "service": "License and regulate addiction and mental health service providers",
+                    "ministry": "mha"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "channel_filters": [
+    {"code": "ch-apply", "label": "Apply"},
+    {"code": "ch-find", "label": "Find / search"},
+    {"code": "ch-app", "label": "Mobile app"},
+    {"code": "ch-web", "label": "Website"},
+    {"code": "ch-email", "label": "Email"},
+    {"code": "ch-pub", "label": "Publication"},
+    {"code": "ch-phone", "label": "Phone"},
+    {"code": "ch-inperson", "label": "In person"}
+  ],
+  "user_group_filters": ["General public", "Families", "Youth", "Government"],
+  "channel_types": {
+    "ch-apply": {"label": "Apply", "type": "digital"},
+    "ch-find": {"label": "Find / search", "type": "digital"},
+    "ch-app": {"label": "Mobile app", "type": "digital"},
+    "ch-web": {"label": "Website", "type": "digital"},
+    "ch-email": {"label": "Email", "type": "digital"},
+    "ch-pub": {"label": "Publication", "type": "non-digital"},
+    "ch-phone": {"label": "Phone", "type": "non-digital"},
+    "ch-inperson": {"label": "In person", "type": "non-digital"}
+  },
+  "digital_channels": ["ch-apply", "ch-find", "ch-app", "ch-web", "ch-email"]
+}

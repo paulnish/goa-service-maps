@@ -1,0 +1,2912 @@
+{
+  "prefix": "alss",
+  "full_name": "Assisted Living and Social Services",
+  "short_name": "Assisted Living & Social Services",
+  "blurb": "Supports Albertans through employment supports, disability supports, prevention of elder abuse, community well-being, housing stability, health benefits, and financial assistance programs.",
+  "nav_name": "Assisted Living and Social Services",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "title": "GOAL 1",
+      "short_name": "Albertans can meet their basic needs and live with financial stability",
+      "legend_label": "Financial stability & basic needs",
+      "description": "Income support, health benefits, housing, and emergency assistance help Albertans maintain independence and security.",
+      "metrics": [
+        {
+          "id": "1.a",
+          "name": "AISH adjudication median time",
+          "target": "5.3 weeks",
+          "target_label": "Target: 9.0 weeks"
+        },
+        {
+          "id": "1.b",
+          "name": "Online Seniors Financial Assistance applications",
+          "target": "49%",
+          "target_label": "Target: 45%"
+        },
+        {
+          "id": "1.c",
+          "name": "New affordable housing units + rent subsidies",
+          "target": "798",
+          "target_label": "Target: 1,500"
+        },
+        {
+          "id": "$",
+          "name": "Invested in affordable housing programs",
+          "target": "$395.5M"
+        },
+        {
+          "id": "$",
+          "name": "Seniors financial assistance grants & loans",
+          "target": "$517.5M"
+        },
+        {
+          "id": "#",
+          "name": "Assisted through Navigation & Support Centres",
+          "target": "10,000+"
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get help meeting basic needs",
+          "supporting": [
+            {
+              "name": "Find out what support you're eligible for",
+              "desc": "Get help navigating available programs and determining your eligibility for income support, disability benefits, health coverage, and other assistance",
+              "users": "Albertans unsure which programs they qualify for",
+              "user_groups": [
+                "Individuals",
+                "Families",
+                "Persons with disabilities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "albertasupports@gov.ab.ca",
+                  "url": "mailto:albertasupports@gov.ab.ca"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/alberta-supports",
+                  "url": "https://www.alberta.ca/alberta-supports"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Alberta Supports Centre"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: find a centre",
+                  "url": "https://www.alberta.ca/find-an-alberta-supports-centre"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AISH",
+                  "color": "#0070c0",
+                  "full_name": "Assured Income for the Severely Handicapped Act"
+                },
+                {
+                  "abbrev": "IESA",
+                  "color": "#007a3d",
+                  "full_name": "Income and Employment Supports Act"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get income, health and other benefits for a severe disability",
+              "desc": "Monthly income support and health benefits through AISH ($1,940/month) or the new ADAP ($1,740/month with employment income exemption). A single application determines the right program based on disability severity and work capacity.",
+              "users": "Persons with severe disabilities",
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "MyAlbertaSupports: apply online",
+                  "url": "https://www.alberta.ca/how-to-use-my-alberta-supports"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Alberta Supports Centre"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/aish",
+                  "url": "https://www.alberta.ca/aish"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AISH",
+                  "section": "s3,s4",
+                  "color": "#0070c0",
+                  "full_name": "Assured Income for the Severely Handicapped Act"
+                },
+                {
+                  "abbrev": "IESA",
+                  "color": "#007a3d",
+                  "full_name": "Income and Employment Supports Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3
+                }
+              ],
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "deep_dive": "alss_dia",
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get financial help to meet basic needs (Income Support)",
+              "desc": "Financial assistance for individuals and families who cannot meet basic needs. Includes WorkFirst Alberta mandatory employment participation requirements for recipients expected to work.",
+              "users": "Individuals/families who cannot meet basic needs",
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "MyAlbertaSupports: apply online",
+                  "url": "https://www.alberta.ca/how-to-use-my-alberta-supports"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Alberta Supports Centre"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Email",
+                  "url": "mailto:albertasupports@gov.ab.ca"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Employment centre"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "IESA",
+                  "color": "#007a3d",
+                  "full_name": "Income and Employment Supports Act"
+                }
+              ],
+              "mandate_tags": [],
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get emergency financial assistance",
+              "desc": "Crisis assistance for shelter, food, clothing, transportation",
+              "users": "Albertans in crisis needing shelter, food, clothing",
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992 (24/7)"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Alberta Supports Centre"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "IESA",
+                  "color": "#007a3d",
+                  "full_name": "Income and Employment Supports Act"
+                }
+              ],
+              "mandate_tags": [],
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get dental, optical, and prescription coverage",
+              "desc": "Dental, optical, prescription, and emergency ambulance coverage for low-income adults",
+              "users": "Low-income Albertans not on AISH or Income Support",
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "MyAlbertaSupports: apply online",
+                  "url": "https://www.alberta.ca/how-to-use-my-alberta-supports"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "IESA",
+                  "section": "s7,s8",
+                  "color": "#007a3d",
+                  "full_name": "Income and Employment Supports Act"
+                }
+              ],
+              "mandate_tags": [],
+              "user_groups": [
+                "Individuals"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get health coverage for your children",
+              "desc": "Health coverage for families with dependent children",
+              "users": "Families with dependent children",
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "MyAlbertaSupports: apply online",
+                  "url": "https://www.alberta.ca/how-to-use-my-alberta-supports"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "IESA",
+                  "section": "s7",
+                  "color": "#007a3d",
+                  "full_name": "Income and Employment Supports Act"
+                }
+              ],
+              "mandate_tags": [],
+              "user_groups": [
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Appeal a benefit decision",
+              "desc": "Independent review of AISH, Income Support, or PDD benefit decisions",
+              "users": "AISH/IS/PDD appellants",
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Citizens' Appeal Panel"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AISH",
+                  "section": "s10",
+                  "color": "#0070c0",
+                  "full_name": "Assured Income for the Severely Handicapped Act"
+                },
+                {
+                  "abbrev": "IESA",
+                  "color": "#007a3d",
+                  "full_name": "Income and Employment Supports Act"
+                },
+                {
+                  "abbrev": "PDDA",
+                  "section": "s15",
+                  "color": "#d32f2f",
+                  "full_name": "Persons with Developmental Disabilities Services Act"
+                }
+              ],
+              "mandate_tags": [],
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get financial assistance as a senior",
+          "supporting": [
+            {
+              "name": "Find out what seniors financial programs you qualify for",
+              "desc": "Navigate available seniors benefit programs and determine eligibility through Seniors Financial Assistance",
+              "users": "Seniors (65+) and their families",
+              "user_groups": [
+                "Seniors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "sfa.alberta.ca",
+                  "url": "https://sfa.alberta.ca"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992",
+                  "url": null
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Alberta Supports Centre",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "IESA",
+                  "color": "#007a3d",
+                  "full_name": "Income and Employment Supports Act"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get monthly financial support as a senior",
+              "desc": "Monthly income supplement for seniors aged 65+",
+              "users": "Seniors 65+ with low income",
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "sfa.alberta.ca: apply online",
+                  "url": "https://sfa.alberta.ca"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "IESA",
+                  "color": "#007a3d",
+                  "full_name": "Income and Employment Supports Act"
+                }
+              ],
+              "mandate_tags": [],
+              "user_groups": [
+                "Seniors"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get help with appliance and health costs as a senior",
+              "desc": "One-time grants for unmet needs (appliances, health, personal)",
+              "users": "Seniors with unmet needs",
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "sfa.alberta.ca: apply online",
+                  "url": "https://sfa.alberta.ca"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "IESA",
+                  "color": "#007a3d",
+                  "full_name": "Income and Employment Supports Act"
+                }
+              ],
+              "mandate_tags": [],
+              "user_groups": [
+                "Seniors"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get dental and optical coverage as a senior",
+              "desc": "Coverage for dental and eye care for seniors with low-to-moderate income",
+              "users": "Seniors with low-to-moderate income",
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "sfa.alberta.ca: apply online",
+                  "url": "https://sfa.alberta.ca"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "IESA",
+                  "color": "#007a3d",
+                  "full_name": "Income and Employment Supports Act"
+                }
+              ],
+              "mandate_tags": [],
+              "user_groups": [
+                "Seniors"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get prescription drug coverage as a senior",
+              "desc": "Prescription drug, diabetes supply, and ambulance coverage",
+              "users": "Seniors 65+",
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "sfa.alberta.ca: apply online",
+                  "url": "https://sfa.alberta.ca"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "IESA",
+                  "color": "#007a3d",
+                  "full_name": "Income and Employment Supports Act"
+                }
+              ],
+              "mandate_tags": [],
+              "user_groups": [
+                "Seniors"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Defer property taxes",
+              "desc": "Tax deferral program for senior homeowners",
+              "users": "Senior homeowners",
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "sfa.alberta.ca: apply online",
+                  "url": "https://sfa.alberta.ca"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "IESA",
+                  "color": "#007a3d",
+                  "full_name": "Income and Employment Supports Act"
+                }
+              ],
+              "mandate_tags": [],
+              "user_groups": [
+                "Seniors"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get help adapting or repairing your home",
+              "desc": "Grants for home modifications to support aging in place",
+              "users": "Seniors needing home modifications",
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "sfa.alberta.ca: apply online",
+                  "url": "https://sfa.alberta.ca"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "IESA",
+                  "color": "#007a3d",
+                  "full_name": "Income and Employment Supports Act"
+                }
+              ],
+              "mandate_tags": [],
+              "user_groups": [
+                "Seniors"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get emergency evacuation financial support",
+              "desc": "Immediate assistance for natural disaster displacement",
+              "users": "Albertans displaced by natural disasters",
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Alberta Supports Centre"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "IESA",
+                  "color": "#007a3d",
+                  "full_name": "Income and Employment Supports Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Implement the Alberta Disability Assistance Program (ADAP) and create employment pathways for persons with disabilities"
+                }
+              ],
+              "user_groups": [
+                "Individuals",
+                "Seniors",
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Find and access affordable housing",
+          "supporting": [
+            {
+              "name": "Search for affordable housing options",
+              "desc": "Online directory to explore housing programs by need and location",
+              "users": "Albertans seeking affordable housing",
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "findhousing.alberta.ca",
+                  "url": "https://findhousing.alberta.ca"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AHA",
+                  "color": "#795548",
+                  "full_name": "Alberta Housing Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Continue implementation of housing strategy — remove barriers, incentivize construction, work with all levels of government"
+                }
+              ],
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": [
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "License and monitor continuing care homes",
+                    "ministry": "alss"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Get help with rent affordability",
+              "desc": "Subsidized rent for low-income renters through local housing providers",
+              "users": "Low-income renters",
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Local housing provider"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Local housing provider"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AHA",
+                  "color": "#795548",
+                  "full_name": "Alberta Housing Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Continue implementation of housing strategy — remove barriers, incentivize construction, work with all levels of government"
+                }
+              ],
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get housing support as a survivor of violence",
+              "desc": "Transition housing and support for survivors of gender-based violence",
+              "users": "Survivors of gender-based violence",
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Shelter hotline"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Women's shelter"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Continue implementation of housing strategy — remove barriers, incentivize construction, work with all levels of government"
+                }
+              ],
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Report housing development delays",
+              "desc": "Report red tape and barriers slowing housing construction",
+              "users": "Developers, municipalities",
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/stop-housing-delays",
+                  "url": "https://www.alberta.ca/stop-housing-delays"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AHA",
+                  "color": "#795548",
+                  "full_name": "Alberta Housing Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Continue implementation of housing strategy — remove barriers, incentivize construction, work with all levels of government"
+                }
+              ],
+              "user_groups": [
+                "Industry & contractors",
+                "Municipalities"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "government_procurement",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Find and apply for a lodge placement",
+              "desc": "Access to supportive community living for seniors",
+              "users": "Seniors seeking community living",
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Local lodge operator"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Local lodge"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AHA",
+                  "section": "s33.1",
+                  "color": "#795548",
+                  "full_name": "Alberta Housing Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "tip": "Expand and improve seniors lodges and continuing care facilities"
+                }
+              ],
+              "user_groups": [
+                "Seniors"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "name": "Get help when experiencing homelessness",
+          "supporting": [
+            {
+              "name": "Access emergency or transitional shelter",
+              "desc": "Safe shelter and support services",
+              "users": "Individuals experiencing homelessness",
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Local shelter"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "user_groups": [
+                "Individuals"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Access Indigenous-led or women-specific shelter",
+              "desc": "Culturally safe shelter options for Indigenous peoples and women fleeing violence",
+              "users": "Indigenous peoples, women fleeing violence",
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Local shelter"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Continue implementation of housing strategy — remove barriers, incentivize construction, work with all levels of government"
+                }
+              ],
+              "user_groups": [
+                "Individuals",
+                "Indigenous communities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get outreach support in the community",
+              "desc": "Mobile support teams connecting people to housing and services",
+              "users": "At-risk individuals",
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Outreach team"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "user_groups": [
+                "Individuals"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Access food bank services",
+              "desc": "Emergency food assistance for people with low incomes",
+              "users": "Low-income Albertans",
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Local food bank"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              }
+            }
+          ],
+          "foundational_services": [
+            {
+              "name": "Access food security funding for food banks",
+              "desc": "Grants to community organizations addressing food insecurity",
+              "legislation": [],
+              "mandate_tags": [],
+              "users": "Community food banks and food security organizations",
+              "user_groups": [
+                "Community organizations"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Community and Social Services – funding opportunities",
+                  "url": "https://www.alberta.ca/community-and-social-services"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "government_procurement",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "name": "Get funding to build or maintain affordable housing",
+          "supporting": [
+            {
+              "name": "Access Indigenous housing capital funding",
+              "desc": "Capital grants for Indigenous housing development",
+              "users": "Indigenous governments, organizations",
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca: grant application",
+                  "url": "https://www.alberta.ca/indigenous-housing-capital-program"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AHA",
+                  "color": "#795548",
+                  "full_name": "Alberta Housing Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Continue implementation of housing strategy — remove barriers, incentivize construction, work with all levels of government"
+                }
+              ],
+              "user_groups": [
+                "Indigenous communities"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "government_procurement",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Access Affordable Housing Partnership funding",
+              "desc": "Capital grants for non-profit and co-op housing",
+              "users": "Housing providers",
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca: grant application",
+                  "url": "https://www.alberta.ca/affordable-housing-partnership-program"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AHA",
+                  "color": "#795548",
+                  "full_name": "Alberta Housing Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Continue implementation of housing strategy — remove barriers, incentivize construction, work with all levels of government"
+                }
+              ],
+              "user_groups": [
+                "Industry & contractors"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "government_procurement",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Access capital maintenance and renewal funding",
+              "desc": "Grants for ongoing repair and modernization of housing units",
+              "users": "Housing providers with government-owned units",
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca: grant application",
+                  "url": "https://www.alberta.ca/affordable-housing-programs"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AHA",
+                  "color": "#795548",
+                  "full_name": "Alberta Housing Act"
+                }
+              ],
+              "mandate_tags": [],
+              "user_groups": [
+                "Industry & contractors"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "government_procurement",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Access Lodge Assistance Program funding",
+              "desc": "Grants to lodge providers for operational costs",
+              "users": "Seniors lodge providers",
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca: grant application",
+                  "url": "https://www.alberta.ca/affordable-housing-programs"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AHA",
+                  "section": "s33.1",
+                  "color": "#795548",
+                  "full_name": "Alberta Housing Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "tip": "Expand and improve seniors lodges and continuing care facilities"
+                }
+              ],
+              "user_groups": [
+                "Industry & contractors"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": [
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "License and monitor continuing care homes",
+                    "ministry": "alss"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Access lodge modernization funding",
+              "desc": "Grants for facility upgrades and renovations",
+              "users": "Communities with aging lodge infrastructure",
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca: grant application",
+                  "url": "https://www.alberta.ca/affordable-housing-programs"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AHA",
+                  "color": "#795548",
+                  "full_name": "Alberta Housing Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "tip": "Expand and improve seniors lodges and continuing care facilities"
+                }
+              ],
+              "user_groups": [
+                "Municipalities"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "government_procurement",
+                "relationships": []
+              }
+            }
+          ],
+          "foundational_services": [
+            {
+              "id": "f-1",
+              "name": "Manage and fund social housing assets",
+              "desc": "Alberta Social Housing Corporation (ASHC) holds and manages 60,503+ social housing assets, distributing capital and operational funding to housing providers",
+              "users": "Housing providers, ASHC board, housing sector",
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/affordable-housing-programs",
+                  "url": "https://www.alberta.ca/affordable-housing-programs"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AHA",
+                  "section": "s17-s31",
+                  "color": "#795548",
+                  "full_name": "Alberta Housing Act"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "registration_legal",
+                "relationships": []
+              }
+            }
+          ]
+        }
+      ],
+      "foundational_services": [
+        {
+          "id": "f-3",
+          "name": "Adjudicate benefit appeal hearings",
+          "desc": "Citizens' Appeal Panel conducts independent hearings for appeals of AISH, Income Support, and PDD benefit decisions",
+          "users": "AISH/IS/PDD appellants",
+          "channels": [
+            {
+              "type": "ch-phone",
+              "label": "Citizens' Appeal Panel"
+            },
+            {
+              "type": "ch-mail",
+              "label": "Mail"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "AISH",
+              "section": "s10",
+              "color": "#0070c0",
+              "full_name": "Assured Income for the Severely Handicapped Act"
+            },
+            {
+              "abbrev": "IESA",
+              "color": "#007a3d",
+              "full_name": "Income and Employment Supports Act"
+            },
+            {
+              "abbrev": "PDDA",
+              "section": "s15",
+              "color": "#d32f2f",
+              "full_name": "Persons with Developmental Disabilities Services Act"
+            }
+          ],
+          "mandate_tags": [],
+          "taxonomy": {
+            "track": "individual",
+            "tier": "core_human_needs",
+            "domain": "money_taxes_benefits",
+            "relationships": []
+          }
+        },
+        {
+          "id": "f-4",
+          "name": "Operate the unified digital benefits gateway",
+          "desc": "MyAlbertaSupports portal provides a unified digital gateway for benefit applications, case management, and document submission",
+          "users": "Benefit applicants and recipients",
+          "channels": [
+            {
+              "type": "ch-apply",
+              "label": "myalbertasupports.ca"
+            }
+          ],
+          "legislation": [],
+          "mandate_tags": [
+            {
+              "number": 6,
+              "tip": "Coordinate income-tested programs across government to streamline applications and reduce overlap"
+            }
+          ],
+          "taxonomy": {
+            "track": "individual",
+            "tier": "core_human_needs",
+            "domain": "money_taxes_benefits",
+            "relationships": []
+          }
+        }
+      ],
+      "css_class": "goal-1"
+    },
+    {
+      "number": 2,
+      "color": "#007a3d",
+      "title": "GOAL 2",
+      "short_name": "Albertans with disabilities and complex needs participate fully in community life",
+      "legend_label": "Disability supports & employment",
+      "description": "Employment pathways, developmental disability supports, family services, and accessible transit enable participation and independence.",
+      "metrics": [
+        {
+          "id": "2.a",
+          "name": "Employed after receiving Career & Employment Services",
+          "target": "67%",
+          "target_label": "Target: 65%"
+        },
+        {
+          "id": "$",
+          "name": "Invested in Career and Employment Information Services",
+          "target": "$81M"
+        },
+        {
+          "id": "#",
+          "name": "Unique Albertans accessed CEIS programs",
+          "target": "45,146"
+        },
+        {
+          "id": "$",
+          "name": "Persons with Developmental Disabilities funding",
+          "target": "$1.2B"
+        },
+        {
+          "id": "$",
+          "name": "Family Supports for Children with Disabilities",
+          "target": "$259M"
+        },
+        {
+          "id": "$",
+          "name": "Low-income transit programs (19 municipalities)",
+          "target": "$13.8M"
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Find a job or build a career",
+          "supporting": [
+            {
+              "name": "Get employment skills training",
+              "desc": "Vocational training and work preparation for people with employment barriers",
+              "users": "Albertans with employment barriers",
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Training provider"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "MyAlbertaSupports: apply online",
+                  "url": "https://www.alberta.ca/how-to-use-my-alberta-supports"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "IESA",
+                  "color": "#007a3d",
+                  "full_name": "Income and Employment Supports Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Implement the Alberta Disability Assistance Program (ADAP) and create employment pathways for persons with disabilities"
+                }
+              ],
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get help finding a job",
+              "desc": "Job search support, resume writing, and interview preparation",
+              "users": "Job-ready Albertans",
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Employment centre"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "alis.alberta.ca",
+                  "url": "https://alis.alberta.ca"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "alis.alberta.ca: job postings",
+                  "url": "https://alis.alberta.ca"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Event venue"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "alis.alberta.ca: events",
+                  "url": "https://alis.alberta.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "IESA",
+                  "color": "#007a3d",
+                  "full_name": "Income and Employment Supports Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Implement the Alberta Disability Assistance Program (ADAP) and create employment pathways for persons with disabilities"
+                }
+              ],
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Try a workplace experience or earn a short credential",
+              "desc": "Short courses and professional certifications",
+              "users": "Albertans needing credentials",
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Training provider"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "IESA",
+                  "color": "#007a3d",
+                  "full_name": "Income and Employment Supports Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Implement the Alberta Disability Assistance Program (ADAP) and create employment pathways for persons with disabilities"
+                }
+              ],
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get a specialized employment assessment",
+              "desc": "In-depth evaluation for people with complex employment barriers",
+              "users": "Albertans with complex barriers",
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Assessment centre"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "IESA",
+                  "color": "#007a3d",
+                  "full_name": "Income and Employment Supports Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Implement the Alberta Disability Assistance Program (ADAP) and create employment pathways for persons with disabilities"
+                }
+              ],
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Explore career options and labour market information",
+              "desc": "Career planning, occupation profiles, wages, and labour market data. Delivered through alis.alberta.ca (cross-ministry with Advanced Education).",
+              "users": "All Albertans, 4.1M sessions/year",
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "alis.alberta.ca",
+                  "url": "https://alis.alberta.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "IESA",
+                  "color": "#007a3d",
+                  "full_name": "Income and Employment Supports Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Implement the Alberta Disability Assistance Program (ADAP) and create employment pathways for persons with disabilities"
+                }
+              ],
+              "user_groups": [
+                "Individuals"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get foundational learning assistance",
+              "desc": "Adult upgrading and remedial education. Cross-ministry with Advanced Education.",
+              "users": "Low-income Albertans needing academic upgrading",
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Learning centre"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "MyAlbertaSupports: apply online",
+                  "url": "https://www.alberta.ca/how-to-use-my-alberta-supports"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "IESA",
+                  "color": "#007a3d",
+                  "full_name": "Income and Employment Supports Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Implement the Alberta Disability Assistance Program (ADAP) and create employment pathways for persons with disabilities"
+                }
+              ],
+              "user_groups": [
+                "Individuals"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Access disability supports",
+          "supporting": [
+            {
+              "name": "Get community living supports for developmental disabilities",
+              "desc": "Individualized funding and support planning for adults with developmental disabilities",
+              "users": "Adults with developmental disabilities",
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "MyAlbertaSupports: apply online",
+                  "url": "https://www.alberta.ca/how-to-use-my-alberta-supports"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "PDD office"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PDDA",
+                  "section": "s1.2",
+                  "color": "#d32f2f",
+                  "full_name": "Persons with Developmental Disabilities Services Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Implement the Alberta Disability Assistance Program (ADAP) and create employment pathways for persons with disabilities"
+                }
+              ],
+              "user_groups": [
+                "Persons with disabilities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get support for your child with a disability (FSCD)",
+              "desc": "Respite care and individualized supports for families",
+              "users": "Families of children with disabilities",
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "MyAlbertaSupports: apply online",
+                  "url": "https://www.alberta.ca/how-to-use-my-alberta-supports"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "FSCD office"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Implement the Alberta Disability Assistance Program (ADAP) and create employment pathways for persons with disabilities"
+                }
+              ],
+              "user_groups": [
+                "Families",
+                "Persons with disabilities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get disability-related employment supports (DRES)",
+              "desc": "Employment coaching, job accommodations, and workplace support",
+              "users": "Persons with disabilities seeking employment",
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Employment provider"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "IESA",
+                  "section": "s12",
+                  "color": "#007a3d",
+                  "full_name": "Income and Employment Supports Act"
+                },
+                {
+                  "abbrev": "PDDA",
+                  "color": "#d32f2f",
+                  "full_name": "Persons with Developmental Disabilities Services Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Implement the Alberta Disability Assistance Program (ADAP) and create employment pathways for persons with disabilities"
+                }
+              ],
+              "user_groups": [
+                "Persons with disabilities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Access brain injury support services",
+              "desc": "Rehabilitation and community reintegration support",
+              "users": "Adults with acquired brain injury",
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Service provider"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "user_groups": [
+                "Persons with disabilities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Access community programs while in continuing care",
+              "desc": "Recreational and social programming for care facility residents",
+              "users": "Adults in facility-based continuing care",
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Care facility"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PDDA",
+                  "color": "#d32f2f",
+                  "full_name": "Persons with Developmental Disabilities Services Act"
+                }
+              ],
+              "mandate_tags": [],
+              "user_groups": [
+                "Persons with disabilities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get a qualified service dog",
+              "desc": "Assessment and qualification for a service dog team",
+              "users": "Albertans with disabilities",
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca account: apply online",
+                  "url": "https://www.alberta.ca/get-service-dog"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Application form"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "user_groups": [
+                "Persons with disabilities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Access FASD support services",
+              "desc": "Specialized support for individuals and families affected by FASD",
+              "users": "Individuals/families affected by FASD",
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "FASD service network"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: FASD resources",
+                  "url": "https://www.alberta.ca/fetal-alcohol-spectrum-disorder-fasd"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get independent advocacy for your disability rights",
+              "desc": "Ombudsman service for disability-related concerns",
+              "users": "Persons with disabilities",
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Advocate's office"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: disability advocate",
+                  "url": "https://www.alberta.ca/advocate-persons-disabilities"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PDDA",
+                  "color": "#d32f2f",
+                  "full_name": "Persons with Developmental Disabilities Services Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Implement the Alberta Disability Assistance Program (ADAP) and create employment pathways for persons with disabilities"
+                }
+              ],
+              "user_groups": [
+                "Persons with disabilities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Get help with transportation",
+          "supporting": [
+            {
+              "name": "Get a low-income transit pass",
+              "desc": "Subsidized transit passes in participating municipalities",
+              "users": "Low-income Albertans, seniors, persons with disabilities (19 municipalities)",
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: transit pass information",
+                  "url": "https://www.alberta.ca/income-support-what-you-get"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Municipal office"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "user_groups": [
+                "Individuals",
+                "Seniors",
+                "Persons with disabilities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Book assisted transportation",
+              "desc": "Specialized transportation for seniors and persons with disabilities. Includes volunteer driver programs like Drive Happiness.",
+              "users": "Seniors, persons with disabilities, 9,300+ rides/year",
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Local transportation provider"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Service provider"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Drive Happiness"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "user_groups": [
+                "Seniors",
+                "Persons with disabilities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              }
+            }
+          ]
+        }
+      ],
+      "css_class": "goal-2"
+    },
+    {
+      "number": 3,
+      "color": "#c65102",
+      "title": "GOAL 3",
+      "short_name": "Alberta seniors and communities are safe, connected, and supported",
+      "legend_label": "Seniors & community well-being",
+      "description": "Community-based services, elder abuse prevention, FASD supports, and family programs strengthen resilience across the province.",
+      "metrics": [
+        {
+          "id": "3.b",
+          "name": "Seniors' sense of belonging to community",
+          "target": "70.1%",
+          "target_label": "2023 data"
+        },
+        {
+          "id": "$",
+          "name": "Family and Community Support Services funding",
+          "target": "$104.3M"
+        },
+        {
+          "id": "$",
+          "name": "Invested in elder abuse prevention initiatives",
+          "target": "$3.4M"
+        },
+        {
+          "id": "$",
+          "name": "FASD supports and services funding",
+          "target": "$27.6M"
+        },
+        {
+          "id": "$",
+          "name": "Seniors-serving sector investment (3-year)",
+          "target": "$18M"
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get funding for community social programs",
+          "supporting": [
+            {
+              "name": "Apply for FCSS funding",
+              "desc": "80/20 funding partnership for preventive social programs run by municipalities",
+              "users": "Municipalities and Métis Settlements",
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca: FCSS grant portal",
+                  "url": "https://www.alberta.ca/family-and-community-support-services-fcss-program"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FCSSA",
+                  "section": "s2,s3",
+                  "color": "#c65102",
+                  "full_name": "Family and Community Support Services Act"
+                }
+              ],
+              "mandate_tags": [],
+              "user_groups": [
+                "Municipalities",
+                "Indigenous communities"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "government_procurement",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Apply for community capacity-building grants",
+              "desc": "Grants to strengthen non-profit organizations",
+              "users": "Non-profit organizations",
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca: grant application",
+                  "url": "https://www.alberta.ca/funding-seniors-organizations"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FCSSA",
+                  "color": "#c65102",
+                  "full_name": "Family and Community Support Services Act"
+                }
+              ],
+              "mandate_tags": [],
+              "user_groups": [
+                "Municipalities"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "government_procurement",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Age well and stay safe as a senior",
+          "supporting": [
+            {
+              "name": "Find healthy aging programs in your community",
+              "desc": "Community-based supports for healthy aging and social engagement",
+              "users": "Seniors",
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: seniors programs",
+                  "url": "https://www.alberta.ca/seniors-resources"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Community centre"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "user_groups": [
+                "Seniors"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get connected to community health and wellness activities",
+              "desc": "Integration of medical and community supports for wellbeing",
+              "users": "Seniors in major cities",
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Health provider referral"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "user_groups": [
+                "Seniors"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get non-medical home support",
+              "desc": "Housekeeping, meal assistance, and daily living help",
+              "users": "Seniors, persons with disabilities",
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Home support provider"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "user_groups": [
+                "Seniors",
+                "Persons with disabilities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Book community transportation as a senior",
+              "desc": "Assisted and volunteer transportation services",
+              "users": "Seniors, 19 communities",
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Local transportation provider"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Community centre"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "user_groups": [
+                "Seniors"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Report or get help with elder abuse",
+              "desc": "Hotline and support services for seniors experiencing abuse",
+              "users": "Seniors, caregivers",
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Elder Abuse Helpline"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: elder abuse resources",
+                  "url": "https://www.alberta.ca/get-help-elder-abuse"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AGTA",
+                  "color": "#6a1b9a",
+                  "full_name": "Adult Guardianship and Trusteeship Act"
+                },
+                {
+                  "abbrev": "PDA",
+                  "color": "#00838f",
+                  "full_name": "Personal Directives Act"
+                }
+              ],
+              "mandate_tags": [],
+              "user_groups": [
+                "Seniors",
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              }
+            }
+          ]
+        }
+      ],
+      "css_class": "goal-3"
+    },
+    {
+      "number": 4,
+      "color": "#8e24aa",
+      "title": "GOAL 4",
+      "short_name": "Albertans have access to quality continuing care close to home",
+      "legend_label": "Continuing care",
+      "description": "Home care, supportive living, and long-term care are accessible, timely, and meet the needs of all Albertans, including Indigenous Peoples.",
+      "metrics": [
+        {
+          "id": "4.a",
+          "name": "Clients moved to continuing care within 30 days",
+          "target": "63%",
+          "target_label": "Target: 66%"
+        },
+        {
+          "id": "$",
+          "name": "Continuing care investment (3 years 2023-26)",
+          "target": "$1B"
+        },
+        {
+          "id": "#",
+          "name": "Home care hours provided to 140,000 clients",
+          "target": "17M"
+        },
+        {
+          "id": "$",
+          "name": "Increase direct care hours in care homes",
+          "target": "$136.2M"
+        },
+        {
+          "id": "$",
+          "name": "Continuing care workforce initiatives",
+          "target": "$100M"
+        },
+        {
+          "id": "#",
+          "name": "Care home spaces under construction",
+          "target": "2,252"
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Find and access continuing care",
+          "supporting": [
+            {
+              "name": "Find continuing care options and compare homes",
+              "desc": "Navigation portal to explore continuing care placements, costs, and vacancies",
+              "users": "All Albertans seeking continuing care information",
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "alnavigator.alberta.ca",
+                  "url": "https://alnavigator.alberta.ca"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Health Link 811"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CCA",
+                  "color": "#8e24aa",
+                  "full_name": "Continuing Care Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "tip": "Expand and improve seniors lodges and continuing care facilities across the province"
+                }
+              ],
+              "user_groups": [
+                "Individuals",
+                "Seniors",
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Direct your own home care",
+              "desc": "Client-directed home care invoicing (2M+ hours, $67.2M)",
+              "users": "Home care clients",
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Continuing Care Access Centre"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Assessment"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CCA",
+                  "color": "#8e24aa",
+                  "full_name": "Continuing Care Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "tip": "Expand and improve seniors lodges and continuing care facilities across the province"
+                }
+              ],
+              "user_groups": [
+                "Seniors",
+                "Persons with disabilities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Access palliative and end-of-life care",
+              "desc": "Compassionate care and support at the end of life",
+              "users": "Individuals needing palliative care",
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Care provider"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Health Link 811"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CCA",
+                  "color": "#8e24aa",
+                  "full_name": "Continuing Care Act"
+                }
+              ],
+              "mandate_tags": [],
+              "user_groups": [
+                "Individuals",
+                "Seniors",
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Make a complaint about a continuing care home",
+              "desc": "File complaints about care quality or resident experiences",
+              "users": "Residents, families",
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Assisted Living Alberta",
+                  "url": "https://www.alberta.ca/assisted-living-services-near-me"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Assisted Living Alberta",
+                  "url": "https://www.alberta.ca/assisted-living-services-near-me"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CCA",
+                  "section": "s30",
+                  "color": "#8e24aa",
+                  "full_name": "Continuing Care Act"
+                }
+              ],
+              "mandate_tags": [],
+              "user_groups": [
+                "Individuals",
+                "Seniors",
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get support as a caregiver",
+              "desc": "Resources, respite, and counselling for family caregivers ($3.7M)",
+              "users": "Caregivers",
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: caregiver resources",
+                  "url": "https://www.alberta.ca/supports-for-seniors"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CCA",
+                  "color": "#8e24aa",
+                  "full_name": "Continuing Care Act"
+                }
+              ],
+              "mandate_tags": [],
+              "user_groups": [
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Find care after leaving the hospital",
+              "desc": "Move to continuing care or home care after hospital discharge",
+              "users": "Patients awaiting continuing care placement",
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Hospital discharge team"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Continuing Care Access Centre"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CCA",
+                  "color": "#8e24aa",
+                  "full_name": "Continuing Care Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "tip": "Expand and improve seniors lodges and continuing care facilities across the province"
+                }
+              ],
+              "user_groups": [
+                "Individuals",
+                "Seniors",
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Protect your rights and plan for the future",
+          "supporting": [
+            {
+              "name": "Make and register a personal directive",
+              "desc": "Legal document naming someone to make decisions if you become incapacitated. Register it with the Personal Directives Registry for safekeeping.",
+              "users": "Albertans planning for future incapacity",
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: personal directive info",
+                  "url": "https://www.alberta.ca/personal-directive"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Personal directive form"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "pdr.alberta.ca: register online",
+                  "url": "https://pdr.alberta.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PDA",
+                  "color": "#00838f",
+                  "full_name": "Personal Directives Act"
+                }
+              ],
+              "mandate_tags": [],
+              "user_groups": [
+                "Individuals",
+                "Seniors"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get decision-making support for a vulnerable person",
+              "desc": "Court process to get decision-making authority for vulnerable adults",
+              "users": "Families of adults who need decision-making support",
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Court application forms"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "OPGT office",
+                  "url": "https://www.alberta.ca/office-public-guardian-trustee-forms"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "OPGT: 1-877-427-4525",
+                  "url": "https://www.alberta.ca/office-public-guardian-trustee-forms"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AGTA",
+                  "color": "#6a1b9a",
+                  "full_name": "Adult Guardianship and Trusteeship Act"
+                }
+              ],
+              "mandate_tags": [],
+              "user_groups": [
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Request a capacity assessment",
+              "desc": "Medical evaluation of a person's decision-making ability",
+              "users": "Concerned family members, health professionals",
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "OPGT: 1-877-427-4525",
+                  "url": "https://www.alberta.ca/office-public-guardian-trustee-forms"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "OPGT office",
+                  "url": "https://www.alberta.ca/office-public-guardian-trustee-forms"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AGTA",
+                  "color": "#6a1b9a",
+                  "full_name": "Adult Guardianship and Trusteeship Act"
+                }
+              ],
+              "mandate_tags": [],
+              "user_groups": [
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "professional_credentials",
+                "relationships": []
+              }
+            },
+            {
+              "name": "File a complaint about a guardian or trustee",
+              "desc": "Report concerns about abuse or mismanagement of affairs",
+              "users": "Concerned parties",
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "OPGT: 1-877-427-4525",
+                  "url": "https://www.alberta.ca/office-public-guardian-trustee-forms"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "OPGT",
+                  "url": "https://www.alberta.ca/office-public-guardian-trustee-forms"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AGTA",
+                  "color": "#6a1b9a",
+                  "full_name": "Adult Guardianship and Trusteeship Act"
+                },
+                {
+                  "abbrev": "PTA",
+                  "color": "#455a64",
+                  "full_name": "Public Trustee Act"
+                },
+                {
+                  "abbrev": "PDA",
+                  "color": "#00838f",
+                  "full_name": "Personal Directives Act"
+                }
+              ],
+              "mandate_tags": [],
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get help with legal and financial matters for a vulnerable person",
+              "desc": "Guardianship and trusteeship services for vulnerable adults without private trustees",
+              "users": "Vulnerable adults without private trustee",
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "OPGT: 1-877-427-4525",
+                  "url": "https://www.alberta.ca/office-public-guardian-trustee-forms"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "OPGT office",
+                  "url": "https://www.alberta.ca/office-public-guardian-trustee-forms"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PTA",
+                  "color": "#455a64",
+                  "full_name": "Public Trustee Act"
+                },
+                {
+                  "abbrev": "AGTA",
+                  "color": "#6a1b9a",
+                  "full_name": "Adult Guardianship and Trusteeship Act"
+                }
+              ],
+              "mandate_tags": [],
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              }
+            }
+          ]
+        }
+      ],
+      "foundational_services": [
+        {
+          "id": "f-2",
+          "name": "License and monitor continuing care homes",
+          "desc": "Assisted Living Alberta licenses and monitors continuing care homes, developing and enforcing care standards",
+          "users": "Care home operators, residents",
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "assistedlivingalberta.ca",
+              "url": "https://assistedlivingalberta.ca"
+            },
+            {
+              "type": "ch-phone",
+              "label": "Assisted Living Alberta"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "CCA",
+              "color": "#8e24aa",
+              "full_name": "Continuing Care Act"
+            }
+          ],
+          "mandate_tags": [],
+          "taxonomy": {
+            "track": "business",
+            "tier": "regulatory_compliance",
+            "domain": "licences_permits",
+            "relationships": [
+              {
+                "type": "consumer_regulated_provider",
+                "service": "Access Lodge Assistance Program funding",
+                "ministry": "alss"
+              },
+              {
+                "type": "consumer_regulated_provider",
+                "service": "Search for affordable housing options",
+                "ministry": "alss"
+              }
+            ]
+          }
+        }
+      ],
+      "css_class": "goal-4"
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-6",
+      "name": "Provide data analytics and quality assurance",
+      "desc": "Strategic Services and Digital Transformation unit provides data analytics, red tape reduction, quality assurance, and intergovernmental relations",
+      "users": "Ministry, policy-makers, service providers",
+      "channels": [
+        {
+          "type": "ch-find",
+          "label": "Internal"
+        }
+      ],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "core_human_needs",
+        "domain": "money_taxes_benefits",
+        "relationships": []
+      }
+    },
+    {
+      "id": "f-5",
+      "name": "Enforce and distribute child support payments",
+      "desc": "Child Support Services enforces child and spousal support obligations, collects and distributes payments",
+      "users": "Custodial parents, children",
+      "channels": [
+        {
+          "type": "ch-phone",
+          "label": "Child Support Services"
+        },
+        {
+          "type": "ch-email",
+          "label": "Child Support Services"
+        }
+      ],
+      "legislation": [
+        {
+          "abbrev": "IESA",
+          "color": "#007a3d",
+          "full_name": "Income and Employment Supports Act"
+        }
+      ],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "core_human_needs",
+        "domain": "family_relationships",
+        "relationships": []
+      }
+    }
+  ],
+  "mandate_date": "October 8, 2025",
+  "mandate_minister": "Jason Nixon",
+  "mandate_pdf": "https://www.alberta.ca/system/files/alss-mandate-letter-assisted-living-and-social-services-2025.pdf",
+  "cross_cutting": [
+    "Alberta Supports Contact Centre (1-877-644-9992)",
+    "Alberta Supports Centres (in-person)",
+    "Navigation and Support Centres (in-person)",
+    "Income Support Contact Centre (24/7)",
+    "MyAlberta Digital ID",
+    "Alberta.ca account services",
+    "Fraud prevention & investigations",
+    "Data Enhanced Eligibility Determination (DEED)",
+    "Annual reports & business plans",
+    "Red tape reduction",
+    "Intergovernmental relations",
+    "Emergency evacuation payments",
+    "Stop Housing Delays portal",
+    "Nominate someone for a Minister's Seniors Service Award",
+    "Earn Age-Friendly Alberta recognition"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Continue implementation of housing strategy — remove barriers, incentivize construction, work with all levels of government"
+    },
+    {
+      "number": 2,
+      "text": "Work with Hospital & Surgical Health to transition non-acute patients to appropriate community or continuing care settings"
+    },
+    {
+      "number": 3,
+      "text": "Implement the Alberta Disability Assistance Program (ADAP) and create employment pathways for persons with disabilities"
+    },
+    {
+      "number": 4,
+      "text": "Expand and improve seniors lodges and continuing care facilities across the province"
+    },
+    {
+      "number": 5,
+      "text": "Launch new Assisted Living Alberta website to help Albertans navigate the continuing care system"
+    },
+    {
+      "number": 6,
+      "text": "Coordinate income-tested programs across government to streamline applications and reduce overlap"
+    },
+    {
+      "number": 7,
+      "text": "Work with Education to support students with complex needs transitioning to adult services (supporting)"
+    },
+    {
+      "number": 8,
+      "text": "Support health system restructuring through transition to Assisted Living Alberta (supporting)"
+    },
+    {
+      "number": 9,
+      "text": "Support improvements to emergency health services delivery (supporting)"
+    },
+    {
+      "number": 10,
+      "text": "Improve government procurement through 1GX implementation and category management (supporting)"
+    },
+    {
+      "number": 11,
+      "text": "Support delegation of bitumen royalty pipeline operations to appropriate entities (supporting)"
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-email",
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    {
+      "code": "ch-mail",
+      "label": "Mail",
+      "bg_color": "#f3e5f5",
+      "text_color": "#6a1b9a"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "Individuals",
+    "Seniors",
+    "Families",
+    "Persons with disabilities",
+    "Municipalities",
+    "Indigenous communities",
+    "Industry & contractors"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg_color": "#c8e6c9",
+      "text_color": "#1b5e20"
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg_color": "#e0f2f1",
+      "text_color": "#00695c"
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg_color": "#f3e5f5",
+      "text_color": "#6a1b9a"
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    "ch-registry": {
+      "label": "Registry agent",
+      "bg_color": "#fff8e1",
+      "text_color": "#f57f17"
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg_color": "#f5f5f5",
+      "text_color": "#616161"
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg_color": "#e1bee7",
+      "text_color": "#6a1b9a"
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    }
+  },
+  "digital_channels": [
+    "ch-email",
+    "ch-web",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-transact",
+    "ch-app",
+    "ch-apply"
+  ]
+}

@@ -1,0 +1,503 @@
+{
+  "prefix": "ti",
+  "full_name": "Technology and Innovation",
+  "short_name": "Technology & Innovation",
+  "blurb": "Develops and delivers digital government services, expands broadband connectivity across Alberta, supports innovation and research, and protects Albertans' privacy and data in the digital age.",
+  "nav_name": "Technology & Innovation",
+  "has_registry_agents": false,
+  "_status": "draft",
+  "foundational_services": [],
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "OUTCOME 1: Albertans have access to high-speed internet and digital services",
+      "short_name": "Digital connectivity and services",
+      "legend_label": "Digital connectivity",
+      "description": "The ministry develops digital government services and expands broadband infrastructure to ensure all Albertans can access essential online services and participate in the digital economy.",
+      "foundational_services": [
+        {
+          "name": "Develop digital government strategy and broadband infrastructure",
+          "desc": "Coordinates the government's digital transformation and broadband expansion strategy. Develops policies and funding programs to increase high-speed internet availability, improves online service delivery across government, and ensures digital accessibility standards.",
+          "users": "Government digital teams, broadband providers, Treasury Board",
+          "user_groups": ["Government"],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "Digital government and broadband strategy",
+              "url": "https://www.alberta.ca/digital-services"
+            }
+          ],
+          "legislation": [],
+          "mandate_tags": ["digital-strategy"],
+          "taxonomy": {
+            "track": "business",
+            "tier": "core_business_needs",
+            "domain": "registration_legal",
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Access broadband and connectivity services",
+          "supporting": [
+            {
+              "name": "Check broadband availability in your area",
+              "desc": "Albertans can check broadband availability and speed in their area through an online tool. The tool shows current high-speed internet coverage and identifies areas where expansion is planned.",
+              "users": "Rural residents, municipalities, businesses, broadband providers",
+              "user_groups": ["General public", "Municipalities", "Industry"],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Broadband availability map and tool",
+                  "url": "https://www.alberta.ca/broadband-availability"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "Search broadband by address",
+                  "url": "https://www.alberta.ca/broadband-availability"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["broadband-access"],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of Albertans check broadband availability",
+                "basis": "Rural communities and underserved areas rely on broadband expansion information"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "broadband-access",
+                "note": "Broadband access enables rural economic development, education, and health services"
+              }
+            },
+            {
+              "name": "Apply for rural or Indigenous community broadband funding",
+              "desc": "Rural municipalities, Indigenous communities, and service providers can apply for government funding to expand broadband infrastructure. The program provides grants and subsidies for network build-out in underserved areas.",
+              "users": "Rural municipalities, Indigenous communities, broadband service providers",
+              "user_groups": ["Municipalities", "Industry"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Broadband funding application",
+                  "url": "https://www.alberta.ca/broadband-funding"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Broadband funding program information",
+                  "url": "https://www.alberta.ca/broadband-funding"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["broadband-expansion"],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "government_procurement",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Dozens of funding applications from rural and Indigenous communities annually",
+                "basis": "Broadband funding supports infrastructure expansion in underserved areas"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "broadband-expansion",
+                "note": "Broadband funding closes the digital divide and enables rural community participation in digital economy"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Use digital government services",
+          "supporting": [
+            {
+              "name": "Access your Alberta.ca account and digital wallet",
+              "desc": "Albertans can create and manage an Alberta.ca account to access government services online, view benefits, pay bills, and manage identity information. The digital wallet enables secure presentation of government credentials.",
+              "users": "Albertans accessing online government services",
+              "user_groups": ["General public"],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Alberta.ca account portal",
+                  "url": "https://www.alberta.ca/my-account"
+                },
+                {
+                  "type": "ch-transact",
+                  "label": "Online government transactions",
+                  "url": "https://www.alberta.ca/services"
+                },
+                {
+                  "type": "ch-app",
+                  "label": "Alberta.ca mobile application",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["digital-services"],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Millions of Albertans with active accounts",
+                "basis": "Alberta.ca accounts provide access to education, health, social services, and licensing"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "digital-services",
+                "note": "Digital accounts enable convenient, secure access to government services 24/7"
+              }
+            },
+            {
+              "name": "Find government services online",
+              "desc": "Albertans can search and access online government services, applications, and information through a centralized portal. Services include licensing, permit applications, payment systems, and benefit access.",
+              "users": "Albertans seeking government services",
+              "user_groups": ["General public"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Government services search and directory",
+                  "url": "https://www.alberta.ca/services"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Alberta.ca government services",
+                  "url": "https://www.alberta.ca/services"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["digital-services"],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Millions of Albertans use online services annually",
+                "basis": "All online government services are accessible through Alberta.ca"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "digital-services",
+                "note": "Centralized online services reduce administrative burden and improve access"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "title": "OUTCOME 2: Alberta's technology and innovation ecosystem is thriving",
+      "short_name": "Innovation and research support",
+      "legend_label": "Innovation support",
+      "description": "The ministry supports Alberta's technology, innovation, and research sectors through funding, infrastructure development, and business supports. The ministry attracts investment in artificial intelligence, data centres, and emerging technologies.",
+      "foundational_services": [
+        {
+          "name": "Develop Alberta's technology and AI strategy",
+          "desc": "Develops and coordinates the government's technology, artificial intelligence, and data centre strategy to position Alberta as a global innovation leader. Identifies priority sectors, sets research and commercialization goals, and attracts major technology investments.",
+          "users": "Government policy makers, technology leaders, investors",
+          "user_groups": ["Government"],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "Alberta technology and AI strategy",
+              "url": "https://www.alberta.ca/technology-strategy"
+            }
+          ],
+          "legislation": [],
+          "mandate_tags": ["innovation-strategy"],
+          "taxonomy": {
+            "track": "business",
+            "tier": "core_business_needs",
+            "domain": "registration_legal",
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Access innovation and research funding",
+          "supporting": [
+            {
+              "name": "Apply for Alberta Innovates research or commercialization funding",
+              "desc": "Researchers, entrepreneurs, and companies can apply for Alberta Innovates funding to support research projects, technology development, and commercialization of innovations. Funding programs include grants for basic research, applied research, and commercialization.",
+              "users": "Researchers, research institutions, entrepreneurs, technology companies",
+              "user_groups": ["Industry", "Researchers"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Alberta Innovates funding applications",
+                  "url": "https://www.alberta.ca/innovates-funding"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Alberta Innovates programs and funding",
+                  "url": "https://www.alberta.ca/innovates"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["research-funding"],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "registration_legal",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Hundreds of research and commercialization grants awarded annually",
+                "basis": "Alberta Innovates funds innovation across health, technology, and resource sectors"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "research-funding",
+                "note": "Research funding accelerates innovation, supports economic diversification, and creates high-value jobs"
+              }
+            },
+            {
+              "name": "Access supports for technology startups and entrepreneurs",
+              "desc": "Technology entrepreneurs can access mentoring, incubation programs, networking events, and business support services. Programs help startups develop business models, secure funding, and scale operations.",
+              "users": "Entrepreneurs, startup founders, technology companies",
+              "user_groups": ["Industry"],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Startup support programs and information",
+                  "url": "https://www.alberta.ca/startup-support"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Startup support inquiry",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["startup-support"],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "registration_legal",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Hundreds of startups access government support services annually",
+                "basis": "Alberta's technology startup ecosystem benefits from government mentoring and networking"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "startup-support",
+                "note": "Startup support drives technology commercialization and creates new business opportunities"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Attract and support data centre and AI investment",
+          "supporting": [
+            {
+              "name": "Learn about Alberta's AI and data centre opportunities",
+              "desc": "Technology companies and investors can learn about Alberta's competitive advantages for data centre and AI investment, including available infrastructure, supportive regulations, competitive electricity costs, and government incentive programs.",
+              "users": "Technology investors, data centre operators, AI companies",
+              "user_groups": ["Industry"],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Alberta AI and data centre investment information",
+                  "url": "https://www.alberta.ca/data-centres"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["investment-attraction"],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Dozens of companies and investors evaluate Alberta for data centre and AI opportunities",
+                "basis": "Data centre and AI investment is a priority sector for government"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "investment-attraction",
+                "note": "Data centre and AI investment attracts technology companies and creates high-wage employment"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "title": "OUTCOME 3: Albertans' privacy and data are protected",
+      "short_name": "Privacy and cybersecurity",
+      "legend_label": "Privacy & cybersecurity",
+      "description": "The ministry protects Albertans' personal information and digital security through privacy legislation, data protection standards, cybersecurity initiatives, and public awareness programs.",
+      "foundational_services": [
+        {
+          "name": "Develop privacy, data ethics, and cybersecurity policy",
+          "desc": "Develops and enforces privacy laws, data protection standards, and cybersecurity policies that protect Albertans' personal information. Establishes government-wide data ethics principles and cybersecurity requirements.",
+          "users": "Government privacy and security officials, policy makers",
+          "user_groups": ["Government"],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "Privacy and cybersecurity policy",
+              "url": "https://www.alberta.ca/privacy-security"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "PPA",
+              "color": "#c62828",
+              "full_name": "Protection of Privacy Act"
+            }
+          ],
+          "mandate_tags": ["privacy-policy"],
+          "taxonomy": {
+            "track": "both",
+            "individual": {
+              "tier": "identity_credentials_access",
+              "domain": "privacy_government_access"
+            },
+            "business": {
+              "tier": "regulatory_compliance",
+              "domain": "reporting_obligations"
+            },
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Understand your privacy rights",
+          "supporting": [
+            {
+              "name": "Learn about how government collects and uses your personal information",
+              "desc": "Albertans can access information about government privacy practices, how personal information is collected, used, and protected. Includes resources on privacy rights, data collection standards, and protection mechanisms.",
+              "users": "Albertans, privacy advocates, researchers",
+              "user_groups": ["General public", "Researchers"],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Government privacy practices and rights",
+                  "url": "https://www.alberta.ca/privacy"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Privacy information materials",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PPA",
+                  "color": "#c62828",
+                  "full_name": "Protection of Privacy Act"
+                }
+              ],
+              "mandate_tags": ["privacy-awareness"],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of Albertans access privacy information",
+                "basis": "Privacy information is widely accessed when individuals interact with government"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "privacy-awareness",
+                "note": "Privacy transparency builds public trust in government information handling"
+              }
+            },
+            {
+              "name": "Access cybersecurity resources and tips",
+              "desc": "Albertans can access cybersecurity resources, safety tips, and education materials to protect themselves from online threats, identity theft, and scams. Includes information on secure passwords, phishing protection, and digital safety.",
+              "users": "All Albertans, families, seniors, workers",
+              "user_groups": ["General public"],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Cybersecurity tips and resources",
+                  "url": "https://www.alberta.ca/cybersecurity"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Cybersecurity educational materials",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["cybersecurity-awareness"],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of Albertans access cybersecurity resources",
+                "basis": "Cybersecurity awareness is essential for all internet users"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "cybersecurity-awareness",
+                "note": "Cybersecurity education reduces fraud losses and protects individuals and businesses from attack"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "channel_filters": [
+    {"code": "ch-apply", "label": "Apply"},
+    {"code": "ch-find", "label": "Find / search"},
+    {"code": "ch-web", "label": "Website"},
+    {"code": "ch-email", "label": "Email"},
+    {"code": "ch-transact", "label": "Online transaction"},
+    {"code": "ch-app", "label": "Mobile app"},
+    {"code": "ch-pub", "label": "Publication"}
+  ],
+  "user_group_filters": ["General public", "Industry", "Municipalities", "Researchers", "Government"],
+  "channel_types": {
+    "ch-apply": {"label": "Apply", "type": "digital"},
+    "ch-find": {"label": "Find / search", "type": "digital"},
+    "ch-web": {"label": "Website", "type": "digital"},
+    "ch-email": {"label": "Email", "type": "digital"},
+    "ch-transact": {"label": "Online transaction", "type": "digital"},
+    "ch-app": {"label": "Mobile app", "type": "digital"},
+    "ch-pub": {"label": "Publication", "type": "non-digital"}
+  },
+  "digital_channels": ["ch-apply", "ch-find", "ch-web", "ch-email", "ch-transact", "ch-app"]
+}

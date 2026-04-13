@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find a Government Service — Life Events</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f9fa; color: #1a1a1a; line-height: 1.5; }
+
+  .header { background: #0a3161; color: white; padding: 32px 24px 40px; text-align: center; }
+  .header h1 { font-size: 16px; font-weight: 400; opacity: 0.7; margin-bottom: 4px; }
+  .header h2 { font-size: 30px; font-weight: 700; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.8; max-width: 520px; margin: 0 auto; }
+
+  .main { max-width: 960px; margin: 0 auto; padding: 32px 24px 48px; }
+
+  .events-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-bottom: 40px; }
+  .event-card { background: white; border: 1px solid #e0e0e0; border-radius: 12px; padding: 24px; cursor: pointer; transition: all 0.2s; position: relative; overflow: hidden; }
+  .event-card:hover { border-color: #0a3161; box-shadow: 0 4px 16px rgba(10,49,97,0.12); transform: translateY(-2px); }
+  .event-card .icon { font-size: 36px; margin-bottom: 12px; display: block; }
+  .event-card h3 { font-size: 18px; font-weight: 600; color: #0a3161; margin-bottom: 6px; }
+  .event-card p { font-size: 14px; color: #666; }
+  .event-card .service-count { font-size: 12px; color: #888; margin-top: 10px; display: flex; align-items: center; gap: 4px; }
+  .event-card .dot { width: 6px; height: 6px; border-radius: 50%; background: #0a3161; display: inline-block; }
+
+  .browse-link { text-align: center; margin-top: 8px; }
+  .browse-link a { color: #1a56db; text-decoration: none; font-size: 14px; }
+  .browse-link a:hover { text-decoration: underline; }
+
+  /* Journey panel */
+  .journey-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 100; }
+  .journey-overlay.open { display: flex; align-items: center; justify-content: center; }
+  .journey-modal { background: #f8f9fa; width: 90%; max-width: 720px; max-height: 85vh; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; }
+  .journey-header { background: #0a3161; color: white; padding: 24px 28px; flex-shrink: 0; }
+  .journey-header h3 { font-size: 22px; font-weight: 700; display: flex; align-items: center; gap: 12px; }
+  .journey-header p { font-size: 14px; opacity: 0.8; margin-top: 4px; }
+  .journey-close { position: absolute; top: 16px; right: 20px; background: none; border: none; color: white; font-size: 28px; cursor: pointer; }
+  .journey-body { overflow-y: auto; padding: 24px 28px; flex: 1; }
+
+  .domain-group { margin-bottom: 24px; }
+  .domain-group h4 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: #888; font-weight: 600; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid #e0e0e0; }
+  .journey-service { background: white; border: 1px solid #e8e8e8; border-radius: 8px; padding: 14px 16px; margin-bottom: 8px; }
+  .journey-service h5 { font-size: 15px; font-weight: 600; color: #1a1a1a; margin-bottom: 3px; }
+  .journey-service .sdesc { font-size: 13px; color: #666; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .journey-service .smeta { display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
+  .journey-service .stag { font-size: 11px; padding: 2px 8px; border-radius: 4px; }
+  .journey-service .stag.ministry { background: #f0f0f0; color: #555; }
+  .journey-service .stag.domain { background: #e8f0fe; color: #1a56db; }
+  .journey-service .slinks { margin-top: 6px; }
+  .journey-service .slinks a { font-size: 12px; color: #1a56db; text-decoration: none; margin-right: 12px; }
+  .journey-service .slinks a:hover { text-decoration: underline; }
+
+  .journey-footer { padding: 16px 28px; border-top: 1px solid #e0e0e0; background: white; flex-shrink: 0; text-align: center; }
+  .journey-footer p { font-size: 13px; color: #888; }
+
+  @media (max-width: 600px) {
+    .events-grid { grid-template-columns: 1fr; }
+    .journey-modal { width: 100%; height: 100%; max-height: 100%; border-radius: 0; }
+    .header h2 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Government of Alberta</h1>
+  <h2>What's happening in your life?</h2>
+  <p>Select a life event to see all the government services that may be relevant to your situation.</p>
+</div>
+
+<div class="main">
+  <div class="events-grid" id="events-grid"></div>
+  <div class="browse-link">
+    <a href="browse.html">Or browse all services by topic →</a>
+  </div>
+</div>
+
+<div class="journey-overlay" id="journey-overlay">
+  <div class="journey-modal">
+    <div class="journey-header" id="journey-header" style="position:relative;">
+      <button class="journey-close" id="journey-close">&times;</button>
+      <h3 id="journey-title"></h3>
+      <p id="journey-subtitle"></p>
+    </div>
+    <div class="journey-body" id="journey-body"></div>
+    <div class="journey-footer">
+      <p>Services shown are from the Government of Alberta. Federal and municipal services may also apply.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+// Life events — each maps to a set of domains and keyword filters
+const LIFE_EVENTS = [
+  {
+    id: 'baby',
+    icon: '👶',
+    title: "I'm having a baby",
+    desc: "Birth registration, health coverage, parental benefits, child care, and family supports",
+    domains: ['family_relationships', 'health_wellbeing', 'money_taxes_benefits', 'vital_records_id'],
+    keywords: ['birth', 'baby', 'child', 'parental', 'maternity', 'newborn', 'childcare', 'child care', 'prenatal', 'family']
+  },
+  {
+    id: 'death',
+    icon: '🕊️',
+    title: "Someone has died",
+    desc: "Death registration, estate administration, support orders, bereavement, and survivor benefits",
+    domains: ['vital_records_id', 'justice_legal', 'family_relationships', 'money_taxes_benefits', 'housing_property'],
+    keywords: ['death', 'deceased', 'estate', 'bereavement', 'funeral', 'survivor', 'will', 'probate']
+  },
+  {
+    id: 'job-loss',
+    icon: '💼',
+    title: "I lost my job",
+    desc: "Employment standards, income support, retraining, career services, and financial assistance",
+    domains: ['working_employment', 'money_taxes_benefits', 'education_training'],
+    keywords: ['employment', 'income support', 'job', 'unemploy', 'termination', 'layoff', 'severance', 'retrain', 'career']
+  },
+  {
+    id: 'moving',
+    icon: '🏠',
+    title: "I'm moving to Alberta",
+    desc: "Driver's licence, health card, vehicle registration, credential recognition, and settlement services",
+    domains: ['immigration_settling', 'driving_vehicles', 'health_wellbeing', 'vital_records_id', 'professional_credentials', 'housing_property'],
+    keywords: ['move', 'moving', 'newcomer', 'settle', 'immigrat', 'licence', 'health card', 'register', 'credential', 'IQAS']
+  },
+  {
+    id: 'business',
+    icon: '🏪',
+    title: "I'm starting a business",
+    desc: "Business registration, licences, permits, tax accounts, and employer obligations",
+    domains: ['registration_legal', 'licences_permits', 'finances_taxes', 'people_employment'],
+    keywords: ['business', 'register', 'incorporat', 'licence', 'permit', 'employer', 'hire', 'tax account', 'startup']
+  },
+  {
+    id: 'retire',
+    icon: '🌅',
+    title: "I'm retiring",
+    desc: "Pension information, health benefits, seniors programs, housing options, and financial planning",
+    domains: ['money_taxes_benefits', 'health_wellbeing', 'housing_property'],
+    keywords: ['pension', 'retire', 'senior', 'elder', 'lodge', 'continuing care', 'aged', 'CPP', 'benefit']
+  },
+  {
+    id: 'disaster',
+    icon: '🌊',
+    title: "My home was damaged",
+    desc: "Disaster recovery assistance, emergency alerts, insurance information, and rebuilding permits",
+    domains: ['safety_emergencies', 'housing_property', 'money_taxes_benefits', 'disaster_recovery'],
+    keywords: ['disaster', 'flood', 'fire', 'wildfire', 'emergency', 'damage', 'recovery', 'evacuat', 'rebuild']
+  },
+  {
+    id: 'victim',
+    icon: '⚖️',
+    title: "I've been a victim of crime",
+    desc: "Victim services, protection orders, legal aid, compensation, and safety planning",
+    domains: ['justice_legal', 'safety_emergencies', 'family_relationships'],
+    keywords: ['victim', 'crime', 'protect', 'restrain', 'assault', 'violence', 'trafficking', 'abuse', 'legal aid', 'compensation']
+  },
+  {
+    id: 'separation',
+    icon: '💔',
+    title: "I'm leaving a relationship",
+    desc: "Family law, child support, custody, protection orders, and financial assistance",
+    domains: ['justice_legal', 'family_relationships', 'money_taxes_benefits', 'housing_property'],
+    keywords: ['divorce', 'separation', 'custody', 'child support', 'family law', 'mediation', 'protection order', 'domestic']
+  },
+  {
+    id: 'turning-18',
+    icon: '🎂',
+    title: "I'm turning 18",
+    desc: "Driver's licence, health card in your name, voting, post-secondary, and transitioning from child services",
+    domains: ['driving_vehicles', 'vital_records_id', 'education_training', 'health_wellbeing', 'working_employment'],
+    keywords: ['licence', 'driver', 'vote', 'adult', 'post-secondary', 'university', 'college', 'transition', 'youth', 'aging out', 'student loan']
+  },
+  {
+    id: 'caregiver',
+    icon: '🤝',
+    title: "I'm caring for an aging parent",
+    desc: "Continuing care options, respite, home care, financial supports, and legal planning",
+    domains: ['health_wellbeing', 'family_relationships', 'money_taxes_benefits', 'housing_property'],
+    keywords: ['senior', 'elder', 'caregiver', 'continuing care', 'lodge', 'home care', 'respite', 'abuse', 'capacity', 'directive', 'power of attorney']
+  },
+  {
+    id: 'addiction',
+    icon: '🫂',
+    title: "I'm dealing with addiction",
+    desc: "Treatment options, detox, counselling, recovery supports, and crisis resources",
+    domains: ['health_wellbeing'],
+    keywords: ['addiction', 'substance', 'alcohol', 'drug', 'opioid', 'detox', 'treatment', 'recovery', 'counsell', 'crisis', 'mental health', 'harm reduction']
+  }
+];
+
+let taxonomy = null;
+let allServices = [];
+
+async function init() {
+  const taxResp = await fetch('../data/ab/taxonomy.json');
+  taxonomy = await taxResp.json();
+
+  const ministResp = await fetch('../data/ab/ministries.json');
+  const ministries = await ministResp.json();
+
+  for (const m of ministries) {
+    if (m.is_test) continue;
+    try {
+      const resp = await fetch(`../data/ab/${m.prefix}.json`);
+      const data = await resp.json();
+      extractServices(data, m.prefix, m.short_name);
+    } catch(e) {}
+  }
+
+  renderEvents();
+}
+
+function extractServices(data, prefix, ministryName) {
+  function addService(svc) {
+    if (typeof svc === 'string') return;
+    if (!svc.taxonomy) return;
+    allServices.push({ ...svc, ministry: prefix, ministryName });
+  }
+  for (const fs of data.foundational_services || []) addService(fs);
+  for (const goal of data.goals || []) {
+    for (const fs of goal.foundational_services || []) addService(fs);
+    for (const ms of goal.main_services || []) {
+      for (const fs of ms.foundational_services || []) addService(fs);
+      for (const ss of ms.supporting || []) addService(ss);
+    }
+  }
+}
+
+function getServiceDomains(svc) {
+  const t = svc.taxonomy;
+  if (t.track === 'both') {
+    return [t.individual?.domain, t.business?.domain].filter(Boolean);
+  }
+  return [t.domain].filter(Boolean);
+}
+
+function getDomainLabel(domain) {
+  for (const track of Object.values(taxonomy.tracks)) {
+    for (const tier of Object.values(track.tiers)) {
+      if (tier.domains[domain]) return tier.domains[domain].label;
+    }
+  }
+  return domain;
+}
+
+function matchEvent(svc, event) {
+  const domains = getServiceDomains(svc);
+  const domainMatch = domains.some(d => event.domains.includes(d));
+  const text = `${svc.name} ${svc.desc || ''}`.toLowerCase();
+  const keywordMatch = event.keywords.some(kw => text.includes(kw));
+  // Require at least one match; prioritize keyword matches
+  if (keywordMatch) return 3;
+  if (domainMatch && event.keywords.some(kw => svc.name.toLowerCase().includes(kw))) return 2;
+  return 0;
+}
+
+function getEventServices(event) {
+  return allServices
+    .map(svc => ({ svc, score: matchEvent(svc, event) }))
+    .filter(r => r.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .map(r => r.svc);
+}
+
+function renderEvents() {
+  const grid = document.getElementById('events-grid');
+  grid.innerHTML = LIFE_EVENTS.map(event => {
+    const count = getEventServices(event).length;
+    return `
+      <div class="event-card" data-event="${event.id}">
+        <span class="icon">${event.icon}</span>
+        <h3>${event.title}</h3>
+        <p>${event.desc}</p>
+        <div class="service-count"><span class="dot"></span> ${count} relevant services</div>
+      </div>`;
+  }).join('');
+
+  document.querySelectorAll('.event-card').forEach(card => {
+    card.addEventListener('click', () => openJourney(card.dataset.event));
+  });
+}
+
+function openJourney(eventId) {
+  const event = LIFE_EVENTS.find(e => e.id === eventId);
+  const services = getEventServices(event);
+
+  document.getElementById('journey-title').innerHTML = `${event.icon} ${event.title}`;
+  document.getElementById('journey-subtitle').textContent = `${services.length} government services that may help`;
+
+  // Group by domain
+  const byDomain = {};
+  for (const svc of services) {
+    const domains = getServiceDomains(svc);
+    const primaryDomain = domains.find(d => event.domains.includes(d)) || domains[0] || 'other';
+    if (!byDomain[primaryDomain]) byDomain[primaryDomain] = [];
+    byDomain[primaryDomain].push(svc);
+  }
+
+  // Sort domain groups by the event's domain priority
+  const sortedDomains = Object.keys(byDomain).sort((a, b) => {
+    const ai = event.domains.indexOf(a);
+    const bi = event.domains.indexOf(b);
+    return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
+  });
+
+  const body = document.getElementById('journey-body');
+  body.innerHTML = sortedDomains.map(domain => {
+    const svcs = byDomain[domain];
+    return `
+      <div class="domain-group">
+        <h4>${getDomainLabel(domain)} (${svcs.length})</h4>
+        ${svcs.map(svc => {
+          const channels = (svc.channels || []).filter(c => c.url).slice(0, 2);
+          return `
+            <div class="journey-service">
+              <h5>${svc.name}</h5>
+              <div class="sdesc">${svc.desc || ''}</div>
+              <div class="smeta">
+                <span class="stag ministry">${svc.ministryName}</span>
+              </div>
+              ${channels.length ? `<div class="slinks">${channels.map(c => `<a href="${c.url}" target="_blank">${c.label}</a>`).join('')}</div>` : ''}
+            </div>`;
+        }).join('')}
+      </div>`;
+  }).join('');
+
+  document.getElementById('journey-overlay').classList.add('open');
+  body.scrollTop = 0;
+}
+
+document.getElementById('journey-close').addEventListener('click', () => {
+  document.getElementById('journey-overlay').classList.remove('open');
+});
+document.getElementById('journey-overlay').addEventListener('click', (e) => {
+  if (e.target === e.currentTarget) {
+    document.getElementById('journey-overlay').classList.remove('open');
+  }
+});
+
+init();
+</script>
+</body>
+</html>

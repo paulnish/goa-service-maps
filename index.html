@@ -5,6 +5,189 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Ministries - Service Maps</title>
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .view-toggle {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        background: #f0f2f5;
+        border-radius: 6px;
+        padding: 3px;
+      }
+      .view-toggle button {
+        padding: 5px 12px;
+        border: none;
+        border-radius: 4px;
+        background: transparent;
+        font-size: 13px;
+        color: #666;
+        cursor: pointer;
+        transition: background 0.15s, color 0.15s;
+      }
+      .view-toggle button.active {
+        background: white;
+        color: #00405c;
+        font-weight: 600;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+      .view-toggle button:hover:not(.active) {
+        color: #333;
+      }
+      .toolbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+      }
+      .toolbar h2 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333;
+        margin: 0;
+      }
+
+      /* Card view */
+      .ministry-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 24px;
+      }
+      .ministry-card {
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 20px;
+        background: white;
+        transition: box-shadow 0.15s;
+      }
+      .ministry-card:hover {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+      .ministry-card h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+      .ministry-card h3 a {
+        color: #00405c;
+        text-decoration: none;
+      }
+      .ministry-card h3 a:hover {
+        text-decoration: underline;
+      }
+      .ministry-card .mc-name {
+        font-size: 13px;
+        color: #666;
+        margin-bottom: 12px;
+        line-height: 1.5;
+      }
+      .ministry-card .mc-blurb {
+        font-size: 12px;
+        color: #888;
+        margin-bottom: 16px;
+        line-height: 1.5;
+      }
+      .ministry-card .mc-link {
+        display: inline-block;
+        padding: 8px 16px;
+        background: #00405c;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .ministry-card .mc-link:hover {
+        background: #005a7a;
+      }
+
+      /* List view */
+      .ministry-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
+      .ministry-list-item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 14px 16px;
+        border-bottom: 1px solid #eee;
+        transition: background 0.1s;
+      }
+      .ministry-list-item:first-child {
+        border-top: 1px solid #eee;
+      }
+      .ministry-list-item:hover {
+        background: #f8f9fa;
+      }
+      .ministry-list-item .ml-name {
+        flex: 1;
+        min-width: 0;
+      }
+      .ministry-list-item .ml-name a {
+        font-size: 15px;
+        font-weight: 600;
+        color: #00405c;
+        text-decoration: none;
+      }
+      .ministry-list-item .ml-name a:hover {
+        text-decoration: underline;
+      }
+      .ministry-list-item .ml-blurb {
+        font-size: 12px;
+        color: #888;
+        margin-top: 2px;
+        line-height: 1.4;
+      }
+      .ministry-list-item .ml-link {
+        flex-shrink: 0;
+        padding: 6px 14px;
+        background: #00405c;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 500;
+        white-space: nowrap;
+      }
+      .ministry-list-item .ml-link:hover {
+        background: #005a7a;
+      }
+
+      .hidden { display: none !important; }
+
+      /* Test data styling */
+      .test-badge {
+        display: inline-block;
+        font-size: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        background: #fef3c7;
+        color: #92400e;
+        padding: 2px 6px;
+        border-radius: 3px;
+        margin-left: 8px;
+        vertical-align: middle;
+      }
+      .ministry-card.is-test,
+      .ministry-list-item.is-test {
+        opacity: 0.7;
+        border-style: dashed;
+      }
+      .test-toggle {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 12px;
+        color: #888;
+        cursor: pointer;
+        user-select: none;
+      }
+      .test-toggle input {
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <div class="nav-bar">
@@ -21,26 +204,22 @@
     </div>
 
     <div class="container">
-      <h2
-        style="
-          font-size: 20px;
-          font-weight: 600;
-          margin-bottom: 24px;
-          color: #333;
-        "
-      >
-        Ministries
-      </h2>
-      <div
-        id="ministryGrid"
-        style="
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-          gap: 24px;
-        "
-      >
+      <div class="toolbar">
+        <h2>Ministries</h2>
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <label class="test-toggle" id="testToggleLabel" class="hidden">
+            <input type="checkbox" id="showTest" /> Show test data
+          </label>
+          <div class="view-toggle">
+            <button id="btnCard" class="active" title="Card view">Cards</button>
+            <button id="btnList" title="List view">List</button>
+          </div>
+        </div>
+      </div>
+      <div id="ministryGrid" class="ministry-grid">
         <div style="color: #888; font-size: 14px">Loading ministries…</div>
       </div>
+      <div id="ministryList" class="ministry-list hidden"></div>
     </div>
 
     <div class="footer">
@@ -59,31 +238,94 @@
 
       document.addEventListener("DOMContentLoaded", async () => {
         try {
-          const resp = await fetch("data/ministries.json");
+          const resp = await fetch("data/ab/ministries.json");
           if (!resp.ok) throw new Error("Failed to load ministries");
           const ministries = await resp.json();
 
+          // Sort alphabetically by short_name
+          ministries.sort((a, b) =>
+            a.short_name.localeCompare(b.short_name, "en", { sensitivity: "base" })
+          );
+
           const grid = document.getElementById("ministryGrid");
-          grid.innerHTML = ministries
-            .map(
-              (m) => `
-      <div style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; background: white; transition: box-shadow 0.15s;">
-        <h3 style="font-size: 16px; font-weight: 600; color: #333; margin-bottom: 8px;">
-          <a href="${escapeHtml(m.prefix)}/service-map" style="color: #00405c; text-decoration: none;">
+          const list = document.getElementById("ministryList");
+
+          const hasTestData = ministries.some((m) => m.is_test);
+          const testToggleLabel = document.getElementById("testToggleLabel");
+          const showTestCheckbox = document.getElementById("showTest");
+
+          // Only show toggle if there's test data
+          if (!hasTestData) {
+            testToggleLabel.classList.add("hidden");
+          }
+
+          function renderViews(items) {
+            // Render card view
+            grid.innerHTML = items
+              .map(
+                (m) => `
+      <div class="ministry-card${m.is_test ? " is-test" : ""}">
+        <h3>
+          <a href="${escapeHtml(m.prefix)}/service-map">
             ${escapeHtml(m.short_name)}
           </a>
+          ${m.is_test ? '<span class="test-badge">Test</span>' : ""}
         </h3>
-        <p style="font-size: 13px; color: #666; margin-bottom: 12px; line-height: 1.5;">
-          ${escapeHtml(m.name)}
-        </p>
-        ${m.blurb ? `<p style="font-size: 12px; color: #888; margin-bottom: 16px; line-height: 1.5;">${escapeHtml(m.blurb)}</p>` : ""}
-        <a href="${escapeHtml(m.prefix)}/service-map" style="display: inline-block; padding: 8px 16px; background: #00405c; color: white; text-decoration: none; border-radius: 4px; font-size: 13px; font-weight: 500;">
+        <p class="mc-name">${escapeHtml(m.name)}</p>
+        ${m.blurb ? `<p class="mc-blurb">${escapeHtml(m.blurb)}</p>` : ""}
+        <a class="mc-link" href="${escapeHtml(m.prefix)}/service-map">
           View Service Map
         </a>
       </div>
     `,
-            )
-            .join("");
+              )
+              .join("");
+
+            // Render list view
+            list.innerHTML = items
+              .map(
+                (m) => `
+      <div class="ministry-list-item${m.is_test ? " is-test" : ""}">
+        <div class="ml-name">
+          <a href="${escapeHtml(m.prefix)}/service-map">${escapeHtml(m.short_name)}</a>
+          ${m.is_test ? '<span class="test-badge">Test</span>' : ""}
+          ${m.blurb ? `<div class="ml-blurb">${escapeHtml(m.blurb)}</div>` : ""}
+        </div>
+        <a class="ml-link" href="${escapeHtml(m.prefix)}/service-map">View</a>
+      </div>
+    `,
+              )
+              .join("");
+          }
+
+          // Initial render — hide test data by default
+          renderViews(ministries.filter((m) => !m.is_test));
+
+          // Test data toggle
+          showTestCheckbox.addEventListener("change", () => {
+            const filtered = showTestCheckbox.checked
+              ? ministries
+              : ministries.filter((m) => !m.is_test);
+            renderViews(filtered);
+          });
+
+          // View toggle
+          const btnCard = document.getElementById("btnCard");
+          const btnList = document.getElementById("btnList");
+
+          btnCard.addEventListener("click", () => {
+            btnCard.classList.add("active");
+            btnList.classList.remove("active");
+            grid.classList.remove("hidden");
+            list.classList.add("hidden");
+          });
+
+          btnList.addEventListener("click", () => {
+            btnList.classList.add("active");
+            btnCard.classList.remove("active");
+            list.classList.remove("hidden");
+            grid.classList.add("hidden");
+          });
         } catch (err) {
           document.getElementById("ministryGrid").innerHTML =
             '<div style="color: #c00; font-size: 14px;">Error loading ministries. Check that data/ministries.json exists.</div>';

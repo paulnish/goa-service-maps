@@ -1,0 +1,334 @@
+{
+  "prefix": "epa",
+  "name": "Environment and Protected Areas",
+  "short_name": "Environment & Protected Areas",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "Clean air & emissions management",
+      "legend_label": "Clean air & emissions",
+      "main_services": [
+        {"number": 1, "name": "Monitor air quality and protect your health"},
+        {"number": 2, "name": "Report and reduce industrial emissions"}
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "short_name": "Water stewardship & resilience",
+      "legend_label": "Water stewardship",
+      "main_services": [
+        {"number": 1, "name": "Get water licences, approvals, and well information"},
+        {"number": 2, "name": "Prepare for and respond to flood and drought"}
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "short_name": "Ecosystems, waste & assessment",
+      "legend_label": "Ecosystems & waste",
+      "main_services": [
+        {"number": 1, "name": "Get environmental approvals for projects and activities"},
+        {"number": 2, "name": "Manage waste, recycling, and hazardous materials"},
+        {"number": 3, "name": "Protect wildlife and species at risk"}
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "EPEA",
+      "full_name": "Environmental Protection and Enhancement Act",
+      "color": "#1565c0",
+      "citation": "RSA 2000, c E-12",
+      "summary": "Alberta's comprehensive environmental legislation governing environmental assessments, industrial approvals, air and water quality, substance releases, conservation and reclamation, potable water, hazardous substances and pesticides, waste management and recycling, and enforcement — protecting the environment while enabling responsible development.",
+      "full_text": "<h3>Environmental Protection and Enhancement Act</h3><p><strong>Citation:</strong> RSA 2000, c E-12</p><p>The Environmental Protection and Enhancement Act (EPEA) is Alberta's principal environmental statute. It provides the legal framework for protecting the environment while enabling responsible economic development, covering everything from industrial approvals to waste management.</p><h4>Structure (11 Parts)</h4><ul><li><strong>Part 1 — Administration:</strong> Establishes the Minister's powers, delegation authority, appointment of environmental officers, and creation of advisory bodies. Includes provisions for public participation and access to environmental information.</li><li><strong>Part 2 — Environmental Assessment Process, Approvals and Registrations:</strong> Sets out the environmental impact assessment process for major projects, the system of approvals and registrations for industrial activities, and the conditions that may be attached to approvals. Defines activities requiring approval in the Schedule of Activities.</li><li><strong>Part 3 — Activities Requiring Notice:</strong> Defines activities that must be notified to the Department, including minor industrial operations and changes that do not require full approval but must be reported.</li><li><strong>Part 4 — Environmental Appeals Board:</strong> Establishes the Environmental Appeals Board and defines its jurisdiction to hear appeals of ministerial and director decisions regarding approvals, enforcement orders, and other matters under the Act.</li><li><strong>Part 5 — Release of Substances:</strong> Prohibits the release of substances that may cause a significant adverse effect on the environment. Establishes mandatory reporting of substance releases, spill response requirements, and the duty to remediate contamination.</li><li><strong>Part 6 — Conservation and Reclamation:</strong> Requires operators to conserve and reclaim land disturbed by industrial activity. Establishes the reclamation certification process and security deposit requirements to ensure land is returned to equivalent capability.</li><li><strong>Part 7 — Potable Water:</strong> Governs the quality and safety of drinking water. Sets standards for waterworks systems, water treatment, and the protection of drinking water sources.</li><li><strong>Part 8 — Hazardous Substances and Pesticides:</strong> Regulates the manufacture, sale, storage, transport, use, and disposal of hazardous substances and pesticides. Requires registration and licensing for certain activities.</li><li><strong>Part 9 — Waste Minimization, Recycling and Waste Management:</strong> Promotes waste reduction and recycling. Establishes requirements for waste management facilities (landfills, composting), extended producer responsibility programs, and beverage container recycling.</li><li><strong>Part 10 — Enforcement:</strong> Provides enforcement tools including environmental protection orders, administrative penalties, stop orders, and the power to prosecute offences. Establishes penalty provisions for violations.</li><li><strong>Part 11 — Miscellaneous Provisions:</strong> Contains transitional provisions, regulation-making authority, confidentiality provisions, and other general matters.</li></ul><p>EPEA is supported by numerous regulations including the Activities Designation Regulation, Substance Release Regulation, Conservation and Reclamation Regulation, and Waste Control Regulation.</p>",
+      "sections": [
+        {
+          "ref": "Part 2",
+          "title": "Environmental Assessment Process, Approvals and Registrations",
+          "description": "Sets out the environmental impact assessment process for major projects and the system of approvals and registrations for industrial activities. Defines the Schedule of Activities requiring approval.",
+          "anchor_id": "sec-epea-p2",
+          "services": [
+            {
+              "name": "Apply for an environmental approval or registration",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 1,
+              "ms_name": "Get environmental approvals for projects and activities"
+            },
+            {
+              "name": "Administer environmental assessment, approval, and compliance frameworks",
+              "type": "foundational",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 0,
+              "ms_name": ""
+            }
+          ]
+        },
+        {
+          "ref": "Part 1",
+          "title": "Administration — Air Quality Standards and Monitoring Authority",
+          "description": "Establishes the Minister's authority to set ambient air quality objectives, designate airshed zones, and require monitoring and reporting of air quality conditions.",
+          "anchor_id": "sec-epea-p1",
+          "services": [
+            {
+              "name": "Check the Air Quality Health Index for your area",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Monitor air quality and protect your health"
+            },
+            {
+              "name": "Access air quality data and monitoring reports",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Monitor air quality and protect your health"
+            },
+            {
+              "name": "Develop air quality and emissions reduction policy and standards",
+              "type": "foundational",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 0,
+              "ms_name": ""
+            }
+          ]
+        },
+        {
+          "ref": "Part 5",
+          "title": "Release of Substances",
+          "description": "Prohibits the release of substances that may cause a significant adverse effect. Establishes mandatory reporting requirements for spills and substance releases, and the duty to remediate.",
+          "anchor_id": "sec-epea-p5",
+          "services": [
+            {
+              "name": "Report a release of a substance to the environment",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 1,
+              "ms_name": "Get environmental approvals for projects and activities"
+            }
+          ]
+        },
+        {
+          "ref": "Part 7",
+          "title": "Potable Water",
+          "description": "Governs the quality and safety of drinking water. Sets standards for waterworks systems and water treatment, and protects drinking water sources.",
+          "anchor_id": "sec-epea-p7",
+          "services": [
+            {
+              "name": "Access water quality data and river condition reports",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 1,
+              "ms_name": "Get water licences, approvals, and well information"
+            }
+          ]
+        },
+        {
+          "ref": "Part 8",
+          "title": "Hazardous Substances and Pesticides",
+          "description": "Regulates the manufacture, sale, storage, transport, use, and disposal of hazardous substances and pesticides. Requires licensing and registration.",
+          "anchor_id": "sec-epea-p8",
+          "services": [
+            {
+              "name": "Comply with hazardous waste management requirements",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 2,
+              "ms_name": "Manage waste, recycling, and hazardous materials"
+            }
+          ]
+        },
+        {
+          "ref": "Part 9",
+          "title": "Waste Minimization, Recycling and Waste Management",
+          "description": "Promotes waste reduction and recycling. Establishes requirements for waste management facilities, extended producer responsibility programs, and beverage container recycling.",
+          "anchor_id": "sec-epea-p9",
+          "services": [
+            {
+              "name": "Get certified as a landfill or composting facility operator",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 2,
+              "ms_name": "Manage waste, recycling, and hazardous materials"
+            },
+            {
+              "name": "Learn about recycling programs and extended producer responsibility",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 2,
+              "ms_name": "Manage waste, recycling, and hazardous materials"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "WA",
+      "full_name": "Water Act",
+      "color": "#00695c",
+      "citation": "RSA 2000, c W-3",
+      "summary": "Governs the allocation, diversion, and use of water in Alberta, including licences, approvals, water management planning, flood and drought response, watershed protection, and remediation — ensuring sustainable stewardship of the province's water resources.",
+      "full_text": "<h3>Water Act</h3><p><strong>Citation:</strong> RSA 2000, c W-3</p><p>The Water Act is Alberta's principal statute for the management and allocation of the province's water resources. It establishes the legal framework for water licensing, approvals, watershed planning, and enforcement.</p><h4>Structure (14 Parts)</h4><ul><li><strong>Part 1 — Consultation:</strong> Requires public consultation on significant water management decisions and establishes processes for stakeholder engagement through Watershed Planning and Advisory Councils (WPACs).</li><li><strong>Part 2 — Planning and Environmental Assessment:</strong> Provides for the development of water management plans at the provincial and regional level, including the Framework for Water Management Planning and approved water management plans for specific basins.</li><li><strong>Part 3 — Right to Divert and Priority of Rights:</strong> Establishes the system of priority-based water rights in Alberta. Defines who may divert water, the priority system (first in time, first in right), and the categories of water use (household, traditional agriculture, licensed).</li><li><strong>Part 4 — Approvals, Licences, Preliminary Certificates, Registrations:</strong> Governs the issuance, amendment, suspension, and cancellation of water licences and approvals. Sets out conditions, security deposits, and the process for obtaining authorization to divert water or conduct activities affecting water bodies.</li><li><strong>Part 5 — Changes in Ownership, Transfers:</strong> Establishes rules for the transfer of water licences and allocations between holders, including conditions and restrictions on licence transfers.</li><li><strong>Part 6 — Water Management Works and Undertakings:</strong> Governs the construction, operation, and maintenance of water management infrastructure such as dams, canals, and drainage works.</li><li><strong>Part 7 — Remedial Measures:</strong> Provides authority to order remediation when water resources are adversely affected, including restoration of watercourses and water bodies.</li><li><strong>Part 8 — Notice:</strong> Establishes notice requirements for decisions, orders, and other administrative actions under the Act.</li><li><strong>Part 9 — Appeals:</strong> Defines the right of appeal to the Environmental Appeals Board for decisions under the Act, including approvals, licences, and enforcement orders.</li><li><strong>Part 10 — Inquiry and Enforcement Orders:</strong> Grants powers to conduct inquiries and issue enforcement orders, including water management orders and emergency flood or drought response orders.</li><li><strong>Part 11 — Offences, Penalties and Related Matters:</strong> Establishes offences and penalties for violations of the Act, including unauthorized diversions, failure to comply with orders, and interference with water management works.</li><li><strong>Part 12 — Civil Matters:</strong> Addresses civil liability arising from water use, including damage caused by flooding, unauthorized diversions, or failure to maintain water management works.</li><li><strong>Part 13 — Miscellaneous Matters:</strong> Contains regulation-making authority, provisions for Crown immunity, and other general matters.</li><li><strong>Part 14 — Transitional:</strong> Transitions rights and agreements from the previous Water Resources Act to the current Act.</li></ul><p>The Water Act is supported by regulations including the Water (Ministerial) Regulation, Water (Offences and Penalties) Regulation, and various approved water management plans.</p>",
+      "sections": [
+        {
+          "ref": "Part 4",
+          "title": "Approvals, Licences, Preliminary Certificates, Registrations",
+          "description": "Governs the issuance, amendment, suspension, and cancellation of water licences and approvals. Sets out conditions and the process for obtaining authorization to divert water.",
+          "anchor_id": "sec-wa-p4",
+          "services": [
+            {
+              "name": "Apply for a water licence or approval",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 1,
+              "ms_name": "Get water licences, approvals, and well information"
+            },
+            {
+              "name": "Manage water allocation and watershed planning",
+              "type": "foundational",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 0,
+              "ms_name": ""
+            }
+          ]
+        },
+        {
+          "ref": "Part 2",
+          "title": "Planning and Environmental Assessment — Groundwater and Well Records",
+          "description": "Provides for the development of water management plans and the collection and reporting of groundwater data, including water well records.",
+          "anchor_id": "sec-wa-p2",
+          "services": [
+            {
+              "name": "Look up groundwater information and water well records",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 1,
+              "ms_name": "Get water licences, approvals, and well information"
+            }
+          ]
+        },
+        {
+          "ref": "Part 10",
+          "title": "Inquiry and Enforcement Orders — Flood and Drought Response",
+          "description": "Grants powers to issue water management orders and emergency flood or drought response orders, including restrictions on water use during drought conditions.",
+          "anchor_id": "sec-wa-p10",
+          "services": [
+            {
+              "name": "Access drought information and water conservation guidance",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 2,
+              "ms_name": "Prepare for and respond to flood and drought"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "WA-W",
+      "full_name": "Wildlife Act",
+      "color": "#c62828",
+      "citation": "RSA 2000, c W-10",
+      "summary": "Governs the management, conservation, and protection of wildlife in Alberta, including Crown ownership of wildlife, hunting licences and permits, species at risk designations, possession and commerce in animals, and enforcement of wildlife regulations.",
+      "full_text": "<h3>Wildlife Act</h3><p><strong>Citation:</strong> RSA 2000, c W-10</p><p>The Wildlife Act is Alberta's primary statute for the management and conservation of wildlife resources. It establishes Crown ownership of wildlife and provides the legal framework for hunting, species protection, and wildlife management.</p><h4>Structure (9 Parts)</h4><ul><li><strong>Part 1 — Administration:</strong> Establishes ministerial authority over wildlife management, provides for the appointment of wildlife officers, and sets out general administrative powers including wildlife surveys, management programs, and co-operative agreements with other jurisdictions.</li><li><strong>Part 2 — Relationship of the Crown to Wildlife:</strong> Declares that all wildlife in Alberta is the property of the Crown. Establishes the Crown's right to manage wildlife populations and sets out the obligations of landowners in relation to wildlife on their property.</li><li><strong>Part 3 — Licences, Permits and Authorizations:</strong> Governs the issuance of hunting licences, permits, and authorizations. Sets out eligibility requirements, allocation processes (including draws and quotas), and the conditions attached to various types of hunting and trapping authorizations.</li><li><strong>Part 4 — Hunting and Related Activities:</strong> Regulates hunting practices, seasons, bag limits, methods, and prohibited activities. Includes provisions for the protection of wildlife during vulnerable periods and restrictions on hunting near occupied dwellings.</li><li><strong>Part 5 — Possession of and Commerce in Animals:</strong> Controls the possession, sale, purchase, trade, and export of wildlife and wildlife products. Regulates taxidermy, wildlife exhibits, and the keeping of captive wildlife.</li><li><strong>Part 6 — Enforcement:</strong> Establishes enforcement powers including search, seizure, inspection, and investigation. Provides for the forfeiture of equipment used in offences and the suspension of licences.</li><li><strong>Part 7 — Evidence:</strong> Defines rules for the admissibility and presentation of evidence in legal proceedings under the Act, including presumptions and certificates.</li><li><strong>Part 8 — Offences and Penalties:</strong> Lists offences and corresponding penalties for violations, including fines, imprisonment, and mandatory licence suspensions for serious offences such as poaching.</li><li><strong>Part 9 — Regulations and Transitional Provisions:</strong> Authorizes the making of regulations covering species designations, hunting seasons, bag limits, and other matters. Includes transitional provisions from the previous Wildlife Act.</li></ul><p>The Wildlife Act is supported by the Wildlife Regulation, which provides detailed rules for hunting seasons, bag limits, licensing, and species designations including the listing of species at risk.</p>",
+      "sections": [
+        {
+          "ref": "Part 1",
+          "title": "Administration — Wildlife Management and Species Designation",
+          "description": "Establishes the Minister's authority over wildlife management programs, wildlife surveys, species at risk designations, and co-operative agreements with other jurisdictions for species conservation.",
+          "anchor_id": "sec-waw-p1",
+          "services": [
+            {
+              "name": "Look up the status of a wild species in Alberta",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 3,
+              "ms_name": "Protect wildlife and species at risk"
+            }
+          ]
+        },
+        {
+          "ref": "Part 6",
+          "title": "Enforcement — Wildlife Concerns and Human-Wildlife Interaction",
+          "description": "Establishes enforcement powers and provides the framework for responding to wildlife concerns, human-wildlife conflicts, and reports of injured, orphaned, or problem wildlife.",
+          "anchor_id": "sec-waw-p6",
+          "services": [
+            {
+              "name": "Report a wildlife concern or human-wildlife interaction",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 3,
+              "ms_name": "Protect wildlife and species at risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "EMCRA",
+      "full_name": "Emissions Management and Climate Resilience Act",
+      "color": "#c62828",
+      "citation": "SA 2003, c C-16.7",
+      "summary": "Establishes Alberta's framework for managing greenhouse gas emissions from large industrial facilities, including the Technology Innovation and Emissions Reduction (TIER) system, emissions reporting requirements, offset credits, and performance credits for reducing industrial carbon emissions.",
+      "full_text": "<h3>Emissions Management and Climate Resilience Act</h3><p><strong>Citation:</strong> SA 2003, c C-16.7 (formerly the Climate Change and Emissions Management Act)</p><p>The Emissions Management and Climate Resilience Act (EMCRA) is Alberta's primary statute for regulating industrial greenhouse gas emissions. Originally enacted in 2003 as the Climate Change and Emissions Management Act, it was renamed and updated to reflect the province's evolving approach to emissions management and climate resilience.</p><h4>Key Provisions</h4><ul><li><strong>Emissions Reporting:</strong> Requires large industrial facilities (emitting 100,000 tonnes or more of CO₂ equivalent annually) to report their greenhouse gas emissions to the regulator. Establishes reporting methodologies, verification requirements, and timelines.</li><li><strong>TIER Regulatory Framework:</strong> Enables the Technology Innovation and Emissions Reduction (TIER) Regulation, which requires regulated facilities to meet facility-specific emissions benchmarks. Facilities that exceed their benchmark must comply by improving operations, using emissions offset credits, using emissions performance credits, or contributing to the TIER fund.</li><li><strong>Emissions Offset Credits:</strong> Establishes the framework for generating, registering, and retiring offset credits from verified emission reduction projects across the province. Allows facilities to use offset credits toward their compliance obligations.</li><li><strong>Emissions Performance Credits:</strong> Allows facilities that outperform their benchmark to generate emissions performance credits, which can be banked or sold to other regulated facilities.</li><li><strong>TIER Fund:</strong> Establishes the fund into which compliance payments are directed. The fund supports technology and innovation to reduce greenhouse gas emissions in Alberta.</li><li><strong>Climate Resilience:</strong> Provides authority for programs and initiatives related to climate adaptation and resilience, including support for communities and sectors adapting to climate change impacts.</li><li><strong>Administration and Enforcement:</strong> Sets out administrative powers, inspection and audit authorities, penalties for non-compliance with reporting and reduction obligations, and the right of appeal.</li></ul><p>EMCRA is supported by the Technology Innovation and Emissions Reduction Regulation, the Carbon Competitiveness Incentive Regulation (predecessor), and the Standard for Greenhouse Gas Emission Offset Project Developers.</p>",
+      "sections": [
+        {
+          "ref": "Emissions Reporting",
+          "title": "Greenhouse Gas Emissions Reporting and Verification",
+          "description": "Requires large industrial emitters to report greenhouse gas emissions annually. Establishes methodologies, verification standards, and timelines for emissions reporting under the TIER framework.",
+          "anchor_id": "sec-emcra-reporting",
+          "services": [
+            {
+              "name": "Report greenhouse gas emissions under the regulatory framework",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Report and reduce industrial emissions"
+            }
+          ]
+        },
+        {
+          "ref": "Offset and Performance Credits",
+          "title": "Emissions Offset Credits and Performance Credits",
+          "description": "Establishes the framework for generating, registering, and trading emissions offset credits and performance credits. Allows regulated facilities to use credits toward compliance obligations.",
+          "anchor_id": "sec-emcra-credits",
+          "services": [
+            {
+              "name": "Purchase or sell emissions offset credits and performance credits",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Report and reduce industrial emissions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 4,
+    "sections_count": 13,
+    "services_with_leg_count": 15,
+    "services_multi_act_count": 0
+  }
+}

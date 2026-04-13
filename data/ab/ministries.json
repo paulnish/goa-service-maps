@@ -1,0 +1,159 @@
+[
+  {
+    "prefix": "tec",
+    "name": "Transportation and Economic Corridors",
+    "short_name": "Transportation & Economic Corridors",
+    "blurb": "Plans, builds, operates, and maintains Alberta's highway network, trade corridors, water infrastructure, and municipal transportation -- connecting communities and enabling economic growth."
+  },
+  {
+    "prefix": "alss",
+    "name": "Assisted Living and Social Services",
+    "short_name": "Assisted Living & Social Services",
+    "blurb": "Supports Albertans through employment supports, disability supports, prevention of elder abuse, community well-being, housing stability, health benefits, and financial assistance programs."
+  },
+  {
+    "prefix": "jus",
+    "name": "Justice",
+    "short_name": "Justice",
+    "blurb": "Ensures a fair and accessible justice system for all Albertans -- administering courts, prosecuting criminal offences, resolving family disputes, enforcing support orders, overseeing legal aid, registering land titles, and supporting victims of crime."
+  },
+  {
+    "prefix": "test",
+    "name": "Ministry of Parks and Outdoor Recreation",
+    "short_name": "Parks & Outdoor Rec",
+    "blurb": "TEST DATA — Manages provincial parks, campgrounds, trails, and outdoor recreation programs across the province.",
+    "is_test": true
+  },
+  {
+    "prefix": "ae",
+    "name": "Advanced Education",
+    "short_name": "Advanced Education",
+    "blurb": "Supports Albertans through accessible, affordable post-secondary education, student financial aid, apprenticeship and trades training, and international education — building skills for jobs and a prosperous economy."
+  },
+  {
+    "prefix": "edu",
+    "name": "Education and Childcare",
+    "short_name": "Education & Childcare",
+    "blurb": "Supports students, parents, and educators through a strong kindergarten to Grade 12 education system, and ensures families have access to quality, affordable childcare."
+  },
+  {
+    "prefix": "cfs",
+    "name": "Children and Family Services",
+    "short_name": "Children & Family Services",
+    "blurb": "Helps build strong, resilient families and communities through child intervention services, foster and kinship care, adoption, youth transitions, and family violence prevention."
+  },
+  {
+    "prefix": "fp",
+    "name": "Forestry and Parks",
+    "short_name": "Forestry & Parks",
+    "blurb": "Protects and manages Alberta's forests, wildfire response, and provincial parks — overseeing sustainable forest management, timber allocation, wildfire prevention and suppression, and outdoor recreation on public lands."
+  },
+  {
+    "prefix": "ts",
+    "name": "Tourism and Sport",
+    "short_name": "Tourism & Sport",
+    "blurb": "Grows Alberta's visitor economy, develops tourism destinations, supports sport and recreation participation, funds community recreation infrastructure, and ensures fairness and safety in sport."
+  },
+  {
+    "prefix": "acsw",
+    "name": "Arts, Culture and Status of Women",
+    "short_name": "Arts, Culture & Status of Women",
+    "blurb": "Supports Alberta's arts sector and creative industries, preserves heritage and history, funds community organizations and facilities, provides French-language services, and advances equality and safety for women and girls."
+  },
+  {
+    "prefix": "au",
+    "name": "Affordability and Utilities",
+    "short_name": "Affordability & Utilities",
+    "blurb": "Leads cross-government efforts to make everyday life more affordable, manages policy for Alberta's electricity and natural gas markets, supports utility consumers, and oversees rural utility infrastructure."
+  },
+  {
+    "prefix": "ag",
+    "name": "Agriculture and Irrigation",
+    "short_name": "Agriculture & Irrigation",
+    "blurb": "Supports Alberta's agriculture and food sectors through risk management, lending, food safety, animal health, pest and weed management, irrigation, and market development."
+  },
+  {
+    "prefix": "em",
+    "name": "Energy and Minerals",
+    "short_name": "Energy & Minerals",
+    "blurb": "Manages the development of Alberta's energy and mineral resources, grants industry the right to explore and develop oil, natural gas, oil sands, coal, and minerals, administers royalty and fiscal systems, and advances market access, hydrogen, CCUS, and critical minerals."
+  },
+  {
+    "prefix": "epa",
+    "name": "Environment and Protected Areas",
+    "short_name": "Environment & Protected Areas",
+    "blurb": "Protects Alberta's air, water, land, and biodiversity — monitoring air quality, managing water licences, conducting environmental assessments, regulating industrial emissions, overseeing waste management and recycling, and conserving wildlife and species at risk."
+  },
+  {
+    "prefix": "pphs",
+    "name": "Primary and Preventative Health Services",
+    "short_name": "Primary & Preventative Health",
+    "blurb": "Ensures all eligible Albertans have health care insurance coverage, administers drug benefit and aids to daily living programs, supports access to primary care and family doctors, delivers immunization and communicable disease prevention programs, and regulates health professions."
+  },
+  {
+    "prefix": "hshs",
+    "name": "Hospital and Surgical Health Services",
+    "short_name": "Hospital & Surgical Health",
+    "blurb": "Delivers emergency, hospital, and surgical care to Albertans — overseeing acute care facilities, surgical wait times, cancer care, organ and tissue donation, health system quality, and patient advocacy through the Office of the Alberta Health Advocates."
+  },
+  {
+    "prefix": "mha",
+    "name": "Mental Health and Addiction",
+    "short_name": "Mental Health & Addiction",
+    "blurb": "Manages Alberta's recovery-oriented system of mental health and addiction care — providing crisis support, counselling, addiction treatment, recovery communities, harm reduction services, and child and youth mental health programs."
+  },
+  {
+    "prefix": "cpe",
+    "name": "Communications and Public Engagement",
+    "short_name": "Communications & Public Engagement",
+    "blurb": "Delivers government information to Albertans through news, digital channels, and publications, coordinates public consultations and engagement on policy decisions, manages the alberta.ca digital platform, and administers freedom of information and privacy protection for public bodies."
+  },
+  {
+    "prefix": "jeti",
+    "name": "Jobs, Economy, Trade and Immigration",
+    "short_name": "Jobs, Economy, Trade & Immigration",
+    "blurb": "Supports Alberta's workforce and economic growth through employment standards enforcement, workplace health and safety, labour relations, trade and investment attraction, provincial immigration pathways, newcomer settlement and integration services, and multiculturalism and inclusion initiatives."
+  },
+  {
+    "prefix": "ir",
+    "name": "Indigenous Relations",
+    "short_name": "Indigenous Relations",
+    "blurb": "Builds and maintains the Government of Alberta's relationships with First Nations, Métis Settlements, and Métis communities — managing Crown consultation on land and resource decisions, supporting Indigenous economic and community development, administering Métis Settlement governance, and leading reconciliation initiatives."
+  },
+  {
+    "prefix": "infra",
+    "name": "Infrastructure",
+    "short_name": "Infrastructure",
+    "blurb": "Plans, builds, and manages Alberta's public infrastructure — delivering capital projects for schools and health facilities, managing government buildings and properties, overseeing public-private partnerships, administering prompt payment for construction contracts, and protecting the province's heritage resources."
+  },
+  {
+    "prefix": "tbf",
+    "name": "Treasury Board and Finance",
+    "short_name": "Treasury Board & Finance",
+    "blurb": "Manages Alberta's fiscal framework, administers provincial taxes and levies, oversees pensions, insurance, and financial regulation, manages unclaimed property, and regulates gaming, liquor, and cannabis — ensuring sound fiscal management and consumer protection."
+  },
+  {
+    "prefix": "ma",
+    "name": "Municipal Affairs",
+    "short_name": "Municipal Affairs",
+    "blurb": "Supports Alberta's municipal governance, property assessment, building safety standards, and community infrastructure — providing oversight of municipal finances, administering safety codes, ensuring accessible libraries, and supporting disaster recovery programs."
+  },
+  {
+    "prefix": "pses",
+    "name": "Public Safety and Emergency Services",
+    "short_name": "Public Safety & Emergency Services",
+    "blurb": "Delivers public safety, emergency management, and victim services. Oversees policing standards, emergency preparedness and response, disaster recovery support, victim assistance, and provincial correctional facilities to keep Albertans safe and supported."
+  },
+  {
+    "prefix": "sa",
+    "name": "Service Alberta and Red Tape Reduction",
+    "short_name": "Service Alberta & Red Tape Reduction",
+    "blurb": "Provides Albertans with access to essential registry and identity services, protects consumers in the marketplace, and leads government-wide efforts to reduce red tape and improve digital service delivery."
+  },
+  {
+    "prefix": "ti",
+    "name": "Technology and Innovation",
+    "short_name": "Technology & Innovation",
+    "blurb": "Develops and delivers digital government services, expands broadband connectivity across Alberta, supports innovation and research, and protects Albertans' privacy and data in the digital age."
+  }
+]

@@ -1,0 +1,806 @@
+{
+  "prefix": "scss_dia",
+  "parent_ministry": "scss",
+  "parent_ministry_name": "Seniors, Community & Social Services",
+  "parent_goal_number": 1,
+  "parent_goal_name": "Albertans can meet their basic needs and live with financial stability",
+  "parent_goal_color": "#0070c0",
+  "parent_ms_number": 1,
+  "parent_ms_name": "Get help meeting basic needs",
+  "parent_service": "Get income, health and other benefits for a severe disability",
+  "full_name": "Disability Income Assistance",
+  "short_name": "Disability Income Assistance",
+  "blurb": "Income support, health benefits, and employment pathways for Albertans with severe disabilities — including AISH and the new Alberta Disability Assistance Program (ADAP).",
+  "nav_name": "Disability Income Assistance",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "title": "GOAL 1",
+      "short_name": "Eligible Albertans receive the right disability income support",
+      "legend_label": "Eligibility & Application",
+      "description": "Ensure people with severe disabilities can apply for the income support program that best fits their situation.",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Apply for disability income assistance",
+          "foundational_services": [
+            {
+              "id": "f-1",
+              "name": "Adjudicate benefit decisions and eligibility",
+              "desc": "Caseworkers assess medical, financial, and work capacity information to determine program placement and benefit levels",
+              "users": "Internal program staff",
+              "channels": [],
+              "legislation": [
+                {
+                  "abbrev": "AISH",
+                  "color": "#0070c0",
+                  "full_name": "Assured Income for the Severely Handicapped Act"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "id": "f-3",
+              "name": "Conduct eligibility reviews of existing cases",
+              "desc": "Periodic reassessment of active recipients to confirm continued eligibility based on medical condition, income, assets, and living arrangements",
+              "users": "Internal program staff",
+              "channels": [],
+              "legislation": [
+                {
+                  "abbrev": "AISH",
+                  "color": "#0070c0",
+                  "full_name": "Assured Income for the Severely Handicapped Act"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ],
+          "supporting": [
+            {
+              "name": "Check your eligibility for AISH or ADAP",
+              "desc": "Determine eligibility based on disability severity, work capacity, financial situation, and Alberta residency. A single assessment determines whether AISH or ADAP is the right fit.",
+              "users": "Persons with severe disabilities, potential applicants",
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/aish",
+                  "url": "https://www.alberta.ca/aish"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Alberta Supports Centre"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Apply online through MyAlbertaSupports",
+              "desc": "Submit a combined AISH/ADAP application online. You'll need your Alberta.ca account, medical documentation from your doctor, financial information, and proof of residency.",
+              "users": "Applicants with online access",
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "MyAlbertaSupports: apply online",
+                  "url": "https://www.alberta.ca/how-to-use-my-alberta-supports"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Apply by paper or with help",
+              "desc": "Complete a paper application form, or get help from an Alberta Supports Centre or by phone. Staff can assist with the application process.",
+              "users": "Applicants needing assistance or without internet",
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Alberta Supports Centre"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail to local AISH office"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Submit medical documentation",
+              "desc": "Your doctor completes the medical assessment confirming your condition is severe and permanent (AISH) or significantly limits work capacity (ADAP). The form documents diagnosis, treatment history, and prognosis.",
+              "users": "Applicants and their physicians",
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "MyAlbertaSupports: upload documents",
+                  "url": "https://www.alberta.ca/how-to-use-my-alberta-supports"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Request rapid reinstatement",
+              "desc": "If you left AISH within the last 24 months, you can request fast-tracked reinstatement without a full reapplication — provided the original eligibility criteria are still met.",
+              "users": "Former AISH recipients (within 24 months)",
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Alberta Supports Centre"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#548235",
+      "title": "GOAL 2",
+      "short_name": "Recipients can manage their benefits and meet ongoing obligations",
+      "legend_label": "Benefit Management",
+      "description": "Support recipients in managing their ongoing benefits, reporting changes, requesting additional support, and handling account administration.",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 2,
+          "name": "Manage your ongoing benefits",
+          "foundational_services": [
+            {
+              "id": "f-2",
+              "name": "Process monthly payments",
+              "desc": "Calculate and issue monthly income payments, child benefits, and personal benefits to all active recipients approximately four business days before the first of each month",
+              "users": "Internal program staff",
+              "channels": [],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "id": "f-4",
+              "name": "Process income and asset assessments",
+              "desc": "Evaluate employment income, other income sources, and assets against exemption thresholds (AISH: $1,072/month employment exemption; ADAP: $700/month) to calculate monthly benefit amounts",
+              "users": "Internal program staff",
+              "channels": [],
+              "legislation": [],
+              "mandate_tags": []
+            }
+          ],
+          "supporting": [
+            {
+              "name": "Report a change in your circumstances",
+              "desc": "You must report changes as soon as they happen: income, employment, living arrangements, medical condition, family situation, or assets. Late reporting can cause overpayments you'll need to repay.",
+              "users": "Current recipients",
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "MyAlbertaSupports portal",
+                  "url": "https://www.alberta.ca/how-to-use-my-alberta-supports"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Alberta Supports Centre"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail to local AISH office"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Submit your income statement",
+              "desc": "You must report your income regularly to ensure your benefits are calculated correctly. Employment income, other income, and assets are assessed against exemption thresholds. Failure to report can result in overpayments that must be repaid.",
+              "users": "Current recipients with income",
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "MyAlbertaSupports portal",
+                  "url": "https://www.alberta.ca/how-to-use-my-alberta-supports"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Alberta Supports Centre"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail to local AISH office"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Set up or change your direct deposit",
+              "desc": "Arrange for your monthly benefit payments to be deposited directly into your bank account, or update your banking information when it changes.",
+              "users": "Current recipients",
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "MyAlbertaSupports portal",
+                  "url": "https://www.alberta.ca/how-to-use-my-alberta-supports"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Alberta Supports Centre"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Authorize a third party to act on your behalf",
+              "desc": "Designate a personal representative, financial administrator, or trustee. You can also authorize third-party payment (e.g., rent to landlord), consent to release information, or enroll in the Informal Benefits Administration Program.",
+              "users": "Recipients needing assistance managing benefits",
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Alberta Supports Centre"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail to local AISH office"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AISH",
+                  "color": "#0070c0",
+                  "full_name": "Assured Income for the Severely Handicapped Act"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Get a replacement health benefits card",
+              "desc": "Request a new Alberta Adult Health Benefit card if yours is lost, stolen, or damaged. The card provides coverage for prescription drugs, dental, optical, ambulance, and medical supplies.",
+              "users": "Current recipients",
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Alberta Supports Centre"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Request a personal benefit",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Request a special diet benefit",
+              "desc": "If your disability requires a medically prescribed special diet (diabetic, gluten-free, renal, etc.), apply for a monthly supplement of $26–$132 depending on diet type. Multiple diets can be combined up to policy maximums.",
+              "users": "Recipients with medically required diets",
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Alberta Supports Centre"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Request medical equipment or supplies",
+              "desc": "Apply for coverage of disability-related medical equipment (wheelchairs, power scooters, CPAP devices — up to $2,351/item) or ongoing medical supplies (up to $473/month). Includes maintenance and repair of approved equipment.",
+              "users": "Recipients with medical equipment needs",
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Alberta Supports Centre"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail to local AISH office"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Request travel benefits",
+              "desc": "Apply for travel cost coverage for health-related travel ($0.37/km), court appearances, or approved training. Includes food ($26/day) and accommodation at actual cost when overnight travel is required.",
+              "users": "Recipients who need to travel for health or program reasons",
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Alberta Supports Centre"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Request a specialized clothing or service animal benefit",
+              "desc": "Apply for a specialized clothing benefit (up to $354/year) if your disability causes unusual wear or requires adapted clothing, or a service animal benefit ($63/month) for a certified service dog.",
+              "users": "Recipients with clothing or service animal needs",
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Alberta Supports Centre"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Request a moving benefit",
+              "desc": "Apply for coverage of moving costs when relocating due to an adapted residence need, escaping abuse, employment, or health and safety reasons. Assessed case by case.",
+              "users": "Recipients who need to relocate",
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Alberta Supports Centre"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Request other personal benefits",
+              "desc": "Apply for additional support not covered by other categories: prenatal needs ($117/month from 14 weeks pregnant), infant care ($296 one-time per infant), remote community benefit ($48/month), medical alert service (actual cost), or other unusual needs assessed case by case.",
+              "users": "Recipients with specific needs",
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Alberta Supports Centre"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Claim funeral benefits",
+              "desc": "Survivors of a deceased AISH client can apply for funeral benefits: burial or cremation (up to $4,601), ceremony costs (up to $1,041), and related expenses. Processed through the Health and Funeral Benefit Unit.",
+              "users": "Family members or estate representatives of deceased clients",
+              "user_groups": [
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Health and Funeral Benefit Unit"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail to HFBU"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "name": "Request a review of your benefits",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Request reassessment between AISH and ADAP",
+              "desc": "If your work capacity or medical condition changes, request reassessment to move between AISH and ADAP. During the transition period (July 2026 – December 2027), ADAP clients can request AISH reassessment.",
+              "users": "Current AISH or ADAP recipients",
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Alberta Supports Centre"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Appeal a decision about your eligibility or benefits",
+              "desc": "If you disagree with an AISH or ADAP decision, you have 30 days to submit a Notice of Appeal. The process moves through administrative review, then an Appeal Panel hearing. A further appeal to the Court of King's Bench (judicial review) is available within 30 days of the panel decision.",
+              "users": "Applicants or recipients who disagree with a decision",
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Appeals Secretariat"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail Notice of Appeal"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Appeals Secretariat offices (Edmonton, Calgary, Red Deer, Lethbridge)"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AISH",
+                  "color": "#0070c0",
+                  "full_name": "Assured Income for the Severely Handicapped Act"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Get independent advocacy for your disability rights",
+              "desc": "The Office of the Disability Advocate and the Alberta Ombudsman can help if you have concerns about how your case was handled or need support navigating the system.",
+              "users": "Recipients with complaints or needing advocacy",
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Office of the Disability Advocate"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: disability advocate",
+                  "url": "https://www.alberta.ca/advocate-persons-disabilities"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#bf8f00",
+      "title": "GOAL 3",
+      "short_name": "ADAP recipients are supported toward greater independence through employment",
+      "legend_label": "Employment & Transition",
+      "description": "Enable ADAP recipients to pursue employment opportunities with appropriate supports and income exemptions.",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 5,
+          "name": "Get employment support",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Access disability-related employment supports",
+              "desc": "ADAP recipients can access employment services, job training, and workplace supports designed for people with disabilities. The program encourages workforce participation with a $700/month employment income exemption.",
+              "users": "ADAP recipients with work capacity",
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca: employment supports",
+                  "url": "https://www.alberta.ca/disability-related-employment-supports"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Supports: 1-877-644-9992"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Alberta Supports Centre"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-5",
+      "name": "Administer overpayments and debt recovery",
+      "desc": "Assess overpayments caused by unreported changes or administrative error, notify clients, determine exemption eligibility, and manage recovery through benefit deductions or repayment agreements",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [
+        {
+          "abbrev": "AISH",
+          "color": "#0070c0",
+          "full_name": "Assured Income for the Severely Handicapped Act"
+        }
+      ],
+      "mandate_tags": []
+    },
+    {
+      "id": "f-6",
+      "name": "Index benefits annually",
+      "desc": "Adjust benefit rates each year based on CPI changes to maintain purchasing power for recipients",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": []
+    },
+    {
+      "id": "f-7",
+      "name": "Manage personal representative and trustee oversight",
+      "desc": "Register, monitor, and oversee personal representatives, financial administrators, and trustees who manage benefits on behalf of clients, including compliance with reporting requirements",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [
+        {
+          "abbrev": "AISH",
+          "color": "#0070c0",
+          "full_name": "Assured Income for the Severely Handicapped Act"
+        }
+      ],
+      "mandate_tags": []
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-mail",
+      "label": "Mail",
+      "bg_color": "#f3e5f5",
+      "text_color": "#6a1b9a"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    }
+  ],
+  "user_group_filters": [
+    "Individuals",
+    "Persons with disabilities",
+    "Families"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg_color": "#c8e6c9",
+      "text_color": "#1b5e20"
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg_color": "#e0f2f1",
+      "text_color": "#00695c"
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg_color": "#e1bee7",
+      "text_color": "#6a1b9a"
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg_color": "#f3e5f5",
+      "text_color": "#6a1b9a"
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    "ch-registry": {
+      "label": "Registry agent",
+      "bg_color": "#fff8e1",
+      "text_color": "#f57f17"
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg_color": "#f5f5f5",
+      "text_color": "#616161"
+    }
+  },
+  "digital_channels": [
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-web"
+  ]
+}

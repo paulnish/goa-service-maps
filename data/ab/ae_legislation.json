@@ -1,0 +1,153 @@
+{
+  "prefix": "ae",
+  "name": "Advanced Education",
+  "short_name": "Advanced Education",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "Education & skills for careers",
+      "legend_label": "Education & skills for careers",
+      "main_services": [
+        {"number": 1, "name": "Find and access a post-secondary program"},
+        {"number": 2, "name": "Get student financial aid"}
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#548235",
+      "short_name": "Accountable & innovative learning system",
+      "legend_label": "Learning system quality",
+      "main_services": [
+        {"number": 3, "name": "Become an apprentice or tradesperson"},
+        {"number": 4, "name": "Explore career pathways"}
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#bf8f00",
+      "short_name": "Economy strengthened by PSIs, trades & regulatory bodies",
+      "legend_label": "Economic & community impact",
+      "main_services": [
+        {"number": 5, "name": "Study in Alberta as an international student"},
+        {"number": 6, "name": "Study abroad as an Albertan"}
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "PSLA",
+      "full_name": "Post-secondary Learning Act",
+      "color": "#0070c0",
+      "citation": "SA 2003, c P-19.5",
+      "summary": "Establishes the governance, funding, and quality assurance framework for Alberta's publicly funded post-secondary institutions including universities, comprehensive community colleges, polytechnics, and The Banff Centre, and authorizes the Minister to oversee program approval and institutional accountability.",
+      "full_text": "<h3>Post-secondary Learning Act</h3><p><strong>Citation:</strong> SA 2003, c P-19.5</p><p>The Post-secondary Learning Act (PSLA) is Alberta's principal statute governing the publicly funded post-secondary education system. It establishes the legal framework for how universities, colleges, polytechnics, and other post-secondary institutions are created, governed, funded, and held accountable.</p><h4>Part Structure</h4><ul><li><strong>Part 1 — Universities:</strong> Establishes the governance framework for Alberta's universities, including board composition, senate powers, academic governance, degree-granting authority, and the relationship between universities and the Minister. Universities have broad autonomy in academic matters while remaining accountable for public funding.</li><li><strong>Part 2 — Comprehensive Community Colleges:</strong> Provides the legal framework for community colleges to offer academic, vocational, and apprenticeship programming. Colleges serve as accessible entry points to post-secondary education and respond to regional labour market needs.</li><li><strong>Part 3 — The Banff Centre:</strong> Establishes The Banff Centre as a specialized arts and creativity institution with its own governance structure and mandate.</li><li><strong>Part 4 — Public and Private Post-secondary Institutions:</strong> Authorizes the Campus Alberta Quality Council to review and approve degree programs, establishes requirements for private institutions seeking to grant credentials in Alberta, and provides for ministerial oversight of program quality and credential integrity across the system.</li><li><strong>Part 5 — Transitional Provisions:</strong> Contains transitional, consequential, and coming-into-force provisions.</li></ul><h4>Key Provisions</h4><ul><li><strong>Institutional Governance:</strong> Each institution has a board of governors responsible for management and a general faculties council or academic council responsible for academic matters. The Minister approves mandates and may issue binding policy directions.</li><li><strong>Program Approval:</strong> New degree programs must be reviewed by the Campus Alberta Quality Council. The Minister approves new programs and credentials to ensure quality and avoid unnecessary duplication.</li><li><strong>Funding and Accountability:</strong> The Minister provides operating grants, capital funding, and targeted funding to institutions. Institutions must submit annual reports, business plans, and comprehensive institutional plans demonstrating how they meet provincial priorities.</li><li><strong>Student Financial Aid:</strong> The Act authorizes the Student Financial Assistance Act framework (separate statute) and the provision of scholarships, grants, and loans to support student access to post-secondary education.</li><li><strong>Tuition and Fees:</strong> The Minister may regulate tuition fee policies to balance institutional sustainability with student affordability.</li></ul>",
+      "sections": [
+        {
+          "ref": "Parts 1-3",
+          "title": "Governance of Universities, Colleges, and The Banff Centre",
+          "description": "Establishes the governance, mandate, and operational framework for Alberta's publicly funded universities, comprehensive community colleges, and The Banff Centre, including board composition, academic governance, and ministerial oversight.",
+          "anchor_id": "sec-psla-pt1-3",
+          "services": [
+            {
+              "name": "Fund and oversee post-secondary institutions",
+              "type": "foundational",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 0,
+              "ms_name": ""
+            },
+            {
+              "name": "Search and compare post-secondary programs",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Find and access a post-secondary program"
+            },
+            {
+              "name": "Apply to a post-secondary institution",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Find and access a post-secondary program"
+            }
+          ]
+        },
+        {
+          "ref": "Part 4",
+          "title": "Quality Assurance and Program Approval",
+          "description": "Authorizes the Campus Alberta Quality Council to review degree programs, establishes requirements for private institutions, and provides for ministerial oversight of credential quality across the system.",
+          "anchor_id": "sec-psla-pt4",
+          "services": [
+            {
+              "name": "Approve programs and credentials",
+              "type": "foundational",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 0,
+              "ms_name": ""
+            },
+            {
+              "name": "Find information about studying in Alberta",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#bf8f00",
+              "ms_number": 5,
+              "ms_name": "Study in Alberta as an international student"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "STAEA",
+      "full_name": "Skilled Trades and Apprenticeship Education Act",
+      "color": "#548235",
+      "citation": "SA 2021, c S-11.5",
+      "summary": "Modernizes Alberta's apprenticeship and skilled trades framework, establishing the regulatory structure for designated trades, apprentice registration, technical training, journeyperson certification, and credential recognition for out-of-province and international tradespeople.",
+      "full_text": "<h3>Skilled Trades and Apprenticeship Education Act</h3><p><strong>Citation:</strong> SA 2021, c S-11.5</p><p>The Skilled Trades and Apprenticeship Education Act (STAEA) replaced the Apprenticeship and Industry Training Act in 2021, modernizing Alberta's framework for skilled trades education and certification. It governs how trades are designated, how apprentices are trained, and how journeyperson credentials are issued and recognized.</p><h4>Key Provisions</h4><ul><li><strong>Designation of Trades:</strong> The Minister may designate trades and establish requirements for each designated trade including the ratio of apprentices to journeypersons, periods of technical training, and certification examination standards.</li><li><strong>Apprentice Registration:</strong> Individuals entering a designated trade must register as apprentices with the ministry. Registration requires an employer sponsor willing to provide on-the-job training. Apprenticeship combines alternating periods of workplace experience and institutional technical training.</li><li><strong>Technical Training:</strong> Apprentices attend technical training at approved post-secondary institutions during their apprenticeship. Training periods, curriculum, and completion requirements are established for each designated trade.</li><li><strong>Journeyperson Certification:</strong> Upon completing all apprenticeship periods and technical training, apprentices write a provincial certification examination. Successful candidates receive a journeyperson certificate authorizing them to practise their trade.</li><li><strong>Credential Recognition:</strong> The Act provides for recognition of trade credentials from other Canadian provinces and territories under interprovincial standards, and for assessment of international trade qualifications. Experienced tradespeople may challenge the certification exam without completing a full apprenticeship.</li><li><strong>Industry Pathways:</strong> The Act enables the creation of occupational pathways beyond traditional designated trades, connecting training to employer needs in emerging fields and non-designated occupations.</li><li><strong>Employer Obligations:</strong> Employers sponsoring apprentices must provide adequate training opportunities, maintain training records, and comply with the apprentice-to-journeyperson ratio requirements.</li><li><strong>Advisory Committees:</strong> The Minister may establish trade advisory committees to provide industry input on trade standards, training requirements, and certification processes.</li></ul>",
+      "sections": [
+        {
+          "ref": "Apprenticeship and Certification Provisions",
+          "title": "Apprentice Registration, Training, and Journeyperson Certification",
+          "description": "Establishes the framework for registering apprentices, completing technical training, writing certification examinations, and recognizing trade credentials from other jurisdictions.",
+          "anchor_id": "sec-staea-cert",
+          "services": [
+            {
+              "name": "Register as an apprentice",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#548235",
+              "ms_number": 3,
+              "ms_name": "Become an apprentice or tradesperson"
+            },
+            {
+              "name": "Write your journeyperson certification exam",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#548235",
+              "ms_number": 3,
+              "ms_name": "Become an apprentice or tradesperson"
+            },
+            {
+              "name": "Get your trade credential recognized",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#548235",
+              "ms_number": 3,
+              "ms_name": "Become an apprentice or tradesperson"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 2,
+    "sections_count": 3,
+    "services_with_leg_count": 6,
+    "services_multi_act_count": 0
+  }
+}

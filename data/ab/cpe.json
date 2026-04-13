@@ -1,0 +1,750 @@
+{
+  "prefix": "cpe",
+  "full_name": "Communications and Public Engagement",
+  "short_name": "Communications & Public Engagement",
+  "blurb": "Delivers government information to Albertans through news, digital channels, and publications, coordinates public consultations and engagement on policy decisions, manages the alberta.ca digital platform, and administers freedom of information and privacy protection for public bodies.",
+  "nav_name": "Communications & Public Engagement",
+  "has_registry_agents": false,
+  "_status": "draft",
+  "foundational_services": [],
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "OUTCOME 1: Albertans are informed about government decisions, services, and emergencies",
+      "short_name": "Government information & news",
+      "legend_label": "Information & news",
+      "description": "The ministry ensures Albertans receive timely, accurate, and accessible information about government decisions, programs, services, and emergencies through news releases, digital channels, publications, and media relations.",
+      "foundational_services": [
+        {
+          "name": "Set government communications policy and standards",
+          "desc": "Develops and enforces communications policy, advertising standards, election communication rules, social media policy, and alternative communications policy to ensure coordinated, ethical, and accessible government messaging across all ministries.",
+          "users": "Government communications staff, ministry branches",
+          "user_groups": ["Government"],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/communications-and-public-engagement",
+              "url": "https://www.alberta.ca/communications-and-public-engagement"
+            }
+          ],
+          "legislation": [],
+          "mandate_tags": ["communications"],
+          "taxonomy": {
+            "track": "individual",
+            "tier": "societal_needs_supports",
+            "domain": "safety_emergencies",
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get government news and announcements",
+          "supporting": [
+            {
+              "name": "Read government news releases and announcements",
+              "desc": "The Government of Alberta publishes news releases, statements, and announcements on alberta.ca/news. Citizens can browse by ministry, topic, or date to stay informed about government decisions, policy changes, funding announcements, and program updates.",
+              "users": "All Albertans, media, stakeholders",
+              "user_groups": ["General public", "Media"],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/news",
+                  "url": "https://www.alberta.ca/news"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "News subscription alerts",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["communications"],
+              "reach_estimate": {
+                "tier": "very_high",
+                "estimate": "Millions of page views annually",
+                "basis": "Primary news channel for all government announcements reaching the full Alberta population"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "communications",
+                "note": "Informed citizens can access programs, comply with regulations, and participate in democratic governance"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Subscribe to government news and topic alerts",
+              "desc": "Albertans can subscribe to email alerts for government news filtered by ministry, topic, or region. Subscribers receive notifications when new releases, announcements, or policy updates are published.",
+              "users": "Citizens, media, stakeholders wanting proactive updates",
+              "user_groups": ["General public", "Media"],
+              "channels": [
+                {
+                  "type": "ch-email",
+                  "label": "Email subscription service",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/news",
+                  "url": "https://www.alberta.ca/news"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["communications"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of subscribers",
+                "basis": "Email subscriptions for government news across all topics and ministries"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "communications",
+                "note": "Proactive notification ensures Albertans learn about relevant programs and deadlines"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Receive emergency alerts and critical safety information",
+              "desc": "The Government of Alberta issues emergency alerts for wildfires, severe weather, public safety threats, and other critical events through the Alberta Emergency Alert system. Alerts are distributed through mobile devices, broadcast media, and online channels.",
+              "users": "All Albertans during emergencies",
+              "user_groups": ["General public"],
+              "channels": [
+                {
+                  "type": "ch-app",
+                  "label": "Alberta Emergency Alert app"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/emergency",
+                  "url": "https://www.alberta.ca/emergency"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Broadcast alerts (TV, radio, wireless)"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["public-safety"],
+              "reach_estimate": {
+                "tier": "very_high",
+                "estimate": "All 4.6 million Albertans reachable",
+                "basis": "Wireless emergency alerts reach all mobile devices in affected areas"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "public-safety",
+                "note": "Timely emergency alerts save lives and enable evacuation and safety response"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Find government information and services online",
+          "supporting": [
+            {
+              "name": "Search for government services and information",
+              "desc": "Alberta.ca is the Government of Alberta's central website, providing access to all ministry services, programs, forms, and information. CPE manages the platform's content standards, information architecture, search functionality, and accessibility.",
+              "users": "All Albertans seeking government services or information",
+              "user_groups": ["General public"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca",
+                  "url": "https://www.alberta.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["digital-services"],
+              "reach_estimate": {
+                "tier": "very_high",
+                "estimate": "Tens of millions of visits annually",
+                "basis": "Central digital front door for all Government of Alberta services"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "digital-services",
+                "note": "Primary channel through which Albertans discover and access all government services"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Access government publications, reports, and data",
+              "desc": "The Open Government portal and alberta.ca provide access to government publications including annual reports, business plans, budget documents, datasets, and research reports across all ministries.",
+              "users": "Researchers, media, citizens, stakeholders",
+              "user_groups": ["General public", "Researchers", "Media"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "open.alberta.ca",
+                  "url": "https://open.alberta.ca"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Government publications"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["transparency"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of downloads and views annually",
+                "basis": "Open data portal and publications serve researchers, media, and engaged citizens"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "transparency",
+                "note": "Open data supports research, journalism, innovation, and democratic accountability"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "title": "OUTCOME 2: Albertans can participate in government decisions that affect them",
+      "short_name": "Public engagement & consultation",
+      "legend_label": "Engagement & consultation",
+      "description": "The ministry coordinates public engagement and consultation processes across government, giving Albertans opportunities to provide input on policies, programs, legislation, and infrastructure projects before decisions are made.",
+      "foundational_services": [
+        {
+          "name": "Develop public engagement policy, methods, and quality standards",
+          "desc": "Establishes standards and best practices for public engagement across government, including engagement frameworks, evaluation criteria, accessibility requirements, and reporting on how public input influenced decisions.",
+          "users": "Government engagement practitioners, policy staff",
+          "user_groups": ["Government"],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/public-engagement",
+              "url": "https://www.alberta.ca/public-engagement"
+            }
+          ],
+          "legislation": [],
+          "mandate_tags": ["engagement"],
+          "taxonomy": {
+            "track": "individual",
+            "tier": "societal_needs_supports",
+            "domain": "safety_emergencies",
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Participate in a public consultation or engagement",
+          "supporting": [
+            {
+              "name": "Find and join an open public consultation",
+              "desc": "Albertans can search for open public consultations and engagement opportunities across all government ministries. Topics range from policy development and legislative changes to infrastructure projects and program design. Each engagement explains the issue, timeline, and how to participate.",
+              "users": "All Albertans interested in contributing to government decisions",
+              "user_groups": ["General public"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Public engagement search",
+                  "url": "https://www.alberta.ca/public-engagement"
+                },
+                {
+                  "type": "ch-engage",
+                  "label": "Online engagement platform"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["engagement"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Tens of thousands of participants annually across all engagements",
+                "basis": "Multiple concurrent consultations on major policy and infrastructure decisions"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "engagement",
+                "note": "Public input improves policy decisions and builds social licence for government action"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Submit feedback on a proposed policy, regulation, or project",
+              "desc": "Albertans can submit written feedback, complete surveys, or participate in online discussions on proposed policies, regulations, and projects. Submissions are reviewed and considered in the decision-making process, with summary reports published afterward.",
+              "users": "Citizens, stakeholders, industry, organizations with views on government proposals",
+              "user_groups": ["General public", "Industry", "Organizations"],
+              "channels": [
+                {
+                  "type": "ch-engage",
+                  "label": "Online feedback and survey tools"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Written submissions by email",
+                  "url": null
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Written submissions by mail",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["engagement"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Thousands of submissions per major consultation",
+                "basis": "High-profile consultations on energy, health, education draw significant public response"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "engagement",
+                "note": "Structured feedback channels ensure diverse perspectives inform policy development"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              }
+            },
+            {
+              "name": "View results and outcomes of past public engagements",
+              "desc": "After a public engagement closes, the government publishes summary reports showing what was heard, how many people participated, and how public input influenced the final decision. This closes the feedback loop and builds public trust.",
+              "users": "Past participants, researchers, media, general public",
+              "user_groups": ["General public", "Researchers"],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Engagement outcome reports",
+                  "url": "https://www.alberta.ca/public-engagement"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Engagement summary publications"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["engagement", "transparency"],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Tens of thousands of report views annually",
+                "basis": "Published outcomes for all formal government engagements"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "engagement",
+                "note": "Transparency about how input was used maintains public trust and future participation"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Contact the government or your elected representative",
+          "supporting": [
+            {
+              "name": "Send a message to the Premier or a minister",
+              "desc": "Albertans can write directly to the Premier or any cabinet minister to share views, raise concerns, or request information. Contact forms, mailing addresses, and email contacts are published for all ministers.",
+              "users": "All Albertans",
+              "user_groups": ["General public"],
+              "channels": [
+                {
+                  "type": "ch-email",
+                  "label": "Premier and minister contact forms",
+                  "url": null
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Office of the Premier mailing address",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Government main switchboard",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["engagement"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Tens of thousands of messages annually",
+                "basis": "Premier and minister offices receive substantial public correspondence"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "engagement",
+                "note": "Direct communication channel between citizens and elected officials supports democratic accountability"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Find contact information for a government office or service",
+              "desc": "Alberta.ca provides a directory of government offices, ministry contacts, and service-specific phone numbers and email addresses. Albertans can find the right contact for any government program or inquiry.",
+              "users": "All Albertans needing to reach a specific government office",
+              "user_groups": ["General public"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Government directory",
+                  "url": "https://www.alberta.ca/government-directory"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Government main line 310-0000",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["communications"],
+              "reach_estimate": {
+                "tier": "very_high",
+                "estimate": "Hundreds of thousands of directory lookups and calls annually",
+                "basis": "Central contact point for navigating all government services"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "communications",
+                "note": "Efficient wayfinding reduces citizen frustration and connects people to the right service faster"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "title": "OUTCOME 3: Government information is accessible and privacy is protected",
+      "short_name": "Transparency & privacy",
+      "legend_label": "Transparency & privacy",
+      "description": "The ministry administers freedom of information and privacy protection legislation, ensuring Albertans can access government records, that personal information held by public bodies is protected, and that government operates with transparency and accountability.",
+      "foundational_services": [
+        {
+          "name": "Administer the freedom of information and privacy protection framework",
+          "desc": "Oversees the implementation of the Freedom of Information and Protection of Privacy Act across all public bodies, develops policies and guidelines, coordinates with the Information and Privacy Commissioner, and ensures public bodies comply with access and privacy obligations.",
+          "users": "Government FOIP coordinators, Information and Privacy Commissioner",
+          "user_groups": ["Government"],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/foip",
+              "url": "https://www.alberta.ca/freedom-of-information-and-protection-of-privacy"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "FOIP",
+              "color": "#c62828",
+              "full_name": "Freedom of Information and Protection of Privacy Act"
+            }
+          ],
+          "mandate_tags": ["transparency"],
+          "taxonomy": {
+            "track": "individual",
+            "tier": "identity_credentials_access",
+            "domain": "privacy_government_access",
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Request access to government records",
+          "supporting": [
+            {
+              "name": "Submit a freedom of information request",
+              "desc": "Any person can submit a formal access request under the FOIP Act to obtain records held by a Government of Alberta public body. Requests are processed within legislated timelines, with fees for search and copying. Certain records may be withheld under specific exemptions.",
+              "users": "Citizens, media, researchers, lawyers, organizations",
+              "user_groups": ["General public", "Media", "Researchers"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "FOIP access request form",
+                  "url": "https://www.alberta.ca/freedom-of-information-and-protection-of-privacy"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail request to public body FOIP coordinator",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FOIP",
+                  "color": "#c62828",
+                  "full_name": "Freedom of Information and Protection of Privacy Act"
+                }
+              ],
+              "mandate_tags": ["transparency"],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Thousands of FOIP requests annually across all public bodies",
+                "basis": "Established demand from media, researchers, and citizens seeking government records"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "transparency",
+                "note": "Freedom of information is a cornerstone of democratic accountability and public trust"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Appeal a decision on an access request",
+              "desc": "If a FOIP request is denied, partially granted, or if fees seem unreasonable, the requester can ask the Information and Privacy Commissioner to review the decision. The Commissioner can order disclosure or recommend changes.",
+              "users": "FOIP requesters dissatisfied with a public body's decision",
+              "user_groups": ["General public", "Media"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Request for review to the Commissioner",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Office of the Information and Privacy Commissioner",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FOIP",
+                  "color": "#c62828",
+                  "full_name": "Freedom of Information and Protection of Privacy Act"
+                }
+              ],
+              "mandate_tags": ["transparency"],
+              "reach_estimate": {
+                "tier": "low",
+                "estimate": "Hundreds of reviews requested annually",
+                "basis": "Subset of FOIP requesters who challenge decisions"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "transparency",
+                "note": "Independent review ensures public bodies apply exemptions appropriately"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Protect your personal information held by government",
+          "supporting": [
+            {
+              "name": "Request your own personal information from a public body",
+              "desc": "Albertans have the right under FOIP to access their own personal information held by government public bodies. This includes records related to benefits, licensing, enforcement actions, and any other files where the individual's information appears.",
+              "users": "Individuals seeking their own records from government",
+              "user_groups": ["Individuals"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Personal information access request",
+                  "url": "https://www.alberta.ca/freedom-of-information-and-protection-of-privacy"
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Mail request to public body",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FOIP",
+                  "color": "#c62828",
+                  "full_name": "Freedom of Information and Protection of Privacy Act"
+                }
+              ],
+              "mandate_tags": ["privacy"],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Thousands of personal information requests annually",
+                "basis": "Individuals regularly request their own government-held records"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "privacy",
+                "note": "Personal access rights empower individuals to verify and correct government-held information"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              }
+            },
+            {
+              "name": "File a privacy complaint about how government handled your information",
+              "desc": "If an Albertan believes a public body has improperly collected, used, or disclosed their personal information, they can file a complaint with the Information and Privacy Commissioner. The Commissioner investigates and can order corrective action.",
+              "users": "Individuals concerned about government handling of their personal information",
+              "user_groups": ["Individuals"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Privacy complaint form",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Office of the Information and Privacy Commissioner",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FOIP",
+                  "color": "#c62828",
+                  "full_name": "Freedom of Information and Protection of Privacy Act"
+                }
+              ],
+              "mandate_tags": ["privacy"],
+              "reach_estimate": {
+                "tier": "low",
+                "estimate": "Hundreds of privacy complaints annually",
+                "basis": "Growing privacy awareness drives complaint volume"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "privacy",
+                "note": "Complaint mechanism enforces privacy standards and deters careless information handling"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Learn about your privacy rights and how government uses personal information",
+              "desc": "The government publishes privacy impact assessments, collection notices, and plain-language guides explaining how personal information is collected, used, and protected by public bodies under FOIP. Albertans can learn their rights and what to expect.",
+              "users": "All Albertans, privacy advocates, legal professionals",
+              "user_groups": ["General public"],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/foip",
+                  "url": "https://www.alberta.ca/freedom-of-information-and-protection-of-privacy"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Privacy guides and fact sheets"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FOIP",
+                  "color": "#c62828",
+                  "full_name": "Freedom of Information and Protection of Privacy Act"
+                }
+              ],
+              "mandate_tags": ["privacy"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of page views and guide downloads",
+                "basis": "Growing public interest in personal data protection and privacy rights"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "privacy",
+                "note": "Privacy literacy helps citizens protect themselves and hold government accountable"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "channel_filters": [
+    {"code": "ch-apply", "label": "Apply"},
+    {"code": "ch-find", "label": "Find / search"},
+    {"code": "ch-engage", "label": "Engage"},
+    {"code": "ch-web", "label": "Website"},
+    {"code": "ch-app", "label": "Mobile app"},
+    {"code": "ch-email", "label": "Email"},
+    {"code": "ch-pub", "label": "Publication"},
+    {"code": "ch-phone", "label": "Phone"},
+    {"code": "ch-mail", "label": "Mail"}
+  ],
+  "user_group_filters": ["General public", "Individuals", "Media", "Researchers", "Industry", "Organizations"],
+  "channel_types": {
+    "ch-apply": {"label": "Apply", "type": "digital"},
+    "ch-find": {"label": "Find / search", "type": "digital"},
+    "ch-engage": {"label": "Engage", "type": "digital"},
+    "ch-web": {"label": "Website", "type": "digital"},
+    "ch-app": {"label": "Mobile app", "type": "digital"},
+    "ch-email": {"label": "Email", "type": "digital"},
+    "ch-pub": {"label": "Publication", "type": "non-digital"},
+    "ch-phone": {"label": "Phone", "type": "non-digital"},
+    "ch-mail": {"label": "Mail", "type": "non-digital"}
+  },
+  "digital_channels": ["ch-apply", "ch-find", "ch-engage", "ch-web", "ch-app", "ch-email"]
+}

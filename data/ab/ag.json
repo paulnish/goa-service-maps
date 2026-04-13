@@ -1,0 +1,1472 @@
+{
+  "prefix": "ag",
+  "full_name": "Agriculture and Irrigation",
+  "short_name": "Agriculture & Irrigation",
+  "blurb": "Supports Alberta's agriculture and food sectors through risk management, lending, food safety, animal health, pest and weed management, irrigation, and market development. Works with producers, processors, and rural communities to grow a sustainable, competitive agri-food industry.",
+  "nav_name": "Agriculture & Irrigation",
+  "has_registry_agents": false,
+  "_status": "draft",
+  "foundational_services": [],
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "OUTCOME 1: Producers are financially resilient and manage risk effectively",
+      "short_name": "Farm financial resilience",
+      "legend_label": "Financial resilience",
+      "description": "Farmers, ranchers, and agribusinesses can access insurance, income stabilization, and financing to manage risk and invest in their operations.",
+      "foundational_services": [
+        {
+          "name": "Design and administer agricultural risk management programs",
+          "desc": "Develop and oversee crop insurance, livestock insurance, income stabilization, and lending programs that help producers manage financial risk. Delivered primarily through Agriculture Financial Services Corporation (AFSC).",
+          "users": "Agricultural producers, farm families",
+          "user_groups": [
+            "Producers & ranchers"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "afsc.ca",
+              "url": "https://www.afsc.ca"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "AFSA",
+              "color": "#1565c0",
+              "full_name": "Agriculture Financial Services Act"
+            }
+          ],
+          "mandate_tags": [
+            "risk-management"
+          ],
+          "taxonomy": {
+            "relationships": [],
+            "track": "business",
+            "tier": "industry_specific",
+            "domain": "agriculture"
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Protect crops and livestock with insurance",
+          "supporting": [
+            {
+              "name": "Apply for annual crop insurance",
+              "desc": "Protects against crop production losses caused by natural hazards including drought, flooding, hail, frost, excessive moisture, and wildlife damage. Covers annual crops, perennial crops, and honey production.",
+              "users": "Crop producers, hay producers, beekeepers",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "~28,000 policies/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Crop insurance prevents farm bankruptcies and stabilizes rural economies during adverse growing conditions"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "AFSC Connect portal",
+                  "url": "https://www.afsc.ca/insurance/crop-insurance/"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "AFSC: 1-877-899-2372"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "AFSC branch offices across Alberta"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AFSA",
+                  "color": "#1565c0",
+                  "full_name": "Agriculture Financial Services Act"
+                }
+              ],
+              "mandate_tags": [
+                "risk-management"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            },
+            {
+              "name": "Apply for livestock price insurance",
+              "desc": "Protects cattle and hog producers against drops in market prices. Producers choose a coverage price level and receive an indemnity if the market settlement price falls below it.",
+              "users": "Cattle producers, hog producers",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~8,000 policies/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Price insurance lets producers plan ahead and invest with confidence despite commodity volatility"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "AFSC Connect portal",
+                  "url": "https://www.afsc.ca/insurance/livestock-price-insurance/"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "AFSC: 1-877-899-2372"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "AFSC branch offices across Alberta"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AFSA",
+                  "color": "#1565c0",
+                  "full_name": "Agriculture Financial Services Act"
+                }
+              ],
+              "mandate_tags": [
+                "risk-management"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            },
+            {
+              "name": "Apply for hail insurance",
+              "desc": "Straight hail insurance provides coverage for crop losses specifically caused by hail damage. Available as a standalone policy or in combination with multi-peril crop insurance.",
+              "users": "Crop producers in hail-prone regions",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~12,000 policies/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Hail is the single most frequent cause of crop loss in Alberta"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "AFSC Connect portal",
+                  "url": "https://www.afsc.ca/insurance/hail-insurance/"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "AFSC: 1-877-899-2372"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AFSA",
+                  "color": "#1565c0",
+                  "full_name": "Agriculture Financial Services Act"
+                }
+              ],
+              "mandate_tags": [
+                "risk-management"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            },
+            {
+              "name": "File a wildlife damage compensation claim",
+              "desc": "Compensation for crop or livestock losses caused by wildlife including waterfowl, elk, deer, bears, and cougars. Administered by AFSC under the wildlife damage compensation program.",
+              "users": "Producers experiencing wildlife damage",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~6,000 claims/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Compensates producers for losses they cannot reasonably prevent"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "AFSC wildlife claims",
+                  "url": "https://www.afsc.ca/insurance/wildlife-damage/"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "AFSC: 1-877-899-2372"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AFSA",
+                  "color": "#1565c0",
+                  "full_name": "Agriculture Financial Services Act"
+                }
+              ],
+              "mandate_tags": [
+                "risk-management"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Stabilize farm income during hardship",
+          "supporting": [
+            {
+              "name": "Enrol in income stabilization support",
+              "desc": "Federal-provincial program that provides support when a producer's net income falls significantly below their historical average. Covers income declines from production loss, increased costs, and market conditions.",
+              "users": "All agricultural producers",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~10,000 participants/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Whole-farm income stabilization prevents cascading financial failure in the agriculture sector"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "AFSC Connect portal",
+                  "url": "https://www.afsc.ca/income-stabilization/agristability/"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "AFSC: 1-877-899-2372"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "AgriStability forms"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AFSA",
+                  "color": "#1565c0",
+                  "full_name": "Agriculture Financial Services Act"
+                }
+              ],
+              "mandate_tags": [
+                "risk-management"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            },
+            {
+              "name": "Open a government-matched farm savings account",
+              "desc": "Government-matched savings account that helps producers set money aside for small income declines or make investments to mitigate risk. The federal government matches annual deposits up to a specified limit.",
+              "users": "All agricultural producers",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "~30,000 participants/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Matched savings grow producer equity and support on-farm investment"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Agriculture and Agri-Food Canada",
+                  "url": "https://agriculture.canada.ca/en/agricultural-programs-and-services/agriinvest"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "AAFC: 1-866-367-8506"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AFSA",
+                  "color": "#1565c0",
+                  "full_name": "Agriculture Financial Services Act"
+                }
+              ],
+              "mandate_tags": [
+                "risk-management"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            },
+            {
+              "name": "Apply for disaster recovery assistance",
+              "desc": "AgriRecovery provides targeted assistance for extraordinary costs caused by natural disasters such as drought, flooding, or disease outbreaks that go beyond existing programs. Triggered by federal-provincial assessment.",
+              "users": "Producers affected by declared disasters",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "reach_estimate": {
+                "tier": "low",
+                "estimate": "varies by disaster year",
+                "basis": "event-driven"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Disaster-specific support helps producers recover and maintain food production capacity"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "AFSC disaster programs",
+                  "url": "https://www.afsc.ca"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "AFSC: 1-877-899-2372"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AFSA",
+                  "color": "#1565c0",
+                  "full_name": "Agriculture Financial Services Act"
+                }
+              ],
+              "mandate_tags": [
+                "risk-management"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Get financing for farm and agribusiness operations",
+          "supporting": [
+            {
+              "name": "Apply for a beginning farmer loan",
+              "desc": "Specialized loan products for new and young farmers getting started in agriculture, including the Next Generation Loan and Developing Producer Loan. Lower down payments and flexible terms.",
+              "users": "New farmers, young farmers entering agriculture",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~1,500 active loans",
+                "basis": "active"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Enabling farm succession supports long-term sector viability and rural employment"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "AFSC lending",
+                  "url": "https://www.afsc.ca/lending/"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "AFSC: 1-877-899-2372"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "AFSC branch offices"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AFSA",
+                  "color": "#1565c0",
+                  "full_name": "Agriculture Financial Services Act"
+                }
+              ],
+              "mandate_tags": [
+                "growth"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            },
+            {
+              "name": "Apply for a farm or agribusiness loan",
+              "desc": "Loans for established agricultural producers and agribusinesses for land purchases, equipment, operating capital, and value-added processing. Includes the Alberta Producer Loan and Revolving Loan products.",
+              "users": "Established farmers, agribusinesses",
+              "user_groups": [
+                "Producers & ranchers",
+                "Businesses & processors"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~4,000 active loans",
+                "basis": "active"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Farm lending supports agricultural capital investment and sector growth"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "AFSC lending",
+                  "url": "https://www.afsc.ca/lending/"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "AFSC: 1-877-899-2372"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "AFSC branch offices"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AFSA",
+                  "color": "#1565c0",
+                  "full_name": "Agriculture Financial Services Act"
+                }
+              ],
+              "mandate_tags": [
+                "growth"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#c62828",
+      "title": "OUTCOME 2: Agriculture is safe, healthy, and well-managed",
+      "short_name": "Safe & healthy agriculture",
+      "legend_label": "Safety & stewardship",
+      "description": "Livestock are healthy and traceable, food is safe, and pests, diseases, and weeds are effectively controlled to protect producers, consumers, and the environment.",
+      "foundational_services": [
+        {
+          "name": "Regulate animal health and food safety across the supply chain",
+          "desc": "The Office of the Chief Provincial Veterinarian monitors and responds to animal diseases, oversees meat and dairy inspection, and coordinates with federal agencies on food safety. Agricultural Service Boards deliver local pest and weed control.",
+          "users": "All Albertans (consumer protection), livestock operators, food processors",
+          "user_groups": [
+            "General public",
+            "Producers & ranchers",
+            "Businesses & processors"
+          ],
+          "channels": [
+            {
+              "type": "ch-phone",
+              "label": "Chief Provincial Veterinarian: 780-427-3448"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "AHA",
+              "color": "#c62828",
+              "full_name": "Animal Health Act"
+            },
+            {
+              "abbrev": "APA",
+              "color": "#e65100",
+              "full_name": "Agricultural Pests Act"
+            }
+          ],
+          "mandate_tags": [
+            "food-safety"
+          ],
+          "taxonomy": {
+            "relationships": [],
+            "track": "business",
+            "tier": "industry_specific",
+            "domain": "agriculture"
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Keep livestock healthy and traceable",
+          "supporting": [
+            {
+              "name": "Report a suspected animal disease",
+              "desc": "Producers and veterinarians must report certain animal diseases within 24 hours. The Chief Provincial Veterinarian coordinates response including quarantine, testing, and control measures to prevent spread.",
+              "users": "Livestock operators, veterinarians",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "reach_estimate": {
+                "tier": "low",
+                "estimate": "~500 reports/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Early disease detection prevents outbreaks that could devastate the livestock sector and close export markets"
+              },
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Chief Provincial Veterinarian: 780-427-3448"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/animal-health",
+                  "url": "https://www.alberta.ca/animal-health"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AHA",
+                  "color": "#c62828",
+                  "full_name": "Animal Health Act"
+                }
+              ],
+              "mandate_tags": [
+                "food-safety"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            },
+            {
+              "name": "Register your premises for livestock traceability",
+              "desc": "Premises identification is required for all locations where livestock are kept. The system enables rapid response to disease outbreaks by tracking where animals are located.",
+              "users": "Livestock operators, auction markets, feedlots",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "~60,000 registered premises",
+                "basis": "active"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Traceability protects market access \u2014 an outbreak without traceability could close billion-dollar export markets"
+              },
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Premises ID registry",
+                  "url": "https://www.alberta.ca/premises-identification"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "310-FARM (3276)"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AHA",
+                  "color": "#c62828",
+                  "full_name": "Animal Health Act"
+                }
+              ],
+              "mandate_tags": [
+                "food-safety"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            },
+            {
+              "name": "Get guidance on livestock management practices",
+              "desc": "Information on beef production, animal nutrition, handling, welfare, forages and pasture management, and mortality management. Includes publications and extension services delivered through AFSC and regional offices.",
+              "users": "Beef and livestock producers, ranchers",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "~200,000 page views/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Social ROI",
+                "category": "social_roi",
+                "note": "Better livestock management improves animal welfare and production efficiency"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/livestock",
+                  "url": "https://www.alberta.ca/livestock"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Agdex publications"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "310-FARM (3276)"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "animal-health"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Ensure food is safe across the supply chain",
+          "supporting": [
+            {
+              "name": "Get food safety training and certification",
+              "desc": "Training in Hazard Analysis Critical Control Points (HACCP) and other food safety systems for processors, producers, and food service operators. Includes resources for home-based food preparation businesses.",
+              "users": "Food processors, producers selling direct to consumers",
+              "user_groups": [
+                "Businesses & processors"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~3,000 trainees/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Food safety training prevents foodborne illness and protects consumer confidence in Alberta products"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/food-safety",
+                  "url": "https://www.alberta.ca/food-safety"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "HACCP training courses"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AHA",
+                  "color": "#c62828",
+                  "full_name": "Animal Health Act"
+                }
+              ],
+              "mandate_tags": [
+                "food-safety"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            },
+            {
+              "name": "Comply with meat and dairy inspection requirements",
+              "desc": "Provincial inspection of meat processing plants and dairy facilities to ensure safety standards are met. Covers facility licensing, operational standards, and animal welfare at slaughter.",
+              "users": "Meat processors, dairy processors, abattoir operators",
+              "user_groups": [
+                "Businesses & processors"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~350 inspected facilities",
+                "basis": "active"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Inspection protects public health and enables domestic and international market access for Alberta products"
+              },
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Facility inspections"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Meat Inspection Branch: 780-427-4060"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AHA",
+                  "color": "#c62828",
+                  "full_name": "Animal Health Act"
+                }
+              ],
+              "mandate_tags": [
+                "food-safety"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Manage pests, diseases, and weeds on your land",
+          "supporting": [
+            {
+              "name": "Report or get help with an agricultural pest",
+              "desc": "Designated pests including insects, rodents, and plant diseases must be reported. Agricultural fieldmen and service boards assist with identification, control measures, and compliance.",
+              "users": "Landowners, farmers, municipalities",
+              "user_groups": [
+                "Producers & ranchers",
+                "General public"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~5,000 inspections/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Effective pest control prevents crop losses worth hundreds of millions annually"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/agricultural-pests",
+                  "url": "https://www.alberta.ca/agricultural-pests"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "310-FARM (3276)"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Agricultural Service Boards"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "APA",
+                  "color": "#e65100",
+                  "full_name": "Agricultural Pests Act"
+                }
+              ],
+              "mandate_tags": [
+                "stewardship"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            },
+            {
+              "name": "Control noxious and prohibited weeds",
+              "desc": "Landowners are required to control noxious weeds and destroy prohibited noxious weeds on their land. Agricultural fieldmen enforce compliance and provide identification and control guidance.",
+              "users": "Landowners, farmers, municipalities, acreage owners",
+              "user_groups": [
+                "Producers & ranchers",
+                "General public"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "~100,000+ affected landowners",
+                "basis": "active"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Invasive weeds reduce crop yields and degrade rangeland carrying capacity"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/weeds",
+                  "url": "https://www.alberta.ca/weeds"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Weed identification guides"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Agricultural Service Boards"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WCA",
+                  "color": "#2e7d32",
+                  "full_name": "Weed Control Act"
+                }
+              ],
+              "mandate_tags": [
+                "stewardship"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            },
+            {
+              "name": "Get crop disease diagnosis and management advice",
+              "desc": "Information on regulated and common crop diseases, diagnostic services, and integrated pest management strategies. Includes economic threshold data for insect treatment decisions.",
+              "users": "Crop producers, agronomists",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~150,000 page views/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Accurate diagnosis and targeted treatment reduce pesticide costs and crop losses"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/crop-diseases",
+                  "url": "https://www.alberta.ca/crop-diseases"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Agdex crop disease publications"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "310-FARM (3276)"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "APA",
+                  "color": "#e65100",
+                  "full_name": "Agricultural Pests Act"
+                }
+              ],
+              "mandate_tags": [
+                "stewardship"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#00695c",
+      "title": "OUTCOME 3: Alberta's agri-food sector grows and competes globally",
+      "short_name": "Agricultural growth & trade",
+      "legend_label": "Growth & trade",
+      "description": "Producers and agribusinesses have the information, infrastructure, and market access to grow Alberta's agriculture and food sector domestically and internationally.",
+      "foundational_services": [
+        {
+          "name": "Develop agricultural policy, trade strategy, and irrigation infrastructure",
+          "desc": "Set policy direction for agricultural growth, negotiate trade agreements, administer the Sustainable Canadian Agricultural Partnership (Sustainable CAP), and oversee irrigation district governance and water allocation.",
+          "users": "Agricultural industry, irrigation districts, rural communities",
+          "user_groups": [
+            "Producers & ranchers",
+            "Businesses & processors",
+            "Irrigation districts"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/agriculture-and-irrigation",
+              "url": "https://www.alberta.ca/agriculture-and-irrigation"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "IDA",
+              "color": "#00695c",
+              "full_name": "Irrigation Districts Act"
+            }
+          ],
+          "mandate_tags": [
+            "growth",
+            "irrigation"
+          ],
+          "taxonomy": {
+            "relationships": [],
+            "track": "business",
+            "tier": "industry_specific",
+            "domain": "agriculture"
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Access agronomic information and decision tools",
+          "supporting": [
+            {
+              "name": "Use weather and climate data for farm planning",
+              "desc": "The Alberta Climate Information Service (ACIS) provides current and historical weather data, forecasts, growing degree days, moisture indices, and other agricultural climate tools for production planning.",
+              "users": "Crop and livestock producers, agronomists",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "~300,000 page views/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Data-driven planting and harvest decisions improve yields and reduce losses"
+              },
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "ACIS weather portal",
+                  "url": "https://acis.alberta.ca"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/acis",
+                  "url": "https://www.alberta.ca/alberta-climate-information-service"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "growth"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            },
+            {
+              "name": "Get soil survey data and land information",
+              "desc": "Access soil survey reports, the Alberta Soil Information Viewer, land capability assessments, and nutrient management planning resources to make informed decisions about cropping and land use.",
+              "users": "Farmers, land managers, agronomists",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~50,000 page views/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Soil-appropriate cropping and nutrient management improve yields and protect long-term productivity"
+              },
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Alberta Soil Information Viewer",
+                  "url": "https://soil.agric.gov.ab.ca"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Soil survey reports"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "stewardship"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            },
+            {
+              "name": "Use crop budget and decision tools",
+              "desc": "Online crop budget calculator, cropping alternatives cost-return forecasts, and AgriProfit$ benchmarking data to support production and financial planning decisions.",
+              "users": "Crop producers, farm managers",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~80,000 page views/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Better financial planning improves farm profitability and reduces risk of loss"
+              },
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Crop budget calculator",
+                  "url": "https://www.alberta.ca/crop-budget-calculator"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "AgriProfit$ reports"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "growth"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Develop markets and grow agricultural trade",
+          "supporting": [
+            {
+              "name": "Access market information and price reports",
+              "desc": "Weekly livestock and crop market reviews, Alberta crop reports, agricultural statistics, and economic indicators to support marketing decisions and industry planning.",
+              "users": "Producers, agricultural marketers, industry analysts",
+              "user_groups": [
+                "Producers & ranchers",
+                "Businesses & processors"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "~250,000 page views/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Timely market information helps producers sell at better prices"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/agriculture-statistics",
+                  "url": "https://www.alberta.ca/agriculture-statistics"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Market report email subscriptions"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Weekly market reviews"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "growth"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            },
+            {
+              "name": "Get support for agricultural trade and export",
+              "desc": "Services to help agribusinesses access international markets, connect with buyers and investors, and navigate export requirements. Includes trade missions and matchmaking services.",
+              "users": "Agricultural exporters, processors, investors",
+              "user_groups": [
+                "Businesses & processors"
+              ],
+              "reach_estimate": {
+                "tier": "low",
+                "estimate": "~500 businesses assisted/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Alberta's agri-food exports exceed $17 billion annually; trade services help grow that"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/agriculture-trade",
+                  "url": "https://www.alberta.ca/agriculture-trade-and-investment"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Trade missions and events"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Trade inquiry"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "growth"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            },
+            {
+              "name": "Apply for agricultural sustainability funding",
+              "desc": "The Sustainable Canadian Agricultural Partnership provides cost-shared grants for eligible projects in environmental sustainability, market development, science and research, and public trust. Five-year federal-provincial-territorial framework.",
+              "users": "Producers, industry organizations, processors",
+              "user_groups": [
+                "Producers & ranchers",
+                "Businesses & processors"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~5,000 applications/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Cost-shared investment accelerates adoption of beneficial management practices and innovation"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Sustainable CAP portal",
+                  "url": "https://www.alberta.ca/sustainable-cap"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "310-FARM (3276)"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "growth",
+                "stewardship"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Access irrigation and water management services",
+          "supporting": [
+            {
+              "name": "Connect with your irrigation district",
+              "desc": "Alberta's 13 irrigation districts manage water delivery infrastructure serving over 1.5 million acres of irrigated farmland. Producers within a district access water allocation, infrastructure expansion, and water-sharing arrangements.",
+              "users": "Irrigated crop producers within districts",
+              "user_groups": [
+                "Producers & ranchers",
+                "Irrigation districts"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "~8,500 irrigators across 13 districts",
+                "basis": "active"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Irrigation is the single largest driver of agricultural productivity in southern Alberta"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/irrigation",
+                  "url": "https://www.alberta.ca/irrigation"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Irrigation district offices"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "IDA",
+                  "color": "#00695c",
+                  "full_name": "Irrigation Districts Act"
+                }
+              ],
+              "mandate_tags": [
+                "irrigation"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            },
+            {
+              "name": "Get farm water testing and quality information",
+              "desc": "Testing services for farm drinking water, livestock water, and irrigation water quality. Helps producers identify contamination risks and take corrective action.",
+              "users": "Farmers, ranchers, rural landowners",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~10,000 tests/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Social ROI",
+                "category": "social_roi",
+                "note": "Safe water protects human and animal health in rural communities"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/water-testing",
+                  "url": "https://www.alberta.ca/water-testing"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Sample submission to provincial labs"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "310-FARM (3276)"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "stewardship"
+              ],
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "channel_filters": [
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-phone",
+    "ch-email",
+    "ch-inperson",
+    "ch-pub",
+    "ch-pdf",
+    "ch-web"
+  ],
+  "user_group_filters": [
+    "General public",
+    "Producers & ranchers",
+    "Businesses & processors",
+    "Irrigation districts"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg_color": "#c8e6c9",
+      "text_color": "#1b5e20"
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg_color": "#e0f2f1",
+      "text_color": "#00695c"
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg_color": "#e1bee7",
+      "text_color": "#6a1b9a"
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg_color": "#f3e5f5",
+      "text_color": "#6a1b9a"
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    "ch-registry": {
+      "label": "Registry agent",
+      "bg_color": "#fff8e1",
+      "text_color": "#f57f17"
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg_color": "#f5f5f5",
+      "text_color": "#616161"
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    }
+  },
+  "digital_channels": [
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-email",
+    "ch-web"
+  ],
+  "mandate_date": "September 17, 2025",
+  "mandate_minister": "RJ Sigurdson",
+  "mandate_pdf": "https://open.alberta.ca/dataset/b0769b96-7a45-40b5-b57c-415ff82aca49/resource/72cbca5b-4a2d-4355-ae2b-922ad05fc86b/download/agi-mandate-letter-agriculture-and-irrigation-2025.pdf",
+  "cross_cutting": [
+    "Agriculture Financial Services Corporation (AFSC)",
+    "Alberta Irrigation Council",
+    "Agricultural Service Boards",
+    "Office of the Chief Provincial Veterinarian",
+    "Agriculture and Agri-Food Canada",
+    "Canadian Food Inspection Agency",
+    "Alberta Veterinary Medical Association",
+    "Agricultural Products Marketing Council"
+  ],
+  "mandate_legend": [
+    {
+      "tag": "risk-management",
+      "label": "Strengthen farm risk management",
+      "color": "#1565c0"
+    },
+    {
+      "tag": "food-safety",
+      "label": "Ensure food safety and animal health",
+      "color": "#c62828"
+    },
+    {
+      "tag": "growth",
+      "label": "Grow agricultural trade and competitiveness",
+      "color": "#00695c"
+    },
+    {
+      "tag": "stewardship",
+      "label": "Support environmental stewardship",
+      "color": "#2e7d32"
+    },
+    {
+      "tag": "irrigation",
+      "label": "Expand and modernize irrigation",
+      "color": "#0277bd"
+    }
+  ]
+}

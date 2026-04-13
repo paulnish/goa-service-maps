@@ -668,6 +668,38 @@
               "goal_color": "#007a3d",
               "ms_number": 2,
               "ms_name": "Compete for highway construction projects"
+            },
+            {
+              "name": "Highway twinning and capacity expansion",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#007a3d",
+              "ms_number": 1,
+              "ms_name": "Move goods to market via trade corridors"
+            },
+            {
+              "name": "Highway pavement resurfacing and repair",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#007a3d",
+              "ms_number": 2,
+              "ms_name": "Compete for highway construction projects"
+            },
+            {
+              "name": "Bridge inspection, construction, and rehabilitation",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#007a3d",
+              "ms_number": 2,
+              "ms_name": "Compete for highway construction projects"
+            },
+            {
+              "name": "Regional highway construction delivery",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#007a3d",
+              "ms_number": 2,
+              "ms_name": "Compete for highway construction projects"
             }
           ]
         },

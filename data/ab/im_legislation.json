@@ -1,0 +1,121 @@
+{
+  "prefix": "im",
+  "name": "Immigration and Multiculturalism",
+  "short_name": "Immigration & Multiculturalism",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "Immigration pathways",
+      "legend_label": "Immigration pathways",
+      "main_services": [
+        {"number": 1, "name": "Apply for provincial nomination as a skilled worker"},
+        {"number": 2, "name": "Apply for provincial nomination as an entrepreneur"}
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "short_name": "Settlement & integration",
+      "legend_label": "Settlement & integration",
+      "main_services": [
+        {"number": 1, "name": "Get help settling in Alberta as a newcomer"},
+        {"number": 2, "name": "Get your foreign credentials recognized in Alberta"}
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "short_name": "Multiculturalism & inclusion",
+      "legend_label": "Multiculturalism & inclusion",
+      "main_services": [
+        {"number": 1, "name": "Access multiculturalism and community inclusion supports"},
+        {"number": 2, "name": "Report discrimination or learn about your human rights"}
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "FRPA",
+      "full_name": "Fair Registration Practices Act",
+      "color": "#00695c",
+      "citation": "SA 2019, c F-1.5",
+      "summary": "Ensures that professional regulatory organizations in Alberta use transparent, objective, impartial, and procedurally fair registration practices when assessing the qualifications of internationally trained professionals, removing barriers to foreign credential recognition and supporting skilled newcomer employment.",
+      "full_text": "<h3>Fair Registration Practices Act</h3><p><strong>Citation:</strong> SA 2019, c F-1.5</p><p>The Fair Registration Practices Act (FRPA) is Alberta's statute ensuring that internationally trained professionals face fair and transparent processes when seeking registration to practise their regulated profession. It came into force on March 1, 2020.</p><h4>Key Provisions</h4><ul><li><strong>General Duty (Section 3):</strong> Every regulatory body must carry out registration practices that are transparent, objective, impartial, and procedurally fair. This overarching duty applies to all aspects of the registration process from application to decision.</li><li><strong>Information and Transparency (Section 5):</strong> Regulatory bodies must make publicly available the qualifications required for registration, the assessment process, timelines, fees, alternative documentation that may be accepted, and information about bridging programs. This ensures applicants can understand and navigate the process.</li><li><strong>Timely Decisions (Section 6):</strong> Regulatory bodies must make interim registration decisions within six months of receiving a complete application. If additional requirements (examinations, training) are needed, applicants must be informed of what is required and the expected timeline.</li><li><strong>Internal Review and Appeal (Section 7):</strong> Applicants who receive an unfavourable decision have the right to an internal review by the regulatory body. The review must be conducted by a person who was not involved in the original decision. Further appeal mechanisms must be available.</li><li><strong>Fair Assessment Practices (Section 9):</strong> Decision-makers must receive training on fair assessment practices, including considerations specific to internationally trained applicants such as recognizing equivalent competencies and alternative evidence of qualification.</li><li><strong>Minister's Powers (Part 2):</strong> The Minister may require regulatory bodies to report on their registration practices, direct audits of compliance, and issue compliance orders. This provides oversight to ensure regulatory bodies meet their obligations under the Act.</li><li><strong>Reporting:</strong> Regulatory bodies must report annually to the Minister on registration outcomes, including the number of applications from internationally trained individuals, processing times, and approval rates.</li></ul><p>FRPA applies to over 60 regulated professions in Alberta including health professionals, engineers, agrologists, lawyers, accountants, real estate practitioners, and other professional regulatory bodies.</p>",
+      "sections": [
+        {
+          "ref": "Section 3",
+          "title": "General Duty — Fair Registration Practices",
+          "description": "Requires professional regulatory organizations to conduct transparent, objective, impartial, and procedurally fair registration practices when assessing qualifications of internationally trained professionals.",
+          "anchor_id": "sec-frpa-s3",
+          "services": [
+            {
+              "name": "Get your international qualifications assessed",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 2,
+              "ms_name": "Get your foreign credentials recognized in Alberta"
+            },
+            {
+              "name": "Navigate the licensing process for your regulated profession",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 2,
+              "ms_name": "Get your foreign credentials recognized in Alberta"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "AHRA",
+      "full_name": "Alberta Human Rights Act",
+      "color": "#c62828",
+      "citation": "RSA 2000, c A-25.5",
+      "summary": "Alberta's foundational anti-discrimination legislation prohibiting discrimination on the basis of race, colour, ancestry, place of origin, religious beliefs, gender, disability, and other protected grounds in employment, services, housing, and public life. Establishes the Alberta Human Rights Commission and complaint process.",
+      "full_text": "<h3>Alberta Human Rights Act</h3><p><strong>Citation:</strong> RSA 2000, c A-25.5</p><p>The Alberta Human Rights Act (formerly the Human Rights, Citizenship and Multiculturalism Act) is Alberta's principal anti-discrimination statute. It prohibits discrimination and promotes equality across all areas of public life.</p><h4>Key Provisions</h4><ul><li><strong>Preamble and Purpose:</strong> Recognizes the inherent dignity and equal rights of all Albertans. Affirms that multiculturalism is a fundamental principle of Alberta society and that diversity strengthens the province.</li><li><strong>Protected Grounds:</strong> Prohibits discrimination based on race, religious beliefs, colour, gender, gender identity, gender expression, physical disability, mental disability, age, ancestry, place of origin, marital status, source of income, family status, and sexual orientation.</li><li><strong>Prohibited Discrimination in Employment (Sections 7-9):</strong> Prohibits discriminatory practices in hiring, terms of employment, job advertisements, and membership in trade unions and professional associations. Requires reasonable accommodation of protected characteristics to the point of undue hardship.</li><li><strong>Prohibited Discrimination in Services and Housing (Sections 4-6):</strong> Prohibits discrimination in the provision of goods, services, accommodation, and facilities customarily available to the public, as well as in tenancy and housing. Includes public services, commercial services, and educational institutions.</li><li><strong>Prohibited Publications and Statements (Section 3):</strong> Prohibits publication or display of statements, signs, or symbols that indicate discrimination or an intention to discriminate, or that expose persons to hatred or contempt on the basis of a protected ground.</li><li><strong>Alberta Human Rights Commission (Sections 16-21):</strong> Establishes the Alberta Human Rights Commission as the body responsible for receiving and investigating complaints, promoting human rights education, and advising the government on human rights matters. The Commission also performs multiculturalism advisory functions.</li><li><strong>Complaints Process (Sections 22-32):</strong> Defines the process for filing complaints, investigation by the Commission's Director, and resolution through conciliation, mediation, or referral to a human rights tribunal. Tribunals can order remedies including compensation, policy changes, and apologies.</li><li><strong>Human Rights Tribunal (Sections 27-32):</strong> Establishes tribunals to hear complaints that cannot be resolved through investigation or mediation. Tribunals have the power to make binding orders, award damages, and require systemic remedies.</li><li><strong>Offences and Penalties:</strong> Creates offences for contravening tribunal orders, obstructing investigations, and retaliating against complainants.</li></ul><p>The Act works alongside the Canadian Human Rights Act (federal) and the Canadian Charter of Rights and Freedoms, providing provincial-level protections in areas of provincial jurisdiction.</p>",
+      "sections": [
+        {
+          "ref": "Sections 4-9",
+          "title": "Prohibited Discrimination — Employment, Services, and Housing",
+          "description": "Prohibits discrimination based on protected grounds in employment, goods and services, housing, and public facilities. Requires reasonable accommodation to the point of undue hardship.",
+          "anchor_id": "sec-ahra-s4-9",
+          "services": [
+            {
+              "name": "File a human rights complaint about discrimination",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 2,
+              "ms_name": "Report discrimination or learn about your human rights"
+            },
+            {
+              "name": "Learn about human rights protections and anti-racism resources",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 2,
+              "ms_name": "Report discrimination or learn about your human rights"
+            },
+            {
+              "name": "Develop multiculturalism, anti-racism, and inclusion policy",
+              "type": "foundational",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 0,
+              "ms_name": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 2,
+    "sections_count": 2,
+    "services_with_leg_count": 4,
+    "services_multi_act_count": 0
+  }
+}

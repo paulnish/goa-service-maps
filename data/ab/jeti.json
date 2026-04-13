@@ -1,0 +1,1635 @@
+{
+  "prefix": "jeti",
+  "full_name": "Jobs, Economy, Trade and Immigration",
+  "short_name": "Jobs, Economy, Trade & Immigration",
+  "blurb": "Supports Alberta's workforce and economic growth through employment standards enforcement, workplace health and safety, labour relations, trade and investment attraction, provincial immigration pathways, newcomer settlement and integration services, and multiculturalism and inclusion initiatives.",
+  "nav_name": "Jobs, Economy, Trade & Immigration",
+  "has_registry_agents": false,
+  "_status": "draft",
+  "foundational_services": [],
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "OUTCOME 1: Alberta workplaces are safe, fair, and meet employment standards",
+      "short_name": "Jobs & workplace standards",
+      "legend_label": "Jobs & workplaces",
+      "description": "The ministry sets and enforces employment standards for wages, hours, leaves, and termination; administers occupational health and safety requirements; and oversees labour relations including collective bargaining, mediation, and essential services agreements.",
+      "foundational_services": [
+        {
+          "name": "Develop employment, labour, and workplace safety policy",
+          "desc": "Develops policy and legislation governing employment standards, occupational health and safety, and labour relations in Alberta. Monitors workplace trends, consults with employer and worker stakeholders, and updates regulatory frameworks to reflect modern work arrangements.",
+          "users": "Government policy staff, employer associations, labour organizations",
+          "user_groups": [
+            "Government"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/jobs-economy-and-trade",
+              "url": "https://www.alberta.ca/jobs-economy-and-trade"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "ESC",
+              "color": "#1565c0",
+              "full_name": "Employment Standards Code"
+            },
+            {
+              "abbrev": "OHSA",
+              "color": "#1565c0",
+              "full_name": "Occupational Health and Safety Act"
+            },
+            {
+              "abbrev": "LRC",
+              "color": "#1565c0",
+              "full_name": "Labour Relations Code"
+            }
+          ],
+          "mandate_tags": [
+            "employment-standards",
+            "ohs",
+            "labour-relations"
+          ],
+          "taxonomy": {
+            "track": "both",
+            "individual": {
+              "tier": "core_human_needs",
+              "domain": "working_employment"
+            },
+            "business": {
+              "tier": "core_business_needs",
+              "domain": "people_employment"
+            },
+            "relationships": [
+              {
+                "type": "complainant_regulated_party",
+                "service": "File a complaint about unpaid wages, wrongful termination, or other employment standards violations",
+                "ministry": "jeti"
+              },
+              {
+                "type": "complainant_regulated_party",
+                "service": "Report a workplace health or safety concern or incident",
+                "ministry": "jeti"
+              }
+            ]
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Understand or enforce your employment rights",
+          "supporting": [
+            {
+              "name": "Learn about minimum wage, hours of work, overtime, and leave entitlements",
+              "desc": "Workers and employers can access information on Alberta's employment standards including minimum wage rates, hours of work and rest periods, overtime rules, vacation and holiday pay, and leave entitlements such as maternity, parental, compassionate care, and personal leaves.",
+              "users": "Workers, employers, payroll administrators, HR professionals",
+              "user_groups": [
+                "Workers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Employment standards information",
+                  "url": "https://www.alberta.ca/employment-standards"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Employment Standards Contact Centre",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ESC",
+                  "color": "#1565c0",
+                  "full_name": "Employment Standards Code"
+                }
+              ],
+              "mandate_tags": [
+                "employment-standards"
+              ],
+              "reach_estimate": {
+                "tier": "very_high",
+                "estimate": "Millions of workers and hundreds of thousands of employers province-wide",
+                "basis": "Employment standards apply to virtually every workplace in Alberta"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "employment-standards",
+                "note": "Clear employment standards protect workers and provide certainty for employers"
+              },
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "core_human_needs",
+                  "domain": "working_employment"
+                },
+                "business": {
+                  "tier": "core_business_needs",
+                  "domain": "people_employment"
+                },
+                "relationships": [
+                  {
+                    "type": "worker_employer",
+                    "service": "File a complaint about unpaid wages, wrongful termination, or other employment standards violations",
+                    "ministry": "jeti"
+                  },
+                  {
+                    "type": "worker_employer",
+                    "service": "Earn credits through work experience or RAP",
+                    "ministry": "edu"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "File a complaint about unpaid wages, wrongful termination, or other employment standards violations",
+              "desc": "Workers who believe their employer has violated employment standards — such as withholding wages, failing to pay overtime, or wrongful termination — can file a complaint with Employment Standards for investigation. Officers can order employers to pay owed wages and penalties.",
+              "users": "Workers experiencing employment standards violations",
+              "user_groups": [
+                "Workers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Employment standards complaint form",
+                  "url": "https://www.alberta.ca/employment-standards-complaints"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Employment Standards Contact Centre",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ESC",
+                  "color": "#1565c0",
+                  "full_name": "Employment Standards Code"
+                }
+              ],
+              "mandate_tags": [
+                "employment-standards",
+                "enforcement"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Thousands of complaints filed annually",
+                "basis": "Employment Standards processes thousands of complaints each year resulting in millions in recovered wages"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "employment-standards",
+                "note": "Complaint enforcement deters wage theft and protects vulnerable workers"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": [
+                  {
+                    "type": "worker_employer",
+                    "service": "Learn about minimum wage, hours of work, overtime, and leave entitlements",
+                    "ministry": "jeti"
+                  },
+                  {
+                    "type": "worker_employer",
+                    "service": "Learn about rules for termination, layoff, and severance",
+                    "ministry": "jeti"
+                  },
+                  {
+                    "type": "complainant_regulated_party",
+                    "service": "Develop employment, labour, and workplace safety policy",
+                    "ministry": "jeti"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Learn about rules for termination, layoff, and severance",
+              "desc": "Workers and employers can access information on termination notice requirements, temporary layoff rules, group termination obligations, and severance entitlements under Alberta's employment standards. Includes tools for calculating minimum notice and termination pay.",
+              "users": "Workers facing termination, employers managing layoffs, HR professionals",
+              "user_groups": [
+                "Workers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Termination and layoff rules",
+                  "url": "https://www.alberta.ca/termination-pay"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Employment Standards Contact Centre",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ESC",
+                  "color": "#1565c0",
+                  "full_name": "Employment Standards Code"
+                }
+              ],
+              "mandate_tags": [
+                "employment-standards"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of page views annually",
+                "basis": "Termination rules are among the most-searched employment standards topics"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "employment-standards",
+                "note": "Clear termination rules protect workers from unfair dismissal and help employers manage workforce changes lawfully"
+              },
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "core_human_needs",
+                  "domain": "working_employment"
+                },
+                "business": {
+                  "tier": "core_business_needs",
+                  "domain": "people_employment"
+                },
+                "relationships": [
+                  {
+                    "type": "worker_employer",
+                    "service": "File a complaint about unpaid wages, wrongful termination, or other employment standards violations",
+                    "ministry": "jeti"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Ensure your workplace meets health and safety requirements",
+          "supporting": [
+            {
+              "name": "Learn about workplace health and safety obligations and rights",
+              "desc": "Workers and employers can access information on OHS obligations including hazard assessments, safety training, right to refuse unsafe work, joint work site health and safety committees, and industry-specific safety codes for construction, oil and gas, and other sectors.",
+              "users": "Workers, employers, safety officers, joint health and safety committee members",
+              "user_groups": [
+                "Workers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "OHS legislation and resources",
+                  "url": "https://www.alberta.ca/occupational-health-safety"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "OHS Contact Centre",
+                  "url": null
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "OHS codes and guidelines"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "OHSA",
+                  "color": "#1565c0",
+                  "full_name": "Occupational Health and Safety Act"
+                }
+              ],
+              "mandate_tags": [
+                "ohs"
+              ],
+              "reach_estimate": {
+                "tier": "very_high",
+                "estimate": "All Alberta workplaces — over 200,000 employers",
+                "basis": "OHS legislation applies to virtually every employer in the province"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "ohs",
+                "note": "Workplace safety reduces injuries, fatalities, and the economic burden of workplace incidents"
+              },
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "core_human_needs",
+                  "domain": "working_employment"
+                },
+                "business": {
+                  "tier": "core_business_needs",
+                  "domain": "people_employment"
+                },
+                "relationships": [
+                  {
+                    "type": "worker_employer",
+                    "service": "Report a workplace health or safety concern or incident",
+                    "ministry": "jeti"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Report a workplace health or safety concern or incident",
+              "desc": "Workers, employers, and the public can report serious workplace injuries, fatalities, or unsafe work conditions to OHS. Inspectors investigate complaints, conduct inspections, and can issue stop-work orders, compliance orders, and administrative penalties.",
+              "users": "Workers in unsafe conditions, employers reporting incidents, concerned members of the public",
+              "user_groups": [
+                "Workers",
+                "Industry",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "OHS complaint or incident report",
+                  "url": "https://www.alberta.ca/file-complaint-occupational-health-safety"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "OHS Contact Centre",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "OHSA",
+                  "color": "#1565c0",
+                  "full_name": "Occupational Health and Safety Act"
+                }
+              ],
+              "mandate_tags": [
+                "ohs",
+                "enforcement"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Thousands of complaints and incident reports annually",
+                "basis": "OHS conducts thousands of inspections and investigations each year"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "ohs",
+                "note": "Incident reporting and enforcement prevents future injuries and saves lives"
+              },
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "core_human_needs",
+                  "domain": "working_employment"
+                },
+                "business": {
+                  "tier": "core_business_needs",
+                  "domain": "people_employment"
+                },
+                "relationships": [
+                  {
+                    "type": "worker_employer",
+                    "service": "Learn about workplace health and safety obligations and rights",
+                    "ministry": "jeti"
+                  },
+                  {
+                    "type": "complainant_regulated_party",
+                    "service": "Develop employment, labour, and workplace safety policy",
+                    "ministry": "jeti"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Resolve a labour relations dispute or access collective bargaining supports",
+          "supporting": [
+            {
+              "name": "Apply for mediation or arbitration of a collective bargaining dispute",
+              "desc": "Employers and unions involved in a collective bargaining dispute can apply for government mediation services to help reach a settlement. Where mediation is unsuccessful, arbitration may be available. The ministry also administers essential services agreements to maintain critical public services during labour disputes.",
+              "users": "Unions, employers in collective bargaining, essential service employers",
+              "user_groups": [
+                "Workers",
+                "Industry",
+                "Government"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Mediation/arbitration request",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Labour Relations inquiry line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "LRC",
+                  "color": "#1565c0",
+                  "full_name": "Labour Relations Code"
+                }
+              ],
+              "mandate_tags": [
+                "labour-relations"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Hundreds of mediation and arbitration cases annually",
+                "basis": "Alberta has hundreds of active collective agreements with periodic disputes requiring intervention"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "labour-relations",
+                "note": "Effective dispute resolution prevents work stoppages that disrupt the economy and essential services"
+              },
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "core_human_needs",
+                  "domain": "working_employment"
+                },
+                "business": {
+                  "tier": "core_business_needs",
+                  "domain": "people_employment"
+                },
+                "relationships": []
+              }
+            },
+            {
+              "name": "File an unfair labour practice complaint",
+              "desc": "Workers, unions, or employers who believe an unfair labour practice has occurred — such as interference with union organizing, bad-faith bargaining, or intimidation — can file a complaint with the Alberta Labour Relations Board for investigation and adjudication.",
+              "users": "Workers, union representatives, employers",
+              "user_groups": [
+                "Workers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Unfair labour practice complaint",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Labour Relations Board",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Labour Relations Board information",
+                  "url": "https://www.alrb.gov.ab.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "LRC",
+                  "color": "#1565c0",
+                  "full_name": "Labour Relations Code"
+                }
+              ],
+              "mandate_tags": [
+                "labour-relations",
+                "enforcement"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Hundreds of ULP complaints annually",
+                "basis": "The Labour Relations Board adjudicates unfair labour practice complaints from across Alberta"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "labour-relations",
+                "note": "ULP enforcement protects workers' organizing rights and ensures fair collective bargaining"
+              },
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "core_human_needs",
+                  "domain": "working_employment"
+                },
+                "business": {
+                  "tier": "core_business_needs",
+                  "domain": "people_employment"
+                },
+                "relationships": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "title": "OUTCOME 2: Alberta's economy is diversified and globally competitive through trade and investment",
+      "short_name": "Trade, investment & economic development",
+      "legend_label": "Trade & investment",
+      "description": "The ministry attracts investment, supports businesses in accessing global markets, administers economic development programs including the film and television tax credit, and provides economic data and analysis to support business and policy decisions.",
+      "foundational_services": [
+        {
+          "name": "Develop trade, investment, and economic development strategy",
+          "desc": "Develops Alberta's trade and investment strategy, maintains international trade offices, negotiates trade agreements, manages investor relationships, and administers economic development programs including sector-specific incentives to diversify and grow Alberta's economy.",
+          "users": "Government policy staff, international trade offices, economic development agencies",
+          "user_groups": [
+            "Government"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/jobs-economy-and-trade",
+              "url": "https://www.alberta.ca/jobs-economy-and-trade"
+            }
+          ],
+          "legislation": [],
+          "mandate_tags": [
+            "trade",
+            "economic-growth"
+          ],
+          "taxonomy": {
+            "track": "both",
+            "individual": {
+              "tier": "societal_needs_supports",
+              "domain": "environment_land"
+            },
+            "business": {
+              "tier": "scenario_dependent",
+              "domain": "exporting_trade"
+            },
+            "relationships": [
+              {
+                "type": "shared_information",
+                "service": "Access Alberta economic data, statistics, and labour market information",
+                "ministry": "jeti"
+              }
+            ]
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Access business supports and investment services",
+          "supporting": [
+            {
+              "name": "Get help expanding your business or accessing new markets",
+              "desc": "Alberta businesses can access trade missions, export readiness programs, market intelligence, and connection services to help them grow and sell into new domestic and international markets. The ministry operates international trade offices and partners with federal trade commissioners.",
+              "users": "Alberta businesses seeking to export or expand, international investors",
+              "user_groups": [
+                "Business owners",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Alberta trade and export information",
+                  "url": "https://www.alberta.ca/alberta-trade-offices"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Trade and investment inquiries",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Trade and investment inquiry line",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "trade",
+                "economic-growth"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Thousands of businesses access trade supports annually",
+                "basis": "Alberta exports over $150 billion in goods annually with growing diversification"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "trade",
+                "note": "Trade support directly enables market access and revenue growth for Alberta businesses"
+              },
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "exporting_trade",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Invest in Alberta or relocate your business to the province",
+              "desc": "International and domestic companies considering Alberta as a location for investment, expansion, or relocation can access information on the province's competitive advantages, available incentives, sector strengths, and connection services through Invest Alberta and the ministry.",
+              "users": "International companies, domestic firms considering relocation, investors",
+              "user_groups": [
+                "Industry",
+                "Business owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Invest Alberta portal",
+                  "url": "https://investalberta.ca"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Investment inquiries",
+                  "url": null
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Invest Alberta international offices"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "investment",
+                "economic-growth"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of investment inquiries and projects annually",
+                "basis": "Invest Alberta actively manages a pipeline of investment attraction opportunities"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "investment",
+                "note": "Investment attraction creates jobs, diversifies the economy, and generates tax revenue"
+              },
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "exporting_trade",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Access economic data and sector incentive programs",
+          "supporting": [
+            {
+              "name": "Apply for the Alberta film and television tax credit",
+              "desc": "Film and television productions shooting in Alberta can apply for the provincial film and television tax credit. The program provides a refundable tax credit to eligible productions, supporting the growth of Alberta's creative industries and attracting productions to the province.",
+              "users": "Film and television producers, production companies, studios",
+              "user_groups": [
+                "Industry",
+                "Business owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Film and television tax credit application",
+                  "url": "https://www.alberta.ca/film-and-television-tax-credit"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Tax credit program details",
+                  "url": "https://www.alberta.ca/film-and-television-tax-credit"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "economic-growth"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Dozens of productions apply annually",
+                "basis": "Growing film industry with increasing production activity in Alberta"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "economic-growth",
+                "note": "Film tax credits attract productions that generate local spending, jobs, and industry capacity"
+              },
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "film_media",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Access Alberta economic data, statistics, and labour market information",
+              "desc": "Businesses, researchers, and the public can access Alberta's economic data including GDP, employment statistics, industry profiles, labour market forecasts, and regional economic indicators to support business planning and policy decisions.",
+              "users": "Businesses, economists, researchers, students, government planners",
+              "user_groups": [
+                "Industry",
+                "Business owners",
+                "Researchers",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Alberta economic dashboard and data",
+                  "url": "https://www.alberta.ca/economic-review-and-outlook"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Economic outlook and industry reports"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "economic-growth"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of data views and report downloads annually",
+                "basis": "Widely used by business, academia, and government for economic planning"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "economic-growth",
+                "note": "Reliable economic data supports informed business investment and policy decisions"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Develop trade, investment, and economic development strategy",
+                    "ministry": "jeti"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "title": "OUTCOME 3: Newcomers can immigrate to Alberta through provincial pathways",
+      "short_name": "Immigration pathways",
+      "legend_label": "Immigration pathways",
+      "description": "The ministry operates the Alberta Advantage Immigration Program, which nominates skilled workers and entrepreneurs for permanent residence, and provides information on immigration streams, eligibility, and application processes.",
+      "foundational_services": [
+        {
+          "name": "Design and manage provincial immigration policy and nomination streams",
+          "desc": "Develops immigration stream criteria, manages nomination allocations with the federal government, monitors labour market needs, and adjusts program design to attract workers and entrepreneurs who meet Alberta's economic priorities.",
+          "users": "Government policy staff, federal immigration partners",
+          "user_groups": [
+            "Government"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/alberta-advantage-immigration-program",
+              "url": "https://www.alberta.ca/alberta-advantage-immigration-program"
+            }
+          ],
+          "legislation": [],
+          "mandate_tags": [
+            "immigration"
+          ],
+          "taxonomy": {
+            "track": "individual",
+            "tier": "scenario_dependent",
+            "domain": "immigration_settling",
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Apply for provincial nomination as a skilled worker",
+          "supporting": [
+            {
+              "name": "Apply through the Alberta Opportunity Stream",
+              "desc": "Workers currently employed in Alberta in an eligible occupation can apply for a provincial nomination for permanent residence through the Alberta Opportunity Stream. Applicants must meet criteria for work experience, language proficiency, and education.",
+              "users": "Temporary foreign workers and residents working in Alberta",
+              "user_groups": [
+                "Newcomers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "AAIP online portal",
+                  "url": "https://www.alberta.ca/alberta-opportunity-stream"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Eligibility and stream information",
+                  "url": "https://www.alberta.ca/alberta-opportunity-stream"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "immigration"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Thousands of nominations annually",
+                "basis": "Major worker stream with significant allocation within Alberta's total nomination quota"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "immigration",
+                "note": "Addresses labour shortages by providing permanent residence pathways for workers already contributing to Alberta's economy"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "immigration_settling",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Apply through the Alberta Express Entry Stream",
+              "desc": "Candidates in the federal Express Entry pool with strong ties to Alberta or skills in priority sectors (health care, technology, policing) can receive a provincial notification of interest and apply for an Alberta nomination, boosting their federal ranking.",
+              "users": "Federal Express Entry candidates with Alberta connections or priority skills",
+              "user_groups": [
+                "Newcomers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "AAIP online portal",
+                  "url": "https://www.alberta.ca/alberta-express-entry-stream"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Stream details and priority sectors",
+                  "url": "https://www.alberta.ca/alberta-express-entry-stream"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "immigration"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Thousands of nominations annually",
+                "basis": "High-demand stream targeting skilled workers in priority sectors"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "immigration",
+                "note": "Attracts highly skilled professionals in health care, technology, and other priority sectors"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "immigration_settling",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Apply through the Rural Renewal Stream or Tourism and Hospitality Stream",
+              "desc": "Workers in rural Alberta communities or in tourism and hospitality roles can apply for nomination through dedicated streams designed to address labour needs in smaller communities and the service sector.",
+              "users": "Workers in rural Alberta or tourism/hospitality sector",
+              "user_groups": [
+                "Newcomers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "AAIP online portal",
+                  "url": "https://www.alberta.ca/alberta-advantage-immigration-program"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Stream eligibility details",
+                  "url": "https://www.alberta.ca/alberta-advantage-immigration-program"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "immigration",
+                "rural"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Hundreds of nominations annually per stream",
+                "basis": "Targeted streams for specific sectors and communities"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "immigration",
+                "note": "Sustains rural communities and tourism sector by addressing chronic labour shortages"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "immigration_settling",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Apply for provincial nomination as an entrepreneur",
+          "supporting": [
+            {
+              "name": "Apply to start or buy a business in Alberta as an entrepreneur",
+              "desc": "International entrepreneurs can apply for provincial nomination through the Rural Entrepreneur Stream, Graduate Entrepreneur Stream, Farm Stream, or Foreign Graduate Entrepreneur Stream by proposing a viable business plan and investing in Alberta's economy.",
+              "users": "International entrepreneurs and investors seeking permanent residence",
+              "user_groups": [
+                "Newcomers",
+                "Business owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "AAIP entrepreneur portal",
+                  "url": "https://www.alberta.ca/alberta-advantage-immigration-program"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Entrepreneur stream details",
+                  "url": "https://www.alberta.ca/alberta-advantage-immigration-program"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "immigration",
+                "economic-growth"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Hundreds of entrepreneur applications annually",
+                "basis": "Multiple entrepreneur streams attracting business investment"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "economic-growth",
+                "note": "Entrepreneur immigration brings capital investment, job creation, and business diversification"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "immigration_settling",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Check your immigration application status",
+              "desc": "Applicants to any Alberta Advantage Immigration Program stream can check the status of their application through the online portal. Processing times and application requirements vary by stream.",
+              "users": "AAIP applicants awaiting decisions",
+              "user_groups": [
+                "Newcomers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "AAIP application status portal",
+                  "url": "https://www.alberta.ca/alberta-advantage-immigration-program"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "immigration"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Tens of thousands of status checks annually",
+                "basis": "All AAIP applicants check status multiple times during processing"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "immigration",
+                "note": "Transparent status tracking reduces applicant anxiety and inquiry volume"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "immigration_settling",
+                "relationships": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#6a1b9a",
+      "title": "OUTCOME 4: Newcomers settle, integrate, and thrive in a welcoming and inclusive Alberta",
+      "short_name": "Settlement, integration & multiculturalism",
+      "legend_label": "Settlement & multiculturalism",
+      "description": "The ministry supports newcomers in settling and integrating into Alberta communities through settlement services, language training, foreign credential recognition, and employment supports, while promoting multiculturalism, combating racism, and advancing human rights.",
+      "foundational_services": [
+        {
+          "name": "Fund and coordinate settlement, integration, and multiculturalism programs",
+          "desc": "Administers settlement and integration funding for community organizations, coordinates multiculturalism grant programs, supports the Anti-Racism Advisory Council and the Premier's Council on Multiculturalism, and develops policy on inclusion, diversity, and human rights.",
+          "users": "Settlement service agencies, cultural organizations, advisory councils",
+          "user_groups": [
+            "Government"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/immigration",
+              "url": "https://www.alberta.ca/immigration"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "AHRA",
+              "color": "#6a1b9a",
+              "full_name": "Alberta Human Rights Act"
+            }
+          ],
+          "mandate_tags": [
+            "settlement",
+            "multiculturalism"
+          ],
+          "taxonomy": {
+            "track": "individual",
+            "tier": "scenario_dependent",
+            "domain": "immigration_settling",
+            "relationships": [
+              {
+                "type": "complainant_regulated_party",
+                "service": "File a human rights complaint about discrimination",
+                "ministry": "jeti"
+              }
+            ]
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get help settling in Alberta as a newcomer",
+          "supporting": [
+            {
+              "name": "Find settlement services and newcomer supports in your community",
+              "desc": "Newcomers can find funded settlement organizations in their community that provide orientation, language assessment, employment assistance, and community connections to help them establish their new life in Alberta.",
+              "users": "New immigrants, refugees, temporary residents transitioning to permanent residence",
+              "user_groups": [
+                "Newcomers",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Settlement service locator",
+                  "url": "https://www.alberta.ca/immigration"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Settlement agency contact lines",
+                  "url": null
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Settlement offices across Alberta"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "settlement"
+              ],
+              "reach_estimate": {
+                "tier": "very_high",
+                "estimate": "Tens of thousands of newcomers served annually",
+                "basis": "Alberta receives over 50,000 new permanent residents per year"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "settlement",
+                "note": "Effective settlement accelerates economic participation and reduces social costs"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "immigration_settling",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Access language training and assessment",
+              "desc": "Newcomers can access English language training, language assessment services, and bridging programs funded through provincial settlement programs. Language proficiency is key to employment and community integration.",
+              "users": "Newcomers needing English language support",
+              "user_groups": [
+                "Newcomers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Language training providers",
+                  "url": "https://www.alberta.ca/immigration"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Language training centres across Alberta"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "settlement"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Thousands of learners enrolled annually",
+                "basis": "Language training is among the most-used settlement services"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "settlement",
+                "note": "Language proficiency directly correlates with employment outcomes and earnings for newcomers"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "immigration_settling",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get information on living and working in Alberta before you arrive",
+              "desc": "Prospective and incoming immigrants can access guides, videos, and resources about life in Alberta including housing, health care, education, transportation, and workplace culture through the Opportunity Alberta hub.",
+              "users": "Prospective immigrants, approved applicants preparing to move",
+              "user_groups": [
+                "Newcomers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Opportunity Alberta / newcomer guides",
+                  "url": "https://www.alberta.ca/immigration"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Newcomer's Guide to Working in Alberta"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "settlement"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of page views and downloads",
+                "basis": "Pre-arrival information is heavily used by approved immigrants and prospective applicants"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "settlement",
+                "note": "Pre-arrival preparation reduces settlement challenges and accelerates integration"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "immigration_settling",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get your foreign credentials recognized in Alberta",
+          "supporting": [
+            {
+              "name": "Get your international qualifications assessed",
+              "desc": "The International Qualifications Assessment Service (IQAS) assesses foreign educational credentials against Alberta standards. An IQAS certificate is often required for immigration applications, professional licensing, and employment.",
+              "users": "Internationally educated professionals, immigration applicants, employers",
+              "user_groups": [
+                "Newcomers",
+                "Health providers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "IQAS assessment application",
+                  "url": "https://www.alberta.ca/international-qualifications-assessment"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "IQAS inquiry line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FRPA",
+                  "color": "#6a1b9a",
+                  "full_name": "Fair Registration Practices Act"
+                }
+              ],
+              "mandate_tags": [
+                "credentials"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Tens of thousands of assessments annually",
+                "basis": "IQAS is a primary credential assessment service for Alberta immigration and licensing"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "credentials",
+                "note": "Credential assessment is the gateway to professional licensing and skilled employment for newcomers"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "professional_credentials",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Navigate the licensing process for your regulated profession",
+                    "ministry": "jeti"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Navigate the licensing process for your regulated profession",
+              "desc": "Internationally trained professionals in over 80 regulated occupations can access guidance on the licensing process, connect with their Professional Regulatory Organization, and access bridging programs and financial supports to help them complete requirements.",
+              "users": "Internationally trained professionals in regulated occupations",
+              "user_groups": [
+                "Newcomers",
+                "Health providers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Foreign qualification recognition guide",
+                  "url": "https://www.alberta.ca/foreign-qualification-recognition"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Credential navigation programs"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "FQR inquiry line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FRPA",
+                  "color": "#6a1b9a",
+                  "full_name": "Fair Registration Practices Act"
+                }
+              ],
+              "mandate_tags": [
+                "credentials"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Thousands of professionals navigating licensing annually",
+                "basis": "80+ regulated professions with internationally trained applicants"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "credentials",
+                "note": "Fair credential recognition unlocks skilled employment and addresses professional labour shortages"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "professional_credentials",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Get your international qualifications assessed",
+                    "ministry": "jeti"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Find employment mentorship and career supports for newcomers",
+              "desc": "Newcomers can access career mentorship programs, job search workshops, and employment bridging supports that help them understand the Alberta labour market, build professional networks, and find work matching their skills and experience.",
+              "users": "Job-seeking newcomers, internationally trained workers",
+              "user_groups": [
+                "Newcomers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Mentorship and career support programs",
+                  "url": "https://www.alberta.ca/immigration"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Community employment service providers"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "settlement",
+                "employment"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Thousands of newcomers participating annually",
+                "basis": "Employment integration is a top priority for new immigrants"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "employment",
+                "note": "Mentorship and career support reduce the gap between newcomer skills and Alberta employment"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Access multiculturalism, human rights, and inclusion supports",
+          "supporting": [
+            {
+              "name": "Apply for a multiculturalism or community inclusion grant",
+              "desc": "Cultural and community organizations can apply for grants to support events, programs, and initiatives that promote cross-cultural understanding, celebrate diversity, and build inclusive communities across Alberta.",
+              "users": "Cultural organizations, community groups, non-profits",
+              "user_groups": [
+                "Organizations"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Multiculturalism grant application",
+                  "url": "https://www.alberta.ca/immigration"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Grant program inquiries",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "multiculturalism"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Hundreds of grant applications annually",
+                "basis": "Provincial grant programs supporting cultural community organizations"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "multiculturalism",
+                "note": "Community grants strengthen social cohesion and support cultural organizations province-wide"
+              },
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              }
+            },
+            {
+              "name": "File a human rights complaint about discrimination",
+              "desc": "Albertans who have experienced discrimination based on race, colour, ancestry, place of origin, religious beliefs, gender, disability, or other protected grounds can file a complaint with the Alberta Human Rights Commission for investigation and resolution.",
+              "users": "Individuals who have experienced discrimination in employment, services, or housing",
+              "user_groups": [
+                "General public",
+                "Newcomers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Human rights complaint form",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Alberta Human Rights Commission",
+                  "url": null
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Commission offices in Edmonton and Calgary"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AHRA",
+                  "color": "#6a1b9a",
+                  "full_name": "Alberta Human Rights Act"
+                }
+              ],
+              "mandate_tags": [
+                "human-rights"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Thousands of complaints and inquiries annually",
+                "basis": "Alberta Human Rights Commission receives complaints from across the province"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "human-rights",
+                "note": "Complaint mechanism enforces anti-discrimination protections and deters discriminatory practices"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": [
+                  {
+                    "type": "complainant_regulated_party",
+                    "service": "Fund and coordinate settlement, integration, and multiculturalism programs",
+                    "ministry": "jeti"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Learn about human rights protections and anti-racism resources",
+              "desc": "Albertans can access educational resources on human rights protections, anti-racism initiatives, and cultural diversity. Resources include guides on protected grounds, employer obligations, and how to promote inclusive workplaces and communities.",
+              "users": "All Albertans, employers, educators, community leaders",
+              "user_groups": [
+                "General public",
+                "Industry",
+                "Organizations"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Alberta Human Rights Commission resources",
+                  "url": null
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Human rights and anti-racism publications"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AHRA",
+                  "color": "#6a1b9a",
+                  "full_name": "Alberta Human Rights Act"
+                }
+              ],
+              "mandate_tags": [
+                "human-rights",
+                "multiculturalism"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of resource views and downloads",
+                "basis": "Broad public interest in human rights education and workplace inclusion"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "human-rights",
+                "note": "Human rights education prevents discrimination and fosters inclusive communities and workplaces"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Nominate an immigrant for an Alberta recognition award",
+              "desc": "Albertans can nominate outstanding immigrants who have made significant contributions to their communities for recognition through the Alberta Immigrant Impact Awards, celebrating the achievements and contributions of newcomers.",
+              "users": "Community members, organizations, employers wishing to recognize immigrant contributions",
+              "user_groups": [
+                "General public",
+                "Organizations"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Awards nomination form",
+                  "url": "https://www.alberta.ca/immigration"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Awards program information",
+                  "url": "https://www.alberta.ca/immigration"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "multiculturalism"
+              ],
+              "reach_estimate": {
+                "tier": "low",
+                "estimate": "Hundreds of nominations annually",
+                "basis": "Annual recognition program for immigrant community contributions"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "multiculturalism",
+                "note": "Public recognition builds welcoming culture and encourages immigrant civic participation"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "immigration_settling",
+                "relationships": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-apply",
+      "label": "Apply"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website"
+    },
+    {
+      "code": "ch-email",
+      "label": "Email"
+    },
+    {
+      "code": "ch-pub",
+      "label": "Publication"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Workers",
+    "Industry",
+    "Business owners",
+    "Newcomers",
+    "Families",
+    "Health providers",
+    "Organizations",
+    "Researchers",
+    "Government"
+  ],
+  "channel_types": {
+    "ch-apply": {
+      "label": "Apply",
+      "type": "digital"
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "type": "digital"
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "type": "digital"
+    },
+    "ch-web": {
+      "label": "Website",
+      "type": "digital"
+    },
+    "ch-email": {
+      "label": "Email",
+      "type": "digital"
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "type": "non-digital"
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "type": "non-digital"
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "type": "non-digital"
+    }
+  },
+  "digital_channels": [
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-web",
+    "ch-email"
+  ]
+}

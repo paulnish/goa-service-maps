@@ -1,0 +1,281 @@
+{
+  "prefix": "au",
+  "name": "Affordability and Utilities",
+  "short_name": "Affordability & Utilities",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "Affordable everyday life",
+      "legend_label": "Affordability",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get financial guidance and affordability advice"
+        },
+        {
+          "number": 2,
+          "name": "Apply for fuel and heating cost relief"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "short_name": "Reliable & affordable utilities",
+      "legend_label": "Utilities",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Understand and compare energy providers"
+        },
+        {
+          "number": 2,
+          "name": "Get help with a utility problem"
+        },
+        {
+          "number": 3,
+          "name": "Access rural utility services"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "EUA",
+      "full_name": "Electric Utilities Act",
+      "color": "#1565c0",
+      "citation": "SA 2003, c E-5.1",
+      "summary": "Establishes the framework for Alberta's deregulated electricity market, governing electricity generation, transmission, distribution, and retail services. Provides for consumer protection, market oversight, and the Utilities Consumer Advocate.",
+      "full_text": "<h2 id=\"sec-eua-title\">Electric Utilities Act</h2>\n<p><em>Chapter E-5.1 — SA 2003</em></p>\n\n<h3 id=\"sec-eua-p1\">Part 1 — Interpretation, Application and Purpose</h3>\n\n<p><strong>1(1)</strong> In this Act,</p>\n<p>(a) \"ancillary services\" means those services required to ensure that the interconnected electric system is operated in a manner that provides a satisfactory level of service with acceptable levels of voltage and frequency;</p>\n<p>(d) \"bill\" or \"billing\" means an account for charges arising from the generation, transmission, distribution or sale of electricity or from the provision of electricity services;</p>\n<p>(l) \"electric distribution service\" means any service that the owner of an electric distribution system is required to provide by the Commission or is required to provide under this Act or the regulations, but does not include the provision of electricity services to eligible customers under a regulated rate tariff;</p>\n<p>(t) \"eligible customer\" means a person who is entitled under the regulations to receive electricity services under a regulated rate tariff;</p>\n<p>(hh) \"regulated rate tariff\" means a rate tariff prepared and approved under section 103;</p>\n<p>(pp) \"rural electrification association\" means a rural electrification association as defined in the Rural Utilities Act.</p>\n\n<h3 id=\"sec-eua-s5\">Purposes of the Act</h3>\n<p><strong>5</strong> The purposes of this Act are</p>\n<p>(a) to provide an efficient Alberta electric industry structure including independent, separate corporations to carry out the responsibilities of the Independent System Operator and the Balancing Pool, and to set out the powers and duties of those corporations;</p>\n<p>(b) to provide for a competitive power pool so that an efficient electricity market based on fair and open competition can develop, where all persons wishing to exchange electric energy through the power pool may do so on non-discriminatory terms;</p>\n<p>(c) to provide for rules so that an efficient electricity market based on fair and open competition can develop in which neither the market nor the structure of the Alberta electric industry is distorted by unfair advantages of government-owned participants;</p>\n<p>(d) to continue a flexible framework so that decisions of the electric industry about the need for and investment in generation of electricity are guided by competitive market forces;</p>\n<p>(e) to enable customers to choose from a range of services in the Alberta electric industry developed by a competitive electricity market, and to receive satisfactory service;</p>\n<p>(f) to continue the sharing, among all customers of electricity in Alberta, of the benefits and costs associated with the Balancing Pool;</p>\n<p>(h) to provide for a framework so that the Alberta electric industry can, where necessary, be effectively regulated in a manner that minimizes the cost of regulation and provides incentives for efficiency.</p>\n\n<h3 id=\"sec-eua-p7\">Part 7 — Distribution</h3>\n\n<p><strong>101(1)</strong> A person wishing to obtain electricity for use on property must make arrangements for the purchase of electric distribution service from the owner of the electric distribution system in whose service area the property is located.</p>\n\n<p><strong>102(1)</strong> Each owner of an electric distribution system must prepare a distribution tariff setting out the terms and conditions on which the owner will provide electric distribution service.</p>\n\n<h3 id=\"sec-eua-s103\">Regulated rate tariff</h3>\n<p><strong>103(1)</strong> Each owner of an electric distribution system must prepare a regulated rate tariff for the purpose of recovering the prudent costs of providing electricity services to eligible customers.</p>\n<p><strong>(2)</strong> The owner must apply for approval of its regulated rate tariff to the Commission unless subsection (3) or (4) applies.</p>\n<p><strong>(3)</strong> If the owner is a municipality or a subsidiary of a municipality that does not have an affiliated retailer that provides retail electricity services outside the service area of the municipality, the owner may apply to the council of the municipality for approval of the regulated rate tariff.</p>\n<p><strong>(4)</strong> If the owner is a rural electrification association that does not have an affiliated retailer, the owner may apply to its board of directors for approval of the regulated rate tariff.</p>\n\n<h3 id=\"sec-eua-p8\">Part 8 — Retail</h3>\n\n<p><strong>110</strong> Subject to this Act and the regulations, a customer has the right to obtain retail electricity services from a retailer.</p>\n\n<p><strong>111(1)</strong> Retailers must (a) maintain records and accounts of their business activities as required by the regulations, and (b) comply with the regulations and any applicable Commission rules.</p>\n\n<h3 id=\"sec-eua-s108\">Regulations — Micro-generation</h3>\n<p><strong>108(1)</strong> The Lieutenant Governor in Council may make regulations</p>\n<p>(b.1) respecting micro-generation generating units, including, without limitation, regulations (i) defining \"micro-generation generating unit\", (ii) respecting the development, connection and operation of micro-generation generating units, and (iii) specifying which provisions of this Act and the regulations do not apply to micro-generation generating units;</p>\n<p>(b.11) respecting small scale generating units, including community generation generating units, including, without limitation, regulations (i) defining \"small scale generating unit\" and \"community generation generating unit\", (ii) respecting the development, connection and operation of such units.</p>\n\n<h3 id=\"sec-eua-rea\">Rural Electrification Associations</h3>\n<p>Rural electrification associations (REAs) as defined in the Rural Utilities Act are recognized throughout the Electric Utilities Act as owners of electric distribution systems. REAs may prepare and approve their own regulated rate tariffs (s. 103(4)), are exempt from certain affiliated retailer provisions, and serve rural Alberta communities with electricity distribution services.</p>\n\n<h3 id=\"sec-eua-uca\">Utilities Consumer Advocate</h3>\n<p>The Utilities Consumer Advocate (UCA) is established under the Government Organization Act (Schedule 13.1) to represent the interests of residential, farm, and small business consumers of electricity and natural gas. The UCA provides information to consumers about the retail electricity market, assists with complaint resolution, and represents consumer interests in regulatory proceedings before the Alberta Utilities Commission. The UCA's mandate encompasses both electricity (under the EUA framework) and natural gas (under the GUA framework).</p>",
+      "sections": [
+        {
+          "ref": "Part 1",
+          "title": "Electricity market framework",
+          "description": "Establishes Alberta's competitive electricity market structure, including generation, transmission, distribution, and retail functions. Sets out principles of fair, efficient, and openly competitive markets.",
+          "anchor_id": "sec-eua-p1",
+          "services": [
+            {
+              "name": "Develop utility market policy and regulation",
+              "type": "foundational",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": null,
+              "ms_name": null
+            }
+          ]
+        },
+        {
+          "ref": "Part 3",
+          "title": "Regulated rate option and retail market",
+          "description": "Provides for a regulated rate option for consumers who do not choose a competitive retailer, and establishes rules for the retail electricity market including retailer licensing and consumer protection.",
+          "anchor_id": "sec-eua-p3",
+          "services": [
+            {
+              "name": "Compare electricity retailers and plans",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Understand and compare energy providers"
+            }
+          ]
+        },
+        {
+          "ref": "Part 5",
+          "title": "Utilities Consumer Advocate",
+          "description": "Establishes the office of the Utilities Consumer Advocate to represent the interests of residential, farm, and small business consumers in regulatory proceedings and provide information and complaint resolution services.",
+          "anchor_id": "sec-eua-p5",
+          "services": [
+            {
+              "name": "Get help resolving a utility dispute",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Get help with a utility problem"
+            },
+            {
+              "name": "Get help preventing utility disconnection",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Get help with a utility problem"
+            }
+          ]
+        },
+        {
+          "ref": "Part 7",
+          "title": "Micro-generation",
+          "description": "Provides for small-scale electricity generation by consumers, allowing them to generate power from renewable sources and receive credit for excess electricity exported to the grid.",
+          "anchor_id": "sec-eua-p7",
+          "services": [
+            {
+              "name": "Learn about micro-generation and renewable energy options",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Understand and compare energy providers"
+            }
+          ]
+        },
+        {
+          "ref": "Part 9",
+          "title": "Rural electrification",
+          "description": "Provisions for rural electrification associations and the delivery of electricity services to rural Alberta, including grants and financial support for rural electric infrastructure.",
+          "anchor_id": "sec-eua-p9",
+          "services": [
+            {
+              "name": "Get information about rural electrification",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 3,
+              "ms_name": "Access rural utility services"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "GUA",
+      "full_name": "Gas Utilities Act",
+      "color": "#e65100",
+      "citation": "RSA 2000, c G-5",
+      "summary": "Regulates natural gas utilities in Alberta, including transmission, distribution, and retail services. Establishes the framework for gas utility rates, service standards, and consumer protection in the natural gas market.",
+      "full_text": "<h2 id=\"sec-gua-title\">Gas Utilities Act</h2>\n<p><em>Chapter G-5 — RSA 2000</em></p>\n\n<h3 id=\"sec-gua-p1\">Part 1 — Gas Prices</h3>\n\n<p><strong>6(1)</strong> Notwithstanding the terms of any contract, the Commission on the application of an interested party or a municipality or on its own motion may, and on an order of the Lieutenant Governor in Council shall, fix and determine the just and reasonable price or prices to be paid for any gas used, consumed, stored or retained within Alberta, and without limiting the foregoing powers and jurisdiction of the Commission, the Commission may or shall, as the case may be, fix and determine any or all of the following:</p>\n<p>(a) the just and reasonable price or prices to be paid for gas (i) in its natural state as and when produced from the earth at the gas exit from the separator, and in all other cases as and when produced from the well-head either alone or in association with other petroleum products or hydrocarbons;</p>\n<p>(b) the just and reasonable price or prices to be paid for gas in its processed state;</p>\n<p>(c) the just and reasonable price or prices to be paid for gas that is sold, supplied or delivered to consumers or classes of consumers within Alberta;</p>\n<p>(d) the just and reasonable price or prices to be paid for gas that is stored within Alberta.</p>\n\n<h3 id=\"sec-gua-p2\">Part 2 — Regulation of Gas Utilities</h3>\n\n<h4 id=\"sec-gua-s16\">Investigation re tolls</h4>\n<p><strong>16</strong> When it is made to appear to the Commission, on the application of any owner of a gas utility or of any municipality or person having an interest, present or contingent, in the matter in respect of which the application is made, that there is reason to believe that the tolls demanded by an owner of a gas utility exceed what is just and reasonable, having regard to the nature and quality of the service rendered or of the gas supplied, the Commission</p>\n<p>(a) may proceed to hold any investigation that it thinks fit into all matters relating to the nature and quality of the service or the gas supplied, or to the performance of the service and the tolls or charges demanded for it,</p>\n<p>(b) may make any order respecting the improvement of the service or gas and as to the tolls or charges demanded, that seems to it to be just and reasonable.</p>\n\n<h4 id=\"sec-gua-s17\">Restriction re charges</h4>\n<p><strong>17</strong> No owner of a gas utility shall</p>\n<p>(a) charge a toll for any service performed by it or for gas supplied by it until the toll has been approved by the Commission, or</p>\n<p>(b) charge a toll other than the toll specified in the order of the Commission.</p>\n\n<h4 id=\"sec-gua-s18\">Standards of service</h4>\n<p><strong>18</strong> The Commission may, on its own motion or on the application of any interested party, fix standards of service and efficiency to be observed by an owner of a gas utility.</p>\n\n<h3 id=\"sec-gua-p2p1\">Part 2.1 — Provision of Gas Services to Customers</h3>\n\n<h4 id=\"sec-gua-s28\">Definitions</h4>\n<p><strong>28</strong> In this Part,</p>\n<p>(b) \"customer\" means a consumer of gas who takes delivery of the gas at its place of consumption by means of a gas distribution system of a gas distributor;</p>\n<p>(c) \"default rate tariff\" means the rates, tolls or charges fixed by the Commission, and the terms or conditions fixed by the Commission, for gas services provided by a default supply provider;</p>\n<p>(d) \"default supply provider\" means a gas distributor, or a person authorized by a gas distributor, who provides gas services to customers under a default rate tariff;</p>\n<p>(f) \"gas distributor\" means the owner of a gas distribution system;</p>\n<p>(g) \"gas services\" means the provision and delivery of gas to a customer.</p>\n\n<h4 id=\"sec-gua-s28p1\">Customer choice and default supply</h4>\n<p><strong>28.1</strong> Subject to this Act and the regulations, every customer is entitled to obtain gas services from (a) a gas distributor or a default supply provider, or (b) a retailer.</p>\n\n<p><strong>28.5(1)</strong> A gas distributor must prepare a default rate tariff for the purpose of recovering the prudent costs of providing gas services to customers who do not purchase gas from a retailer.</p>\n<p><strong>(2)</strong> A gas distributor must apply for approval of its default rate tariff to the Commission.</p>\n\n<h4 id=\"sec-gua-s28r\">Retailer obligations</h4>\n<p><strong>28.8(1)</strong> Retailers providing gas services to customers must comply with the regulations and Commission rules respecting (a) consumer protection, (b) disclosure of terms and rates, (c) billing practices, and (d) marketing standards.</p>\n\n<h3 id=\"sec-gua-p4\">Part 4 — Rates and Schedules</h3>\n\n<p><strong>36(1)</strong> An owner of a gas utility shall file with the Commission schedules showing all tolls established by it and collect the tolls specified in the schedules.</p>\n<p><strong>(2)</strong> No owner of a gas utility shall charge a toll for any service performed by it or for any gas supplied by it until the schedule of the toll has been filed with and approved by the Commission.</p>\n\n<p><strong>37</strong> The Commission, on a complaint or on its own motion, may determine that any toll charged by an owner of a gas utility is unreasonable, unjust, insufficient or unjustly discriminatory, and may fix a just and reasonable toll to be charged.</p>\n\n<h3 id=\"sec-gua-complaints\">Consumer Complaints and Dispute Resolution</h3>\n<p>Consumers who have complaints about gas utility services, including billing disputes, service quality, or retailer conduct, may seek assistance from the Utilities Consumer Advocate (UCA). The UCA, established under the Government Organization Act, provides complaint mediation services and represents consumer interests in regulatory proceedings before the Alberta Utilities Commission. The Commission itself may also hear complaints under s. 16 and s. 37 and issue orders for remedies including toll adjustments and service improvements.</p>",
+      "sections": [
+        {
+          "ref": "Part 1",
+          "title": "Gas utility regulation",
+          "description": "Establishes the regulatory framework for natural gas utilities, including rate setting, service obligations, and the role of the Alberta Utilities Commission in overseeing gas distribution and retail.",
+          "anchor_id": "sec-gua-p1",
+          "services": [
+            {
+              "name": "Develop utility market policy and regulation",
+              "type": "foundational",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": null,
+              "ms_name": null
+            }
+          ]
+        },
+        {
+          "ref": "Part 3",
+          "title": "Gas retail market",
+          "description": "Provisions for the competitive retail natural gas market, including consumer choice of retailer, default supply arrangements, and consumer protection measures.",
+          "anchor_id": "sec-gua-p3",
+          "services": [
+            {
+              "name": "Compare natural gas retailers and plans",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Understand and compare energy providers"
+            }
+          ]
+        },
+        {
+          "ref": "Part 5",
+          "title": "Rural gas distribution",
+          "description": "Provisions for rural natural gas utilities and gas co-operatives, including governance requirements, safety standards, and financial support for rural gas infrastructure.",
+          "anchor_id": "sec-gua-p5",
+          "services": [
+            {
+              "name": "Get information about rural natural gas service",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 3,
+              "ms_name": "Access rural utility services"
+            }
+          ]
+        },
+        {
+          "ref": "Part 6",
+          "title": "Consumer complaints and dispute resolution",
+          "description": "Provisions for handling consumer complaints about gas utility services, including the role of the Utilities Consumer Advocate in mediating disputes between consumers and gas retailers or distributors.",
+          "anchor_id": "sec-gua-p6",
+          "services": [
+            {
+              "name": "Get help resolving a utility dispute",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Get help with a utility problem"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "HEEA",
+      "full_name": "Hydro and Electric Energy Act",
+      "color": "#7b1fa2",
+      "citation": "RSA 2000, c H-16",
+      "summary": "Establishes foundational legislation for hydroelectric and electric energy in Alberta, governing the construction, operation, and interconnection of power plants and transmission lines, and providing for micro-generation and small-scale power production.",
+      "full_text": "<h2 id=\"sec-heea-title\">Hydro and Electric Energy Act</h2>\n<p><em>Chapter H-16 — RSA 2000</em></p>\n\n<h3 id=\"sec-heea-defs\">Interpretation</h3>\n<p><strong>1(1)</strong> In this Act,</p>\n<p>(a) \"Commission\" means the Alberta Utilities Commission under the Alberta Utilities Commission Act;</p>\n<p>(b) \"electric distribution system\" means (i) any system, works, plant, equipment or service for the delivery, distribution or furnishing of electric energy directly to consumers, and (ii) an energy storage facility approved by the Commission in accordance with section 25.1, but does not include a power plant or a transmission line;</p>\n<p>(c) \"electric energy\" in addition to its ordinary meaning includes (i) energy associated with an electromotive force, and (ii) power and reactive power and other electromagnetic effects associated with electric energy;</p>\n<p>(c.1) \"energy storage facility\" means a facility that uses any technology or process that is capable of using electric energy as an input, storing the energy for a period of time and then discharging electric energy as an output;</p>\n<p>(e) \"hydro development\" means (i) a power plant or transmission line, and (ii) any structure that is part of, or ancillary to, the power plant or transmission line;</p>\n<p>(f) \"operator\" includes a person who constructs or operates a hydro development, power plant, energy storage facility or transmission line and includes a crown corporation.</p>\n\n<h3 id=\"sec-heea-purposes\">Purposes</h3>\n<p><strong>2</strong> The purposes of this Act are</p>\n<p>(a) to provide for the examination and approval of hydro developments, power plants and transmission lines on the basis of environmental, technical and financial considerations,</p>\n<p>(b) to provide for the approval and regulation of power plants and transmission lines operated by persons other than the Crown,</p>\n<p>(c) to provide for the protection and preservation of the public interest in the use of electric energy and in the conservation of human and natural resources, and</p>\n<p>(d) to provide for the control of pollution and ensuring environmental conservation.</p>\n\n<h3 id=\"sec-heea-p1\">Part 1 — Powers and Duties of the Commission</h3>\n\n<p><strong>5(1)</strong> The Commission may make regulations</p>\n<p>(a) prescribing the information that is to be included in or is to accompany any application under this Act or the regulations;</p>\n<p>(b) excluding a hydro development, power plant, energy storage facility, transmission line or electric distribution system of a kind described in the regulations from the application of any provision of this Act or the regulations;</p>\n<p>(d) prescribing conditions subject to which the holder of an approval, permit or licence under this Act or a person proposing to construct a power plant, energy storage facility, transmission line or electric distribution system must comply;</p>\n<p>(e) prescribing safety standards for power plants, transmission lines, energy storage facilities and other facilities;</p>\n<p>(f) prescribing environmental standards and requirements for pollution control.</p>\n\n<p><strong>6</strong> The Commission, when required by the Lieutenant Governor in Council shall, or on its own motion may, inquire into, examine and investigate any matter referred to in section 2.</p>\n\n<p><strong>7</strong> The Commission, with the approval of the Lieutenant Governor in Council, may make any just and reasonable orders and directions that the Commission considers necessary to effect the purposes of this Act.</p>\n\n<h3 id=\"sec-heea-p2\">Part 2 — Hydro Developments, Power Plants, Energy Storage Facilities and Transmission Lines</h3>\n\n<p><strong>9</strong> No person shall construct or operate a hydro development unless the Commission, by order, has approved the construction and operation of the hydro development on application made to it.</p>\n\n<p><strong>11</strong> The Commission shall not approve the construction and operation of a power plant or transmission line unless it is satisfied that the applicant has adequate financial resources and technical capability to construct and operate the facility in conformance with the approval.</p>\n\n<p><strong>13.01</strong> No person shall construct or operate an energy storage facility unless the Commission, by order, has approved the construction and operation of the energy storage facility on application made to it.</p>\n\n<h3 id=\"sec-heea-p3\">Part 3 — Electric Distribution Systems</h3>\n\n<p><strong>24(1)</strong> A person distributing or proposing to distribute electric energy solely on land of which the person is the owner or tenant for use on that land and (a) not across a public highway, or (b) across a public highway if the voltage level of the distribution is 750 volts or less, is not subject to this Part unless the Commission otherwise directs.</p>\n\n<p><strong>25(1)</strong> No person shall construct or operate an electric distribution system unless the Commission, by order, has approved the construction and operation of the electric distribution system.</p>\n\n<p><strong>25.1</strong> The Commission may approve the connection and operation of an energy storage facility as a component of an electric distribution system, subject to such conditions as the Commission considers appropriate, including technical standards and safety requirements.</p>\n\n<h4 id=\"sec-heea-microgen\">Micro-generation and Small Power Production</h4>\n<p>The Commission may approve residential generators and small-scale power producers subject to technical standards, safety requirements, and environmental protection measures. The Micro-Generation Regulation (AR 27/2008) under the Electric Utilities Act establishes the detailed framework for micro-generation, allowing customers to generate electricity from renewable or alternative sources for their own use and receive credit for excess electricity exported to the grid. The Hydro and Electric Energy Act provides the foundational approval framework for all generating facilities including small-scale producers.</p>\n\n<h3 id=\"sec-heea-p5\">Part 5 — Provisions of General Application</h3>\n\n<h4 id=\"sec-heea-safety\">Safety Standards</h4>\n<p><strong>36</strong> The Commission may require that a power plant, transmission line, energy storage facility, residential generator or other electric facility comply with prescribed safety standards including electrical safety, structural integrity, and operational safety requirements.</p>\n\n<h4 id=\"sec-heea-offences\">Offences and Penalties</h4>\n<p><strong>43</strong> A person who contravenes this Act or the regulations commits an offence.</p>\n<p><strong>45</strong> A person who commits an offence is liable (a) for a first offence, to a fine of not less than $300 and not exceeding $10,000 or to imprisonment for not more than 12 months or both, and (b) for a second or subsequent offence, to a fine of not less than $1,000 and not exceeding $50,000 or to imprisonment for not more than two years or both.</p>\n\n<h4 id=\"sec-heea-rural\">Rural Electric Systems</h4>\n<p>Rural electrification associations (REAs) operate under the combined framework of the Hydro and Electric Energy Act and the Rural Utilities Act. REAs are authorized to construct and operate electric distribution systems serving rural Alberta, subject to Commission approval under s. 25. The Commission prescribes safety and operational standards for all electric distribution systems including those operated by REAs, and may investigate complaints and make orders to ensure service quality and safety compliance.</p>",
+      "sections": [
+        {
+          "ref": "Part 1",
+          "title": "Generation and transmission approvals",
+          "description": "Establishes the approval process for constructing and operating power plants and transmission lines in Alberta, including environmental and technical requirements.",
+          "anchor_id": "sec-heea-p1",
+          "services": [
+            {
+              "name": "Develop utility market policy and regulation",
+              "type": "foundational",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": null,
+              "ms_name": null
+            }
+          ]
+        },
+        {
+          "ref": "Part 3",
+          "title": "Micro-generation and small power production",
+          "description": "Provisions for small-scale electricity generation including micro-generation by residential and commercial consumers, and small power producers using renewable energy sources.",
+          "anchor_id": "sec-heea-p3",
+          "services": [
+            {
+              "name": "Learn about micro-generation and renewable energy options",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Understand and compare energy providers"
+            }
+          ]
+        },
+        {
+          "ref": "Part 5",
+          "title": "Rural electric systems",
+          "description": "Provisions governing the operation of rural electric systems and Rural Electrification Associations, including safety standards and the Rural Electric Program.",
+          "anchor_id": "sec-heea-p5",
+          "services": [
+            {
+              "name": "Get information about rural electrification",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 3,
+              "ms_name": "Access rural utility services"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 3,
+    "sections_count": 12,
+    "services_with_leg_count": 8,
+    "services_multi_act_count": 3
+  }
+}

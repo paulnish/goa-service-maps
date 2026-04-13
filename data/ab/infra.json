@@ -1,0 +1,643 @@
+{
+  "prefix": "infra",
+  "full_name": "Infrastructure",
+  "short_name": "Infrastructure",
+  "blurb": "Plans, designs, builds, and manages Alberta's public infrastructure including schools, health care facilities, and government buildings — delivering capital projects, managing government-owned properties, and ensuring procurement accountability.",
+  "nav_name": "Infrastructure",
+  "has_registry_agents": false,
+  "_status": "draft",
+  "foundational_services": [],
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "OUTCOME 1: Alberta has the schools, health facilities, and public buildings communities need",
+      "short_name": "Capital planning & project delivery",
+      "legend_label": "Capital planning",
+      "description": "The ministry plans, designs, and delivers major capital projects including new schools, health care facilities, government buildings, and community infrastructure to serve Alberta's growing and changing population.",
+      "foundational_services": [
+        {
+          "name": "Develop the provincial capital plan and prioritize infrastructure investments",
+          "desc": "Coordinates the provincial capital planning process, assesses infrastructure needs across ministries, prioritizes projects, and allocates capital funding for schools, health facilities, government buildings, and other public infrastructure to meet population growth and service demands.",
+          "users": "Government planners, Treasury Board, school boards, health authorities",
+          "user_groups": ["Government"],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/infrastructure",
+              "url": "https://www.alberta.ca/infrastructure"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "PWA",
+              "color": "#1565c0",
+              "full_name": "Public Works Act"
+            }
+          ],
+          "mandate_tags": ["capital-planning"],
+          "taxonomy": {
+            "track": "individual",
+            "tier": "societal_needs_supports",
+            "domain": "transport_infrastructure",
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Track a school or health facility capital project",
+          "supporting": [
+            {
+              "name": "Check the status of a new school construction or modernization project",
+              "desc": "School boards, parents, and communities can track the status of approved school capital projects including new construction, modernizations, and replacements. Project information includes location, scope, timeline, and current construction phase.",
+              "users": "Parents, school boards, community members in growing areas",
+              "user_groups": ["General public", "Municipalities"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "School capital project tracker",
+                  "url": "https://www.alberta.ca/infrastructure"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/infrastructure",
+                  "url": "https://www.alberta.ca/infrastructure"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["capital-planning"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of parents and community members track school projects",
+                "basis": "Alberta typically has dozens of school projects underway at any time"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "capital-planning",
+                "note": "School construction directly enables education access for growing communities"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Check the status of a health facility construction or expansion project",
+              "desc": "Communities can track the status of health facility capital projects including new hospitals, expansions, and major renovations. Project details include scope, timeline, construction phase, and expected completion.",
+              "users": "Community members, health administrators, municipal councils",
+              "user_groups": ["General public", "Municipalities"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Health facility project tracker",
+                  "url": "https://www.alberta.ca/infrastructure"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/infrastructure",
+                  "url": "https://www.alberta.ca/infrastructure"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["capital-planning"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Dozens of health facility projects affecting hundreds of communities",
+                "basis": "Major health capital investments include hospitals, cancer centres, and patient bed expansions"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "capital-planning",
+                "note": "Health facility investment directly expands health care capacity and patient access"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Bid on or participate in a public infrastructure project",
+          "supporting": [
+            {
+              "name": "Find and bid on government infrastructure tenders",
+              "desc": "Construction firms, architects, engineers, and other contractors can find open tenders for government infrastructure projects including schools, health facilities, government buildings, and maintenance contracts. Bidding follows the Public Works Act procurement framework.",
+              "users": "Construction companies, engineering firms, architects, subcontractors",
+              "user_groups": ["Industry"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Government tendering portal",
+                  "url": "https://www.alberta.ca/infrastructure"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Procurement and contracting information",
+                  "url": "https://www.alberta.ca/infrastructure"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PWA",
+                  "color": "#1565c0",
+                  "full_name": "Public Works Act"
+                }
+              ],
+              "mandate_tags": ["procurement"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Thousands of firms participate in government infrastructure tendering",
+                "basis": "Alberta's capital plan represents billions of dollars in annual construction activity"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "procurement",
+                "note": "Open tendering supports fair competition and maximizes value for public infrastructure spending"
+              },
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "government_procurement",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Resolve a payment dispute on a public works contract",
+              "desc": "Contractors and subcontractors on public works projects can use the prompt payment and adjudication framework under the Public Works Act to resolve payment disputes. The Act sets mandatory payment timelines and provides binding adjudication for disputed invoices.",
+              "users": "General contractors, subcontractors, suppliers on government projects",
+              "user_groups": ["Industry"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Adjudication request",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Prompt payment and adjudication information",
+                  "url": "https://www.alberta.ca/infrastructure"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PWA",
+                  "color": "#1565c0",
+                  "full_name": "Public Works Act"
+                }
+              ],
+              "mandate_tags": ["procurement"],
+              "reach_estimate": {
+                "tier": "low",
+                "estimate": "Hundreds of payment disputes annually",
+                "basis": "Prompt payment provisions apply to all public works contracts"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "procurement",
+                "note": "Prompt payment protections support contractor cash flow and keep projects on schedule"
+              },
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "government_procurement",
+                "relationships": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "title": "OUTCOME 2: Government facilities are well-managed and serve Albertans effectively",
+      "short_name": "Facility management & properties",
+      "legend_label": "Facilities & properties",
+      "description": "The ministry manages the Government of Alberta's portfolio of owned and leased buildings, provides accommodation for government offices, maintains facilities to safety and functionality standards, and disposes of surplus properties.",
+      "foundational_services": [
+        {
+          "name": "Manage the government facility portfolio and accommodation standards",
+          "desc": "Administers the government's building portfolio including space planning, facility condition assessments, maintenance programs, energy management, and accommodation standards for government offices across the province.",
+          "users": "Government accommodation planners, facility management staff",
+          "user_groups": ["Government"],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/infrastructure",
+              "url": "https://www.alberta.ca/infrastructure"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "PWA",
+              "color": "#1565c0",
+              "full_name": "Public Works Act"
+            }
+          ],
+          "mandate_tags": ["facility-management"],
+          "taxonomy": {
+            "track": "individual",
+            "tier": "societal_needs_supports",
+            "domain": "transport_infrastructure",
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Access government property and leasing services",
+          "supporting": [
+            {
+              "name": "Buy surplus government property",
+              "desc": "When government properties (land or buildings) are no longer needed, they are made available for sale. Interested buyers can find listings of available surplus government properties across the province.",
+              "users": "Developers, investors, municipalities, members of the public",
+              "user_groups": ["General public", "Industry", "Municipalities"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Government properties for sale listings",
+                  "url": "https://www.alberta.ca/infrastructure"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Realty Services inquiry line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PWA",
+                  "color": "#1565c0",
+                  "full_name": "Public Works Act"
+                }
+              ],
+              "mandate_tags": ["property-management"],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Dozens of surplus properties listed annually",
+                "basis": "Ongoing portfolio optimization releases surplus assets"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "property-management",
+                "note": "Surplus property sales return capital to the public and enable community development"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Lease space to or from the Government of Alberta",
+              "desc": "Property owners can offer space for government lease, and government agencies can request accommodation through the ministry's realty services. The ministry manages hundreds of leases across the province for government offices and service delivery locations.",
+              "users": "Commercial property owners, landlords, government accommodation requesters",
+              "user_groups": ["Industry"],
+              "channels": [
+                {
+                  "type": "ch-email",
+                  "label": "Realty Services inquiries",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Realty Services",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["property-management"],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Hundreds of active leases managed province-wide",
+                "basis": "Government leases office and service delivery space across Alberta"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "property-management",
+                "note": "Efficient accommodation supports government service delivery and sustains commercial real estate"
+              },
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "registration_legal",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Report a facility issue or access building services",
+          "supporting": [
+            {
+              "name": "Report a maintenance or safety issue at a government building",
+              "desc": "Tenants, staff, and members of the public can report maintenance issues, safety concerns, or facility problems at government-owned buildings. The ministry manages building systems, safety compliance, and capital maintenance across the government facility portfolio.",
+              "users": "Government staff in provincial buildings, members of the public visiting government offices",
+              "user_groups": ["General public", "Government"],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Facility maintenance line",
+                  "url": null
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Facility service request",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["facility-management"],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Thousands of maintenance requests annually",
+                "basis": "Large portfolio of government buildings requiring ongoing maintenance"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "facility-management",
+                "note": "Responsive maintenance protects public assets and ensures safe, functional workplaces"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Access technical standards and guidelines for public buildings",
+              "desc": "Architects, engineers, and project managers working on government infrastructure projects can access the ministry's technical standards and design guidelines for public buildings, covering accessibility, energy performance, building systems, and safety requirements.",
+              "users": "Design professionals, project managers, construction firms working on government projects",
+              "user_groups": ["Industry"],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Infrastructure technical resources",
+                  "url": "https://www.alberta.ca/infrastructure"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Technical standards and design guidelines"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["facility-management"],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Hundreds of design professionals reference government standards",
+                "basis": "All government capital projects must comply with provincial technical standards"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "facility-management",
+                "note": "Consistent standards ensure quality, accessibility, and long-term durability of public buildings"
+              },
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "safety_codes_standards",
+                "relationships": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "title": "OUTCOME 3: Public infrastructure is financed and delivered with accountability and value",
+      "short_name": "Financing & accountability",
+      "legend_label": "Financing & accountability",
+      "description": "The ministry ensures public infrastructure is delivered with fiscal accountability through transparent procurement, alternative financing models including public-private partnerships, heritage protection during development, and regular reporting on capital project performance.",
+      "foundational_services": [
+        {
+          "name": "Develop procurement policy and alternative financing frameworks",
+          "desc": "Develops procurement standards, prompt payment policies, public-private partnership frameworks, and alternative financing models to deliver infrastructure projects efficiently while maximizing value for Albertans.",
+          "users": "Government procurement staff, P3 partners, Treasury Board",
+          "user_groups": ["Government"],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/infrastructure",
+              "url": "https://www.alberta.ca/infrastructure"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "PWA",
+              "color": "#1565c0",
+              "full_name": "Public Works Act"
+            }
+          ],
+          "mandate_tags": ["procurement"],
+          "taxonomy": {
+            "track": "business",
+            "tier": "scenario_dependent",
+            "domain": "government_procurement",
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Engage with public-private partnership and alternative financing opportunities",
+          "supporting": [
+            {
+              "name": "Learn about public-private partnership opportunities for infrastructure",
+              "desc": "Private sector firms and investors can learn about Alberta's public-private partnership (P3) model, current and upcoming P3 opportunities, and the framework for partnering with government to deliver public infrastructure such as schools, roads, and health facilities.",
+              "users": "Construction firms, investors, financial institutions, infrastructure developers",
+              "user_groups": ["Industry"],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "P3 opportunities and framework",
+                  "url": "https://www.alberta.ca/infrastructure"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "P3 project inquiries",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["procurement", "financing"],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Dozens of firms actively engaged in P3 opportunities",
+                "basis": "Alberta uses P3 for select major infrastructure projects"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "financing",
+                "note": "P3 models can accelerate infrastructure delivery and transfer construction and maintenance risk"
+              },
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "government_procurement",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Review capital plan reports and infrastructure spending accountability",
+              "desc": "Albertans can review the provincial capital plan, annual reports on infrastructure spending, project performance, and financial accountability for public infrastructure investments. Reports are published through the ministry and budget documents.",
+              "users": "Taxpayers, media, researchers, municipal leaders",
+              "user_groups": ["General public", "Municipalities", "Researchers"],
+              "channels": [
+                {
+                  "type": "ch-pub",
+                  "label": "Capital plan and annual reports"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/infrastructure",
+                  "url": "https://www.alberta.ca/infrastructure"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": ["accountability"],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of residents and stakeholders access capital plan information",
+                "basis": "The capital plan represents billions in public spending with broad public interest"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "accountability",
+                "note": "Transparent reporting builds public confidence in infrastructure spending decisions"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Protect heritage resources during infrastructure development",
+          "supporting": [
+            {
+              "name": "Request a heritage resource impact assessment for a project",
+              "desc": "When an infrastructure or development project may affect designated historical resources, heritage buildings, or archaeological sites, proponents must obtain a heritage resource impact assessment. The ministry coordinates with heritage authorities to protect significant sites.",
+              "users": "Project proponents, developers, construction firms near heritage sites",
+              "user_groups": ["Industry", "Municipalities"],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Heritage impact assessment request",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Heritage resource requirements",
+                  "url": "https://www.alberta.ca/infrastructure"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HRA",
+                  "color": "#c62828",
+                  "full_name": "Historical Resources Act"
+                }
+              ],
+              "mandate_tags": ["heritage"],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Hundreds of heritage assessments annually",
+                "basis": "All major projects in areas with potential heritage resources require assessment"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "heritage",
+                "note": "Heritage protection preserves Alberta's history while enabling responsible development"
+              },
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "environmental_requirements",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Look up designated heritage buildings and provincial historic sites",
+              "desc": "Albertans, researchers, and developers can look up buildings and sites designated as provincial historic resources. Designated resources have legal protection and specific requirements for any proposed alterations or nearby development.",
+              "users": "Property owners, developers, historians, researchers, tourists",
+              "user_groups": ["General public", "Industry", "Researchers"],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Heritage resource registry",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Historical resources information",
+                  "url": "https://www.alberta.ca/infrastructure"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HRA",
+                  "color": "#c62828",
+                  "full_name": "Historical Resources Act"
+                }
+              ],
+              "mandate_tags": ["heritage"],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Thousands of registry lookups annually",
+                "basis": "Alberta has hundreds of designated historic resources with growing public and development interest"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "heritage",
+                "note": "Heritage registry information supports due diligence for development and promotes cultural tourism"
+              },
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "channel_filters": [
+    {"code": "ch-apply", "label": "Apply"},
+    {"code": "ch-find", "label": "Find / search"},
+    {"code": "ch-web", "label": "Website"},
+    {"code": "ch-email", "label": "Email"},
+    {"code": "ch-pub", "label": "Publication"},
+    {"code": "ch-phone", "label": "Phone"}
+  ],
+  "user_group_filters": ["General public", "Industry", "Municipalities", "Researchers", "Government"],
+  "channel_types": {
+    "ch-apply": {"label": "Apply", "type": "digital"},
+    "ch-find": {"label": "Find / search", "type": "digital"},
+    "ch-web": {"label": "Website", "type": "digital"},
+    "ch-email": {"label": "Email", "type": "digital"},
+    "ch-pub": {"label": "Publication", "type": "non-digital"},
+    "ch-phone": {"label": "Phone", "type": "non-digital"}
+  },
+  "digital_channels": ["ch-apply", "ch-find", "ch-web", "ch-email"]
+}

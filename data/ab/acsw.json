@@ -1,0 +1,1046 @@
+{
+  "prefix": "acsw",
+  "full_name": "Arts, Culture and Status of Women",
+  "short_name": "Arts, Culture & Status of Women",
+  "blurb": "Supports Alberta's arts sector and creative industries, preserves heritage and history, funds community organizations and facilities, provides French-language services, and advances equality and safety for women and girls.",
+  "nav_name": "Arts, Culture & Status of Women",
+  "has_registry_agents": false,
+  "_status": "COMPLETE — Pass 2. 3 goals, 14 supporting services, 0 ministry foundational, 3 goal-level foundational. All services have legislation tags where applicable. Reach estimates added. URL audit complete. Channel audit complete. User group audit complete.",
+  "foundational_services": [],
+  "goals": [
+    {
+      "number": 1,
+      "color": "#7b1fa2",
+      "title": "OUTCOME 1: Alberta has a vibrant arts sector and thriving creative industries",
+      "short_name": "Vibrant arts & creative industries",
+      "legend_label": "Arts & Creative",
+      "description": "The ministry supports artists, arts organizations, and creative industries through grants, film classification and distribution licensing, and recognition of arts professions.",
+      "foundational_services": [
+        {
+          "name": "Develop arts and cultural industries strategy",
+          "desc": "Strategic planning and policy development for Alberta's arts sector and creative industries, including coordination with the Alberta Foundation for the Arts and industry partners.",
+          "users": "Government policy staff, arts organizations, cultural industries",
+          "user_groups": [
+            "Industry associations",
+            "Non-profit organizations"
+          ],
+          "taxonomy": {
+            "track": "individual",
+            "tier": "societal_needs_supports",
+            "domain": "recreation_culture",
+            "relationships": []
+          },
+          "channels": [
+            {
+              "type": "ch-find",
+              "label": "alberta.ca/arts-culture-and-status-of-women",
+              "url": "https://www.alberta.ca/arts-culture-and-status-of-women"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "AFAA",
+              "color": "#e65100",
+              "full_name": "Alberta Foundation for the Arts Act"
+            }
+          ],
+          "mandate_tags": [
+            {
+              "number": 1,
+              "tip": "Grow cultural industries with JETI minister"
+            }
+          ]
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Apply for arts and cultural industry funding",
+          "supporting": [
+            {
+              "name": "Apply for an arts project or individual artist grant",
+              "desc": "Artists and arts organizations can apply for project grants, operating grants, and individual artist grants through the Alberta Foundation for the Arts. Funding supports visual arts, performing arts, literary arts, and media arts across the province.",
+              "users": "Individual artists, arts organizations, arts collectives",
+              "user_groups": [
+                "General public",
+                "Non-profit organizations"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "high",
+                "estimate": "~1,500 grants/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Arts sector contributes approximately $7.1B to Alberta's GDP"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/arts-culture-and-status-of-women",
+                  "url": "https://www.alberta.ca/arts-culture-and-status-of-women"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Arts branch: 780-427-6315"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AFAA",
+                  "color": "#e65100",
+                  "full_name": "Alberta Foundation for the Arts Act"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Raise funds through online crowdfunding",
+              "desc": "Non-profit and community organizations can use the government-backed CrowdFunding Alberta platform to raise funds from the public for community projects, arts initiatives, and social causes.",
+              "users": "Non-profit organizations, community groups, social enterprises",
+              "user_groups": [
+                "Non-profit organizations",
+                "General public"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "economic_impact": {
+                "tag": "Social ROI",
+                "category": "social_roi",
+                "note": "Crowdfunding platform enables community-driven funding for local projects"
+              },
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "alberta.ca/crowdfunding-alberta-platform",
+                  "url": "https://www.alberta.ca/crowdfunding-alberta-platform"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Produce, classify, and distribute films",
+          "supporting": [
+            {
+              "name": "Apply for film and television production funding",
+              "desc": "Film and television producers can apply for production grants to support screen-based productions in Alberta. Funding supports job creation and economic activity in the creative industries.",
+              "users": "Film producers, television producers, digital media creators",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "film_media",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "low",
+                "estimate": "~50 projects/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Film and television production generates significant economic activity and employment"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/arts-culture-and-status-of-women",
+                  "url": "https://www.alberta.ca/arts-culture-and-status-of-women"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Arts branch: 780-427-6315"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Grow cultural industries with JETI minister"
+                }
+              ]
+            },
+            {
+              "name": "Submit a film or video for classification",
+              "desc": "All films, videos, and video games distributed or exhibited in Alberta must be classified. Distributors submit content for rating by Alberta's film classification office, which assigns age-appropriate classifications to protect consumers.",
+              "users": "Film distributors, exhibitors, video game distributors",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": [
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "Get information about the Fairness and Safety in Sport Act",
+                    "ministry": "ts"
+                  }
+                ]
+              },
+              "reach": {
+                "tier": "medium",
+                "estimate": "~800 titles/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Film classification protects consumers and enables lawful distribution in Alberta"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/film-ratings-distribution",
+                  "url": "https://www.alberta.ca/film-ratings-distribution"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Film classification: 780-427-2006"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FVCA",
+                  "color": "#7b1fa2",
+                  "full_name": "Film and Video Classification Act"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Apply for a film distribution licence",
+              "desc": "Anyone who distributes films in Alberta must hold a valid distribution licence issued under the Film and Video Classification Act. Licences must be renewed annually.",
+              "users": "Film distributors, streaming services, retailers",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "low",
+                "estimate": "~20 active distributors",
+                "basis": "active"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Distribution licensing ensures lawful film supply chain and consumer protection"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/film-distribution",
+                  "url": "https://www.alberta.ca/film-distribution"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Film classification: 780-427-2006"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FVCA",
+                  "color": "#7b1fa2",
+                  "full_name": "Film and Video Classification Act"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Learn about arts profession recognition",
+          "supporting": [
+            {
+              "name": "Learn about your rights as a professional artist",
+              "desc": "Alberta recognizes the professional status of artists through legislation that establishes principles for fair treatment of arts professionals and affirms their contribution to the social, cultural, and economic well-being of the province.",
+              "users": "Professional artists, arts organizations, cultural workers",
+              "user_groups": [
+                "General public",
+                "Non-profit organizations"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "professional_credentials",
+                "relationships": []
+              },
+              "economic_impact": {
+                "tag": "Social ROI",
+                "category": "social_roi",
+                "note": "Professional recognition supports fair treatment and working conditions for artists"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/arts-culture-and-status-of-women",
+                  "url": "https://www.alberta.ca/arts-culture-and-status-of-women"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "APRA",
+                  "color": "#2e7d32",
+                  "full_name": "Arts Professions Recognition Act"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "title": "OUTCOME 2: Albertans connect with their heritage and build strong communities",
+      "short_name": "Heritage & strong communities",
+      "legend_label": "Heritage & Community",
+      "description": "The ministry preserves Alberta's heritage, supports museums and archives, funds community organizations and facilities, provides French-language services, and promotes cultural celebrations including Alberta Day.",
+      "foundational_services": [
+        {
+          "name": "Manage heritage policy and provincial collections",
+          "desc": "Policy development for heritage preservation, management of provincial collections held at the Royal Alberta Museum, Royal Tyrrell Museum, and other heritage institutions, and coordination of heritage designation processes.",
+          "users": "Government heritage staff, museum professionals, researchers",
+          "user_groups": [
+            "Industry associations"
+          ],
+          "taxonomy": {
+            "track": "individual",
+            "tier": "societal_needs_supports",
+            "domain": "recreation_culture",
+            "relationships": []
+          },
+          "channels": [
+            {
+              "type": "ch-find",
+              "label": "alberta.ca/culture-topic",
+              "url": "https://www.alberta.ca/culture-topic"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "HRA",
+              "color": "#1565c0",
+              "full_name": "Historical Resources Act"
+            }
+          ],
+          "mandate_tags": [
+            {
+              "number": 3,
+              "tip": "Repatriate Indigenous items through new framework"
+            }
+          ]
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Apply for community and non-profit grants",
+          "supporting": [
+            {
+              "name": "Apply for a community project operating grant",
+              "desc": "Non-profit organizations, Indigenous communities, and other eligible groups can apply for operating grants to support community projects that improve quality of life. Grants fund programs in areas including social services, culture, sports, and community development.",
+              "users": "Non-profit organizations, Indigenous communities, school councils",
+              "user_groups": [
+                "Non-profit organizations",
+                "Indigenous communities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "very_high",
+                "estimate": "~3,000 grants/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Social ROI",
+                "category": "social_roi",
+                "note": "Community grants strengthen civil society and non-profit capacity across Alberta"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/grants-funding-and-supports-for-non-profits",
+                  "url": "https://www.alberta.ca/grants-funding-and-supports-for-non-profits"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Community grants: 780-427-6530"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            },
+            {
+              "name": "Apply for a community facility improvement grant",
+              "desc": "Non-profit organizations, municipalities, and Indigenous communities can apply for capital grants to build, renovate, or upgrade community-use facilities such as community halls, playgrounds, sports fields, and cultural centres.",
+              "users": "Non-profit organizations, municipalities, Indigenous communities",
+              "user_groups": [
+                "Non-profit organizations",
+                "Municipalities",
+                "Indigenous communities"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "very_high",
+                "estimate": "~1,500 grants/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Facility grants create construction jobs and long-term community assets"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/grants-funding-and-supports-for-non-profits",
+                  "url": "https://www.alberta.ca/grants-funding-and-supports-for-non-profits"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Community grants: 780-427-6530"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Visit heritage sites, museums, and archives",
+          "supporting": [
+            {
+              "name": "Visit a provincial museum or historic site",
+              "desc": "Alberta operates the Royal Alberta Museum and Royal Tyrrell Museum of Palaeontology, along with historic sites and interpretive centres across the province. These institutions preserve and share Alberta's natural and cultural heritage.",
+              "users": "General public, tourists, students, researchers",
+              "user_groups": [
+                "General public",
+                "Visitors & tourists",
+                "Youth"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "very_high",
+                "estimate": "~1.5M visitors/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Direct economic",
+                "category": "direct_economic",
+                "note": "Provincial museums and historic sites generate tourism spending and employment"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/culture-topic",
+                  "url": "https://www.alberta.ca/culture-topic"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Royal Alberta Museum, Edmonton"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Royal Tyrrell Museum, Drumheller"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Royal Alberta Museum: 780-453-9100"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HRA",
+                  "color": "#1565c0",
+                  "full_name": "Historical Resources Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 2,
+                  "tip": "Promote Alberta culture and heritage, grow Alberta Day"
+                }
+              ]
+            },
+            {
+              "name": "Access the Provincial Archives",
+              "desc": "The Provincial Archives of Alberta collects, preserves, and provides access to records documenting Alberta's history. Researchers and the public can search collections, request records, and visit the reading room.",
+              "users": "Researchers, genealogists, historians, students, general public",
+              "user_groups": [
+                "General public"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "medium",
+                "estimate": "~20,000 requests/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Social ROI",
+                "category": "social_roi",
+                "note": "Archives preserve provincial memory and support research, education, and reconciliation"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/culture-topic",
+                  "url": "https://www.alberta.ca/culture-topic"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Provincial Archives, Edmonton"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Provincial Archives: 780-427-1750"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HRA",
+                  "color": "#1565c0",
+                  "full_name": "Historical Resources Act"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Protect and designate heritage resources",
+          "supporting": [
+            {
+              "name": "Apply for heritage resource designation",
+              "desc": "Property owners, municipalities, and organizations can apply for provincial or municipal historic resource designation to protect significant buildings, structures, or sites. Designation provides legal protection and may qualify the owner for conservation grants.",
+              "users": "Property owners, municipalities, heritage organizations",
+              "user_groups": [
+                "General public",
+                "Municipalities",
+                "Non-profit organizations"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "low",
+                "estimate": "~30 designations/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Social ROI",
+                "category": "social_roi",
+                "note": "Heritage designation preserves culturally significant resources for future generations"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/alberta-heritage",
+                  "url": "https://www.alberta.ca/alberta-heritage"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Heritage division: 780-431-2300"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HRA",
+                  "color": "#1565c0",
+                  "full_name": "Historical Resources Act"
+                }
+              ],
+              "mandate_tags": []
+            },
+            {
+              "name": "Apply for an archaeological or palaeontological research permit",
+              "desc": "Researchers must obtain a permit before conducting archaeological or palaeontological fieldwork in Alberta. Permits ensure proper scientific standards and protection of heritage resources.",
+              "users": "Archaeologists, palaeontologists, academic researchers, developers",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "low",
+                "estimate": "~200 permits/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Permit system protects Alberta's archaeological and palaeontological resources"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/archaeological-research-permits",
+                  "url": "https://www.alberta.ca/archaeological-research-permits"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Heritage division: 780-431-2300"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HRA",
+                  "color": "#1565c0",
+                  "full_name": "Historical Resources Act"
+                }
+              ],
+              "mandate_tags": []
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "name": "Access French-language services",
+          "supporting": [
+            {
+              "name": "Access French-language government services and supports",
+              "desc": "Alberta's Francophone Secretariat coordinates French-language services across government, ensuring Francophone Albertans can access services in French. The secretariat also supports the Francophone community and promotes bilingual service delivery.",
+              "users": "Francophone Albertans, French-speaking newcomers, Francophone organizations",
+              "user_groups": [
+                "General public"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "medium",
+                "estimate": "~80,000 Francophones",
+                "basis": "active"
+              },
+              "economic_impact": {
+                "tag": "Social ROI",
+                "category": "social_roi",
+                "note": "French-language services support Alberta's official-language minority community"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/bonjour-alberta",
+                  "url": "https://www.alberta.ca/bonjour-alberta"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Francophone Secretariat: 780-415-3348"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "title": "OUTCOME 3: Women and girls participate fully and equally in all aspects of society",
+      "short_name": "Equality for women & girls",
+      "legend_label": "Women & Equality",
+      "description": "The ministry works to advance gender equality, prevent and address gender-based violence, and support women's economic participation through scholarships, awards, and targeted programming.",
+      "foundational_services": [
+        {
+          "name": "Coordinate strategy to prevent gender-based violence",
+          "desc": "Cross-ministry coordination of Alberta's strategy to prevent and address gender-based violence, including data collection, research, public awareness, and partnership with service providers and the Ministry of Children and Family Services.",
+          "users": "Government policy staff, service providers, women's organizations",
+          "user_groups": [
+            "Non-profit organizations"
+          ],
+          "taxonomy": {
+            "track": "individual",
+            "tier": "core_human_needs",
+            "domain": "family_relationships",
+            "relationships": []
+          },
+          "channels": [
+            {
+              "type": "ch-find",
+              "label": "alberta.ca/womens-hub",
+              "url": "https://www.alberta.ca/womens-hub"
+            }
+          ],
+          "legislation": [],
+          "mandate_tags": [
+            {
+              "number": 4,
+              "tip": "Support domestic violence victims with CFS"
+            }
+          ]
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get help with family violence",
+          "supporting": [
+            {
+              "name": "Call the family violence information line",
+              "desc": "A 24/7 confidential telephone service providing information, support, and referrals for anyone affected by family violence. Available in more than 170 languages through translation services.",
+              "users": "Anyone affected by family violence, concerned family members, friends",
+              "user_groups": [
+                "General public"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "high",
+                "estimate": "~30,000 calls/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Early intervention reduces healthcare, justice, and social service costs of family violence"
+              },
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Family Violence Info Line: 310-1818 (toll-free)"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/family-violence",
+                  "url": "https://www.alberta.ca/family-violence"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "tip": "Support domestic violence victims with CFS"
+                }
+              ]
+            },
+            {
+              "name": "Find family violence resources and supports",
+              "desc": "Information about emergency shelters, counselling services, safety planning, protection orders, and other supports available to people experiencing family violence in Alberta.",
+              "users": "People experiencing family violence, service providers, community members",
+              "user_groups": [
+                "General public"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "high",
+                "estimate": "~50,000 page views/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Cost avoidance",
+                "category": "cost_avoidance",
+                "note": "Connecting people to appropriate supports reduces long-term costs of family violence"
+              },
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/family-violence",
+                  "url": "https://www.alberta.ca/family-violence"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/womens-hub",
+                  "url": "https://www.alberta.ca/womens-hub"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Family Violence Info Line: 310-1818 (toll-free)"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "tip": "Support domestic violence victims with CFS"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Apply for women's scholarships and awards",
+          "supporting": [
+            {
+              "name": "Apply for a scholarship or award recognizing women's contributions",
+              "desc": "Alberta offers scholarships and awards that recognize women's achievements and encourage participation in leadership, STEM fields, trades, and public life, including the Persons Case Scholarship and other targeted awards.",
+              "users": "Women and girls, students, professionals",
+              "user_groups": [
+                "General public",
+                "Youth"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "reach": {
+                "tier": "low",
+                "estimate": "~40 recipients/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "Social ROI",
+                "category": "social_roi",
+                "note": "$100K/yr in scholarships promoting women's economic participation and leadership"
+              },
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/persons-case-scholarship",
+                  "url": "https://www.alberta.ca/persons-case-scholarship"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/womens-hub",
+                  "url": "https://www.alberta.ca/womens-hub"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "cul.sw-scholarships@gov.ab.ca",
+                  "url": "mailto:cul.sw-scholarships@gov.ab.ca"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Status of Women: 780-422-0782"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-transact",
+      "label": "Online transaction",
+      "bg_color": "#c8e6c9",
+      "text_color": "#1b5e20"
+    },
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-email",
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Visitors & tourists",
+    "Youth",
+    "Businesses & employers",
+    "Municipalities",
+    "Non-profit organizations",
+    "Indigenous communities",
+    "Industry associations"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg_color": "#c8e6c9",
+      "text_color": "#1b5e20"
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg_color": "#e0f2f1",
+      "text_color": "#00695c"
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg_color": "#e1bee7",
+      "text_color": "#6a1b9a"
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg_color": "#f3e5f5",
+      "text_color": "#6a1b9a"
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    "ch-registry": {
+      "label": "Registry agent",
+      "bg_color": "#fff8e1",
+      "text_color": "#f57f17"
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg_color": "#f5f5f5",
+      "text_color": "#616161"
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-find",
+    "ch-email"
+  ],
+  "mandate_date": "September 17, 2025",
+  "mandate_minister": "Tanya Fir",
+  "mandate_pdf": "https://open.alberta.ca/dataset/b0769b96-7a45-40b5-b57c-415ff82aca49/resource/c184b6b8-cd68-441c-bb17-569cd30ce527/download/acsw-mandate-letter-arts-culture-and-status-of-women-2025.pdf",
+  "cross_cutting": [
+    "Alberta Foundation for the Arts (arm's-length arts funding agency)",
+    "Francophone Secretariat",
+    "Royal Alberta Museum",
+    "Royal Tyrrell Museum of Palaeontology",
+    "Provincial Archives of Alberta",
+    "Alberta Day celebrations",
+    "Annual reports & business plans",
+    "Red tape reduction"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Work with the Minister of Jobs, Economy and Trade to grow Alberta's cultural industries and attract film, television, and digital media production",
+      "mapping": "-> Apply for film and television production funding; Develop arts and cultural industries strategy"
+    },
+    {
+      "number": 2,
+      "text": "Promote Alberta's culture and heritage and grow Alberta Day as a province-wide celebration of our history and identity",
+      "mapping": "-> Visit a provincial museum or historic site"
+    },
+    {
+      "number": 3,
+      "text": "Develop a new framework to repatriate Indigenous items held in provincial museum collections",
+      "mapping": "-> Manage heritage policy and provincial collections"
+    },
+    {
+      "number": 4,
+      "text": "Work with the Minister of Children and Family Services to support domestic violence victims and strengthen prevention efforts",
+      "mapping": "-> Call the family violence information line; Find family violence resources and supports; Coordinate strategy to prevent gender-based violence"
+    }
+  ]
+}

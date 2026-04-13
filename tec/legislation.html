@@ -130,7 +130,7 @@
       async function initializePage() {
         try {
           const prefix = getMinistryPrefix();
-          const response = await fetch(`../data/${prefix}_legislation.json`);
+          const response = await fetch(`../data/ab/${prefix}_legislation.json`);
           if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
           const data = await response.json();

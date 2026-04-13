@@ -1,0 +1,1188 @@
+{
+  "prefix": "edu",
+  "full_name": "Education and Childcare",
+  "short_name": "Education & Childcare",
+  "blurb": "Supports students, parents, and educators through a strong kindergarten to Grade 12 education system, and ensures families have access to quality, affordable child care.",
+  "nav_name": "Education and Childcare",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "title": "OUTCOME 1",
+      "short_name": "Alberta's students are successful",
+      "legend_label": "Student success",
+      "description": "The ministry supports the success of Alberta's students through a strong Kindergarten to Grade 12 education system that provides opportunities for students to build the foundations for successful and fulfilling lives.",
+      "foundational_services": [
+        {
+          "id": "f-1",
+          "name": "Fund and oversee school authorities",
+          "desc": "Distribute approximately $9.88 billion in operating funding to school authorities based on enrolment, demographics, and programming needs",
+          "users": "School authorities and boards",
+          "channels": [
+            {
+              "type": "ch-find",
+              "label": "alberta.ca/education-funding",
+              "url": "https://www.alberta.ca/education-funding"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "EA",
+              "color": "#0070c0",
+              "full_name": "Education Act"
+            }
+          ],
+          "mandate_tags": [],
+          "taxonomy": {
+            "track": "business",
+            "tier": "regulatory_compliance",
+            "domain": "reporting_obligations",
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Choose how your child learns",
+          "foundational_services": [
+            {
+              "id": "f-2",
+              "name": "Develop and implement curriculum",
+              "desc": "Design, review, and update provincial K-12 curriculum across all subjects, managing the current curriculum renewal initiative",
+              "users": "Teachers, students, parents, school administrators",
+              "channels": [],
+              "legislation": [
+                {
+                  "abbrev": "EA",
+                  "color": "#0070c0",
+                  "full_name": "Education Act"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              }
+            }
+          ],
+          "supporting": [
+            {
+              "name": "Find curriculum resources and programs of study",
+              "desc": "Find Alberta's K to 12 curriculum, including the new curriculum being implemented across subjects and grades. Resources for teachers, parents, and students.",
+              "users": "Teachers, parents, students",
+              "user_groups": [
+                "Parents & families",
+                "Teachers & educators",
+                "Students"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "LearnAlberta: curriculum",
+                  "url": "https://curriculum.learnalberta.ca/"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/albertas-k-12-education-system",
+                  "url": "https://www.alberta.ca/albertas-k-12-education-system"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EA",
+                  "color": "#0070c0",
+                  "full_name": "Education Act  -  Programs of Study"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Continue curriculum implementation with focus on literacy, numeracy, financial literacy, and practical life skills"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Register for home education",
+              "desc": "Register your child for home education through your local school board or a willing school board. Home education must align with Alberta curriculum outcomes.",
+              "users": "Parents choosing to educate at home",
+              "user_groups": [
+                "Parents & families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Local school authority",
+                  "url": null
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/home-education",
+                  "url": "https://www.alberta.ca/home-education"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EA",
+                  "color": "#0070c0",
+                  "full_name": "Education Act  -  Part 4: Home Education"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Enrol in distance or online learning (K-12)",
+              "desc": "Enrol your child in accredited online or blended learning programs for K to 12. Available through school authorities that offer distance education.",
+              "users": "Parents and students needing flexible learning",
+              "user_groups": [
+                "Parents & families",
+                "Students"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/online-learning",
+                  "url": "https://www.alberta.ca/online-learning"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Distance education school authorities",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EA",
+                  "color": "#0070c0",
+                  "full_name": "Education Act  -  Distance Education"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Take provincial exams and tests",
+          "supporting": [
+            {
+              "name": "Prepare for and write Provincial Achievement Tests",
+              "desc": "Provincial Achievement Tests (PATs) are administered in Grades 6 and 9 in core subjects. Results help measure student learning and inform school improvement.",
+              "users": "Grade 6 and 9 students and their parents",
+              "user_groups": [
+                "Students",
+                "Parents & families",
+                "Teachers & educators"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/provincial-achievement-tests",
+                  "url": "https://www.alberta.ca/provincial-achievement-tests"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Student's school",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EA",
+                  "color": "#0070c0",
+                  "full_name": "Education Act  -  Student Assessment"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Prepare for and write diploma exams",
+              "desc": "Diploma examinations are written in Grade 12 in core academic subjects and count for 30% of the final course mark.",
+              "users": "Grade 12 students",
+              "user_groups": [
+                "Students",
+                "Parents & families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/diploma-exams",
+                  "url": "https://www.alberta.ca/diploma-exams"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Student's school",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EA",
+                  "color": "#0070c0",
+                  "full_name": "Education Act  -  Diploma Examinations"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Check assessment results and school performance data",
+              "desc": "View school and jurisdiction-level results for PATs and diploma exams. Accountability pillar results help parents compare school performance.",
+              "users": "Parents, educators, and school administrators",
+              "user_groups": [
+                "Parents & families",
+                "Teachers & educators",
+                "School authorities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "alberta.ca: accountability results",
+                  "url": "https://www.alberta.ca/accountability-education-system"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/accountability-education-system",
+                  "url": "https://www.alberta.ca/accountability-education-system"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EA",
+                  "color": "#0070c0",
+                  "full_name": "Education Act  -  Accountability and Reporting"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "core_human_needs",
+                  "domain": "education_training"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "reporting_obligations"
+                },
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Enrol and support your child in school",
+          "supporting": [
+            {
+              "name": "Enrol your child in school",
+              "desc": "Contact your local school or school authority to register your child for ECS (kindergarten) through Grade 12. Schools accept registrations year-round.",
+              "users": "Parents registering a child",
+              "user_groups": [
+                "Parents & families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Local school",
+                  "url": null
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/school-authority-contact",
+                  "url": "https://www.alberta.ca/albertas-k-12-education-system"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EA",
+                  "color": "#0070c0",
+                  "full_name": "Education Act  -  Part 3: Compulsory Education"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 2,
+                  "tip": "Fast-track school construction — $8.6B for 200,000+ new and updated student spaces"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get specialized learning support for your child",
+              "desc": "Students with identified learning needs can access specialized supports, programming, and individualized program plans (IPPs) through their school.",
+              "users": "Parents of children with learning needs",
+              "user_groups": [
+                "Parents & families",
+                "Students"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "School and learning support team",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Local school authority",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EA",
+                  "color": "#0070c0",
+                  "full_name": "Education Act  -  Inclusive Education"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 9,
+                  "tip": "Improve supports for children with complex learning needs — work with ALSS"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Arrange student transportation",
+              "desc": "School authorities provide transportation based on distance: 1.6 km for ECS-Grade 6, 2 km for Grades 7-12. Contact your school authority for routes and eligibility.",
+              "users": "Parents needing transportation for their children",
+              "user_groups": [
+                "Parents & families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Local school authority transportation department",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EA",
+                  "color": "#0070c0",
+                  "full_name": "Education Act  -  Student Transportation"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get school mental health support",
+              "desc": "Schools provide counselling, mental health literacy programs, and connections to community resources for students experiencing mental health challenges.",
+              "users": "Students and parents",
+              "user_groups": [
+                "Students",
+                "Parents & families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "School counsellor",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Kids Help Phone: 1-800-668-6868",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EA",
+                  "color": "#0070c0",
+                  "full_name": "Education Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 5,
+                  "tip": "Expand mental health supports for students in partnership with Mental Health and Addiction"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Join your school council",
+              "desc": "Every school has a school council where parents can be involved in school decisions. Each council receives a $500 annual engagement grant.",
+              "users": "Parents wanting to be involved",
+              "user_groups": [
+                "Parents & families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "School council meetings",
+                  "url": null
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/school-councils",
+                  "url": "https://www.alberta.ca/school-councils"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EA",
+                  "color": "#0070c0",
+                  "full_name": "Education Act  -  School Councils"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#548235",
+      "title": "OUTCOME 2",
+      "short_name": "First Nations, Métis and Inuit students are successful",
+      "legend_label": "FNMI student success",
+      "description": "Alberta Education and Childcare collaborates with education partners and provides supports to improve First Nations, Métis and Inuit student education outcomes.",
+      "main_services": []
+    },
+    {
+      "number": 3,
+      "color": "#bf8f00",
+      "title": "OUTCOME 3",
+      "short_name": "Learning opportunities enhance competitiveness",
+      "legend_label": "Career & learning pathways",
+      "description": "The ministry provides innovative learning opportunities to ensure a variety of career pathways for students to enter post-secondary education or their chosen fields in the workforce.",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Explore careers and earn workplace credentials",
+          "supporting": [
+            {
+              "name": "Explore career and technology studies (CTS)",
+              "desc": "Hands-on learning in areas like information technology, health, trades, media, and business. Available from Grade 7 through 12.",
+              "users": "Students Grades 7-12",
+              "user_groups": [
+                "Students",
+                "Teachers & educators"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "education.alberta.ca — career and technology studies",
+                  "url": "https://education.education.alberta.ca — career and technology studies/"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Student's school",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EA",
+                  "color": "#bf8f00",
+                  "full_name": "Education Act  -  Programs of Study"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "tip": "Advance apprenticeship models and promote trades education at high school level"
+                },
+                {
+                  "number": 10,
+                  "tip": "Promote high-demand careers through career fairs, counselling websites, and advertising campaigns"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Earn dual credit (high school + post-secondary)",
+              "desc": "Earn both high school and post-secondary credits simultaneously. The Provincial Dual Credit Strategy connects Grade 10-12 students with college and polytechnic courses.",
+              "users": "High school students interested in post-secondary",
+              "user_groups": [
+                "Students",
+                "Parents & families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/dual-credit",
+                  "url": "https://www.alberta.ca/dual-credit"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "School counsellors",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EA",
+                  "color": "#bf8f00",
+                  "full_name": "Education Act  -  Education Agreements"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 10,
+                  "tip": "Promote high-demand careers through career fairs, counselling websites, and advertising campaigns"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Earn credits through work experience or RAP",
+              "desc": "Earn high school credits through work experience, the Registered Apprenticeship Program (RAP), or green certificate programs. Connects classroom learning to real workplaces.",
+              "users": "Students Grades 10-12",
+              "user_groups": [
+                "Students",
+                "Employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "School off-campus education coordinator",
+                  "url": null
+                },
+                {
+                  "type": "ch-find",
+                  "label": "education.alberta.ca — off-campus education",
+                  "url": "https://education.education.alberta.ca — off-campus education/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EA",
+                  "color": "#bf8f00",
+                  "full_name": "Education Act  -  Off-Campus Education"
+                },
+                {
+                  "abbrev": "STAEA",
+                  "color": "#bf8f00",
+                  "full_name": "Skilled Trades and Apprenticeship Education Act  -  Registered Apprenticeship Program"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "tip": "Advance apprenticeship models and promote trades education at high school level"
+                }
+              ],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "core_human_needs",
+                  "domain": "education_training"
+                },
+                "business": {
+                  "tier": "core_business_needs",
+                  "domain": "people_employment"
+                },
+                "relationships": [
+                  {
+                    "type": "worker_employer",
+                    "service": "Learn about minimum wage, hours of work, overtime, and leave entitlements",
+                    "ministry": "jeti"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#7030a0",
+      "title": "OUTCOME 4",
+      "short_name": "K-12 education system and workforce are well-managed",
+      "legend_label": "System & workforce management",
+      "description": "Alberta Education and Childcare supports the professional growth and development of teachers, school leaders, school authority leaders, and educational assistants. The department directs the education system and oversees the administration of education programs and services through legislation, provision of funds and planning suitable learning facilities.",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get certified as a teacher",
+          "supporting": [
+            {
+              "name": "Apply for teacher certification",
+              "desc": "Apply for an Alberta teaching certificate after completing an approved teacher preparation program. Certification is required to teach in Alberta's K-12 system.",
+              "users": "Education degree graduates, out-of-province teachers",
+              "user_groups": [
+                "Teachers & educators"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/teacher-certification",
+                  "url": "https://www.alberta.ca/teacher-certification"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Teacher Certification: 780-427-2045",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TPA",
+                  "color": "#7030a0",
+                  "full_name": "Teaching Profession Act"
+                },
+                {
+                  "abbrev": "EA",
+                  "color": "#0070c0",
+                  "full_name": "Education Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Develop expedited teacher certification for degree/diploma holders and skilled trades professionals"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "professional_credentials",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Transfer teaching credentials from another jurisdiction",
+                    "ministry": "edu"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Transfer teaching credentials from another jurisdiction",
+              "desc": "Teachers certified in another Canadian province or internationally can apply for Alberta certification with their existing credentials and teaching experience.",
+              "users": "Out-of-province and international teachers",
+              "user_groups": [
+                "Teachers & educators"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/teacher-certification",
+                  "url": "https://www.alberta.ca/teacher-certification"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Teacher Certification: 780-427-2045",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EA",
+                  "color": "#7030a0",
+                  "full_name": "Education Act"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Develop expedited teacher certification for degree/diploma holders and skilled trades professionals"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "professional_credentials",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Apply for teacher certification",
+                    "ministry": "edu"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "color": "#c00000",
+      "title": "OUTCOME 5",
+      "short_name": "Families have access to quality, inclusive, affordable childcare",
+      "legend_label": "Childcare",
+      "description": "The ministry is committed to providing a high quality, affordable and sustainable childcare system to meet the needs of Alberta families.",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Find and afford child care",
+          "foundational_services": [
+            {
+              "id": "f-3",
+              "name": "License and monitor child care programs",
+              "desc": "Set standards, issue licences, and conduct inspections for all licensed child care programs in Alberta",
+              "users": "Child care operators",
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/child-care-licensing",
+                  "url": "https://www.alberta.ca/child-care-licensing"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ELCCA",
+                  "color": "#c00000",
+                  "full_name": "Early Learning and Child Care Act  -  Licensing and Standards"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": [
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "Search for licensed child care",
+                    "ministry": "edu"
+                  },
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "Find inclusive child care for a child with extra needs",
+                    "ministry": "edu"
+                  },
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "Apply for child care subsidies",
+                    "ministry": "edu"
+                  }
+                ]
+              }
+            }
+          ],
+          "supporting": [
+            {
+              "name": "Search for licensed child care",
+              "desc": "Find licensed child care programs near you including daycare, out-of-school care, and family day homes. Alberta is working toward an average $10/day fee.",
+              "users": "Parents seeking child care",
+              "user_groups": [
+                "Parents & families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/childcare-lookup-tools",
+                  "url": "https://www.alberta.ca/childcare-lookup-tools"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Childcare Connect: 1-844-644-5165"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ELCCA",
+                  "color": "#c00000",
+                  "full_name": "Early Learning and Child Care Act  -  Licensed Programs"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 8,
+                  "tip": "Negotiate sustainable childcare arrangements with federal government under provincial control"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": [
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "License and monitor child care programs",
+                    "ministry": "edu"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Apply for child care subsidies",
+              "desc": "Low- and middle-income families can apply for subsidies to reduce child care costs. Eligibility is based on household income and family size.",
+              "users": "Families needing help with child care costs",
+              "user_groups": [
+                "Parents & families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/child-care-subsidy-program",
+                  "url": "https://www.alberta.ca/child-care-subsidy-program"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Childcare Connect: 1-844-644-5165"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ELCCA",
+                  "color": "#c00000",
+                  "full_name": "Early Learning and Child Care Act  -  Child Care Subsidies"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 8,
+                  "tip": "Negotiate sustainable childcare arrangements with federal government under provincial control"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": [
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "License and monitor child care programs",
+                    "ministry": "edu"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Find inclusive child care for a child with extra needs",
+              "desc": "The Provincial Inclusive Child Care Program supports children with extra support needs to participate fully in licensed child care programs.",
+              "users": "Parents of children with additional needs",
+              "user_groups": [
+                "Parents & families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Childcare Connect: 1-844-644-5165"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/inclusive-child-care-program",
+                  "url": "https://www.alberta.ca/inclusive-child-care-program"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ELCCA",
+                  "color": "#c00000",
+                  "full_name": "Early Learning and Child Care Act  -  Inclusive Child Care"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": [
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "License and monitor child care programs",
+                    "ministry": "edu"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get your child assessed and supported early",
+          "supporting": [
+            {
+              "name": "Get early intervention for your child",
+              "desc": "The Early Childhood Intervention Program provides developmental support for children birth to age 6 who have disabilities or developmental delays.",
+              "users": "Parents of young children with developmental concerns",
+              "user_groups": [
+                "Parents & families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Local early intervention program"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Early intervention program offices"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/early-childhood-education",
+                  "url": "https://www.alberta.ca/early-childhood-education"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              }
+            }
+          ]
+        }
+      ],
+      "foundational_services": []
+    }
+  ],
+  "foundational_services": [],
+  "channel_filters": [
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    }
+  ],
+  "user_group_filters": [
+    "Students",
+    "Parents & families",
+    "Teachers & educators",
+    "School authorities",
+    "Employers"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg_color": "#c8e6c9",
+      "text_color": "#1b5e20"
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg_color": "#e0f2f1",
+      "text_color": "#00695c"
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg_color": "#f3e5f5",
+      "text_color": "#6a1b9a"
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    "ch-registry": {
+      "label": "Registry agent",
+      "bg_color": "#fff8e1",
+      "text_color": "#f57f17"
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg_color": "#f5f5f5",
+      "text_color": "#616161"
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg_color": "#e1bee7",
+      "text_color": "#6a1b9a"
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    }
+  },
+  "digital_channels": [
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-web"
+  ],
+  "mandate_date": "September 22, 2025",
+  "mandate_minister": "Demetrios Nicolaides",
+  "mandate_pdf": "https://open.alberta.ca/dataset/b0769b96-7a45-40b5-b57c-415ff82aca49/resource/80d330fe-102a-4671-83eb-9fcddd3424b6/download/ecc-mandate-letter-education-and-childcare-2025.pdf",
+  "cross_cutting": [
+    "LearnAlberta.ca curriculum platform",
+    "Alberta Education Assurance surveys",
+    "Childcare Connect contact centre (1-844-644-5165)",
+    "Class Size and Complexity Cabinet Committee",
+    "School Capital Manual and infrastructure planning",
+    "Schools Now construction accelerator program",
+    "Alberta.ca Account (eServices)",
+    "Annual reports & business plans",
+    "Red tape reduction"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Continue curriculum implementation with focus on literacy, numeracy, financial literacy, and practical life skills",
+      "mapping": "-> Access curriculum resources and programs of study"
+    },
+    {
+      "number": 2,
+      "text": "Fast-track school construction through Schools Now program — $8.6B for 200,000+ new and updated student spaces",
+      "mapping": "-> Enrol your child in school (infrastructure to support enrolment)"
+    },
+    {
+      "number": 3,
+      "text": "Develop expedited teacher certification for degree/diploma holders and skilled trades professionals",
+      "mapping": "-> Apply for teacher certification; Transfer teaching credentials"
+    },
+    {
+      "number": 4,
+      "text": "Advance apprenticeship models and promote trades education at high school level",
+      "mapping": "-> Explore career and technology studies (CTS); Access off-campus education (work experience, RAP)"
+    },
+    {
+      "number": 5,
+      "text": "Expand mental health supports for students in partnership with Mental Health and Addiction",
+      "mapping": "-> Access school mental health supports"
+    },
+    {
+      "number": 6,
+      "text": "Implement Bill 27 protections and establish standards for school literary materials",
+      "mapping": "-> (System-wide policy)"
+    },
+    {
+      "number": 7,
+      "text": "Establish universal code of conduct for school board officials with speech protections and recall procedures",
+      "mapping": "-> (Governance)"
+    },
+    {
+      "number": 8,
+      "text": "Negotiate sustainable childcare arrangements with federal government under provincial control",
+      "mapping": "-> Search for licensed child care; Apply for child care subsidies"
+    },
+    {
+      "number": 9,
+      "text": "Improve supports for children with complex learning needs — work with ALSS",
+      "mapping": "-> Access special education support"
+    },
+    {
+      "number": 10,
+      "text": "Promote high-demand careers through career fairs, counselling websites, and advertising campaigns",
+      "mapping": "-> Explore career and technology studies (CTS); Participate in dual credit programs"
+    }
+  ]
+}

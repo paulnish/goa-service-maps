@@ -1,0 +1,811 @@
+{
+  "prefix": "ae",
+  "full_name": "Advanced Education",
+  "short_name": "Advanced Education",
+  "blurb": "Supports Albertans through accessible, affordable post-secondary education, student financial aid, apprenticeship and trades training, and international education — building skills for jobs and a prosperous economy.",
+  "nav_name": "Advanced Education",
+  "has_registry_agents": false,
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Fund and oversee post-secondary institutions",
+      "desc": "Provide operating and capital grants to Alberta's 26 publicly funded post-secondary institutions, oversee program quality through Campus Alberta Quality Council",
+      "users": "Post-secondary institutions",
+      "channels": [
+        {
+          "type": "ch-find",
+          "label": "alberta.ca/post-secondary-funding",
+          "url": "https://www.alberta.ca/post-secondary-funding"
+        }
+      ],
+      "legislation": [
+        {
+          "abbrev": "PSLA",
+          "color": "#0070c0",
+          "full_name": "Post-secondary Learning Act"
+        }
+      ],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "core_business_needs",
+        "domain": "registration_legal",
+        "relationships": []
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Approve programs and credentials",
+      "desc": "Review and approve new degree, diploma, and certificate programs to ensure quality standards are met",
+      "users": "Post-secondary institutions",
+      "channels": [],
+      "legislation": [
+        {
+          "abbrev": "PSLA",
+          "color": "#0070c0",
+          "full_name": "Post-secondary Learning Act"
+        }
+      ],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "regulatory_compliance",
+        "domain": "licences_permits",
+        "relationships": []
+      }
+    }
+  ],
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "title": "OUTCOME 1: Albertans have the education and skills required to secure rewarding careers in the current and future labour market",
+      "short_name": "Education & skills for careers",
+      "legend_label": "Education & skills for careers",
+      "description": "Post-secondary education programming helps Albertans achieve their desired learning outcomes enabling them to secure rewarding careers and to succeed in their lifelong pursuits.",
+      "foundational_services": [
+        {
+          "id": "f-3",
+          "name": "Support mental health on campus",
+          "desc": "$4 million annually for post-secondary mental health professional positions across institutions",
+          "users": "Post-secondary students",
+          "channels": [
+            {
+              "type": "ch-inperson",
+              "label": "In person",
+              "url": null
+            }
+          ],
+          "legislation": [],
+          "mandate_tags": [],
+          "taxonomy": {
+            "track": "individual",
+            "tier": "core_human_needs",
+            "domain": "health_wellbeing",
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Find and access a post-secondary program",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Search and compare post-secondary programs",
+              "desc": "Find programs at Alberta's 26 publicly funded institutions: universities, colleges, polytechnics, and specialized arts institutions. Compare programs by institution, credential, and field of study.",
+              "users": "Prospective students and career changers",
+              "user_groups": [
+                "Individuals",
+                "Students"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "applyalberta.ca",
+                  "url": "https://www.applyalberta.ca"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/types-publicly-funded-post-secondary-institutions",
+                  "url": "https://www.alberta.ca/types-publicly-funded-post-secondary-institutions"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Phone",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Apply to a post-secondary institution",
+              "desc": "Submit applications through ApplyAlberta or directly to institutions. Each institution sets its own admission requirements and deadlines.",
+              "users": "Prospective students",
+              "user_groups": [
+                "Individuals",
+                "Students"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply",
+                  "url": "https://www.applyalberta.ca"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "In person",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Access distance and online learning",
+              "desc": "Many Alberta post-secondary programs offer online, blended, or distance learning options for flexible access regardless of location.",
+              "users": "Students seeking flexible learning",
+              "user_groups": [
+                "Individuals",
+                "Students"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "ecampusalberta.ca",
+                  "url": "https://www.ecampusalberta.ca"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "alis.alberta.ca: distance learning",
+                  "url": "https://alis.alberta.ca/explore-education-and-training"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get student financial aid",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for Alberta student loans and grants",
+              "desc": "Apply for needs-based Alberta student loans and grants through a single application. Loans cover tuition, books, and living expenses. Grants don't need to be repaid.",
+              "users": "Post-secondary students needing financial support",
+              "user_groups": [
+                "Individuals",
+                "Students"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply",
+                  "url": "https://studentaid.alberta.ca/"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Phone",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Manage your student loan",
+              "desc": "Track your loan balance, view statements, and access tax receipts through MyLoan. Repayment begins six months after you leave school.",
+              "users": "Current and former student loan holders",
+              "user_groups": [
+                "Individuals",
+                "Students"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Check / portal",
+                  "url": "https://myloan.studentaid.alberta.ca"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Phone",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Apply for scholarships and awards",
+              "desc": "Search and apply for Alberta-funded scholarships, awards, and bursaries based on academic achievement, financial need, or specific criteria.",
+              "users": "Post-secondary students",
+              "user_groups": [
+                "Individuals",
+                "Students"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply",
+                  "url": "https://studentaid.alberta.ca/"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/awards-scholarships",
+                  "url": "https://www.alberta.ca/awards-scholarships"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get help repaying your student loan",
+              "desc": "If you're having difficulty repaying, access the Repayment Assistance Plan (RAP) to reduce or pause payments based on your income and family size.",
+              "users": "Graduates struggling with loan repayment",
+              "user_groups": [
+                "Individuals",
+                "Students"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply",
+                  "url": "https://studentaid.alberta.ca/"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Phone",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#548235",
+      "title": "OUTCOME 2: Alberta's adult learning system is accountable, coordinated and innovative, providing high-quality education to meet the evolving needs of learners and society",
+      "short_name": "Accountable & innovative learning system",
+      "legend_label": "Learning system quality",
+      "description": "Advanced Education works with adult learning system partners to build a world-class system, focusing on ensuring the system is coordinated, sustainable, and responsive to labour market needs and works with system providers to ensure post-secondary education programs meet quality standards.",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 3,
+          "name": "Become an apprentice or tradesperson",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Register as an apprentice",
+              "desc": "Register in one of Alberta's designated trades. You'll need an employer willing to sponsor you. Training alternates between on-the-job work and classroom instruction.",
+              "users": "People entering a skilled trade",
+              "user_groups": [
+                "Individuals",
+                "Students",
+                "Employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply",
+                  "url": "https://tradesecrets.alberta.ca/"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Phone",
+                  "url": null
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "In person",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "core_human_needs",
+                  "domain": "education_training"
+                },
+                "business": {
+                  "tier": "core_business_needs",
+                  "domain": "people_employment"
+                },
+                "relationships": [
+                  {
+                    "type": "worker_employer",
+                    "service": "Access the Industry Pathways program",
+                    "ministry": "ae"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Write your journeyperson certification exam",
+              "desc": "After completing all apprenticeship periods and technical training, book and write your certification exam to become a certified journeyperson.",
+              "users": "Apprentices completing their program",
+              "user_groups": [
+                "Individuals",
+                "Students"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply",
+                  "url": "https://tradesecrets.alberta.ca/"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Phone",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "professional_credentials",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get your trade credential recognized",
+              "desc": "If you're an experienced tradesperson from another province or country, apply for credential recognition or challenge the certification exam.",
+              "users": "Out-of-province or international tradespeople",
+              "user_groups": [
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply",
+                  "url": "https://tradesecrets.alberta.ca/"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Phone",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "professional_credentials",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "name": "Explore career pathways",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Explore careers in skilled trades",
+              "desc": "Learn about 50+ designated trades in Alberta, including wages, job outlook, and training requirements. Skilled Trades Youth Ambassadors visit schools to promote trades careers.",
+              "users": "Students, career changers, parents, school counsellors",
+              "user_groups": [
+                "Individuals",
+                "Students"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "tradesecrets.alberta.ca",
+                  "url": "https://tradesecrets.alberta.ca/"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "tradesecrets.alberta.ca",
+                  "url": "https://tradesecrets.alberta.ca/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Access the Industry Pathways program",
+              "desc": "New program developing occupational pathways beyond traditional designated trades, connecting training to employer needs in emerging fields.",
+              "users": "Workers in non-designated occupations",
+              "user_groups": [
+                "Individuals",
+                "Employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "tradesecrets.alberta.ca",
+                  "url": "https://tradesecrets.alberta.ca/"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Phone",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "core_human_needs",
+                  "domain": "education_training"
+                },
+                "business": {
+                  "tier": "industry_specific",
+                  "domain": "agriculture"
+                },
+                "relationships": [
+                  {
+                    "type": "worker_employer",
+                    "service": "Register as an apprentice",
+                    "ministry": "ae"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#bf8f00",
+      "title": "OUTCOME 3: Alberta's economy and communities are strengthened by post-secondary institutions, designated trades, and professional regulatory bodies",
+      "short_name": "Economy strengthened by PSIs, trades & regulatory bodies",
+      "legend_label": "Economic & community impact",
+      "description": "Alberta's post-secondary institutions, designated trades, and regulated occupations help strengthen Alberta's economy and communities and drive Alberta's global competitiveness.",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 5,
+          "name": "Study in Alberta as an international student",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Find information about studying in Alberta",
+              "desc": "Learn about Alberta's post-secondary institutions, programs, costs, and what life is like as an international student in Alberta.",
+              "users": "Prospective international students",
+              "user_groups": [
+                "International students"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "study.alberta.ca",
+                  "url": "https://study.alberta.ca"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/international-education-programs",
+                  "url": "https://www.alberta.ca/international-education-programs"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Access support services as an international student",
+              "desc": "Post-secondary institutions provide dedicated international student services including orientation, academic advising, career support, and mental health resources.",
+              "users": "Current international students",
+              "user_groups": [
+                "International students"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "In person",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "study.alberta.ca: student support",
+                  "url": "https://study.alberta.ca/plan-your-stay/student-support-resources/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "name": "Study abroad as an Albertan",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Find international study and exchange opportunities",
+              "desc": "Explore exchange programs, study abroad semesters, and international learning opportunities through Alberta's post-secondary institutions and partner institutions worldwide.",
+              "users": "Alberta students interested in international experience",
+              "user_groups": [
+                "Students"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "study.alberta.ca",
+                  "url": "https://study.alberta.ca"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/international-education-programs",
+                  "url": "https://www.alberta.ca/international-education-programs"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    }
+  ],
+  "user_group_filters": [
+    "Individuals",
+    "Students",
+    "Employers",
+    "International students"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg_color": "#c8e6c9",
+      "text_color": "#1b5e20"
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg_color": "#e0f2f1",
+      "text_color": "#00695c"
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg_color": "#f3e5f5",
+      "text_color": "#6a1b9a"
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    "ch-registry": {
+      "label": "Registry agent",
+      "bg_color": "#fff8e1",
+      "text_color": "#f57f17"
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg_color": "#f5f5f5",
+      "text_color": "#616161"
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg_color": "#e1bee7",
+      "text_color": "#6a1b9a"
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    }
+  },
+  "digital_channels": [
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-web"
+  ],
+  "mandate_date": "September 22, 2025",
+  "mandate_minister": "Myles McDougall",
+  "mandate_pdf": "https://open.alberta.ca/dataset/b0769b96-7a45-40b5-b57c-415ff82aca49/resource/6e4d71aa-ec6b-4b01-bf15-4d05e92dd172/download/ae-mandate-letter-advanced-education-2025.pdf",
+  "cross_cutting": [
+    "Alberta 2030: Building Skills for Jobs strategy",
+    "Campus Alberta Quality Council",
+    "ApplyAlberta centralized application portal",
+    "Student Aid Alberta (studentaid.alberta.ca)",
+    "TradeSecrets Alberta (tradesecrets.alberta.ca)",
+    "Alberta Credential Recognition program",
+    "Fair Registration Practices Act oversight",
+    "Annual reports & business plans",
+    "Red tape reduction"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Accelerate credentialing for national and international workers — amend Fair Registration Practices Act",
+      "mapping": "-> Get your trade credential recognized; Get your professional credentials recognized"
+    },
+    {
+      "number": 2,
+      "text": "Raise the status of trades as career paths starting in junior high",
+      "mapping": "-> Explore careers in skilled trades; Access the Industry Pathways program"
+    },
+    {
+      "number": 3,
+      "text": "Develop faster K-12 teacher certification programs for degree/diploma holders and trades professionals",
+      "mapping": "-> (Cross-ministry with Education and Childcare)"
+    },
+    {
+      "number": 4,
+      "text": "Review Expert Panel on Post-Secondary Institution Funding — ensure funding follows students",
+      "mapping": "-> Fund and oversee post-secondary institutions"
+    },
+    {
+      "number": 5,
+      "text": "Introduce legislation to protect academic freedom and freedom of expression in post-secondary institutions",
+      "mapping": "-> (System-wide policy)"
+    },
+    {
+      "number": 6,
+      "text": "Modernize intellectual property frameworks to ensure taxpayer benefit from commercialization",
+      "mapping": "-> (System-wide policy)"
+    },
+    {
+      "number": 7,
+      "text": "Expand mental health professional spaces in post-secondary institutions ($10M over three years)",
+      "mapping": "-> Support mental health on campus"
+    },
+    {
+      "number": 8,
+      "text": "Develop new physician training pathways with medical schools — focus on rural communities",
+      "mapping": "-> (Cross-ministry with Health)"
+    },
+    {
+      "number": 9,
+      "text": "Implement the Professional Governance Act for non-health professional regulatory organizations",
+      "mapping": "-> (System-wide policy)"
+    },
+    {
+      "number": 10,
+      "text": "Create non-repayable assistance for high school students entering fields with labour shortages",
+      "mapping": "-> Apply for scholarships and awards; Apply for Alberta student loans and grants"
+    }
+  ]
+}

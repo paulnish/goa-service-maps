@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find a Government Service — Search</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; color: #1a1a1a; line-height: 1.5; }
+
+  .hero { background: linear-gradient(135deg, #0a3161 0%, #1a4a7a 100%); color: white; padding: 48px 24px 56px; text-align: center; }
+  .hero h1 { font-size: 18px; font-weight: 400; opacity: 0.8; margin-bottom: 8px; }
+  .hero h2 { font-size: 34px; font-weight: 700; margin-bottom: 8px; }
+  .hero p { font-size: 15px; opacity: 0.75; margin-bottom: 28px; }
+
+  .search-box { max-width: 640px; margin: 0 auto; position: relative; }
+  .search-box input { width: 100%; padding: 16px 20px 16px 48px; border: none; border-radius: 12px; font-size: 17px; box-shadow: 0 4px 20px rgba(0,0,0,0.2); outline: none; }
+  .search-box input::placeholder { color: #999; }
+  .search-icon { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); font-size: 20px; color: #999; }
+
+  .main { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+
+  .filters { display: flex; gap: 8px; margin: -20px 0 24px; flex-wrap: wrap; justify-content: center; position: relative; z-index: 1; }
+  .filter-btn { padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd; background: white; font-size: 13px; cursor: pointer; color: #555; transition: all 0.15s; }
+  .filter-btn.active { background: #0a3161; color: white; border-color: #0a3161; }
+  .filter-btn:hover:not(.active) { border-color: #0a3161; color: #0a3161; }
+
+  .results-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; padding-top: 8px; }
+  .results-count { font-size: 14px; color: #666; }
+  .results-sort { font-size: 13px; color: #0a3161; cursor: pointer; background: none; border: none; }
+
+  .result-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 20px; margin-bottom: 10px; transition: all 0.15s; cursor: default; }
+  .result-card:hover { border-color: #ccc; box-shadow: 0 1px 8px rgba(0,0,0,0.06); }
+  .result-card h3 { font-size: 16px; font-weight: 600; color: #0a3161; margin-bottom: 4px; }
+  .result-card .desc { font-size: 14px; color: #555; margin-bottom: 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .result-meta { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+  .tag { font-size: 11px; padding: 3px 10px; border-radius: 12px; }
+  .tag.domain { background: #e8f0fe; color: #1a56db; }
+  .tag.ministry { background: #f0f0f0; color: #555; }
+  .tag.track-both { background: #ecfdf5; color: #059669; }
+  .tag.relationship { background: #fef3c7; color: #92400e; }
+
+  .channels { margin-top: 10px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .channel-link { font-size: 12px; color: #1a56db; text-decoration: none; padding: 3px 10px; border: 1px solid #d1d5db; border-radius: 6px; }
+  .channel-link:hover { background: #f0f4ff; border-color: #1a56db; }
+
+  .no-results { text-align: center; padding: 48px 24px; color: #888; }
+  .no-results h3 { font-size: 18px; color: #555; margin-bottom: 8px; }
+
+  .suggestion-chips { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-top: 16px; }
+  .suggestion-chip { padding: 6px 14px; border-radius: 16px; background: rgba(255,255,255,0.15); color: white; font-size: 13px; cursor: pointer; border: 1px solid rgba(255,255,255,0.25); transition: all 0.15s; }
+  .suggestion-chip:hover { background: rgba(255,255,255,0.25); }
+
+  @media (max-width: 600px) {
+    .hero h2 { font-size: 26px; }
+    .hero { padding: 32px 16px 44px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>Government of Alberta</h1>
+  <h2>How can we help?</h2>
+  <p>Search for a government service, or try one of the suggestions below</p>
+  <div class="search-box">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="search-input" placeholder="e.g., driver's licence, child care, building permit..." autofocus>
+  </div>
+  <div class="suggestion-chips" id="suggestions">
+    <span class="suggestion-chip" data-q="driver's licence">Driver's licence</span>
+    <span class="suggestion-chip" data-q="child care">Child care</span>
+    <span class="suggestion-chip" data-q="health coverage">Health coverage</span>
+    <span class="suggestion-chip" data-q="building permit">Building permit</span>
+    <span class="suggestion-chip" data-q="employment standards">Employment standards</span>
+    <span class="suggestion-chip" data-q="student loan">Student loan</span>
+    <span class="suggestion-chip" data-q="birth certificate">Birth certificate</span>
+  </div>
+</div>
+
+<div class="main">
+  <div class="filters" id="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="individual">For individuals</button>
+    <button class="filter-btn" data-filter="business">For businesses</button>
+  </div>
+
+  <div class="results-header" id="results-header" style="display:none;">
+    <span class="results-count" id="results-count"></span>
+  </div>
+
+  <div id="results"></div>
+</div>
+
+<script>
+let taxonomy = null;
+let allServices = [];
+let currentFilter = 'all';
+
+async function init() {
+  const taxResp = await fetch('../data/ab/taxonomy.json');
+  taxonomy = await taxResp.json();
+
+  const ministResp = await fetch('../data/ab/ministries.json');
+  const ministries = await ministResp.json();
+
+  for (const m of ministries) {
+    if (m.is_test) continue;
+    try {
+      const resp = await fetch(`../data/ab/${m.prefix}.json`);
+      const data = await resp.json();
+      extractServices(data, m.prefix, m.short_name);
+    } catch(e) {}
+  }
+
+  setupSearch();
+  setupFilters();
+  setupSuggestions();
+}
+
+function extractServices(data, prefix, ministryName) {
+  function addService(svc, type) {
+    if (typeof svc === 'string') return;
+    if (!svc.taxonomy) return;
+    allServices.push({ ...svc, ministry: prefix, ministryName, serviceType: type });
+  }
+  for (const fs of data.foundational_services || []) addService(fs, 'foundational');
+  for (const goal of data.goals || []) {
+    for (const fs of goal.foundational_services || []) addService(fs, 'foundational');
+    for (const ms of goal.main_services || []) {
+      for (const fs of ms.foundational_services || []) addService(fs, 'foundational');
+      for (const ss of ms.supporting || []) addService(ss, 'supporting');
+    }
+  }
+}
+
+function getDomainLabel(track, tier, domain) {
+  try {
+    return taxonomy.tracks[track].tiers[tier].domains[domain].label;
+  } catch(e) { return domain; }
+}
+
+function getServiceDomainLabel(svc) {
+  const t = svc.taxonomy;
+  if (t.track === 'both') {
+    return getDomainLabel('individual', t.individual.tier, t.individual.domain);
+  }
+  return getDomainLabel(t.track, t.tier, t.domain);
+}
+
+function search(query) {
+  query = query.toLowerCase().trim();
+  if (!query) {
+    document.getElementById('results').innerHTML = '';
+    document.getElementById('results-header').style.display = 'none';
+    return;
+  }
+
+  const words = query.split(/\s+/);
+  let results = allServices.map(svc => {
+    const searchText = `${svc.name} ${svc.desc || ''} ${(svc.user_groups || []).join(' ')}`.toLowerCase();
+    let score = 0;
+    for (const word of words) {
+      if (svc.name.toLowerCase().includes(word)) score += 10;
+      if ((svc.desc || '').toLowerCase().includes(word)) score += 3;
+      if ((svc.user_groups || []).join(' ').toLowerCase().includes(word)) score += 2;
+    }
+    // Boost supporting services over foundational (more citizen-facing)
+    if (svc.serviceType === 'supporting') score += 1;
+    return { svc, score };
+  }).filter(r => r.score > 0);
+
+  // Apply track filter
+  if (currentFilter !== 'all') {
+    results = results.filter(r => {
+      const track = r.svc.taxonomy.track;
+      return track === currentFilter || track === 'both';
+    });
+  }
+
+  results.sort((a, b) => b.score - a.score);
+  results = results.slice(0, 40);
+
+  renderResults(results, query);
+}
+
+function renderResults(results, query) {
+  const header = document.getElementById('results-header');
+  const container = document.getElementById('results');
+
+  if (results.length === 0) {
+    header.style.display = 'none';
+    container.innerHTML = `
+      <div class="no-results">
+        <h3>No services found for "${query}"</h3>
+        <p>Try different keywords or browse by topic instead</p>
+      </div>`;
+    return;
+  }
+
+  header.style.display = 'flex';
+  document.getElementById('results-count').textContent = `${results.length} service${results.length !== 1 ? 's' : ''} found`;
+
+  container.innerHTML = results.map(({ svc }) => {
+    const domainLabel = getServiceDomainLabel(svc);
+    const rels = svc.taxonomy.relationships || [];
+    const channels = (svc.channels || []).filter(c => c.url).slice(0, 3);
+
+    return `
+      <div class="result-card">
+        <h3>${highlightMatch(svc.name, query)}</h3>
+        <div class="desc">${svc.desc || ''}</div>
+        <div class="result-meta">
+          <span class="tag domain">${domainLabel}</span>
+          <span class="tag ministry">${svc.ministryName}</span>
+          ${svc.taxonomy.track === 'both' ? '<span class="tag track-both">Individuals &amp; businesses</span>' : ''}
+          ${rels.map(r => `<span class="tag relationship">${taxonomy.relationship_types[r.type]?.label || r.type}</span>`).join('')}
+        </div>
+        ${channels.length ? `<div class="channels">${channels.map(c => `<a class="channel-link" href="${c.url}" target="_blank">${c.label}</a>`).join('')}</div>` : ''}
+      </div>`;
+  }).join('');
+}
+
+function highlightMatch(text, query) {
+  const words = query.toLowerCase().split(/\s+/);
+  let result = text;
+  for (const word of words) {
+    if (word.length < 2) continue;
+    const regex = new RegExp(`(${word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+    result = result.replace(regex, '<strong>$1</strong>');
+  }
+  return result;
+}
+
+function setupSearch() {
+  const input = document.getElementById('search-input');
+  let timer;
+  input.addEventListener('input', () => {
+    clearTimeout(timer);
+    timer = setTimeout(() => search(input.value), 150);
+  });
+}
+
+function setupFilters() {
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentFilter = btn.dataset.filter;
+      const input = document.getElementById('search-input');
+      if (input.value.trim()) search(input.value);
+    });
+  });
+}
+
+function setupSuggestions() {
+  document.querySelectorAll('.suggestion-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      const input = document.getElementById('search-input');
+      input.value = chip.dataset.q;
+      search(chip.dataset.q);
+      input.focus();
+    });
+  });
+}
+
+init();
+</script>
+</body>
+</html>

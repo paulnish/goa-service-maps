@@ -1,0 +1,291 @@
+{
+  "prefix": "jeti",
+  "name": "Jobs, Economy, Trade and Immigration",
+  "short_name": "Jobs, Economy, Trade & Immigration",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "Jobs & workplace standards",
+      "legend_label": "Jobs & workplaces",
+      "main_services": [
+        {"number": 1, "name": "Understand or enforce your employment rights"},
+        {"number": 2, "name": "Ensure your workplace meets health and safety requirements"},
+        {"number": 3, "name": "Resolve a labour relations dispute or access collective bargaining supports"}
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "short_name": "Trade, investment & economic development",
+      "legend_label": "Trade & investment",
+      "main_services": [
+        {"number": 1, "name": "Access business supports and investment services"},
+        {"number": 2, "name": "Access economic data and sector incentive programs"}
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "short_name": "Immigration pathways",
+      "legend_label": "Immigration pathways",
+      "main_services": [
+        {"number": 1, "name": "Apply for provincial nomination as a skilled worker"},
+        {"number": 2, "name": "Apply for provincial nomination as an entrepreneur"}
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#6a1b9a",
+      "short_name": "Settlement, integration & multiculturalism",
+      "legend_label": "Settlement & multiculturalism",
+      "main_services": [
+        {"number": 1, "name": "Get help settling in Alberta as a newcomer"},
+        {"number": 2, "name": "Get your foreign credentials recognized in Alberta"},
+        {"number": 3, "name": "Access multiculturalism, human rights, and inclusion supports"}
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "ESC",
+      "full_name": "Employment Standards Code",
+      "color": "#1565c0",
+      "citation": "RSA 2000, c E-9",
+      "summary": "Establishes minimum employment standards for Alberta workplaces including minimum wage, hours of work, overtime, vacation, general holidays, leaves of absence, termination notice, and complaint and enforcement mechanisms to protect workers' rights.",
+      "full_text": "<h3>Employment Standards Code</h3><p><strong>Citation:</strong> RSA 2000, c E-9</p><p>The Employment Standards Code sets the minimum standards governing the relationship between employers and employees in Alberta. It applies to most provincially regulated workplaces and covers wages, hours, leaves, termination, and enforcement.</p><h4>Part Structure</h4><ul><li><strong>Part 1 — Application and Operation:</strong> Defines the scope of the Code, who it applies to, and general operational provisions including the role of the Director of Employment Standards.</li><li><strong>Part 2 — Standards:</strong> The substantive core of the Code, establishing minimum standards for:<ul><li><strong>Minimum Wage (s. 8.1):</strong> Employers must pay at least the minimum wage rate set by regulation.</li><li><strong>Hours of Work and Overtime (ss. 19-24):</strong> Defines standard hours, overtime thresholds, overtime pay at 1.5 times the regular rate, and hours-of-work averaging arrangements.</li><li><strong>General Holidays (ss. 25-34):</strong> Lists designated general holidays in Alberta and requires holiday pay at 1.5 times the regular rate for employees who work on a holiday.</li><li><strong>Vacation (ss. 35-44):</strong> Entitles employees to annual vacation and vacation pay, with entitlements increasing with length of service.</li><li><strong>Maternity, Parental, and Other Leaves (ss. 45-53):</strong> Provides unpaid job-protected leaves including maternity leave (up to 16 weeks), parental leave, compassionate care leave, reservist leave, critical illness of child leave, and death or disappearance of child leave.</li><li><strong>Termination (ss. 54-62):</strong> Requires employers to provide written termination notice based on length of service, or termination pay in lieu of notice. Defines rules for temporary layoffs and group terminations.</li></ul></li><li><strong>Part 3 — Administration:</strong> Establishes the complaint and investigation process. The Director may receive complaints, investigate, mediate disputes, and issue orders requiring employers to pay owed wages and penalties.</li><li><strong>Part 4 — Orders, Decisions, and Director's Demands:</strong> Provides for enforcement orders and the Director's authority to demand payment from third parties holding employer funds.</li><li><strong>Part 4.1 — Administrative Penalties:</strong> Empowers the Director to impose administrative penalties on employers who contravene the Code.</li><li><strong>Part 5 — Offences, Procedures and Regulations:</strong> Creates offences for non-compliance and authorizes regulations to set specific standards including minimum wage rates.</li></ul><p>The Code requires employers to maintain employment records for at least 3 years. Employees who believe their rights have been violated can file a complaint for investigation and potential recovery of owed wages.</p>",
+      "sections": [
+        {
+          "ref": "Part 2, Sections 8-53",
+          "title": "Employment Standards — Wages, Hours, Leaves, and Termination",
+          "description": "Establishes minimum standards for wages, hours of work, overtime, vacation, general holidays, maternity and other leaves, and termination notice that apply to most Alberta workplaces.",
+          "anchor_id": "sec-esc-pt2",
+          "services": [
+            {
+              "name": "Learn about minimum wage, hours of work, overtime, and leave entitlements",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Understand or enforce your employment rights"
+            },
+            {
+              "name": "Learn about rules for termination, layoff, and severance",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Understand or enforce your employment rights"
+            }
+          ]
+        },
+        {
+          "ref": "Part 3, Sections 72+",
+          "title": "Complaints, Investigation, and Enforcement",
+          "description": "Establishes the process for workers to file employment standards complaints, and empowers the Director to investigate, mediate, and order payment of owed wages and administrative penalties.",
+          "anchor_id": "sec-esc-pt3",
+          "services": [
+            {
+              "name": "File a complaint about unpaid wages, wrongful termination, or other employment standards violations",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Understand or enforce your employment rights"
+            },
+            {
+              "name": "Develop employment, labour, and workplace safety policy",
+              "type": "foundational",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 0,
+              "ms_name": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "OHSA",
+      "full_name": "Occupational Health and Safety Act",
+      "color": "#1565c0",
+      "citation": "SA 2020, c O-2.2",
+      "summary": "Alberta's comprehensive workplace health and safety statute establishing duties for employers, workers, and supervisors, hazard assessment requirements, joint health and safety committees, the right to refuse dangerous work, and inspection and enforcement powers.",
+      "full_text": "<h3>Occupational Health and Safety Act</h3><p><strong>Citation:</strong> SA 2020, c O-2.2</p><p>The Occupational Health and Safety Act (OHS Act) is Alberta's primary statute governing workplace health and safety. It establishes the rights and responsibilities of all workplace parties and provides a comprehensive framework for hazard prevention, compliance, and enforcement.</p><h4>Part Structure (12 Parts)</h4><ul><li><strong>Part 1 — General Obligations:</strong> Establishes the core duties of employers, supervisors, workers, and other workplace parties. Employers must ensure, as far as reasonably practicable, the health and safety of workers (s. 3). Supervisors must advise workers of known hazards (s. 4). Workers must take reasonable care to protect their own and others' health and safety.</li><li><strong>Part 2 — Health and Safety Committees and Representatives:</strong> Employers with 20 or more regularly employed workers must establish a joint health and safety committee (s. 13). Committees participate in hazard assessments, review inspections, and make recommendations to employers.</li><li><strong>Part 3 — Dangerous Work and Right to Refuse:</strong> Workers may refuse work if they believe on reasonable grounds that an undue hazard exists — a serious and immediate threat to health and safety (s. 17). Employers must respond immediately, investigate, and must not assign another worker until the hazard is resolved.</li><li><strong>Part 4 — Acceptances, Allowances, Approvals, and Licences:</strong> Provides for ministerial approvals of equipment, processes, and inter-jurisdictional recognitions.</li><li><strong>Part 5 — Minister and Staff:</strong> Defines the Minister's powers and the appointment of OHS officers and directors.</li><li><strong>Part 6 — Medical Examinations:</strong> Authorizes medical examinations of workers exposed to specific workplace hazards.</li><li><strong>Part 7 — Compliance and Enforcement:</strong> Officers may conduct work site inspections (s. 34), issue compliance orders, stop-work orders, and administrative penalties. Employers must report serious injuries, fatalities, and dangerous incidents.</li><li><strong>Part 8 — Appeals:</strong> Provides a right of appeal for orders and decisions made under the Act.</li><li><strong>Part 9 — Offences and Penalties:</strong> First offence: fine up to $500,000 and/or imprisonment up to 6 months. Failure to comply with Director's orders: fine up to $1,000,000 and/or imprisonment up to 12 months (ss. 47-48).</li><li><strong>Parts 10-12 — Information Exchange, Regulations, and Transitional Provisions:</strong> Provides for information-sharing programs, regulation-making authority, and transitional rules from the predecessor legislation.</li></ul><p>The OHS Act replaced the previous Occupational Health and Safety Act (RSA 2000, c O-2) and significantly strengthened enforcement powers, worker protections, and penalty provisions. It applies to virtually every employer in Alberta.</p>",
+      "sections": [
+        {
+          "ref": "Parts 1-3",
+          "title": "Workplace Duties, Committees, and Right to Refuse",
+          "description": "Establishes duties for employers, supervisors, and workers; requires joint health and safety committees at larger workplaces; and protects workers' right to refuse dangerous work.",
+          "anchor_id": "sec-ohsa-pt1-3",
+          "services": [
+            {
+              "name": "Learn about workplace health and safety obligations and rights",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Ensure your workplace meets health and safety requirements"
+            }
+          ]
+        },
+        {
+          "ref": "Parts 7-9",
+          "title": "Compliance, Enforcement, and Penalties",
+          "description": "Empowers OHS officers to conduct inspections, issue compliance and stop-work orders, and impose administrative penalties. Creates offences with fines up to $1 million for serious non-compliance.",
+          "anchor_id": "sec-ohsa-pt7-9",
+          "services": [
+            {
+              "name": "Report a workplace health or safety concern or incident",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Ensure your workplace meets health and safety requirements"
+            },
+            {
+              "name": "Develop employment, labour, and workplace safety policy",
+              "type": "foundational",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 0,
+              "ms_name": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "LRC",
+      "full_name": "Labour Relations Code",
+      "color": "#1565c0",
+      "citation": "RSA 2000, c L-1",
+      "summary": "Governs collective bargaining, union certification, strikes and lockouts, unfair labour practices, and essential services in Alberta. Establishes the Alberta Labour Relations Board and provides for mediation, arbitration, and dispute resolution between employers and unions.",
+      "full_text": "<h3>Labour Relations Code</h3><p><strong>Citation:</strong> RSA 2000, c L-1</p><p>The Labour Relations Code is Alberta's comprehensive statute governing the relationship between employers, trade unions, and employees in the collective bargaining context. It establishes the framework for union certification, collective agreement negotiation, and dispute resolution.</p><h4>Structure</h4><p>The Code is organized into two main Parts with multiple Divisions:</p><ul><li><strong>Part 1 — General Provisions (ss. 1-11):</strong> Defines key terms (bargaining agent, certified bargaining agent, collective agreement, essential services agreement, strike, lockout, unfair labour practice) and establishes the Alberta Labour Relations Board.</li><li><strong>Part 2 — Comprehensive Labour Relations Framework:</strong> Contains 15+ Divisions covering all aspects of labour relations:<ul><li><strong>Divisions 1-3 — Membership, Employers' Organizations, Applications:</strong> Governs union membership, employer organizations, and Board application procedures.</li><li><strong>Division 4 — Certification and Bargaining Rights (ss. 32-45):</strong> Sets out the process for union certification including membership support requirements, Board certification tests, and bargaining unit descriptions.</li><li><strong>Division 5 — Collective Bargaining Obligations:</strong> Imposes a duty to bargain in good faith once a union is certified.</li><li><strong>Division 6 — Conciliation and Mediation:</strong> Provides for government-appointed conciliation officers and mediators to assist in resolving bargaining disputes before any work stoppage.</li><li><strong>Division 7 — Strikes and Lockouts (ss. 71-80):</strong> Defines the conditions under which strikes and lockouts are lawful, including mandatory cooling-off periods after conciliation and required strike/lockout votes. Prohibits strikes and lockouts during the term of a collective agreement.</li><li><strong>Division 8 — Unfair Labour Practices (ss. 81-96):</strong> Prohibits employer interference with union organizing, discrimination against union members, bad-faith bargaining, union coercion, and other unfair practices. Complaints may be filed with the Labour Relations Board.</li><li><strong>Division 10-11 — Union Security and Dues:</strong> Addresses union security clauses and mandatory dues deduction (Rand formula).</li><li><strong>Division 12 — Grievance Procedures:</strong> Requires collective agreements to include grievance and arbitration procedures for resolving disputes during the term of the agreement.</li><li><strong>Division 15.1 — Essential Services Agreements:</strong> Requires employers and unions in essential services sectors (health care, police, fire) to negotiate essential services agreements ensuring continuity of critical public services during labour disputes.</li></ul></li></ul><p>The Alberta Labour Relations Board administers the Code, certifies unions, adjudicates unfair labour practice complaints, and ensures compliance. The Code balances the rights of workers to organize and bargain collectively with the interests of employers and the public.</p>",
+      "sections": [
+        {
+          "ref": "Division 6-7, Sections 71-80",
+          "title": "Conciliation, Mediation, Strikes, and Lockouts",
+          "description": "Provides for government-appointed conciliation and mediation in collective bargaining disputes, and regulates the conditions under which strikes and lockouts are lawful, including mandatory cooling-off periods.",
+          "anchor_id": "sec-lrc-d6-7",
+          "services": [
+            {
+              "name": "Apply for mediation or arbitration of a collective bargaining dispute",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 3,
+              "ms_name": "Resolve a labour relations dispute or access collective bargaining supports"
+            }
+          ]
+        },
+        {
+          "ref": "Division 8, Sections 81-96",
+          "title": "Unfair Labour Practices",
+          "description": "Prohibits employer interference with union organizing, discrimination against union members, bad-faith bargaining, union coercion, and other unfair labour practices. Complaints are adjudicated by the Alberta Labour Relations Board.",
+          "anchor_id": "sec-lrc-d8",
+          "services": [
+            {
+              "name": "File an unfair labour practice complaint",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 3,
+              "ms_name": "Resolve a labour relations dispute or access collective bargaining supports"
+            },
+            {
+              "name": "Develop employment, labour, and workplace safety policy",
+              "type": "foundational",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 0,
+              "ms_name": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "FRPA",
+      "full_name": "Fair Registration Practices Act",
+      "color": "#6a1b9a",
+      "citation": "SA 2019, c F-1.5",
+      "summary": "Ensures that professional regulatory organizations in Alberta use transparent, objective, impartial, and procedurally fair registration practices when assessing the qualifications of internationally trained professionals, removing barriers to foreign credential recognition and supporting skilled newcomer employment.",
+      "full_text": "<h3>Fair Registration Practices Act</h3><p><strong>Citation:</strong> SA 2019, c F-1.5</p><p>The Fair Registration Practices Act (FRPA) is Alberta's statute ensuring that internationally trained professionals face fair and transparent processes when seeking registration to practise their regulated profession. It came into force on March 1, 2020.</p><h4>Key Provisions</h4><ul><li><strong>General Duty (Section 3):</strong> Every regulatory body must carry out registration practices that are transparent, objective, impartial, and procedurally fair. This overarching duty applies to all aspects of the registration process from application to decision.</li><li><strong>Information and Transparency (Section 5):</strong> Regulatory bodies must make publicly available the qualifications required for registration, the assessment process, timelines, fees, alternative documentation that may be accepted, and information about bridging programs. This ensures applicants can understand and navigate the process.</li><li><strong>Timely Decisions (Section 6):</strong> Regulatory bodies must make interim registration decisions within six months of receiving a complete application. If additional requirements (examinations, training) are needed, applicants must be informed of what is required and the expected timeline.</li><li><strong>Internal Review and Appeal (Section 7):</strong> Applicants who receive an unfavourable decision have the right to an internal review by the regulatory body. The review must be conducted by a person who was not involved in the original decision. Further appeal mechanisms must be available.</li><li><strong>Fair Assessment Practices (Section 9):</strong> Decision-makers must receive training on fair assessment practices, including considerations specific to internationally trained applicants such as recognizing equivalent competencies and alternative evidence of qualification.</li><li><strong>Minister's Powers (Part 2):</strong> The Minister may require regulatory bodies to report on their registration practices, direct audits of compliance, and issue compliance orders. This provides oversight to ensure regulatory bodies meet their obligations under the Act.</li><li><strong>Reporting:</strong> Regulatory bodies must report annually to the Minister on registration outcomes, including the number of applications from internationally trained individuals, processing times, and approval rates.</li></ul><p>FRPA applies to over 60 regulated professions in Alberta including health professionals, engineers, agrologists, lawyers, accountants, real estate practitioners, and other professional regulatory bodies.</p>",
+      "sections": [
+        {
+          "ref": "Section 3",
+          "title": "General Duty — Fair Registration Practices",
+          "description": "Requires professional regulatory organizations to conduct transparent, objective, impartial, and procedurally fair registration practices when assessing qualifications of internationally trained professionals.",
+          "anchor_id": "sec-frpa-s3",
+          "services": [
+            {
+              "name": "Get your international qualifications assessed",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#6a1b9a",
+              "ms_number": 2,
+              "ms_name": "Get your foreign credentials recognized in Alberta"
+            },
+            {
+              "name": "Navigate the licensing process for your regulated profession",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#6a1b9a",
+              "ms_number": 2,
+              "ms_name": "Get your foreign credentials recognized in Alberta"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "AHRA",
+      "full_name": "Alberta Human Rights Act",
+      "color": "#6a1b9a",
+      "citation": "RSA 2000, c A-25.5",
+      "summary": "Alberta's foundational anti-discrimination legislation prohibiting discrimination on the basis of race, colour, ancestry, place of origin, religious beliefs, gender, disability, and other protected grounds in employment, services, housing, and public life. Establishes the Alberta Human Rights Commission and complaint process.",
+      "full_text": "<h3>Alberta Human Rights Act</h3><p><strong>Citation:</strong> RSA 2000, c A-25.5</p><p>The Alberta Human Rights Act (formerly the Human Rights, Citizenship and Multiculturalism Act) is Alberta's principal anti-discrimination statute. It prohibits discrimination and promotes equality across all areas of public life.</p><h4>Key Provisions</h4><ul><li><strong>Preamble and Purpose:</strong> Recognizes the inherent dignity and equal rights of all Albertans. Affirms that multiculturalism is a fundamental principle of Alberta society and that diversity strengthens the province.</li><li><strong>Protected Grounds:</strong> Prohibits discrimination based on race, religious beliefs, colour, gender, gender identity, gender expression, physical disability, mental disability, age, ancestry, place of origin, marital status, source of income, family status, and sexual orientation.</li><li><strong>Prohibited Discrimination in Employment (Sections 7-9):</strong> Prohibits discriminatory practices in hiring, terms of employment, job advertisements, and membership in trade unions and professional associations. Requires reasonable accommodation of protected characteristics to the point of undue hardship.</li><li><strong>Prohibited Discrimination in Services and Housing (Sections 4-6):</strong> Prohibits discrimination in the provision of goods, services, accommodation, and facilities customarily available to the public, as well as in tenancy and housing. Includes public services, commercial services, and educational institutions.</li><li><strong>Prohibited Publications and Statements (Section 3):</strong> Prohibits publication or display of statements, signs, or symbols that indicate discrimination or an intention to discriminate, or that expose persons to hatred or contempt on the basis of a protected ground.</li><li><strong>Alberta Human Rights Commission (Sections 16-21):</strong> Establishes the Alberta Human Rights Commission as the body responsible for receiving and investigating complaints, promoting human rights education, and advising the government on human rights matters. The Commission also performs multiculturalism advisory functions.</li><li><strong>Complaints Process (Sections 22-32):</strong> Defines the process for filing complaints, investigation by the Commission's Director, and resolution through conciliation, mediation, or referral to a human rights tribunal. Tribunals can order remedies including compensation, policy changes, and apologies.</li><li><strong>Human Rights Tribunal (Sections 27-32):</strong> Establishes tribunals to hear complaints that cannot be resolved through investigation or mediation. Tribunals have the power to make binding orders, award damages, and require systemic remedies.</li><li><strong>Offences and Penalties:</strong> Creates offences for contravening tribunal orders, obstructing investigations, and retaliating against complainants.</li></ul><p>The Act works alongside the Canadian Human Rights Act (federal) and the Canadian Charter of Rights and Freedoms, providing provincial-level protections in areas of provincial jurisdiction.</p>",
+      "sections": [
+        {
+          "ref": "Sections 4-9",
+          "title": "Prohibited Discrimination — Employment, Services, and Housing",
+          "description": "Prohibits discrimination based on protected grounds in employment, goods and services, housing, and public facilities. Requires reasonable accommodation to the point of undue hardship.",
+          "anchor_id": "sec-ahra-s4-9",
+          "services": [
+            {
+              "name": "File a human rights complaint about discrimination",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#6a1b9a",
+              "ms_number": 3,
+              "ms_name": "Access multiculturalism, human rights, and inclusion supports"
+            },
+            {
+              "name": "Learn about human rights protections and anti-racism resources",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#6a1b9a",
+              "ms_number": 3,
+              "ms_name": "Access multiculturalism, human rights, and inclusion supports"
+            },
+            {
+              "name": "Fund and coordinate settlement, integration, and multiculturalism programs",
+              "type": "foundational",
+              "goal_number": 4,
+              "goal_color": "#6a1b9a",
+              "ms_number": 0,
+              "ms_name": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 5,
+    "sections_count": 8,
+    "services_with_leg_count": 10,
+    "services_multi_act_count": 1
+  }
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find a Government Service — Browse by Topic</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; color: #1a1a1a; line-height: 1.5; }
+
+  .header { background: #0a3161; color: white; padding: 24px 0; }
+  .header-inner { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  .header h1 { font-size: 20px; font-weight: 400; margin-bottom: 4px; }
+  .header h2 { font-size: 32px; font-weight: 700; }
+  .header p { font-size: 15px; opacity: 0.85; margin-top: 8px; max-width: 600px; }
+
+  .track-tabs { max-width: 1100px; margin: 0 auto; padding: 24px 24px 0; display: flex; gap: 8px; }
+  .track-tab { padding: 10px 24px; border-radius: 8px 8px 0 0; border: 1px solid #ddd; border-bottom: none; background: white; cursor: pointer; font-size: 15px; font-weight: 500; color: #666; transition: all 0.15s; }
+  .track-tab.active { background: #f5f5f5; color: #0a3161; border-color: #ccc; font-weight: 600; }
+  .track-tab:hover:not(.active) { background: #fafafa; color: #333; }
+
+  .tiers { max-width: 1100px; margin: 0 auto; padding: 0 24px 48px; }
+  .tier { margin-bottom: 32px; }
+  .tier-header { display: flex; align-items: baseline; gap: 12px; margin-bottom: 16px; padding-top: 24px; border-top: 1px solid #ddd; }
+  .tier:first-child .tier-header { border-top: none; }
+  .tier-label { font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: #888; font-weight: 600; white-space: nowrap; }
+  .tier-name { font-size: 22px; font-weight: 600; color: #1a1a1a; }
+  .tier-desc { font-size: 14px; color: #666; margin-bottom: 16px; }
+
+  .domain-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+  .domain-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 20px; cursor: pointer; transition: all 0.15s; position: relative; }
+  .domain-card:hover { border-color: #0a3161; box-shadow: 0 2px 12px rgba(10,49,97,0.1); transform: translateY(-1px); }
+  .domain-card h3 { font-size: 16px; font-weight: 600; color: #0a3161; margin-bottom: 6px; }
+  .domain-card .count { font-size: 13px; color: #888; }
+  .domain-card .icon { font-size: 28px; margin-bottom: 10px; display: block; }
+
+  /* Service list panel */
+  .service-panel { display: none; position: fixed; top: 0; right: 0; width: 520px; height: 100vh; background: white; box-shadow: -4px 0 24px rgba(0,0,0,0.15); z-index: 100; overflow-y: auto; }
+  .service-panel.open { display: block; }
+  .panel-header { padding: 24px; background: #0a3161; color: white; position: sticky; top: 0; z-index: 1; }
+  .panel-header h3 { font-size: 20px; font-weight: 600; }
+  .panel-header p { font-size: 13px; opacity: 0.8; margin-top: 4px; }
+  .panel-close { position: absolute; top: 20px; right: 20px; background: none; border: none; color: white; font-size: 24px; cursor: pointer; padding: 4px 8px; }
+  .panel-body { padding: 16px 24px; }
+
+  .service-item { padding: 16px 0; border-bottom: 1px solid #eee; }
+  .service-item:last-child { border-bottom: none; }
+  .service-name { font-size: 15px; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; }
+  .service-desc { font-size: 13px; color: #666; line-height: 1.4; }
+  .service-meta { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+  .service-tag { font-size: 11px; padding: 2px 8px; border-radius: 4px; background: #e8f0fe; color: #1a56db; }
+  .service-tag.ministry { background: #f0f0f0; color: #555; }
+  .service-channel { font-size: 12px; color: #0a3161; margin-top: 6px; }
+  .service-channel a { color: #1a56db; text-decoration: none; }
+  .service-channel a:hover { text-decoration: underline; }
+
+  .relationship-badge { font-size: 11px; padding: 2px 8px; border-radius: 4px; background: #fef3c7; color: #92400e; cursor: pointer; }
+  .relationship-badge:hover { background: #fde68a; }
+
+  .overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.3); z-index: 99; }
+  .overlay.open { display: block; }
+
+  @media (max-width: 600px) {
+    .service-panel { width: 100%; }
+    .domain-grid { grid-template-columns: 1fr; }
+    .header h2 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-inner">
+    <h1>Government of Alberta</h1>
+    <h2>Find a Government Service</h2>
+    <p>Browse by topic to find government services, or switch to the business view for employer and industry services.</p>
+  </div>
+</div>
+
+<div class="track-tabs">
+  <div class="track-tab active" data-track="individual">For individuals</div>
+  <div class="track-tab" data-track="business">For businesses</div>
+</div>
+
+<div class="tiers" id="tiers-container"></div>
+
+<div class="overlay" id="overlay"></div>
+<div class="service-panel" id="service-panel">
+  <button class="panel-close" id="panel-close">&times;</button>
+  <div class="panel-header">
+    <h3 id="panel-title"></h3>
+    <p id="panel-subtitle"></p>
+  </div>
+  <div class="panel-body" id="panel-body"></div>
+</div>
+
+<script>
+const DOMAIN_ICONS = {
+  health_wellbeing: '🏥', family_relationships: '👨‍👩‍👧', education_training: '🎓',
+  working_employment: '💼', money_taxes_benefits: '💰', environment_land: '🌿',
+  safety_emergencies: '🛡️', justice_legal: '⚖️', transport_infrastructure: '🚧',
+  recreation_culture: '🎭', housing_property: '🏠', driving_vehicles: '🚗',
+  immigration_settling: '🌍', vital_records_id: '🪪', professional_credentials: '📜',
+  privacy_government_access: '🔒',
+  registration_legal: '📋', finances_taxes: '💰', people_employment: '👥',
+  insurance_risk: '🛡️', licences_permits: '📄', safety_codes_standards: '🔧',
+  environmental_requirements: '🌿', reporting_obligations: '📊',
+  exporting_trade: '🌐', government_procurement: '🏛️', financial_distress: '⚠️',
+  disaster_recovery: '🆘', agriculture: '🌾', energy_minerals: '⛽',
+  construction: '🏗️', forestry: '🌲', food_service: '🍽️', childcare: '👶',
+  tourism_hospitality: '✈️', film_media: '🎬', transport_carriers: '🚛'
+};
+
+let taxonomy = null;
+let allServices = [];
+let currentTrack = 'individual';
+
+async function init() {
+  // Load taxonomy
+  const taxResp = await fetch('../data/ab/taxonomy.json');
+  taxonomy = await taxResp.json();
+
+  // Load all ministry data
+  const ministResp = await fetch('../data/ab/ministries.json');
+  const ministries = await ministResp.json();
+
+  for (const m of ministries) {
+    if (m.is_test) continue;
+    try {
+      const resp = await fetch(`../data/ab/${m.prefix}.json`);
+      const data = await resp.json();
+      extractServices(data, m.prefix, m.short_name);
+    } catch(e) { console.warn(`Failed to load ${m.prefix}`, e); }
+  }
+
+  renderTiers('individual');
+  setupTabs();
+}
+
+function extractServices(data, prefix, ministryName) {
+  function addService(svc, type) {
+    if (typeof svc === 'string') return;
+    if (!svc.taxonomy) return;
+    allServices.push({
+      ...svc, ministry: prefix, ministryName,
+      serviceType: type
+    });
+  }
+  for (const fs of data.foundational_services || []) addService(fs, 'foundational');
+  for (const goal of data.goals || []) {
+    for (const fs of goal.foundational_services || []) addService(fs, 'foundational');
+    for (const ms of goal.main_services || []) {
+      for (const fs of ms.foundational_services || []) addService(fs, 'foundational');
+      for (const ss of ms.supporting || []) addService(ss, 'supporting');
+    }
+  }
+}
+
+function renderTiers(track) {
+  const container = document.getElementById('tiers-container');
+  container.innerHTML = '';
+  const trackData = taxonomy.tracks[track];
+
+  for (const [tierKey, tier] of Object.entries(trackData.tiers)) {
+    const tierEl = document.createElement('div');
+    tierEl.className = 'tier';
+
+    const domains = Object.entries(tier.domains);
+    let domainsHtml = '';
+    for (const [domainKey, domain] of domains) {
+      const count = countServices(track, tierKey, domainKey);
+      domainsHtml += `
+        <div class="domain-card" data-track="${track}" data-tier="${tierKey}" data-domain="${domainKey}">
+          <span class="icon">${DOMAIN_ICONS[domainKey] || '📌'}</span>
+          <h3>${domain.label}</h3>
+          <span class="count">${count} service${count !== 1 ? 's' : ''}</span>
+        </div>`;
+    }
+
+    tierEl.innerHTML = `
+      <div class="tier-header">
+        <span class="tier-label">Tier ${Object.keys(trackData.tiers).indexOf(tierKey) + 1}</span>
+        <span class="tier-name">${tier.label}</span>
+      </div>
+      <div class="tier-desc">${tier.description}</div>
+      <div class="domain-grid">${domainsHtml}</div>`;
+
+    container.appendChild(tierEl);
+  }
+
+  // Add click handlers
+  document.querySelectorAll('.domain-card').forEach(card => {
+    card.addEventListener('click', () => {
+      openPanel(card.dataset.track, card.dataset.tier, card.dataset.domain);
+    });
+  });
+}
+
+function countServices(track, tier, domain) {
+  return allServices.filter(s => {
+    const t = s.taxonomy;
+    if (t.track === track) return t.tier === tier && t.domain === domain;
+    if (t.track === 'both') {
+      const side = t[track];
+      return side && side.tier === tier && side.domain === domain;
+    }
+    return false;
+  }).length;
+}
+
+function getServicesForDomain(track, tier, domain) {
+  return allServices.filter(s => {
+    const t = s.taxonomy;
+    if (t.track === track) return t.tier === tier && t.domain === domain;
+    if (t.track === 'both') {
+      const side = t[track];
+      return side && side.tier === tier && side.domain === domain;
+    }
+    return false;
+  });
+}
+
+function openPanel(track, tier, domain) {
+  const services = getServicesForDomain(track, tier, domain);
+  const tierData = taxonomy.tracks[track].tiers[tier];
+  const domainData = tierData.domains[domain];
+
+  document.getElementById('panel-title').textContent = domainData.label;
+  document.getElementById('panel-subtitle').textContent = `${services.length} services · ${tierData.label}`;
+
+  const body = document.getElementById('panel-body');
+  body.innerHTML = services.map(s => {
+    const rels = (s.taxonomy.relationships || []);
+    const relHtml = rels.length ? rels.map(r =>
+      `<span class="relationship-badge" title="${taxonomy.relationship_types[r.type]?.label || r.type}: ${r.service}">${taxonomy.relationship_types[r.type]?.label || r.type}</span>`
+    ).join('') : '';
+
+    const channels = (s.channels || []).filter(c => c.url).slice(0, 2);
+    const channelHtml = channels.map(c =>
+      `<a href="${c.url}" target="_blank">${c.label}</a>`
+    ).join(' · ');
+
+    return `
+      <div class="service-item">
+        <div class="service-name">${s.name}</div>
+        <div class="service-desc">${s.desc || ''}</div>
+        <div class="service-meta">
+          <span class="service-tag ministry">${s.ministryName}</span>
+          ${s.taxonomy.track === 'both' ? '<span class="service-tag">Also for businesses</span>' : ''}
+          ${relHtml}
+        </div>
+        ${channelHtml ? `<div class="service-channel">${channelHtml}</div>` : ''}
+      </div>`;
+  }).join('');
+
+  document.getElementById('service-panel').classList.add('open');
+  document.getElementById('overlay').classList.add('open');
+}
+
+function closePanel() {
+  document.getElementById('service-panel').classList.remove('open');
+  document.getElementById('overlay').classList.remove('open');
+}
+
+function setupTabs() {
+  document.querySelectorAll('.track-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.track-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      currentTrack = tab.dataset.track;
+      renderTiers(currentTrack);
+    });
+  });
+}
+
+document.getElementById('panel-close').addEventListener('click', closePanel);
+document.getElementById('overlay').addEventListener('click', closePanel);
+
+init();
+</script>
+</body>
+</html>

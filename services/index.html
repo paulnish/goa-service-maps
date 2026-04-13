@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find a Government Service — Alberta</title>
+<style>
+  :root {
+    --blue-900: #0a3161;
+    --blue-800: #0f3d6e;
+    --blue-700: #1a4a7a;
+    --blue-600: #1e5a94;
+    --blue-100: #e8f0fe;
+    --blue-link: #1a56db;
+    --gray-50: #f8f9fa;
+    --gray-100: #f0f1f3;
+    --gray-200: #e0e2e6;
+    --gray-300: #d0d3d8;
+    --gray-500: #6b7280;
+    --gray-600: #555;
+    --gray-700: #374151;
+    --gray-900: #1a1a1a;
+    --green-50: #ecfdf5;
+    --green-600: #059669;
+    --amber-50: #fffbeb;
+    --amber-100: #fef3c7;
+    --amber-800: #92400e;
+    --radius: 10px;
+    --radius-sm: 6px;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+    --shadow-md: 0 2px 12px rgba(0,0,0,0.1);
+    --max-width: 1120px;
+    --transition: 0.15s ease;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    background: var(--gray-50);
+    color: var(--gray-900);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Header ─────────────────────────────────── */
+  .header {
+    background: linear-gradient(135deg, var(--blue-900) 0%, var(--blue-700) 100%);
+    color: white;
+    padding: 40px 24px 48px;
+    text-align: center;
+  }
+  .header-badge {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0.7;
+    margin-bottom: 8px;
+  }
+  .header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .header p {
+    font-size: 15px;
+    opacity: 0.8;
+    max-width: 520px;
+    margin: 0 auto 28px;
+  }
+
+  /* ── Search ─────────────────────────────────── */
+  .search-wrap {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .search-wrap svg {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--gray-500);
+    pointer-events: none;
+  }
+  .search-input {
+    width: 100%;
+    padding: 15px 16px 15px 48px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+    transition: border-color var(--transition);
+  }
+  .search-input:focus { border-color: var(--blue-600); }
+  .search-input::placeholder { color: var(--gray-500); }
+
+  /* ── Search results dropdown ────────────────── */
+  .search-results {
+    display: none;
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.18);
+    max-height: 420px;
+    overflow-y: auto;
+    z-index: 200;
+    text-align: left;
+  }
+  .search-results.open { display: block; }
+  .sr-item {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--gray-100);
+    cursor: pointer;
+    transition: background var(--transition);
+  }
+  .sr-item:last-child { border-bottom: none; }
+  .sr-item:hover, .sr-item.highlighted { background: var(--blue-100); }
+  .sr-item-name { font-size: 14px; font-weight: 600; color: var(--blue-900); }
+  .sr-item-meta { font-size: 12px; color: var(--gray-500); margin-top: 2px; }
+  .sr-hint {
+    padding: 10px 16px;
+    font-size: 12px;
+    color: var(--gray-500);
+    border-bottom: 1px solid var(--gray-100);
+    background: var(--gray-50);
+    border-radius: var(--radius) var(--radius) 0 0;
+  }
+  .sr-noresults {
+    padding: 24px 16px;
+    text-align: center;
+    color: var(--gray-500);
+    font-size: 14px;
+  }
+  .sr-browse-link {
+    display: block;
+    padding: 12px 16px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--blue-link);
+    cursor: pointer;
+    border-top: 1px solid var(--gray-100);
+    background: var(--gray-50);
+    border-radius: 0 0 var(--radius) var(--radius);
+  }
+  .sr-browse-link:hover { background: var(--blue-100); }
+
+  /* ── Main container ─────────────────────────── */
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px 64px;
+  }
+
+  /* ── Track chips ─────────────────────────────── */
+  .chip-track {
+    background: var(--gray-100);
+    color: var(--gray-600);
+    font-weight: 500;
+    border: 1.5px solid var(--gray-200);
+  }
+  .chip-track:hover:not(.active) { border-color: var(--blue-600); color: var(--blue-900); }
+  .chip-track.active {
+    background: var(--blue-900);
+    color: white;
+    border-color: var(--blue-900);
+  }
+  .chip-track .track-count {
+    display: inline-block;
+    font-size: 10px;
+    padding: 0px 6px;
+    border-radius: 8px;
+    margin-left: 4px;
+    font-weight: 400;
+  }
+  .chip-track .track-count { background: rgba(0,0,0,0.1); color: inherit; }
+  .chip-track.active .track-count { background: rgba(255,255,255,0.25); }
+
+  /* ── Tier sections ──────────────────────────── */
+  .tier {
+    margin-bottom: 36px;
+  }
+  .tier-header {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 20px 0 6px;
+    border-top: 1px solid var(--gray-200);
+  }
+  .tier:first-child .tier-header { border-top: none; padding-top: 16px; }
+  .tier-number {
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    background: var(--blue-900);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .tier-name { font-size: 20px; font-weight: 600; color: var(--gray-900); }
+  .tier-desc { font-size: 14px; color: var(--gray-500); margin-bottom: 16px; padding-left: 32px; }
+
+  /* ── Domain cards ───────────────────────────── */
+  .domain-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 10px;
+  }
+  .domain-card {
+    background: white;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+    padding: 18px;
+    cursor: pointer;
+    transition: all var(--transition);
+    position: relative;
+  }
+  .domain-card:hover {
+    border-color: var(--blue-600);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-1px);
+  }
+  .domain-icon { font-size: 24px; margin-bottom: 8px; display: block; }
+  .domain-card h3 { font-size: 15px; font-weight: 600; color: var(--blue-900); line-height: 1.3; }
+  .domain-count { font-size: 12px; color: var(--gray-500); margin-top: 4px; }
+  .domain-card.empty { opacity: 0.35; pointer-events: none; }
+
+  /* ── Modal overlay sheet ─────────────────────── */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 900;
+    backdrop-filter: blur(2px);
+    animation: fadeIn 0.15s ease;
+  }
+  .modal-overlay.open { display: block; }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+  .modal-sheet {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: min(560px, 100vw);
+    height: 100vh;
+    background: white;
+    z-index: 910;
+    box-shadow: -4px 0 30px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.2s ease;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  .modal-sheet.open { display: flex; }
+  @keyframes slideIn { from { transform: translateX(40px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+
+  .sl-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    background: var(--blue-900);
+    color: white;
+    flex-shrink: 0;
+  }
+  .sl-header h3 { font-size: 18px; font-weight: 600; }
+  .sl-header-meta { font-size: 13px; opacity: 0.75; margin-top: 2px; }
+  .sl-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+    padding: 4px 8px;
+    line-height: 1;
+    opacity: 0.7;
+    transition: opacity var(--transition);
+    flex-shrink: 0;
+  }
+  .sl-close:hover { opacity: 1; }
+
+  .sl-body {
+    padding: 4px 0;
+    overflow-y: auto;
+    flex: 1;
+  }
+
+  .svc-item {
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--gray-100);
+    transition: background var(--transition);
+  }
+  .svc-item:last-child { border-bottom: none; }
+  .svc-item:hover { background: var(--gray-50); }
+  .svc-name { font-size: 14px; font-weight: 600; color: var(--gray-900); margin-bottom: 3px; }
+  .svc-desc { font-size: 13px; color: var(--gray-600); line-height: 1.4; }
+  .svc-tags { display: flex; gap: 5px; margin-top: 8px; flex-wrap: wrap; align-items: center; }
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .tag-jurisdiction { background: #dbeafe; color: #1e40af; }
+  .tag-ministry { background: var(--gray-100); color: var(--gray-600); }
+  .tag-both { background: var(--green-50); color: var(--green-600); }
+  .tag-relationship { background: var(--amber-100); color: var(--amber-800); cursor: help; }
+  .tag-foundational { background: #faf5ff; color: #7c3aed; }
+
+  .svc-channels { margin-top: 8px; display: flex; gap: 6px; flex-wrap: wrap; }
+  .ch-link {
+    font-size: 12px;
+    color: var(--blue-link);
+    text-decoration: none;
+    padding: 3px 10px;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition);
+  }
+  .ch-link:hover { background: var(--blue-100); border-color: var(--blue-link); }
+  .ch-link.ch-matched { border-color: var(--blue-900); background: var(--blue-100); font-weight: 600; }
+  .ch-badge {
+    font-size: 12px;
+    color: var(--gray-500);
+    padding: 3px 10px;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-sm);
+  }
+  .ch-badge.ch-matched { border-color: var(--blue-900); background: var(--blue-100); color: var(--blue-900); font-weight: 600; }
+
+  .tag-ug {
+    background: var(--gray-100);
+    color: var(--gray-600);
+  }
+  .tag-ug.ug-matched {
+    background: #00405c;
+    color: white;
+  }
+
+  /* ── Filter bar ──────────────────────────────── */
+  .filter-bar {
+    background: white;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+    margin: 28px 0 24px;
+  }
+  .filter-section {
+    margin-bottom: 12px;
+  }
+  .filter-section:last-child { margin-bottom: 0; }
+  .filter-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  .filter-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--gray-500);
+  }
+  .filter-clear {
+    font-size: 12px;
+    color: var(--blue-link);
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    display: none;
+  }
+  .filter-clear.visible { display: inline; }
+  .filter-clear:hover { text-decoration: underline; }
+  .filter-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .filter-chip {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 16px;
+    cursor: pointer;
+    border: 1.5px solid transparent;
+    transition: all var(--transition);
+    user-select: none;
+  }
+  .filter-chip:hover { opacity: 0.85; }
+  .filter-chip.inactive { opacity: 0.35; }
+
+  /* Channel chip colors — match service map style */
+  .chip-ch-transact { background: #c8e6c9; color: #1b5e20; }
+  .chip-ch-apply    { background: #b2dfdb; color: #004d40; }
+  .chip-ch-check    { background: #b3e5fc; color: #01579b; }
+  .chip-ch-find     { background: #bbdefb; color: #0d47a1; }
+  .chip-ch-app      { background: #d1c4e9; color: #311b92; }
+  .chip-ch-engage   { background: #f0f4c3; color: #33691e; }
+  .chip-ch-web      { background: #c5cae9; color: #1a237e; }
+  .chip-ch-email    { background: #ffe0b2; color: #e65100; }
+  .chip-ch-phone    { background: #f5f5f5; color: #424242; }
+  .chip-ch-mail     { background: #efebe9; color: #3e2723; }
+  .chip-ch-inperson { background: #fff9c4; color: #f57f17; }
+  .chip-ch-registry { background: #fce4ec; color: #880e4f; }
+  .chip-ch-pdf      { background: #e0e0e0; color: #212121; }
+  .chip-ch-pub      { background: #e8eaf6; color: #283593; }
+
+  /* User group chips */
+  .chip-ug {
+    background: #555;
+    color: white;
+  }
+
+  .filter-summary {
+    font-size: 12px;
+    color: var(--gray-500);
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--gray-100);
+    display: none;
+  }
+  .filter-summary.visible { display: block; }
+  .filter-summary strong { color: var(--gray-700); }
+
+  .ug-show-more {
+    font-size: 12px;
+    color: var(--blue-link);
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 4px 12px;
+  }
+  .ug-show-more:hover { text-decoration: underline; }
+
+  /* ── Footer ─────────────────────────────────── */
+  .footer {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 24px 24px 48px;
+    border-top: 1px solid var(--gray-200);
+    font-size: 13px;
+    color: var(--gray-500);
+  }
+
+  /* ── Mobile ─────────────────────────────────── */
+  @media (max-width: 640px) {
+    .header { padding: 28px 16px 36px; }
+    .header h1 { font-size: 26px; }
+    .container { padding: 0 16px 48px; }
+    .domain-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+    .domain-card { padding: 14px; }
+    .domain-icon { font-size: 20px; margin-bottom: 4px; }
+    .domain-card h3 { font-size: 14px; }
+    .tier-name { font-size: 17px; }
+    .modal-sheet { width: 100vw; }
+    .sl-header h3 { font-size: 16px; }
+    .sl-header { padding: 16px 18px; }
+    .svc-item { padding: 14px 18px; }
+  }
+  @media (max-width: 400px) {
+    .domain-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-badge">Government of Alberta</div>
+  <h1>Find a government service</h1>
+  <p>Browse by topic below, or search for what you need.</p>
+  <div class="search-wrap">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input type="text" class="search-input" id="search-input" placeholder="e.g. driver's licence, child care, building permit..." autocomplete="off">
+    <div class="search-results" id="search-results"></div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="filter-bar" id="filter-bar">
+    <div class="filter-section">
+      <div class="filter-section-header">
+        <span class="filter-label">Show services for</span>
+      </div>
+      <div class="filter-chips" id="track-chips">
+        <span class="filter-chip chip-track active" data-track="individual">For individuals <span class="track-count" id="count-individual"></span></span>
+        <span class="filter-chip chip-track" data-track="business">For businesses <span class="track-count" id="count-business"></span></span>
+      </div>
+    </div>
+    <div class="filter-section">
+      <div class="filter-section-header">
+        <span class="filter-label">Filter by channel</span>
+        <button class="filter-clear" id="ch-clear">Clear</button>
+      </div>
+      <div class="filter-chips" id="ch-chips"></div>
+    </div>
+    <div class="filter-section">
+      <div class="filter-section-header">
+        <span class="filter-label">Filter by user group</span>
+        <button class="filter-clear" id="ug-clear">Clear</button>
+      </div>
+      <div class="filter-chips" id="ug-chips"></div>
+    </div>
+    <div class="filter-summary" id="filter-summary"></div>
+  </div>
+  <div id="tiers-container"></div>
+</div>
+
+<div class="modal-overlay" id="modal-overlay"></div>
+<div class="modal-sheet" id="modal-sheet">
+  <div class="sl-header">
+    <div>
+      <h3 id="modal-title"></h3>
+      <div class="sl-header-meta" id="modal-meta"></div>
+    </div>
+    <button class="sl-close" id="modal-close" aria-label="Close">&times;</button>
+  </div>
+  <div class="sl-body" id="modal-body"></div>
+</div>
+
+<div class="footer">
+  This is a prototype. Data reflects the Government of Alberta's current ministry structure.
+</div>
+
+<script>
+// ── Config ───────────────────────────────────────
+const DATA_BASE = '../data/ab';
+const JURISDICTION = 'Alberta';
+
+const DOMAIN_ICONS = {
+  health_wellbeing: '🏥', family_relationships: '👨‍👩‍👧', education_training: '🎓',
+  working_employment: '💼', money_taxes_benefits: '💰', environment_land: '🌿',
+  safety_emergencies: '🛡️', justice_legal: '⚖️', transport_infrastructure: '🚧',
+  recreation_culture: '🎭', housing_property: '🏠', driving_vehicles: '🚗',
+  immigration_settling: '🌍', vital_records_id: '🪪', professional_credentials: '📜',
+  privacy_government_access: '🔒',
+  registration_legal: '📋', finances_taxes: '💰', people_employment: '👥',
+  insurance_risk: '🛡️', licences_permits: '📄', safety_codes_standards: '🔧',
+  environmental_requirements: '🌿', reporting_obligations: '📊',
+  exporting_trade: '🌐', government_procurement: '🏛️', financial_distress: '⚠️',
+  disaster_recovery: '🆘', agriculture: '🌾', energy_minerals: '⛽',
+  construction: '🏗️', forestry: '🌲', food_service: '🍽️', childcare: '👶',
+  tourism_hospitality: '✈️', film_media: '🎬', transport_carriers: '🚛'
+};
+
+// Synonym map — maps citizen language to terms in the data
+const SYNONYMS = {
+  'daycare': ['child care', 'childcare', 'early learning'],
+  'ei': ['employment insurance', 'employment standards'],
+  'drivers': ["driver's", 'operator', 'driving'],
+  'licence': ['license', 'licensing', 'credential'],
+  'license': ['licence', 'licensing', 'credential'],
+  'doctor': ['physician', 'health', 'practitioner', 'primary care'],
+  'hospital': ['acute care', 'surgical', 'emergency'],
+  'school': ['education', 'student', 'learning'],
+  'taxes': ['tax', 'taxation', 'levy', 'revenue'],
+  'tax': ['taxes', 'taxation', 'levy', 'revenue'],
+  'welfare': ['income support', 'financial assistance', 'social services'],
+  'disability': ['AISH', 'assured income', 'accessibility'],
+  'aish': ['assured income', 'disability'],
+  'senior': ['seniors', 'aging', 'elder', 'older adult'],
+  'seniors': ['senior', 'aging', 'elder', 'older adult'],
+  'housing': ['shelter', 'rent', 'homeless', 'residential'],
+  'job': ['employment', 'work', 'career', 'labour'],
+  'jobs': ['employment', 'work', 'career', 'labour'],
+  'immigrant': ['immigration', 'newcomer', 'settlement'],
+  'birth': ['vital statistics', 'vital records', 'birth certificate'],
+  'death': ['vital statistics', 'vital records', 'death certificate'],
+  'marriage': ['vital statistics', 'vital records', 'marriage certificate'],
+  'car': ['vehicle', 'motor vehicle', 'driving', 'automobile'],
+  'truck': ['vehicle', 'motor vehicle', 'commercial vehicle', 'carrier'],
+  'farm': ['agriculture', 'farming', 'agricultural'],
+  'oil': ['energy', 'petroleum', 'oil sands', 'mineral'],
+  'gas': ['natural gas', 'energy', 'utilities'],
+  'water': ['water licence', 'irrigation', 'water quality'],
+  'fire': ['wildfire', 'fire ban', 'fire safety'],
+  'park': ['parks', 'provincial park', 'camping', 'recreation'],
+  'camping': ['campsite', 'campground', 'parks', 'provincial park'],
+  'complaint': ['complain', 'dispute', 'appeal', 'grievance'],
+  'permit': ['permits', 'licence', 'authorization', 'approval'],
+  'foip': ['freedom of information', 'privacy', 'access to information'],
+  'abuse': ['violence', 'protection', 'intervention', 'neglect'],
+  'adopt': ['adoption', 'adoptive', 'child placement'],
+  'foster': ['foster care', 'kinship', 'child placement'],
+  'mental health': ['counselling', 'therapy', 'addiction', 'crisis'],
+  'addiction': ['substance', 'recovery', 'treatment', 'mental health'],
+  'building': ['construction', 'safety codes', 'building permit'],
+  'business': ['corporation', 'company', 'enterprise', 'commercial'],
+  'startup': ['starting a business', 'new business', 'incorporate'],
+};
+
+// Channel type metadata (label + order for filter chips)
+const CHANNEL_META = [
+  { code: 'ch-transact', label: 'Online transaction' },
+  { code: 'ch-apply',    label: 'Apply' },
+  { code: 'ch-check',    label: 'Check / portal' },
+  { code: 'ch-find',     label: 'Find / search' },
+  { code: 'ch-app',      label: 'Mobile app' },
+  { code: 'ch-engage',   label: 'Engage' },
+  { code: 'ch-web',      label: 'Website' },
+  { code: 'ch-email',    label: 'Email' },
+  { code: 'ch-phone',    label: 'Phone' },
+  { code: 'ch-mail',     label: 'Mail' },
+  { code: 'ch-inperson', label: 'In person' },
+  { code: 'ch-registry', label: 'Registry agent' },
+  { code: 'ch-pdf',      label: 'PDF / form' },
+  { code: 'ch-pub',      label: 'Publication' },
+];
+
+// ── State ────────────────────────────────────────
+let taxonomy = null;
+let allServices = [];
+let currentTrack = 'individual';
+const activeChannels = new Set();
+const activeUserGroups = new Set();
+let allUserGroups = []; // populated after data loads
+let ugExpanded = false;
+
+// ── Init ─────────────────────────────────────────
+async function init() {
+  const [taxResp, minResp] = await Promise.all([
+    fetch(`${DATA_BASE}/taxonomy.json`),
+    fetch(`${DATA_BASE}/ministries.json`)
+  ]);
+  taxonomy = await taxResp.json();
+  const ministries = await minResp.json();
+
+  // Load all ministry data in parallel
+  const loads = ministries
+    .filter(m => !m.is_test)
+    .map(m => fetch(`${DATA_BASE}/${m.prefix}.json`)
+      .then(r => r.json())
+      .then(data => extractServices(data, m.prefix, m.short_name))
+      .catch(e => console.warn(`Skipped ${m.prefix}:`, e))
+    );
+  await Promise.all(loads);
+
+  buildFilterChips();
+  updateCounts();
+  renderTiers(currentTrack);
+  setupTabs();
+  setupSearch();
+  setupFilters();
+}
+
+// ── Extract services from ministry data ──────────
+function extractServices(data, prefix, ministryName) {
+  function add(svc, type, goalNum, msNum) {
+    if (typeof svc === 'string' || !svc.taxonomy) return;
+    allServices.push({
+      ...svc,
+      ministry: prefix,
+      ministryName,
+      jurisdiction: JURISDICTION,
+      serviceType: type,
+      _goal: goalNum,
+      _ms: msNum
+    });
+  }
+  for (const fs of data.foundational_services || []) add(fs, 'foundational', null, null);
+  for (const goal of data.goals || []) {
+    for (const fs of goal.foundational_services || []) add(fs, 'foundational', goal.number, null);
+    for (const ms of goal.main_services || []) {
+      for (const fs of ms.foundational_services || []) add(fs, 'foundational', goal.number, ms.number);
+      for (const ss of ms.supporting || []) add(ss, 'supporting', goal.number, ms.number);
+    }
+  }
+}
+
+// ── Filtering ────────────────────────────────────
+function serviceMatchesFilters(s) {
+  const chActive = activeChannels.size > 0;
+  const ugActive = activeUserGroups.size > 0;
+  if (!chActive && !ugActive) return true;
+
+  const svcChannels = (s.channels || []).map(c => c.type);
+  const svcGroups = s.user_groups || [];
+
+  const matchesCh = !chActive || svcChannels.some(ch => activeChannels.has(ch));
+  const matchesUg = !ugActive || svcGroups.some(g => activeUserGroups.has(g));
+  return matchesCh && matchesUg;
+}
+
+function filtersActive() {
+  return activeChannels.size > 0 || activeUserGroups.size > 0;
+}
+
+// ── Counting ─────────────────────────────────────
+function countForTrack(track) {
+  return allServices.filter(s => {
+    const t = s.taxonomy.track;
+    return (t === track || t === 'both') && serviceMatchesFilters(s);
+  }).length;
+}
+
+function countServices(track, tier, domain) {
+  return getServicesForDomain(track, tier, domain).length;
+}
+
+function getServicesForDomain(track, tier, domain) {
+  return allServices.filter(s => {
+    const t = s.taxonomy;
+    let inDomain = false;
+    if (t.track === track) inDomain = t.tier === tier && t.domain === domain;
+    else if (t.track === 'both') {
+      const side = t[track];
+      inDomain = side && side.tier === tier && side.domain === domain;
+    }
+    return inDomain && serviceMatchesFilters(s);
+  });
+}
+
+function updateCounts() {
+  document.getElementById('count-individual').textContent = countForTrack('individual');
+  document.getElementById('count-business').textContent = countForTrack('business');
+}
+
+// ── Build filter chips ───────────────────────────
+function buildFilterChips() {
+  // Channel chips — only show channels that actually exist in data
+  const usedChannels = new Set();
+  const ugCounts = {};
+  allServices.forEach(s => {
+    (s.channels || []).forEach(c => usedChannels.add(c.type));
+    (s.user_groups || []).forEach(g => { ugCounts[g] = (ugCounts[g] || 0) + 1; });
+  });
+
+  const chContainer = document.getElementById('ch-chips');
+  chContainer.innerHTML = CHANNEL_META
+    .filter(cm => usedChannels.has(cm.code))
+    .map(cm => `<span class="filter-chip chip-${cm.code}" data-channel="${cm.code}">${cm.label}</span>`)
+    .join('');
+
+  // User group chips — sorted by frequency, show top 10 initially
+  allUserGroups = Object.entries(ugCounts)
+    .sort((a, b) => b[1] - a[1])
+    .map(([name, count]) => ({ name, count }));
+
+  renderUserGroupChips();
+}
+
+function renderUserGroupChips() {
+  const container = document.getElementById('ug-chips');
+  const UG_INITIAL = 10;
+  const visible = ugExpanded ? allUserGroups : allUserGroups.slice(0, UG_INITIAL);
+  const hasMore = allUserGroups.length > UG_INITIAL;
+
+  container.innerHTML = visible.map(ug =>
+    `<span class="filter-chip chip-ug${activeUserGroups.has(ug.name) ? '' : (activeUserGroups.size > 0 ? ' inactive' : '')}" data-group="${ug.name}">${ug.name}</span>`
+  ).join('') + (hasMore ? `<button class="ug-show-more" id="ug-toggle">${ugExpanded ? 'Show fewer' : `+${allUserGroups.length - UG_INITIAL} more`}</button>` : '');
+
+  // Re-attach toggle handler
+  const toggle = document.getElementById('ug-toggle');
+  if (toggle) toggle.addEventListener('click', () => { ugExpanded = !ugExpanded; renderUserGroupChips(); setupFilterChipHandlers(); });
+
+  setupFilterChipHandlers();
+}
+
+// ── Filter event handlers ────────────────────────
+function setupFilters() {
+  setupFilterChipHandlers();
+
+  document.getElementById('ch-clear').addEventListener('click', () => {
+    activeChannels.clear();
+    applyFilters();
+  });
+  document.getElementById('ug-clear').addEventListener('click', () => {
+    activeUserGroups.clear();
+    applyFilters();
+  });
+}
+
+function setupFilterChipHandlers() {
+  document.querySelectorAll('#ch-chips .filter-chip').forEach(chip => {
+    chip.onclick = () => {
+      const ch = chip.dataset.channel;
+      activeChannels.has(ch) ? activeChannels.delete(ch) : activeChannels.add(ch);
+      applyFilters();
+    };
+  });
+  document.querySelectorAll('#ug-chips .filter-chip').forEach(chip => {
+    chip.onclick = () => {
+      const g = chip.dataset.group;
+      activeUserGroups.has(g) ? activeUserGroups.delete(g) : activeUserGroups.add(g);
+      applyFilters();
+    };
+  });
+}
+
+function applyFilters() {
+  // Update chip visual state
+  document.querySelectorAll('#ch-chips .filter-chip').forEach(chip => {
+    const active = activeChannels.has(chip.dataset.channel);
+    chip.classList.toggle('inactive', activeChannels.size > 0 && !active);
+  });
+  document.querySelectorAll('#ug-chips .filter-chip').forEach(chip => {
+    const active = activeUserGroups.has(chip.dataset.group);
+    chip.classList.toggle('inactive', activeUserGroups.size > 0 && !active);
+  });
+
+  // Show/hide clear buttons
+  document.getElementById('ch-clear').classList.toggle('visible', activeChannels.size > 0);
+  document.getElementById('ug-clear').classList.toggle('visible', activeUserGroups.size > 0);
+
+  // Re-render counts, summary, and tiers
+  updateFilterSummary();
+  updateCounts();
+  renderTiers(currentTrack);
+}
+
+// ── Render tiers ─────────────────────────────────
+function renderTiers(track) {
+  const container = document.getElementById('tiers-container');
+  container.innerHTML = '';
+  const trackData = taxonomy.tracks[track];
+  let tierNum = 0;
+
+  for (const [tierKey, tier] of Object.entries(trackData.tiers)) {
+    tierNum++;
+    const tierEl = document.createElement('div');
+    tierEl.className = 'tier';
+
+    let cardsHtml = '';
+    for (const [domainKey, domain] of Object.entries(tier.domains)) {
+      const count = countServices(track, tierKey, domainKey);
+      const emptyClass = count === 0 && filtersActive() ? ' empty' : '';
+      cardsHtml += `
+        <div class="domain-card${emptyClass}" data-track="${track}" data-tier="${tierKey}" data-domain="${domainKey}" tabindex="0" role="button" aria-label="${domain.label} — ${count} services">
+          <span class="domain-icon">${DOMAIN_ICONS[domainKey] || '📌'}</span>
+          <h3>${domain.label}</h3>
+          <div class="domain-count">${count} service${count !== 1 ? 's' : ''}</div>
+        </div>`;
+    }
+
+    tierEl.innerHTML = `
+      <div class="tier-header">
+        <span class="tier-number">${tierNum}</span>
+        <span class="tier-name">${tier.label}</span>
+      </div>
+      <div class="tier-desc">${tier.description}</div>
+      <div class="domain-grid">${cardsHtml}</div>`;
+
+    container.appendChild(tierEl);
+  }
+
+  // Click handlers
+  document.querySelectorAll('.domain-card').forEach(card => {
+    card.addEventListener('click', () => toggleDomain(card));
+    card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleDomain(card); } });
+  });
+}
+
+// ── Open domain modal ────────────────────────────
+function toggleDomain(card) {
+  const { track, tier, domain } = card.dataset;
+  openDomainModal(track, tier, domain);
+}
+
+function openDomainModal(track, tier, domain) {
+  const services = getServicesForDomain(track, tier, domain);
+  const domainLabel = taxonomy.tracks[track].tiers[tier].domains[domain].label;
+  const tierLabel = taxonomy.tracks[track].tiers[tier].label;
+
+  // Sort: supporting first, then foundational; alphabetical within each
+  services.sort((a, b) => {
+    if (a.serviceType !== b.serviceType) return a.serviceType === 'supporting' ? -1 : 1;
+    return a.name.localeCompare(b.name);
+  });
+
+  document.getElementById('modal-title').textContent = domainLabel;
+  document.getElementById('modal-meta').textContent = `${services.length} service${services.length !== 1 ? 's' : ''} · ${tierLabel}`;
+  document.getElementById('modal-body').innerHTML = services.map(s => renderServiceItem(s)).join('');
+
+  document.getElementById('modal-overlay').classList.add('open');
+  document.getElementById('modal-sheet').classList.add('open');
+  document.body.style.overflow = 'hidden';
+
+  // Reset scroll position
+  document.getElementById('modal-body').scrollTop = 0;
+}
+
+function closeModal() {
+  document.getElementById('modal-overlay').classList.remove('open');
+  document.getElementById('modal-sheet').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// Close on overlay click, close button, or Escape
+document.getElementById('modal-overlay').addEventListener('click', closeModal);
+document.getElementById('modal-close').addEventListener('click', closeModal);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+// ── Render a single service ──────────────────────
+function renderServiceItem(s) {
+  const rels = s.taxonomy.relationships || [];
+  const relHtml = rels.map(r => {
+    const label = taxonomy.relationship_types[r.type]?.label || r.type;
+    return `<span class="tag tag-relationship" title="${label}: ${r.service}">${label}</span>`;
+  }).join('');
+
+  // Channels — highlight those matching active filters
+  const channels = (s.channels || []);
+  const linked = channels.filter(c => c.url).slice(0, 3);
+  const unlinked = channels.filter(c => !c.url).slice(0, 2);
+  const chHighlight = activeChannels.size > 0;
+
+  const channelHtml = linked.map(c => {
+    const hl = chHighlight && activeChannels.has(c.type) ? ' ch-matched' : '';
+    return `<a class="ch-link${hl}" href="${c.url}" target="_blank" rel="noopener">${c.label}</a>`;
+  }).join('') + unlinked.map(c => {
+    const hl = chHighlight && activeChannels.has(c.type) ? ' ch-matched' : '';
+    return `<span class="ch-badge${hl}">${c.label}</span>`;
+  }).join('');
+
+  // User groups — highlight those matching active filters
+  const groups = s.user_groups || [];
+  const ugHtml = groups.length ? groups.map(g => {
+    const hl = activeUserGroups.size > 0 && activeUserGroups.has(g) ? ' ug-matched' : '';
+    return `<span class="tag tag-ug${hl}">${g}</span>`;
+  }).join('') : '';
+
+  return `
+    <div class="svc-item">
+      <div class="svc-name">${s.name}</div>
+      ${s.desc ? `<div class="svc-desc">${s.desc}</div>` : ''}
+      <div class="svc-tags">
+        <span class="tag tag-jurisdiction">${s.jurisdiction}</span>
+        <span class="tag tag-ministry">${s.ministryName}</span>
+        ${s.serviceType === 'foundational' ? '<span class="tag tag-foundational">Foundational</span>' : ''}
+        ${s.taxonomy.track === 'both' ? '<span class="tag tag-both">Individuals &amp; businesses</span>' : ''}
+        ${ugHtml}
+        ${relHtml}
+      </div>
+      ${channelHtml ? `<div class="svc-channels">${channelHtml}</div>` : ''}
+    </div>`;
+}
+
+// ── Track chips ──────────────────────────────────
+function setupTabs() {
+  document.querySelectorAll('.chip-track').forEach(chip => {
+    chip.addEventListener('click', () => {
+      document.querySelectorAll('.chip-track').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      currentTrack = chip.dataset.track;
+      closeModal();
+      updateCounts();
+      renderTiers(currentTrack);
+      updateFilterSummary();
+    });
+  });
+}
+
+function updateFilterSummary() {
+  const summary = document.getElementById('filter-summary');
+  if (filtersActive()) {
+    const total = countForTrack(currentTrack);
+    const parts = [];
+    if (activeChannels.size > 0) parts.push(`${activeChannels.size} channel${activeChannels.size > 1 ? 's' : ''}`);
+    if (activeUserGroups.size > 0) parts.push(`${activeUserGroups.size} user group${activeUserGroups.size > 1 ? 's' : ''}`);
+    summary.innerHTML = `Showing <strong>${total} services</strong> matching ${parts.join(' and ')}`;
+    summary.classList.add('visible');
+  } else {
+    summary.classList.remove('visible');
+  }
+}
+
+// ── Search ───────────────────────────────────────
+function setupSearch() {
+  const input = document.getElementById('search-input');
+  const dropdown = document.getElementById('search-results');
+  let debounceTimer;
+  let highlightIdx = -1;
+
+  input.addEventListener('input', () => {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => {
+      const q = input.value.trim();
+      if (q.length < 2) { dropdown.classList.remove('open'); return; }
+      const results = searchServices(q);
+      renderSearchResults(results, q);
+      highlightIdx = -1;
+    }, 120);
+  });
+
+  input.addEventListener('keydown', e => {
+    if (!dropdown.classList.contains('open')) return;
+    const items = dropdown.querySelectorAll('.sr-item');
+    if (e.key === 'ArrowDown') { e.preventDefault(); highlightIdx = Math.min(highlightIdx + 1, items.length - 1); updateHighlight(items); }
+    if (e.key === 'ArrowUp') { e.preventDefault(); highlightIdx = Math.max(highlightIdx - 1, 0); updateHighlight(items); }
+    if (e.key === 'Enter' && highlightIdx >= 0 && items[highlightIdx]) { e.preventDefault(); items[highlightIdx].click(); }
+    if (e.key === 'Escape') { dropdown.classList.remove('open'); }
+  });
+
+  function updateHighlight(items) {
+    items.forEach((it, i) => it.classList.toggle('highlighted', i === highlightIdx));
+    if (items[highlightIdx]) items[highlightIdx].scrollIntoView({ block: 'nearest' });
+  }
+
+  // Close on outside click
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.search-wrap')) dropdown.classList.remove('open');
+  });
+}
+
+function expandQuery(query) {
+  const words = query.toLowerCase().split(/\s+/);
+  const expanded = new Set(words);
+  for (const word of words) {
+    const syns = SYNONYMS[word];
+    if (syns) syns.forEach(s => expanded.add(s.toLowerCase()));
+  }
+  return [...expanded];
+}
+
+function searchServices(query) {
+  const terms = expandQuery(query);
+  const originalWords = query.toLowerCase().split(/\s+/);
+
+  let scored = allServices.map(svc => {
+    const name = svc.name.toLowerCase();
+    const desc = (svc.desc || '').toLowerCase();
+    const groups = (svc.user_groups || []).join(' ').toLowerCase();
+    const domainLabel = getServiceDomainLabel(svc).toLowerCase();
+    let score = 0;
+
+    for (const term of terms) {
+      const isOriginal = originalWords.includes(term);
+      const weight = isOriginal ? 1 : 0.6; // synonyms score less
+      if (name.includes(term)) score += 12 * weight;
+      if (desc.includes(term)) score += 3 * weight;
+      if (groups.includes(term)) score += 2 * weight;
+      if (domainLabel.includes(term)) score += 4 * weight;
+    }
+    if (svc.serviceType === 'supporting') score += 0.5;
+    return { svc, score };
+  }).filter(r => r.score > 0);
+
+  scored.sort((a, b) => b.score - a.score);
+  return scored.slice(0, 12);
+}
+
+function getServiceDomainLabel(svc) {
+  const t = svc.taxonomy;
+  try {
+    if (t.track === 'both') return taxonomy.tracks.individual.tiers[t.individual.tier].domains[t.individual.domain].label;
+    return taxonomy.tracks[t.track].tiers[t.tier].domains[t.domain].label;
+  } catch(e) { return ''; }
+}
+
+function getServiceTierAndDomain(svc) {
+  const t = svc.taxonomy;
+  if (t.track === 'both') return { track: 'individual', tier: t.individual.tier, domain: t.individual.domain };
+  return { track: t.track, tier: t.tier, domain: t.domain };
+}
+
+function renderSearchResults(results, query) {
+  const dropdown = document.getElementById('search-results');
+
+  if (results.length === 0) {
+    dropdown.innerHTML = `<div class="sr-noresults">No services found for "${query}"</div>`;
+    dropdown.classList.add('open');
+    return;
+  }
+
+  let html = `<div class="sr-hint">${results.length} service${results.length !== 1 ? 's' : ''} found</div>`;
+  html += results.map(({ svc }, i) => {
+    const domainLabel = getServiceDomainLabel(svc);
+    return `<div class="sr-item" data-index="${i}">
+      <div class="sr-item-name">${svc.name}</div>
+      <div class="sr-item-meta">${domainLabel} · ${svc.jurisdiction} · ${svc.ministryName}</div>
+    </div>`;
+  }).join('');
+  html += `<div class="sr-browse-link" id="sr-clear">Browse all topics instead</div>`;
+
+  dropdown.innerHTML = html;
+  dropdown.classList.add('open');
+
+  // Click handlers: navigate to domain and expand
+  dropdown.querySelectorAll('.sr-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const idx = parseInt(item.dataset.index);
+      const svc = results[idx].svc;
+      const loc = getServiceTierAndDomain(svc);
+
+      // Switch track if needed
+      if (loc.track !== currentTrack) {
+        currentTrack = loc.track;
+        document.querySelectorAll('.chip-track').forEach(c => {
+          c.classList.toggle('active', c.dataset.track === currentTrack);
+        });
+        renderTiers(currentTrack);
+      }
+
+      dropdown.classList.remove('open');
+      document.getElementById('search-input').value = '';
+      openDomainModal(loc.track, loc.tier, loc.domain);
+    });
+  });
+
+  document.getElementById('sr-clear').addEventListener('click', () => {
+    dropdown.classList.remove('open');
+    document.getElementById('search-input').value = '';
+  });
+}
+
+// ── Go ───────────────────────────────────────────
+init();
+</script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+{
+  "prefix": "em",
+  "name": "Energy and Minerals",
+  "short_name": "Energy & Minerals",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "Resource stewardship",
+      "legend_label": "Resource stewardship",
+      "main_services": [
+        {"number": 1, "name": "Acquire petroleum and natural gas rights"},
+        {"number": 2, "name": "Acquire oil sands, coal, and mineral rights"},
+        {"number": 3, "name": "Report and pay royalties on energy and mineral production"}
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "short_name": "Market access & investment",
+      "legend_label": "Market access",
+      "main_services": [
+        {"number": 1, "name": "Access energy market and industry data"},
+        {"number": 2, "name": "Understand royalty obligations and freehold mineral tax"}
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "short_name": "Energy diversification & innovation",
+      "legend_label": "Energy innovation",
+      "main_services": [
+        {"number": 1, "name": "Engage with hydrogen and clean energy opportunities"},
+        {"number": 2, "name": "Participate in critical minerals and coal modernization"}
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "MMA",
+      "full_name": "Mines and Minerals Act",
+      "color": "#1565c0",
+      "citation": "RSA 2000, c M-17",
+      "summary": "Alberta's foundational resource legislation governing Crown ownership of minerals, the granting of tenure (leases and licences) for petroleum, natural gas, oil sands, coal, and metallic/industrial minerals, royalty collection, registration of transfers, and carbon sequestration tenure.",
+      "full_text": "<h3>Mines and Minerals Act</h3><p><strong>Citation:</strong> RSA 2000, c M-17</p><p>The Mines and Minerals Act is Alberta's principal statute governing Crown mineral resources. It establishes the legal framework for the entire lifecycle of mineral resource development — from granting exploration and production rights to collecting royalties on behalf of Albertans.</p><h4>Structure (9 Parts)</h4><ul><li><strong>Part 1 — Administration:</strong> Establishes the Minister's powers, regulation-making authority, confidentiality provisions, and general administration of Crown mineral rights including the power to issue, amend, and cancel agreements.</li><li><strong>Part 2 — Coal:</strong> Governs the granting of coal leases and licences on Crown land, including terms, rentals, royalties, and the conditions for coal exploration and production.</li><li><strong>Part 3 — Minerals in Road Allowances:</strong> Addresses ownership and disposition of minerals beneath road allowances.</li><li><strong>Part 4 — Petroleum and Natural Gas:</strong> Provides the framework for issuing petroleum and natural gas licences and leases through competitive public offerings, including terms, continuations, groupings, and the Crown's right to vary royalty rates. This is the largest part of the Act.</li><li><strong>Part 5 — Oil Sands:</strong> Establishes tenure for oil sands exploration and production, including permits, leases, and the oil sands royalty regime (pre-payout and post-payout rates).</li><li><strong>Part 6 — Registration of Transfers:</strong> Governs the registration of transfers, security interests, and other instruments affecting Crown mineral agreements through the Electronic Transfer System.</li><li><strong>Part 7 — Unit Operation of Minerals:</strong> Enables unitization of petroleum, natural gas, and oil sands operations for more efficient resource recovery.</li><li><strong>Part 8 — Exploration:</strong> Governs exploration licences and permits for metallic and industrial minerals, including brine-hosted minerals such as lithium.</li><li><strong>Part 9 — Sequestration of Captured Carbon Dioxide:</strong> Establishes the tenure framework for carbon capture, utilization and storage (CCUS), including pore space agreements and long-term liability transfer to the Crown after closure.</li></ul><p>The Act is supported by numerous regulations including the Petroleum and Natural Gas Tenure Regulation, Oil Sands Tenure Regulation, Mines and Minerals Administration Regulation, and the Metallic and Industrial Minerals Tenure Regulation.</p>",
+      "sections": [
+        {
+          "ref": "Part 1",
+          "title": "Administration — General Powers and Agreement Management",
+          "description": "Establishes the Minister's powers to issue, amend, cancel, and administer Crown mineral agreements. Provides regulation-making authority for tenure, royalties, and the Electronic Transfer System.",
+          "anchor_id": "sec-mma-p1",
+          "services": [
+            {
+              "name": "Transfer or maintain your petroleum and natural gas agreement",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Acquire petroleum and natural gas rights"
+            },
+            {
+              "name": "Design and maintain royalty and fiscal frameworks for energy and mineral resources",
+              "type": "foundational",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 0,
+              "ms_name": ""
+            }
+          ]
+        },
+        {
+          "ref": "Part 2",
+          "title": "Coal — Tenure and Royalties",
+          "description": "Governs granting of coal leases and licences on Crown land, including terms, rentals, royalties, and conditions for coal exploration and production.",
+          "anchor_id": "sec-mma-p2",
+          "services": [
+            {
+              "name": "Acquire coal leases and maintain coal agreements",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Acquire oil sands, coal, and mineral rights"
+            },
+            {
+              "name": "Report and pay coal and mineral royalties",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 3,
+              "ms_name": "Report and pay royalties on energy and mineral production"
+            }
+          ]
+        },
+        {
+          "ref": "Part 4",
+          "title": "Petroleum and Natural Gas — Tenure",
+          "description": "Provides the framework for issuing petroleum and natural gas licences and leases through competitive public offerings, including terms, continuations, groupings, posting requests, and royalty rates.",
+          "anchor_id": "sec-mma-p4",
+          "services": [
+            {
+              "name": "Bid on petroleum and natural gas rights at public sale",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Acquire petroleum and natural gas rights"
+            },
+            {
+              "name": "Request a direct purchase of petroleum and natural gas rights",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Acquire petroleum and natural gas rights"
+            },
+            {
+              "name": "Report and pay conventional oil and gas royalties",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 3,
+              "ms_name": "Report and pay royalties on energy and mineral production"
+            }
+          ]
+        },
+        {
+          "ref": "Part 5",
+          "title": "Oil Sands — Tenure and Royalties",
+          "description": "Establishes tenure for oil sands exploration and production, including permits, leases, public offerings, and the oil sands royalty regime with pre-payout and post-payout rates.",
+          "anchor_id": "sec-mma-p5",
+          "services": [
+            {
+              "name": "Bid on oil sands rights at public sale",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Acquire oil sands, coal, and mineral rights"
+            },
+            {
+              "name": "Report and pay oil sands royalties",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 3,
+              "ms_name": "Report and pay royalties on energy and mineral production"
+            }
+          ]
+        },
+        {
+          "ref": "Part 6",
+          "title": "Registration of Transfers",
+          "description": "Governs registration of transfers, security interests, caveats, and other instruments affecting Crown mineral agreements through the Electronic Transfer System (ETS).",
+          "anchor_id": "sec-mma-p6",
+          "services": [
+            {
+              "name": "Transfer or maintain your petroleum and natural gas agreement",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Acquire petroleum and natural gas rights"
+            },
+            {
+              "name": "Purchase mineral and surface rights mapping and information",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 1,
+              "ms_name": "Access energy market and industry data"
+            }
+          ]
+        },
+        {
+          "ref": "Part 8",
+          "title": "Exploration — Metallic and Industrial Minerals",
+          "description": "Governs exploration licences and permits for metallic and industrial minerals, including brine-hosted minerals (lithium, potash). Provides for mineral assessment reporting requirements.",
+          "anchor_id": "sec-mma-p8",
+          "services": [
+            {
+              "name": "Apply for metallic and industrial mineral permits and leases",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Acquire oil sands, coal, and mineral rights"
+            },
+            {
+              "name": "Search metallic and industrial mineral assessment reports",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 1,
+              "ms_name": "Access energy market and industry data"
+            },
+            {
+              "name": "Explore lithium and critical mineral development opportunities",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 2,
+              "ms_name": "Participate in critical minerals and coal modernization"
+            }
+          ]
+        },
+        {
+          "ref": "Part 9",
+          "title": "Sequestration of Captured Carbon Dioxide",
+          "description": "Establishes tenure for carbon capture, utilization and storage (CCUS), including evaluation permits, sequestration leases, pore space agreements, closure certificates, and long-term liability transfer to the Crown.",
+          "anchor_id": "sec-mma-p9",
+          "services": [
+            {
+              "name": "Learn about carbon capture, utilization, and storage opportunities",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 1,
+              "ms_name": "Engage with hydrogen and clean energy opportunities"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "PMA",
+      "full_name": "Petroleum Marketing Act",
+      "color": "#00695c",
+      "citation": "RSA 2000, c P-10",
+      "summary": "Establishes the framework for marketing and selling the Crown's royalty share of petroleum and crude bitumen production, and governs the Alberta Petroleum Marketing Commission.",
+      "full_text": "<h3>Petroleum Marketing Act</h3><p><strong>Citation:</strong> RSA 2000, c P-10</p><p>The Petroleum Marketing Act establishes the legal framework for marketing the Crown's share of petroleum production received as royalty. Under Alberta's royalty system, the Crown receives a portion of production in kind rather than just cash payments.</p><h4>Key Provisions</h4><ul><li><strong>Alberta Petroleum Marketing Commission:</strong> The Act establishes a commission (now operating as part of Alberta Energy and Minerals) with the power to receive, market, and sell the Crown's royalty share of petroleum and crude bitumen.</li><li><strong>Crown's royalty share:</strong> Authorizes the commission to take delivery of petroleum and crude bitumen that constitutes the Crown's royalty, and to enter agreements for its sale and delivery.</li><li><strong>Pricing and marketing:</strong> Provides for the setting of reference prices and terms under which the Crown's production share is sold to purchasers, including pipelines and refiners.</li><li><strong>Revenue collection:</strong> Sale proceeds are deposited into the General Revenue Fund for the benefit of Albertans.</li><li><strong>Information requirements:</strong> Operators must provide production and marketing data as required by the commission.</li></ul><p>The Act works alongside the Mines and Minerals Act's royalty provisions. While the MMA determines how much royalty is owed, the PMA governs how the Crown's in-kind share is marketed and converted to revenue.</p>",
+      "sections": [
+        {
+          "ref": "ss. 2–5",
+          "title": "Alberta Petroleum Marketing Commission and Crown Marketing",
+          "description": "Establishes the commission, authorizes it to receive and sell the Crown's royalty share of petroleum and crude bitumen, and provides for the deposit of proceeds into the General Revenue Fund.",
+          "anchor_id": "sec-pma-s2",
+          "services": [
+            {
+              "name": "Report and pay conventional oil and gas royalties",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 3,
+              "ms_name": "Report and pay royalties on energy and mineral production"
+            },
+            {
+              "name": "Report and pay oil sands royalties",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 3,
+              "ms_name": "Report and pay royalties on energy and mineral production"
+            },
+            {
+              "name": "Access royalty rate and program information",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 2,
+              "ms_name": "Understand royalty obligations and freehold mineral tax"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "FMRTA",
+      "full_name": "Freehold Mineral Rights Tax Act",
+      "color": "#c62828",
+      "citation": "RSA 2000, c F-26",
+      "summary": "Imposes an annual tax on freehold mineral rights that produce or are capable of producing oil, gas, or other minerals, and provides for assessment, collection, appeals, and enforcement.",
+      "full_text": "<h3>Freehold Mineral Rights Tax Act</h3><p><strong>Citation:</strong> RSA 2000, c F-26</p><p>The Freehold Mineral Rights Tax Act imposes an annual tax on owners of freehold mineral rights — mineral rights not owned by the Crown. Approximately 18% of Alberta's mineral rights are freehold (privately owned), with origins in early settlement-era land grants, Hudson's Bay Company lands, and railway grants.</p><h4>Key Provisions</h4><ul><li><strong>Tax imposition (s. 3):</strong> An annual tax is levied on every person who owns freehold mineral rights that produce or are capable of producing petroleum, natural gas, or other minerals.</li><li><strong>Assessment (s. 4–6):</strong> The Minister assesses the value of freehold mineral production and issues tax notices. Assessment is based on the estimated value of minerals produced or deemed capable of production.</li><li><strong>Tax rate:</strong> Set by regulation; applies to the assessed value of mineral production from freehold lands.</li><li><strong>Payment and penalties (s. 7–8):</strong> Tax is payable within a prescribed period after assessment. Penalties and interest apply for late payment.</li><li><strong>Appeals (s. 9–12):</strong> Owners may appeal assessments to the Minister and ultimately to the Court of King's Bench if dissatisfied with the decision.</li><li><strong>Liens and enforcement (s. 13–15):</strong> The Crown has a lien on freehold mineral rights for unpaid taxes. The Minister can register a caveat against the certificate of title and ultimately forfeit the mineral rights if taxes remain unpaid.</li></ul><p>Revenue from the freehold mineral rights tax flows to the General Revenue Fund, typically generating over $100 million annually.</p>",
+      "sections": [
+        {
+          "ref": "ss. 3–8",
+          "title": "Tax Imposition, Assessment, and Payment",
+          "description": "Levies an annual tax on freehold mineral rights owners based on production value, provides for ministerial assessment, prescribes payment periods, and imposes penalties for late payment.",
+          "anchor_id": "sec-fmrta-s3",
+          "services": [
+            {
+              "name": "Pay freehold mineral rights tax",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 2,
+              "ms_name": "Understand royalty obligations and freehold mineral tax"
+            }
+          ]
+        },
+        {
+          "ref": "ss. 9–15",
+          "title": "Appeals, Liens, and Enforcement",
+          "description": "Provides for appeals of assessments, Crown liens on mineral rights for unpaid taxes, registration of caveats, and potential forfeiture of mineral rights for persistent non-payment.",
+          "anchor_id": "sec-fmrta-s9",
+          "services": [
+            {
+              "name": "Pay freehold mineral rights tax",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 2,
+              "ms_name": "Understand royalty obligations and freehold mineral tax"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 3,
+    "sections_count": 10,
+    "services_with_leg_count": 15,
+    "services_multi_act_count": 2
+  }
+}

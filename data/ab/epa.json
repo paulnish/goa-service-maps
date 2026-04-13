@@ -1,0 +1,1156 @@
+{
+  "prefix": "epa",
+  "full_name": "Environment and Protected Areas",
+  "short_name": "Environment & Protected Areas",
+  "blurb": "Protects and enhances Alberta's environment and ecosystems through air quality management, water stewardship, emissions reduction, waste management, species conservation, and environmental assessment — ensuring a sustainable future for Albertans.",
+  "nav_name": "Environment & Protected Areas",
+  "has_registry_agents": false,
+  "_status": "draft",
+  "foundational_services": [],
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "OUTCOME 1: Alberta's air is clean and greenhouse gas emissions are effectively managed",
+      "short_name": "Clean air & emissions management",
+      "legend_label": "Air & emissions",
+      "description": "The ministry monitors air quality, manages industrial emissions, administers the emissions reduction and climate resilience framework, and provides Albertans with real-time air quality information to protect public health.",
+      "foundational_services": [
+        {
+          "name": "Develop air quality and emissions reduction policy and standards",
+          "desc": "Sets ambient air quality objectives, industrial emission limits, and the Technology Innovation and Emissions Reduction (TIER) regulatory framework. Coordinates with airshed zones and industry on air management frameworks.",
+          "users": "Government policy staff, airshed organizations",
+          "user_groups": [
+            "Government"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/air-quality",
+              "url": "https://www.alberta.ca/air-quality"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "EPEA",
+              "color": "#1565c0",
+              "full_name": "Environmental Protection and Enhancement Act"
+            }
+          ],
+          "mandate_tags": [
+            "emissions-reduction"
+          ],
+          "taxonomy": {
+            "relationships": [],
+            "track": "business",
+            "tier": "regulatory_compliance",
+            "domain": "environmental_requirements"
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Monitor air quality and protect your health",
+          "supporting": [
+            {
+              "name": "Check the Air Quality Health Index for your area",
+              "desc": "The Air Quality Health Index (AQHI) provides real-time health risk ratings from 1 (low) to 10+ (very high) for communities across Alberta. Helps residents, especially those with respiratory conditions, plan outdoor activities safely.",
+              "users": "All Albertans, people with asthma or respiratory conditions, outdoor workers",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/air-quality-health-index",
+                  "url": "https://www.alberta.ca/air-quality-health-index"
+                },
+                {
+                  "type": "ch-app",
+                  "label": "Alberta AQHI app"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EPEA",
+                  "color": "#1565c0",
+                  "full_name": "Environmental Protection and Enhancement Act"
+                }
+              ],
+              "mandate_tags": [
+                "air-quality"
+              ],
+              "reach_estimate": {
+                "tier": "very_high",
+                "estimate": "~2M page views/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "high",
+                "category": "Public health",
+                "note": "Real-time air quality data helps vulnerable populations reduce health risk exposure"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land"
+              }
+            },
+            {
+              "name": "View air quality advisories and wildfire smoke information",
+              "desc": "Air quality advisories are issued when conditions may pose health risks, particularly during wildfire season. Includes smoke forecasts, particulate matter readings, and protective action recommendations.",
+              "users": "All Albertans, communities affected by wildfire smoke",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/air-quality-advisories",
+                  "url": "https://www.alberta.ca/air-quality-advisories"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/wildfire-smoke",
+                  "url": "https://www.alberta.ca/wildfire-smoke"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "air-quality"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "~500,000 page views/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "high",
+                "category": "Public health",
+                "note": "Timely advisories protect public health during wildfire and high-pollution events"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land"
+              }
+            },
+            {
+              "name": "Access air quality data and monitoring reports",
+              "desc": "Historical and current air quality data from monitoring stations across Alberta. Includes ambient monitoring data, air quality reports, and information from the Alberta Environmental Science Program and airshed organizations.",
+              "users": "Researchers, environmental consultants, municipalities, industry",
+              "user_groups": [
+                "Researchers",
+                "Industry",
+                "Municipalities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "alberta.ca/air-quality-data-and-reports",
+                  "url": "https://www.alberta.ca/air-quality-data-and-reports"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EPEA",
+                  "color": "#1565c0",
+                  "full_name": "Environmental Protection and Enhancement Act"
+                }
+              ],
+              "mandate_tags": [
+                "air-quality"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~50,000 data downloads/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "medium",
+                "category": "Evidence-based decisions",
+                "note": "Monitoring data supports research, planning, and regulatory compliance"
+              },
+              "taxonomy": {
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Administer environmental assessment, approval, and compliance frameworks",
+                    "ministry": "epa"
+                  }
+                ],
+                "track": "both",
+                "individual": {
+                  "tier": "societal_needs_supports",
+                  "domain": "environment_land"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "environmental_requirements"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Report and reduce industrial emissions",
+          "supporting": [
+            {
+              "name": "Report greenhouse gas emissions under the regulatory framework",
+              "desc": "Large industrial emitters (facilities emitting 100,000+ tonnes CO₂e/yr) must report emissions and comply with Alberta's emissions reduction requirements. The framework sets benchmarks and requires facilities to reduce emissions intensity or pay into the compliance fund.",
+              "users": "Large industrial facilities, oil sands operators, power generators",
+              "user_groups": [
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Single Window Information Manager (SWIM)",
+                  "url": "https://www.alberta.ca/single-window-information-manager"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "epa.ghg@gov.ab.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EMCRA",
+                  "color": "#c62828",
+                  "full_name": "Emissions Management and Climate Resilience Act"
+                }
+              ],
+              "mandate_tags": [
+                "emissions-reduction"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~600 regulated facilities",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "very_high",
+                "category": "Emissions reduction",
+                "note": "Framework covers ~60% of Alberta's total GHG emissions; drives $billions in clean technology investment"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "environmental_requirements"
+              }
+            },
+            {
+              "name": "Purchase or sell emissions offset credits and performance credits",
+              "desc": "Alberta's carbon market allows facilities to use emissions offsets, emission performance credits, and fund credits to meet compliance obligations. Offset project developers can register projects and sell verified offsets.",
+              "users": "Offset project developers, regulated facilities, carbon market participants",
+              "user_groups": [
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Alberta Emissions Offset Registry"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/emissions-offset-system",
+                  "url": "https://www.alberta.ca/emissions-offset-system"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EMCRA",
+                  "color": "#c62828",
+                  "full_name": "Emissions Management and Climate Resilience Act"
+                }
+              ],
+              "mandate_tags": [
+                "emissions-reduction"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~200 offset projects registered",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "very_high",
+                "category": "Economic diversification",
+                "note": "Carbon market generates billions in compliance spending directed to clean technology and emissions reduction"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "environmental_requirements"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "title": "OUTCOME 2: Alberta's water resources are protected, allocated responsibly, and communities are resilient to flood and drought",
+      "short_name": "Water stewardship & resilience",
+      "legend_label": "Water",
+      "description": "The ministry manages water allocation, protects drinking water and watersheds, provides flood and drought information, funds water infrastructure, and ensures water quality across the province.",
+      "foundational_services": [
+        {
+          "name": "Manage water allocation and watershed planning",
+          "desc": "Administers the water licensing and allocation system, develops watershed management plans, and coordinates with watershed planning and advisory councils across Alberta's major river basins.",
+          "users": "Government, watershed councils, water advisory groups",
+          "user_groups": [
+            "Government"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/water",
+              "url": "https://www.alberta.ca/water"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "WA",
+              "color": "#00695c",
+              "full_name": "Water Act"
+            }
+          ],
+          "mandate_tags": [
+            "water-management"
+          ],
+          "taxonomy": {
+            "relationships": [],
+            "track": "business",
+            "tier": "regulatory_compliance",
+            "domain": "environmental_requirements"
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get water licences, approvals, and well information",
+          "supporting": [
+            {
+              "name": "Apply for a water licence or approval",
+              "desc": "Anyone diverting water from a river, lake, or groundwater source (beyond household use) needs a water licence. Approvals are required for activities affecting water bodies such as constructing dams, bridges, or shoreline works. Applications are reviewed against available allocation and environmental impact.",
+              "users": "Farmers, municipalities, industrial operators, developers",
+              "user_groups": [
+                "Industry",
+                "Municipalities",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Water licence application",
+                  "url": "https://www.alberta.ca/water"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "310-3773"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WA",
+                  "color": "#00695c",
+                  "full_name": "Water Act"
+                }
+              ],
+              "mandate_tags": [
+                "water-management"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "~3,000 licence/approval applications/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "very_high",
+                "category": "Economic enabler",
+                "note": "Water allocation underpins agriculture, oil and gas, municipal supply, and industrial operations"
+              },
+              "taxonomy": {
+                "relationships": [
+                  {
+                    "type": "universal_regulation",
+                    "service": "Administer environmental assessment, approval, and compliance frameworks",
+                    "ministry": "epa"
+                  }
+                ],
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits"
+              }
+            },
+            {
+              "name": "Look up groundwater information and water well records",
+              "desc": "Alberta's water well database contains records for hundreds of thousands of water wells. Landowners, drillers, and consultants can search for well logs, aquifer data, and groundwater quality information.",
+              "users": "Landowners, well drillers, environmental consultants, municipalities",
+              "user_groups": [
+                "General public",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Water well database",
+                  "url": "https://www.alberta.ca/groundwater-and-water-wells"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WA",
+                  "color": "#00695c",
+                  "full_name": "Water Act"
+                }
+              ],
+              "mandate_tags": [
+                "water-management"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "~100,000 database queries/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "medium",
+                "category": "Information access",
+                "note": "Well data supports rural development, property transactions, and environmental assessment"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "both",
+                "individual": {
+                  "tier": "societal_needs_supports",
+                  "domain": "environment_land"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "environmental_requirements"
+                }
+              }
+            },
+            {
+              "name": "Access water quality data and river condition reports",
+              "desc": "Water quality monitoring data for rivers, lakes, and groundwater across Alberta. Includes the Alberta River Basins website for current conditions, water quality indices, and long-term trend reports.",
+              "users": "Researchers, municipalities, water treatment operators, recreation users",
+              "user_groups": [
+                "General public",
+                "Researchers",
+                "Municipalities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Alberta River Basins",
+                  "url": "https://rivers.alberta.ca"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/water-reports-and-data",
+                  "url": "https://www.alberta.ca/water-reports-and-data"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EPEA",
+                  "color": "#1565c0",
+                  "full_name": "Environmental Protection and Enhancement Act"
+                }
+              ],
+              "mandate_tags": [
+                "water-management"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "~200,000 page views/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "medium",
+                "category": "Evidence-based decisions",
+                "note": "Water quality data supports drinking water safety, recreation, and environmental protection"
+              },
+              "taxonomy": {
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Administer environmental assessment, approval, and compliance frameworks",
+                    "ministry": "epa"
+                  }
+                ],
+                "track": "both",
+                "individual": {
+                  "tier": "societal_needs_supports",
+                  "domain": "environment_land"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "environmental_requirements"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Prepare for and respond to flood and drought",
+          "supporting": [
+            {
+              "name": "Check flood maps and river advisories",
+              "desc": "Flood hazard maps, river flow forecasts, and flood advisories help communities prepare for high water events. The Alberta Rivers website provides real-time data on river levels and flow rates across the province.",
+              "users": "Homeowners in floodplains, municipalities, emergency managers",
+              "user_groups": [
+                "General public",
+                "Municipalities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Alberta River Basins",
+                  "url": "https://rivers.alberta.ca"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/flood",
+                  "url": "https://www.alberta.ca/flood"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "flood-drought"
+              ],
+              "reach_estimate": {
+                "tier": "very_high",
+                "estimate": "~1M page views/yr during flood season",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "very_high",
+                "category": "Disaster resilience",
+                "note": "Early warning and flood mapping prevent loss of life and reduce property damage"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property"
+              }
+            },
+            {
+              "name": "Access drought information and water conservation guidance",
+              "desc": "Drought condition reports, water shortage advisories, and guidance on water conservation for households, agriculture, and municipalities. Alberta is at risk of droughts and water shortages, especially in southern regions.",
+              "users": "Farmers, municipalities, all Albertans during drought conditions",
+              "user_groups": [
+                "General public",
+                "Municipalities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/drought",
+                  "url": "https://www.alberta.ca/drought"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WA",
+                  "color": "#00695c",
+                  "full_name": "Water Act"
+                }
+              ],
+              "mandate_tags": [
+                "flood-drought"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "~300,000 page views/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "very_high",
+                "category": "Disaster resilience",
+                "note": "Drought information protects agricultural production and municipal water supply"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land"
+              }
+            },
+            {
+              "name": "Apply for water and wastewater infrastructure grants",
+              "desc": "Financial assistance programs for municipalities and First Nations to build or upgrade drinking water and wastewater treatment systems. Includes the Water for Life strategy capital funding and federal-provincial cost-shared programs.",
+              "users": "Municipalities, First Nations, regional services commissions",
+              "user_groups": [
+                "Municipalities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "alberta.ca/water-wastewater-grants",
+                  "url": "https://www.alberta.ca/grants-for-water-and-wastewater-systems"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "780-427-6236"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "water-management"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~100 grant applications/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "very_high",
+                "category": "Infrastructure investment",
+                "note": "$28M+ invested in flood/drought resilience; ensures safe drinking water for communities"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "disaster_recovery"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "title": "OUTCOME 3: Alberta's ecosystems are healthy, waste is minimized, and environmental impacts are assessed and managed",
+      "short_name": "Ecosystems, waste & assessment",
+      "legend_label": "Ecosystems & waste",
+      "description": "The ministry conserves species and habitats, manages environmental assessments and approvals for industrial activity, oversees waste and recycling, and administers the extended producer responsibility program.",
+      "foundational_services": [
+        {
+          "name": "Administer environmental assessment, approval, and compliance frameworks",
+          "desc": "Develops and administers the environmental assessment process for major projects, issues environmental approvals for industrial activities, and ensures compliance through inspections and enforcement.",
+          "users": "Government regulators, environmental assessment professionals",
+          "user_groups": [
+            "Government"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/environmental-approvals",
+              "url": "https://www.alberta.ca/environment-and-protected-areas"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "EPEA",
+              "color": "#1565c0",
+              "full_name": "Environmental Protection and Enhancement Act"
+            }
+          ],
+          "mandate_tags": [
+            "environmental-assessment"
+          ],
+          "taxonomy": {
+            "relationships": [
+              {
+                "type": "shared_information",
+                "service": "Access air quality data and monitoring reports",
+                "ministry": "epa"
+              },
+              {
+                "type": "shared_information",
+                "service": "Access water quality data and river condition reports",
+                "ministry": "epa"
+              },
+              {
+                "type": "universal_regulation",
+                "service": "Apply for a water licence or approval",
+                "ministry": "epa"
+              }
+            ],
+            "track": "business",
+            "tier": "regulatory_compliance",
+            "domain": "environmental_requirements"
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get environmental approvals for projects and activities",
+          "supporting": [
+            {
+              "name": "Apply for an environmental approval or registration",
+              "desc": "Industrial activities such as manufacturing, waste processing, oil sands operations, and large-scale development require environmental approvals under EPEA. Registrations cover smaller-scale activities under codes of practice. Applications are assessed for environmental impact.",
+              "users": "Industrial operators, developers, waste facility operators",
+              "user_groups": [
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Environmental approval application"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "310-3773"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "epa.outreach-services@gov.ab.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EPEA",
+                  "color": "#1565c0",
+                  "full_name": "Environmental Protection and Enhancement Act"
+                }
+              ],
+              "mandate_tags": [
+                "environmental-assessment"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "~2,000 approvals and registrations/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "very_high",
+                "category": "Economic enabler",
+                "note": "Environmental approvals gate major industrial and infrastructure investment worth billions annually"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits"
+              }
+            },
+            {
+              "name": "Report a release of a substance to the environment",
+              "desc": "Anyone who releases or discovers a release of a substance that may cause an adverse effect on the environment must report it immediately. The 24-hour environmental emergency line accepts reports of spills, releases, and environmental incidents.",
+              "users": "Industrial operators, landowners, any Albertan who witnesses a spill",
+              "user_groups": [
+                "General public",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "1-800-222-6514 (24hr emergency)"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EPEA",
+                  "color": "#1565c0",
+                  "full_name": "Environmental Protection and Enhancement Act"
+                }
+              ],
+              "mandate_tags": [
+                "environmental-assessment"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "~5,000 release reports/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "high",
+                "category": "Environmental protection",
+                "note": "Rapid reporting enables containment and remediation, preventing larger environmental damage"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "reporting_obligations"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Manage waste, recycling, and hazardous materials",
+          "supporting": [
+            {
+              "name": "Comply with hazardous waste management requirements",
+              "desc": "Generators, carriers, and receivers of hazardous waste must follow tracking, storage, treatment, and disposal requirements. Includes registration, manifesting shipments, and reporting to ensure hazardous materials are handled safely.",
+              "users": "Hazardous waste generators, carriers, treatment facilities",
+              "user_groups": [
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Hazardous waste tracking system"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/hazardous-waste",
+                  "url": "https://www.alberta.ca/hazardous-waste"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EPEA",
+                  "color": "#1565c0",
+                  "full_name": "Environmental Protection and Enhancement Act"
+                }
+              ],
+              "mandate_tags": [
+                "waste-management"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~3,000 hazardous waste generators registered",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "high",
+                "category": "Environmental protection",
+                "note": "Proper hazardous waste management prevents contamination and protects public health"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "safety_codes_standards"
+              }
+            },
+            {
+              "name": "Get certified as a landfill or composting facility operator",
+              "desc": "Operators of regulated landfill and composting facilities in Alberta must hold valid certification. The ministry sets training requirements, administers exams, and issues operator certificates.",
+              "users": "Landfill and composting facility operators, municipalities",
+              "user_groups": [
+                "Municipalities",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Operator certification application"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "310-3773"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EPEA",
+                  "color": "#1565c0",
+                  "full_name": "Environmental Protection and Enhancement Act"
+                }
+              ],
+              "mandate_tags": [
+                "waste-management"
+              ],
+              "reach_estimate": {
+                "tier": "low",
+                "estimate": "~500 certified operators",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "medium",
+                "category": "Environmental protection",
+                "note": "Certified operators ensure safe waste handling and regulatory compliance at disposal sites"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits"
+              }
+            },
+            {
+              "name": "Learn about recycling programs and extended producer responsibility",
+              "desc": "Alberta's extended producer responsibility (EPR) system shifts the cost of collecting, sorting, and recycling consumer products and packaging from municipalities to producers. Information on recycling programs, accepted materials, and how producers comply.",
+              "users": "Consumers, municipalities, product producers and retailers",
+              "user_groups": [
+                "General public",
+                "Industry",
+                "Municipalities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "alberta.ca/waste-reduction-and-recycling",
+                  "url": "https://www.alberta.ca/waste-reduction-and-recycling"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EPEA",
+                  "color": "#1565c0",
+                  "full_name": "Environmental Protection and Enhancement Act"
+                }
+              ],
+              "mandate_tags": [
+                "waste-management"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "~200,000 page views/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "high",
+                "category": "Economic diversification",
+                "note": "EPR saves municipalities ~$70M/yr in waste collection costs; drives circular economy investment"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "both",
+                "individual": {
+                  "tier": "societal_needs_supports",
+                  "domain": "environment_land"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "environmental_requirements"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Protect wildlife and species at risk",
+          "supporting": [
+            {
+              "name": "Look up the status of a wild species in Alberta",
+              "desc": "Search the provincial species status database to find whether a fish, wildlife, or plant species is designated as at risk, may be at risk, sensitive, or secure. The Endangered Species Conservation Committee assesses detailed status.",
+              "users": "Environmental consultants, researchers, educators, landowners",
+              "user_groups": [
+                "General public",
+                "Researchers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Wild species status search",
+                  "url": "https://www.alberta.ca/species-at-risk"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WA-W",
+                  "color": "#c62828",
+                  "full_name": "Wildlife Act"
+                }
+              ],
+              "mandate_tags": [
+                "biodiversity"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~30,000 database searches/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "medium",
+                "category": "Environmental protection",
+                "note": "Species data informs development decisions and conservation planning"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land"
+              }
+            },
+            {
+              "name": "Report a wildlife concern or human-wildlife interaction",
+              "desc": "Albertans can report injured wildlife, problem wildlife, poaching, and human-wildlife conflicts. Contact information varies by situation — Report a Poacher line, Fish and Wildlife enforcement, or regional offices.",
+              "users": "All Albertans, rural landowners, outdoor recreationists",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "1-800-642-3800 (Report a Poacher)"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "310-3773 (general inquiries)"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WA-W",
+                  "color": "#c62828",
+                  "full_name": "Wildlife Act"
+                }
+              ],
+              "mandate_tags": [
+                "biodiversity"
+              ],
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "~20,000 reports/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "medium",
+                "category": "Environmental protection",
+                "note": "Public reporting supports wildlife enforcement and population management"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land"
+              }
+            },
+            {
+              "name": "Access environmental science data and state of the environment reporting",
+              "desc": "Alberta's Environmental Science Program and the Office of the Chief Scientist provide data, reports, and indicators on the condition of air, water, land, and biodiversity across the province. Supports evidence-based environmental decision-making.",
+              "users": "Researchers, environmental consultants, policy analysts, educators",
+              "user_groups": [
+                "Researchers",
+                "Industry",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Environmental science data",
+                  "url": "https://www.alberta.ca/environment-and-protected-areas"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "State of the Environment reports"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "biodiversity"
+              ],
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "~40,000 downloads/yr",
+                "basis": "annual"
+              },
+              "economic_impact": {
+                "tag": "medium",
+                "category": "Evidence-based decisions",
+                "note": "Science-based reporting underpins policy, regulatory, and land use decisions"
+              },
+              "taxonomy": {
+                "relationships": [],
+                "track": "both",
+                "individual": {
+                  "tier": "societal_needs_supports",
+                  "domain": "environment_land"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "environmental_requirements"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-transact",
+      "label": "Online transaction"
+    },
+    {
+      "code": "ch-apply",
+      "label": "Apply"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website"
+    },
+    {
+      "code": "ch-app",
+      "label": "Mobile app"
+    },
+    {
+      "code": "ch-email",
+      "label": "Email"
+    },
+    {
+      "code": "ch-pub",
+      "label": "Publication"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Industry",
+    "Municipalities",
+    "Researchers"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "type": "digital"
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "type": "digital"
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "type": "digital"
+    },
+    "ch-web": {
+      "label": "Website",
+      "type": "digital"
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "type": "digital"
+    },
+    "ch-email": {
+      "label": "Email",
+      "type": "digital"
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "type": "non-digital"
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "type": "non-digital"
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-find",
+    "ch-web",
+    "ch-app",
+    "ch-email"
+  ]
+}

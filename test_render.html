@@ -1,0 +1,17 @@
+<!doctype html>
+<html><head><title>Test</title></head>
+<body>
+<div id="result"></div>
+<script>
+async function test() {
+  try {
+    const resp = await fetch('/data/ab/alss.json');
+    const data = await resp.json();
+    document.getElementById('result').textContent = 'Loaded: ' + data.prefix + ' with ' + data.goals.length + ' goals';
+  } catch(e) {
+    document.getElementById('result').textContent = 'Error: ' + e.message;
+  }
+}
+test();
+</script>
+</body></html>

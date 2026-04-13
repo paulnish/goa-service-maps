@@ -1,0 +1,896 @@
+{
+  "prefix": "sa",
+  "full_name": "Service Alberta and Red Tape Reduction",
+  "short_name": "Service Alberta & Red Tape Reduction",
+  "blurb": "Provides Albertans with access to essential registry and identity services, protects consumers in the marketplace, and leads government-wide efforts to reduce red tape and improve digital service delivery.",
+  "nav_name": "Service Alberta",
+  "has_registry_agents": true,
+  "_status": "draft",
+  "foundational_services": [],
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "OUTCOME 1: Albertans can access essential registry and identity services",
+      "short_name": "Registry and identity services",
+      "legend_label": "Registry services",
+      "description": "The ministry provides Albertans with secure access to vital records, driver's licences, vehicle registration, and business registry services. Through a network of registry agents and online channels, Albertans can obtain documents and register important life events.",
+      "foundational_services": [
+        {
+          "name": "Operate and oversee Alberta's registry agent network",
+          "desc": "Manages the provincial network of registry agents located in service centres, municipalities, and private service providers who deliver registry services on behalf of the government. Ensures consistent service quality, training, and access across the province.",
+          "users": "Registry agents, municipal staff, service centre operators",
+          "user_groups": [
+            "Industry"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "Registry agent network and locations",
+              "url": "https://www.alberta.ca/service-centres"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "VSA",
+              "color": "#1565c0",
+              "full_name": "Vital Statistics Act"
+            }
+          ],
+          "mandate_tags": [
+            "registry-operations"
+          ],
+          "taxonomy": {
+            "track": "business",
+            "tier": "core_business_needs",
+            "domain": "registration_legal",
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get vital records and documents",
+          "supporting": [
+            {
+              "name": "Register a birth or get a birth certificate",
+              "desc": "Parents and guardians can register a newborn's birth or obtain a birth certificate. Birth registration is a critical identity document required for school enrolment, passport applications, and other government services.",
+              "users": "New parents, guardians, individuals needing birth certificates",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Birth registration and certificate application",
+                  "url": "https://www.alberta.ca/birth-certificate"
+                },
+                {
+                  "type": "ch-registry",
+                  "label": "Service centre or registry agent",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Vital Statistics inquiry line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "VSA",
+                  "color": "#1565c0",
+                  "full_name": "Vital Statistics Act"
+                }
+              ],
+              "mandate_tags": [
+                "vital-records"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "vital_records_id",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Tens of thousands of birth registrations annually",
+                "basis": "All births in Alberta must be registered within 30 days"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "vital-records",
+                "note": "Birth registration enables access to education, health services, and other government programs"
+              }
+            },
+            {
+              "name": "Get a marriage certificate or register a marriage",
+              "desc": "Couples can register a marriage and obtain marriage certificates. Marriage registration is required for legal recognition of marriage and is needed for various government, financial, and personal purposes.",
+              "users": "Couples, married individuals, legal representatives",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Marriage registration and certificate application",
+                  "url": "https://www.alberta.ca/marriage-certificate"
+                },
+                {
+                  "type": "ch-registry",
+                  "label": "Service centre or registry agent",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MA",
+                  "color": "#1565c0",
+                  "full_name": "Marriage Act"
+                }
+              ],
+              "mandate_tags": [
+                "vital-records"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "vital_records_id",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Tens of thousands of marriage registrations annually",
+                "basis": "All marriages in Alberta must be registered"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "vital-records",
+                "note": "Marriage registration enables spousal benefits, property rights, and legal recognition"
+              }
+            },
+            {
+              "name": "Get a death certificate",
+              "desc": "Next of kin and legal representatives can obtain death certificates. Death certificates are required for estate administration, insurance claims, pension benefits, and legal matters following a death.",
+              "users": "Family members, executors, legal representatives",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Death certificate application",
+                  "url": "https://www.alberta.ca/death-certificate"
+                },
+                {
+                  "type": "ch-registry",
+                  "label": "Service centre or registry agent",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "VSA",
+                  "color": "#1565c0",
+                  "full_name": "Vital Statistics Act"
+                }
+              ],
+              "mandate_tags": [
+                "vital-records"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "vital_records_id",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Thousands of death certificates issued annually",
+                "basis": "Death certificates required for all deaths registered in Alberta"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "vital-records",
+                "note": "Death certificates enable estate settlement and access to survivor benefits"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get a driver's licence or register a vehicle",
+          "supporting": [
+            {
+              "name": "Apply for or renew your driver's licence",
+              "desc": "Albertans can apply for a new driver's licence, renew an existing licence, or request a duplicate. Driver's licences serve as government-issued identity documents and authorization to operate vehicles on Alberta roads.",
+              "users": "Residents, new drivers, licence renewal applicants",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-registry",
+                  "label": "Service centre or registry agent",
+                  "url": "https://www.alberta.ca/service-centres"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Driver's licence online services",
+                  "url": "https://www.alberta.ca/drivers-licence"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#1565c0",
+                  "full_name": "Traffic Safety Act"
+                }
+              ],
+              "mandate_tags": [
+                "vehicle-registry"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of driver's licence transactions annually",
+                "basis": "Alberta has millions of licensed drivers with regular renewal requirements"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "vehicle-registry",
+                "note": "Driver's licences enable employment, travel, and identity verification"
+              }
+            },
+            {
+              "name": "Register or renew your vehicle registration",
+              "desc": "Vehicle owners can register a new vehicle, renew registration, or make changes to vehicle registration. Vehicle registration is required to legally operate a vehicle in Alberta and is needed for insurance and roadside identification.",
+              "users": "Vehicle owners, fleet operators, new vehicle buyers",
+              "user_groups": [
+                "General public",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-registry",
+                  "label": "Service centre or registry agent",
+                  "url": "https://www.alberta.ca/service-centres"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Vehicle registration online services",
+                  "url": "https://www.alberta.ca/vehicle-registration"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#1565c0",
+                  "full_name": "Traffic Safety Act"
+                }
+              ],
+              "mandate_tags": [
+                "vehicle-registry"
+              ],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "scenario_dependent",
+                  "domain": "driving_vehicles"
+                },
+                "business": {
+                  "tier": "industry_specific",
+                  "domain": "transport_carriers"
+                },
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of vehicle registrations annually",
+                "basis": "All vehicles operated in Alberta must be registered"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "vehicle-registry",
+                "note": "Vehicle registration enables legal road operation and supports insurance requirements"
+              }
+            },
+            {
+              "name": "Get a learner's permit or upgrade your licence class",
+              "desc": "New drivers can obtain a learner's permit to practice driving, and experienced drivers can upgrade to a higher licence class for commercial or specialized driving. The ministry manages Alberta's graduated licensing system.",
+              "users": "New drivers, drivers seeking to upgrade licence class",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-registry",
+                  "label": "Service centre or registry agent",
+                  "url": "https://www.alberta.ca/service-centres"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Written and driving tests at registry locations",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TSA",
+                  "color": "#1565c0",
+                  "full_name": "Traffic Safety Act"
+                }
+              ],
+              "mandate_tags": [
+                "vehicle-registry"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Tens of thousands of learner's permits and licence upgrades annually",
+                "basis": "New drivers and commercial drivers require learner permits and upgraded classes"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "vehicle-registry",
+                "note": "Graduated licensing supports safe driver development and commercial transportation"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Access registry services for businesses and personal property",
+          "supporting": [
+            {
+              "name": "Register a business name or corporation in Alberta",
+              "desc": "Entrepreneurs can register a sole proprietorship business name, partnership, or incorporate a business in Alberta. Business registration establishes legal identity and is required to operate a business, hire employees, and access business services.",
+              "users": "Entrepreneurs, business owners, corporate founders",
+              "user_groups": [
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Business name and incorporation registration",
+                  "url": "https://www.alberta.ca/business-registration"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Business registry information",
+                  "url": "https://www.alberta.ca/business-registry"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "BCA",
+                  "color": "#1565c0",
+                  "full_name": "Business Corporations Act"
+                }
+              ],
+              "mandate_tags": [
+                "business-registry"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "registration_legal",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Tens of thousands of business registrations annually",
+                "basis": "All new businesses and corporations must register in Alberta"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "business-registry",
+                "note": "Business registration enables entrepreneurship, employment creation, and economic growth"
+              }
+            },
+            {
+              "name": "Search or register a personal property lien",
+              "desc": "Creditors and lenders can register security interests in personal property, and searchers can look up registered liens. The Personal Property Registry is a searchable public database of security interests on vehicles, equipment, and other personal property.",
+              "users": "Lenders, creditors, businesses, property buyers",
+              "user_groups": [
+                "Industry",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Personal Property Registry search",
+                  "url": "https://www.alberta.ca/personal-property-registry"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Personal Property Registry online services",
+                  "url": "https://www.alberta.ca/personal-property-registry"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PPSA",
+                  "color": "#1565c0",
+                  "full_name": "Personal Property Security Act"
+                }
+              ],
+              "mandate_tags": [
+                "property-registry"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "registration_legal",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Register, search, or change a personal property lien",
+                    "ministry": "jus"
+                  }
+                ]
+              },
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Thousands of liens registered and searched annually",
+                "basis": "Lenders routinely search and register security interests in personal property"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "property-registry",
+                "note": "Transparent lien registry enables secure lending and protects creditor rights"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "title": "OUTCOME 2: Albertans are protected as consumers",
+      "short_name": "Consumer protection",
+      "legend_label": "Consumer protection",
+      "description": "The ministry protects Albertans from unfair marketplace practices, helps resolve consumer disputes, and enforces consumer protection laws. The ministry investigates complaints, educates consumers about their rights, and takes action against non-compliant businesses.",
+      "foundational_services": [
+        {
+          "name": "Develop consumer protection policy and enforce marketplace rules",
+          "desc": "Develops and updates consumer protection legislation and policy to address emerging marketplace issues, unfair trade practices, and new business models. Enforces compliance through investigation and prosecution of violations.",
+          "users": "Government policy makers, enforcement staff, legal teams",
+          "user_groups": [
+            "Government"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "Consumer protection policy and enforcement",
+              "url": "https://www.alberta.ca/consumer-protection"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "CPA",
+              "color": "#00695c",
+              "full_name": "Consumer Protection Act"
+            }
+          ],
+          "mandate_tags": [
+            "consumer-protection"
+          ],
+          "taxonomy": {
+            "track": "business",
+            "tier": "regulatory_compliance",
+            "domain": "licences_permits",
+            "relationships": [
+              {
+                "type": "complainant_regulated_party",
+                "service": "File a complaint about a business or marketplace issue",
+                "ministry": "sa"
+              },
+              {
+                "type": "complainant_regulated_party",
+                "service": "Check for consumer alerts and enforcement actions",
+                "ministry": "sa"
+              },
+              {
+                "type": "complainant_regulated_party",
+                "service": "File a condominium dispute for resolution",
+                "ministry": "sa"
+              }
+            ]
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "File a consumer complaint or learn about your rights",
+          "supporting": [
+            {
+              "name": "File a complaint about a business or marketplace issue",
+              "desc": "Consumers can file complaints about unfair business practices, fraudulent transactions, product defects, or service failures. The ministry investigates complaints, mediates disputes, and takes enforcement action against non-compliant businesses.",
+              "users": "Consumers, purchasers, service users",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Consumer complaint form",
+                  "url": "https://www.alberta.ca/file-consumer-complaint"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Consumer protection inquiry line",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Consumer complaint information",
+                  "url": "https://www.alberta.ca/consumer-complaints"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CPA",
+                  "color": "#00695c",
+                  "full_name": "Consumer Protection Act"
+                }
+              ],
+              "mandate_tags": [
+                "consumer-complaint"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": [
+                  {
+                    "type": "complainant_regulated_party",
+                    "service": "Develop consumer protection policy and enforce marketplace rules",
+                    "ministry": "sa"
+                  }
+                ]
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Tens of thousands of consumer complaints annually",
+                "basis": "Consumer complaints span retail, online sales, services, and digital transactions"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "consumer-protection",
+                "note": "Complaint mechanisms protect consumer rights and deter unfair business practices"
+              }
+            },
+            {
+              "name": "Check for consumer alerts and enforcement actions",
+              "desc": "Albertans can check for active consumer alerts about problematic businesses, scams, or unsafe products. The ministry publishes enforcement actions and warnings to protect consumers from known risks.",
+              "users": "Consumers, shoppers, online purchasers",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Consumer alerts and enforcement actions",
+                  "url": "https://www.alberta.ca/consumer-alerts"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CPA",
+                  "color": "#00695c",
+                  "full_name": "Consumer Protection Act"
+                }
+              ],
+              "mandate_tags": [
+                "consumer-protection"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": [
+                  {
+                    "type": "complainant_regulated_party",
+                    "service": "Develop consumer protection policy and enforce marketplace rules",
+                    "ministry": "sa"
+                  }
+                ]
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of Albertans access consumer alerts",
+                "basis": "Consumer alerts reach broad audiences through web and social media"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "consumer-protection",
+                "note": "Alerts inform consumers and reduce fraud losses and unsafe product exposure"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Resolve a condominium dispute",
+          "supporting": [
+            {
+              "name": "File a condominium dispute for resolution",
+              "desc": "Condominium owners and corporations can file disputes with the ministry for mediation and resolution. Common disputes include shared property maintenance, special assessments, bylaw violations, and governance issues. The ministry provides dispute resolution services.",
+              "users": "Condominium owners, condo boards, property managers",
+              "user_groups": [
+                "General public",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Condominium dispute filing",
+                  "url": "https://www.alberta.ca/condominium-dispute"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Condominium dispute inquiry line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CndPA",
+                  "color": "#00695c",
+                  "full_name": "Condominium Property Act"
+                }
+              ],
+              "mandate_tags": [
+                "dispute-resolution"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": [
+                  {
+                    "type": "complainant_regulated_party",
+                    "service": "Develop consumer protection policy and enforce marketplace rules",
+                    "ministry": "sa"
+                  }
+                ]
+              },
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Thousands of condominium dispute filings annually",
+                "basis": "Alberta has tens of thousands of condominium units with ongoing governance"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "dispute-resolution",
+                "note": "Dispute resolution services protect condo property values and owner rights"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "title": "OUTCOME 3: Government services are accessible and red tape is reduced",
+      "short_name": "Service accessibility & red tape reduction",
+      "legend_label": "Red tape reduction",
+      "description": "The ministry leads government-wide efforts to reduce regulatory burden, improve digital service delivery, and ensure Albertans can easily access government information and assert their privacy rights.",
+      "foundational_services": [
+        {
+          "name": "Lead red tape reduction and digital service delivery across government",
+          "desc": "Coordinates government-wide red tape reduction initiatives, digital transformation, and service improvement efforts. Develops standards for digital service delivery and works with ministries to eliminate unnecessary requirements.",
+          "users": "Government policy makers, digital transformation teams, service improvement leads",
+          "user_groups": [
+            "Government"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "Red tape reduction and service improvement",
+              "url": "https://www.alberta.ca/red-tape-reduction"
+            }
+          ],
+          "legislation": [],
+          "mandate_tags": [
+            "red-tape-reduction"
+          ],
+          "taxonomy": {
+            "track": "business",
+            "tier": "core_business_needs",
+            "domain": "registration_legal",
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Access government information and privacy rights",
+          "supporting": [
+            {
+              "name": "Submit a freedom of information request",
+              "desc": "Albertans can request government records and information through the Freedom of Information process. Requests provide access to government documents, meeting minutes, policy files, and other public records subject to privacy and security exceptions.",
+              "users": "Researchers, media, citizens, watchdog organizations",
+              "user_groups": [
+                "General public",
+                "Researchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Freedom of information request form",
+                  "url": "https://www.alberta.ca/freedom-of-information"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Freedom of information portal",
+                  "url": "https://www.alberta.ca/freedom-of-information"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FOIPPA",
+                  "color": "#c62828",
+                  "full_name": "Freedom of Information and Protection of Privacy Act"
+                }
+              ],
+              "mandate_tags": [
+                "transparency"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Thousands of FOIP requests filed annually",
+                "basis": "Media, researchers, and citizens regularly request government documents"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "transparency",
+                "note": "FOIP access supports government accountability and informed public discourse"
+              }
+            },
+            {
+              "name": "File a privacy complaint",
+              "desc": "Albertans can file complaints if they believe their personal information has been improperly collected, used, or disclosed by government or businesses. The ministry investigates privacy violations and enforces privacy protections.",
+              "users": "Individuals whose privacy may have been violated",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Privacy complaint form",
+                  "url": "https://www.alberta.ca/file-privacy-complaint"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Privacy inquiry line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FOIPPA",
+                  "color": "#c62828",
+                  "full_name": "Freedom of Information and Protection of Privacy Act"
+                }
+              ],
+              "mandate_tags": [
+                "privacy-protection"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Hundreds of privacy complaints annually",
+                "basis": "Privacy complaints arise from government and private sector handling of personal data"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "privacy-protection",
+                "note": "Privacy enforcement protects individuals from unauthorized data use and identity risks"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-apply",
+      "label": "Apply"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search"
+    },
+    {
+      "code": "ch-registry",
+      "label": "Registry agent"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website"
+    },
+    {
+      "code": "ch-email",
+      "label": "Email"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Industry",
+    "Researchers",
+    "Government"
+  ],
+  "channel_types": {
+    "ch-apply": {
+      "label": "Apply",
+      "type": "digital"
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "type": "digital"
+    },
+    "ch-registry": {
+      "label": "Registry agent",
+      "type": "non-digital"
+    },
+    "ch-web": {
+      "label": "Website",
+      "type": "digital"
+    },
+    "ch-email": {
+      "label": "Email",
+      "type": "digital"
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "type": "non-digital"
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "type": "non-digital"
+    }
+  },
+  "digital_channels": [
+    "ch-apply",
+    "ch-find",
+    "ch-web",
+    "ch-email"
+  ]
+}

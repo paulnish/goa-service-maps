@@ -1,0 +1,409 @@
+{
+  "prefix": "ts",
+  "name": "Tourism and Sport",
+  "short_name": "Tourism & Sport",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "Thriving visitor economy",
+      "legend_label": "Tourism",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Plan travel and get help with travel problems"
+        },
+        {
+          "number": 2,
+          "name": "Grow tourism investment and destinations"
+        },
+        {
+          "number": 3,
+          "name": "Collect and administer the tourism levy"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "short_name": "Active Albertans",
+      "legend_label": "Sport & Recreation",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Fund sport, physical activity and recreation organizations"
+        },
+        {
+          "number": 2,
+          "name": "Get financial help for children's sport and recreation registration"
+        },
+        {
+          "number": 3,
+          "name": "Fund community recreation facilities"
+        },
+        {
+          "number": 4,
+          "name": "Ensure fairness and safety in sport"
+        },
+        {
+          "number": 5,
+          "name": "Recognize contributions to sport and recreation"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "TAA",
+      "full_name": "Travel Alberta Act",
+      "color": "#1565c0",
+      "citation": "SA 2008, c T-6.5",
+      "summary": "Establishes Travel Alberta as a provincial corporation mandated to market Alberta's tourism assets, attractions, and opportunities in domestic, national, and international markets, and to promote and support development and growth of the visitor economy.",
+      "full_text": "",
+      "sections": [
+        {
+          "ref": "s.2",
+          "title": "Establishment of Travel Alberta",
+          "description": "Establishes Travel Alberta as a corporation with the mandate to promote Alberta as a tourism destination, fund destination marketing, operate visitor information services, and support the growth of the visitor economy.",
+          "anchor_id": "sec-taa-s2",
+          "services": [
+            {
+              "name": "Access Travel Alberta's destination marketing and visitor information",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Plan travel and get help with travel problems"
+            },
+            {
+              "name": "Develop and implement Alberta's tourism strategy",
+              "type": "foundational",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": null,
+              "ms_name": null
+            }
+          ]
+        },
+        {
+          "ref": "s.3",
+          "title": "Objects and powers of Travel Alberta",
+          "description": "Travel Alberta may carry out programs to promote tourism, enter into agreements, provide grants and financial assistance, conduct research, and do anything necessary to fulfill its mandate.",
+          "anchor_id": "sec-taa-s3",
+          "services": [
+            {
+              "name": "Invest in or develop a tourism product or experience",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Grow tourism investment and destinations"
+            }
+          ]
+        },
+        {
+          "ref": "s.12",
+          "title": "Traveller protection provisions",
+          "description": "Provisions related to the protection of travellers using tourism services in Alberta, including oversight of travel agents and tour operators.",
+          "anchor_id": "sec-taa-s12",
+          "services": [
+            {
+              "name": "Check if a travel agent or tour operator is registered",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Plan travel and get help with travel problems"
+            },
+            {
+              "name": "Report a travel-related complaint",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Plan travel and get help with travel problems"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "TLA",
+      "full_name": "Tourism Levy Act",
+      "color": "#e65100",
+      "citation": "RSA 2000, c T-5.5",
+      "summary": "Imposes a tourism levy on the purchase price of temporary accommodation in Alberta. Requires operators and online brokers to register, collect the levy from purchasers, and remit it to Alberta Tax and Revenue Administration. The rate increased to 6% effective April 2026.",
+      "full_text": "",
+      "sections": [
+        {
+          "ref": "s.2",
+          "title": "Levy on accommodation",
+          "description": "Every purchaser of accommodation shall pay a levy equal to 6% of the purchase price. The levy applies to hotels, motels, lodges, B&Bs, short-term rentals, and similar temporary accommodation.",
+          "anchor_id": "sec-tla-s2",
+          "services": [
+            {
+              "name": "File and remit the tourism levy",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 3,
+              "ms_name": "Collect and administer the tourism levy"
+            }
+          ]
+        },
+        {
+          "ref": "s.2.1",
+          "title": "Registration of operators",
+          "description": "Every operator must register with the Minister before selling or providing accommodation. Online brokers collecting payment on behalf of operators must also register.",
+          "anchor_id": "sec-tla-s2-1",
+          "services": [
+            {
+              "name": "Register as a tourism levy collector",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 3,
+              "ms_name": "Collect and administer the tourism levy"
+            }
+          ]
+        },
+        {
+          "ref": "s.3",
+          "title": "Collection and remittance",
+          "description": "Operators must collect the tourism levy from purchasers and remit it to the Minister in accordance with the regulations. Online brokers collecting payment must also collect and remit the levy.",
+          "anchor_id": "sec-tla-s3",
+          "services": [
+            {
+              "name": "Register as a tourism levy collector",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 3,
+              "ms_name": "Collect and administer the tourism levy"
+            },
+            {
+              "name": "File and remit the tourism levy",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 3,
+              "ms_name": "Collect and administer the tourism levy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "ASRA",
+      "full_name": "All-Season Resorts Act",
+      "color": "#2e7d32",
+      "citation": "SA 2024, c A-38.5",
+      "summary": "Creates a framework for developing all-season commercial tourism resorts on designated Crown lands in Alberta. Establishes a sole lifecycle regulator, a new land classification (All-Season Resort Areas), and processes for development approvals balancing economic growth, environmental protection, and Indigenous community opportunities.",
+      "full_text": "",
+      "sections": [
+        {
+          "ref": "s.2",
+          "title": "Designation of All-Season Resort Areas",
+          "description": "The Lieutenant Governor in Council may designate Crown land as an All-Season Resort Area suitable for four-season commercial tourism development.",
+          "anchor_id": "sec-asra-s2",
+          "services": [
+            {
+              "name": "Get information about all-season resort areas",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Grow tourism investment and destinations"
+            }
+          ]
+        },
+        {
+          "ref": "s.3",
+          "title": "All-Season Resorts Policy",
+          "description": "The Minister must establish and maintain an All-Season Resorts Policy setting out the vision, principles, and goals for resort development, including environmental requirements, Indigenous consultation, and public interest considerations.",
+          "anchor_id": "sec-asra-s3",
+          "services": [
+            {
+              "name": "Get information about all-season resort areas",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Grow tourism investment and destinations"
+            }
+          ]
+        },
+        {
+          "ref": "s.4",
+          "title": "Development approvals",
+          "description": "The regulator reviews development proposals, conducts impact assessments, and may approve, modify, or reject proposals for all-season resort developments on designated Crown lands.",
+          "anchor_id": "sec-asra-s4",
+          "services": [
+            {
+              "name": "Propose an all-season resort development",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Grow tourism investment and destinations"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "FSSA",
+      "full_name": "Fairness and Safety in Sport Act",
+      "color": "#d32f2f",
+      "citation": "SA 2024, c F-2.5",
+      "summary": "Establishes requirements for fairness and safety in sport participation in Alberta. Requires Provincial Sport Organizations, post-secondary institutions, and school authorities to develop and maintain policies for sport participation categories, athlete protections, and the creation of mixed-sex leagues and divisions.",
+      "full_text": "",
+      "sections": [
+        {
+          "ref": "s.2",
+          "title": "Application",
+          "description": "The Act applies to Provincial Sport Organizations, public post-secondary institutions, independent academic institutions, and school authorities with students of appropriate age.",
+          "anchor_id": "sec-fssa-s2",
+          "services": [
+            {
+              "name": "Comply with fairness and safety in sport requirements (organizations)",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 4,
+              "ms_name": "Ensure fairness and safety in sport"
+            }
+          ]
+        },
+        {
+          "ref": "s.3",
+          "title": "Policies",
+          "description": "Boards must establish, implement, and maintain fairness and safety policies for each relevant sport, including rules for participation categories and support for mixed-sex divisions where numbers warrant.",
+          "anchor_id": "sec-fssa-s3",
+          "services": [
+            {
+              "name": "Get information about the Fairness and Safety in Sport Act",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 4,
+              "ms_name": "Ensure fairness and safety in sport"
+            },
+            {
+              "name": "Comply with fairness and safety in sport requirements (organizations)",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 4,
+              "ms_name": "Ensure fairness and safety in sport"
+            }
+          ]
+        },
+        {
+          "ref": "s.4",
+          "title": "Reporting requirements",
+          "description": "Boards must provide information to the Minister on complaints received and requests related to sport participation, ensuring transparency and accountability in the sport system.",
+          "anchor_id": "sec-fssa-s4",
+          "services": [
+            {
+              "name": "Comply with fairness and safety in sport requirements (organizations)",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 4,
+              "ms_name": "Ensure fairness and safety in sport"
+            }
+          ]
+        },
+        {
+          "ref": "s.5",
+          "title": "Ministerial guidelines",
+          "description": "The Minister may establish guidelines to assist boards in developing and implementing fairness and safety policies.",
+          "anchor_id": "sec-fssa-s5",
+          "services": [
+            {
+              "name": "Get information about the Fairness and Safety in Sport Act",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 4,
+              "ms_name": "Ensure fairness and safety in sport"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "ASCA",
+      "full_name": "Alberta Sport Connection Act",
+      "color": "#6a1b9a",
+      "citation": "RSA 2000, c A-34",
+      "summary": "Continues the Alberta Sport, Recreation, Parks and Wildlife Foundation as Alberta Sport Connection, a Crown corporation that advises the Minister on sport policy, distributes funding to provincial sport organizations, and coordinates the provincial sport system including grant programs, awards, and participation initiatives.",
+      "full_text": "",
+      "sections": [
+        {
+          "ref": "s.2",
+          "title": "Establishment of Alberta Sport Connection",
+          "description": "Continues the Foundation as Alberta Sport Connection, a corporation of up to 10 members appointed by the Lieutenant Governor in Council to advise the Minister on sport and recreation policy.",
+          "anchor_id": "sec-asca-s2",
+          "services": [
+            {
+              "name": "Coordinate provincial sport policy and funding",
+              "type": "foundational",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": null,
+              "ms_name": null
+            }
+          ]
+        },
+        {
+          "ref": "s.3",
+          "title": "Objects and powers",
+          "description": "Alberta Sport Connection may provide grants, awards, and financial assistance to sport, physical activity, and recreation organizations, conduct research, and carry out programs to promote active participation.",
+          "anchor_id": "sec-asca-s3",
+          "services": [
+            {
+              "name": "Apply for a sport, physical activity, or recreation operating grant",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Fund sport, physical activity and recreation organizations"
+            },
+            {
+              "name": "Apply for a sport and recreation participation grant",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Fund sport, physical activity and recreation organizations"
+            },
+            {
+              "name": "Apply for a major sport events grant",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Fund sport, physical activity and recreation organizations"
+            },
+            {
+              "name": "Nominate someone for a sport or recreation award",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 5,
+              "ms_name": "Recognize contributions to sport and recreation"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 5,
+    "sections_count": 15,
+    "services_with_leg_count": 16,
+    "services_multi_act_count": 0
+  }
+}

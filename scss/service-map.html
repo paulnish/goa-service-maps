@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Map</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      /* Dynamic goal styles will be injected here */
+      #dynamicGoalStyles {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script>
+      // Constants
+      const DIGITAL_CHANNELS = new Set([
+        "ch-transact",
+        "ch-apply",
+        "ch-check",
+        "ch-find",
+        "ch-engage",
+        "ch-app",
+      ]);
+      const activeChannels = new Set();
+      const activeUserGroups = new Set();
+
+      // HTML escaping utility
+      function escapeHtml(text) {
+        if (!text) return "";
+        const map = {
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': "&quot;",
+          "'": "&#039;",
+        };
+        return text.replace(/[&<>"']/g, (char) => map[char]);
+      }
+
+      // Extract prefix from URL path (e.g., /tec/service-map -> tec)
+      function getPrefixFromPath() {
+        const pathSegments = window.location.pathname
+          .split("/")
+          .filter((s) => s);
+        return pathSegments[0] || "scss";
+      }
+
+      // Fetch and render the service map
+      async function loadAndRenderServiceMap() {
+        const prefix = getPrefixFromPath();
+
+        try {
+          const response = await fetch(`../data/ab/${prefix}.json`);
+          if (!response.ok) {
+            throw new Error(`Failed to fetch data: ${response.status}`);
+          }
+          const data = await response.json();
+
+          // Set page title
+          document.title = `${escapeHtml(data.full_name)} — Service Map`;
+
+          // Render the page
+          renderPage(data);
+
+          // Attach event handlers after rendering
+          attachEventHandlers();
+        } catch (error) {
+          console.error("Error loading service map:", error);
+          document.getElementById("app").innerHTML =
+            `<p>Error loading service map: ${escapeHtml(error.message)}</p>`;
+        }
+      }
+
+      // Main render function
+      function renderPage(data) {
+        const html = `
+        <div class="nav-bar">
+          <a href="/">All Ministries</a>
+          <span class="sep">/</span>
+          ${data.parent_ministry ? `
+            <a href="/${escapeHtml(data.parent_ministry)}/service-map">${escapeHtml(data.parent_ministry_name || data.parent_ministry)}</a>
+            <span class="sep">/</span>
+            <a href="/${escapeHtml(data.parent_ministry)}/service-map">${escapeHtml(data.parent_goal_number + "." + data.parent_ms_number)} ${escapeHtml(data.parent_ms_name)}</a>
+            <span class="sep">/</span>
+            <span class="current">${escapeHtml(data.short_name)}</span>
+          ` : `
+            <a href="/${escapeHtml(data.prefix)}/service-map">${escapeHtml(data.short_name)}</a>
+            <span class="sep">/</span>
+            <span class="current">Service Map</span>
+          `}
+        </div>
+        <div class="header">
+          <p class="subtitle">${data.parent_ministry ? "Government of Alberta — Detailed Service Map" : "Government of Alberta — Ministry Service Map"}</p>
+          <h1>${escapeHtml(data.full_name)}</h1>
+          ${data.blurb ? `<p>${escapeHtml(data.blurb)}</p>` : ""}
+        </div>
+        ${data.parent_ministry ? `
+        <div class="hierarchy-banner">
+          <div class="hierarchy-path">
+            <span class="hierarchy-label">Part of</span>
+            <a href="/${escapeHtml(data.parent_ministry)}/service-map" class="hierarchy-link">${escapeHtml(data.parent_ministry_name || data.parent_ministry)}</a>
+            <span class="hierarchy-sep">→</span>
+            <span class="hierarchy-goal">
+              <span class="hierarchy-dot" style="background: ${escapeHtml(data.parent_goal_color || "#666")}"></span>
+              Outcome ${data.parent_goal_number}: ${escapeHtml(data.parent_goal_name)}
+            </span>
+            <span class="hierarchy-sep">→</span>
+            <span class="hierarchy-ms">${escapeHtml(data.parent_goal_number + "." + data.parent_ms_number)} ${escapeHtml(data.parent_ms_name)}</span>
+            <span class="hierarchy-sep">→</span>
+            <strong>${escapeHtml(data.parent_service)}</strong>
+          </div>
+        </div>
+        ` : ""}
+        <div class="legend-bar">
+          <div class="legend-row">
+            <span class="legend-label">Goals</span>
+            ${data.goals
+              .map(
+                (goal) => `
+              <div class="legend-item">
+                <div class="legend-dot" style="background: ${escapeHtml(goal.color)}"></div>
+                ${escapeHtml(goal.legend_label || goal.short_name)}
+              </div>
+            `,
+              )
+              .join("")}
+          </div>
+          <details class="legend-details">
+            <summary>Legend details</summary>
+            <div class="legend-notes">
+              <span class="legend-note">⚖ = enabling legislation &nbsp;|&nbsp; <a href="/${escapeHtml(data.prefix)}/legislation" style="color:#00405c; font-weight:600;">View full legislation cross-reference →</a></span>
+              <span class="legend-note"><span class="mandate-tag" style="display:inline-block;">M</span> Teal circles = <strong>Premier's mandate letter</strong> priority (hover for details)</span>
+              <span class="legend-note"><span style="display:inline-block; width:14px; height:14px; border:1.5px dashed #e0e0e0; border-radius:3px; background:white; text-align:center; font-size:8px; line-height:14px;">⚙</span> Dashed border = <strong>foundational service</strong> (infrastructure/operations enabling user-facing services)</span>
+            </div>
+          </details>
+        </div>
+        <div class="channel-filter-bar">
+          <span class="filter-label">Filter by channel</span>
+          ${data.channel_filters
+            .map(
+              (filter) => `
+            <span class="ch-filter-btn" data-channel="${escapeHtml(filter.code)}" style="background:${escapeHtml(filter.bg_color)};color:${escapeHtml(filter.text_color)};">${escapeHtml(filter.label)}</span>
+          `,
+            )
+            .join("")}
+          <span class="ch-filter-clear">Clear</span>
+        </div>
+        <div class="user-filter-bar">
+          <span class="filter-label">Filter by user group</span>
+          ${data.user_group_filters
+            .map(
+              (group) => `
+            <span class="ug-filter-btn" data-group="${escapeHtml(group)}">${escapeHtml(group)}</span>
+          `,
+            )
+            .join("")}
+          <span class="ug-filter-clear">Clear</span>
+        </div>
+        <div class="container" id="serviceMapContainer">
+          ${data.goals.map((goal) => renderGoalSection(goal, data)).join("")}
+          ${
+            data.cross_cutting && data.cross_cutting.length > 0
+              ? `
+            <div class="cross-cutting">
+              <h3>Cross-cutting Components (supporting all services)</h3>
+              <div class="cross-tags">
+                ${data.cross_cutting.map((cc) => `<span class="cross-tag">${escapeHtml(typeof cc === "string" ? cc : cc.name)}</span>`).join("")}
+              </div>
+            </div>
+          `
+              : ""
+          }
+          ${
+            data.foundational_services && data.foundational_services.length > 0
+              ? `
+            <details class="main-service-details foundational-details" open>
+              <summary class="main-service-head foundational-head">
+                <span class="ms-label">Ministry-wide Foundational Service</span>
+              </summary>
+              <div class="supporting-grid">
+                ${data.foundational_services.map((fs) => renderFoundationalService(fs, data)).join("")}
+              </div>
+            </details>
+          `
+              : ""
+          }
+          ${
+            data.mandate_legend && data.mandate_legend.length > 0
+              ? `
+            <div class="mandate-legend">
+              <h3>Mandate Priorities</h3>
+              <div class="mandate-meta">
+                Mandate letter to Minister ${escapeHtml(data.mandate_minister)} (${escapeHtml(data.mandate_date)})
+                ${data.mandate_pdf ? `<a href="${escapeHtml(data.mandate_pdf)}" target="_blank">View PDF</a>` : ""}
+              </div>
+              <div class="mandate-list">
+                ${data.mandate_legend
+                  .map(
+                    (item) => `
+                  <div class="mandate-item">
+                    <span class="mandate-tag">M${item.number}</span>
+                    <div class="mi-text"><strong>M${item.number}:</strong> ${escapeHtml(item.text)}</div>
+                  </div>
+                `,
+                  )
+                  .join("")}
+              </div>
+            </div>
+          `
+              : ""
+          }
+        </div>
+        <div class="page-nav">
+          <a href="/${escapeHtml(data.prefix)}/service-map" class="active">Service Map</a>
+          <span class="page-nav-disabled">Grid View</span>
+          <a href="/${escapeHtml(data.prefix)}/legislation">Legislation</a>
+        </div>
+        <div class="footer">
+          <p>March 2026 &nbsp;|&nbsp; <a href="/${escapeHtml(data.prefix)}/service-map">Ministry overview</a> &nbsp;|&nbsp; Service analysis using Kate Tarling's framework</p>
+        </div>
+        ${renderDynamicGoalStyles(data)}
+      `;
+
+        document.getElementById("app").innerHTML = html;
+      }
+
+      // Render a goal section
+      function renderGoalSection(goal, data) {
+        return `
+        <section class="goal-section goal-${goal.number}">
+          <div class="goal-header" style="border-color: ${escapeHtml(goal.color)};">
+            <div class="goal-number" style="background: ${escapeHtml(goal.color)};">
+              ${goal.number}
+            </div>
+            <div class="goal-text">
+              <h2>${escapeHtml(goal.short_name)}</h2>
+              <p>${escapeHtml(goal.description)}</p>
+            </div>
+            <button class="goal-toggle">Collapse all</button>
+          </div>
+          ${
+            goal.metrics && goal.metrics.length > 0
+              ? `
+            <details class="outcome-details">
+              <summary class="outcome-summary">View performance metrics</summary>
+              <div class="outcome-block">
+                <div class="metrics-grid">
+                  ${goal.metrics
+                    .map(
+                      (metric) => `
+                    <div class="metric-card">
+                      <div class="metric-id">${escapeHtml(metric.code)}</div>
+                      <div class="metric-name">${escapeHtml(metric.name)}</div>
+                      <div class="metric-target">${escapeHtml(metric.target_value)}</div>
+                      ${metric.target_label ? `<div class="metric-target-label">${escapeHtml(metric.target_label)}</div>` : ""}
+                    </div>
+                  `,
+                    )
+                    .join("")}
+                </div>
+              </div>
+            </details>
+          `
+              : ""
+          }
+          ${
+            goal.foundational_services && goal.foundational_services.length > 0
+              ? `
+            <details class="main-service-details foundational-details" open>
+              <summary class="main-service-head foundational-head">
+                <span class="ms-label">Foundational Service</span>
+              </summary>
+              <div class="supporting-grid">
+                ${goal.foundational_services.map((fs) => renderFoundationalService(fs, data)).join("")}
+              </div>
+            </details>
+          `
+              : ""
+          }
+          ${goal.main_services.map((ms) => renderMainService(ms, goal, data)).join("")}
+        </section>
+      `;
+      }
+
+      // Render a main service
+      function renderMainService(ms, goal, data) {
+        return `
+        <details class="main-service-details" open>
+          <summary class="main-service-head">
+            <span class="ms-number">${goal.number}.${ms.number}</span>
+            <span class="ms-label">Main Service</span>
+            <span>${escapeHtml(ms.name)}</span>
+          </summary>
+          <div class="supporting-grid">
+            ${ms.supporting.map((ss) => renderSupportingService(ss, data)).join("")}
+          </div>
+        </details>
+        ${
+          ms.foundational_services && ms.foundational_services.length > 0
+            ? `
+          <details class="main-service-details foundational-details" open>
+            <summary class="main-service-head foundational-head">
+              <span class="ms-label">Foundational Service</span>
+            </summary>
+            <div class="supporting-grid">
+              ${ms.foundational_services.map((fs) => renderFoundationalService(fs, data)).join("")}
+            </div>
+          </details>
+        `
+            : ""
+        }
+      `;
+      }
+
+      // Render a supporting service
+      function renderSupportingService(ss, data) {
+        const statusClass = ss.status ? ` status-${ss.status}` : "";
+        const statusBadge =
+          ss.status === "coming"
+            ? '<span class="status-badge coming">Coming</span>'
+            : ss.status === "ending"
+              ? '<span class="status-badge ending">Ending</span>'
+              : "";
+
+        return `
+        <div class="supporting-card${statusClass}">
+          <div class="sc-name">
+            ${escapeHtml(ss.name)}
+            ${statusBadge}
+          </div>
+          <div class="sc-desc">${escapeHtml(ss.desc)}</div>
+          <div class="sc-users">
+            ${ss.user_groups.map((ug) => `<span class="ug-badge" data-group="${escapeHtml(ug)}">${escapeHtml(ug)}</span>`).join("")}
+            <span class="user-detail">${escapeHtml(ss.users)}</span>
+          </div>
+          ${ss.reach || ss.economic_impact ? `
+          <div class="sc-impact">
+            ${ss.reach ? `<span class="impact-reach impact-${ss.reach.tier}" title="${escapeHtml(ss.reach.basis === 'active' ? 'Active caseload' : 'Annual volume')}">${escapeHtml(ss.reach.estimate)}</span>` : ""}
+            ${ss.economic_impact ? `<span class="impact-econ impact-cat-${escapeHtml(ss.economic_impact.category)}" title="${escapeHtml(ss.economic_impact.note || '')}">${escapeHtml(ss.economic_impact.tag)}</span>` : ""}
+          </div>
+          ` : ""}
+          <div class="channels">
+            ${ss.channels
+              .map((ch) => {
+                const isDigitalChannel =
+                  DIGITAL_CHANNELS.has(ch.type) && ch.url;
+                if (isDigitalChannel) {
+                  return `<a class="ch ${escapeHtml(ch.type)}" href="${escapeHtml(ch.url)}" target="_blank" title="${escapeHtml(ch.label)}">${escapeHtml(ch.label)}</a>`;
+                } else {
+                  return `<span class="ch ${escapeHtml(ch.type)}" title="${escapeHtml(ch.label)}">${escapeHtml(ch.label)}</span>`;
+                }
+              })
+              .join("")}
+          </div>
+          ${(ss.legislation && ss.legislation.length > 0) || (ss.mandate_tags && ss.mandate_tags.length > 0) || ss.deep_dive ? `
+          <div class="sc-footer">
+            ${ss.mandate_tags && ss.mandate_tags.length > 0 ? `
+            <div class="mandate-tags">
+              ${ss.mandate_tags.map((mt) => `<span class="mandate-tag" data-tip="${escapeHtml(mt.tip || mt.text)}">M${mt.number}</span>`).join("")}
+            </div>
+            ` : ""}
+            ${ss.deep_dive ? `<a class="deep-dive-link" href="/${escapeHtml(ss.deep_dive)}/service-map">View detailed service map →</a>` : ""}
+            ${ss.legislation && ss.legislation.length > 0 ? `
+            <div class="leg-tags">
+              ${ss.legislation
+                .map(
+                  (leg) => `
+                <a class="leg-tag" style="background:${escapeHtml(leg.color)}" href="/${data.prefix}/legislation" title="${escapeHtml(leg.full_name)}">
+                  <span class="leg-icon">⚖</span> ${escapeHtml(leg.abbrev)}
+                </a>
+              `,
+                )
+                .join("")}
+            </div>
+            ` : ""}
+          </div>
+          ` : ""}
+        </div>
+      `;
+      }
+
+      // Render a foundational service (same card layout as supporting services)
+      function renderFoundationalService(fs, data) {
+        return `
+        <div class="supporting-card foundational-card">
+          <div class="sc-name">${escapeHtml(fs.name)}</div>
+          <div class="sc-desc">${escapeHtml(fs.desc || fs.description || "")}</div>
+          ${
+            fs.users
+              ? `<div class="sc-users"><span class="user-detail">${escapeHtml(fs.users)}</span></div>`
+              : ""
+          }
+          ${
+            fs.channels && fs.channels.length > 0
+              ? `
+            <div class="channels">
+              ${fs.channels
+                .map((ch) => {
+                  const isDigitalChannel = DIGITAL_CHANNELS.has(ch.type) && ch.url;
+                  if (isDigitalChannel) {
+                    return `<a class="ch ${escapeHtml(ch.type)}" href="${escapeHtml(ch.url)}" target="_blank" title="${escapeHtml(ch.label)}">${escapeHtml(ch.label)}</a>`;
+                  } else {
+                    return `<span class="ch ${escapeHtml(ch.type)}" title="${escapeHtml(ch.label)}">${escapeHtml(ch.label)}</span>`;
+                  }
+                })
+                .join("")}
+            </div>
+          `
+              : ""
+          }
+          ${(fs.legislation && fs.legislation.length > 0) || (fs.mandate_tags && fs.mandate_tags.length > 0) ? `
+          <div class="sc-footer">
+            ${fs.mandate_tags && fs.mandate_tags.length > 0 ? `
+            <div class="mandate-tags">
+              ${fs.mandate_tags.map((mt) => `<span class="mandate-tag" data-tip="${escapeHtml(mt.tip || mt.text)}">M${mt.number}</span>`).join("")}
+            </div>
+            ` : ""}
+            ${fs.legislation && fs.legislation.length > 0 ? `
+            <div class="leg-tags">
+              ${fs.legislation
+                .map(
+                  (leg) => `
+                <a class="leg-tag" style="background:${escapeHtml(leg.color)}" href="/${data.prefix}/legislation" title="${escapeHtml(leg.full_name)}">
+                  <span class="leg-icon">⚖</span> ${escapeHtml(leg.abbrev)}
+                </a>
+              `,
+                )
+                .join("")}
+            </div>
+            ` : ""}
+          </div>
+          ` : ""}
+        </div>
+      `;
+      }
+
+      // Generate dynamic CSS for goal colors
+      function renderDynamicGoalStyles(data) {
+        const styles = data.goals
+          .map(
+            (goal) => `
+        .goal-${goal.number} .main-service-head {
+          background: ${escapeHtml(goal.color)};
+        }
+      `,
+          )
+          .join("\n");
+
+        return `<style id="dynamicGoalStyles">${styles}</style>`;
+      }
+
+      // Filtering functions
+      function toggleChannelFilter(chClass) {
+        activeChannels.has(chClass)
+          ? activeChannels.delete(chClass)
+          : activeChannels.add(chClass);
+        applyAllFilters();
+      }
+
+      function clearChannelFilter() {
+        activeChannels.clear();
+        applyAllFilters();
+      }
+
+      function toggleUserFilter(group) {
+        activeUserGroups.has(group)
+          ? activeUserGroups.delete(group)
+          : activeUserGroups.add(group);
+        applyAllFilters();
+      }
+
+      function clearUserFilter() {
+        activeUserGroups.clear();
+        applyAllFilters();
+      }
+
+      function applyAllFilters() {
+        const chActive = activeChannels.size > 0;
+        const ugActive = activeUserGroups.size > 0;
+
+        // Update filter button styles
+        document.querySelectorAll(".ch-filter-btn").forEach((btn) => {
+          btn.classList.toggle(
+            "inactive",
+            chActive && !activeChannels.has(btn.dataset.channel),
+          );
+        });
+
+        document.querySelectorAll(".ug-filter-btn").forEach((btn) => {
+          btn.classList.toggle(
+            "inactive",
+            ugActive && !activeUserGroups.has(btn.dataset.group),
+          );
+        });
+
+        // Filter supporting cards
+        document.querySelectorAll(".supporting-card").forEach((card) => {
+          const matchesChannel =
+            !chActive ||
+            Array.from(activeChannels).some((ch) =>
+              card.querySelector(`.ch.${ch}`),
+            );
+          const cardGroups = Array.from(card.querySelectorAll(".ug-badge")).map(
+            (b) => b.dataset.group,
+          );
+          const matchesGroup =
+            !ugActive || cardGroups.some((g) => activeUserGroups.has(g));
+          card.style.display = matchesChannel && matchesGroup ? "" : "none";
+        });
+
+        // Highlight matching channels
+        document.querySelectorAll(".ch").forEach((tag) => {
+          const chClasses = Array.from(tag.classList).filter((c) =>
+            c.startsWith("ch-"),
+          );
+          tag.classList.toggle(
+            "ch-highlight",
+            chActive && chClasses.some((ch) => activeChannels.has(ch)),
+          );
+        });
+
+        // Highlight matching user groups
+        document.querySelectorAll(".ug-badge").forEach((badge) => {
+          if (ugActive && activeUserGroups.has(badge.dataset.group)) {
+            badge.style.background = "#00405c";
+            badge.style.color = "white";
+          } else {
+            badge.style.background = "";
+            badge.style.color = "";
+          }
+        });
+
+        // Hide foundational service containers when filters are active
+        const anyFilterActive = chActive || ugActive;
+        document.querySelectorAll(".foundational-details").forEach((fd) => {
+          fd.style.display = anyFilterActive ? "none" : "";
+        });
+
+        // Hide main services with no visible supporting cards
+        document.querySelectorAll(".main-service-details").forEach((ms) => {
+          const hasVisible = Array.from(
+            ms.querySelectorAll(".supporting-card"),
+          ).some((c) => c.style.display !== "none");
+          ms.style.display = hasVisible ? "" : "none";
+        });
+
+        // Hide goal sections with no visible main services
+        document.querySelectorAll(".goal-section").forEach((section) => {
+          const hasVisible = Array.from(
+            section.querySelectorAll(".main-service-details"),
+          ).some((ms) => ms.style.display !== "none");
+          section.style.display = hasVisible ? "" : "none";
+        });
+      }
+
+      // Toggle goal expansion
+      function toggleGoal(btn) {
+        const section = btn.closest(".goal-section") || btn.closest("section");
+        const details = section.querySelectorAll(
+          "details.main-service-details",
+        );
+        const allOpen = Array.from(details).every((d) => d.open);
+        details.forEach((d) => (d.open = !allOpen));
+        btn.textContent = allOpen ? "Expand all" : "Collapse all";
+      }
+
+      // Attach event handlers after DOM rendering
+      function attachEventHandlers() {
+        // Channel filter buttons
+        document.querySelectorAll(".ch-filter-btn").forEach((btn) => {
+          btn.addEventListener("click", function () {
+            toggleChannelFilter(this.dataset.channel);
+          });
+        });
+
+        // Clear channel filters button
+        document
+          .querySelector(".ch-filter-clear")
+          .addEventListener("click", clearChannelFilter);
+
+        // User group filter buttons
+        document.querySelectorAll(".ug-filter-btn").forEach((btn) => {
+          btn.addEventListener("click", function () {
+            toggleUserFilter(this.dataset.group);
+          });
+        });
+
+        // Clear user group filters button
+        document
+          .querySelector(".ug-filter-clear")
+          .addEventListener("click", clearUserFilter);
+
+        // Goal toggle buttons
+        document.querySelectorAll(".goal-toggle").forEach((btn) => {
+          btn.addEventListener("click", function () {
+            toggleGoal(this);
+          });
+        });
+      }
+
+      // Load and render on DOM ready
+      document.addEventListener("DOMContentLoaded", loadAndRenderServiceMap);
+    </script>
+  </body>
+</html>

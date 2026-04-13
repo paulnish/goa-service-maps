@@ -22,7 +22,10 @@
               "name": "Get a driver's licence (for a car)",
               "desc": "The full Class 5 journey: learner's permit (Class 7) → knowledge and road tests → GDL probationary licence → full Class 5 after 2-year probation period. New residents can exchange an out-of-province licence.",
               "users": "New drivers (16+), GDL holders upgrading to full licence, new residents exchanging out-of-province licences",
-              "user_groups": ["Individuals", "Drivers & vehicle owners"],
+              "user_groups": [
+                "Individuals",
+                "Drivers & vehicle owners"
+              ],
               "channels": [
                 {
                   "type": "ch-registry",
@@ -47,13 +50,27 @@
                   "full_name": "Traffic Safety Act  -  s.51: Operator's Licences (Part 3, Div 1)"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": [
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "Provide driver training and testing services",
+                    "ministry": "tec"
+                  }
+                ]
+              }
             },
             {
               "name": "Get a driver's licence (for a motorcycle)",
               "desc": "GDL steps: Class 6 learner → Class 6 GDL → full Class 6 after 2-year probation period",
               "users": "Motorcycle riders (16+, must hold at least a Class 7 learner)",
-              "user_groups": ["Drivers & vehicle owners"],
+              "user_groups": [
+                "Drivers & vehicle owners"
+              ],
               "channels": [
                 {
                   "type": "ch-registry",
@@ -73,13 +90,21 @@
                   "full_name": "Traffic Safety Act  -  s.51: Operator's Licences (Part 3, Div 1)"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              }
             },
             {
               "name": "Get a commercial driver's licence",
               "desc": "Obtain a Class 1, 2, 3, or 4 licence through knowledge and road testing. Includes mandatory entry-level training (MELT) for Class 1 and Class 2 licences.",
               "users": "Licensed drivers seeking Class 1-4",
-              "user_groups": ["Drivers & vehicle owners"],
+              "user_groups": [
+                "Drivers & vehicle owners"
+              ],
               "channels": [
                 {
                   "type": "ch-registry",
@@ -104,13 +129,33 @@
                   "full_name": "Traffic Safety Act  -  s.51: Operator's Licences (Part 3, Div 1)"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "scenario_dependent",
+                  "domain": "driving_vehicles"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "licences_permits"
+                },
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Register, renew, or transfer a vehicle",
+                    "ministry": "tec"
+                  }
+                ]
+              }
             },
             {
               "name": "Find and enrol in driver training",
               "desc": "Locate a licensed driver training school and complete required courses",
               "users": "Learner drivers, parents of teen drivers",
-              "user_groups": ["Drivers & vehicle owners"],
+              "user_groups": [
+                "Drivers & vehicle owners"
+              ],
               "channels": [
                 {
                   "type": "ch-find",
@@ -125,13 +170,21 @@
                   "full_name": "Traffic Safety Act  -  s.51: Operator's Licences (Part 3, Div 1)"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              }
             },
             {
               "name": "Book and take a road test",
               "desc": "Schedule and sit a road test for any licence class",
               "users": "All licence applicants",
-              "user_groups": ["Drivers & vehicle owners"],
+              "user_groups": [
+                "Drivers & vehicle owners"
+              ],
               "channels": [
                 {
                   "type": "ch-transact",
@@ -151,7 +204,13 @@
                   "full_name": "Traffic Safety Act  -  s.51: Operator's Licences (Part 3, Div 1)"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              }
             }
           ]
         },
@@ -163,7 +222,9 @@
               "name": "Renew or replace a driver's licence",
               "desc": "Expired, lost, stolen or destroyed licence renewal",
               "users": "All licensed drivers",
-              "user_groups": ["Drivers & vehicle owners"],
+              "user_groups": [
+                "Drivers & vehicle owners"
+              ],
               "channels": [
                 {
                   "type": "ch-transact",
@@ -188,13 +249,21 @@
                   "full_name": "Traffic Safety Act  -  s.51: Operator's Licences (Part 3, Div 1)"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              }
             },
             {
               "name": "Update driving documents",
               "desc": "Address/name changes within 14 days of change",
               "users": "Drivers with name or address changes",
-              "user_groups": ["Drivers & vehicle owners"],
+              "user_groups": [
+                "Drivers & vehicle owners"
+              ],
               "channels": [
                 {
                   "type": "ch-registry",
@@ -203,7 +272,13 @@
                 }
               ],
               "legislation": [],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "vital_records_id",
+                "relationships": []
+              }
             },
             {
               "name": "Get a driver's abstract",
@@ -237,7 +312,13 @@
                   "full_name": "Traffic Safety Act  -  s.8-11: Release of Information (Div 2)"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              }
             },
             {
               "name": "Get a Driver's Licence History Report",
@@ -266,13 +347,21 @@
                   "full_name": "Traffic Safety Act  -  s.8-11: Release of Information (Div 2)"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              }
             },
             {
               "name": "Sign up for renewal reminders",
               "desc": "Email reminders for licence and registration renewals",
               "users": "All licensed drivers",
-              "user_groups": ["Drivers & vehicle owners"],
+              "user_groups": [
+                "Drivers & vehicle owners"
+              ],
               "channels": [
                 {
                   "type": "ch-transact",
@@ -281,13 +370,21 @@
                 }
               ],
               "legislation": [],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              }
             },
             {
               "name": "Reinstate a suspended or cancelled licence",
               "desc": "Complete reinstatement requirements (fees, courses, medical clearance) after a suspension period ends",
               "users": "Drivers with suspended or cancelled licences",
-              "user_groups": ["Drivers & vehicle owners"],
+              "user_groups": [
+                "Drivers & vehicle owners"
+              ],
               "channels": [
                 {
                   "type": "ch-registry",
@@ -307,7 +404,13 @@
                   "full_name": "Traffic Safety Act  -  s.51: Operator's Licences (Part 3, Div 1)"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              }
             }
           ]
         },
@@ -319,7 +422,9 @@
               "name": "Register, renew, or transfer a vehicle",
               "desc": "Complete vehicle registration and keep it current",
               "users": "Vehicle owners",
-              "user_groups": ["Drivers & vehicle owners"],
+              "user_groups": [
+                "Drivers & vehicle owners"
+              ],
               "channels": [
                 {
                   "type": "ch-transact",
@@ -344,13 +449,33 @@
                   "full_name": "Motor Vehicle Accident Claims Act  -  s.2-3: Owner Fees and Registration"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "scenario_dependent",
+                  "domain": "driving_vehicles"
+                },
+                "business": {
+                  "tier": "core_business_needs",
+                  "domain": "registration_legal"
+                },
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Get a commercial driver's licence",
+                    "ministry": "tec"
+                  }
+                ]
+              }
             },
             {
               "name": "Obtain or replace licence plates",
               "desc": "Get valid plates for display on your vehicle",
               "users": "Vehicle owners",
-              "user_groups": ["Drivers & vehicle owners"],
+              "user_groups": [
+                "Drivers & vehicle owners"
+              ],
               "channels": [
                 {
                   "type": "ch-registry",
@@ -365,13 +490,21 @@
                   "full_name": "Traffic Safety Act  -  s.52-53: Vehicle Registration and Plates (Part 3, Div 1)"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              }
             },
             {
               "name": "Get a vehicle inspected",
               "desc": "Verify safety compliance for out-of-province or flagged vehicles",
               "users": "Out-of-province or flagged vehicle owners",
-              "user_groups": ["Drivers & vehicle owners"],
+              "user_groups": [
+                "Drivers & vehicle owners"
+              ],
               "channels": [
                 {
                   "type": "ch-inperson",
@@ -386,13 +519,21 @@
                   "full_name": "Traffic Safety Act  -  s.65-67: Equipment and Inspection (Part 3, Div 2)"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              }
             },
             {
               "name": "Check vehicle history and lien status",
               "desc": "Look up registration, lien, and ownership information",
               "users": "Vehicle buyers",
-              "user_groups": ["Drivers & vehicle owners"],
+              "user_groups": [
+                "Drivers & vehicle owners"
+              ],
               "channels": [
                 {
                   "type": "ch-registry",
@@ -407,13 +548,21 @@
                   "full_name": "Traffic Safety Act  -  s.8-11: Release of Information (Div 2)"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              }
             },
             {
               "name": "Transfer vehicle ownership for a private sale",
               "desc": "Complete the registration transfer at a registry agent when buying or selling a vehicle privately",
               "users": "Private buyers and sellers",
-              "user_groups": ["Drivers & vehicle owners"],
+              "user_groups": [
+                "Drivers & vehicle owners"
+              ],
               "channels": [
                 {
                   "type": "ch-registry",
@@ -428,7 +577,13 @@
                   "full_name": "Traffic Safety Act  -  s.52-53: Vehicle Registration and Plates (Part 3, Div 1)"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              }
             },
             {
               "name": "Get an in-transit permit",
@@ -452,7 +607,13 @@
                   "full_name": "Traffic Safety Act  -  s.52-53: Vehicle Registration and Plates (Part 3, Div 1)"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              }
             }
           ]
         },
@@ -498,13 +659,22 @@
                   "number": 11,
                   "tip": "Build and operate a safer transportation system"
                 }
-              ]
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              }
             },
             {
               "name": "Check road restrictions and seasonal bans",
               "desc": "Verify whether roads are open, restricted, or closed due to conditions or maintenance",
               "users": "Commercial carriers, travellers",
-              "user_groups": ["Industry & contractors", "General public"],
+              "user_groups": [
+                "Industry & contractors",
+                "General public"
+              ],
               "channels": [
                 {
                   "type": "ch-check",
@@ -529,13 +699,21 @@
                   "full_name": "Highways Development and Protection Act  -  s.11-23: Controlled Highways and Access"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              }
             },
             {
               "name": "Find road safety information",
               "desc": "Access guidance on impaired driving, distracted driving, pedestrian and cyclist safety, and school zones",
               "users": "All road users, educators",
-              "user_groups": ["General public"],
+              "user_groups": [
+                "General public"
+              ],
               "channels": [
                 {
                   "type": "ch-find",
@@ -555,7 +733,13 @@
                   "number": 11,
                   "tip": "Build and operate a safer transportation system"
                 }
-              ]
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              }
             }
           ]
         },
@@ -567,7 +751,9 @@
               "name": "Pay a traffic fine",
               "desc": "Resolve fines and penalties",
               "users": "Traffic offenders",
-              "user_groups": ["Drivers & vehicle owners"],
+              "user_groups": [
+                "Drivers & vehicle owners"
+              ],
               "channels": [
                 {
                   "type": "ch-transact",
@@ -582,13 +768,21 @@
                   "full_name": "Traffic Safety Act  -  Part 4: Disqualification from Driving"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              }
             },
             {
               "name": "Report a vehicle collision online",
               "desc": "File a collision report for non-injury incidents meeting the $5,000 damage threshold and receive a digital damage sticker for insurance and repair",
               "users": "Drivers involved in minor collisions",
-              "user_groups": ["Drivers & vehicle owners"],
+              "user_groups": [
+                "Drivers & vehicle owners"
+              ],
               "channels": [
                 {
                   "type": "ch-transact",
@@ -613,13 +807,21 @@
                   "number": 11,
                   "tip": "Build and operate a safer transportation system"
                 }
-              ]
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              }
             },
             {
               "name": "Report a road hazard or safety concern",
               "desc": "Report potholes, damaged signs, unsafe intersections, or other highway maintenance issues to the regional office",
               "users": "All road users",
-              "user_groups": ["General public"],
+              "user_groups": [
+                "General public"
+              ],
               "channels": [
                 {
                   "type": "ch-phone",
@@ -649,13 +851,21 @@
                   "number": 11,
                   "tip": "Build and operate a safer transportation system"
                 }
-              ]
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              }
             },
             {
               "name": "Appeal a driving penalty or suspension",
               "desc": "Request a review of administrative penalties, licence suspensions, or vehicle seizures through SafeRoads Alberta",
               "users": "Drivers facing suspension or penalties",
-              "user_groups": ["Drivers & vehicle owners"],
+              "user_groups": [
+                "Drivers & vehicle owners"
+              ],
               "channels": [
                 {
                   "type": "ch-transact",
@@ -675,7 +885,13 @@
                   "full_name": "Traffic Safety Act  -  Part 2: Reviews"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              }
             },
             {
               "name": "Request a copy of a collision report",
@@ -704,7 +920,13 @@
                   "full_name": "Motor Vehicle Accident Claims Act  -  s.5-17: Claims Process"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              }
             }
           ]
         },
@@ -716,7 +938,9 @@
               "name": "Start a commercial carrier operation",
               "desc": "Complete pre-entry requirements to operate as a commercial carrier",
               "users": "New commercial carriers",
-              "user_groups": ["Industry & contractors"],
+              "user_groups": [
+                "Industry & contractors"
+              ],
               "channels": [
                 {
                   "type": "ch-mail",
@@ -741,13 +965,21 @@
                   "full_name": "Traffic Safety Act  -  Part 7, Div 1: Operation of Commercial Vehicles"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              }
             },
             {
               "name": "Get a permit for an oversized or overweight load",
               "desc": "Get authorization for vehicles exceeding standard dimension/weight limits",
               "users": "Carriers with oversized loads",
-              "user_groups": ["Industry & contractors"],
+              "user_groups": [
+                "Industry & contractors"
+              ],
               "channels": [
                 {
                   "type": "ch-apply",
@@ -772,13 +1004,21 @@
                   "full_name": "Traffic Safety Act  -  s.62: Permits (Part 3, Div 1)"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              }
             },
             {
               "name": "Register for inter-provincial vehicle operation",
               "desc": "Calculate and pay registration fees for inter-provincial/international travel",
               "users": "Inter-provincial carriers",
-              "user_groups": ["Industry & contractors"],
+              "user_groups": [
+                "Industry & contractors"
+              ],
               "channels": [
                 {
                   "type": "ch-registry",
@@ -793,13 +1033,21 @@
                   "full_name": "Traffic Safety Act  -  Part 7, Div 1: Operation of Commercial Vehicles"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              }
             },
             {
               "name": "Get certified to transport dangerous goods",
               "desc": "Meet provincial regulations for moving dangerous goods on Alberta roads",
               "users": "Dangerous goods carriers",
-              "user_groups": ["Industry & contractors"],
+              "user_groups": [
+                "Industry & contractors"
+              ],
               "channels": [
                 {
                   "type": "ch-phone",
@@ -814,13 +1062,27 @@
                   "full_name": "Dangerous Goods Transportation and Handling Act  -  s.1-5: Definitions and Administration"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "safety_codes_standards",
+                "relationships": [
+                  {
+                    "type": "universal_regulation",
+                    "service": "Check your carrier safety rating",
+                    "ministry": "tec"
+                  }
+                ]
+              }
             },
             {
               "name": "Get authorization to haul logs",
               "desc": "Get authorization to operate log trucks above standard dimension/weight limits",
               "users": "Forestry haulers",
-              "user_groups": ["Industry & contractors"],
+              "user_groups": [
+                "Industry & contractors"
+              ],
               "channels": [
                 {
                   "type": "ch-email",
@@ -840,13 +1102,21 @@
                   "full_name": "Highways Development and Protection Act  -  s.6-8: Forestry Roads"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              }
             },
             {
               "name": "Check your carrier safety rating",
               "desc": "View your National Safety Code profile, safety fitness rating, and audit results",
               "users": "Active commercial carriers",
-              "user_groups": ["Industry & contractors"],
+              "user_groups": [
+                "Industry & contractors"
+              ],
               "channels": [
                 {
                   "type": "ch-check",
@@ -871,7 +1141,19 @@
                   "full_name": "Traffic Safety Act  -  Part 7, Div 2: Commercial Vehicle Compliance"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "safety_codes_standards",
+                "relationships": [
+                  {
+                    "type": "universal_regulation",
+                    "service": "Get certified to transport dangerous goods",
+                    "ministry": "tec"
+                  }
+                ]
+              }
             }
           ]
         },
@@ -883,7 +1165,9 @@
               "name": "Register as a ride-for-hire driver or company",
               "desc": "Meet driver, vehicle, insurance, and recordkeeping requirements",
               "users": "New TNC drivers and companies",
-              "user_groups": ["Industry & contractors"],
+              "user_groups": [
+                "Industry & contractors"
+              ],
               "channels": [
                 {
                   "type": "ch-pdf",
@@ -908,13 +1192,33 @@
                   "full_name": "Traffic Safety Act  -  Part 6.1: Transportation Network Companies"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "core_human_needs",
+                  "domain": "working_employment"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "licences_permits"
+                },
+                "relationships": [
+                  {
+                    "type": "universal_regulation",
+                    "service": "Demonstrate vehicle and insurance compliance",
+                    "ministry": "tec"
+                  }
+                ]
+              }
             },
             {
               "name": "Demonstrate vehicle and insurance compliance",
               "desc": "Prove TNC vehicles meet provincial operating standards",
               "users": "Active TNC operators",
-              "user_groups": ["Industry & contractors"],
+              "user_groups": [
+                "Industry & contractors"
+              ],
               "channels": [
                 {
                   "type": "ch-mail",
@@ -934,7 +1238,19 @@
                   "full_name": "Traffic Safety Act  -  Part 6.1: Transportation Network Companies"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "safety_codes_standards",
+                "relationships": [
+                  {
+                    "type": "universal_regulation",
+                    "service": "Register as a ride-for-hire driver or company",
+                    "ministry": "tec"
+                  }
+                ]
+              }
             }
           ]
         }
@@ -956,6 +1272,112 @@
       "short_name": "Alberta's economic corridors are expanded to enable market access",
       "legend_label": "Economic corridors & market access",
       "description": "Strategic economic corridor investments and innovation support Alberta's economic growth",
+      "foundational_services": [
+        {
+          "id": "f-1",
+          "name": "Highway pavement resurfacing and repair",
+          "desc": "Rehabilitation and surface treatment across 64,000+ lane km of provincial highways to maintain ride quality and safety",
+          "users": "Internal program staff, contractors",
+          "channels": [],
+          "legislation": [
+            {
+              "abbrev": "HDPA",
+              "color": "#007a3d",
+              "full_name": "Highways Development and Protection Act"
+            }
+          ],
+          "mandate_tags": [
+            {
+              "number": 9,
+              "tip": "Maintain and rehabilitate highway infrastructure"
+            }
+          ],
+          "taxonomy": {
+            "track": "business",
+            "tier": "industry_specific",
+            "domain": "construction",
+            "relationships": []
+          }
+        },
+        {
+          "id": "f-2",
+          "name": "Bridge inspection, construction, and rehabilitation",
+          "desc": "Ongoing maintenance and lifecycle management of ~4,900 provincial bridges and interchanges",
+          "users": "Internal program staff, contractors",
+          "channels": [],
+          "legislation": [
+            {
+              "abbrev": "HDPA",
+              "color": "#007a3d",
+              "full_name": "Highways Development and Protection Act"
+            }
+          ],
+          "mandate_tags": [
+            {
+              "number": 9,
+              "tip": "Maintain and rehabilitate highway infrastructure"
+            }
+          ],
+          "taxonomy": {
+            "track": "business",
+            "tier": "industry_specific",
+            "domain": "construction",
+            "relationships": []
+          }
+        },
+        {
+          "id": "f-3",
+          "name": "Regional highway construction delivery",
+          "desc": "Project delivery across North Central, Central, Peace, and South regions — managed by regional offices with contracted construction firms",
+          "users": "Internal program staff, contractors",
+          "channels": [],
+          "legislation": [
+            {
+              "abbrev": "HDPA",
+              "color": "#007a3d",
+              "full_name": "Highways Development and Protection Act"
+            }
+          ],
+          "mandate_tags": [
+            {
+              "number": 9,
+              "tip": "Maintain and rehabilitate highway infrastructure"
+            }
+          ],
+          "taxonomy": {
+            "track": "business",
+            "tier": "industry_specific",
+            "domain": "construction",
+            "relationships": []
+          }
+        },
+        {
+          "id": "f-4",
+          "name": "Highway twinning and capacity expansion",
+          "desc": "Multi-year construction programs to increase capacity on critical trade routes (e.g., Highway 3 Taber–Lethbridge, Highway 686 northern corridor)",
+          "users": "Internal program staff, contractors",
+          "channels": [],
+          "legislation": [
+            {
+              "abbrev": "HDPA",
+              "color": "#007a3d",
+              "full_name": "Highways Development and Protection Act"
+            }
+          ],
+          "mandate_tags": [
+            {
+              "number": 8,
+              "tip": "Twin and expand highway capacity on critical trade routes"
+            }
+          ],
+          "taxonomy": {
+            "track": "business",
+            "tier": "industry_specific",
+            "domain": "construction",
+            "relationships": []
+          }
+        }
+      ],
       "main_services": [
         {
           "number": 1,
@@ -965,7 +1387,10 @@
               "name": "Find trade corridor plans and routes",
               "desc": "View the province's CANAMEX, Asia-Pacific, and East-West corridor strategies, route maps, and investment rationale",
               "users": "Industry, trade associations, municipalities",
-              "user_groups": ["Industry & contractors", "Municipalities"],
+              "user_groups": [
+                "Industry & contractors",
+                "Municipalities"
+              ],
               "channels": [
                 {
                   "type": "ch-find",
@@ -995,13 +1420,22 @@
                   "number": 8,
                   "tip": "Develop economic corridors incl. Highway 686"
                 }
-              ]
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "transport_carriers",
+                "relationships": []
+              }
             },
             {
               "name": "See where highway investment is planned",
               "desc": "Access published corridor capital project rankings, criteria, and the Provincial Construction Program",
               "users": "Industry, government partners, municipalities",
-              "user_groups": ["Industry & contractors", "Municipalities"],
+              "user_groups": [
+                "Industry & contractors",
+                "Municipalities"
+              ],
               "channels": [
                 {
                   "type": "ch-pub",
@@ -1021,13 +1455,21 @@
                   "number": 5,
                   "tip": "Remove barriers to airport growth and expand international connectivity"
                 }
-              ]
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              }
             },
             {
               "name": "Get your railway inspected and certified",
               "desc": "Ensure railways are properly constructed, investigate incidents, enforce legislation",
               "users": "Railway operators",
-              "user_groups": ["Industry & contractors"],
+              "user_groups": [
+                "Industry & contractors"
+              ],
               "channels": [
                 {
                   "type": "ch-phone",
@@ -1047,26 +1489,13 @@
                   "full_name": "Railway (Alberta) Act  -  Part 1: Approvals Governing Railways"
                 }
               ],
-              "mandate_tags": []
-            }
-          ],
-          "foundational": [
-            {
-              "name": "Highway twinning and capacity expansion",
-              "desc": "Multi-year construction programs to increase capacity on critical trade routes (e.g., Highway 3 Taber-Lethbridge, Highway 686 northern corridor)",
-              "legislation": [
-                {
-                  "abbrev": "HDPA",
-                  "color": "#007a3d",
-                  "full_name": "Highways Development and Protection Act - s.9: Construction and Maintenance"
-                }
-              ],
-              "mandate_tags": [
-                {
-                  "number": 8,
-                  "tip": "Develop economic corridors incl. Highway 686"
-                }
-              ]
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "transport_carriers",
+                "relationships": []
+              }
             }
           ]
         },
@@ -1078,7 +1507,10 @@
               "name": "See upcoming highway construction projects",
               "desc": "Publish 3-year capital plan ($2.8B roads/bridges, $2B rehabilitation in Budget 2026)",
               "users": "Construction industry, public",
-              "user_groups": ["Industry & contractors", "General public"],
+              "user_groups": [
+                "Industry & contractors",
+                "General public"
+              ],
               "channels": [
                 {
                   "type": "ch-pub",
@@ -1103,13 +1535,21 @@
                   "number": 9,
                   "tip": "Expand and improve Alberta's highway network and bridge infrastructure"
                 }
-              ]
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              }
             },
             {
               "name": "Find and bid on highway construction contracts",
               "desc": "Procure contractors for highway and bridge projects",
               "users": "Contractors, suppliers",
-              "user_groups": ["Industry & contractors"],
+              "user_groups": [
+                "Industry & contractors"
+              ],
               "channels": [
                 {
                   "type": "ch-apply",
@@ -1129,60 +1569,13 @@
                   "full_name": "Highways Development and Protection Act  -  s.9: Construction and Maintenance"
                 }
               ],
-              "mandate_tags": []
-            }
-          ],
-          "foundational": [
-            {
-              "name": "Highway pavement resurfacing and repair",
-              "desc": "Rehabilitation and surface treatment across 64,000+ lane km of provincial highways to maintain ride quality and safety",
-              "mandate_tags": [
-                {
-                  "number": 9,
-                  "tip": "Expand and improve Alberta's highway network and bridge infrastructure"
-                }
-              ],
-              "legislation": [
-                {
-                  "abbrev": "HDPA",
-                  "color": "#007a3d",
-                  "full_name": "Highways Development and Protection Act  -  s.9: Construction and Maintenance (foundational)"
-                }
-              ]
-            },
-            {
-              "name": "Bridge inspection, construction, and rehabilitation",
-              "desc": "Ongoing maintenance and lifecycle management of ~4,900 provincial bridges and interchanges",
-              "mandate_tags": [
-                {
-                  "number": 9,
-                  "tip": "Expand and improve Alberta's highway network and bridge infrastructure"
-                }
-              ],
-              "legislation": [
-                {
-                  "abbrev": "HDPA",
-                  "color": "#007a3d",
-                  "full_name": "Highways Development and Protection Act  -  s.9: Construction and Maintenance (foundational)"
-                }
-              ]
-            },
-            {
-              "name": "Regional highway construction delivery",
-              "desc": "Project delivery across North Central, Central, Peace, and South regions - managed by regional offices with contracted construction firms",
-              "legislation": [
-                {
-                  "abbrev": "HDPA",
-                  "color": "#007a3d",
-                  "full_name": "Highways Development and Protection Act - s.9: Construction and Maintenance"
-                }
-              ],
-              "mandate_tags": [
-                {
-                  "number": 9,
-                  "tip": "Expand and improve Alberta's highway network and bridge infrastructure"
-                }
-              ]
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "government_procurement",
+                "relationships": []
+              }
             }
           ]
         },
@@ -1194,7 +1587,9 @@
               "name": "See what's planned for passenger rail",
               "desc": "Access the provincial rail strategy, proposed routes (intercity, commuter, mountain, airport), and 15-year delivery timeline",
               "users": "General public, commuters",
-              "user_groups": ["General public"],
+              "user_groups": [
+                "General public"
+              ],
               "channels": [
                 {
                   "type": "ch-find",
@@ -1224,13 +1619,21 @@
                   "number": 1,
                   "tip": "Finalize planning and timelines for the Passenger Rail Strategy"
                 }
-              ]
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              }
             },
             {
               "name": "Have your say on passenger rail plans",
               "desc": "Provide input on proposed intercity, commuter, and mountain routes and station locations",
               "users": "Route-area residents, commuters",
-              "user_groups": ["General public"],
+              "user_groups": [
+                "General public"
+              ],
               "channels": [
                 {
                   "type": "ch-engage",
@@ -1255,13 +1658,21 @@
                   "number": 1,
                   "tip": "Finalize planning and timelines for the Passenger Rail Strategy"
                 }
-              ]
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              }
             },
             {
               "name": "Access rail corridor studies and data",
               "desc": "Access completed and in-progress studies for Calgary-Edmonton, metro commuter, mountain, and airport connector corridors",
               "users": "Municipalities, transit agencies",
-              "user_groups": ["Municipalities"],
+              "user_groups": [
+                "Municipalities"
+              ],
               "channels": [
                 {
                   "type": "ch-pub",
@@ -1290,13 +1701,21 @@
                   "number": 4,
                   "tip": "Plan YEG Airport connector to Edmonton's LRT"
                 }
-              ]
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "transport_carriers",
+                "relationships": []
+              }
             },
             {
               "name": "Align your LRT plans with provincial rail",
               "desc": "Work with the province to align Calgary and Edmonton light rail expansion with the future provincial rail network",
               "users": "Calgary & Edmonton transit agencies",
-              "user_groups": ["Municipalities"],
+              "user_groups": [
+                "Municipalities"
+              ],
               "channels": [
                 {
                   "type": "ch-email",
@@ -1330,7 +1749,13 @@
                   "number": 3,
                   "tip": "Complete the downtown-to-Shepherd Green Line"
                 }
-              ]
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "transport_carriers",
+                "relationships": []
+              }
             }
           ]
         }
@@ -1358,6 +1783,28 @@
       "short_name": "Alberta communities are supported with reliable infrastructure",
       "legend_label": "Community & municipal support",
       "description": "Alberta's transportation network and water management infrastructure is maintained effectively and responsibly, ensuring long-term sustainability and affordability",
+      "foundational_services": [
+        {
+          "id": "f-5",
+          "name": "Flood mitigation infrastructure delivery",
+          "desc": "$180M in water management and flood mitigation capital projects protecting Alberta communities from flood risk",
+          "users": "Internal program staff, municipalities",
+          "channels": [],
+          "legislation": [],
+          "mandate_tags": [
+            {
+              "number": 7,
+              "tip": "Deliver flood mitigation infrastructure"
+            }
+          ],
+          "taxonomy": {
+            "track": "business",
+            "tier": "industry_specific",
+            "domain": "construction",
+            "relationships": []
+          }
+        }
+      ],
       "main_services": [
         {
           "number": 1,
@@ -1367,7 +1814,9 @@
               "name": "Apply for road and bridge grants",
               "desc": "Request STIP funding for local roads, bridges, and transit projects",
               "users": "Municipal governments",
-              "user_groups": ["Municipalities"],
+              "user_groups": [
+                "Municipalities"
+              ],
               "channels": [
                 {
                   "type": "ch-email",
@@ -1396,13 +1845,21 @@
                   "number": 10,
                   "tip": "Partner with rural municipalities on water, bridge, and road infrastructure"
                 }
-              ]
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "government_procurement",
+                "relationships": []
+              }
             },
             {
               "name": "Find grants you're eligible for",
               "desc": "Browse the grants portal to identify eligible funding programs",
               "users": "Municipal grant coordinators",
-              "user_groups": ["Municipalities"],
+              "user_groups": [
+                "Municipalities"
+              ],
               "channels": [
                 {
                   "type": "ch-find",
@@ -1411,13 +1868,21 @@
                 }
               ],
               "legislation": [],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "government_procurement",
+                "relationships": []
+              }
             },
             {
               "name": "See how much grant funding your area received",
               "desc": "View provincial and federal grant allocations across Alberta",
               "users": "Municipal officials, MLAs",
-              "user_groups": ["Municipalities"],
+              "user_groups": [
+                "Municipalities"
+              ],
               "channels": [
                 {
                   "type": "ch-find",
@@ -1431,13 +1896,21 @@
                 }
               ],
               "legislation": [],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "government_procurement",
+                "relationships": []
+              }
             },
             {
               "name": "Borrow for municipal capital projects",
               "desc": "Request Government of Alberta loans for eligible municipal capital projects",
               "users": "Municipal treasurers",
-              "user_groups": ["Municipalities"],
+              "user_groups": [
+                "Municipalities"
+              ],
               "channels": [
                 {
                   "type": "ch-find",
@@ -1461,13 +1934,22 @@
                 }
               ],
               "legislation": [],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              }
             },
             {
               "name": "Apply for water and wastewater infrastructure funding",
               "desc": "Request grants for municipal water supply, treatment, disposal facilities, and regional water systems through the Water for Life program",
               "users": "Municipalities, Métis Settlements, regional water commissions",
-              "user_groups": ["Municipalities", "Indigenous communities"],
+              "user_groups": [
+                "Municipalities",
+                "Indigenous communities"
+              ],
               "channels": [
                 {
                   "type": "ch-email",
@@ -1495,15 +1977,13 @@
                   "number": 6,
                   "tip": "Implement First Nations Regional Drinking Water Tie-In Program"
                 }
-              ]
-            }
-          ],
-          "foundational": [
-            {
-              "name": "Flood mitigation infrastructure delivery",
-              "desc": "Design and construction of flood barriers, berms, diversions, and dry dams across southern Alberta (post-2013 flood program)",
-              "legislation": [],
-              "mandate_tags": []
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "government_procurement",
+                "relationships": []
+              }
             }
           ]
         },
@@ -1515,7 +1995,10 @@
               "name": "Apply for FCSS funding",
               "desc": "Request Family and Community Support Services grants for preventive social programs",
               "users": "Municipalities, Métis Settlements",
-              "user_groups": ["Municipalities", "Indigenous communities"],
+              "user_groups": [
+                "Municipalities",
+                "Indigenous communities"
+              ],
               "channels": [
                 {
                   "type": "ch-email",
@@ -1540,13 +2023,21 @@
                   "full_name": "Family and Community Support Services Act  -  s.2-6: Municipal FCSS Programs"
                 }
               ],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "government_procurement",
+                "relationships": []
+              }
             },
             {
               "name": "Set up a community revitalization levy",
               "desc": "Request CRL designation to catalyse investment in underserved areas using incremental tax revenue",
               "users": "Municipalities with CRL zones",
-              "user_groups": ["Municipalities"],
+              "user_groups": [
+                "Municipalities"
+              ],
               "channels": [
                 {
                   "type": "ch-email",
@@ -1560,13 +2051,21 @@
                 }
               ],
               "legislation": [],
-              "mandate_tags": []
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "registration_legal",
+                "relationships": []
+              }
             },
             {
               "name": "Apply for provincial transit capital funding",
               "desc": "Request legislated provincial funding for LRT and other public transit expansion projects",
               "users": "Calgary, Edmonton, other transit authorities",
-              "user_groups": ["Municipalities"],
+              "user_groups": [
+                "Municipalities"
+              ],
               "channels": [
                 {
                   "type": "ch-phone",
@@ -1595,7 +2094,13 @@
                   "number": 3,
                   "tip": "Complete the downtown-to-Shepherd Green Line"
                 }
-              ]
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "government_procurement",
+                "relationships": []
+              }
             }
           ]
         }

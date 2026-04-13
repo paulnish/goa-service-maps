@@ -100,8 +100,8 @@
           "anchor_id": "AISH-s1",
           "services": [
             {
+              "name": "Get income, health and other benefits for a severe disability",
               "type": "supporting",
-              "name": "Get monthly income support for a severe disability (AISH)",
               "goal_number": 1,
               "goal_color": "#0070c0",
               "ms_number": 1,
@@ -114,24 +114,7 @@
           "title": "Benefits and Eligibility",
           "description": "Authorizes directors to provide living allowances, child benefits, personal benefits, and health benefits to eligible persons with severe disabilities. Sets out benefit amounts and annual adjustment via the Alberta escalator.",
           "anchor_id": "AISH-s3",
-          "services": [
-            {
-              "type": "supporting",
-              "name": "Get monthly income support for a severe disability (AISH)",
-              "goal_number": 1,
-              "goal_color": "#0070c0",
-              "ms_number": 1,
-              "ms_name": "Get help meeting basic needs"
-            },
-            {
-              "type": "supporting",
-              "name": "Get income and employment support with a disability (ADAP)",
-              "goal_number": 1,
-              "goal_color": "#0070c0",
-              "ms_number": 1,
-              "ms_name": "Get help meeting basic needs"
-            }
-          ]
+          "services": []
         },
         {
           "ref": "s.4–5",
@@ -139,14 +122,6 @@
           "description": "Governs benefit applications and ongoing eligibility review, including requirements to report changes in handicap, income, or assets.",
           "anchor_id": "AISH-s4",
           "services": [
-            {
-              "type": "supporting",
-              "name": "Get monthly income support for a severe disability (AISH)",
-              "goal_number": 1,
-              "goal_color": "#0070c0",
-              "ms_number": 1,
-              "ms_name": "Get help meeting basic needs"
-            },
             {
               "type": "supporting",
               "name": "Find out what support you're eligible for",
@@ -162,16 +137,7 @@
           "title": "Repayment and Debt Recovery",
           "description": "Establishes obligations to repay benefits received in error or through misrepresentation, and provides the Crown with debt recovery mechanisms including court filing.",
           "anchor_id": "AISH-s7",
-          "services": [
-            {
-              "type": "supporting",
-              "name": "Get monthly income support for a severe disability (AISH)",
-              "goal_number": 1,
-              "goal_color": "#0070c0",
-              "ms_number": 1,
-              "ms_name": "Get help meeting basic needs"
-            }
-          ]
+          "services": []
         },
         {
           "ref": "s.10",
@@ -202,16 +168,7 @@
           "title": "Benefit Amounts and Calculation",
           "description": "Sets out specific benefit amounts: modified living allowance ($365 + accommodation charge), living allowance ($1,901/month), child benefit ($227 first child, $114 additional), and annual Alberta escalator adjustments.",
           "anchor_id": "AISH-Sched1",
-          "services": [
-            {
-              "type": "supporting",
-              "name": "Get monthly income support for a severe disability (AISH)",
-              "goal_number": 1,
-              "goal_color": "#0070c0",
-              "ms_number": 1,
-              "ms_name": "Get help meeting basic needs"
-            }
-          ]
+          "services": []
         }
       ]
     },
@@ -240,6 +197,14 @@
             {
               "type": "supporting",
               "name": "Find out what support you're eligible for",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Get help meeting basic needs"
+            },
+            {
+              "name": "Get income, health and other benefits for a severe disability",
+              "type": "supporting",
               "goal_number": 1,
               "goal_color": "#0070c0",
               "ms_number": 1,
@@ -634,10 +599,10 @@
             {
               "type": "foundational",
               "name": "Manage and fund social housing assets",
-              "goal_number": null,
-              "goal_color": null,
-              "ms_number": null,
-              "ms_name": null
+              "goal_number": 1,
+              "goal_color": "#2e75b6",
+              "ms_number": 5,
+              "ms_name": "Get funding to build or maintain affordable housing"
             }
           ]
         },

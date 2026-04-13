@@ -1,0 +1,225 @@
+{
+  "prefix": "tbf",
+  "name": "Treasury Board and Finance",
+  "short_name": "Treasury Board & Finance",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "Tax administration & revenue",
+      "legend_label": "Tax administration",
+      "main_services": [
+        {"number": 1, "name": "File and pay provincial taxes and levies"},
+        {"number": 2, "name": "Access tax credits, benefits, and exemptions"}
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "short_name": "Pensions, insurance & financial regulation",
+      "legend_label": "Pensions & insurance",
+      "main_services": [
+        {"number": 1, "name": "Access pension information or file a pension complaint"},
+        {"number": 2, "name": "Get insurance information or file an insurance complaint"}
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "short_name": "Fiscal planning, gaming & accountability",
+      "legend_label": "Fiscal planning",
+      "main_services": [
+        {"number": 1, "name": "Access gaming, liquor, or cannabis licences and information"},
+        {"number": 2, "name": "Claim unclaimed property or access fiscal information"}
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "ACTA",
+      "full_name": "Alberta Corporate Tax Act",
+      "color": "#1565c0",
+      "citation": "RSA 2000, c A-15",
+      "summary": "Establishes the framework for corporate income tax assessment and collection in Alberta. Defines taxable corporations, income calculation methodology, deductions, and filing requirements for businesses operating in the province.",
+      "full_text": "<h3>Alberta Corporate Tax Act</h3><p><strong>Citation:</strong> RSA 2000, c A-15</p><p>The Alberta Corporate Tax Act forms the statutory foundation for corporate income taxation in Alberta. It establishes the rules governing how corporations are assessed and taxed on their Alberta-source income, the calculation of taxable income, allowable deductions, and compliance and filing obligations.</p><h4>Key Provisions</h4><ul><li><strong>Scope and Application (ss 1–5):</strong> Applies to all corporations that have income from sources in Alberta during a taxation year. Defines key terms including 'corporation,' 'taxation year,' 'income,' and 'resident.' Establishes that the Act applies to corporations incorporated in Alberta and those incorporated elsewhere with Alberta operations.</li><li><strong>Taxable Income (ss 10–25):</strong> Prescribes the method for calculating taxable corporate income. Generally, a corporation's taxable income is its income for the year from all sources minus permitted deductions. Income includes profits from business, property, capital gains, and other sources. The Act provides rules for timing of income recognition and loss carryforwards.</li><li><strong>Deductions and Credits (ss 26–50):</strong> Establishes allowable deductions including business expenses, amortization of capital assets, interest, property taxes, donations, and other business-related costs. Provides for tax credits including small business deductions, research and development credits, and investment tax credits.</li><li><strong>Filing and Payment Obligations (ss 55–70):</strong> Requires corporations to file corporate tax returns within six months of their taxation year-end. Estimated tax payments are required quarterly for corporations with a prior-year tax liability exceeding a threshold amount. Interest and penalties apply for late filing or payment. The Minister may assess tax, reassess within prescribed timeframes, and issue notices of assessment.</li><li><strong>Enforcement and Compliance (ss 75–90):</strong> Authorizes the Minister to audit corporate returns and examine records. Corporations must maintain records for prescribed periods. Penalties apply for failure to file, failure to keep records, misrepresentation of income, and obstruction of the Minister's examination. Refunds of overpaid tax are available to corporations.</li><li><strong>Appeals (ss 91–100):</strong> Corporations may appeal an assessment to the Tax Board of Alberta within prescribed timeframes, and further to the Court of Queen's Bench on questions of law.</li></ul><p>The Act works in conjunction with federal income tax legislation and Alberta's provincial tax rate schedule to determine total corporate tax liability in the province.</p>",
+      "sections": [
+        {
+          "ref": "ss 55–70",
+          "title": "Tax Filing",
+          "description": "Establishes corporate tax filing requirements, including return filing deadlines (six months after year-end), quarterly estimated tax payment obligations, and notice of assessment procedures.",
+          "anchor_id": "sec-acta-filing",
+          "services": [
+            {
+              "name": "File and pay Alberta corporate income tax",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "File and pay provincial taxes and levies"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "APITA",
+      "full_name": "Alberta Personal Income Tax Act",
+      "color": "#1565c0",
+      "citation": "RSA 2000, c A-30",
+      "summary": "Governs personal income tax assessment and administration in Alberta. Defines personal income, deductions, and credits available to individuals, including the Alberta Child and Family Benefit and other tax incentives supporting families and low-income Albertans.",
+      "full_text": "<h3>Alberta Personal Income Tax Act</h3><p><strong>Citation:</strong> RSA 2000, c A-30</p><p>The Alberta Personal Income Tax Act establishes the framework for assessing and collecting personal income tax from individuals resident in Alberta. It defines taxable income, allows deductions and credits, and establishes filing and payment obligations for taxpayers.</p><h4>Key Provisions</h4><ul><li><strong>Taxable Income (ss 10–20):</strong> Personal taxable income includes employment income, business/professional income, property income, capital gains, and other sources of income. Residents of Alberta are taxed on worldwide income; non-residents are taxed only on Alberta-source income.</li><li><strong>Deductions (ss 25–40):</strong> Permitted deductions include employment expenses, business losses, investment losses, interest paid, property taxes, charitable donations, education and training costs, and childcare expenses. Individuals may claim the greater of standard or itemized deductions.</li><li><strong>Tax Credits and Benefits (ss 45–70):</strong> Establishes various non-refundable and refundable tax credits. The Alberta Child and Family Benefit is a refundable credit available to eligible families with dependent children. Other credits include spousal amounts, dependent care expenses, tuition and education credits, and medical expense credits. Credits reduce tax liability dollar-for-dollar (refundable) or reduce taxable income.</li><li><strong>Filing and Payment (ss 75–85):</strong> Individuals must file a personal income tax return within six months after the calendar year-end if they have a tax liability or are eligible for refundable credits. Payment must accompany the return or be made by instalments if required. Employers withhold tax at source; individuals may adjust withholding or pay tax in instalments.</li><li><strong>Assessment and Appeals (ss 90–105):</strong> The Minister assesses returns, issues notices of assessment, and may reassess within prescribed timeframes. Individuals may object to an assessment and appeal to the Tax Board of Alberta and subsequently to the Court of Queen's Bench.</li><li><strong>Enforcement (ss 110–125):</strong> Penalties apply for late filing, failure to report income, failure to maintain records, misrepresentation, and obstruction of audit. Interest accrues on unpaid tax at rates prescribed in regulations.</li></ul><p>The Act is complemented by Alberta's tax rate schedule, which is indexed annually to inflation, ensuring that tax brackets keep pace with cost-of-living increases.</p>",
+      "sections": [
+        {
+          "ref": "ss 45–70",
+          "title": "Tax Credits and Benefits",
+          "description": "Establishes personal income tax credits and benefits available to individuals and families, including the Alberta Child and Family Benefit (refundable), spousal credits, dependent care credits, education credits, and medical expense credits.",
+          "anchor_id": "sec-apita-credits",
+          "services": [
+            {
+              "name": "Check your eligibility for the Alberta Child and Family Benefit",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Access tax credits, benefits, and exemptions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "EPPA",
+      "full_name": "Employment Pension Plans Act",
+      "color": "#00695c",
+      "citation": "SA 2012, c E-8.1",
+      "summary": "Regulates private employment pension plans in Alberta to ensure fair administration, adequate funding, member protection, and transparency. Establishes requirements for plan registration, governance, investment management, funding, and member communication.",
+      "full_text": "<h3>Employment Pension Plans Act</h3><p><strong>Citation:</strong> SA 2012, c E-8.1</p><p>The Employment Pension Plans Act is Alberta's primary legislation governing private employer-sponsored pension plans. It establishes the legal and regulatory framework for pension plan establishment, registration, administration, investment, funding, and member protection.</p><h4>Key Provisions</h4><ul><li><strong>Plan Registration and Administration (ss 1–30):</strong> All employer pension plans must be registered with the Financial Services Commission of Alberta (FSCA). Registration requires submission of plan documents, including fund rules, benefit formulas, contribution rates, and governance structures. Plan administrators must meet specified qualifications and follow prescribed governance standards including annual reporting, member disclosure, and conflict-of-interest management.</li><li><strong>Funding and Solvency (ss 35–60):</strong> Defined benefit plans must be funded on both an ongoing basis and an actuarial liabilities basis. Employers must contribute to plans to ensure adequate assets to meet pension obligations. Actuarial valuations must be filed at least triennially. If a plan becomes insolvent, the employer is responsible for funding the shortfall, and member benefits may be reduced if the employer cannot pay.</li><li><strong>Pension Adjustments and Contribution Limits (ss 65–75):</strong> Sets maximum benefits and contribution limits for registered pension plans to align with federal tax policy. Members cannot accrue benefits exceeding prescribed maximums per year, and contribution rooms are subject to annual limits.</li><li><strong>Investment Standards (ss 80–95):</strong> Pension plans must establish investment policies that balance return objectives with prudence and diversification. Plan administrators must avoid investments that create prohibited conflicts of interest. Plans must diversify investments to mitigate risk. Annual investment performance reporting is required.</li><li><strong>Member Protection (ss 100–120):</strong> Members have rights to information about their plan, including annual statements, plan documents, and investment performance. Employers cannot impose vesting schedules exceeding two years. Upon termination or retirement, members have options to receive accrued benefits as pension, lump-sum payment, or locked-in account.</li><li><strong>Complaints and Dispute Resolution (ss 125–140):</strong> Members may file complaints with the FSCA regarding plan administration, investment practices, or benefit entitlements. The FSCA may conduct investigations and order remedial measures. Unresolved disputes may proceed to arbitration or litigation.</li></ul><p>The Act is administered by the FSCA, which maintains the Registry of Pension Plans and processes plan registrations, amendments, valuations, and member complaints.</p>",
+      "sections": [
+        {
+          "ref": "ss 1–30",
+          "title": "Pension Plan Registration and Oversight",
+          "description": "Establishes requirements for employer pension plan registration with the Financial Services Commission of Alberta, governance standards for plan administrators, and annual reporting and disclosure obligations to members.",
+          "anchor_id": "sec-eppa-reg",
+          "services": [
+            {
+              "name": "Find information about your employer pension plan",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 1,
+              "ms_name": "Access pension information or file a pension complaint"
+            },
+            {
+              "name": "File a complaint about a pension plan",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 1,
+              "ms_name": "Access pension information or file a pension complaint"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "IA",
+      "full_name": "Insurance Act",
+      "color": "#00695c",
+      "citation": "RSA 2000, c I-3",
+      "summary": "Regulates the insurance industry in Alberta, including licensing of insurers and agents, conduct of insurance business, policy standards, claims handling, consumer protection, and dispute resolution mechanisms.",
+      "full_text": "<h3>Insurance Act</h3><p><strong>Citation:</strong> RSA 2000, c I-3</p><p>The Insurance Act is Alberta's comprehensive statute governing the insurance industry. It establishes the regulatory framework for insurance companies, insurance agents, brokers, adjusters, and other insurance professionals, and protects consumers through policy standards, conduct rules, and dispute resolution mechanisms.</p><h4>Key Provisions</h4><ul><li><strong>Licensing and Regulation of Insurers (ss 1–50):</strong> All insurance companies operating in Alberta must obtain a license from the Financial Services Commission of Alberta (FSCA). License applications must demonstrate financial solvency, business integrity, and compliance capacity. Insurers must maintain minimum capital and reserve requirements. The FSCA may suspend or cancel licenses for breaches of the Act or regulatory orders.</li><li><strong>Regulation of Insurance Intermediaries (ss 55–100):</strong> Insurance agents, brokers, adjusters, and consultants must be licensed. Applicants must pass competency examinations, demonstrate financial integrity, and maintain professional standards. Intermediaries must keep records, handle client funds separately, disclose conflicts of interest, and comply with consumer protection rules. Licensing is category-specific (life, property, casualty, etc.).</li><li><strong>Policy Standards and Disclosure (ss 105–150):</strong> Insurance policies must contain certain standard provisions including definitions, scope of coverage, exclusions, premium payment terms, cancellation rights, and claims procedures. Insurers must provide clear, plain-language policy documents and disclose material information before contract formation. Misrepresentation or non-disclosure may render policies voidable.</li><li><strong>Claims Handling (ss 155–180):</strong> Insurers must investigate claims promptly and pay valid claims within prescribed timeframes (typically 30 days of receiving proof of loss). Insurers must inform claimants of the status of their claim, the reason for any delay, and the appeals process. Unfair claims handling practices are prohibited.</li><li><strong>Complaint and Dispute Resolution (ss 185–220):</strong> Consumers may file complaints with the FSCA regarding insurer or intermediary conduct. The FSCA may investigate and order remedial action. The Insurance Ombudsman (Financial Services Commission) provides neutral dispute resolution for complaints not resolved internally. Consumers may pursue civil litigation.</li><li><strong>Offences and Enforcement (ss 225–250):</strong> Violations include operating without a license, misrepresentation in advertising, failure to disclose conflicts, improper claims handling, and fraud. Penalties include fines, imprisonment, and license revocation.</li></ul><p>The Act is administered by the FSCA's Insurance Division, which licenses all insurance market participants and monitors market conduct and consumer protection compliance.</p>",
+      "sections": [
+        {
+          "ref": "ss 105–220",
+          "title": "Insurance Regulation and Consumer Protection",
+          "description": "Establishes policy standards and disclosure requirements, claims handling procedures, and consumer complaint and dispute resolution mechanisms through the FSCA and Insurance Ombudsman.",
+          "anchor_id": "sec-ia-consumer",
+          "services": [
+            {
+              "name": "Find information about insurance regulation and your rights",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 2,
+              "ms_name": "Get insurance information or file an insurance complaint"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "GLCA",
+      "full_name": "Gaming, Liquor and Cannabis Act",
+      "color": "#c62828",
+      "citation": "SA 2016, c G-1.1",
+      "summary": "Establishes a unified regulatory framework for gaming, liquor, and cannabis in Alberta. Governs licensing, operational standards, public health and safety requirements, venue compliance, and enforcement mechanisms for all three regulated products.",
+      "full_text": "<h3>Gaming, Liquor and Cannabis Act</h3><p><strong>Citation:</strong> SA 2016, c G-1.1</p><p>The Gaming, Liquor and Cannabis Act consolidates Alberta's regulation of gaming activities, liquor distribution and sales, and cannabis in a single comprehensive statute. It establishes the licensing framework, operational standards, public safety requirements, and enforcement mechanisms for licensed establishments and vendors.</p><h4>Key Provisions</h4><ul><li><strong>Gaming Regulation (ss 1–100):</strong> Regulates gaming activities including lottery schemes, casino operations, gaming machines, and bingo. Gaming licenses are issued by Alberta Gaming, Liquor and Cannabis (AGLC) to qualified applicants including municipalities, non-profits, and commercial operators. Licenses specify authorized gaming products, venue location, and operational conditions. Gaming revenues are taxed; net proceeds support public services including health, education, and community development.</li><li><strong>Liquor Regulation (ss 105–250):</strong> Establishes the regulatory framework for beer, wine, and spirits in Alberta. Liquor licenses authorize manufacture, distribution, retail sales, and service in bars and restaurants. Applicants must meet qualifications including location suitability, community support, and security measures. Licensed establishments must comply with operating hours, patron density limits, and safety standards. Liquor vendors must train servers in responsible service practices.</li><li><strong>Cannabis Regulation (ss 255–380):</strong> Governs cannabis production, retail sales, and consumption. Licensed retailers must meet strict security, inventory tracking, and age-verification requirements. Cannabis may not be sold to persons under 18. Retailers must display warning labels and provide public education on cannabis risks. Home cultivation is permitted within prescribed limits.</li><li><strong>Licensing and Compliance (ss 385–450):</strong> AGLC administers all licensing. License applications require financial documentation, personal background checks, and public consultation. Licenses are renewed periodically (typically three years) and may be suspended or cancelled for non-compliance. License holders must maintain records, report violations, and cooperate with inspections. Compliance officers conduct regular inspections and audits.</li><li><strong>Enforcement and Offences (ss 455–500):</strong> Violations include operating without a license, serving intoxicated patrons, selling to underage persons, and unauthorized cannabis cultivation. Penalties include fines, license suspension/cancellation, equipment seizure, and criminal prosecution for serious breaches. Whistleblower provisions protect employees reporting violations.</li><li><strong>Public Safety (ss 505–550):</strong> Establishes requirements for venue security, surveillance systems, staff training, and incident reporting. Venues must implement measures to prevent underage access, intoxication, and disorder. AGLC may impose additional conditions on licenses to address community concerns.</li></ul><p>AGLC administers the Act and maintains the online registry of licensed gaming, liquor, and cannabis establishments, which is publicly searchable.</p>",
+      "sections": [
+        {
+          "ref": "ss 385–450",
+          "title": "Licensing and Compliance",
+          "description": "Establishes the application, approval, renewal, and compliance requirements for all gaming, liquor, and cannabis licenses issued by Alberta Gaming, Liquor and Cannabis (AGLC). Includes conditions, record-keeping obligations, and inspections.",
+          "anchor_id": "sec-glca-licensing",
+          "services": [
+            {
+              "name": "Apply for or renew a gaming, liquor, or cannabis licence",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 1,
+              "ms_name": "Access gaming, liquor, or cannabis licences and information"
+            }
+          ]
+        },
+        {
+          "ref": "ss 455–550",
+          "title": "Enforcement and Public Safety",
+          "description": "Prescribes offences for unauthorized gaming/liquor/cannabis operations, serving violations, and non-compliance with license conditions. Establishes venue security and safety requirements, compliance inspection authority, and penalties including fines and license revocation.",
+          "anchor_id": "sec-glca-enforcement",
+          "services": [
+            {
+              "name": "Report a concern about a licensed establishment",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 1,
+              "ms_name": "Access gaming, liquor, or cannabis licences and information"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "UPPVPA",
+      "full_name": "Unclaimed Personal Property and Vested Property Act",
+      "color": "#c62828",
+      "citation": "SA 2007, c U-1.5",
+      "summary": "Establishes a registry and claims process for unclaimed property held by financial institutions, governments, and other custodians in Alberta. Enables owners and their heirs to locate and recover unclaimed deposits, balances, and other property.",
+      "full_text": "<h3>Unclaimed Personal Property and Vested Property Act</h3><p><strong>Citation:</strong> SA 2007, c U-1.5</p><p>The Unclaimed Personal Property and Vested Property Act provides a statutory framework for the custody, safekeeping, and return of unclaimed property to its rightful owners or heirs. It establishes the Unclaimed Property Registry, defines classes of property covered, and prescribes procedures for claiming and recovering property.</p><h4>Key Provisions</h4><ul><li><strong>Scope and Definitions (ss 1–15):</strong> Applies to unclaimed personal property held by financial institutions (bank accounts, savings balances, safety deposit boxes), insurance companies (unpaid claims, policy proceeds), government agencies (tax refunds, overpayments), and other custodians. 'Unclaimed property' means property for which no activity has occurred (deposits, withdrawals, claims) for a prescribed period (typically three to seven years depending on property type). 'Owner' includes the account holder or heir.</li><li><strong>Reporting and Registration (ss 20–50):</strong> Custodians holding unclaimed property must report it to the Minister (Treasury Board and Finance) within prescribed timeframes. Reports must include the owner's name, last known address, property description, and amount. The Minister registers the property in the Unclaimed Property Registry, a publicly searchable database maintained online. Notice is published in newspapers and online alerting owners and heirs of unclaimed property.</li><li><strong>Custody and Safekeeping (ss 55–75):</strong> Unclaimed property is held in trust by the Crown pending claim or transfer to the owner or their heirs. For monetary property, funds are held in a consolidation account; for other property, original custodians remain responsible. Property is preserved and protected from loss or damage.</li><li><strong>Claims Process (ss 80–110):</strong> Owners or heirs may claim unclaimed property by submitting an application to the Minister with proof of ownership (documentation, death certificate, inheritance documents, etc.). The Minister investigates claims, verifies ownership, and releases property upon satisfaction of conditions. Proof of ownership standards vary by property type but must establish valid claim. Unclaimed property may be claimed indefinitely; no statute of limitations applies.</li><li><strong>Transfer to Crown and Use (ss 115–130):</strong> Unclaimed property unclaimed after prescribed periods may, by regulation, be transferred to the Crown for use as general revenue, with exceptions for valuable items. Prior to transfer, extensive publication and notice efforts must occur. Owners and heirs retain rights to claim transferred property.</li><li><strong>Administration and Enforcement (ss 135–150):</strong> The Minister administers the Act and maintains the registry. Custodians failing to report unclaimed property are subject to penalties and enforcement action. Misleading claims are subject to criminal penalties. Regulations may prescribe reporting forms, procedures, and property classes.</li></ul><p>The Unclaimed Property Registry is searchable online and maintained by the Department of Treasury Board and Finance in collaboration with custodian institutions.</p>",
+      "sections": [
+        {
+          "ref": "ss 20–110",
+          "title": "Unclaimed Property Registry and Claims",
+          "description": "Establishes the Unclaimed Property Registry, reporting requirements for custodians, public notification procedures, and claim processes enabling owners and heirs to recover unclaimed deposits, balances, insurance proceeds, and other property.",
+          "anchor_id": "sec-uppvpa-registry",
+          "services": [
+            {
+              "name": "Search for and claim unclaimed property",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 2,
+              "ms_name": "Claim unclaimed property or access fiscal information"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 6,
+    "sections_count": 7,
+    "services_with_leg_count": 8,
+    "services_multi_act_count": 0
+  }
+}

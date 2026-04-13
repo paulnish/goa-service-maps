@@ -1,0 +1,598 @@
+{
+  "prefix": "edu",
+  "name": "Education and Childcare",
+  "short_name": "Education & Childcare",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "Student success",
+      "legend_label": "Student success",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Choose how your child learns"
+        },
+        {
+          "number": 2,
+          "name": "Take provincial exams and tests"
+        },
+        {
+          "number": 3,
+          "name": "Enrol and support your child in school"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#548235",
+      "short_name": "FNMI student success",
+      "legend_label": "FNMI student success",
+      "main_services": []
+    },
+    {
+      "number": 3,
+      "color": "#bf8f00",
+      "short_name": "Career & learning pathways",
+      "legend_label": "Career & learning pathways",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Explore careers and earn workplace credentials"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#7030a0",
+      "short_name": "System & workforce management",
+      "legend_label": "System & workforce management",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get certified as a teacher"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "color": "#c00000",
+      "short_name": "Childcare",
+      "legend_label": "Childcare",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Find and afford child care"
+        },
+        {
+          "number": 2,
+          "name": "Get your child assessed and supported early"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "EA",
+      "full_name": "Education Act",
+      "color": "#0070c0",
+      "citation": "SA 2012, c E-0.3",
+      "summary": "The primary legislation governing Alberta's K-12 education system. Establishes the right of access to education, the framework for programs of study, school governance, teacher qualifications, and education finance. Came into force September 1, 2019.",
+      "sections": [
+        {
+          "ref": "s.3",
+          "title": "Right of Access to Education",
+          "description": "Entitles every person aged 6-18 who is an Alberta resident to access an education program, establishing the foundational legal right to K-12 education.",
+          "anchor_id": "EA-s3",
+          "services": [
+            {
+              "name": "Enrol your child in school",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 3,
+              "ms_name": "Enrol and support your child in school"
+            },
+            {
+              "name": "Get specialized learning support for your child",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 3,
+              "ms_name": "Enrol and support your child in school"
+            }
+          ]
+        },
+        {
+          "ref": "s.7",
+          "title": "Compulsory Education",
+          "description": "Requires every child aged 6 to under 17 to attend school, establishing the legal basis for compulsory enrolment in Alberta's education system.",
+          "anchor_id": "EA-s7",
+          "services": [
+            {
+              "name": "Enrol your child in school",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 3,
+              "ms_name": "Enrol and support your child in school"
+            }
+          ]
+        },
+        {
+          "ref": "s.10",
+          "title": "Enrolment in School Operated by Board",
+          "description": "Establishes that a resident student is entitled to be enrolled in a school operated by the board of the school division in which the student resides.",
+          "anchor_id": "EA-s10",
+          "services": [
+            {
+              "name": "Enrol your child in school",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 3,
+              "ms_name": "Enrol and support your child in school"
+            }
+          ]
+        },
+        {
+          "ref": "s.14",
+          "title": "Francophone Education",
+          "description": "Establishes the right to receive school instruction in French for individuals who have rights under section 23 of the Canadian Charter of Rights and Freedoms.",
+          "anchor_id": "EA-s14",
+          "services": [
+            {
+              "name": "Enrol your child in school",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 3,
+              "ms_name": "Enrol and support your child in school"
+            }
+          ]
+        },
+        {
+          "ref": "s.18",
+          "title": "Courses, Programs of Study",
+          "description": "Authorizes the Minister to approve courses, programs of study, and instructional materials for use in schools, establishing the framework for provincial curriculum and assessment.",
+          "anchor_id": "EA-s18",
+          "services": [
+            {
+              "name": "Find curriculum resources and programs of study",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Choose how your child learns"
+            },
+            {
+              "name": "Explore career and technology studies (CTS)",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#bf8f00",
+              "ms_number": 1,
+              "ms_name": "Explore careers and earn workplace credentials"
+            },
+            {
+              "name": "Earn dual credit (high school + post-secondary)",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#bf8f00",
+              "ms_number": 1,
+              "ms_name": "Explore careers and earn workplace credentials"
+            },
+            {
+              "name": "Find curriculum resources and programs of study",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Choose how your child learns"
+            },
+            {
+              "name": "Prepare for and write Provincial Achievement Tests",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Take provincial exams and tests"
+            },
+            {
+              "name": "Prepare for and write diploma exams",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Take provincial exams and tests"
+            },
+            {
+              "name": "Check assessment results and school performance data",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Take provincial exams and tests"
+            },
+            {
+              "name": "Develop and implement curriculum",
+              "type": "foundational",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Choose how your child learns"
+            }
+          ]
+        },
+        {
+          "ref": "s.19",
+          "title": "Alternative Programs",
+          "description": "Allows school boards to offer alternative programs that emphasize a particular language, culture, religion, or subject-matter or use a particular teaching philosophy.",
+          "anchor_id": "EA-s19",
+          "services": [
+            {
+              "name": "Enrol your child in school",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 3,
+              "ms_name": "Enrol and support your child in school"
+            },
+            {
+              "name": "Enrol in distance or online learning (K-12)",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Choose how your child learns"
+            }
+          ]
+        },
+        {
+          "ref": "s.20",
+          "title": "Home Education Programs",
+          "description": "Permits parents to provide home education programs for their children, subject to notification and supervision requirements through a school board.",
+          "anchor_id": "EA-s20",
+          "services": [
+            {
+              "name": "Register for home education",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Choose how your child learns"
+            }
+          ]
+        },
+        {
+          "ref": "s.21",
+          "title": "Early Childhood Services Programs",
+          "description": "Authorizes school boards and other operators to provide early childhood services programs (ECS/kindergarten) for children younger than 6 years of age.",
+          "anchor_id": "EA-s21",
+          "services": [
+            {
+              "name": "Enrol your child in school",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 3,
+              "ms_name": "Enrol and support your child in school"
+            }
+          ]
+        },
+        {
+          "ref": "s.22",
+          "title": "Off-Campus Education Programs",
+          "description": "Authorizes school boards to offer off-campus education programs including work experience, the Registered Apprenticeship Program (RAP), and green certificate programs.",
+          "anchor_id": "EA-s22",
+          "services": [
+            {
+              "name": "Earn credits through work experience or RAP",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#bf8f00",
+              "ms_number": 1,
+              "ms_name": "Explore careers and earn workplace credentials"
+            }
+          ]
+        },
+        {
+          "ref": "s.24–28",
+          "title": "Charter Schools",
+          "description": "Governs the application, establishment, operation, and oversight of charter schools in Alberta.",
+          "anchor_id": "EA-s24",
+          "services": [
+            {
+              "name": "Enrol your child in school",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 3,
+              "ms_name": "Enrol and support your child in school"
+            }
+          ]
+        },
+        {
+          "ref": "s.28.1–30",
+          "title": "Independent Schools",
+          "description": "Governs the recognition, registration, and operation of independent schools, including accredited funded and registered unfunded categories.",
+          "anchor_id": "EA-s28.1",
+          "services": [
+            {
+              "name": "Enrol your child in school",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 3,
+              "ms_name": "Enrol and support your child in school"
+            }
+          ]
+        },
+        {
+          "ref": "s.33",
+          "title": "Board Responsibilities",
+          "description": "Sets out the responsibilities of school boards including providing education programs, ensuring students with special needs receive appropriate support, and maintaining safe and caring school environments.",
+          "anchor_id": "EA-s33",
+          "services": [
+            {
+              "name": "Get specialized learning support for your child",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 3,
+              "ms_name": "Enrol and support your child in school"
+            },
+            {
+              "name": "Get school mental health support",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 3,
+              "ms_name": "Enrol and support your child in school"
+            }
+          ]
+        },
+        {
+          "ref": "s.55",
+          "title": "School Council",
+          "description": "Requires every school to have a school council composed of parents, the principal, teachers, and community members to advise the principal and board on school matters.",
+          "anchor_id": "EA-s55",
+          "services": [
+            {
+              "name": "Join your school council",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 3,
+              "ms_name": "Enrol and support your child in school"
+            }
+          ]
+        },
+        {
+          "ref": "s.59",
+          "title": "Transportation",
+          "description": "Requires school boards to provide transportation for students, with distance thresholds and eligibility criteria set by regulation.",
+          "anchor_id": "EA-s59",
+          "services": [
+            {
+              "name": "Arrange student transportation",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 3,
+              "ms_name": "Enrol and support your child in school"
+            }
+          ]
+        },
+        {
+          "ref": "Part 6, Div 4",
+          "title": "Alberta School Foundation Fund",
+          "description": "Establishes the Alberta School Foundation Fund and the framework for education property tax requisitions and payments to boards, forming the financial basis of the public education system.",
+          "anchor_id": "EA-part6-div4",
+          "services": [
+            {
+              "name": "Fund and oversee school authorities",
+              "type": "foundational",
+              "goal_number": null,
+              "goal_color": null,
+              "ms_number": null,
+              "ms_name": null
+            }
+          ]
+        },
+        {
+          "ref": "Part 7, s.195.1–201",
+          "title": "Education Professions — Teacher Qualifications",
+          "description": "Establishes the Registrar, teacher qualification requirements, and the regulation-making authority for teaching certificates. The Minister, through the Registrar, issues certificates required to teach in Alberta.",
+          "anchor_id": "EA-part7",
+          "services": [
+            {
+              "name": "Apply for teacher certification",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#7030a0",
+              "ms_number": 1,
+              "ms_name": "Get certified as a teacher"
+            },
+            {
+              "name": "Transfer teaching credentials from another jurisdiction",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#7030a0",
+              "ms_number": 1,
+              "ms_name": "Get certified as a teacher"
+            }
+          ]
+        },
+        {
+          "ref": "Part 7, Div 3.1",
+          "title": "Discipline of Teachers and Teacher Leaders",
+          "description": "Establishes the professional conduct and competency framework for teachers and teacher leaders, including the Alberta Teaching Profession Commissioner and complaint, investigation, and hearing processes.",
+          "anchor_id": "EA-part7-div3.1",
+          "services": [
+            {
+              "name": "Apply for teacher certification",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#7030a0",
+              "ms_number": 1,
+              "ms_name": "Get certified as a teacher"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "ELCCA",
+      "full_name": "Early Learning and Child Care Act",
+      "color": "#c00000",
+      "citation": "SA 2007, c E-0.1",
+      "summary": "Governs the licensing, operation, and oversight of child care programs in Alberta, including facility-based programs and family day homes. Establishes standards for the safety and well-being of children in licensed care and enforcement mechanisms for non-compliance.",
+      "sections": [
+        {
+          "ref": "Part 1, s.3–10",
+          "title": "Facility-Based Licences",
+          "description": "Requires child care programs serving more than 6 children to hold a facility-based licence. Sets out application, issuance, renewal, and conditions requirements, plus inspection and monitoring authority.",
+          "anchor_id": "ELCCA-part1",
+          "services": [
+            {
+              "name": "License and monitor child care programs",
+              "type": "foundational",
+              "goal_number": 5,
+              "goal_color": "#c00000",
+              "ms_number": 1,
+              "ms_name": "Find and afford child care"
+            },
+            {
+              "name": "Search for licensed child care",
+              "type": "supporting",
+              "goal_number": 5,
+              "goal_color": "#c00000",
+              "ms_number": 1,
+              "ms_name": "Find and afford child care"
+            }
+          ]
+        },
+        {
+          "ref": "Part 2, s.11–18",
+          "title": "Enforcement and Oversight",
+          "description": "Establishes the statutory director's enforcement authority over licensed facility-based programs, including non-compliance notices, licence variation, conditions, suspension, and cancellation.",
+          "anchor_id": "ELCCA-part2",
+          "services": [
+            {
+              "name": "License and monitor child care programs",
+              "type": "foundational",
+              "goal_number": 5,
+              "goal_color": "#c00000",
+              "ms_number": 1,
+              "ms_name": "Find and afford child care"
+            }
+          ]
+        },
+        {
+          "ref": "Part 2.1, s.18.1–18.923",
+          "title": "Family Day Home Programs and Agencies",
+          "description": "Governs the licensing of family day home agencies that coordinate and oversee approved family day homes providing child care in a private residence.",
+          "anchor_id": "ELCCA-part2.1",
+          "services": [
+            {
+              "name": "Search for licensed child care",
+              "type": "supporting",
+              "goal_number": 5,
+              "goal_color": "#c00000",
+              "ms_number": 1,
+              "ms_name": "Find and afford child care"
+            },
+            {
+              "name": "License and monitor child care programs",
+              "type": "foundational",
+              "goal_number": 5,
+              "goal_color": "#c00000",
+              "ms_number": 1,
+              "ms_name": "Find and afford child care"
+            }
+          ]
+        },
+        {
+          "ref": "s.27",
+          "title": "Regulations",
+          "description": "Authorizes the Minister to make regulations governing child care standards, subsidy eligibility, staff qualifications, and program requirements. Child care subsidies and inclusive child care standards are established through these regulations.",
+          "anchor_id": "ELCCA-s27",
+          "services": [
+            {
+              "name": "Apply for child care subsidies",
+              "type": "supporting",
+              "goal_number": 5,
+              "goal_color": "#c00000",
+              "ms_number": 1,
+              "ms_name": "Find and afford child care"
+            },
+            {
+              "name": "Find inclusive child care for a child with extra needs",
+              "type": "supporting",
+              "goal_number": 5,
+              "goal_color": "#c00000",
+              "ms_number": 1,
+              "ms_name": "Find and afford child care"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "STAEA",
+      "full_name": "Skilled Trades and Apprenticeship Education Act",
+      "color": "#bf8f00",
+      "citation": "SA 2021, c S-7.88",
+      "summary": "Replaces the former Apprenticeship and Industry Training Act. Governs apprenticeship education programs, industry training programs, and designated trades in Alberta. Relevant to Education and Childcare through the Registered Apprenticeship Program (RAP), which allows high school students to begin apprenticeship training while earning credits.",
+      "sections": [
+        {
+          "ref": "s.3",
+          "title": "Apprenticeship Education Programs",
+          "description": "Authorizes the Minister to establish apprenticeship education programs providing classroom and on-the-job instruction, engage post-secondary institutions, and issue credentials — the legislative basis for the Registered Apprenticeship Program (RAP) pathway for high school students.",
+          "anchor_id": "STAEA-s3",
+          "services": [
+            {
+              "name": "Earn credits through work experience or RAP",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#bf8f00",
+              "ms_number": 1,
+              "ms_name": "Explore careers and earn workplace credentials"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "TPA",
+      "full_name": "Teaching Profession Act",
+      "color": "#7030a0",
+      "citation": "RSA 2000, c T-2",
+      "summary": "Establishes The Alberta Teachers' Association (ATA) as the professional organization for teachers and governs compulsory membership requirements. Employment as a teacher by a school board is conditional on ATA membership. Teacher discipline provisions (formerly ss.16-61) were repealed in 2022 and moved to Education Act Part 7 Div 3.1.",
+      "sections": [
+        {
+          "ref": "s.4–5",
+          "title": "ATA Objects and Compulsory Membership",
+          "description": "Section 4 establishes the ATA's objects including advancing education and improving the teaching profession. Section 5 requires teachers employed by school boards to be active ATA members as a condition of employment.",
+          "anchor_id": "TPA-s4",
+          "services": [
+            {
+              "name": "Apply for teacher certification",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#7030a0",
+              "ms_number": 1,
+              "ms_name": "Get certified as a teacher"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 4,
+    "sections_count": 23,
+    "services_with_leg_count": 21,
+    "services_multi_act_count": 2
+  }
+}

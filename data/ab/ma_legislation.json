@@ -1,0 +1,237 @@
+{
+  "prefix": "ma",
+  "name": "Municipal Affairs",
+  "short_name": "Municipal Affairs",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "Municipal governance & property assessment",
+      "legend_label": "Municipal governance",
+      "main_services": [
+        {"number": 1, "name": "Participate in or understand municipal governance"},
+        {"number": 2, "name": "Understand or challenge your property assessment"}
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "short_name": "Safety codes & building standards",
+      "legend_label": "Safety codes",
+      "main_services": [
+        {"number": 1, "name": "Get a building, electrical, gas, plumbing, or fire permit"},
+        {"number": 2, "name": "Resolve a safety codes issue or get a new home warranty"}
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "short_name": "Community supports & disaster recovery",
+      "legend_label": "Community & recovery",
+      "main_services": [
+        {"number": 1, "name": "Access library services"},
+        {"number": 2, "name": "Get disaster recovery assistance"}
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "MGA",
+      "full_name": "Municipal Government Act",
+      "color": "#1565c0",
+      "citation": "RSA 2000, c M-26",
+      "summary": "Alberta's foundational municipal governance statute that establishes the legal framework for municipal creation, governance structures, elections, property assessment and taxation, land use planning, and accountability mechanisms. The MGA provides municipalities with powers and duties to serve their communities while ensuring public participation in local governance.",
+      "full_text": "<h3>Municipal Government Act</h3><p><strong>Citation:</strong> RSA 2000, c M-26</p><p>The Municipal Government Act is Alberta's principal statute governing municipal government. It establishes the legal framework for the creation and organization of municipal corporations, defines their powers and responsibilities, establishes procedures for municipal elections, establishes property assessment and taxation systems, governs land use planning and development decisions, and creates mechanisms for public participation and accountability in municipal governance.</p><h4>Key Provisions</h4><ul><li><strong>Part 1 — General:</strong> Defines fundamental terms and establishes that municipalities are bodies corporate with capacity to hold property, enter contracts, and sue or be sued. Specifies that municipalities serve their communities within defined geographic boundaries.</li><li><strong>Part 2 — Creation and Organization:</strong> Authorizes the creation of municipal corporations (counties, municipal districts, cities, towns, villages, and specialized municipalities) through Order in Council. Defines powers, duties, and structures for each municipal class, including council composition, term limits, and statutory duties.</li><li><strong>Part 3 — Elections:</strong> Establishes procedures for municipal elections including candidate nomination, voter eligibility, voting methods, ballot counting, election disputes, and results certification. Requires regular elections on fixed four-year cycles to ensure democratic participation and accountability.</li><li><strong>Part 4 — Property Assessment and Taxation:</strong> Creates the property assessment system, establishing that all taxable property must be assessed at fair and true value. Specifies assessment exemptions (government property, religious buildings, charitable institutions), assessment review procedures, and municipal tax levy authorities. Municipalities must establish assessment review boards to hear taxpayer appeals and complaints about assessments and taxes.</li><li><strong>Part 5 — Planning and Development:</strong> Grants municipalities authority to adopt statutory plans (municipal development plans, area structure plans) and land use bylaws governing land use, density, setbacks, parking, and other development controls. Creates procedures for public hearings, appeal boards, and development approval processes. Municipalities must consider public input and ensure development decisions are consistent with adopted plans.</li><li><strong>Part 6 — Municipal Finance:</strong> Governs municipal budgets, reserves, borrowing, and financial accountability. Municipalities must adopt annual budgets through public hearings and maintain transparent financial reporting. Debt limits and borrowing procedures are specified to protect municipal fiscal sustainability.</li></ul><p>The MGA provides the legislative foundation for democratic local government in Alberta, balancing municipal autonomy with provincial oversight and public accountability.</p>",
+      "sections": [
+        {
+          "ref": "Part 3",
+          "title": "Municipal Elections, Elections Administration, and Voting",
+          "description": "Governs the conduct of municipal elections, including candidate nomination, voter eligibility, polling procedures, ballot counting, and dispute resolution. Establishes fixed four-year election cycles and ensures democratic participation through accessible voting processes.",
+          "anchor_id": "sec-mga-p3",
+          "services": [
+            {
+              "name": "Find information about your municipality's finances and services",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Participate in or understand municipal governance"
+            },
+            {
+              "name": "Understand or participate in a municipal election",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Participate in or understand municipal governance"
+            }
+          ]
+        },
+        {
+          "ref": "Part 5",
+          "title": "Planning and Development",
+          "description": "Grants municipalities authority to adopt statutory plans and land use bylaws. Establishes procedures for public consultation, development approvals, and appeals. Ensures land use decisions are transparent, predictable, and consistent with community plans.",
+          "anchor_id": "sec-mga-p5",
+          "services": [
+            {
+              "name": "Appeal a municipal planning or development decision",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Participate in or understand municipal governance"
+            }
+          ]
+        },
+        {
+          "ref": "Part 4",
+          "title": "Property Assessment and Taxation",
+          "description": "Establishes the provincial property assessment system and municipal taxation framework. Specifies assessment principles (fair and true value), exemption categories, assessment review procedures, and municipal tax levy authorities. Requires assessment review boards to hear taxpayer appeals.",
+          "anchor_id": "sec-mga-p4",
+          "services": [
+            {
+              "name": "Look up your property assessment",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Understand or challenge your property assessment"
+            },
+            {
+              "name": "File a complaint about your property assessment",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Understand or challenge your property assessment"
+            }
+          ]
+        },
+        {
+          "ref": "Part 1-6 (Foundational)",
+          "title": "Municipal Governance Foundation",
+          "description": "Establishes the foundational framework for municipal governance, elections, property assessment, and accountability across Alberta's municipal system.",
+          "anchor_id": "sec-mga-found",
+          "services": [
+            {
+              "name": "Set standards for municipal governance, accountability, and property assessment",
+              "type": "foundational",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 0,
+              "ms_name": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "SCA",
+      "full_name": "Safety Codes Act",
+      "color": "#00695c",
+      "citation": "RSA 2000, c S-1",
+      "summary": "Governs Alberta's safety codes and building standards across ten technical disciplines: building, fire, electrical, plumbing, gas, pressure equipment, elevating devices, amusement devices, liquefied petroleum gas, and propane. Establishes permit requirements, inspection procedures, enforcement mechanisms, and accredited agencies to ensure public safety in the built environment.",
+      "full_text": "<h3>Safety Codes Act</h3><p><strong>Citation:</strong> RSA 2000, c S-1</p><p>The Safety Codes Act is Alberta's comprehensive statute governing building construction, fire safety, electrical, plumbing, gas, and related technical safety standards. It establishes safety code adoption procedures, permit and inspection requirements, enforcement mechanisms, and accredited agency systems to ensure that all buildings and installations meet minimum safety standards and protect public health and safety.</p><h4>Key Provisions</h4><ul><li><strong>Definitions and Structure (ss 1–5):</strong> Defines 'safety codes' across ten technical disciplines: building, fire, electrical, plumbing, gas, pressure equipment, elevators, amusement devices, liquefied petroleum gas, and propane. Establishes that the Minister of Safety may adopt and publish safety codes reflecting national or international standards.</li><li><strong>Code Adoption (ss 6–8):</strong> Authorizes the Minister to adopt safety codes through regulation, incorporating by reference national standards (National Building Code, National Fire Code, electrical codes, plumbing codes, gas codes). Codes establish minimum safety requirements for design, construction, installation, inspection, and maintenance of works in regulated disciplines.</li><li><strong>Permits and Applications (ss 9–15):</strong> Requires that no work subject to safety codes may commence without a permit. Applicants must submit plans and specifications demonstrating compliance with codes. The code official reviews applications, issues permits with conditions, and may refuse permits for non-compliant applications. Permits are issued for specific work at specific locations and may require performance security.</li><li><strong>Inspections and Approval (ss 16–25):</strong> Code officials conduct inspections at construction stages (rough-ins, finals) and may require remedial work if non-compliance is found. Work must be inspected and approved before being covered or put into service. Inspectors have authority to enter premises, examine work, and issue compliance orders. Approved work receives a certificate of compliance demonstrating conformity with codes.</li><li><strong>Accredited Agencies (ss 26–35):</strong> Establishes a system of private accredited agencies that may perform code administration (permits, inspections, approvals) on behalf of municipalities or the Crown. Agencies must meet competency standards, maintain liability insurance, and follow code administration procedures. The Minister maintains accreditation standards and may revoke accreditation for non-compliance.</li><li><strong>Enforcement and Appeals (ss 36–45):</strong> Code officials may issue compliance orders requiring dangerous work to be stopped or non-compliant work to be remedied. Disputes over code interpretations or enforcement actions may be appealed to a Director or Code Official Review Board. The Act provides statutory remedies for denial of permits or issuance of orders.</li><li><strong>Offences (ss 46–50):</strong> Creates offences for conducting code work without permits, failing to comply with inspections or compliance orders, and misrepresenting qualifications. Penalties include fines and imprisonment proportionate to the severity of violations.</li></ul><p>The Safety Codes Act, together with adopted codes and regulations, establishes Alberta's framework for ensuring that buildings, electrical systems, plumbing, gas systems, and related installations are designed, constructed, and maintained to protect public safety.</p>",
+      "sections": [
+        {
+          "ref": "ss 9–25",
+          "title": "Safety Codes Administration, Permits, and Appeals",
+          "description": "Establishes permit requirements, inspection procedures, code official authority, and appeal mechanisms for safety codes compliance. Governs the administration of building, fire, electrical, plumbing, gas, and other technical safety codes across Alberta.",
+          "anchor_id": "sec-sca-s9",
+          "services": [
+            {
+              "name": "Apply for a construction or renovation permit",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 1,
+              "ms_name": "Get a building, electrical, gas, plumbing, or fire permit"
+            },
+            {
+              "name": "Appeal a safety codes decision or order",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 2,
+              "ms_name": "Resolve a safety codes issue or get a new home warranty"
+            }
+          ]
+        },
+        {
+          "ref": "ss 1-50 (Foundational)",
+          "title": "Safety Codes Framework",
+          "description": "Establishes Alberta's comprehensive safety codes system governing building, fire, electrical, plumbing, gas, and related technical safety standards to protect public health and safety.",
+          "anchor_id": "sec-sca-found",
+          "services": [
+            {
+              "name": "Develop and administer safety codes and building standards",
+              "type": "foundational",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 0,
+              "ms_name": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "NHBPLA",
+      "full_name": "New Home Buyer Protection Act",
+      "color": "#00695c",
+      "citation": "SA 2012, c N-3.2",
+      "summary": "Protects Alberta homebuyers by requiring mandatory warranty coverage for new residential homes. Establishes standards for warranty programs, coverage requirements, claim procedures, and dispute resolution mechanisms to ensure recourse for construction defects discovered during warranty periods.",
+      "full_text": "<h3>New Home Buyer Protection Act</h3><p><strong>Citation:</strong> SA 2012, c N-3.2</p><p>The New Home Buyer Protection Act was enacted to ensure that all new residential homes in Alberta are covered by mandatory warranty protection, providing homebuyers with recourse for construction defects and deficiencies. The Act establishes minimum warranty standards, coverage periods, claim procedures, and dispute resolution mechanisms that protect consumer interests in new home purchases.</p><h4>Key Provisions</h4><ul><li><strong>Scope and Application (ss 1–3):</strong> Applies to all residential homes newly constructed and sold in Alberta. 'Residential home' includes single-family dwellings, townhouses, condominiums, and similar properties. The Act protects the original purchaser and subsequent owners during applicable warranty periods, ensuring all homes are covered by a recognized warranty program.</li><li><strong>Warranty Program Requirements (ss 4–12):</strong> Establishes minimum standards for approved warranty programs. Programs must provide statutory coverage for structural defects, significant deficiencies in workmanship, and material defects during specified warranty periods (typically 1-2 years for non-structural defects, 2-5 years for structural defects, and 7-10 years for major structural elements). Warranty providers must be approved by the Registrar and maintain adequate reserves and insurance to fulfill claims.</li><li><strong>Coverage Obligations (ss 13–20):</strong> Specifies that warranty providers must cover defined categories of defects, including deficiencies in workmanship or materials, failures to comply with applicable building codes, and structural defects. The Act defines exclusions and limitations proportionate to coverage categories and periods.</li><li><strong>Claim Procedures (ss 21–28):</strong> Establishes procedures for homebuyers to file warranty claims, requiring notice to the builder and warranty provider. Claims must be made within applicable limitation periods. Warranty providers must acknowledge claims, investigate defects, and either repair, replace, or provide compensation within specified timeframes.</li><li><strong>Dispute Resolution (ss 29–35):</strong> Requires that warranty programs include alternative dispute resolution procedures. If the warranty provider denies a claim or disputes the scope of coverage, the homebuyer may escalate through the program's dispute process or seek independent arbitration or mediation to resolve disagreements.</li></ul><p>The New Home Buyer Protection Act ensures that Alberta homebuyers have access to standardized warranty coverage and recourse procedures, providing consumer protection and market confidence in new residential construction.</p>",
+      "sections": [
+        {
+          "ref": "ss 1–35",
+          "title": "New Home Warranty Requirements",
+          "description": "Establishes mandatory warranty coverage for new residential homes, including coverage standards, claim procedures, dispute resolution mechanisms, and enforcement mechanisms to protect homebuyer interests.",
+          "anchor_id": "sec-nhbpla-s1",
+          "services": [
+            {
+              "name": "File a claim under the new home warranty program",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 2,
+              "ms_name": "Resolve a safety codes issue or get a new home warranty"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "LA",
+      "full_name": "Libraries Act",
+      "color": "#c62828",
+      "citation": "RSA 2000, c L-11",
+      "summary": "Provides the legislative framework for public library services in Alberta. Authorizes municipalities and library boards to establish and operate public libraries, establishes minimum service standards, governs library governance and financing, and ensures access to library services and materials for all Albertans.",
+      "full_text": "<h3>Libraries Act</h3><p><strong>Citation:</strong> RSA 2000, c L-11</p><p>The Libraries Act is Alberta's principal statute establishing the framework for public library services. It authorizes municipalities and regional library authorities to establish public libraries, defines the governance structures and powers of library boards, establishes funding requirements, and ensures access to public library services as a community resource across the province.</p><h4>Key Provisions</h4><ul><li><strong>Library Authority and Governance (ss 1–12):</strong> Authorizes councils of municipalities to establish and operate public libraries. Library boards may be established to govern libraries on behalf of municipalities or may be created as regional authorities serving multiple municipalities. Boards are responsible for library policy, operations, staffing, and service delivery within their jurisdiction.</li><li><strong>Powers and Duties (ss 13–20):</strong> Grants library boards broad authority to acquire, maintain, and provide access to books, materials, and information resources. Libraries may provide reference services, programming, technology access, and community learning opportunities. Boards may charge fees for certain services but must ensure core library services remain free or accessible to all residents.</li><li><strong>Library Services (ss 21–28):</strong> Establishes that public libraries are community institutions providing equitable access to information, literacy support, technology, and cultural resources. Services must be available to residents within library service areas. Libraries may cooperate through systems and networks to provide interlibrary loans and expanded collections.</li><li><strong>Funding and Finance (ss 29–35):</strong> Requires municipalities to provide adequate funding to establish and maintain public libraries. The province may provide provincial grants to support library operations. Library boards must adopt budgets, maintain financial records, and account for fund usage transparently. Funding ensures library service stability and quality across the province.</li><li><strong>Accountability and Standards (ss 36–40):</strong> Library boards must report to their establishing municipalities on library operations, usage, and outcomes. The Minister of Culture may establish library standards and guidelines for service delivery, collection development, and accessibility. Libraries must serve all community members equitably.</li></ul><p>The Libraries Act establishes public libraries as essential community institutions in Alberta, ensuring access to information, literacy services, technology, and cultural resources for all residents.</p>",
+      "sections": [
+        {
+          "ref": "ss 1–40",
+          "title": "Public Library Services",
+          "description": "Establishes the framework for public library services, library board governance, municipal funding obligations, and access to library resources and programs across Alberta.",
+          "anchor_id": "sec-la-s1",
+          "services": [
+            {
+              "name": "Find a public library near you",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 1,
+              "ms_name": "Access library services"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 4,
+    "sections_count": 8,
+    "services_with_leg_count": 11,
+    "services_multi_act_count": 0
+  }
+}

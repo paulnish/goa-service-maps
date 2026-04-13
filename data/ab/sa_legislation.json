@@ -1,0 +1,275 @@
+{
+  "prefix": "sa",
+  "name": "Service Alberta and Red Tape Reduction",
+  "short_name": "Service Alberta & Red Tape Reduction",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "Registry and identity services",
+      "legend_label": "Registry & identity",
+      "main_services": [
+        {"number": 1, "name": "Get vital records and documents"},
+        {"number": 2, "name": "Get a driver's licence or register a vehicle"},
+        {"number": 3, "name": "Access registry services for businesses and personal property"}
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "short_name": "Consumer protection",
+      "legend_label": "Consumer protection",
+      "main_services": [
+        {"number": 1, "name": "File a consumer complaint or learn about your rights"},
+        {"number": 2, "name": "Resolve a condominium dispute"}
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "short_name": "Service accessibility & red tape reduction",
+      "legend_label": "Access & red tape",
+      "main_services": [
+        {"number": 1, "name": "Access government information and privacy rights"}
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "VSA",
+      "full_name": "Vital Statistics Act",
+      "color": "#1565c0",
+      "citation": "RSA 2000, c V-4.1",
+      "summary": "Establishes the legal framework for registration of births, deaths, and marriages in Alberta. Requires timely registration of vital events, defines who can register events, establishes procedures for obtaining certificates, and creates the vital statistics registry as a foundational record of population events.",
+      "full_text": "<h3>Vital Statistics Act</h3><p><strong>Citation:</strong> RSA 2000, c V-4.1</p><p>The Vital Statistics Act is Alberta's principal legislation governing the registration and certification of vital events — births, deaths, and marriages. It establishes a comprehensive system for recording these fundamental life events, ensuring accurate identity documents, and maintaining a provincial registry of vital statistics.</p><h4>Key Provisions</h4><ul><li><strong>Registration of Births (ss 1–15):</strong> Every birth in Alberta must be registered with the Vital Statistics Registry within 30 days of occurrence. Parents or guardians must provide required information including names, dates, and places. Birth certificates serve as foundational identity documents for school enrolment, passport applications, and access to government services.</li><li><strong>Registration of Deaths (ss 16–30):</strong> Every death must be registered within a specified timeframe. Next of kin, executors, and legal representatives can obtain death certificates for estate administration, insurance claims, pension benefits, and legal proceedings. The Act establishes procedures for reporting deaths and issuing certificates.</li><li><strong>Registration of Marriages (ss 31–40):</strong> The Act defines the marriage registration process and who may register. Marriage certificates are required for legal recognition of marriage and are needed for spousal benefits, property rights, and name change documentation.</li><li><strong>Correction and Amendment (ss 41–50):</strong> Procedures exist for correcting errors in vital records. The Registry may amend records upon presentation of evidence, court orders, or ministerial authority. Complex corrections may require court approval.</li><li><strong>Certificate Issuance (ss 51–65):</strong> The Registry issues certified copies of vital records upon request. Certificates may be issued in various formats and contain different levels of information for different purposes. Fees are set by regulation.</li><li><strong>Vital Statistics Registry (ss 66–75):</strong> Establishes a centralized provincial registry administered by the Director of Vital Statistics. The registry is the official record of all vital events in Alberta and serves as the source document for all certificates and statistical reporting.</li><li><strong>Offences and Enforcement (ss 76–85):</strong> Creates offences for false registration, concealing vital events, and issuing unauthorized certificates. Penalties include fines and imprisonment. The Director has authority to investigate and enforce compliance.</li></ul><p>The Act is administered by Service Alberta as part of the broader registry system serving Albertans' identity and legal documentation needs.</p>",
+      "sections": [
+        {
+          "ref": "ss 1–15",
+          "title": "Registration of Vital Events",
+          "description": "Establishes procedures for registering births, deaths, and marriages in the provincial Vital Statistics Registry. Requires timely registration, defines who may register events, and creates the foundational requirements for obtaining vital records certificates.",
+          "anchor_id": "sec-vsa-vital-events",
+          "services": [
+            {
+              "name": "Register a birth or get a birth certificate",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Get vital records and documents"
+            },
+            {
+              "name": "Get a death certificate",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Get vital records and documents"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "MA",
+      "full_name": "Marriage Act",
+      "color": "#1565c0",
+      "citation": "RSA 2000, c M-5",
+      "summary": "Governs marriage registration and licensing in Alberta. Establishes who may marry, defines the role of marriage commissioners and other officials, requires marriage registration for legal recognition, and provides procedures for obtaining marriage certificates.",
+      "full_text": "<h3>Marriage Act</h3><p><strong>Citation:</strong> RSA 2000, c M-5</p><p>The Marriage Act establishes the legal framework for solemnizing marriages in Alberta and registering them in the provincial Vital Statistics Registry. It defines eligibility for marriage, authorizes officials to solemnize marriages, and creates procedures for registration and certification of marital status.</p><h4>Key Provisions</h4><ul><li><strong>Eligibility for Marriage (ss 1–10):</strong> Defines who may marry in Alberta, including age requirements, consent provisions, and restrictions. Persons must be of lawful age and not already married. The Act establishes processes for obtaining consent where required and defines prohibited relationships.</li><li><strong>Marriage Commissioners and Authorized Officials (ss 11–25):</strong> Authorizes marriage commissioners, clergy, and other designated officials to solemnize marriages. Sets qualifications for commissioners, establishes appointment procedures, and defines the legal authority of different solemnizers to perform valid marriages.</li><li><strong>Marriage Registration and Licensing (ss 26–40):</strong> Requires that all marriages be registered with the Vital Statistics Registry. The couple or solemnizer must provide required information including names, dates of birth, places of marriage, and consent documentation. Registration creates the legal record of marriage.</li><li><strong>Marriage Certificates (ss 41–55):</strong> Establishes procedures for issuing marriage certificates as proof of legal marriage. Certificates are required for spousal benefits, property rights, name changes, and legal proceedings. The Registry issues certified copies upon request with appropriate fees.</li><li><strong>Amendments and Corrections (ss 56–65):</strong> Provides procedures for correcting errors in marriage records. The Registry may amend records upon presentation of evidence or court orders to correct names, dates, or other information.</li><li><strong>Offences and Enforcement (ss 66–75):</strong> Creates offences for solemnizing invalid marriages, false registration, and unauthorized issuance of certificates. Penalties include fines and imprisonment.</li></ul><p>The Act is part of Alberta's vital statistics framework administered by Service Alberta to provide Albertans with secure access to marriage documentation and legal recognition of marital status.</p>",
+      "sections": [
+        {
+          "ref": "ss 26–40",
+          "title": "Marriage Registration and Licensing",
+          "description": "Establishes the marriage registration process, defines who must register marriages, requires timely submission of marriage information to the Vital Statistics Registry, and creates the legal record of marriage for all Alberta couples.",
+          "anchor_id": "sec-ma-registration",
+          "services": [
+            {
+              "name": "Get a marriage certificate or register a marriage",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Get vital records and documents"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "TSA",
+      "full_name": "Traffic Safety Act",
+      "color": "#1565c0",
+      "citation": "RSA 2000, c T-6",
+      "summary": "Governs driver licensing, vehicle registration, and traffic safety in Alberta. Establishes licensing classes and requirements, defines rules for vehicle operation, creates the framework for vehicle registration and insurance requirements, and provides enforcement mechanisms for traffic safety.",
+      "full_text": "<h3>Traffic Safety Act</h3><p><strong>Citation:</strong> RSA 2000, c T-6</p><p>The Traffic Safety Act is Alberta's comprehensive legislation governing driver licensing, vehicle registration, insurance requirements, and rules of the road. It establishes a graduated licensing system, defines vehicle registration categories, and creates enforcement mechanisms for traffic safety and road rules.</p><h4>Key Provisions</h4><ul><li><strong>Driver Licensing System (ss 1–50):</strong> Establishes Alberta's graduated driver licensing system with learner's permits, provisional licenses, and full licenses. Each class authorizes operation of specific vehicle types. Applicants must meet age, knowledge, and skill requirements. The Registry administers written tests, driving tests, and license issuance. Licenses must be renewed periodically and may be suspended for violations or demerit points.</li><li><strong>Classes of Licenses (ss 51–75):</strong> Defines different license classes (Class 1–7) for different vehicle types and purposes. Class 4 is for commercial vehicles; Class 5 is the standard passenger vehicle license. Restrictions apply based on age and experience. Applicants can upgrade to higher classes by meeting additional requirements.</li><li><strong>Vehicle Registration (ss 76–120):</strong> Requires all vehicles operated on Alberta roads to be registered. Vehicle owners must provide proof of ownership, insurance, and other required information. Registration includes vehicle identification number (VIN), make, model, and owner details. Registration plates and permits issued by the Registry identify registered vehicles on roads.</li><li><strong>Insurance Requirements (ss 121–140):</strong> Mandates that all vehicles have valid liability insurance before operation. Insurance requirements are enforced through vehicle registration — uninsured vehicles cannot be registered. The Act establishes minimum coverage limits for liability insurance.</li><li><strong>Rules of the Road and Traffic Violations (ss 141–200):</strong> Defines rules of the road including speed limits, right-of-way, parking, and equipment requirements. Violations are subject to fines, demerit points, and license suspensions. The Act establishes procedures for violation prosecution and the demerit point system.</li><li><strong>Enforcement and Inspections (ss 201–250):</strong> Authorizes traffic officers to stop vehicles, verify licenses and registration, conduct vehicle safety inspections, and enforce traffic laws. Peace officers may issue violation tickets and suspension notices.</li></ul><p>The Act is administered by Service Alberta's Registry system to ensure safe and legal vehicle operation across the province.</p>",
+      "sections": [
+        {
+          "ref": "ss 1–75",
+          "title": "Driver Licensing and Vehicle Registration",
+          "description": "Establishes the driver licensing system including graduated licensing classes, testing and renewal procedures, vehicle registration requirements, and the framework for authorizing individuals to operate different vehicle classes on Alberta roads.",
+          "anchor_id": "sec-tsa-licensing",
+          "services": [
+            {
+              "name": "Apply for or renew your driver's licence",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Get a driver's licence or register a vehicle"
+            },
+            {
+              "name": "Register or renew your vehicle registration",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Get a driver's licence or register a vehicle"
+            },
+            {
+              "name": "Get a learner's permit or upgrade your licence class",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Get a driver's licence or register a vehicle"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "BCA",
+      "full_name": "Business Corporations Act",
+      "color": "#1565c0",
+      "citation": "RSA 2000, c B-9",
+      "summary": "Establishes the legal framework for business incorporation in Alberta, including procedures for filing incorporation documents, governing corporate structure and operations, and registering business names. Enables entrepreneurs to register businesses as sole proprietorships, partnerships, or corporations.",
+      "full_text": "<h3>Business Corporations Act</h3><p><strong>Citation:</strong> RSA 2000, c B-9</p><p>The Business Corporations Act provides the primary legal framework for incorporating and governing business corporations in Alberta. It establishes procedures for filing articles of incorporation, managing corporate governance, and maintaining corporate records, enabling entrepreneurs to establish business entities with limited liability and separate legal status.</p><h4>Key Provisions</h4><ul><li><strong>Incorporation Process (ss 1–50):</strong> Permits any individual or group to incorporate a corporation by filing articles of incorporation with the Registry. Articles must include the corporation's name, class of shares, number of directors, and other specified information. Upon filing, the corporation receives a certificate of incorporation and becomes a separate legal entity.</li><li><strong>Corporate Name Registration (ss 51–100):</strong> Requires corporations to register a legal name that is distinguishable from other registered corporations. The Registry maintains a database of registered names. Corporations may register alternate operating names (DBA) through separate filings.</li><li><strong>Directors and Governance (ss 101–150):</strong> Establishes rules for directors including appointment, removal, duties, and liabilities. Corporations must have at least one director. Directors manage the corporation's business and are responsible for compliance with the Act and other laws.</li><li><strong>Shareholders and Share Ownership (ss 151–200):</strong> Defines shareholder rights including voting, dividend receipt, and information access. Corporations may issue different classes of shares. Shareholders elect directors and vote on major corporate decisions.</li><li><strong>Corporate Records and Filings (ss 201–250):</strong> Requires corporations to maintain registers of directors, shareholders, and shareholders, along with minutes of meetings. The Registry maintains corporate filings and makes certain records publicly available. Corporations must file annual renewal documents and reports.</li><li><strong>Amalgamation, Dissolution, and Continuation (ss 251–300):</strong> Establishes procedures for corporations to merge (amalgamate), voluntarily dissolve, or continue from other jurisdictions. Dissolution requires filing of documents and satisfaction of outstanding liabilities.</li><li><strong>Offences and Enforcement (ss 301–350):</strong> Creates offences for false statements in incorporation documents, unauthorized use of corporate names, and failure to comply with filing requirements. Penalties include fines and director liability.</li></ul><p>The Act is administered by Service Alberta's Registry to enable business formation and ensure corporate compliance and transparency across the province.</p>",
+      "sections": [
+        {
+          "ref": "ss 1–100",
+          "title": "Business and Corporate Registration",
+          "description": "Establishes the incorporation and business registration process, procedures for filing articles of incorporation and business names, corporate name registration requirements, and the creation of separate legal entities for business operations.",
+          "anchor_id": "sec-bca-registration",
+          "services": [
+            {
+              "name": "Register a business name or corporation in Alberta",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 3,
+              "ms_name": "Access registry services for businesses and personal property"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CPA",
+      "full_name": "Consumer Protection Act",
+      "color": "#00695c",
+      "citation": "RSA 2000, c C-26.3",
+      "summary": "Protects Alberta consumers from unfair marketplace practices, deceptive advertising, and non-compliant businesses. Establishes consumer rights, defines unfair trade practices, creates complaint and enforcement mechanisms, and empowers the government to investigate complaints and pursue legal action against violations.",
+      "full_text": "<h3>Consumer Protection Act</h3><p><strong>Citation:</strong> RSA 2000, c C-26.3</p><p>The Consumer Protection Act is Alberta's foundational consumer protection statute. It establishes substantive consumer rights, defines unfair marketplace practices, creates mechanisms for complaint resolution and enforcement, and empowers the government to protect Albertans from deceptive and unfair business conduct.</p><h4>Key Provisions</h4><ul><li><strong>Consumer Rights and Definitions (ss 1–30):</strong> Defines 'consumer,' 'merchant,' 'consumer transaction,' and 'unfair practice.' Establishes baseline consumer rights including the right to truthful information, fair dealing, and safe products. Recognizes vulnerability of certain consumer groups.</li><li><strong>Prohibited Unfair Practices (ss 31–75):</strong> Prohibits a broad range of unfair marketplace practices including deceptive advertising, false representations about product origin or quality, non-disclosure of material facts, bait-and-switch tactics, pyramid schemes, and pressure sales. Merchants cannot mislead consumers about price, availability, or terms.</li><li><strong>Product Safety and Recalls (ss 76–100):</strong> Establishes authority to remove unsafe products from the marketplace and order recalls. The Crown may issue orders preventing sale of products that pose safety risks to consumers. Merchants must comply with safety standards and product-specific regulations.</li><li><strong>Complaint Investigation and Enforcement (ss 101–150):</strong> Creates procedures for consumers to file complaints about unfair practices. The Director of Consumer Protection may investigate complaints, attempt informal resolution, and pursue formal enforcement action. Merchants may be ordered to cease unfair practices or provide consumer remedies.</li><li><strong>Court Remedies and Restitution (ss 151–180):</strong> Empowers courts to order restitution to affected consumers, issue injunctions against unfair practices, and award damages. Class action lawsuits are permitted for common unfair practices affecting multiple consumers.</li><li><strong>Offences and Penalties (ss 181–220):</strong> Creates offences for violating the Act or Director orders, false statements, and interference with investigations. Penalties include substantial fines and imprisonment for egregious violations. Directors and officers may be personally liable for corporate violations.</li><li><strong>Regulations and Standards (ss 221–250):</strong> Authorizes regulations establishing consumer protection standards for specific industries and transaction types, including travel, services, and digital transactions.</li></ul><p>The Act is administered by Service Alberta to protect consumer interests and ensure fair marketplace conduct across the province.</p>",
+      "sections": [
+        {
+          "ref": "ss 31–150",
+          "title": "Consumer Rights and Marketplace Rules",
+          "description": "Establishes substantive consumer rights, prohibits unfair and deceptive practices by merchants, creates complaint investigation procedures, and empowers enforcement actions to protect consumers from marketplace violations.",
+          "anchor_id": "sec-cpa-rights",
+          "services": [
+            {
+              "name": "File a complaint about a business or marketplace issue",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 1,
+              "ms_name": "File a consumer complaint or learn about your rights"
+            },
+            {
+              "name": "Check for consumer alerts and enforcement actions",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 1,
+              "ms_name": "File a consumer complaint or learn about your rights"
+            },
+            {
+              "name": "Develop consumer protection policy and enforce marketplace rules",
+              "type": "foundational",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 0,
+              "ms_name": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CndPA",
+      "full_name": "Condominium Property Act",
+      "color": "#00695c",
+      "citation": "RSA 2000, c C-22",
+      "summary": "Governs condominium ownership, governance, and dispute resolution in Alberta. Establishes condominium property rights, defines condo corporation roles and responsibilities, regulates bylaws and assessments, and creates mechanisms for resolving disputes between owners and corporations.",
+      "full_text": "<h3>Condominium Property Act</h3><p><strong>Citation:</strong> RSA 2000, c C-22</p><p>The Condominium Property Act establishes the legal framework for condominium ownership in Alberta. It defines condo property rights, establishes governance structures and responsibilities of condo corporations, regulates financial management including assessments and reserve funds, and creates mechanisms for resolving disputes between owners and the condo corporation.</p><h4>Key Provisions</h4><ul><li><strong>Condominium Definition and Registration (ss 1–25):</strong> Defines condominium property consisting of individual units and common property. Condo projects must be registered under the Act. Registration documents include property descriptions, common property details, unit designations, and ownership percentages.</li><li><strong>Unit Ownership and Rights (ss 26–50):</strong> Establishes individual unit ownership and exclusive possession rights. Unit owners have rights to occupy, lease, and dispose of units. Owners share responsibility for common property. Restrictions apply to alterations affecting common property or neighboring units.</li><li><strong>Condo Corporation Governance (ss 51–100):</strong> Establishes the condo corporation as the legal entity managing common property. Requires election of a board of directors representing unit owners. The board manages operations, maintains common property, collects assessments, and ensures compliance with bylaws and legislation.</li><li><strong>Bylaws and Rules (ss 101–150):</strong> Permits condo corporations to establish bylaws governing unit use, common property use, and behavioral expectations. Bylaws must comply with the Act and cannot discriminate. Violations may result in warnings, fines, or forced compliance orders.</li><li><strong>Financial Management (ss 151–200):</strong> Requires transparent financial management including budgets, reserve funds for major repairs, and regular assessments. Unit owners must pay special assessments for major repairs or improvements. Financial records must be available to owners. Improper financial management creates personal liability for board members.</li><li><strong>Dispute Resolution (ss 201–250):</strong> Establishes mechanisms for resolving disputes between owners and the corporation, between owners, or regarding shared property. The government provides mediation and adjudication services for disputes about assessments, bylaw violations, and governance issues.</li><li><strong>Enforcement and Remedies (ss 251–300):</strong> Creates offences for bylaw violations and grants courts power to order compliance or award damages. Condo corporations may seek court orders enforcing bylaws or collecting unpaid assessments. Owners may seek court remedies for improper governance.</li></ul><p>The Act is administered by Service Alberta to ensure fair condo governance and protect the interests of both individual owners and condo communities.</p>",
+      "sections": [
+        {
+          "ref": "ss 201–250",
+          "title": "Condominium Governance and Dispute Resolution",
+          "description": "Establishes procedures for resolving disputes between condo owners and corporations, regarding shared property maintenance, special assessments, bylaw violations, and governance issues through mediation and formal dispute resolution processes.",
+          "anchor_id": "sec-cndpa-disputes",
+          "services": [
+            {
+              "name": "File a condominium dispute for resolution",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00695c",
+              "ms_number": 2,
+              "ms_name": "Resolve a condominium dispute"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "FOIPPA",
+      "full_name": "Freedom of Information and Protection of Privacy Act",
+      "color": "#c62828",
+      "citation": "RSA 2000, c F-25",
+      "summary": "Establishes rights of access to government information and protections for personal privacy. Requires government to disclose public records upon request subject to specified exceptions, establishes privacy principles for government collection and use of personal information, and creates enforcement mechanisms for violations.",
+      "full_text": "<h3>Freedom of Information and Protection of Privacy Act</h3><p><strong>Citation:</strong> RSA 2000, c F-25</p><p>The Freedom of Information and Protection of Privacy Act is Alberta's transparency and privacy statute. It establishes a legal right for Albertans to access government records and information, requires government to protect personal privacy, defines exceptions to disclosure, and creates enforcement mechanisms for both rights. The Act balances public access with necessary privacy protections.</p><h4>Key Provisions</h4><ul><li><strong>Right of Access to Government Records (ss 1–50):</strong> Grants any person the right to request and obtain access to government records. Requests must be in writing and reasonably describe the records sought. Government must acknowledge requests within 15 days and provide records or explain denials. Costs for copying and processing may be charged to requesters.</li><li><strong>Exceptions to Disclosure (ss 51–120):</strong> Permits government to withhold records where disclosure would harm: cabinet confidentiality, law enforcement investigations, attorney-client privilege, trade secrets or commercial sensitivity, personal privacy of named individuals, or public safety. Exceptions must be applied narrowly and published justifications provided.</li><li><strong>Privacy Principles (ss 121–180):</strong> Establishes principles governing government collection, use, and disclosure of personal information. Government may only collect information necessary for its functions. Information must be used only for the original purpose absent consent. Personal information must be protected from unauthorized access and disclosure.</li><li><strong>Access to Personal Information (ss 181–220):</strong> Grants individuals the right to access their own personal information held by government. Individuals may request correction of inaccurate information and can request amendments if inaccuracies are not corrected. Government must provide copies of personal information records.</li><li><strong>Privacy Complaints and Investigations (ss 221–280):</strong> Establishes procedures for filing privacy complaints if individuals believe government has violated privacy protections. The Privacy Commissioner investigates complaints, can make recommendations, and may publish investigation reports. Serious violations may lead to orders for corrective action.</li><li><strong>Offences and Enforcement (ss 281–320):</strong> Creates offences for unauthorized access to personal information, selling confidential information, and violating privacy protections. Penalties include substantial fines and imprisonment. The Privacy Commissioner has broad investigative powers and can pursue violations.</li><li><strong>Regulations and Standards (ss 321–350):</strong> Authorizes regulations establishing procedures, exemptions, and standards for implementing the Act across government. Sets timelines, fees, and processes for access and privacy requests.</li></ul><p>The Act is administered by Service Alberta and the Office of the Privacy Commissioner to ensure government transparency and privacy protection for all Albertans.</p>",
+      "sections": [
+        {
+          "ref": "ss 1–50",
+          "title": "Access to Information and Privacy Protection",
+          "description": "Establishes the legal right to request and access government records, defines exceptions to disclosure for privacy and other sensitive interests, creates procedures for filing and responding to access requests, and establishes privacy protections for personal information held by government.",
+          "anchor_id": "sec-foippa-access",
+          "services": [
+            {
+              "name": "Submit a freedom of information request",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 1,
+              "ms_name": "Access government information and privacy rights"
+            },
+            {
+              "name": "File a privacy complaint",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 1,
+              "ms_name": "Access government information and privacy rights"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 7,
+    "sections_count": 7,
+    "services_with_leg_count": 11,
+    "services_multi_act_count": 0
+  }
+}

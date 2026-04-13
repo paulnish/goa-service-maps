@@ -1,0 +1,395 @@
+{
+  "prefix": "ag",
+  "name": "Agriculture and Irrigation",
+  "short_name": "Agriculture & Irrigation",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "Farm financial resilience",
+      "legend_label": "Financial resilience",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Protect crops and livestock with insurance"
+        },
+        {
+          "number": 2,
+          "name": "Stabilize farm income during hardship"
+        },
+        {
+          "number": 3,
+          "name": "Get financing for farm and agribusiness operations"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#c62828",
+      "short_name": "Safe & healthy agriculture",
+      "legend_label": "Safety & stewardship",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Keep livestock healthy and traceable"
+        },
+        {
+          "number": 2,
+          "name": "Ensure food is safe across the supply chain"
+        },
+        {
+          "number": 3,
+          "name": "Manage pests, diseases, and weeds on your land"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#00695c",
+      "short_name": "Agricultural growth & trade",
+      "legend_label": "Growth & trade",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Access agronomic information and decision tools"
+        },
+        {
+          "number": 2,
+          "name": "Develop markets and grow agricultural trade"
+        },
+        {
+          "number": 3,
+          "name": "Access irrigation and water management services"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "AFSA",
+      "full_name": "Agriculture Financial Services Act",
+      "color": "#1565c0",
+      "citation": "SA 1993, c A-12.5",
+      "summary": "Establishes Agriculture Financial Services Corporation (AFSC) and provides the legislative framework for crop insurance, livestock price insurance, farm lending, hail insurance, wildlife damage compensation, and income stabilization programs.",
+      "full_text": "<h2 id=\"sec-afsa-title\">Agriculture Financial Services Act</h2>\n<p><em>Chapter A-12.5 — SA 1993</em></p>\n\n<h3 id=\"sec-afsa-defs\">Definitions</h3>\n<p><strong>1</strong> In this Act,</p>\n<p>(a) \"Corporation\" means the Agriculture Financial Services Corporation;</p>\n<p>(b) \"director\" means a member of the board of directors of the Corporation;</p>\n<p>(d) \"minister\" means the Minister of Agriculture and Irrigation;</p>\n<p>(e) \"producer\" means a person engaged in agricultural production.</p>\n\n<h3 id=\"sec-afsa-corp\">Establishment of Corporation</h3>\n<p><strong>3(1)</strong> The Agriculture Financial Services Corporation is established.</p>\n<p><strong>(2)</strong> The Corporation is a body corporate with the capacity, rights, powers and privileges of a natural person.</p>\n<p><strong>(3)</strong> The Corporation may acquire, hold and dispose of property.</p>\n\n<p><strong>4(1)</strong> The objects of the Corporation are:</p>\n<p>(a) to provide insurance coverage against loss of agricultural production due to fire, flood, drought and other perils;</p>\n<p>(b) to provide lending services to producers for agricultural purposes;</p>\n<p>(c) to provide income stabilization services to producers;</p>\n<p>(d) to provide other services and programs that the Corporation is authorized to provide under this Act or other enactments.</p>\n\n<h3 id=\"sec-afsa-insurance\">Insurance Authority</h3>\n<p><strong>6(1)</strong> The Corporation may provide crop insurance and livestock insurance coverage in accordance with the regulations.</p>\n<p><strong>(2)</strong> The Corporation may establish insurance programs and prescribe the terms and conditions of coverage.</p>\n<p><strong>(3)</strong> The Corporation may collect premiums and manage reserves as prescribed.</p>\n\n<h3 id=\"sec-afsa-lending\">Lending Authority</h3>\n<p><strong>8(1)</strong> The Corporation may provide loans to producers for agricultural purposes.</p>\n<p><strong>(2)</strong> The Corporation may establish lending programs and prescribe the terms and conditions of loans.</p>\n<p><strong>(3)</strong> The Corporation may take security for loans in the form of mortgages, pledges or other security interests.</p>\n\n<h3 id=\"sec-afsa-income\">Income Stabilization Services</h3>\n<p><strong>10(1)</strong> The Corporation may establish and administer income stabilization programs for producers.</p>\n<p><strong>(2)</strong> The programs may include direct payments, matched savings accounts, and other stabilization mechanisms.</p>",
+      "sections": [
+        {
+          "ref": "Part 1",
+          "title": "Agriculture Financial Services Corporation",
+          "description": "Establishes AFSC as a Crown corporation responsible for delivering agricultural insurance, lending, and income stabilization programs. Sets out AFSC's objects, powers, governance by a board of directors, and accountability to the Minister.",
+          "anchor_id": "sec-afsa-p1",
+          "services": [
+            {
+              "name": "Design and administer agricultural risk management programs",
+              "type": "foundational",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": null,
+              "ms_name": null
+            }
+          ]
+        },
+        {
+          "ref": "Part 2",
+          "title": "Insurance programs",
+          "description": "Authorizes AFSC to provide crop insurance (annual, perennial, and specialty crops), livestock price insurance, hail insurance, and wildlife damage compensation. Sets out the framework for premium rates, coverage levels, and indemnity payments.",
+          "anchor_id": "sec-afsa-p2",
+          "services": [
+            {
+              "name": "Apply for annual crop insurance",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Protect crops and livestock with insurance"
+            },
+            {
+              "name": "Apply for livestock price insurance",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Protect crops and livestock with insurance"
+            },
+            {
+              "name": "Apply for hail insurance",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Protect crops and livestock with insurance"
+            },
+            {
+              "name": "File a wildlife damage compensation claim",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Protect crops and livestock with insurance"
+            }
+          ]
+        },
+        {
+          "ref": "Part 3",
+          "title": "Income stabilization",
+          "description": "Provides the legislative basis for AFSC's delivery of federal-provincial income stabilization programs including AgriStability and AgriInvest, and disaster response programs under AgriRecovery.",
+          "anchor_id": "sec-afsa-p3",
+          "services": [
+            {
+              "name": "Enrol in income stabilization support",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Stabilize farm income during hardship"
+            },
+            {
+              "name": "Open a government-matched farm savings account",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Stabilize farm income during hardship"
+            },
+            {
+              "name": "Apply for disaster recovery assistance",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Stabilize farm income during hardship"
+            }
+          ]
+        },
+        {
+          "ref": "Part 4",
+          "title": "Lending",
+          "description": "Authorizes AFSC to make loans to beginning farmers, established producers, and agribusinesses. Sets out loan types, eligibility requirements, terms, and AFSC's powers to manage its lending portfolio.",
+          "anchor_id": "sec-afsa-p4",
+          "services": [
+            {
+              "name": "Apply for a beginning farmer loan",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 3,
+              "ms_name": "Get financing for farm and agribusiness operations"
+            },
+            {
+              "name": "Apply for a farm or agribusiness loan",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 3,
+              "ms_name": "Get financing for farm and agribusiness operations"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "AHA",
+      "full_name": "Animal Health Act",
+      "color": "#c62828",
+      "citation": "SA 2007, c A-40.2",
+      "summary": "Enables Alberta to prevent, detect, and respond to animal diseases that affect animal health, public health, and food safety. Establishes the Chief Provincial Veterinarian, disease reporting obligations, quarantine and control zones, inspection powers, and compensation for destroyed animals.",
+      "full_text": "<h2 id=\"sec-aha-title\">Animal Health Act</h2>\n<p><em>Chapter A-40.2 — SA 2007</em></p>\n\n<h3 id=\"sec-aha-defs\">Definitions</h3>\n<p><strong>1</strong> In this Act,</p>\n<p>(a) \"animal\" means any animal other than a human being;</p>\n<p>(b) \"animal by-product\" means anything produced from or derived from an animal or from the processing, slaughtering or handling of an animal;</p>\n<p>(c) \"animal product\" means any substance, article or commodity produced or obtained from an animal, whether or not it has been processed, treated, preserved or packaged;</p>\n<p>(d) \"authorized person\" means a person authorized by the minister under the regulations;</p>\n<p>(e) \"chief provincial veterinarian\" means the person appointed as chief provincial veterinarian under this Act;</p>\n<p>(f) \"disease\" means any disease of animals, whether contagious or non-contagious, and includes any deficiency disease.</p>\n\n<h3 id=\"sec-aha-p3\">Part 3 — Reporting and Examination</h3>\n<p><strong>9(1)</strong> An owner of an animal or an authorized person who knows or ought to know that a reportable disease is, or may be, present in an animal must report it to the chief provincial veterinarian in accordance with the regulations.</p>\n<p><strong>(2)</strong> An owner of an animal or an authorized person who knows or ought to know that a notifiable disease is, or may be, present in an animal must report it to the chief provincial veterinarian in accordance with the regulations.</p>\n<p><strong>10</strong> For the purposes of administering this Act, an inspector may examine any animal that on reasonable and probable grounds is suspected of (a) having a reportable disease, (b) having come into contact with an animal that has or had a reportable disease, or (c) carrying or shedding a reportable disease.</p>\n\n<h3 id=\"sec-aha-p4\">Part 4 — Quarantine</h3>\n<p><strong>12(1)</strong> When the chief provincial veterinarian believes on reasonable and probable grounds that an animal has a reportable disease or has come into contact with another animal that has or had a reportable disease or that an animal product or animal by-product is contaminated, the chief provincial veterinarian may order the quarantine of the animal, product or by-product in the manner prescribed in the regulations.</p>\n<p><strong>(2)</strong> An animal, product or by-product under quarantine may be released when the chief provincial veterinarian is satisfied that the quarantine is no longer necessary.</p>\n\n<h3 id=\"sec-aha-p8\">Part 8 — Inspections</h3>\n<p><strong>37(1)</strong> An inspector and persons assisting an inspector may, for the purpose of administering or ensuring compliance with this Act or the regulations, inspect any vehicle, railway car, aircraft or watercraft.</p>\n<p><strong>38</strong> An inspector may, subject to the conditions and limitations prescribed in the regulations, enter and inspect any place where there is an animal or where an animal product or animal by-product is stored, processed, handled, offered for sale or sold.</p>\n\n<h3 id=\"sec-aha-p9\">Part 9 — Licences</h3>\n<p><strong>43.1(1)</strong> An applicant shall apply for a licence in accordance with the regulations.</p>\n<p><strong>43.4(1)</strong> The minister may issue a licence in accordance with the regulations to a person who applies for it and who meets the criteria set out in the regulations.</p>",
+      "sections": [
+        {
+          "ref": "Part 3",
+          "title": "Reporting and examination",
+          "description": "Requires anyone who suspects a reportable or notifiable disease to report it to the Chief Provincial Veterinarian within 24 hours. Authorizes inspectors to examine animals, take samples, and order diagnostic testing.",
+          "anchor_id": "sec-aha-p3",
+          "services": [
+            {
+              "name": "Report a suspected animal disease",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#c62828",
+              "ms_number": 1,
+              "ms_name": "Keep livestock healthy and traceable"
+            }
+          ]
+        },
+        {
+          "ref": "Part 4",
+          "title": "Quarantine",
+          "description": "Authorizes inspectors to quarantine animals, premises, or areas when disease is suspected or confirmed. Sets out conditions, duration, and obligations of persons subject to quarantine.",
+          "anchor_id": "sec-aha-p4",
+          "services": [
+            {
+              "name": "Regulate animal health and food safety across the supply chain",
+              "type": "foundational",
+              "goal_number": 2,
+              "goal_color": "#c62828",
+              "ms_number": null,
+              "ms_name": null
+            }
+          ]
+        },
+        {
+          "ref": "Part 8",
+          "title": "Inspections",
+          "description": "Sets out inspection powers for meat processing facilities, dairy operations, and livestock operations. Inspectors may enter premises, examine animals, take samples, and issue compliance orders.",
+          "anchor_id": "sec-aha-p8",
+          "services": [
+            {
+              "name": "Comply with meat and dairy inspection requirements",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#c62828",
+              "ms_number": 2,
+              "ms_name": "Ensure food is safe across the supply chain"
+            },
+            {
+              "name": "Get food safety training and certification",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#c62828",
+              "ms_number": 2,
+              "ms_name": "Ensure food is safe across the supply chain"
+            }
+          ]
+        },
+        {
+          "ref": "Part 9",
+          "title": "Licences",
+          "description": "Provides for licensing of premises where animals are kept, assembled, or processed. Includes livestock dealer licensing and premises identification for traceability.",
+          "anchor_id": "sec-aha-p9",
+          "services": [
+            {
+              "name": "Register your premises for livestock traceability",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#c62828",
+              "ms_number": 1,
+              "ms_name": "Keep livestock healthy and traceable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "IDA",
+      "full_name": "Irrigation Districts Act",
+      "color": "#00695c",
+      "citation": "RSA 2000, c I-11",
+      "summary": "Establishes the framework for Alberta's 13 irrigation districts, governing their formation, governance, water allocation, assessment and fee collection, infrastructure operations, and the Irrigation Council that advises the Minister on irrigation policy.",
+      "full_text": "<h2 id=\"sec-ida-title\">Irrigation Districts Act</h2>\n<p><em>Chapter I-11 — RSA 2000</em></p>\n\n<h3 id=\"sec-ida-defs\">Definitions</h3>\n<p><strong>1</strong> In this Act,</p>\n<p>(a) \"annual agreement\" means an annual agreement entered into under section 16;</p>\n<p>(b) \"annual agreement fee\" means the fee payable by a shareholder under an annual agreement;</p>\n<p>(c) \"assessment\" means the assessment levied under Part 5;</p>\n<p>(d) \"board\" means the board of a district;</p>\n<p>(e) \"council\" means the Irrigation Council;</p>\n<p>(f) \"director\" means a member of the board of a district;</p>\n<p>(g) \"district\" means an irrigation district;</p>\n<p>(h) \"Fund\" means the Irrigation Districts Stabilization Fund.</p>\n\n<h3 id=\"sec-ida-p1\">Part 1 — Irrigation District Powers, Duties and Agreements</h3>\n<p><strong>5</strong> The following corporations are established as irrigation districts: (a) Aetna Irrigation District; (b) Bow River Irrigation District; (c) Eastern Irrigation District; (d) Lethbridge Northern Irrigation District; (e) Magrath Irrigation District; (f) Mountain View Irrigation District; (g) Raymond Irrigation District; (h) Ross Creek Irrigation District; (i) St. Mary River Irrigation District; (j) Taber Irrigation District; (k) United Irrigation District; (l) Leavitt Irrigation District; (m) Western Irrigation District.</p>\n<p><strong>8</strong> The objects of a district are to develop, maintain and operate irrigation works.</p>\n<p><strong>16(1)</strong> A district and the owner or occupant of land within the district may enter into an annual agreement for the delivery of water to the land.</p>\n\n<h3 id=\"sec-ida-p2\">Part 2 — Governance, Irrigation Council and Irrigation Secretariat</h3>\n<p><strong>27</strong> Every district must have a board.</p>\n<p><strong>28(1)</strong> The board of a district is composed of seven directors.</p>\n<p><strong>(2)</strong> A director must be a shareholder of the district.</p>\n<p><strong>31(1)</strong> Subject to this Act and the regulations, the board may exercise all the powers vested in the district.</p>\n<p><strong>(2)</strong> The board shall manage and control the property, business and affairs of the district.</p>\n<p><strong>50</strong> The Irrigation Council is established to advise the Minister on matters relating to irrigation in Alberta.</p>\n\n<h3 id=\"sec-ida-p5\">Part 5 — Assessment</h3>\n<p><strong>94(1)</strong> Subject to this Act and the regulations, the board of a district may levy an assessment on the land in the district.</p>\n<p><strong>(2)</strong> An assessment is a debt due by the owner or occupant of the land assessed.</p>\n<p><strong>105</strong> The board shall issue an assessment notice in accordance with the regulations.</p>",
+      "sections": [
+        {
+          "ref": "Part 1",
+          "title": "Irrigation district powers",
+          "description": "Sets out the powers of irrigation districts to construct, operate, and maintain irrigation works, divert and use water under licence, enter into agreements, and provide water to irrigators within the district.",
+          "anchor_id": "sec-ida-p1",
+          "services": [
+            {
+              "name": "Connect with your irrigation district",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#00695c",
+              "ms_number": 3,
+              "ms_name": "Access irrigation and water management services"
+            }
+          ]
+        },
+        {
+          "ref": "Part 2",
+          "title": "Governance and Irrigation Council",
+          "description": "Establishes the governance structure for irrigation districts (boards of directors elected by irrigators) and the Irrigation Council, which advises the Minister on irrigation policy, funding priorities, and infrastructure investment.",
+          "anchor_id": "sec-ida-p2",
+          "services": [
+            {
+              "name": "Develop agricultural policy, trade strategy, and irrigation infrastructure",
+              "type": "foundational",
+              "goal_number": 3,
+              "goal_color": "#00695c",
+              "ms_number": null,
+              "ms_name": null
+            }
+          ]
+        },
+        {
+          "ref": "Part 5",
+          "title": "Assessment",
+          "description": "Provides for assessment of land within irrigation districts, including assessment of irrigable acres, assessment rolls, and the process for appealing assessments.",
+          "anchor_id": "sec-ida-p5",
+          "services": [
+            {
+              "name": "Connect with your irrigation district",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#00695c",
+              "ms_number": 3,
+              "ms_name": "Access irrigation and water management services"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "WCA",
+      "full_name": "Weed Control Act",
+      "color": "#2e7d32",
+      "citation": "SA 2008, c W-5.1",
+      "summary": "Enables the Minister to declare noxious and prohibited noxious weeds. Imposes duties on landowners to control noxious weeds and destroy prohibited noxious weeds. Establishes inspectors with powers to enter land, issue notices, and enforce compliance through Agricultural Service Boards.",
+      "full_text": "<h2 id=\"sec-wca-title\">Weed Control Act</h2>\n<p><em>Chapter W-5.1 — SA 2008</em></p>\n\n<h3 id=\"sec-wca-defs\">Definitions</h3>\n<p><strong>1</strong> In this Act,</p>\n<p>(a) \"business day\" means a day other than a Saturday or a Sunday or other holiday;</p>\n<p>(b) \"bylaw\" includes, in respect of an improvement district or special area, an order under section 686 of the <em>Municipal Government Act</em>;</p>\n<p>(c) \"council\" means the council of a municipality or the board of an improvement district or special area;</p>\n<p>(d) \"control\" means to inhibit the growth or spread of, or to destroy;</p>\n<p>(e) \"destroy\" means to kill all growing parts of a plant or to render its reproductive mechanisms non-viable;</p>\n<p>(f) \"inspector\" means a person appointed under section 8;</p>\n<p>(g) \"land\" includes fixtures on the land, and the land down to the low water mark of a stream, lake or other body of water;</p>\n<p>(h) \"noxious weed\" means a weed designated as noxious by the Minister under section 2;</p>\n<p>(i) \"prohibited noxious weed\" means a noxious weed designated as prohibited under section 2.</p>\n\n<h3 id=\"sec-wca-p1\">Part 1 — Weed Control Duties</h3>\n<p><strong>2</strong> The Minister may, by regulation, designate any plant as a noxious weed or a prohibited noxious weed.</p>\n<p><strong>3(1)</strong> Every owner and occupant of land shall control all noxious weeds growing on the land in accordance with this Act and the regulations.</p>\n<p><strong>(2)</strong> Noxious weeds shall be controlled in the manner and to the standard prescribed in the regulations.</p>\n<p><strong>4(1)</strong> Every owner and occupant of land shall eradicate all prohibited noxious weeds growing on the land.</p>\n<p><strong>(2)</strong> The eradication shall be done in the manner prescribed in the regulations.</p>\n\n<h3 id=\"sec-wca-p2\">Part 2 — Inspectors</h3>\n<p><strong>8</strong> The minister may appoint persons as inspectors under this Act.</p>\n<p><strong>9(1)</strong> An inspector may enter and inspect any land for the purposes of administering or ensuring compliance with this Act or the regulations.</p>\n<p><strong>(2)</strong> An inspector shall not enter a dwelling house unless the occupant consents or an inspector has a warrant under section 9.1.</p>\n\n<h3 id=\"sec-wca-p3\">Part 3 — Inspector's Powers and Notices</h3>\n<p><strong>11</strong> A person shall not wilfully obstruct or delay an inspector in the exercise of powers or the performance of duties under this Act.</p>\n<p><strong>12(1)</strong> If an inspector believes that an owner or occupant of land is not controlling noxious weeds in accordance with this Act, the inspector may issue a notice to the owner or occupant requiring the owner or occupant to control the weeds within the time specified in the notice.</p>\n<p><strong>(2)</strong> The notice must (a) be in writing, (b) describe the land, (c) describe the weeds, and (d) specify the time within which the weeds must be controlled.</p>",
+      "sections": [
+        {
+          "ref": "Part 1",
+          "title": "Weed control duties",
+          "description": "Sets out weed control obligations: occupants of land must control noxious weeds and destroy prohibited noxious weeds. Local authorities (municipalities) are responsible for enforcement within their boundaries.",
+          "anchor_id": "sec-wca-p1",
+          "services": [
+            {
+              "name": "Control noxious and prohibited weeds",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#c62828",
+              "ms_number": 3,
+              "ms_name": "Manage pests, diseases, and weeds on your land"
+            }
+          ]
+        },
+        {
+          "ref": "Part 2",
+          "title": "Inspectors",
+          "description": "Provides for appointment of weed inspectors by local authorities. Agricultural fieldmen serve as inspectors and are responsible for identifying weeds, providing control advice, and enforcing compliance.",
+          "anchor_id": "sec-wca-p2",
+          "services": [
+            {
+              "name": "Control noxious and prohibited weeds",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#c62828",
+              "ms_number": 3,
+              "ms_name": "Manage pests, diseases, and weeds on your land"
+            }
+          ]
+        },
+        {
+          "ref": "Part 3",
+          "title": "Inspector's powers and notices",
+          "description": "Authorizes inspectors to enter land, inspect for weeds, issue weed notices requiring control or destruction, and arrange for work to be done at the landowner's expense if notices are not complied with.",
+          "anchor_id": "sec-wca-p3",
+          "services": [
+            {
+              "name": "Control noxious and prohibited weeds",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#c62828",
+              "ms_number": 3,
+              "ms_name": "Manage pests, diseases, and weeds on your land"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 4,
+    "sections_count": 14,
+    "services_with_leg_count": 14,
+    "services_multi_act_count": 0
+  }
+}

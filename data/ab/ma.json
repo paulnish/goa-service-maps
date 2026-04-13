@@ -1,0 +1,816 @@
+{
+  "prefix": "ma",
+  "full_name": "Municipal Affairs",
+  "short_name": "Municipal Affairs",
+  "blurb": "Supports Alberta's municipal governance, property assessment, building safety standards, and community infrastructure — providing oversight of municipal finances, administering safety codes, ensuring accessible libraries, and supporting disaster recovery programs.",
+  "nav_name": "Municipal Affairs",
+  "has_registry_agents": false,
+  "_status": "draft",
+  "foundational_services": [],
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "OUTCOME 1: Albertans can participate in effective and accountable municipal governance",
+      "short_name": "Municipal governance & property assessment",
+      "legend_label": "Municipal governance",
+      "description": "The ministry supports effective municipal governance, provides oversight of municipal finances and accountability, manages provincial property assessment standards, and ensures property owners have access to fair and transparent assessment processes.",
+      "foundational_services": [
+        {
+          "name": "Set standards for municipal governance, accountability, and property assessment",
+          "desc": "Establishes and enforces standards for municipal government operations, financial accountability, democratic processes, and property assessment practices across Alberta municipalities. Provides oversight and guidance to ensure municipalities meet provincial governance standards.",
+          "users": "Municipal councils, municipal staff, property assessment professionals",
+          "user_groups": [
+            "Municipalities"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/municipal-affairs",
+              "url": "https://www.alberta.ca/municipal-affairs"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "MGA",
+              "color": "#1565c0",
+              "full_name": "Municipal Government Act"
+            }
+          ],
+          "mandate_tags": [
+            "municipal-governance"
+          ],
+          "taxonomy": {
+            "track": "business",
+            "tier": "regulatory_compliance",
+            "domain": "reporting_obligations",
+            "relationships": []
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Participate in or understand municipal governance",
+          "supporting": [
+            {
+              "name": "Find information about your municipality's finances and services",
+              "desc": "Albertans can access information about their municipality's financial reports, budgets, service offerings, and governance structure. Municipal financial data and service information is available through municipal websites and provincial reporting platforms.",
+              "users": "Property owners, residents, municipal electors, taxpayers",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Municipal websites and reporting",
+                  "url": "https://www.alberta.ca/municipal-affairs"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "Municipal information finder",
+                  "url": "https://www.alberta.ca/municipal-affairs"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MGA",
+                  "color": "#1565c0",
+                  "full_name": "Municipal Government Act"
+                }
+              ],
+              "mandate_tags": [
+                "municipal-governance"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Millions of Albertans access municipal information annually",
+                "basis": "All property owners and residents in Alberta are affected by municipal governance and services"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "municipal-governance",
+                "note": "Access to municipal financial and service information supports informed civic participation and transparency"
+              }
+            },
+            {
+              "name": "Understand or participate in a municipal election",
+              "desc": "Albertans can find information about municipal elections, voting procedures, candidate information, and electoral timelines. The ministry supports municipal election administration and provides guidance on voting eligibility and participation.",
+              "users": "Voters, candidates, municipal election officials, electors",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Municipal election information",
+                  "url": "https://www.alberta.ca/municipal-affairs"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Voting polls and municipal offices",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MGA",
+                  "color": "#1565c0",
+                  "full_name": "Municipal Government Act"
+                }
+              ],
+              "mandate_tags": [
+                "municipal-governance"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Millions of Albertans participate in municipal elections",
+                "basis": "All Alberta residents are eligible to vote in municipal elections in their jurisdiction"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "municipal-governance",
+                "note": "Fair and accessible elections are fundamental to municipal democracy and community accountability"
+              }
+            },
+            {
+              "name": "Appeal a municipal planning or development decision",
+              "desc": "Property owners and affected residents can appeal municipal planning decisions, development approvals, or land use designations. The appeal process provides an independent review of municipal decisions affecting land development and use.",
+              "users": "Property owners, developers, affected residents",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Planning appeal application",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Planning appeals inquiry",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MGA",
+                  "color": "#1565c0",
+                  "full_name": "Municipal Government Act"
+                }
+              ],
+              "mandate_tags": [
+                "municipal-governance"
+              ],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "scenario_dependent",
+                  "domain": "housing_property"
+                },
+                "business": {
+                  "tier": "scenario_dependent",
+                  "domain": "financial_distress"
+                },
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Hundreds of planning appeals annually",
+                "basis": "Appeals available for significant municipal planning decisions affecting property rights"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "municipal-governance",
+                "note": "Independent planning appeals provide due process protection and ensure fair land use decisions"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Understand or challenge your property assessment",
+          "supporting": [
+            {
+              "name": "Look up your property assessment",
+              "desc": "Property owners can look up their assessed property value, assessment classification, and assessment details through online portals or by contacting their municipal assessment authority. Assessment information is used for property tax calculations and planning purposes.",
+              "users": "Property owners, taxpayers, property managers",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Property assessment lookup portal",
+                  "url": "https://www.alberta.ca/municipal-affairs"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Assessment information and guidance",
+                  "url": "https://www.alberta.ca/municipal-affairs"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MGA",
+                  "color": "#1565c0",
+                  "full_name": "Municipal Government Act"
+                }
+              ],
+              "mandate_tags": [
+                "property-assessment"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Millions of property owners access assessment information annually",
+                "basis": "All properties in Alberta are assessed for tax and planning purposes"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "property-assessment",
+                "note": "Transparent assessment information is critical to property tax fairness and property owner confidence"
+              }
+            },
+            {
+              "name": "File a complaint about your property assessment",
+              "desc": "Property owners who disagree with their assessment can file a complaint or appeal through their municipal assessment review board or through provincial appeals processes. The complaint process allows property owners to challenge assessments they believe are inaccurate.",
+              "users": "Property owners, property managers, real estate professionals",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Assessment complaint or appeal application",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Assessment appeals inquiry",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MGA",
+                  "color": "#1565c0",
+                  "full_name": "Municipal Government Act"
+                }
+              ],
+              "mandate_tags": [
+                "property-assessment"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Thousands of assessment complaints annually",
+                "basis": "Assessment appeals available to property owners across all Alberta municipalities"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "property-assessment",
+                "note": "Accessible assessment appeals protect property owner rights and ensure assessment accuracy"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "title": "OUTCOME 2: Alberta buildings meet safety codes and development standards",
+      "short_name": "Safety codes & building standards",
+      "legend_label": "Safety codes",
+      "description": "The ministry develops and administers Alberta's safety codes for buildings, electrical systems, gas installations, plumbing, and fire protection. The ministry ensures new construction and renovations meet safety standards and provides dispute resolution and new home protection.",
+      "foundational_services": [
+        {
+          "name": "Develop and administer safety codes and building standards",
+          "desc": "Develops and maintains Alberta's safety codes framework for buildings, electrical, gas, plumbing, and fire protection systems. Works with accredited agencies and safety codes authorities to ensure all new construction and major renovations comply with safety standards.",
+          "users": "Accredited agencies, safety codes authorities, construction industry, municipalities",
+          "user_groups": [
+            "Municipalities",
+            "Industry"
+          ],
+          "channels": [
+            {
+              "type": "ch-web",
+              "label": "alberta.ca/safety-codes",
+              "url": "https://www.alberta.ca/safety-codes"
+            }
+          ],
+          "legislation": [
+            {
+              "abbrev": "SCA",
+              "color": "#00695c",
+              "full_name": "Safety Codes Act"
+            }
+          ],
+          "mandate_tags": [
+            "safety-codes"
+          ],
+          "taxonomy": {
+            "track": "both",
+            "individual": {
+              "tier": "scenario_dependent",
+              "domain": "housing_property"
+            },
+            "business": {
+              "tier": "regulatory_compliance",
+              "domain": "safety_codes_standards"
+            },
+            "relationships": [
+              {
+                "type": "universal_regulation",
+                "service": "Apply for a construction or renovation permit",
+                "ministry": "ma"
+              },
+              {
+                "type": "universal_regulation",
+                "service": "Find your local safety codes authority or accredited agency",
+                "ministry": "ma"
+              }
+            ]
+          }
+        }
+      ],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get a building, electrical, gas, plumbing, or fire permit",
+          "supporting": [
+            {
+              "name": "Apply for a construction or renovation permit",
+              "desc": "Property owners and contractors can apply for permits required for new construction, additions, renovations, or alterations to buildings. Permits ensure projects comply with the Alberta Safety Codes and building standards. Applications are submitted to the local municipal authority or accredited agency.",
+              "users": "Builders, contractors, property owners, developers",
+              "user_groups": [
+                "General public",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Permit application",
+                  "url": null
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Municipal or accredited agency office",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Permit inquiry line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SCA",
+                  "color": "#00695c",
+                  "full_name": "Safety Codes Act"
+                }
+              ],
+              "mandate_tags": [
+                "safety-codes"
+              ],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "scenario_dependent",
+                  "domain": "housing_property"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "safety_codes_standards"
+                },
+                "relationships": [
+                  {
+                    "type": "universal_regulation",
+                    "service": "Develop and administer safety codes and building standards",
+                    "ministry": "ma"
+                  }
+                ]
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Tens of thousands of permits issued annually",
+                "basis": "All new construction and major renovations in Alberta require permits"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "safety-codes",
+                "note": "Safety code compliance protects occupant safety and public health in all buildings"
+              }
+            },
+            {
+              "name": "Find your local safety codes authority or accredited agency",
+              "desc": "Property owners and contractors can find their local safety codes authority or accredited agency responsible for issuing permits and conducting inspections in their area. The ministry maintains a registry of all authorized authorities and agencies.",
+              "users": "Property owners, builders, contractors, developers",
+              "user_groups": [
+                "General public",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Safety codes authority registry",
+                  "url": "https://www.alberta.ca/safety-codes"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Safety codes authorities and agencies directory",
+                  "url": "https://www.alberta.ca/safety-codes"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SCA",
+                  "color": "#00695c",
+                  "full_name": "Safety Codes Act"
+                }
+              ],
+              "mandate_tags": [
+                "safety-codes"
+              ],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "scenario_dependent",
+                  "domain": "housing_property"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "safety_codes_standards"
+                },
+                "relationships": [
+                  {
+                    "type": "universal_regulation",
+                    "service": "Develop and administer safety codes and building standards",
+                    "ministry": "ma"
+                  }
+                ]
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands access safety codes authority information",
+                "basis": "Anyone planning construction or renovation needs to identify the applicable authority"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "safety-codes",
+                "note": "Clear identification of permitting authorities enables smooth project initiation and regulatory compliance"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Resolve a safety codes issue or get a new home warranty",
+          "supporting": [
+            {
+              "name": "Appeal a safety codes decision or order",
+              "desc": "Builders, property owners, and contractors can appeal safety codes decisions, inspection orders, or compliance requirements. The appeal process provides independent review of safety codes authority determinations.",
+              "users": "Builders, contractors, property owners, developers",
+              "user_groups": [
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Safety codes appeal application",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Appeal inquiry",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SCA",
+                  "color": "#00695c",
+                  "full_name": "Safety Codes Act"
+                }
+              ],
+              "mandate_tags": [
+                "safety-codes"
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "safety_codes_standards",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "low",
+                "estimate": "Hundreds of appeals annually",
+                "basis": "Appeals available for significant safety codes determinations affecting project feasibility"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "safety-codes",
+                "note": "Appeals mechanism provides due process and protects legitimate project interests from unjust orders"
+              }
+            },
+            {
+              "name": "File a claim under the new home warranty program",
+              "desc": "Home buyers and owners can file claims for warranty coverage under the new home buyer protection program. Coverage includes structural defects, electrical and plumbing defects, and other major systems. Claims can be filed during the applicable warranty period.",
+              "users": "New home buyers, homeowners, home builders",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Warranty claim application",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Warranty program inquiry",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "New home warranty information",
+                  "url": "https://www.alberta.ca/safety-codes"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "NHBPLA",
+                  "color": "#00695c",
+                  "full_name": "New Home Buyer Protection Act"
+                }
+              ],
+              "mandate_tags": [
+                "consumer-protection"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Thousands of new home buyers benefit from warranty protection annually",
+                "basis": "Warranty program applies to most new residential construction in Alberta"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "consumer-protection",
+                "note": "Warranty protection gives new home buyers security and recourse for construction defects"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "title": "OUTCOME 3: Albertans have access to library services and disaster recovery support",
+      "short_name": "Community supports & disaster recovery",
+      "legend_label": "Community support",
+      "description": "The ministry supports access to public library services across Alberta and coordinates disaster recovery assistance for communities affected by declared disasters. Programs help communities rebuild and residents recover from major emergencies.",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Access library services",
+          "supporting": [
+            {
+              "name": "Find a public library near you",
+              "desc": "Albertans can find public library locations, hours, services, and programs in their community. Libraries provide free access to books, digital resources, computers, programming, and community space. The ministry supports library funding and coordination across the province.",
+              "users": "All Albertans, students, families, seniors, community members",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Public library finder",
+                  "url": "https://www.alberta.ca/libraries"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Alberta public library information",
+                  "url": "https://www.alberta.ca/libraries"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Visit your local library",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "LA",
+                  "color": "#c62828",
+                  "full_name": "Libraries Act"
+                }
+              ],
+              "mandate_tags": [
+                "libraries"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Millions of Albertans use public libraries annually",
+                "basis": "Public libraries serve communities across all of Alberta with free access to information and services"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "libraries",
+                "note": "Public libraries provide essential community access to information, learning, and digital services"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get disaster recovery assistance",
+          "supporting": [
+            {
+              "name": "Apply for disaster recovery assistance after a declared disaster",
+              "desc": "Residents and businesses affected by declared disasters can apply for financial assistance to recover from damages. Assistance programs provide funding for emergency repairs, temporary accommodation, and recovery expenses when disasters are officially declared.",
+              "users": "Disaster-affected residents, property owners, businesses",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Disaster recovery assistance application",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Disaster recovery assistance line",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Disaster recovery information and support",
+                  "url": "https://www.alberta.ca/disaster-recovery"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "disaster-recovery"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "medium",
+                "estimate": "Thousands of residents receive assistance following major disasters",
+                "basis": "Programs activate following declared disasters affecting communities across Alberta"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "disaster-recovery",
+                "note": "Disaster assistance enables rapid community and economic recovery following catastrophic events"
+              }
+            },
+            {
+              "name": "Access information on emergency preparedness for your community",
+              "desc": "Albertans can access emergency preparedness information, planning guides, and resources to prepare their families and communities for potential disasters. Information includes emergency kits, evacuation procedures, and community preparedness planning.",
+              "users": "All Albertans, families, community leaders, businesses",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Emergency preparedness information",
+                  "url": "https://www.alberta.ca/emergency-preparedness"
+                },
+                {
+                  "type": "ch-pub",
+                  "label": "Emergency preparedness guides and resources"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                "disaster-preparedness"
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "reach_estimate": {
+                "tier": "high",
+                "estimate": "Hundreds of thousands of Albertans access preparedness information",
+                "basis": "Emergency preparedness is relevant to all Albertans in all communities"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "disaster-preparedness",
+                "note": "Community preparedness reduces disaster impacts and enables faster recovery response"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-apply",
+      "label": "Apply"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person"
+    },
+    {
+      "code": "ch-pub",
+      "label": "Publication"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Municipalities",
+    "Industry"
+  ],
+  "channel_types": {
+    "ch-apply": {
+      "label": "Apply",
+      "type": "digital"
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "type": "digital"
+    },
+    "ch-web": {
+      "label": "Website",
+      "type": "digital"
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "type": "non-digital"
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "type": "non-digital"
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "type": "non-digital"
+    }
+  },
+  "digital_channels": [
+    "ch-apply",
+    "ch-find",
+    "ch-web"
+  ]
+}

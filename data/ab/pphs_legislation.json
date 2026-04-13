@@ -1,0 +1,125 @@
+{
+  "prefix": "pphs",
+  "name": "Primary and Preventative Health Services",
+  "short_name": "Primary & Preventative Health",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "Health coverage & benefits",
+      "legend_label": "Coverage & benefits",
+      "main_services": [
+        {"number": 1, "name": "Register for and manage your health care insurance"},
+        {"number": 2, "name": "Access supplementary health benefits and drug coverage"}
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "short_name": "Primary & preventive care",
+      "legend_label": "Primary & preventive care",
+      "main_services": [
+        {"number": 1, "name": "Find primary care and get health advice"},
+        {"number": 2, "name": "Get immunizations and prevent communicable diseases"}
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "short_name": "Health professions regulation",
+      "legend_label": "Professions regulation",
+      "main_services": [
+        {"number": 1, "name": "Register or verify a regulated health professional"}
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "AHCIA",
+      "full_name": "Alberta Health Care Insurance Act",
+      "color": "#1565c0",
+      "citation": "RSA 2000, c A-20",
+      "summary": "Establishes the Alberta Health Care Insurance Plan, defining who is eligible for publicly funded health care coverage, what services are insured (physician services, hospital services, oral surgery), the physician fee schedule, and the framework for supplementary benefit programs.",
+      "full_text": "<h3>Alberta Health Care Insurance Act</h3><p><strong>Citation:</strong> RSA 2000, c A-20</p><p>The Alberta Health Care Insurance Act is the foundational statute for public health insurance in Alberta. It establishes the Alberta Health Care Insurance Plan (AHCIP) and defines the framework for publicly funded health care coverage.</p><h4>Structure (4 Parts)</h4><ul><li><strong>Part 1 — Health Care Insurance:</strong> Establishes the Alberta Health Care Insurance Plan and the Minister's responsibility for its administration. Defines insured services (basic health services provided by physicians and certain other practitioners), eligibility for coverage (Alberta residency requirements and waiting period), registration requirements, the personal health number system, and the health care insurance premium framework. Authorizes the Minister to set the schedule of medical benefits and negotiate physician compensation. Includes provisions for opting out of the plan, reciprocal agreements with other provinces, and coverage for out-of-province services.</li><li><strong>Part 2 — Insured Hospital Services Plan:</strong> Establishes the framework for funding insured hospital services, including standard ward accommodation, nursing services, diagnostic procedures, drugs administered in hospital, and use of operating rooms. Defines the relationship between the province and approved hospitals for the delivery of insured hospital services. Addresses patient charges for non-insured hospital services.</li><li><strong>Part 3 — (Not yet in force):</strong> Reserved for future provisions. Comes into force on Proclamation.</li><li><strong>Part 4 — Regulations:</strong> Authorizes the Lieutenant Governor in Council to make regulations governing registration, premiums, benefits, eligibility determinations, and all matters necessary for the administration of the health care insurance plan. Includes authority for regulations governing the supplementary benefit programs (drug coverage, optical, dental for specific populations).</li></ul><p>The Act is supported by the Alberta Health Care Insurance Act General Regulation, the Alberta Health Care Insurance Act Hospitalization Benefits Regulation, and various ministerial orders establishing benefit schedules and drug benefit programs.</p>",
+      "sections": [
+        {
+          "ref": "Part 1",
+          "title": "Health Care Insurance — Registration and Coverage",
+          "description": "Establishes AHCIP, defines eligibility, registration requirements, the personal health number system, insured services, and physician compensation. Governs coverage for all eligible Alberta residents.",
+          "anchor_id": "sec-ahcia-p1",
+          "services": [
+            {"name": "Register for the Alberta Health Care Insurance Plan", "type": "supporting", "goal_number": 1, "goal_color": "#1565c0", "ms_number": 1, "ms_name": "Register for and manage your health care insurance"},
+            {"name": "Update your health care insurance information or replace your card", "type": "supporting", "goal_number": 1, "goal_color": "#1565c0", "ms_number": 1, "ms_name": "Register for and manage your health care insurance"},
+            {"name": "Check your health coverage status or claim history", "type": "supporting", "goal_number": 1, "goal_color": "#1565c0", "ms_number": 1, "ms_name": "Register for and manage your health care insurance"},
+            {"name": "Administer health insurance policy and benefits program design", "type": "foundational", "goal_number": 1, "goal_color": "#1565c0", "ms_number": 0, "ms_name": ""},
+            {"name": "Plan and fund primary care delivery and health workforce", "type": "foundational", "goal_number": 2, "goal_color": "#00695c", "ms_number": 0, "ms_name": ""}
+          ]
+        },
+        {
+          "ref": "Part 4",
+          "title": "Regulations — Supplementary Benefit Programs",
+          "description": "Authorizes regulations governing drug benefit programs, supplementary health benefits, and eligibility criteria for programs including Non-Group Coverage, Coverage for Seniors, and Alberta Child/Adult Health Benefits.",
+          "anchor_id": "sec-ahcia-p4",
+          "services": [
+            {"name": "Apply for coverage under a government drug benefit program", "type": "supporting", "goal_number": 1, "goal_color": "#1565c0", "ms_number": 2, "ms_name": "Access supplementary health benefits and drug coverage"}
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "PHA",
+      "full_name": "Public Health Act",
+      "color": "#00695c",
+      "citation": "RSA 2000, c P-37",
+      "summary": "Establishes the public health governance framework in Alberta, including the powers of the Chief Medical Officer of Health, communicable disease surveillance and reporting, public health emergency response, and immunization programs to protect population health.",
+      "full_text": "<h3>Public Health Act</h3><p><strong>Citation:</strong> RSA 2000, c P-37</p><p>The Public Health Act is Alberta's principal statute for protecting and promoting population health. It provides the legal authority for public health surveillance, communicable disease control, and emergency health measures.</p><h4>Structure (5 Parts)</h4><ul><li><strong>Part 1 — Public Health Appeal Board:</strong> Establishes the Public Health Appeal Board to hear appeals of decisions and orders made under the Act. Defines the Board's composition, powers, and procedures for appeals by individuals affected by public health orders.</li><li><strong>Part 2 — Administration:</strong> Establishes the office of the Chief Medical Officer of Health and Medical Officers of Health, defines their powers and duties, and provides authority for public health inspections and investigations. Includes provisions for the appointment of executive officers and their enforcement powers.</li><li><strong>Part 3 — Communicable Diseases and Public Health Emergencies:</strong> Provides the legal framework for the surveillance, prevention, and control of communicable diseases. Requires mandatory reporting of notifiable diseases by health practitioners and laboratories. Authorizes isolation and quarantine orders, contact tracing, and public health emergency declarations. Includes provisions for immunization programs and school immunization requirements.</li><li><strong>Part 3.1 — Public Health Plans and Health Impediments:</strong> Authorizes the development of public health plans to address health impediments, including chronic disease prevention, health promotion, and environmental health hazards. Provides for assessment and response to non-communicable health threats.</li><li><strong>Part 4 — General:</strong> Contains regulation-making authority, confidentiality provisions, and general matters including offences, penalties, and the relationship between this Act and other Alberta legislation.</li></ul><p>The Public Health Act is supported by the Communicable Diseases Regulation, the Public Health Act Nuisance and General Sanitation Regulation, and the Immunization Regulation.</p>",
+      "sections": [
+        {
+          "ref": "Part 3",
+          "title": "Communicable Diseases and Public Health Emergencies",
+          "description": "Provides the framework for communicable disease surveillance, mandatory reporting, immunization programs, isolation and quarantine orders, and public health emergency declarations.",
+          "anchor_id": "sec-pha-p3",
+          "services": [
+            {"name": "Get routine or travel immunizations", "type": "supporting", "goal_number": 2, "goal_color": "#00695c", "ms_number": 2, "ms_name": "Get immunizations and prevent communicable diseases"},
+            {"name": "Report or learn about a notifiable disease", "type": "supporting", "goal_number": 2, "goal_color": "#00695c", "ms_number": 2, "ms_name": "Get immunizations and prevent communicable diseases"}
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "HPA",
+      "full_name": "Health Professions Act",
+      "color": "#c62828",
+      "citation": "RSA 2000, c H-7",
+      "summary": "Governs the regulation of over 30 health professions in Alberta through self-governing regulatory colleges, including registration and licensing, continuing competence, professional conduct and discipline, restricted activities, title protection, and public accountability for health professionals.",
+      "full_text": "<h3>Health Professions Act</h3><p><strong>Citation:</strong> RSA 2000, c H-7</p><p>The Health Professions Act (HPA) is Alberta's comprehensive statute for regulating health professions. It establishes a common framework for self-regulation that applies to all designated health professions through their respective regulatory colleges.</p><h4>Structure (11 Parts)</h4><ul><li><strong>Part 0.1 — Health Services Restricted Activities:</strong> Defines restricted activities that may only be performed by authorized regulated health professionals, protecting the public from unqualified practitioners. Lists specific activities such as prescribing drugs, performing surgery, and ordering diagnostic imaging.</li><li><strong>Part 1 — Governance:</strong> Establishes the governance framework for regulatory colleges, including council composition, elections, bylaw-making authority, public representation requirements, and financial accountability. Each regulated profession has a college governed by an elected council.</li><li><strong>Part 2 — Registration:</strong> Governs the registration of health professionals, including practice permits, registration requirements, categories of practice, and the duties of registrars. Defines conditions for initial registration, renewal, and reinstatement.</li><li><strong>Part 3 — Continuing Competence and Practice Visits:</strong> Requires colleges to establish continuing competence programs to ensure registered members maintain and enhance their knowledge and skills. Authorizes practice visits for quality assurance.</li><li><strong>Part 3.1 — Inspections:</strong> Authorizes inspections of health professional practices and facilities for compliance with standards of practice and professional conduct requirements.</li><li><strong>Part 4 — Professional Conduct:</strong> Establishes the complaints and discipline process, including investigation of complaints, hearings by hearing tribunals, and sanctions for unprofessional conduct. Protects the public by holding health professionals accountable.</li><li><strong>Part 5 — Business Arrangements:</strong> Regulates the corporate and business structures through which health professionals may practice, including professional corporations and partnerships.</li><li><strong>Part 6 — Other Matters:</strong> Addresses miscellaneous regulatory matters including confidentiality, information sharing between colleges, and transitional provisions.</li><li><strong>Part 7 — Title Protection:</strong> Protects professional titles and designations, making it an offence for unregistered individuals to use protected titles such as \"physician,\" \"nurse,\" or \"pharmacist.\"</li><li><strong>Part 8 — Regulations, Bylaws, Codes of Ethics and Standards of Practice:</strong> Authorizes the making of regulations and bylaws by colleges and the Minister, including standards of practice and codes of ethics for each profession.</li><li><strong>Part 8.1 — Direction, Support and Variation:</strong> Provides the Minister with authority to issue directions to colleges and to vary requirements in exceptional circumstances.</li></ul><p>The HPA governs over 30 regulated health professions including physicians, nurses, pharmacists, dentists, physiotherapists, psychologists, and many others, each with profession-specific schedules and regulations.</p>",
+      "sections": [
+        {
+          "ref": "Part 2",
+          "title": "Registration",
+          "description": "Governs the registration of health professionals with their regulatory college, including practice permits, registration categories, eligibility requirements, and the duties of college registrars.",
+          "anchor_id": "sec-hpa-p2",
+          "services": [
+            {"name": "Register as a regulated health professional in Alberta", "type": "supporting", "goal_number": 3, "goal_color": "#c62828", "ms_number": 1, "ms_name": "Register or verify a regulated health professional"},
+            {"name": "Verify a health professional's registration status", "type": "supporting", "goal_number": 3, "goal_color": "#c62828", "ms_number": 1, "ms_name": "Register or verify a regulated health professional"}
+          ]
+        },
+        {
+          "ref": "Part 4",
+          "title": "Professional Conduct — Complaints and Discipline",
+          "description": "Establishes the process for investigating complaints about health professionals, conducting hearings, and imposing sanctions for unprofessional conduct.",
+          "anchor_id": "sec-hpa-p4",
+          "services": [
+            {"name": "File a complaint about a regulated health professional", "type": "supporting", "goal_number": 3, "goal_color": "#c62828", "ms_number": 1, "ms_name": "Register or verify a regulated health professional"}
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 3,
+    "sections_count": 5,
+    "services_with_leg_count": 10,
+    "services_multi_act_count": 0
+  }
+}

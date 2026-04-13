@@ -1,0 +1,127 @@
+{
+  "prefix": "cpe",
+  "name": "Communications and Public Engagement",
+  "short_name": "Communications & Public Engagement",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "Government information & news",
+      "legend_label": "Information & news",
+      "main_services": [
+        {"number": 1, "name": "Get government news and announcements"},
+        {"number": 2, "name": "Find government information and services online"}
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00695c",
+      "short_name": "Public engagement & consultation",
+      "legend_label": "Engagement & consultation",
+      "main_services": [
+        {"number": 1, "name": "Participate in a public consultation or engagement"},
+        {"number": 2, "name": "Contact the government or your elected representative"}
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "short_name": "Transparency & privacy",
+      "legend_label": "Transparency & privacy",
+      "main_services": [
+        {"number": 1, "name": "Request access to government records"},
+        {"number": 2, "name": "Protect your personal information held by government"}
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "FOIP",
+      "full_name": "Freedom of Information and Protection of Privacy Act",
+      "color": "#c62828",
+      "citation": "RSA 2000, c F-25",
+      "summary": "Alberta's foundational transparency and privacy legislation establishing the right of access to records held by public bodies, governing the collection, use, and disclosure of personal information, creating the Office of the Information and Privacy Commissioner, and providing review and complaint mechanisms.",
+      "full_text": "<h3>Freedom of Information and Protection of Privacy Act</h3><p><strong>Citation:</strong> RSA 2000, c F-25</p><p>The Freedom of Information and Protection of Privacy Act (FOIP) is Alberta's primary statute balancing government transparency with the protection of personal privacy. It applies to all provincial government departments, agencies, boards, commissions, and other public bodies.</p><h4>Structure (6 Parts)</h4><ul><li><strong>Part 1 — Freedom of Information:</strong> Establishes the right of any person to request access to records held by a public body. Sets out the process for making access requests, timelines for response (30 days), fee structures, and the duty to assist applicants. Defines mandatory and discretionary exemptions to disclosure, including cabinet confidences, law enforcement records, intergovernmental relations, third-party business information, and advice from officials. Requires public bodies to create and maintain records directories.</li><li><strong>Part 2 — Protection of Privacy:</strong> Governs the collection, use, and disclosure of personal information by public bodies. Requires that collection be limited to what is necessary for an authorized purpose, that individuals be notified of collection, and that information be accurate and secure. Restricts use and disclosure to the original purpose or specific statutory exceptions. Establishes individuals' right to request correction of their personal information.</li><li><strong>Part 3 — Disclosure of Information in Archives:</strong> Addresses the disclosure and access rules for records transferred to the Provincial Archives of Alberta. Provides special rules for historical records, including periods after which access restrictions may be lifted, balancing historical research needs with ongoing privacy protections.</li><li><strong>Part 4 — Office and Powers of Information and Privacy Commissioner:</strong> Establishes the independent Office of the Information and Privacy Commissioner, appointed by the Legislative Assembly. Defines the Commissioner's powers to conduct reviews, investigations, and audits of public bodies' compliance with the Act. The Commissioner can issue binding orders requiring disclosure or corrective action.</li><li><strong>Part 5 — Reviews and Complaints:</strong> Sets out the process for requesting a review by the Commissioner when an access request is refused, fees are disputed, or a privacy breach is alleged. Includes mediation provisions, formal inquiry procedures, and the right to appeal Commissioner orders to the Court of Queen's Bench. Establishes complaint mechanisms for privacy matters.</li><li><strong>Part 6 — General Provisions:</strong> Contains regulation-making authority, offence and penalty provisions (including penalties for unauthorized destruction of records and willful privacy breaches), protection for whistleblowers, and the relationship between FOIP and other Alberta legislation.</li></ul><p>FOIP is supported by the Freedom of Information and Protection of Privacy Regulation, which sets fees, timelines, and procedural details. The Act works alongside the Health Information Act (governing health information) and the Personal Information Protection Act (governing private-sector privacy).</p>",
+      "sections": [
+        {
+          "ref": "Part 1",
+          "title": "Freedom of Information — Right of Access",
+          "description": "Establishes the right of any person to request access to records held by public bodies. Sets out request procedures, timelines, fees, duty to assist, and mandatory and discretionary exemptions to disclosure.",
+          "anchor_id": "sec-foip-p1",
+          "services": [
+            {
+              "name": "Submit a freedom of information request",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 1,
+              "ms_name": "Request access to government records"
+            },
+            {
+              "name": "Administer the freedom of information and privacy protection framework",
+              "type": "foundational",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 0,
+              "ms_name": ""
+            }
+          ]
+        },
+        {
+          "ref": "Part 2",
+          "title": "Protection of Privacy — Personal Information",
+          "description": "Governs the collection, use, and disclosure of personal information by public bodies. Establishes individuals' rights to access and correct their own personal information and requires public bodies to protect information security.",
+          "anchor_id": "sec-foip-p2",
+          "services": [
+            {
+              "name": "Request your own personal information from a public body",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 2,
+              "ms_name": "Protect your personal information held by government"
+            },
+            {
+              "name": "File a privacy complaint about how government handled your information",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 2,
+              "ms_name": "Protect your personal information held by government"
+            },
+            {
+              "name": "Learn about your privacy rights and how government uses personal information",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 2,
+              "ms_name": "Protect your personal information held by government"
+            }
+          ]
+        },
+        {
+          "ref": "Part 5",
+          "title": "Reviews and Complaints — Appeals and Commissioner Review",
+          "description": "Sets out the process for requesting review by the Information and Privacy Commissioner when an access request is refused, fees are disputed, or a privacy breach is alleged. Includes mediation and formal inquiry procedures.",
+          "anchor_id": "sec-foip-p5",
+          "services": [
+            {
+              "name": "Appeal a decision on an access request",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 1,
+              "ms_name": "Request access to government records"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 1,
+    "sections_count": 3,
+    "services_with_leg_count": 5,
+    "services_multi_act_count": 0
+  }
+}
