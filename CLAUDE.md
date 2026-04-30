@@ -115,6 +115,32 @@ Cross-reference between legislation (acts/sections) and services:
 └── stats (acts_count, sections_count, services_with_leg_count, services_multi_act_count)
 ```
 
+### Service Types ({jurisdiction}/service_types.json)
+
+A jurisdiction-level analysis layer above ministry maps. Each entry is a `(service task × Kate Tarling intent)` cluster of services that share a recognisable shape and pass a leverage bar (5+ services across 3+ ministries). Built once per jurisdiction from the ministry maps; consumed by the design-system MCP, the using-goa-design-system skill, and docs site service-type pages.
+
+```
+├── $schema_version, jurisdiction, generated, purpose
+├── service_tasks[] (Apply, Transact, Check, Report, Engage, Find, Advise)
+├── kate_tarling_intents[] (the canonical nine, with id + name)
+├── service_types[]
+│   ├── id, name, service_task, kate_tarling_intents[]
+│   ├── leverage { service_count, ministry_count, passes_bar }
+│   ├── shared_shape, variations
+│   ├── product_types_used[] (workspace, public-form, ...)
+│   ├── existing_examples[] (slugs in the design system docs site)
+│   ├── interaction_examples[] (interaction-scale docs slugs)
+│   ├── gaps[] (what's missing in docs to serve this type)
+│   ├── proposed_examples[] (new examples worth building, size-agnostic)
+│   ├── services[] (members from the ministry maps; ministry × name × domain × track × tier)
+│   └── (optional: is_extension, intent_note, product_types_proposed, note)
+├── cross_cutting_gaps[] (gaps that span multiple service types — eligibility, status tracking, account/portal, payment, notifications, decision letters)
+├── excluded_or_below_bar[] (e.g., engage-in-consultation, schedule-or-book — don't yet pass leverage bar)
+└── source { data_dir, method, constraints_applied[] }
+```
+
+The file is generated from analysis (Brief 06 in `conductors/design-system/service-maps/briefs/06-research/`); regenerate with the `build_service_types.py` script there when ministry maps change materially. Like other data files, treat as source of truth and push straight to `main`.
+
 ## Adding a New Ministry
 
 1. Create `data/{prefix}.json` following the structure above

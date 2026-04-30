@@ -1,0 +1,5204 @@
+{
+  "$schema_version": "0.1",
+  "jurisdiction": "ab",
+  "generated": "2026-04-30",
+  "purpose": "Service-type analysis of Alberta ministry maps. Each type is a (service task × Kate Tarling intent) cluster validated by the leverage bar (5+ services across 3+ ministries). Consumed by the design-system MCP, the using-goa-design-system skill, and the docs site service-type pages (Brief 07).",
+  "service_tasks": [
+    "Apply",
+    "Transact",
+    "Check",
+    "Report",
+    "Engage",
+    "Find",
+    "Advise"
+  ],
+  "kate_tarling_intents": [
+    {
+      "id": "registering-information",
+      "name": "Registering, providing or reporting information"
+    },
+    {
+      "id": "checking-information",
+      "name": "Requesting, sharing or checking information"
+    },
+    {
+      "id": "paying",
+      "name": "Paying for something"
+    },
+    {
+      "id": "financial-support",
+      "name": "Getting financial support or claiming something"
+    },
+    {
+      "id": "permission",
+      "name": "Getting permission to do something"
+    },
+    {
+      "id": "scheduling",
+      "name": "Scheduling something"
+    },
+    {
+      "id": "buying",
+      "name": "Buying or ordering something"
+    },
+    {
+      "id": "becoming",
+      "name": "Becoming something"
+    },
+    {
+      "id": "protecting",
+      "name": "Protecting something"
+    }
+  ],
+  "service_types": [
+    {
+      "id": "appeal-a-decision",
+      "name": "Appeal a decision",
+      "service_task": "Apply",
+      "kate_tarling_intents": [
+        "checking-information",
+        "protecting"
+      ],
+      "leverage": {
+        "service_count": 10,
+        "ministry_count": 8,
+        "passes_bar": true
+      },
+      "shared_shape": "Citizen references a prior decision they want overturned, submits grounds (procedural error, new evidence, wrong on the merits), waits for review by a separate body, receives a new decision (uphold, overturn, or remit). The appellant is heard but doesn't drive the process.",
+      "variations": "Administrative appeals (benefits, planning, safety codes) vs. judicial appeals (court decisions). Some go to a separate tribunal, some loop within the same regulator.",
+      "product_types_used": [
+        "public-form"
+      ],
+      "existing_examples": [
+        {
+          "productType": "public-form",
+          "slug": "start-page"
+        },
+        {
+          "productType": "public-form",
+          "slug": "question-page"
+        },
+        {
+          "productType": "public-form",
+          "slug": "review-page"
+        },
+        {
+          "productType": "public-form",
+          "slug": "result-page"
+        }
+      ],
+      "interaction_examples": [
+        "ask-a-long-answer-question-with-a-maximum-word-count",
+        "expand-or-collapse-part-of-a-form"
+      ],
+      "gaps": [
+        "No reference-the-original-decision pattern. Appeals start with a specific prior decision and need to link/summarise it.",
+        "No grounds-for-appeal composer. Appeals need structured reason categories (procedural, factual, new evidence).",
+        "No appeal-status-tracking pattern.",
+        "No appeal-outcome-with-action pattern (uphold/overturn/remit branches)."
+      ],
+      "proposed_examples": [
+        {
+          "concept": "Appeal initiation",
+          "rationale": "Loads the original decision, lets the appellant select grounds and write reasoning."
+        },
+        {
+          "concept": "Appeal status",
+          "rationale": "Status tracker variant for appeals; differs from application status because the next steps and timelines are different."
+        },
+        {
+          "concept": "Appeal outcome letter",
+          "rationale": "Decision letter pattern with the three possible branches."
+        }
+      ],
+      "services": [
+        {
+          "ministry": "alss",
+          "name": "Appeal a benefit decision",
+          "domain": "money_taxes_benefits",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "cpe",
+          "name": "Appeal a decision on an access request",
+          "domain": "privacy_government_access",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "ir",
+          "name": "Appeal a membership or land decision to the Métis Settlements Appeal Tribunal",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Appeal a court decision",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "jus",
+          "name": "Appeal a police complaint decision",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "ma",
+          "name": "Appeal a municipal planning or development decision",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "ma",
+          "name": "Appeal a safety codes decision or order",
+          "domain": "safety_codes_standards",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "pses",
+          "name": "Appeal a police complaint decision",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "scss",
+          "name": "Appeal a benefit decision",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "tec",
+          "name": "Appeal a driving penalty or suspension",
+          "domain": "driving_vehicles",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        }
+      ],
+      "is_extension": true,
+      "extension_note": "Not in Kate Tarling's original nine. Surfaced empirically — multiple ministries have explicit 'Appeal a...' services with a recognisable shape (request review, submit grounds, reconsideration or hearing, new decision). Recommend adding to the GoA's working vocabulary."
+    },
+    {
+      "id": "request-government-action-or-records",
+      "name": "Request government records or action",
+      "service_task": "Apply",
+      "kate_tarling_intents": [
+        "checking-information",
+        "protecting"
+      ],
+      "leverage": {
+        "service_count": 16,
+        "ministry_count": 8,
+        "passes_bar": true
+      },
+      "shared_shape": "Citizen submits a formal request for government records, information, or specific action (inquiry, mediation, restitution, impact statement). Triage and acceptance, processing by the appropriate body, response or release issued. Distinct from search-a-public-register because there's a process; distinct from apply-for-a-benefit because no eligibility/payment shape.",
+      "variations": "Information requests (FOI, your own personal records) vs. specific-action requests (fatality inquiry, lawyer fee review, mediation) vs. participation requests (community/victim impact statements). Most are JUS-led; CPE/SA handle FOI; INFRA, TEC have niche request paths.",
+      "product_types_used": [
+        "public-form"
+      ],
+      "existing_examples": [
+        {
+          "productType": "public-form",
+          "slug": "start-page"
+        },
+        {
+          "productType": "public-form",
+          "slug": "question-page"
+        },
+        {
+          "productType": "public-form",
+          "slug": "result-page"
+        }
+      ],
+      "interaction_examples": [
+        "ask-a-user-for-an-address",
+        "ask-a-long-answer-question-with-a-maximum-word-count",
+        "ask-a-user-for-a-birthday"
+      ],
+      "gaps": [
+        "No request-form pattern with required-info checklist (most have specific data needs).",
+        "No status-of-request pattern. Many requests have legislated timelines (FOI is 30 days). Citizens need to track.",
+        "No release-of-records pattern. After approval, the citizen receives the records — what does that page look like?"
+      ],
+      "proposed_examples": [
+        {
+          "concept": "Records request form",
+          "rationale": "Form with required information checklist plus optional fields, fee handling, and consent."
+        },
+        {
+          "concept": "Request status with timeline",
+          "rationale": "Status page that surfaces the legislated timeline (e.g. FOI 30 days) and current step."
+        },
+        {
+          "concept": "Released records view",
+          "rationale": "Page or download experience for the released records, with redaction explanation if applicable."
+        }
+      ],
+      "services": [
+        {
+          "ministry": "alss",
+          "name": "Request a capacity assessment",
+          "domain": "professional_credentials",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "cpe",
+          "name": "Request your own personal information from a public body",
+          "domain": "privacy_government_access",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "cpe",
+          "name": "Submit a freedom of information request",
+          "domain": "privacy_government_access",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "infra",
+          "name": "Request a heritage resource impact assessment for a project",
+          "domain": "environmental_requirements",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "ir",
+          "name": "Submit a consultation assessment request as a project proponent",
+          "domain": "environmental_requirements",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "jus",
+          "name": "Request a public fatality inquiry",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Request a review of a lawyer's fees",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Request civil claims mediation",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "jus",
+          "name": "Request death investigation documents",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Request information about a partner's violent history (Clare's Law)",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Request victim restitution from an offender",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Submit a community impact statement",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Submit a victim impact statement",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "sa",
+          "name": "Submit a freedom of information request",
+          "domain": "privacy_government_access",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "scss",
+          "name": "Request a capacity assessment",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "tec",
+          "name": "Request a copy of a collision report",
+          "domain": "driving_vehicles",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        }
+      ]
+    },
+    {
+      "id": "file-a-complaint",
+      "name": "File a complaint",
+      "service_task": "Report",
+      "kate_tarling_intents": [
+        "protecting"
+      ],
+      "leverage": {
+        "service_count": 20,
+        "ministry_count": 12,
+        "passes_bar": true
+      },
+      "shared_shape": "Citizen files a formal complaint about a regulated party (professional, business, government decision-maker). Triage and acceptance, investigation by the regulator, decision communicated, possible appeal path. The complainant is heard but doesn't drive the process.",
+      "variations": "Regulated-profession complaints (health, security, locksmith) vs. business marketplace complaints (consumer protection) vs. systemic complaints (human rights, police conduct, privacy) vs. specific party (guardian/trustee). Investigation rigour varies.",
+      "product_types_used": [
+        "public-form"
+      ],
+      "existing_examples": [
+        {
+          "productType": "public-form",
+          "slug": "start-page"
+        },
+        {
+          "productType": "public-form",
+          "slug": "question-page"
+        },
+        {
+          "productType": "public-form",
+          "slug": "review-page"
+        },
+        {
+          "productType": "public-form",
+          "slug": "result-page"
+        }
+      ],
+      "interaction_examples": [
+        "ask-a-user-for-an-address",
+        "ask-a-user-for-a-birthday",
+        "ask-a-long-answer-question-with-a-maximum-word-count",
+        "give-more-information-before-asking-a-question-a",
+        "give-more-information-before-asking-a-question-b"
+      ],
+      "gaps": [
+        "No 'describe what happened' pattern with timeline support. Complaints often need a sequence of events.",
+        "No regulated-party-search pattern. The citizen is filing against a regulated party — they need to find/identify that party.",
+        "No status-update notification pattern. Investigations take months.",
+        "No outcome-letter pattern (current result-page is too thin for complaint outcomes).",
+        "No appeal-pathway pattern (overlaps with appeal-a-decision)."
+      ],
+      "proposed_examples": [
+        {
+          "concept": "Identify the regulated party",
+          "rationale": "Search-and-select for finding the doctor / business / officer the complaint is about."
+        },
+        {
+          "concept": "Timeline-of-events composer",
+          "rationale": "Section pattern for ordered narrative input."
+        },
+        {
+          "concept": "Investigation status updates",
+          "rationale": "Long-running status surfacing; overlaps with check-status-or-records."
+        },
+        {
+          "concept": "Decision letter view",
+          "rationale": "Long-form decision page with reasoning, next steps, and appeal info."
+        }
+      ],
+      "services": [
+        {
+          "ministry": "alss",
+          "name": "File a complaint about a guardian or trustee",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "alss",
+          "name": "Make a complaint about a continuing care home",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "cpe",
+          "name": "File a privacy complaint about how government handled your information",
+          "domain": "privacy_government_access",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "health",
+          "name": "File a complaint about a regulated health professional",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "im",
+          "name": "File a human rights complaint about discrimination",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "jeti",
+          "name": "File a complaint about unpaid wages, wrongful termination, or other employment standards violations",
+          "domain": "working_employment",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "jeti",
+          "name": "File a human rights complaint about discrimination",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jeti",
+          "name": "File an unfair labour practice complaint",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "jus",
+          "name": "File a complaint about a guardian, trustee, or agent",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "File a complaint about a security, locksmith, or investigation service",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "File a complaint about victim services",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "File a policing complaint or compliment",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "ma",
+          "name": "File a complaint about your property assessment",
+          "domain": "housing_property",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "pphs",
+          "name": "File a complaint about a regulated health professional",
+          "domain": "professional_credentials",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "pses",
+          "name": "File a complaint about police conduct",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "sa",
+          "name": "File a complaint about a business or marketplace issue",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "sa",
+          "name": "File a privacy complaint",
+          "domain": "privacy_government_access",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "scss",
+          "name": "File a complaint about a guardian or trustee",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Make a complaint about a continuing care home",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "tbf",
+          "name": "File a complaint about a pension plan",
+          "domain": "money_taxes_benefits",
+          "track": "individual",
+          "tier": "core_human_needs"
+        }
+      ]
+    },
+    {
+      "id": "report-a-concern-or-incident",
+      "name": "Report a concern or incident",
+      "service_task": "Report",
+      "kate_tarling_intents": [
+        "protecting"
+      ],
+      "leverage": {
+        "service_count": 28,
+        "ministry_count": 18,
+        "passes_bar": true
+      },
+      "shared_shape": "Citizen pushes information about a hazard, suspected harm, or third-party concern. No assessment of the citizen's eligibility — the service is the act of reporting. Acknowledgment is usually sent; investigation may follow with no further citizen involvement.",
+      "variations": "Safety hazards (road, fire, wildlife) vs. abuse/harm reports (child, elder, workplace) vs. environmental incidents (substance release, emissions exceedance) vs. property issues. Some are time-critical.",
+      "product_types_used": [
+        "public-form"
+      ],
+      "existing_examples": [
+        {
+          "productType": "public-form",
+          "slug": "start-page"
+        },
+        {
+          "productType": "public-form",
+          "slug": "question-page"
+        },
+        {
+          "productType": "public-form",
+          "slug": "result-page"
+        }
+      ],
+      "interaction_examples": [
+        "ask-a-user-for-an-address",
+        "ask-a-user-for-a-birthday",
+        "add-another-item-in-a-modal",
+        "show-a-list-to-help-answer-a-question"
+      ],
+      "gaps": [
+        "No anonymous-reporting affordance. Many reports allow or require anonymity.",
+        "No report-receipt-with-reference-number pattern. Reporters need a way to follow up.",
+        "No file-evidence-with-context pattern.",
+        "No urgency-routing pattern. Some reports are time-critical (animal disease, wildfire)."
+      ],
+      "proposed_examples": [
+        {
+          "concept": "Optional-identity report form",
+          "rationale": "Pattern showing the anonymous/named branch with consequence framing."
+        },
+        {
+          "concept": "Report receipt with reference number",
+          "rationale": "Page showing reference number, what happens next, contact path."
+        },
+        {
+          "concept": "Evidence-attached-to-fact composer",
+          "rationale": "Section pattern for uploading evidence linked to specific report items."
+        }
+      ],
+      "services": [
+        {
+          "ministry": "ag",
+          "name": "Report a suspected animal disease",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "ag",
+          "name": "Report or get help with an agricultural pest",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "alss",
+          "name": "Report housing development delays",
+          "domain": "government_procurement",
+          "track": "business",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "alss",
+          "name": "Report or get help with elder abuse",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "cfs",
+          "name": "Report concerns about child abuse or neglect",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "em",
+          "name": "Report and pay coal and mineral royalties",
+          "domain": "energy_minerals",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "em",
+          "name": "Report and pay conventional oil and gas royalties",
+          "domain": "energy_minerals",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "em",
+          "name": "Report and pay oil sands royalties",
+          "domain": "energy_minerals",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "epa",
+          "name": "Report a release of a substance to the environment",
+          "domain": "reporting_obligations",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "epa",
+          "name": "Report a wildlife concern or human-wildlife interaction",
+          "domain": "environment_land",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "epa",
+          "name": "Report greenhouse gas emissions under the regulatory framework",
+          "domain": "environmental_requirements",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "fp",
+          "name": "Report a wildfire",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "fp",
+          "name": "Report timber damage assessment",
+          "domain": "forestry",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "health",
+          "name": "Report or learn about a notifiable disease",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "hshs",
+          "name": "Report a patient safety concern at a health facility",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "infra",
+          "name": "Report a maintenance or safety issue at a government building",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jeti",
+          "name": "Report a workplace health or safety concern or incident",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "jus",
+          "name": "Report an unexpected or unexplained death",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "mha",
+          "name": "Report a concern about a mental health or addiction service provider",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "pphs",
+          "name": "Report or learn about a notifiable disease",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "pses",
+          "name": "Report a property or neighbourhood safety concern through SCAN",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "pses",
+          "name": "Report poaching, illegal hunting, or a wildlife concern",
+          "domain": "environment_land",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "scss",
+          "name": "Report housing development delays",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Report or get help with elder abuse",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "tbf",
+          "name": "Report a concern about a licensed establishment",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "tec",
+          "name": "Report a road hazard or safety concern",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "tec",
+          "name": "Report a vehicle collision online",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "ts",
+          "name": "Report a travel-related complaint",
+          "domain": "immigration_settling",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        }
+      ]
+    },
+    {
+      "id": "register-something",
+      "name": "Register something",
+      "service_task": "Apply",
+      "kate_tarling_intents": [
+        "registering-information",
+        "becoming"
+      ],
+      "leverage": {
+        "service_count": 23,
+        "ministry_count": 13,
+        "passes_bar": true
+      },
+      "shared_shape": "Citizen or business submits identifying information, system validates basic eligibility (no full assessment), registry entry created, confirmation issued with a registration number. Often ongoing — registry must be kept current.",
+      "variations": "Vital records (birth, marriage, death) vs. property records (vehicle, land, lien) vs. credentials (apprentice, regulated professional) vs. business identity (corporation, tourism levy collector).",
+      "product_types_used": [
+        "public-form"
+      ],
+      "existing_examples": [
+        {
+          "productType": "public-form",
+          "slug": "start-page"
+        },
+        {
+          "productType": "public-form",
+          "slug": "question-page"
+        },
+        {
+          "productType": "public-form",
+          "slug": "result-page"
+        }
+      ],
+      "interaction_examples": [
+        "ask-a-user-for-a-birthday",
+        "ask-a-user-for-an-address",
+        "select-one-or-more-from-a-list-of-options"
+      ],
+      "gaps": [
+        "No short-form (multi-fields-per-page) registration pattern. Public-form is one-question-per-page which is overkill for short registrations.",
+        "No registry-confirmation receipt pattern. Result-page is decision-shaped (approved/denied); registrations should show the registry entry that was created.",
+        "No update-existing-registration pattern. Registries are alive — change of address, name change after marriage."
+      ],
+      "proposed_examples": [
+        {
+          "concept": "Compact form page",
+          "rationale": "Multi-field registration form (12-20 fields) on one or two pages, denser than public-form per-idea pattern."
+        },
+        {
+          "concept": "Registry receipt",
+          "rationale": "Page showing the created record with ID, key facts, downloadable PDF, follow-on actions."
+        },
+        {
+          "concept": "Update an existing record",
+          "rationale": "Look-up → modify → confirm → updated-record-receipt flow."
+        }
+      ],
+      "services": [
+        {
+          "ministry": "acsw",
+          "name": "Submit a film or video for classification",
+          "domain": "licences_permits",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "ae",
+          "name": "Register as an apprentice",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "ag",
+          "name": "Register your premises for livestock traceability",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "alss",
+          "name": "Make and register a personal directive",
+          "domain": "privacy_government_access",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "edu",
+          "name": "Register for home education",
+          "domain": "education_training",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "health",
+          "name": "Register as a regulated health professional in Alberta",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "health",
+          "name": "Register for the Alberta Health Care Insurance Plan",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "hshs",
+          "name": "Register as an organ and tissue donor",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "jus",
+          "name": "Register a land title document or plan",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "jus",
+          "name": "Register for automatic child support recalculation",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "jus",
+          "name": "Register or transfer a firearm",
+          "domain": "professional_credentials",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "jus",
+          "name": "Register, search, or change a personal property lien",
+          "domain": "registration_legal",
+          "track": "business",
+          "tier": "core_business_needs"
+        },
+        {
+          "ministry": "pphs",
+          "name": "Register as a regulated health professional in Alberta",
+          "domain": "professional_credentials",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "pphs",
+          "name": "Register for the Alberta Health Care Insurance Plan",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "sa",
+          "name": "Get a marriage certificate or register a marriage",
+          "domain": "vital_records_id",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "sa",
+          "name": "Register a birth or get a birth certificate",
+          "domain": "vital_records_id",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "sa",
+          "name": "Register a business name or corporation in Alberta",
+          "domain": "registration_legal",
+          "track": "business",
+          "tier": "core_business_needs"
+        },
+        {
+          "ministry": "sa",
+          "name": "Register or renew your vehicle registration",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Make and register a personal directive",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "tec",
+          "name": "Register as a ride-for-hire driver or company",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "tec",
+          "name": "Register for inter-provincial vehicle operation",
+          "domain": "licences_permits",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "tec",
+          "name": "Register, renew, or transfer a vehicle",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "ts",
+          "name": "Register as a tourism levy collector",
+          "domain": "reporting_obligations",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        }
+      ],
+      "intent_note": "Multi-intent. Vehicle/business/birth registrations are registering-information; apprentice/professional registrations are becoming."
+    },
+    {
+      "id": "apply-for-a-licence-or-permit",
+      "name": "Apply for a licence or permit",
+      "service_task": "Apply",
+      "kate_tarling_intents": [
+        "permission",
+        "becoming"
+      ],
+      "leverage": {
+        "service_count": 49,
+        "ministry_count": 15,
+        "passes_bar": true
+      },
+      "shared_shape": "Citizen or business demonstrates qualification (training, fitness, fee paid, premises inspected), submits application with evidence, waits for decision, receives credential with expiry and conditions. Renewal is a lighter version of the same shape — verify identity and continued eligibility, pay fee, get updated expiry.",
+      "variations": "Personal credentials (driver's licence, firearms PAL, professional licences) vs. business credentials (cannabis, security, locksmith) vs. activity permits (timber, fire, oversize load). **Renewal** is a recurring sub-shape: 'Apply for or renew' services (gaming/liquor/cannabis, driver's licence) and standalone 'Renew' services (firearms PAL) follow the same flow as the original application but pre-filled — fewer questions, focus on what's changed.",
+      "product_types_used": [
+        "public-form"
+      ],
+      "existing_examples": [
+        {
+          "productType": "public-form",
+          "slug": "start-page"
+        },
+        {
+          "productType": "public-form",
+          "slug": "task-list-page"
+        },
+        {
+          "productType": "public-form",
+          "slug": "question-page"
+        },
+        {
+          "productType": "public-form",
+          "slug": "review-page"
+        },
+        {
+          "productType": "public-form",
+          "slug": "result-page"
+        }
+      ],
+      "interaction_examples": [
+        "ask-a-user-for-an-address",
+        "ask-a-user-for-a-birthday",
+        "expand-or-collapse-part-of-a-form"
+      ],
+      "gaps": [
+        "No declaration/attestation pattern. Most licences require the citizen to declare facts under penalty.",
+        "No fitness-or-qualifications composer. Permits often require proof of training, experience hours, supervisor sign-off.",
+        "No fee-with-application pattern. Many licences require payment at submission.",
+        "No outcome-with-credential view. result-page exists but no example of 'here's your decision and your printable/wallet credential.'",
+        "**Renewal-specific:** No look-up-existing pattern. Renewal starts with verifying who you are and pulling up your existing record.",
+        "**Renewal-specific:** No diff-from-current pattern. Renewal usually shows 'here's what we have on file; change anything?'",
+        "**Renewal-specific:** No renewal-reminder/notification pattern."
+      ],
+      "proposed_examples": [
+        {
+          "concept": "Attestation / declaration",
+          "rationale": "Section pattern with explicit affirmation, plain-language consequences, signature."
+        },
+        {
+          "concept": "Qualifications composer",
+          "rationale": "Section for showing training, hours, or external evidence."
+        },
+        {
+          "concept": "Pay-and-submit",
+          "rationale": "Coupled flow joining form review → payment → submission."
+        },
+        {
+          "concept": "Issued credential page",
+          "rationale": "Page showing decision and credential with print/save/wallet-add affordances."
+        },
+        {
+          "concept": "Verify-and-renew flow",
+          "rationale": "Renewal sub-shape: authenticate → see current record → confirm or edit → pay → updated credential."
+        },
+        {
+          "concept": "Renewal reminder",
+          "rationale": "Email/notification template + landing page for the renewal start."
+        }
+      ],
+      "services": [
+        {
+          "ministry": "acsw",
+          "name": "Apply for a film distribution licence",
+          "domain": "licences_permits",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "acsw",
+          "name": "Apply for an archaeological or palaeontological research permit",
+          "domain": "licences_permits",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "acsw",
+          "name": "Apply for heritage resource designation",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "ae",
+          "name": "Get your trade credential recognized",
+          "domain": "professional_credentials",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "ae",
+          "name": "Write your journeyperson certification exam",
+          "domain": "professional_credentials",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "edu",
+          "name": "Apply for teacher certification",
+          "domain": "professional_credentials",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "edu",
+          "name": "Transfer teaching credentials from another jurisdiction",
+          "domain": "professional_credentials",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "em",
+          "name": "Apply for metallic and industrial mineral permits and leases",
+          "domain": "energy_minerals",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "epa",
+          "name": "Apply for a water licence or approval",
+          "domain": "licences_permits",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "epa",
+          "name": "Apply for an environmental approval or registration",
+          "domain": "licences_permits",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "epa",
+          "name": "Get certified as a landfill or composting facility operator",
+          "domain": "licences_permits",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "fp",
+          "name": "Apply for a timber permit",
+          "domain": "forestry",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "fp",
+          "name": "Apply for a timber quota",
+          "domain": "forestry",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "fp",
+          "name": "Apply to become a wildland firefighter",
+          "domain": "working_employment",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "fp",
+          "name": "Buy a park conservation pass",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "fp",
+          "name": "Get a Public Lands Camping Pass",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "fp",
+          "name": "Get a fire permit",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "fp",
+          "name": "Get a personal-use tree cutting permit",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "health",
+          "name": "Apply for a continuing care facility licence or comply with standards",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "im",
+          "name": "Apply through the Alberta Express Entry Stream",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "im",
+          "name": "Apply through the Alberta Opportunity Stream",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "im",
+          "name": "Apply through the Rural Renewal Stream or Tourism and Hospitality Stream",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "im",
+          "name": "Apply to start or buy a business in Alberta as an entrepreneur",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "im",
+          "name": "Get your international qualifications assessed",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "ir",
+          "name": "Apply for membership in a Métis Settlement",
+          "domain": "housing_property",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "jeti",
+          "name": "Apply through the Alberta Express Entry Stream",
+          "domain": "immigration_settling",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "jeti",
+          "name": "Apply through the Alberta Opportunity Stream",
+          "domain": "immigration_settling",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "jeti",
+          "name": "Apply through the Rural Renewal Stream or Tourism and Hospitality Stream",
+          "domain": "immigration_settling",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "jeti",
+          "name": "Apply to start or buy a business in Alberta as an entrepreneur",
+          "domain": "immigration_settling",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "jeti",
+          "name": "Get your international qualifications assessed",
+          "domain": "professional_credentials",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "jus",
+          "name": "Apply for a Possession and Acquisition Licence (PAL)",
+          "domain": "professional_credentials",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "jus",
+          "name": "Apply for a body armour permit",
+          "domain": "professional_credentials",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "jus",
+          "name": "Apply for a locksmith licence",
+          "domain": "licences_permits",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "jus",
+          "name": "Apply for a private investigator licence",
+          "domain": "licences_permits",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "jus",
+          "name": "Apply for a security service worker licence",
+          "domain": "licences_permits",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "jus",
+          "name": "Apply for a security, investigation, or locksmith business licence",
+          "domain": "licences_permits",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "jus",
+          "name": "Apply for appointment as a notary public",
+          "domain": "professional_credentials",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "jus",
+          "name": "Apply to become a commissioner for oaths",
+          "domain": "professional_credentials",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "jus",
+          "name": "Enroll in an ignition interlock program",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Renew a firearms licence",
+          "domain": "professional_credentials",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "ma",
+          "name": "Apply for a construction or renovation permit",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "sa",
+          "name": "Apply for or renew your driver's licence",
+          "domain": "driving_vehicles",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "sa",
+          "name": "Get a death certificate",
+          "domain": "vital_records_id",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "tbf",
+          "name": "Apply for or renew a gaming, liquor, or cannabis licence",
+          "domain": "licences_permits",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "tec",
+          "name": "Get a commercial driver's licence",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "tec",
+          "name": "Get a driver's abstract",
+          "domain": "driving_vehicles",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "tec",
+          "name": "Get a permit for an oversized or overweight load",
+          "domain": "licences_permits",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "tec",
+          "name": "Get an in-transit permit",
+          "domain": "licences_permits",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "tec",
+          "name": "Renew or replace a driver's licence",
+          "domain": "driving_vehicles",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        }
+      ],
+      "intent_note": "Multi-intent. Personal credentials (teacher certification, PAL) lean becoming; business licences and activity permits lean permission."
+    },
+    {
+      "id": "apply-for-a-grant-or-funding",
+      "name": "Apply for a grant or funding",
+      "service_task": "Apply",
+      "kate_tarling_intents": [
+        "financial-support"
+      ],
+      "leverage": {
+        "service_count": 51,
+        "ministry_count": 17,
+        "passes_bar": true
+      },
+      "shared_shape": "Organization or project lead submits a proposal with budget, work plan, and outcomes; reviewed against program criteria; awarded with a contract or transfer payment agreement; ongoing reporting and accountability.",
+      "variations": "Project grants (one-time, defined deliverables) vs. operating grants (ongoing, organizational support) vs. capital funding (infrastructure). Some are open-call competitive, some are formula-based.",
+      "product_types_used": [
+        "public-form"
+      ],
+      "existing_examples": [
+        {
+          "productType": "public-form",
+          "slug": "start-page"
+        },
+        {
+          "productType": "public-form",
+          "slug": "task-list-page"
+        },
+        {
+          "productType": "public-form",
+          "slug": "question-page"
+        },
+        {
+          "productType": "public-form",
+          "slug": "review-page"
+        },
+        {
+          "productType": "public-form",
+          "slug": "result-page"
+        }
+      ],
+      "interaction_examples": [
+        "ask-a-user-for-dollar-amounts",
+        "expand-or-collapse-part-of-a-form",
+        "add-another-item-in-a-modal",
+        "add-a-record-using-a-drawer"
+      ],
+      "gaps": [
+        "No project-budget input pattern. Grant applications need structured cost tables.",
+        "No multi-applicant/team pattern. Grants often need lists of project participants.",
+        "No work-plan/milestone composer.",
+        "No attachment manager. Grant applications often require multiple supporting documents.",
+        "No reporting-back flow (post-award), though that's worker-side and deferred."
+      ],
+      "proposed_examples": [
+        {
+          "concept": "Budget table input",
+          "rationale": "Section composer with itemized rows, categories, totals."
+        },
+        {
+          "concept": "Project team composer",
+          "rationale": "Pattern for adding multiple participants with their own form fields each."
+        },
+        {
+          "concept": "Document checklist with upload",
+          "rationale": "Pattern showing required attachments with status indicators."
+        },
+        {
+          "concept": "Multi-organization profile",
+          "rationale": "Section for the org submitting (their address, registration, history)."
+        }
+      ],
+      "services": [
+        {
+          "ministry": "acsw",
+          "name": "Apply for a community facility improvement grant",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "acsw",
+          "name": "Apply for a community project operating grant",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "acsw",
+          "name": "Apply for a scholarship or award recognizing women's contributions",
+          "domain": "education_training",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "acsw",
+          "name": "Apply for an arts project or individual artist grant",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "acsw",
+          "name": "Apply for film and television production funding",
+          "domain": "film_media",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "ae",
+          "name": "Apply for scholarships and awards",
+          "domain": "money_taxes_benefits",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "ag",
+          "name": "Apply for a beginning farmer loan",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "ag",
+          "name": "Apply for a farm or agribusiness loan",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "ag",
+          "name": "Apply for agricultural sustainability funding",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "ag",
+          "name": "Open a government-matched farm savings account",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "alss",
+          "name": "Access Affordable Housing Partnership funding",
+          "domain": "government_procurement",
+          "track": "business",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "alss",
+          "name": "Access Indigenous housing capital funding",
+          "domain": "government_procurement",
+          "track": "business",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "alss",
+          "name": "Access Lodge Assistance Program funding",
+          "domain": "money_taxes_benefits",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Access capital maintenance and renewal funding",
+          "domain": "government_procurement",
+          "track": "business",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "alss",
+          "name": "Access lodge modernization funding",
+          "domain": "government_procurement",
+          "track": "business",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "alss",
+          "name": "Apply for FCSS funding",
+          "domain": "government_procurement",
+          "track": "business",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "alss",
+          "name": "Apply for community capacity-building grants",
+          "domain": "government_procurement",
+          "track": "business",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "au",
+          "name": "Apply for the farm fuel tax exemption",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "cfs",
+          "name": "Get funding for post-secondary education after care",
+          "domain": "education_training",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "epa",
+          "name": "Apply for water and wastewater infrastructure grants",
+          "domain": "disaster_recovery",
+          "track": "business",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "health",
+          "name": "Access health research data and apply for research funding",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "hshs",
+          "name": "Access health research data and apply for research funding",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "im",
+          "name": "Apply for a multiculturalism or community inclusion grant",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "im",
+          "name": "Nominate an immigrant for an Alberta recognition award",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "ir",
+          "name": "Access consultation capacity funding as an Indigenous community",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "ir",
+          "name": "Access reconciliation and cultural preservation project funding",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "ir",
+          "name": "Apply for Indigenous business investment funding",
+          "domain": "exporting_trade",
+          "track": "business",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "ir",
+          "name": "Apply for a First Nations community development grant",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "ir",
+          "name": "Apply for community safety funding addressing violence against Indigenous women and girls",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jeti",
+          "name": "Apply for a multiculturalism or community inclusion grant",
+          "domain": "finances_taxes",
+          "track": "business",
+          "tier": "core_business_needs"
+        },
+        {
+          "ministry": "jeti",
+          "name": "Apply for the Alberta film and television tax credit",
+          "domain": "film_media",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "jeti",
+          "name": "Nominate an immigrant for an Alberta recognition award",
+          "domain": "immigration_settling",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "scss",
+          "name": "Access Affordable Housing Partnership funding",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Access Indigenous housing capital funding",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Access Lodge Assistance Program funding",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Access capital maintenance and renewal funding",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Access lodge modernization funding",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Apply for FCSS funding",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Apply for community capacity-building grants",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "tbf",
+          "name": "Apply for an Alberta Indian Tax Exemption",
+          "domain": "money_taxes_benefits",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "tec",
+          "name": "Apply for FCSS funding",
+          "domain": "government_procurement",
+          "track": "business",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "tec",
+          "name": "Apply for provincial transit capital funding",
+          "domain": "government_procurement",
+          "track": "business",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "tec",
+          "name": "Apply for road and bridge grants",
+          "domain": "government_procurement",
+          "track": "business",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "tec",
+          "name": "Apply for water and wastewater infrastructure funding",
+          "domain": "government_procurement",
+          "track": "business",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "ti",
+          "name": "Apply for Alberta Innovates research or commercialization funding",
+          "domain": "registration_legal",
+          "track": "business",
+          "tier": "core_business_needs"
+        },
+        {
+          "ministry": "ti",
+          "name": "Apply for rural or Indigenous community broadband funding",
+          "domain": "government_procurement",
+          "track": "business",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "ts",
+          "name": "Apply for a major sport events grant",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "ts",
+          "name": "Apply for a sport and recreation participation grant",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "ts",
+          "name": "Apply for a sport, physical activity, or recreation operating grant",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "ts",
+          "name": "Apply for community recreation facility capital funding",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "ts",
+          "name": "Nominate someone for a sport or recreation award",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        }
+      ]
+    },
+    {
+      "id": "apply-for-a-benefit",
+      "name": "Apply for a benefit",
+      "service_task": "Apply",
+      "kate_tarling_intents": [
+        "financial-support"
+      ],
+      "leverage": {
+        "service_count": 65,
+        "ministry_count": 15,
+        "passes_bar": true
+      },
+      "shared_shape": "Citizen demonstrates eligibility (means-tested or categorical), provides personal/household info, uploads supporting documents, waits for adjudication, receives ongoing or one-time payment with a decision letter. Some have ongoing review cycles.",
+      "variations": "Means-tested (income support, AISH, childcare subsidy) vs. categorical (seniors financial assistance, disability benefits). Some pay monthly, some are one-time. Includes claim-shaped variants triggered by events (disaster recovery, wildlife damage compensation).",
+      "product_types_used": [
+        "public-form"
+      ],
+      "existing_examples": [
+        {
+          "productType": "public-form",
+          "slug": "start-page"
+        },
+        {
+          "productType": "public-form",
+          "slug": "task-list-page"
+        },
+        {
+          "productType": "public-form",
+          "slug": "question-page"
+        },
+        {
+          "productType": "public-form",
+          "slug": "review-page"
+        },
+        {
+          "productType": "public-form",
+          "slug": "result-page"
+        }
+      ],
+      "interaction_examples": [
+        "ask-a-user-for-an-address",
+        "ask-a-user-for-a-birthday",
+        "ask-a-user-for-direct-deposit-information",
+        "ask-a-user-for-an-indian-registration-number",
+        "ask-a-user-for-dollar-amounts",
+        "expand-or-collapse-part-of-a-form",
+        "reveal-input-based-on-a-selection",
+        "form-stepper-with-controlled-navigation",
+        "show-a-user-progress",
+        "show-a-user-progress-when-the-time-is-unknown",
+        "link-the-user-to-give-feedback-to-the-service"
+      ],
+      "gaps": [
+        "No eligibility-check pattern. Citizens often need to know if they qualify before starting.",
+        "No means-test screen. Most Alberta benefits are means-tested; no example shows how to handle income+household+deductions in a form.",
+        "No status-tracking page. The current result-page covers the immediate confirmation; nothing covers checking on a long-running decision.",
+        "No clarification-request flow. When the worker side asks for more info.",
+        "No save-and-return pattern. Means-tested applications are long; many citizens can't finish in one sitting."
+      ],
+      "proposed_examples": [
+        {
+          "concept": "Eligibility checker",
+          "rationale": "Pre-form gate: answer 4-5 questions, get a yes/no/maybe with reasons."
+        },
+        {
+          "concept": "Status tracker",
+          "rationale": "Page citizens visit after submitting to see where their application is. Phase 5 of Apply six-phase flow has no existing example."
+        },
+        {
+          "concept": "Means-test composer",
+          "rationale": "Section that handles eligibility math (income, household, deductions) with explanatory help."
+        },
+        {
+          "concept": "Save-and-return",
+          "rationale": "Pattern for partial-fill state across sessions plus account-side pages."
+        },
+        {
+          "concept": "Respond to a clarification request",
+          "rationale": "Page or flow citizen reaches via notification, lets them upload more info or answer follow-ups."
+        }
+      ],
+      "services": [
+        {
+          "ministry": "ae",
+          "name": "Apply for Alberta student loans and grants",
+          "domain": "money_taxes_benefits",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "ae",
+          "name": "Apply to a post-secondary institution",
+          "domain": "education_training",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "ae",
+          "name": "Get help repaying your student loan",
+          "domain": "money_taxes_benefits",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "ag",
+          "name": "Apply for annual crop insurance",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "ag",
+          "name": "Apply for disaster recovery assistance",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "ag",
+          "name": "Apply for hail insurance",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "ag",
+          "name": "Apply for livestock price insurance",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "ag",
+          "name": "Enrol in income stabilization support",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "ag",
+          "name": "File a wildlife damage compensation claim",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "alss",
+          "name": "Defer property taxes",
+          "domain": "money_taxes_benefits",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get a qualified service dog",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get community living supports for developmental disabilities",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get dental and optical coverage as a senior",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get dental, optical, and prescription coverage",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get employment skills training",
+          "domain": "working_employment",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get financial help to meet basic needs (Income Support)",
+          "domain": "money_taxes_benefits",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get foundational learning assistance",
+          "domain": "education_training",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get health coverage for your children",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get help adapting or repairing your home",
+          "domain": "housing_property",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get help with appliance and health costs as a senior",
+          "domain": "money_taxes_benefits",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get income, health and other benefits for a severe disability",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get monthly financial support as a senior",
+          "domain": "money_taxes_benefits",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get prescription drug coverage as a senior",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get support for your child with a disability (FSCD)",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "au",
+          "name": "Apply for the remote area heating allowance",
+          "domain": "housing_property",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "edu",
+          "name": "Apply for child care subsidies",
+          "domain": "money_taxes_benefits",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "edu",
+          "name": "Enrol in distance or online learning (K-12)",
+          "domain": "education_training",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "edu",
+          "name": "Enrol your child in school",
+          "domain": "education_training",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "health",
+          "name": "Apply for aids to daily living benefits",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "health",
+          "name": "Apply for coverage under a government drug benefit program",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "health",
+          "name": "Update your health care insurance information or replace your card",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "ir",
+          "name": "Access employment and training supports for Indigenous workers",
+          "domain": "working_employment",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "ir",
+          "name": "Obtain a land allocation or resolve a land matter on a Métis Settlement",
+          "domain": "housing_property",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "jus",
+          "name": "Apply for Legal Aid",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Apply for child or spousal support",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "jus",
+          "name": "Apply for financial assistance as a crime victim",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Apply for the Escaping Abuse Benefit",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Apply to waive a court filing fee",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Claim jury duty expenses",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Get reimbursed for attending court as a victim",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Set up enforcement for a support order",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "ma",
+          "name": "Apply for disaster recovery assistance after a declared disaster",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "ma",
+          "name": "File a claim under the new home warranty program",
+          "domain": "housing_property",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "mha",
+          "name": "Apply to a recovery community for long-term residential treatment",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "pphs",
+          "name": "Apply for aids to daily living benefits",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "pphs",
+          "name": "Apply for coverage under a government drug benefit program",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "pphs",
+          "name": "Update your health care insurance information or replace your card",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "pses",
+          "name": "Apply for disaster recovery assistance",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "scss",
+          "name": "Defer property taxes",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get a qualified service dog",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get community living supports for developmental disabilities",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get dental and optical coverage as a senior",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get dental, optical, and prescription coverage",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get employment skills training",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get financial help to meet basic needs (Income Support)",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get foundational learning assistance",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get health coverage for your children",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get help adapting or repairing your home",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get help with appliance and health costs as a senior",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get income, health and other benefits for a severe disability",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get monthly financial support as a senior",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get prescription drug coverage as a senior",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get support for your child with a disability (FSCD)",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "tbf",
+          "name": "Search for and claim unclaimed property",
+          "domain": "money_taxes_benefits",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "ts",
+          "name": "Apply for financial assistance for children's sport and recreation fees",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        }
+      ]
+    },
+    {
+      "id": "pay-a-fee-or-fine",
+      "name": "Pay a fee or fine",
+      "service_task": "Transact",
+      "kate_tarling_intents": [
+        "paying"
+      ],
+      "leverage": {
+        "service_count": 6,
+        "ministry_count": 4,
+        "passes_bar": true
+      },
+      "shared_shape": "Citizen receives or knows about an obligation (fine, fee, tax owed), looks up the amount, pays online with optional dispute path. Receipt issued; account updated.",
+      "variations": "Penalties (traffic fines, impaired driving) vs. recurring payments (fuel tax, mineral rights tax) vs. one-off fees (court filing fee, royalty payments).",
+      "product_types_used": [],
+      "existing_examples": [],
+      "interaction_examples": [
+        "copy-to-clipboard"
+      ],
+      "gaps": [
+        "No payment page pattern. There's no example showing amount-due, payment method selector, payee/payor, terms, submit-and-receipt.",
+        "No dispute path pattern. Many fines have a 'pay or dispute' choice on the same surface.",
+        "No receipt page pattern.",
+        "No look-up-then-pay pattern. Many fines require finding your fine first."
+      ],
+      "proposed_examples": [
+        {
+          "concept": "Lookup-and-pay",
+          "rationale": "Two-step flow: find the obligation, then pay it."
+        },
+        {
+          "concept": "Pay-or-dispute",
+          "rationale": "Page that presents amount and a clear branch to dispute."
+        },
+        {
+          "concept": "Payment receipt",
+          "rationale": "Confirmation page with downloadable proof."
+        },
+        {
+          "concept": "Account-balance view",
+          "rationale": "For multi-payment obligations (royalties, taxes), a balance-and-history page."
+        }
+      ],
+      "services": [
+        {
+          "ministry": "em",
+          "name": "Pay freehold mineral rights tax",
+          "domain": "energy_minerals",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "jus",
+          "name": "Pay or dispute a traffic ticket",
+          "domain": "driving_vehicles",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "jus",
+          "name": "Pay or dispute an impaired driving penalty through SafeRoads Alberta",
+          "domain": "driving_vehicles",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "tbf",
+          "name": "File and pay Alberta corporate income tax",
+          "domain": "finances_taxes",
+          "track": "business",
+          "tier": "core_business_needs"
+        },
+        {
+          "ministry": "tbf",
+          "name": "File and pay fuel tax, tobacco tax, or tourism levy",
+          "domain": "finances_taxes",
+          "track": "business",
+          "tier": "core_business_needs"
+        },
+        {
+          "ministry": "tec",
+          "name": "Pay a traffic fine",
+          "domain": "driving_vehicles",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        }
+      ],
+      "product_types_proposed": [
+        "payment",
+        "transaction"
+      ],
+      "note": "This service type likely earns its own productType in a future PR — payment is structurally distinct from public-form."
+    },
+    {
+      "id": "check-status-or-records",
+      "name": "Check your status or records",
+      "service_task": "Check",
+      "kate_tarling_intents": [
+        "checking-information"
+      ],
+      "leverage": {
+        "service_count": 27,
+        "ministry_count": 12,
+        "passes_bar": true
+      },
+      "shared_shape": "Authenticated citizen looks up their own status, account, history, or records held by government. Often the back-half of an Apply or Transact flow.",
+      "variations": "Status checks (immigration application, health coverage) vs. account management (student loan, support payments) vs. personal records (health records).",
+      "product_types_used": [],
+      "existing_examples": [],
+      "interaction_examples": [
+        "display-user-information",
+        "show-status-on-a-card",
+        "show-quick-links",
+        "show-a-user-progress",
+        "show-a-user-progress-when-the-time-is-unknown",
+        "set-a-specific-tab-to-be-active",
+        "show-multiple-tags-together",
+        "show-full-date-in-a-tooltip"
+      ],
+      "gaps": [
+        "No authenticated-account-home pattern.",
+        "No history/timeline pattern.",
+        "No status-with-action-affordance pattern. Often the status check leads to action (apply for deferral, dispute charge).",
+        "No record-detail pattern."
+      ],
+      "proposed_examples": [
+        {
+          "concept": "My-account home",
+          "rationale": "Landing page with status cards, recent activity, and quick actions."
+        },
+        {
+          "concept": "History timeline",
+          "rationale": "List of past events (payments, decisions, applications) with filters and detail-view links."
+        },
+        {
+          "concept": "Record detail with actions",
+          "rationale": "Page showing one record's full info with contextual actions (renew, dispute, download)."
+        }
+      ],
+      "services": [
+        {
+          "ministry": "ae",
+          "name": "Manage your student loan",
+          "domain": "money_taxes_benefits",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "ag",
+          "name": "Get soil survey data and land information",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "ag",
+          "name": "Use crop budget and decision tools",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "ag",
+          "name": "Use weather and climate data for farm planning",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "au",
+          "name": "Compare electricity retailers and plans",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "au",
+          "name": "Compare natural gas retailers and plans",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "au",
+          "name": "Get help preventing utility disconnection",
+          "domain": "housing_property",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "au",
+          "name": "Get help resolving a utility dispute",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "edu",
+          "name": "Check assessment results and school performance data",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "fp",
+          "name": "Check Public Land Use Zone rules",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "fp",
+          "name": "Check current fire bans and restrictions",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "fp",
+          "name": "Check park advisories and closures",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "fp",
+          "name": "Check public land closures and advisories",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "fp",
+          "name": "Check wildfire status",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "health",
+          "name": "Access your personal health records online",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "health",
+          "name": "Check your health coverage status or claim history",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "im",
+          "name": "Check your immigration application status",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "jeti",
+          "name": "Check your immigration application status",
+          "domain": "immigration_settling",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "jus",
+          "name": "Assess your family law options online",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "jus",
+          "name": "Respond to a jury summons",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Track and manage your support payments online",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "pphs",
+          "name": "Access your personal health records online",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "pphs",
+          "name": "Check your health coverage status or claim history",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "tec",
+          "name": "Check highway conditions before travelling",
+          "domain": "driving_vehicles",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "tec",
+          "name": "Check road restrictions and seasonal bans",
+          "domain": "driving_vehicles",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "tec",
+          "name": "Check your carrier safety rating",
+          "domain": "safety_codes_standards",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "ts",
+          "name": "Check if a travel agent or tour operator is registered",
+          "domain": "immigration_settling",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        }
+      ],
+      "product_types_proposed": [
+        "account",
+        "portal"
+      ],
+      "note": "Likely needs an account / portal productType beyond workspace and public-form."
+    },
+    {
+      "id": "search-a-public-register",
+      "name": "Search a public register",
+      "service_task": "Find",
+      "kate_tarling_intents": [
+        "checking-information"
+      ],
+      "leverage": {
+        "service_count": 25,
+        "ministry_count": 17,
+        "passes_bar": true
+      },
+      "shared_shape": "Citizen queries a public registry to verify a fact, find a record, or check status. May be free (most) or paid (court records, land titles). Result is a record or 'no record found.'",
+      "variations": "Validation queries (is this professional registered?) vs. record retrieval (land title, court record) vs. lookup-and-decide (is this drug covered? is broadband available?). Some require authenticated access.",
+      "product_types_used": [],
+      "existing_examples": [
+        {
+          "productType": "(no productType)",
+          "slug": "search"
+        }
+      ],
+      "interaction_examples": [
+        "card-grid",
+        "show-status-in-a-table",
+        "filter-data-in-a-table",
+        "show-multiple-tags-together",
+        "show-quick-links"
+      ],
+      "gaps": [
+        "No verify-a-fact pattern. 'Is this professional registered?' is yes/no with details.",
+        "No paid-search-with-payment pattern. Court records and land titles cost money.",
+        "No record-citation pattern. Records often need to be cited (legal proceedings, applications)."
+      ],
+      "proposed_examples": [
+        {
+          "concept": "Verification result",
+          "rationale": "'We found one match; here's what they're authorized to do' — yes/no with detail."
+        },
+        {
+          "concept": "Paid-record retrieval",
+          "rationale": "Three-step pattern: search → confirm + pay → retrieve."
+        },
+        {
+          "concept": "Citation-ready record view",
+          "rationale": "Printable, downloadable, or share-link pattern."
+        }
+      ],
+      "services": [
+        {
+          "ministry": "ae",
+          "name": "Search and compare post-secondary programs",
+          "domain": "education_training",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Search for affordable housing options",
+          "domain": "housing_property",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "cpe",
+          "name": "Search for government services and information",
+          "domain": "privacy_government_access",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "edu",
+          "name": "Search for licensed child care",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "em",
+          "name": "Search metallic and industrial mineral assessment reports",
+          "domain": "energy_minerals",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "epa",
+          "name": "Check flood maps and river advisories",
+          "domain": "housing_property",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "epa",
+          "name": "Look up groundwater information and water well records",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "epa",
+          "name": "Look up the status of a wild species in Alberta",
+          "domain": "environment_land",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "fp",
+          "name": "Search Crown land enforcement history",
+          "domain": "privacy_government_access",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "health",
+          "name": "Check surgical and diagnostic wait times",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "health",
+          "name": "Look up whether a drug is covered on the Alberta Drug Benefit List",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "health",
+          "name": "Verify a health professional's registration status",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "hshs",
+          "name": "Check surgical and diagnostic wait times",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "infra",
+          "name": "Check the status of a health facility construction or expansion project",
+          "domain": "transport_infrastructure",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "infra",
+          "name": "Check the status of a new school construction or modernization project",
+          "domain": "transport_infrastructure",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "infra",
+          "name": "Look up designated heritage buildings and provincial historic sites",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Search court records online",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "jus",
+          "name": "Search land title records online",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "ma",
+          "name": "Look up your property assessment",
+          "domain": "housing_property",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "pphs",
+          "name": "Look up whether a drug is covered on the Alberta Drug Benefit List",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "pphs",
+          "name": "Verify a health professional's registration status",
+          "domain": "professional_credentials",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "sa",
+          "name": "Search or register a personal property lien",
+          "domain": "registration_legal",
+          "track": "business",
+          "tier": "core_business_needs"
+        },
+        {
+          "ministry": "scss",
+          "name": "Search for affordable housing options",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "tbf",
+          "name": "Check your eligibility for the Alberta Child and Family Benefit",
+          "domain": "money_taxes_benefits",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "ti",
+          "name": "Check broadband availability in your area",
+          "domain": "transport_infrastructure",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        }
+      ],
+      "product_types_proposed": [
+        "directory"
+      ]
+    },
+    {
+      "id": "find-a-service-or-place",
+      "name": "Find a service or place",
+      "service_task": "Find",
+      "kate_tarling_intents": [
+        "checking-information"
+      ],
+      "leverage": {
+        "service_count": 20,
+        "ministry_count": 14,
+        "passes_bar": true
+      },
+      "shared_shape": "Citizen searches by location and need, gets a directory of providers/places with contact info, hours, eligibility hints. Often the front-half of an Advise or Apply flow.",
+      "variations": "Health providers (doctors, treatment, hospitals) vs. social supports (settlement services, victim services, mental health) vs. physical places (libraries, parks, government offices) vs. regulated providers.",
+      "product_types_used": [],
+      "existing_examples": [
+        {
+          "productType": "(no productType)",
+          "slug": "search"
+        }
+      ],
+      "interaction_examples": [
+        "card-grid",
+        "header-with-navigation",
+        "hero-banner-with-actions",
+        "show-a-list-to-help-answer-a-question",
+        "show-multiple-tags-together",
+        "show-quick-links",
+        "link-to-an-external-page"
+      ],
+      "gaps": [
+        "No location-based-search pattern. 'Near me' is common — no example handles geolocation or postal code with results map.",
+        "No filter-by-criteria pattern for a directory.",
+        "No directory-card-with-contact-info pattern with the standard facts.",
+        "No no-results-with-recovery pattern."
+      ],
+      "proposed_examples": [
+        {
+          "concept": "Directory search page",
+          "rationale": "Combined filters + results in a public-facing directory shape."
+        },
+        {
+          "concept": "Provider/place card",
+          "rationale": "Standard result card with name, location, hours, contact, eligibility, accessibility."
+        },
+        {
+          "concept": "Empty state with recovery",
+          "rationale": "No-results pattern that suggests broader searches or contact."
+        },
+        {
+          "concept": "Result detail page",
+          "rationale": "Click-through view of one provider with full info."
+        }
+      ],
+      "services": [
+        {
+          "ministry": "alss",
+          "name": "Find healthy aging programs in your community",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "cpe",
+          "name": "Find contact information for a government office or service",
+          "domain": "privacy_government_access",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "fp",
+          "name": "Find a regulated forestry professional",
+          "domain": "forestry",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "health",
+          "name": "Find a continuing care facility or home care provider",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "health",
+          "name": "Find a family doctor or primary care provider",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "hshs",
+          "name": "Find a hospital or emergency department",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "im",
+          "name": "Find employment mentorship and career supports for newcomers",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "im",
+          "name": "Find settlement services and newcomer supports in your community",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "jeti",
+          "name": "Find employment mentorship and career supports for newcomers",
+          "domain": "working_employment",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "jeti",
+          "name": "Find settlement services and newcomer supports in your community",
+          "domain": "immigration_settling",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "jus",
+          "name": "Find a victim services organization near you",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "ma",
+          "name": "Find a public library near you",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "ma",
+          "name": "Find information about your municipality's finances and services",
+          "domain": "transport_infrastructure",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "ma",
+          "name": "Find your local safety codes authority or accredited agency",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "mha",
+          "name": "Find a licensed addiction or mental health treatment provider",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "mha",
+          "name": "Find community mental health services near you",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "pphs",
+          "name": "Find a family doctor or primary care provider",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "pses",
+          "name": "Find victim services in your community",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "scss",
+          "name": "Find healthy aging programs in your community",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "ti",
+          "name": "Find government services online",
+          "domain": "transport_infrastructure",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        }
+      ],
+      "product_types_proposed": [
+        "directory"
+      ]
+    },
+    {
+      "id": "access-an-in-person-program",
+      "name": "Access an in-person program",
+      "service_task": "Advise",
+      "kate_tarling_intents": [
+        "financial-support",
+        "protecting"
+      ],
+      "leverage": {
+        "service_count": 69,
+        "ministry_count": 11,
+        "passes_bar": true
+      },
+      "shared_shape": "Service exists but has no digital channel — citizen finds the program, calls or visits in person, gets human-mediated intake, receives the service. The digital surface (if any) is find-a-service-or-place shaped pointing at the program.",
+      "variations": "Emergency/crisis services (shelter, evacuation support, crisis lines) vs. specialized in-person supports (food bank, addiction treatment, brain injury). Concentrated in ALSS/SCSS plus MHA, JUS, CFS.",
+      "product_types_used": [],
+      "existing_examples": [],
+      "interaction_examples": [],
+      "gaps": [
+        "By definition this is the gap. ~11% of Alberta services have no digital channel."
+      ],
+      "proposed_examples": [],
+      "services": [
+        {
+          "ministry": "ag",
+          "name": "Comply with meat and dairy inspection requirements",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "alss",
+          "name": "Access Indigenous-led or women-specific shelter",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "alss",
+          "name": "Access brain injury support services",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Access community programs while in continuing care",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "alss",
+          "name": "Access emergency or transitional shelter",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "alss",
+          "name": "Access food bank services",
+          "domain": "money_taxes_benefits",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Access palliative and end-of-life care",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Book assisted transportation",
+          "domain": "transport_infrastructure",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "alss",
+          "name": "Book community transportation as a senior",
+          "domain": "money_taxes_benefits",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Direct your own home care",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Find and apply for a lodge placement",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Find care after leaving the hospital",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get a specialized employment assessment",
+          "domain": "working_employment",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get connected to community health and wellness activities",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get disability-related employment supports (DRES)",
+          "domain": "working_employment",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get emergency evacuation financial support",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get emergency financial assistance",
+          "domain": "money_taxes_benefits",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get help with legal and financial matters for a vulnerable person",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get help with rent affordability",
+          "domain": "housing_property",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get housing support as a survivor of violence",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get non-medical home support",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get outreach support in the community",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "alss",
+          "name": "Try a workplace experience or earn a short credential",
+          "domain": "working_employment",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "cfs",
+          "name": "Get family preservation support",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "cfs",
+          "name": "Get post-adoption support",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "cpe",
+          "name": "Send a message to the Premier or a minister",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "edu",
+          "name": "Arrange student transportation",
+          "domain": "education_training",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "edu",
+          "name": "Get school mental health support",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "edu",
+          "name": "Get specialized learning support for your child",
+          "domain": "education_training",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "infra",
+          "name": "Lease space to or from the Government of Alberta",
+          "domain": "registration_legal",
+          "track": "business",
+          "tier": "core_business_needs"
+        },
+        {
+          "ministry": "jus",
+          "name": "Get emergency legal advice while in custody",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "mha",
+          "name": "Access same-day virtual addiction medicine through the opioid dependency program",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "sa",
+          "name": "Get a learner's permit or upgrade your licence class",
+          "domain": "driving_vehicles",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "scss",
+          "name": "Access Indigenous-led or women-specific shelter",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Access brain injury support services",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Access community programs while in continuing care",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Access emergency or transitional shelter",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Access food bank services",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Access palliative and end-of-life care",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Book assisted transportation",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Book community transportation as a senior",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Direct your own home care",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Find and apply for a lodge placement",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Find care after leaving the hospital",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get a specialized employment assessment",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get connected to community health and wellness activities",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get disability-related employment supports (DRES)",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get emergency evacuation financial support",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get emergency financial assistance",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get help with legal and financial matters for a vulnerable person",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get help with rent affordability",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get housing support as a survivor of violence",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get non-medical home support",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get outreach support in the community",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Try a workplace experience or earn a short credential",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "tec",
+          "name": "Align your LRT plans with provincial rail",
+          "domain": "transport_carriers",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "tec",
+          "name": "Check vehicle history and lien status",
+          "domain": "driving_vehicles",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "tec",
+          "name": "Demonstrate vehicle and insurance compliance",
+          "domain": "safety_codes_standards",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "tec",
+          "name": "Get a Driver's Licence History Report",
+          "domain": "driving_vehicles",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "tec",
+          "name": "Get a vehicle inspected",
+          "domain": "driving_vehicles",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "tec",
+          "name": "Get authorization to haul logs",
+          "domain": "forestry",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "tec",
+          "name": "Get certified to transport dangerous goods",
+          "domain": "safety_codes_standards",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "tec",
+          "name": "Get your railway inspected and certified",
+          "domain": "transport_carriers",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "tec",
+          "name": "Obtain or replace licence plates",
+          "domain": "driving_vehicles",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "tec",
+          "name": "Reinstate a suspended or cancelled licence",
+          "domain": "driving_vehicles",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "tec",
+          "name": "Set up a community revitalization levy",
+          "domain": "registration_legal",
+          "track": "business",
+          "tier": "core_business_needs"
+        },
+        {
+          "ministry": "tec",
+          "name": "Start a commercial carrier operation",
+          "domain": "licences_permits",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "tec",
+          "name": "Transfer vehicle ownership for a private sale",
+          "domain": "driving_vehicles",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "tec",
+          "name": "Update driving documents",
+          "domain": "vital_records_id",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        }
+      ],
+      "intent_note": "Multi-intent. Emergency $ supports lean financial-support; shelter/crisis services lean protecting.",
+      "note": "No new examples in this brief. Brief 07 should surface this category as 'services without a digital surface; design system can't help build for these until digitization decision is made.' The forward-looking response is intake-and-assess productType pairs (worker side), pursued in a follow-up brief per scope."
+    },
+    {
+      "id": "read-information-or-guidance",
+      "name": "Read information or guidance",
+      "service_task": "Find",
+      "kate_tarling_intents": [
+        "checking-information"
+      ],
+      "leverage": {
+        "service_count": 190,
+        "ministry_count": 28,
+        "passes_bar": true
+      },
+      "shared_shape": "Citizen consumes content explaining a topic, regulation, right, or program. No personalization; published guidance for general audiences. Often the only digital surface for non-digitized programs.",
+      "variations": "Rights/regulation content vs. program awareness vs. data and statistics vs. how-to guides. Quality and depth vary.",
+      "product_types_used": [],
+      "existing_examples": [
+        {
+          "productType": "(no productType)",
+          "slug": "basic-page-layout"
+        },
+        {
+          "productType": "(no productType)",
+          "slug": "hero-banner-with-actions"
+        }
+      ],
+      "interaction_examples": [
+        "show-links-to-navigation-items",
+        "show-quick-links",
+        "link-to-an-external-page",
+        "hide-and-show-many-sections-of-information",
+        "show-a-section-title-on-a-question-page"
+      ],
+      "gaps": [
+        "No structured-guidance page pattern.",
+        "No 'rules and rights' pattern.",
+        "No content-with-tools pattern (calculators, eligibility checkers embedded in guidance)."
+      ],
+      "proposed_examples": [
+        {
+          "concept": "Long-form guidance page",
+          "rationale": "Standard structure for explanatory content."
+        },
+        {
+          "concept": "Rules-and-rights page",
+          "rationale": "Specific pattern for rights/obligations content."
+        },
+        {
+          "concept": "Inline calculator",
+          "rationale": "Mini-tool embedded in guidance."
+        }
+      ],
+      "services": [
+        {
+          "ministry": "acsw",
+          "name": "Access French-language government services and supports",
+          "domain": "privacy_government_access",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "acsw",
+          "name": "Access the Provincial Archives",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "acsw",
+          "name": "Call the family violence information line",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "acsw",
+          "name": "Find family violence resources and supports",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "acsw",
+          "name": "Learn about your rights as a professional artist",
+          "domain": "professional_credentials",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "acsw",
+          "name": "Visit a provincial museum or historic site",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "ae",
+          "name": "Access distance and online learning",
+          "domain": "education_training",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "ae",
+          "name": "Access support services as an international student",
+          "domain": "education_training",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "ae",
+          "name": "Access the Industry Pathways program",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "ae",
+          "name": "Explore careers in skilled trades",
+          "domain": "education_training",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "ae",
+          "name": "Find information about studying in Alberta",
+          "domain": "education_training",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "ae",
+          "name": "Find international study and exchange opportunities",
+          "domain": "education_training",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "ag",
+          "name": "Access market information and price reports",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "ag",
+          "name": "Connect with your irrigation district",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "ag",
+          "name": "Control noxious and prohibited weeds",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "ag",
+          "name": "Get crop disease diagnosis and management advice",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "ag",
+          "name": "Get farm water testing and quality information",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "ag",
+          "name": "Get food safety training and certification",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "ag",
+          "name": "Get guidance on livestock management practices",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "ag",
+          "name": "Get support for agricultural trade and export",
+          "domain": "agriculture",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "alss",
+          "name": "Access FASD support services",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Explore career options and labour market information",
+          "domain": "working_employment",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Find continuing care options and compare homes",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Find out what seniors financial programs you qualify for",
+          "domain": "money_taxes_benefits",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Find out what support you're eligible for",
+          "domain": "money_taxes_benefits",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get a low-income transit pass",
+          "domain": "money_taxes_benefits",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get decision-making support for a vulnerable person",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get help finding a job",
+          "domain": "working_employment",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get independent advocacy for your disability rights",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "alss",
+          "name": "Get support as a caregiver",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "au",
+          "name": "Access financial literacy resources and online courses",
+          "domain": "money_taxes_benefits",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "au",
+          "name": "Find ways to reduce everyday costs",
+          "domain": "money_taxes_benefits",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "au",
+          "name": "Get information about rural electrification",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "au",
+          "name": "Get information about rural natural gas service",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "au",
+          "name": "Get information about rural water co-operatives",
+          "domain": "housing_property",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "au",
+          "name": "Learn about micro-generation and renewable energy options",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "cfs",
+          "name": "Adopt a child in government care",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "cfs",
+          "name": "Arrange kinship care for a family member's child",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "cfs",
+          "name": "Become a foster caregiver",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "cfs",
+          "name": "Get connected to local family support services",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "cfs",
+          "name": "Get help if you're experiencing family violence",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "cfs",
+          "name": "Get housing and life skills support after leaving care",
+          "domain": "housing_property",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "cfs",
+          "name": "Get support after sexual violence",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "cfs",
+          "name": "Get support as a foster or kinship caregiver",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "cfs",
+          "name": "Pursue a private or international adoption",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "cpe",
+          "name": "Access government publications, reports, and data",
+          "domain": "privacy_government_access",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "cpe",
+          "name": "Learn about your privacy rights and how government uses personal information",
+          "domain": "privacy_government_access",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "cpe",
+          "name": "Read government news releases and announcements",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "cpe",
+          "name": "Receive emergency alerts and critical safety information",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "cpe",
+          "name": "Subscribe to government news and topic alerts",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "cpe",
+          "name": "View results and outcomes of past public engagements",
+          "domain": "privacy_government_access",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "edu",
+          "name": "Earn credits through work experience or RAP",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "edu",
+          "name": "Earn dual credit (high school + post-secondary)",
+          "domain": "education_training",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "edu",
+          "name": "Explore career and technology studies (CTS)",
+          "domain": "education_training",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "edu",
+          "name": "Find curriculum resources and programs of study",
+          "domain": "education_training",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "edu",
+          "name": "Find inclusive child care for a child with extra needs",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "edu",
+          "name": "Get early intervention for your child",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "edu",
+          "name": "Join your school council",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "edu",
+          "name": "Prepare for and write Provincial Achievement Tests",
+          "domain": "education_training",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "edu",
+          "name": "Prepare for and write diploma exams",
+          "domain": "education_training",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "em",
+          "name": "Access information on methane reduction and emissions management",
+          "domain": "energy_minerals",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "em",
+          "name": "Access oil and gas production and reserves data",
+          "domain": "energy_minerals",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "em",
+          "name": "Access royalty rate and program information",
+          "domain": "energy_minerals",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "em",
+          "name": "Explore lithium and critical mineral development opportunities",
+          "domain": "energy_minerals",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "em",
+          "name": "Learn about Alberta's hydrogen roadmap and investment opportunities",
+          "domain": "energy_minerals",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "em",
+          "name": "Learn about carbon capture, utilization, and storage opportunities",
+          "domain": "energy_minerals",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "em",
+          "name": "Learn about coal industry modernization",
+          "domain": "energy_minerals",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "epa",
+          "name": "Access air quality data and monitoring reports",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "epa",
+          "name": "Access drought information and water conservation guidance",
+          "domain": "environment_land",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "epa",
+          "name": "Access environmental science data and state of the environment reporting",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "epa",
+          "name": "Access water quality data and river condition reports",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "epa",
+          "name": "Learn about recycling programs and extended producer responsibility",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "epa",
+          "name": "View air quality advisories and wildfire smoke information",
+          "domain": "environment_land",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "fp",
+          "name": "Access forest business, market, and trade information",
+          "domain": "forestry",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "fp",
+          "name": "Access forest management standards and guidelines",
+          "domain": "forestry",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "fp",
+          "name": "Access forestry directives and standard operating procedures",
+          "domain": "forestry",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "fp",
+          "name": "Access outdoor recreation maps and guides",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "fp",
+          "name": "Access wildfire maps and data",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "fp",
+          "name": "Find a public land recreation area or trail",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "fp",
+          "name": "Get forestry and wildfire training",
+          "domain": "working_employment",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "fp",
+          "name": "Help with wildfire response",
+          "domain": "working_employment",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "fp",
+          "name": "Pay timber dues and Crown fees",
+          "domain": "forestry",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "fp",
+          "name": "Plan a visit to a provincial park",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "fp",
+          "name": "Practise safe burning",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "fp",
+          "name": "Prepare your property for wildfire (FireSmart)",
+          "domain": "housing_property",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "health",
+          "name": "Access health promotion and disease prevention resources",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "health",
+          "name": "Contact the Health Advocate for help with a concern",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "health",
+          "name": "Get advice on a health concern",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "health",
+          "name": "Get routine or travel immunizations",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "hshs",
+          "name": "Contact the Health Advocate for help with a concern",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "hshs",
+          "name": "Learn about cancer care programs and find treatment centres",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "im",
+          "name": "Access language training and assessment",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "im",
+          "name": "Get information on living and working in Alberta before you arrive",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "im",
+          "name": "Learn about human rights protections and anti-racism resources",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "im",
+          "name": "Navigate the licensing process for your regulated profession",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "infra",
+          "name": "Access technical standards and guidelines for public buildings",
+          "domain": "safety_codes_standards",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "infra",
+          "name": "Buy surplus government property",
+          "domain": "housing_property",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "infra",
+          "name": "Find and bid on government infrastructure tenders",
+          "domain": "government_procurement",
+          "track": "business",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "infra",
+          "name": "Learn about public-private partnership opportunities for infrastructure",
+          "domain": "government_procurement",
+          "track": "business",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "infra",
+          "name": "Review capital plan reports and infrastructure spending accountability",
+          "domain": "privacy_government_access",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "ir",
+          "name": "Access information about Métis Settlement governance and your rights",
+          "domain": "privacy_government_access",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "jeti",
+          "name": "Access Alberta economic data, statistics, and labour market information",
+          "domain": "privacy_government_access",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "jeti",
+          "name": "Access language training and assessment",
+          "domain": "immigration_settling",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "jeti",
+          "name": "Get help expanding your business or accessing new markets",
+          "domain": "exporting_trade",
+          "track": "business",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "jeti",
+          "name": "Get information on living and working in Alberta before you arrive",
+          "domain": "immigration_settling",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "jeti",
+          "name": "Invest in Alberta or relocate your business to the province",
+          "domain": "exporting_trade",
+          "track": "business",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "jeti",
+          "name": "Learn about human rights protections and anti-racism resources",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jeti",
+          "name": "Learn about minimum wage, hours of work, overtime, and leave entitlements",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "jeti",
+          "name": "Learn about rules for termination, layoff, and severance",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "jeti",
+          "name": "Learn about workplace health and safety obligations and rights",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "jeti",
+          "name": "Navigate the licensing process for your regulated profession",
+          "domain": "professional_credentials",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "jus",
+          "name": "Access family law form kits for self-representation",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "jus",
+          "name": "Access free family mediation",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "jus",
+          "name": "Call the Family Violence Info Line",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Change a court order for child support",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "jus",
+          "name": "Complain about treatment during the criminal justice process",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Enforce a civil judgment or debt",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "jus",
+          "name": "Enforce support payments from outside Alberta",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "jus",
+          "name": "Explore decision-making alternatives to guardianship",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "jus",
+          "name": "File a claim for injuries from an uninsured or hit-and-run driver",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Get a Safer Spaces Certificate to break a lease",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Get a capacity assessment done",
+          "domain": "professional_credentials",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "jus",
+          "name": "Get an emergency protection order",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Get approved to operate a shooting club or range",
+          "domain": "licences_permits",
+          "track": "business",
+          "tier": "regulatory_compliance"
+        },
+        {
+          "ministry": "jus",
+          "name": "Get family court counsellor assistance",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "jus",
+          "name": "Get free family law information at a Family Law Information Centre",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "jus",
+          "name": "Get help preparing court forms",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Get support as a family of a missing or murdered Indigenous person",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Get support navigating court as an Indigenous person",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Make a personal directive or enduring power of attorney",
+          "domain": "privacy_government_access",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "jus",
+          "name": "Mediate a Children's Services dispute",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "jus",
+          "name": "Meet with a clinician for a high-conflict parenting dispute",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "jus",
+          "name": "Participate in a restorative justice program",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Resolve a child support dispute",
+          "domain": "family_relationships",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "jus",
+          "name": "Resolve a condominium dispute",
+          "domain": "housing_property",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "jus",
+          "name": "Resolve an unpaid fine under enforcement",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "jus",
+          "name": "Take a firearms safety course",
+          "domain": "professional_credentials",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "ma",
+          "name": "Access information on emergency preparedness for your community",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "ma",
+          "name": "Understand or participate in a municipal election",
+          "domain": "environment_land",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "mha",
+          "name": "Access addiction treatment or detoxification services",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "mha",
+          "name": "Find affordable counselling for mental health or substance use",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "mha",
+          "name": "Find resources for supporting a young person with mental health challenges",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "mha",
+          "name": "Get a free naloxone kit",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "mha",
+          "name": "Get crisis support for a mental health or addiction emergency",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "mha",
+          "name": "Get mental health support for a child or youth",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "mha",
+          "name": "Learn about substance risks and drug safety information",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "pphs",
+          "name": "Access health promotion and disease prevention resources",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "pphs",
+          "name": "Get advice on a health concern",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "pphs",
+          "name": "Get routine or travel immunizations",
+          "domain": "health_wellbeing",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "pses",
+          "name": "Access crime prevention resources and community safety programs",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "pses",
+          "name": "Access information about an offender in custody or on supervision",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "pses",
+          "name": "Access reintegration and community supervision information",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "pses",
+          "name": "Access wildfire or flood status information",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "pses",
+          "name": "Get emergency preparedness information and make a plan",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "pses",
+          "name": "Visit an inmate in a provincial correctional facility",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "sa",
+          "name": "Check for consumer alerts and enforcement actions",
+          "domain": "justice_legal",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "scss",
+          "name": "Access FASD support services",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Explore career options and labour market information",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Find continuing care options and compare homes",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Find out what seniors financial programs you qualify for",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Find out what support you're eligible for",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get a low-income transit pass",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get decision-making support for a vulnerable person",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get help finding a job",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get independent advocacy for your disability rights",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "scss",
+          "name": "Get support as a caregiver",
+          "domain": null,
+          "track": null,
+          "tier": null
+        },
+        {
+          "ministry": "tbf",
+          "name": "Access the provincial budget and fiscal reports",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "tbf",
+          "name": "Find information about insurance regulation and your rights",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "tbf",
+          "name": "Find information about your employer pension plan",
+          "domain": "money_taxes_benefits",
+          "track": "individual",
+          "tier": "core_human_needs"
+        },
+        {
+          "ministry": "tec",
+          "name": "Access rail corridor studies and data",
+          "domain": "transport_carriers",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "tec",
+          "name": "Borrow for municipal capital projects",
+          "domain": "finances_taxes",
+          "track": "business",
+          "tier": "core_business_needs"
+        },
+        {
+          "ministry": "tec",
+          "name": "Find and enrol in driver training",
+          "domain": "driving_vehicles",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "tec",
+          "name": "Find grants you're eligible for",
+          "domain": "government_procurement",
+          "track": "business",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "tec",
+          "name": "Find road safety information",
+          "domain": "safety_emergencies",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "tec",
+          "name": "Find trade corridor plans and routes",
+          "domain": "transport_carriers",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "tec",
+          "name": "Get a driver's licence (for a car)",
+          "domain": "driving_vehicles",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "tec",
+          "name": "Get a driver's licence (for a motorcycle)",
+          "domain": "driving_vehicles",
+          "track": "individual",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "tec",
+          "name": "See how much grant funding your area received",
+          "domain": "government_procurement",
+          "track": "business",
+          "tier": "scenario_dependent"
+        },
+        {
+          "ministry": "tec",
+          "name": "See upcoming highway construction projects",
+          "domain": "transport_infrastructure",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "tec",
+          "name": "See what's planned for passenger rail",
+          "domain": "transport_infrastructure",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "tec",
+          "name": "See where highway investment is planned",
+          "domain": "transport_infrastructure",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "ti",
+          "name": "Access cybersecurity resources and tips",
+          "domain": "privacy_government_access",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "ti",
+          "name": "Access supports for technology startups and entrepreneurs",
+          "domain": "registration_legal",
+          "track": "business",
+          "tier": "core_business_needs"
+        },
+        {
+          "ministry": "ti",
+          "name": "Learn about Alberta's AI and data centre opportunities",
+          "domain": "energy_minerals",
+          "track": "business",
+          "tier": "industry_specific"
+        },
+        {
+          "ministry": "ti",
+          "name": "Learn about how government collects and uses your personal information",
+          "domain": "privacy_government_access",
+          "track": "individual",
+          "tier": "identity_credentials_access"
+        },
+        {
+          "ministry": "ts",
+          "name": "Access Travel Alberta's destination marketing and visitor information",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "ts",
+          "name": "Comply with fairness and safety in sport requirements (organizations)",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "ts",
+          "name": "Get information about all-season resort areas",
+          "domain": null,
+          "track": "both",
+          "tier": null
+        },
+        {
+          "ministry": "ts",
+          "name": "Get information about the Fairness and Safety in Sport Act",
+          "domain": "recreation_culture",
+          "track": "individual",
+          "tier": "societal_needs_supports"
+        },
+        {
+          "ministry": "ts",
+          "name": "Propose an all-season resort development",
+          "domain": "tourism_hospitality",
+          "track": "business",
+          "tier": "industry_specific"
+        }
+      ],
+      "note": "This service type is the largest in the corpus but has the lowest design-system value because it's content rather than action. Brief 07 should surface it as 'this category exists; the design system is action-shaped and does not yet differentiate offerings here.'"
+    }
+  ],
+  "cross_cutting_gaps": [
+    {
+      "id": "eligibility-checking",
+      "name": "Eligibility checking before applying",
+      "applies_to": [
+        "apply-for-a-benefit",
+        "apply-for-a-licence-or-permit",
+        "apply-for-a-grant-or-funding"
+      ],
+      "summary": "Citizens need to know if they qualify before starting an application. No canonical pattern."
+    },
+    {
+      "id": "status-tracking",
+      "name": "Status tracking after submission",
+      "applies_to": [
+        "apply-for-a-benefit",
+        "apply-for-a-licence-or-permit",
+        "apply-for-a-grant-or-funding",
+        "report-a-concern-or-incident",
+        "file-a-complaint",
+        "appeal-a-decision"
+      ],
+      "summary": "result-page covers the immediate confirmation, not the long wait for a decision."
+    },
+    {
+      "id": "save-and-return",
+      "name": "Save and return across sessions",
+      "applies_to": [
+        "apply-for-a-benefit",
+        "apply-for-a-grant-or-funding",
+        "apply-for-a-licence-or-permit"
+      ],
+      "summary": "Long applications can't be done in one sitting; the public-form template assumes one session."
+    },
+    {
+      "id": "account-or-portal",
+      "name": "Authenticated account home / portal",
+      "applies_to": [
+        "check-status-or-records",
+        "apply-for-a-licence-or-permit",
+        "appeal-a-decision"
+      ],
+      "summary": "No account/portal productType exists. check-status-or-records can't be served without one. Renewal sub-shape inside apply-for-a-licence-or-permit also depends on this."
+    },
+    {
+      "id": "payment-step",
+      "name": "Payment as a step in a flow",
+      "applies_to": [
+        "apply-for-a-licence-or-permit",
+        "search-a-public-register",
+        "pay-a-fee-or-fine"
+      ],
+      "summary": "No payment productType. Payment couples with licence applications and renewals, paid registry searches, fees and fines."
+    },
+    {
+      "id": "notifications-and-follow-up",
+      "name": "Notifications and follow-up",
+      "applies_to": [
+        "apply-for-a-benefit",
+        "apply-for-a-licence-or-permit",
+        "report-a-concern-or-incident",
+        "file-a-complaint"
+      ],
+      "summary": "Every Apply-shape generates notifications (received, status changed, decision issued, renewal reminder). No notification example covers this depth."
+    },
+    {
+      "id": "decision-letters",
+      "name": "Decision letters",
+      "applies_to": [
+        "apply-for-a-benefit",
+        "apply-for-a-licence-or-permit",
+        "apply-for-a-grant-or-funding",
+        "file-a-complaint",
+        "appeal-a-decision"
+      ],
+      "summary": "result-page is the only candidate and it's thin for the complexity of decision/outcome content."
+    }
+  ],
+  "excluded_or_below_bar": [
+    {
+      "id": "engage-in-consultation",
+      "reason": "Below leverage bar (4 services, 3 ministries). Worth re-checking when more consultation services are added or another jurisdiction included."
+    },
+    {
+      "id": "buy-or-acquire-rights",
+      "reason": "7 services concentrated in EM (energy_minerals); below ministry-spread bar of 3+ ministries with meaningful counts. Alberta-specific industrial pattern, not a general design system service type."
+    },
+    {
+      "id": "schedule-or-book-something",
+      "reason": "Borderline; only 4-6 candidate services across ~3 ministries (campsite reservation, road test, transportation booking). Below leverage bar. Watch for growth."
+    }
+  ],
+  "source": {
+    "data_dir": "data/ab/",
+    "method": "phase-1-classification of 637 supporting services by primary service task (channel-based with name-pattern overrides), then phase-2 clustering by name pattern within each task with leverage bar applied.",
+    "constraints_applied": [
+      "Citizen-side only. Worker-side service types (intake-and-assess, case management) deferred to a follow-up brief.",
+      "Brief 12 product demo patterns NOT used as input to avoid biasing the system view.",
+      "Size-agnostic example proposals — captures the concept rather than the size class."
+    ]
+  }
+}
