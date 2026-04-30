@@ -1,0 +1,38 @@
+[infra   ] [Apply         ] Resolve a payment dispute on a public works contract
+[jeti    ] [Apply         ] Apply for mediation or arbitration of a collective bargaining dispute
+[jus     ] [Apply         ] Apply for a human trafficking protection order
+[jus     ] [Apply         ] Apply for a parenting or custody order
+[jus     ] [Apply         ] Apply for a restraining order or other protection order
+[jus     ] [Apply         ] Apply for child guardianship
+[jus     ] [Apply         ] Apply for guardianship or trusteeship of an adult
+[jus     ] [Apply         ] Apply to administer a deceased person's estate
+[jus     ] [Apply         ] Resolve a residential tenancy dispute
+[sa      ] [Apply         ] File a condominium dispute for resolution
+[tec     ] [Apply         ] Find and bid on highway construction contracts
+[ts      ] [Apply         ] Invest in or develop a tourism product or experience
+[cpe     ] [Engage        ] Find and join an open public consultation
+[cpe     ] [Engage        ] Submit feedback on a proposed policy, regulation, or project
+[ir      ] [Engage        ] Respond to a consultation notification on a proposed project or land decision
+[tec     ] [Engage        ] Have your say on passenger rail plans
+[acsw    ] [Transact      ] Raise funds through online crowdfunding
+[em      ] [Transact      ] Acquire coal leases and maintain coal agreements
+[em      ] [Transact      ] Bid on oil sands rights at public sale
+[em      ] [Transact      ] Bid on petroleum and natural gas rights at public sale
+[em      ] [Transact      ] Purchase mineral and surface rights mapping and information
+[em      ] [Transact      ] Request a direct purchase of petroleum and natural gas rights
+[em      ] [Transact      ] Transfer or maintain your petroleum and natural gas agreement
+[epa     ] [Transact      ] Comply with hazardous waste management requirements
+[epa     ] [Transact      ] Purchase or sell emissions offset credits and performance credits
+[fp      ] [Transact      ] Reserve a campsite
+[jus     ] [Transact      ] Authenticate a document for use in another country
+[jus     ] [Transact      ] Complete the Parenting After Separation course
+[jus     ] [Transact      ] File a civil claim or application in court
+[jus     ] [Transact      ] Get a divorce
+[jus     ] [Transact      ] Order a courtroom transcript
+[tec     ] [Transact      ] Book and take a road test
+[tec     ] [Transact      ] Sign up for renewal reminders
+[ti      ] [Transact      ] Access your Alberta.ca account and digital wallet
+[ts      ] [Transact      ] File and remit the tourism levy
+[epa     ] [Unclassified  ] Check the Air Quality Health Index for your area
+[mha     ] [Unclassified  ] Access supervised drug consumption or overdose prevention services
+[pses    ] [Unclassified  ] Sign up for or check Alberta Emergency Alerts

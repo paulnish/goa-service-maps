@@ -5,6 +5,19 @@ Static site visualizing how Alberta government ministries deliver services to th
 **Live site:** https://goa-service-maps.netlify.app
 **Paul's working copy:** [2asku.com](https://2asku.com)
 
+## What's in the repo
+
+Two layers of content sit in this repo:
+
+1. **Per-ministry service maps** — the static site you see at the live URL. Each ministry has a JSON file in `data/ab/` and a corresponding HTML page (`{prefix}/service-map.html`) that visualises it.
+
+2. **Jurisdiction-level service-types analysis** — derived from the ministry maps:
+   - `data/ab/service_types.json` — 14 service types as `(service task × Kate Tarling intent)` clusters validated by a leverage bar. Queryable JSON consumed by the GoA Design System MCP, the using-goa-design-system skill, and future docs site service-type pages.
+   - `data/ab/service_types.md` — human-readable summary of the same.
+   - `analysis/service-types/` — scripts and working files that produced the analysis. See `analysis/service-types/README.md` for the full pipeline.
+
+Schema details for both layers live in `CLAUDE.md`.
+
 ## Running Locally
 
 No build step required. Open `index.html` in a browser, or use any static file server:
