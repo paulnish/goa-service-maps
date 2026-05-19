@@ -1,8 +1,8 @@
 {
-  "$schema_version": "0.1",
+  "$schema_version": "0.3",
   "jurisdiction": "ab",
-  "generated": "2026-04-30",
-  "purpose": "Service-type analysis of Alberta ministry maps. Each type is a (service task × Kate Tarling intent) cluster validated by the leverage bar (5+ services across 3+ ministries). Consumed by the design-system MCP, the using-goa-design-system skill, and the docs site service-type pages (Brief 07).",
+  "generated": "2026-05-19",
+  "purpose": "Service-type analysis of Alberta ministry maps. Each type is a (service task × Kate Tarling intent) cluster validated by the leverage bar (5+ services across 3+ ministries). Per-gap and per-proposed-example priority signals applied, layered from mechanical leverage and curated value-weighting (reach, financial value, need, dependency).",
   "service_tasks": [
     "Apply",
     "Transact",
@@ -64,6 +64,8 @@
         "ministry_count": 8,
         "passes_bar": true
       },
+      "priority": "medium",
+      "priority_rationale": "Service-type weight: 10 services across 8 ministries (mechanical: low). Value-weighting: medium — Reach: low but high need when invoked. Citizens' safety net when initial decisions go wrong.",
       "shared_shape": "Citizen references a prior decision they want overturned, submits grounds (procedural error, new evidence, wrong on the merits), waits for review by a separate body, receives a new decision (uphold, overturn, or remit). The appellant is heard but doesn't drive the process.",
       "variations": "Administrative appeals (benefits, planning, safety codes) vs. judicial appeals (court decisions). Some go to a separate tribunal, some loop within the same regulator.",
       "product_types_used": [
@@ -92,23 +94,65 @@
         "expand-or-collapse-part-of-a-form"
       ],
       "gaps": [
-        "No reference-the-original-decision pattern. Appeals start with a specific prior decision and need to link/summarise it.",
-        "No grounds-for-appeal composer. Appeals need structured reason categories (procedural, factual, new evidence).",
-        "No appeal-status-tracking pattern.",
-        "No appeal-outcome-with-action pattern (uphold/overturn/remit branches)."
+        {
+          "text": "No reference-the-original-decision pattern. Appeals start with a specific prior decision and need to link/summarise it.",
+          "priority": "medium",
+          "priority_rationale": "Service-type weight: 10 services across 8 ministries (mechanical: low). Value-weighting: medium — Reach: low but high need when invoked. Citizens' safety net when initial decisions go wrong."
+        },
+        {
+          "text": "No grounds-for-appeal composer. Appeals need structured reason categories (procedural, factual, new evidence).",
+          "cross_cutting_refs": [
+            "describe-what-happened"
+          ],
+          "flavor_note": "Grounds for appeal: structured event-by-event reasoning, often referencing the original decision's facts.",
+          "priority": "medium",
+          "priority_rationale": "Cross-cutting (describe-what-happened) reach: 3 types (mechanical: medium). Value-weighting: medium — Bounded volume (complaints, appeals, reports). Important for accuracy but not high-reach."
+        },
+        {
+          "text": "No appeal-status-tracking pattern.",
+          "cross_cutting_refs": [
+            "status-tracking"
+          ],
+          "flavor_note": "Distinct appeal milestones; three-branch outcome ahead.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (status-tracking) reach: 8 types (mechanical: high). Value-weighting: high — Reach: every applicant. Spans benefits, licences, grants, appeals, complaints, records requests. High frustration relief on long waits."
+        },
+        {
+          "text": "No appeal-outcome-with-action pattern (uphold/overturn/remit branches).",
+          "cross_cutting_refs": [
+            "results"
+          ],
+          "flavor_note": "Appeal-outcome variant of results: three-branch decision (uphold/overturn/remit).",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (results) reach: 9 types (mechanical: high). Value-weighting: high — Reach: every service interaction ends in a result page of some kind. Five content variants cover decision letters, credentials, records release, appeal outcomes, submission receipts."
+        }
       ],
       "proposed_examples": [
         {
           "concept": "Appeal initiation",
-          "rationale": "Loads the original decision, lets the appellant select grounds and write reasoning."
+          "rationale": "Loads the original decision, lets the appellant select grounds and write reasoning.",
+          "priority": "medium",
+          "priority_rationale": "Service-type weight: 10 services across 8 ministries (mechanical: low). Value-weighting: medium — Reach: low but high need when invoked. Citizens' safety net when initial decisions go wrong."
         },
         {
           "concept": "Appeal status",
-          "rationale": "Status tracker variant for appeals; differs from application status because the next steps and timelines are different."
+          "rationale": "Status tracker variant for appeals; differs from application status because the next steps and timelines are different.",
+          "cross_cutting_refs": [
+            "status-tracking"
+          ],
+          "flavor_note": "Appeal-specific milestones (filed → admitted → heard → decided); three-branch outcome ahead.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (status-tracking) reach: 8 types (mechanical: high). Value-weighting: high — Reach: every applicant. Spans benefits, licences, grants, appeals, complaints, records requests. High frustration relief on long waits."
         },
         {
           "concept": "Appeal outcome letter",
-          "rationale": "Decision letter pattern with the three possible branches."
+          "rationale": "Decision letter pattern with the three possible branches.",
+          "cross_cutting_refs": [
+            "results"
+          ],
+          "flavor_note": "Appeal-outcome variant of results: three-branch (uphold/overturn/remit) with reasoning.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (results) reach: 9 types (mechanical: high). Value-weighting: high — Reach: every service interaction ends in a result page of some kind. Five content variants cover decision letters, credentials, records release, appeal outcomes, submission receipts."
         }
       ],
       "services": [
@@ -183,6 +227,8 @@
           "tier": "scenario_dependent"
         }
       ],
+      "value_weight": "medium",
+      "value_weight_rationale": "Reach: low but high need when invoked. Citizens' safety net when initial decisions go wrong.",
       "is_extension": true,
       "extension_note": "Not in Kate Tarling's original nine. Surfaced empirically — multiple ministries have explicit 'Appeal a...' services with a recognisable shape (request review, submit grounds, reconsideration or hearing, new decision). Recommend adding to the GoA's working vocabulary."
     },
@@ -199,6 +245,8 @@
         "ministry_count": 8,
         "passes_bar": true
       },
+      "priority": "medium",
+      "priority_rationale": "Service-type weight: 16 services across 8 ministries (mechanical: low). Value-weighting: medium — Reach: medium (thousands of FOI requests, lawyer reviews per year). Need: democratic accountability and personal records access.",
       "shared_shape": "Citizen submits a formal request for government records, information, or specific action (inquiry, mediation, restitution, impact statement). Triage and acceptance, processing by the appropriate body, response or release issued. Distinct from search-a-public-register because there's a process; distinct from apply-for-a-benefit because no eligibility/payment shape.",
       "variations": "Information requests (FOI, your own personal records) vs. specific-action requests (fatality inquiry, lawyer fee review, mediation) vs. participation requests (community/victim impact statements). Most are JUS-led; CPE/SA handle FOI; INFRA, TEC have niche request paths.",
       "product_types_used": [
@@ -224,22 +272,56 @@
         "ask-a-user-for-a-birthday"
       ],
       "gaps": [
-        "No request-form pattern with required-info checklist (most have specific data needs).",
-        "No status-of-request pattern. Many requests have legislated timelines (FOI is 30 days). Citizens need to track.",
-        "No release-of-records pattern. After approval, the citizen receives the records — what does that page look like?"
+        {
+          "text": "No request-form pattern with required-info checklist (most have specific data needs).",
+          "priority": "medium",
+          "priority_rationale": "Service-type weight: 16 services across 8 ministries (mechanical: low). Value-weighting: medium — Reach: medium (thousands of FOI requests, lawyer reviews per year). Need: democratic accountability and personal records access."
+        },
+        {
+          "text": "No status-of-request pattern. Many requests have legislated timelines (FOI is 30 days). Citizens need to track.",
+          "cross_cutting_refs": [
+            "status-tracking"
+          ],
+          "flavor_note": "Legislated timeline surfaced (FOI 30 days); status step must include the deadline.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (status-tracking) reach: 8 types (mechanical: high). Value-weighting: high — Reach: every applicant. Spans benefits, licences, grants, appeals, complaints, records requests. High frustration relief on long waits."
+        },
+        {
+          "text": "No release-of-records pattern. After approval, the citizen receives the records — what does that page look like?",
+          "cross_cutting_refs": [
+            "results"
+          ],
+          "flavor_note": "Records-release variant of results: includes the records themselves with redaction explanation if applicable.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (results) reach: 9 types (mechanical: high). Value-weighting: high — Reach: every service interaction ends in a result page of some kind. Five content variants cover decision letters, credentials, records release, appeal outcomes, submission receipts."
+        }
       ],
       "proposed_examples": [
         {
           "concept": "Records request form",
-          "rationale": "Form with required information checklist plus optional fields, fee handling, and consent."
+          "rationale": "Form with required information checklist plus optional fields, fee handling, and consent.",
+          "priority": "medium",
+          "priority_rationale": "Service-type weight: 16 services across 8 ministries (mechanical: low). Value-weighting: medium — Reach: medium (thousands of FOI requests, lawyer reviews per year). Need: democratic accountability and personal records access."
         },
         {
           "concept": "Request status with timeline",
-          "rationale": "Status page that surfaces the legislated timeline (e.g. FOI 30 days) and current step."
+          "rationale": "Status page that surfaces the legislated timeline (e.g. FOI 30 days) and current step.",
+          "cross_cutting_refs": [
+            "status-tracking"
+          ],
+          "flavor_note": "Legislated-timeline flavor: surfaces the statutory deadline alongside current step.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (status-tracking) reach: 8 types (mechanical: high). Value-weighting: high — Reach: every applicant. Spans benefits, licences, grants, appeals, complaints, records requests. High frustration relief on long waits."
         },
         {
           "concept": "Released records view",
-          "rationale": "Page or download experience for the released records, with redaction explanation if applicable."
+          "rationale": "Page or download experience for the released records, with redaction explanation if applicable.",
+          "cross_cutting_refs": [
+            "results"
+          ],
+          "flavor_note": "Records-release variant: the outcome IS the records, with redaction explanation.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (results) reach: 9 types (mechanical: high). Value-weighting: high — Reach: every service interaction ends in a result page of some kind. Five content variants cover decision letters, credentials, records release, appeal outcomes, submission receipts."
         }
       ],
       "services": [
@@ -355,7 +437,9 @@
           "track": "individual",
           "tier": "scenario_dependent"
         }
-      ]
+      ],
+      "value_weight": "medium",
+      "value_weight_rationale": "Reach: medium (thousands of FOI requests, lawyer reviews per year). Need: democratic accountability and personal records access."
     },
     {
       "id": "file-a-complaint",
@@ -369,6 +453,8 @@
         "ministry_count": 12,
         "passes_bar": true
       },
+      "priority": "medium",
+      "priority_rationale": "Service-type weight: 20 services across 12 ministries (mechanical: medium). Value-weighting: medium — Reach: medium. Need: regulatory accountability matters but not life-or-death.",
       "shared_shape": "Citizen files a formal complaint about a regulated party (professional, business, government decision-maker). Triage and acceptance, investigation by the regulator, decision communicated, possible appeal path. The complainant is heard but doesn't drive the process.",
       "variations": "Regulated-profession complaints (health, security, locksmith) vs. business marketplace complaints (consumer protection) vs. systemic complaints (human rights, police conduct, privacy) vs. specific party (guardian/trustee). Investigation rigour varies.",
       "product_types_used": [
@@ -400,28 +486,89 @@
         "give-more-information-before-asking-a-question-b"
       ],
       "gaps": [
-        "No 'describe what happened' pattern with timeline support. Complaints often need a sequence of events.",
-        "No regulated-party-search pattern. The citizen is filing against a regulated party — they need to find/identify that party.",
-        "No status-update notification pattern. Investigations take months.",
-        "No outcome-letter pattern (current result-page is too thin for complaint outcomes).",
-        "No appeal-pathway pattern (overlaps with appeal-a-decision)."
+        {
+          "text": "No 'describe what happened' pattern with timeline support. Complaints often need a sequence of events.",
+          "cross_cutting_refs": [
+            "describe-what-happened"
+          ],
+          "flavor_note": "Complaint timeline: event-by-event with dates, often spanning months.",
+          "priority": "medium",
+          "priority_rationale": "Cross-cutting (describe-what-happened) reach: 3 types (mechanical: medium). Value-weighting: medium — Bounded volume (complaints, appeals, reports). Important for accuracy but not high-reach."
+        },
+        {
+          "text": "No regulated-party-search pattern. The citizen is filing against a regulated party — they need to find/identify that party.",
+          "cross_cutting_refs": [
+            "look-up-and-pick"
+          ],
+          "flavor_note": "Embedded lookup inside the complaint flow: search the doctor / business / officer registry to identify the target of the complaint.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (look-up-and-pick) reach: 4 types (mechanical: high). Value-weighting: high — Sub-pattern but widely embedded. Useful in complaints, renewals, reports, find-place flows."
+        },
+        {
+          "text": "No status-update notification pattern. Investigations take months.",
+          "cross_cutting_refs": [
+            "service-messages",
+            "status-tracking"
+          ],
+          "flavor_note": "Long-running investigation: periodic status updates over months.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (service-messages) reach: 5 types (mechanical: high). Value-weighting: high — Reach: every applicant receives at least one. Decision letters, renewal reminders, clarification requests, status updates."
+        },
+        {
+          "text": "No outcome-letter pattern (current result-page is too thin for complaint outcomes).",
+          "cross_cutting_refs": [
+            "results"
+          ],
+          "flavor_note": "Decision-letter variant for complaints: long-form reasoning, next steps, appeal info.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (results) reach: 9 types (mechanical: high). Value-weighting: high — Reach: every service interaction ends in a result page of some kind. Five content variants cover decision letters, credentials, records release, appeal outcomes, submission receipts."
+        },
+        {
+          "text": "No appeal-pathway pattern (overlaps with appeal-a-decision).",
+          "priority": "medium",
+          "priority_rationale": "Service-type weight: 20 services across 12 ministries (mechanical: medium). Value-weighting: medium — Reach: medium. Need: regulatory accountability matters but not life-or-death."
+        }
       ],
       "proposed_examples": [
         {
           "concept": "Identify the regulated party",
-          "rationale": "Search-and-select for finding the doctor / business / officer the complaint is about."
+          "rationale": "Search-and-select for finding the doctor / business / officer the complaint is about.",
+          "cross_cutting_refs": [
+            "look-up-and-pick"
+          ],
+          "flavor_note": "Regulated-party lookup as an in-flow step before the complaint narrative.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (look-up-and-pick) reach: 4 types (mechanical: high). Value-weighting: high — Sub-pattern but widely embedded. Useful in complaints, renewals, reports, find-place flows."
         },
         {
           "concept": "Timeline-of-events composer",
-          "rationale": "Section pattern for ordered narrative input."
+          "rationale": "Section pattern for ordered narrative input.",
+          "cross_cutting_refs": [
+            "describe-what-happened"
+          ],
+          "flavor_note": "Complaint flavor: events spanning months, often with dates and witnesses.",
+          "priority": "medium",
+          "priority_rationale": "Cross-cutting (describe-what-happened) reach: 3 types (mechanical: medium). Value-weighting: medium — Bounded volume (complaints, appeals, reports). Important for accuracy but not high-reach."
         },
         {
           "concept": "Investigation status updates",
-          "rationale": "Long-running status surfacing; overlaps with check-status-or-records."
+          "rationale": "Long-running status surfacing; overlaps with check-status-or-records.",
+          "cross_cutting_refs": [
+            "status-tracking"
+          ],
+          "flavor_note": "Long-running flavor: monthly-scale status updates over the investigation lifespan.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (status-tracking) reach: 8 types (mechanical: high). Value-weighting: high — Reach: every applicant. Spans benefits, licences, grants, appeals, complaints, records requests. High frustration relief on long waits."
         },
         {
           "concept": "Decision letter view",
-          "rationale": "Long-form decision page with reasoning, next steps, and appeal info."
+          "rationale": "Long-form decision page with reasoning, next steps, and appeal info.",
+          "cross_cutting_refs": [
+            "results"
+          ],
+          "flavor_note": "Decision-letter variant: reasoning + next steps + appeal pathway.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (results) reach: 9 types (mechanical: high). Value-weighting: high — Reach: every service interaction ends in a result page of some kind. Five content variants cover decision letters, credentials, records release, appeal outcomes, submission receipts."
         }
       ],
       "services": [
@@ -565,7 +712,9 @@
           "track": "individual",
           "tier": "core_human_needs"
         }
-      ]
+      ],
+      "value_weight": "medium",
+      "value_weight_rationale": "Reach: medium. Need: regulatory accountability matters but not life-or-death."
     },
     {
       "id": "report-a-concern-or-incident",
@@ -579,6 +728,8 @@
         "ministry_count": 18,
         "passes_bar": true
       },
+      "priority": "high",
+      "priority_rationale": "Service-type weight: 28 services across 18 ministries (mechanical: medium). Value-weighting: high — Need: safety-critical (child abuse, wildfire, animal disease reports). Downstream costs of unreported incidents are high.",
       "shared_shape": "Citizen pushes information about a hazard, suspected harm, or third-party concern. No assessment of the citizen's eligibility — the service is the act of reporting. Acknowledgment is usually sent; investigation may follow with no further citizen involvement.",
       "variations": "Safety hazards (road, fire, wildlife) vs. abuse/harm reports (child, elder, workplace) vs. environmental incidents (substance release, emissions exceedance) vs. property issues. Some are time-critical.",
       "product_types_used": [
@@ -605,23 +756,61 @@
         "show-a-list-to-help-answer-a-question"
       ],
       "gaps": [
-        "No anonymous-reporting affordance. Many reports allow or require anonymity.",
-        "No report-receipt-with-reference-number pattern. Reporters need a way to follow up.",
-        "No file-evidence-with-context pattern.",
-        "No urgency-routing pattern. Some reports are time-critical (animal disease, wildfire)."
+        {
+          "text": "No anonymous-reporting affordance. Many reports allow or require anonymity.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 28 services across 18 ministries (mechanical: medium). Value-weighting: high — Need: safety-critical (child abuse, wildfire, animal disease reports). Downstream costs of unreported incidents are high."
+        },
+        {
+          "text": "No report-receipt-with-reference-number pattern. Reporters need a way to follow up.",
+          "cross_cutting_refs": [
+            "results"
+          ],
+          "flavor_note": "Submission-receipt variant: light content, reference number, what-happens-next, contact path.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (results) reach: 9 types (mechanical: high). Value-weighting: high — Reach: every service interaction ends in a result page of some kind. Five content variants cover decision letters, credentials, records release, appeal outcomes, submission receipts."
+        },
+        {
+          "text": "No file-evidence-with-context pattern.",
+          "cross_cutting_refs": [
+            "submit-supporting-documents"
+          ],
+          "flavor_note": "Report-evidence flavor: each piece of evidence attached to a specific fact in the report.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (submit-supporting-documents) reach: 6 types (mechanical: high). Value-weighting: high — Reach: high. Common in grant applications, reports, complaints, records requests, benefit applications, licence applications. High friction point when not handled well."
+        },
+        {
+          "text": "No urgency-routing pattern. Some reports are time-critical (animal disease, wildfire).",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 28 services across 18 ministries (mechanical: medium). Value-weighting: high — Need: safety-critical (child abuse, wildfire, animal disease reports). Downstream costs of unreported incidents are high."
+        }
       ],
       "proposed_examples": [
         {
           "concept": "Optional-identity report form",
-          "rationale": "Pattern showing the anonymous/named branch with consequence framing."
+          "rationale": "Pattern showing the anonymous/named branch with consequence framing.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 28 services across 18 ministries (mechanical: medium). Value-weighting: high — Need: safety-critical (child abuse, wildfire, animal disease reports). Downstream costs of unreported incidents are high."
         },
         {
           "concept": "Report receipt with reference number",
-          "rationale": "Page showing reference number, what happens next, contact path."
+          "rationale": "Page showing reference number, what happens next, contact path.",
+          "cross_cutting_refs": [
+            "results"
+          ],
+          "flavor_note": "Submission-receipt variant for reports.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (results) reach: 9 types (mechanical: high). Value-weighting: high — Reach: every service interaction ends in a result page of some kind. Five content variants cover decision letters, credentials, records release, appeal outcomes, submission receipts."
         },
         {
           "concept": "Evidence-attached-to-fact composer",
-          "rationale": "Section pattern for uploading evidence linked to specific report items."
+          "rationale": "Section pattern for uploading evidence linked to specific report items.",
+          "cross_cutting_refs": [
+            "submit-supporting-documents"
+          ],
+          "flavor_note": "Evidence-with-context flavor: uploads tied to specific facts in the report narrative.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (submit-supporting-documents) reach: 6 types (mechanical: high). Value-weighting: high — Reach: high. Common in grant applications, reports, complaints, records requests, benefit applications, licence applications. High friction point when not handled well."
         }
       ],
       "services": [
@@ -821,7 +1010,9 @@
           "track": "individual",
           "tier": "scenario_dependent"
         }
-      ]
+      ],
+      "value_weight": "high",
+      "value_weight_rationale": "Need: safety-critical (child abuse, wildfire, animal disease reports). Downstream costs of unreported incidents are high."
     },
     {
       "id": "register-something",
@@ -836,6 +1027,8 @@
         "ministry_count": 13,
         "passes_bar": true
       },
+      "priority": "high",
+      "priority_rationale": "Service-type weight: 23 services across 13 ministries (mechanical: medium). Value-weighting: high — Reach: high (vehicle, business, birth, marriage registrations). Need: high (required for daily life). Anchors the short-form productType candidate.",
       "shared_shape": "Citizen or business submits identifying information, system validates basic eligibility (no full assessment), registry entry created, confirmation issued with a registration number. Often ongoing — registry must be kept current.",
       "variations": "Vital records (birth, marriage, death) vs. property records (vehicle, land, lien) vs. credentials (apprentice, regulated professional) vs. business identity (corporation, tourism levy collector).",
       "product_types_used": [
@@ -861,22 +1054,58 @@
         "select-one-or-more-from-a-list-of-options"
       ],
       "gaps": [
-        "No short-form (multi-fields-per-page) registration pattern. Public-form is one-question-per-page which is overkill for short registrations.",
-        "No registry-confirmation receipt pattern. Result-page is decision-shaped (approved/denied); registrations should show the registry entry that was created.",
-        "No update-existing-registration pattern. Registries are alive — change of address, name change after marriage."
+        {
+          "text": "No short-form (multi-fields-per-page) registration pattern. Public-form is one-question-per-page which is overkill for short registrations.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 23 services across 13 ministries (mechanical: medium). Value-weighting: high — Reach: high (vehicle, business, birth, marriage registrations). Need: high (required for daily life). Anchors the short-form productType candidate."
+        },
+        {
+          "text": "No registry-confirmation receipt pattern. Result-page is decision-shaped (approved/denied); registrations should show the registry entry that was created.",
+          "cross_cutting_refs": [
+            "results"
+          ],
+          "flavor_note": "Registry-receipt flavor: hybrid of submission-receipt and issued-credential — confirms creation AND shows the new registry entry with ID and downloadable record.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (results) reach: 9 types (mechanical: high). Value-weighting: high — Reach: every service interaction ends in a result page of some kind. Five content variants cover decision letters, credentials, records release, appeal outcomes, submission receipts."
+        },
+        {
+          "text": "No update-existing-registration pattern. Registries are alive — change of address, name change after marriage.",
+          "cross_cutting_refs": [
+            "my-account",
+            "look-up-and-pick"
+          ],
+          "flavor_note": "Update-existing flow: look up your registry entry → modify → confirm → updated-record-receipt.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (my-account) reach: 5 types (mechanical: high). Value-weighting: high — Reach: every authenticated citizen. Anchors the account/portal productType candidate."
+        }
       ],
       "proposed_examples": [
         {
           "concept": "Compact form page",
-          "rationale": "Multi-field registration form (12-20 fields) on one or two pages, denser than public-form per-idea pattern."
+          "rationale": "Multi-field registration form (12-20 fields) on one or two pages, denser than public-form per-idea pattern. Anchors the `short-form` productType candidate.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 23 services across 13 ministries (mechanical: medium). Value-weighting: high — Reach: high (vehicle, business, birth, marriage registrations). Need: high (required for daily life). Anchors the short-form productType candidate."
         },
         {
           "concept": "Registry receipt",
-          "rationale": "Page showing the created record with ID, key facts, downloadable PDF, follow-on actions."
+          "rationale": "Page showing the created record with ID, key facts, downloadable PDF, follow-on actions.",
+          "cross_cutting_refs": [
+            "results"
+          ],
+          "flavor_note": "Registry-receipt flavor of results: confirms creation AND shows the new entry.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (results) reach: 9 types (mechanical: high). Value-weighting: high — Reach: every service interaction ends in a result page of some kind. Five content variants cover decision letters, credentials, records release, appeal outcomes, submission receipts."
         },
         {
           "concept": "Update an existing record",
-          "rationale": "Look-up → modify → confirm → updated-record-receipt flow."
+          "rationale": "Look-up → modify → confirm → updated-record-receipt flow.",
+          "cross_cutting_refs": [
+            "look-up-and-pick",
+            "my-account"
+          ],
+          "flavor_note": "Update-existing flow: starts with lookup of citizen's existing registry entry, ends in a refreshed registry-receipt.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (look-up-and-pick) reach: 4 types (mechanical: high). Value-weighting: high — Sub-pattern but widely embedded. Useful in complaints, renewals, reports, find-place flows."
         }
       ],
       "services": [
@@ -1042,6 +1271,8 @@
           "tier": "regulatory_compliance"
         }
       ],
+      "value_weight": "high",
+      "value_weight_rationale": "Reach: high (vehicle, business, birth, marriage registrations). Need: high (required for daily life). Anchors the short-form productType candidate.",
       "intent_note": "Multi-intent. Vehicle/business/birth registrations are registering-information; apprentice/professional registrations are becoming."
     },
     {
@@ -1057,6 +1288,8 @@
         "ministry_count": 15,
         "passes_bar": true
       },
+      "priority": "high",
+      "priority_rationale": "Service-type weight: 49 services across 15 ministries (mechanical: medium). Value-weighting: high — Reach: high (driver's licences alone touch millions; plus professional, business, activity permits). Need: high (daily-life-critical credentials).",
       "shared_shape": "Citizen or business demonstrates qualification (training, fitness, fee paid, premises inspected), submits application with evidence, waits for decision, receives credential with expiry and conditions. Renewal is a lighter version of the same shape — verify identity and continued eligibility, pay fee, get updated expiry.",
       "variations": "Personal credentials (driver's licence, firearms PAL, professional licences) vs. business credentials (cannabis, security, locksmith) vs. activity permits (timber, fire, oversize load). **Renewal** is a recurring sub-shape: 'Apply for or renew' services (gaming/liquor/cannabis, driver's licence) and standalone 'Renew' services (firearms PAL) follow the same flow as the original application but pre-filled — fewer questions, focus on what's changed.",
       "product_types_used": [
@@ -1090,38 +1323,106 @@
         "expand-or-collapse-part-of-a-form"
       ],
       "gaps": [
-        "No declaration/attestation pattern. Most licences require the citizen to declare facts under penalty.",
-        "No fitness-or-qualifications composer. Permits often require proof of training, experience hours, supervisor sign-off.",
-        "No fee-with-application pattern. Many licences require payment at submission.",
-        "No outcome-with-credential view. result-page exists but no example of 'here's your decision and your printable/wallet credential.'",
-        "**Renewal-specific:** No look-up-existing pattern. Renewal starts with verifying who you are and pulling up your existing record.",
-        "**Renewal-specific:** No diff-from-current pattern. Renewal usually shows 'here's what we have on file; change anything?'",
-        "**Renewal-specific:** No renewal-reminder/notification pattern."
+        {
+          "text": "No declaration/attestation pattern. Most licences require the citizen to declare facts under penalty.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 49 services across 15 ministries (mechanical: medium). Value-weighting: high — Reach: high (driver's licences alone touch millions; plus professional, business, activity permits). Need: high (daily-life-critical credentials)."
+        },
+        {
+          "text": "No fitness-or-qualifications composer. Permits often require proof of training, experience hours, supervisor sign-off.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 49 services across 15 ministries (mechanical: medium). Value-weighting: high — Reach: high (driver's licences alone touch millions; plus professional, business, activity permits). Need: high (daily-life-critical credentials)."
+        },
+        {
+          "text": "No fee-with-application pattern. Many licences require payment at submission.",
+          "cross_cutting_refs": [
+            "payment"
+          ],
+          "flavor_note": "Payment coupled with application submission (not a standalone pay flow).",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (payment) reach: 3 types (mechanical: medium). Value-weighting: high — Financial: billions/year. Includes traffic fines, fuel tax, paid registry searches, licence application fees."
+        },
+        {
+          "text": "No outcome-with-credential view. result-page exists but no example of 'here's your decision and your printable/wallet credential.'",
+          "cross_cutting_refs": [
+            "results"
+          ],
+          "flavor_note": "Issued-credential variant of results: outcome plus the granted credential with print/save/wallet affordances.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (results) reach: 9 types (mechanical: high). Value-weighting: high — Reach: every service interaction ends in a result page of some kind. Five content variants cover decision letters, credentials, records release, appeal outcomes, submission receipts."
+        },
+        {
+          "text": "**Renewal-specific:** No look-up-existing pattern. Renewal starts with verifying who you are and pulling up your existing record.",
+          "cross_cutting_refs": [
+            "look-up-and-pick"
+          ],
+          "flavor_note": "Renewal-lookup flavor: authenticated lookup of the citizen's own existing licence as a renewal entry.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (look-up-and-pick) reach: 4 types (mechanical: high). Value-weighting: high — Sub-pattern but widely embedded. Useful in complaints, renewals, reports, find-place flows."
+        },
+        {
+          "text": "**Renewal-specific:** No diff-from-current pattern. Renewal usually shows 'here's what we have on file; change anything?'",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 49 services across 15 ministries (mechanical: medium). Value-weighting: high — Reach: high (driver's licences alone touch millions; plus professional, business, activity permits). Need: high (daily-life-critical credentials)."
+        },
+        {
+          "text": "**Renewal-specific:** No renewal-reminder/notification pattern.",
+          "cross_cutting_refs": [
+            "service-messages"
+          ],
+          "flavor_note": "Renewal-reminder flavor of service-messages: triggered by expiry approaching.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (service-messages) reach: 5 types (mechanical: high). Value-weighting: high — Reach: every applicant receives at least one. Decision letters, renewal reminders, clarification requests, status updates."
+        }
       ],
       "proposed_examples": [
         {
           "concept": "Attestation / declaration",
-          "rationale": "Section pattern with explicit affirmation, plain-language consequences, signature."
+          "rationale": "Section pattern with explicit affirmation, plain-language consequences, signature.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 49 services across 15 ministries (mechanical: medium). Value-weighting: high — Reach: high (driver's licences alone touch millions; plus professional, business, activity permits). Need: high (daily-life-critical credentials)."
         },
         {
           "concept": "Qualifications composer",
-          "rationale": "Section for showing training, hours, or external evidence."
+          "rationale": "Section for showing training, hours, or external evidence.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 49 services across 15 ministries (mechanical: medium). Value-weighting: high — Reach: high (driver's licences alone touch millions; plus professional, business, activity permits). Need: high (daily-life-critical credentials)."
         },
         {
           "concept": "Pay-and-submit",
-          "rationale": "Coupled flow joining form review → payment → submission."
+          "rationale": "Coupled flow joining form review → payment → submission.",
+          "cross_cutting_refs": [
+            "payment"
+          ],
+          "flavor_note": "Embedded-payment flavor: payment as the final step of an application submission.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (payment) reach: 3 types (mechanical: medium). Value-weighting: high — Financial: billions/year. Includes traffic fines, fuel tax, paid registry searches, licence application fees."
         },
         {
           "concept": "Issued credential page",
-          "rationale": "Page showing decision and credential with print/save/wallet-add affordances."
+          "rationale": "Page showing decision and credential with print/save/wallet-add affordances.",
+          "cross_cutting_refs": [
+            "results"
+          ],
+          "flavor_note": "Issued-credential variant of results: includes the granted credential.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (results) reach: 9 types (mechanical: high). Value-weighting: high — Reach: every service interaction ends in a result page of some kind. Five content variants cover decision letters, credentials, records release, appeal outcomes, submission receipts."
         },
         {
           "concept": "Verify-and-renew flow",
-          "rationale": "Renewal sub-shape: authenticate → see current record → confirm or edit → pay → updated credential."
+          "rationale": "Renewal sub-shape: authenticate → see current record → confirm or edit → pay → updated credential.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 49 services across 15 ministries (mechanical: medium). Value-weighting: high — Reach: high (driver's licences alone touch millions; plus professional, business, activity permits). Need: high (daily-life-critical credentials)."
         },
         {
           "concept": "Renewal reminder",
-          "rationale": "Email/notification template + landing page for the renewal start."
+          "rationale": "Email/notification template + landing page for the renewal start.",
+          "cross_cutting_refs": [
+            "service-messages"
+          ],
+          "flavor_note": "Renewal-reminder flavor: triggered by expiry approaching; landing page resumes the renewal flow.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (service-messages) reach: 5 types (mechanical: high). Value-weighting: high — Reach: every applicant receives at least one. Decision letters, renewal reminders, clarification requests, status updates."
         }
       ],
       "services": [
@@ -1469,6 +1770,8 @@
           "tier": "scenario_dependent"
         }
       ],
+      "value_weight": "high",
+      "value_weight_rationale": "Reach: high (driver's licences alone touch millions; plus professional, business, activity permits). Need: high (daily-life-critical credentials).",
       "intent_note": "Multi-intent. Personal credentials (teacher certification, PAL) lean becoming; business licences and activity permits lean permission."
     },
     {
@@ -1483,6 +1786,8 @@
         "ministry_count": 17,
         "passes_bar": true
       },
+      "priority": "high",
+      "priority_rationale": "Service-type weight: 51 services across 17 ministries (mechanical: high). Value-weighting: high — Financial: hundreds of millions to billions/year. Reach: medium (more orgs than individuals).",
       "shared_shape": "Organization or project lead submits a proposal with budget, work plan, and outcomes; reviewed against program criteria; awarded with a contract or transfer payment agreement; ongoing reporting and accountability.",
       "variations": "Project grants (one-time, defined deliverables) vs. operating grants (ongoing, organizational support) vs. capital funding (infrastructure). Some are open-call competitive, some are formula-based.",
       "product_types_used": [
@@ -1517,28 +1822,64 @@
         "add-a-record-using-a-drawer"
       ],
       "gaps": [
-        "No project-budget input pattern. Grant applications need structured cost tables.",
-        "No multi-applicant/team pattern. Grants often need lists of project participants.",
-        "No work-plan/milestone composer.",
-        "No attachment manager. Grant applications often require multiple supporting documents.",
-        "No reporting-back flow (post-award), though that's worker-side and deferred."
+        {
+          "text": "No project-budget input pattern. Grant applications need structured cost tables.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 51 services across 17 ministries (mechanical: high). Value-weighting: high — Financial: hundreds of millions to billions/year. Reach: medium (more orgs than individuals)."
+        },
+        {
+          "text": "No multi-applicant/team pattern. Grants often need lists of project participants.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 51 services across 17 ministries (mechanical: high). Value-weighting: high — Financial: hundreds of millions to billions/year. Reach: medium (more orgs than individuals)."
+        },
+        {
+          "text": "No work-plan/milestone composer.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 51 services across 17 ministries (mechanical: high). Value-weighting: high — Financial: hundreds of millions to billions/year. Reach: medium (more orgs than individuals)."
+        },
+        {
+          "text": "No attachment manager. Grant applications often require multiple supporting documents.",
+          "cross_cutting_refs": [
+            "submit-supporting-documents"
+          ],
+          "flavor_note": "Grant-application flavor: many documents (budget spreadsheet, project description, letters of support); checklist enforces required vs optional.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (submit-supporting-documents) reach: 6 types (mechanical: high). Value-weighting: high — Reach: high. Common in grant applications, reports, complaints, records requests, benefit applications, licence applications. High friction point when not handled well."
+        },
+        {
+          "text": "No reporting-back flow (post-award), though that's worker-side and deferred.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 51 services across 17 ministries (mechanical: high). Value-weighting: high — Financial: hundreds of millions to billions/year. Reach: medium (more orgs than individuals)."
+        }
       ],
       "proposed_examples": [
         {
           "concept": "Budget table input",
-          "rationale": "Section composer with itemized rows, categories, totals."
+          "rationale": "Section composer with itemized rows, categories, totals.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 51 services across 17 ministries (mechanical: high). Value-weighting: high — Financial: hundreds of millions to billions/year. Reach: medium (more orgs than individuals)."
         },
         {
           "concept": "Project team composer",
-          "rationale": "Pattern for adding multiple participants with their own form fields each."
+          "rationale": "Pattern for adding multiple participants with their own form fields each.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 51 services across 17 ministries (mechanical: high). Value-weighting: high — Financial: hundreds of millions to billions/year. Reach: medium (more orgs than individuals)."
         },
         {
           "concept": "Document checklist with upload",
-          "rationale": "Pattern showing required attachments with status indicators."
+          "rationale": "Pattern showing required attachments with status indicators.",
+          "cross_cutting_refs": [
+            "submit-supporting-documents"
+          ],
+          "flavor_note": "Grant flavor: multiple documents with category and required/optional status.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (submit-supporting-documents) reach: 6 types (mechanical: high). Value-weighting: high — Reach: high. Common in grant applications, reports, complaints, records requests, benefit applications, licence applications. High friction point when not handled well."
         },
         {
           "concept": "Multi-organization profile",
-          "rationale": "Section for the org submitting (their address, registration, history)."
+          "rationale": "Section for the org submitting (their address, registration, history).",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 51 services across 17 ministries (mechanical: high). Value-weighting: high — Financial: hundreds of millions to billions/year. Reach: medium (more orgs than individuals)."
         }
       ],
       "services": [
@@ -1899,7 +2240,9 @@
           "track": "individual",
           "tier": "societal_needs_supports"
         }
-      ]
+      ],
+      "value_weight": "high",
+      "value_weight_rationale": "Financial: hundreds of millions to billions/year. Reach: medium (more orgs than individuals)."
     },
     {
       "id": "apply-for-a-benefit",
@@ -1913,6 +2256,8 @@
         "ministry_count": 15,
         "passes_bar": true
       },
+      "priority": "high",
+      "priority_rationale": "Service-type weight: 65 services across 15 ministries (mechanical: high). Value-weighting: high — Reach: hundreds of thousands of Albertans (income support, AISH, childcare subsidy). Financial: billions/year paid. Need: people depend on these to live.",
       "shared_shape": "Citizen demonstrates eligibility (means-tested or categorical), provides personal/household info, uploads supporting documents, waits for adjudication, receives ongoing or one-time payment with a decision letter. Some have ongoing review cycles.",
       "variations": "Means-tested (income support, AISH, childcare subsidy) vs. categorical (seniors financial assistance, disability benefits). Some pay monthly, some are one-time. Includes claim-shaped variants triggered by events (disaster recovery, wildlife damage compensation).",
       "product_types_used": [
@@ -1954,32 +2299,93 @@
         "link-the-user-to-give-feedback-to-the-service"
       ],
       "gaps": [
-        "No eligibility-check pattern. Citizens often need to know if they qualify before starting.",
-        "No means-test screen. Most Alberta benefits are means-tested; no example shows how to handle income+household+deductions in a form.",
-        "No status-tracking page. The current result-page covers the immediate confirmation; nothing covers checking on a long-running decision.",
-        "No clarification-request flow. When the worker side asks for more info.",
-        "No save-and-return pattern. Means-tested applications are long; many citizens can't finish in one sitting."
+        {
+          "text": "No eligibility-check pattern. Citizens often need to know if they qualify before starting.",
+          "cross_cutting_refs": [
+            "eligibility-checking"
+          ],
+          "flavor_note": "Benefit-eligibility flavor: income, household, residency questions yielding qualify/likely/unlikely.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (eligibility-checking) reach: 3 types (mechanical: medium). Value-weighting: high — Reach: everyone who considers applying asks this first. High frustration relief."
+        },
+        {
+          "text": "No means-test screen. Most Alberta benefits are means-tested; no example shows how to handle income+household+deductions in a form.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 65 services across 15 ministries (mechanical: high). Value-weighting: high — Reach: hundreds of thousands of Albertans (income support, AISH, childcare subsidy). Financial: billions/year paid. Need: people depend on these to live."
+        },
+        {
+          "text": "No status-tracking page. The current result-page covers the immediate confirmation; nothing covers checking on a long-running decision.",
+          "cross_cutting_refs": [
+            "status-tracking"
+          ],
+          "flavor_note": "Long-running benefit decision tracking with clarification-request branch.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (status-tracking) reach: 8 types (mechanical: high). Value-weighting: high — Reach: every applicant. Spans benefits, licences, grants, appeals, complaints, records requests. High frustration relief on long waits."
+        },
+        {
+          "text": "No clarification-request flow. When the worker side asks for more info.",
+          "cross_cutting_refs": [
+            "service-messages"
+          ],
+          "flavor_note": "Worker-to-citizen clarification request: triggers a message and a landing page for upload/response.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (service-messages) reach: 5 types (mechanical: high). Value-weighting: high — Reach: every applicant receives at least one. Decision letters, renewal reminders, clarification requests, status updates."
+        },
+        {
+          "text": "No save-and-return pattern. Means-tested applications are long; many citizens can't finish in one sitting.",
+          "cross_cutting_refs": [
+            "save-and-return"
+          ],
+          "flavor_note": "Means-tested benefit forms: 30-60 minute completion time, often interrupted.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (save-and-return) reach: 3 types (mechanical: medium). Value-weighting: high — Reach: anyone filling a long form. Means-tested benefit applications run 30-60 minutes; many citizens can't finish in one sitting."
+        }
       ],
       "proposed_examples": [
         {
           "concept": "Eligibility checker",
-          "rationale": "Pre-form gate: answer 4-5 questions, get a yes/no/maybe with reasons."
+          "rationale": "Pre-form gate: answer 4-5 questions, get a yes/no/maybe with reasons.",
+          "cross_cutting_refs": [
+            "eligibility-checking"
+          ],
+          "flavor_note": "Benefit-eligibility flavor: income/household/residency questions.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (eligibility-checking) reach: 3 types (mechanical: medium). Value-weighting: high — Reach: everyone who considers applying asks this first. High frustration relief."
         },
         {
           "concept": "Status tracker",
-          "rationale": "Page citizens visit after submitting to see where their application is. Phase 5 of Apply six-phase flow has no existing example."
+          "rationale": "Page citizens visit after submitting to see where their application is. Phase 5 of Apply six-phase flow has no existing example.",
+          "cross_cutting_refs": [
+            "status-tracking"
+          ],
+          "flavor_note": "Long-running benefit decision tracker; surfaces 'and now what?' affordances for clarification-request branch.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (status-tracking) reach: 8 types (mechanical: high). Value-weighting: high — Reach: every applicant. Spans benefits, licences, grants, appeals, complaints, records requests. High frustration relief on long waits."
         },
         {
           "concept": "Means-test composer",
-          "rationale": "Section that handles eligibility math (income, household, deductions) with explanatory help."
+          "rationale": "Section that handles eligibility math (income, household, deductions) with explanatory help.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 65 services across 15 ministries (mechanical: high). Value-weighting: high — Reach: hundreds of thousands of Albertans (income support, AISH, childcare subsidy). Financial: billions/year paid. Need: people depend on these to live."
         },
         {
           "concept": "Save-and-return",
-          "rationale": "Pattern for partial-fill state across sessions plus account-side pages."
+          "rationale": "Pattern for partial-fill state across sessions plus account-side pages.",
+          "cross_cutting_refs": [
+            "save-and-return"
+          ],
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (save-and-return) reach: 3 types (mechanical: medium). Value-weighting: high — Reach: anyone filling a long form. Means-tested benefit applications run 30-60 minutes; many citizens can't finish in one sitting."
         },
         {
           "concept": "Respond to a clarification request",
-          "rationale": "Page or flow citizen reaches via notification, lets them upload more info or answer follow-ups."
+          "rationale": "Page or flow citizen reaches via notification, lets them upload more info or answer follow-ups.",
+          "cross_cutting_refs": [
+            "service-messages"
+          ],
+          "flavor_note": "Worker-to-citizen clarification flow: from notification → landing → upload/response → updated status.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (service-messages) reach: 5 types (mechanical: high). Value-weighting: high — Reach: every applicant receives at least one. Decision letters, renewal reminders, clarification requests, status updates."
         }
       ],
       "services": [
@@ -2438,7 +2844,9 @@
           "track": "individual",
           "tier": "societal_needs_supports"
         }
-      ]
+      ],
+      "value_weight": "high",
+      "value_weight_rationale": "Reach: hundreds of thousands of Albertans (income support, AISH, childcare subsidy). Financial: billions/year paid. Need: people depend on these to live."
     },
     {
       "id": "pay-a-fee-or-fine",
@@ -2452,6 +2860,8 @@
         "ministry_count": 4,
         "passes_bar": true
       },
+      "priority": "high",
+      "priority_rationale": "Service-type weight: 6 services across 4 ministries (mechanical: low). Value-weighting: high — Financial: billions/year (traffic fines, fuel tax, royalties). Reach: high (every fueling, every fine). Anchors the payment productType candidate.",
       "shared_shape": "Citizen receives or knows about an obligation (fine, fee, tax owed), looks up the amount, pays online with optional dispute path. Receipt issued; account updated.",
       "variations": "Penalties (traffic fines, impaired driving) vs. recurring payments (fuel tax, mineral rights tax) vs. one-off fees (court filing fee, royalty payments).",
       "product_types_used": [],
@@ -2460,27 +2870,85 @@
         "copy-to-clipboard"
       ],
       "gaps": [
-        "No payment page pattern. There's no example showing amount-due, payment method selector, payee/payor, terms, submit-and-receipt.",
-        "No dispute path pattern. Many fines have a 'pay or dispute' choice on the same surface.",
-        "No receipt page pattern.",
-        "No look-up-then-pay pattern. Many fines require finding your fine first."
+        {
+          "text": "No payment page pattern. There's no example showing amount-due, payment method selector, payee/payor, terms, submit-and-receipt.",
+          "cross_cutting_refs": [
+            "payment"
+          ],
+          "flavor_note": "Standalone payment surface for fines and fees.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (payment) reach: 3 types (mechanical: medium). Value-weighting: high — Financial: billions/year. Includes traffic fines, fuel tax, paid registry searches, licence application fees."
+        },
+        {
+          "text": "No dispute path pattern. Many fines have a 'pay or dispute' choice on the same surface.",
+          "cross_cutting_refs": [
+            "payment"
+          ],
+          "flavor_note": "Pay-or-dispute branch on the payment surface; only applies to obligations that allow dispute.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (payment) reach: 3 types (mechanical: medium). Value-weighting: high — Financial: billions/year. Includes traffic fines, fuel tax, paid registry searches, licence application fees."
+        },
+        {
+          "text": "No receipt page pattern.",
+          "cross_cutting_refs": [
+            "results"
+          ],
+          "flavor_note": "Payment-receipt flavor of submission-receipt: confirms payment with downloadable proof.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (results) reach: 9 types (mechanical: high). Value-weighting: high — Reach: every service interaction ends in a result page of some kind. Five content variants cover decision letters, credentials, records release, appeal outcomes, submission receipts."
+        },
+        {
+          "text": "No look-up-then-pay pattern. Many fines require finding your fine first.",
+          "cross_cutting_refs": [
+            "look-up-and-pick",
+            "payment"
+          ],
+          "flavor_note": "Two-step entry: find the obligation then pay; common when citizens don't have a reference number to hand.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (look-up-and-pick) reach: 4 types (mechanical: high). Value-weighting: high — Sub-pattern but widely embedded. Useful in complaints, renewals, reports, find-place flows."
+        }
       ],
       "proposed_examples": [
         {
           "concept": "Lookup-and-pay",
-          "rationale": "Two-step flow: find the obligation, then pay it."
+          "rationale": "Two-step flow: find the obligation, then pay it.",
+          "cross_cutting_refs": [
+            "look-up-and-pick",
+            "payment"
+          ],
+          "flavor_note": "Citizen-facing lookup of their own obligation (by name, plate, file number) → pay.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (look-up-and-pick) reach: 4 types (mechanical: high). Value-weighting: high — Sub-pattern but widely embedded. Useful in complaints, renewals, reports, find-place flows."
         },
         {
           "concept": "Pay-or-dispute",
-          "rationale": "Page that presents amount and a clear branch to dispute."
+          "rationale": "Page that presents amount and a clear branch to dispute.",
+          "cross_cutting_refs": [
+            "payment"
+          ],
+          "flavor_note": "Branching variant of payment: dispute opens a separate intake; pay completes the flow.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (payment) reach: 3 types (mechanical: medium). Value-weighting: high — Financial: billions/year. Includes traffic fines, fuel tax, paid registry searches, licence application fees."
         },
         {
           "concept": "Payment receipt",
-          "rationale": "Confirmation page with downloadable proof."
+          "rationale": "Confirmation page with downloadable proof.",
+          "cross_cutting_refs": [
+            "results"
+          ],
+          "flavor_note": "Payment-receipt flavor of submission-receipt.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (results) reach: 9 types (mechanical: high). Value-weighting: high — Reach: every service interaction ends in a result page of some kind. Five content variants cover decision letters, credentials, records release, appeal outcomes, submission receipts."
         },
         {
           "concept": "Account-balance view",
-          "rationale": "For multi-payment obligations (royalties, taxes), a balance-and-history page."
+          "rationale": "For multi-payment obligations (royalties, taxes), a balance-and-history page.",
+          "cross_cutting_refs": [
+            "my-account"
+          ],
+          "flavor_note": "Balance-and-history view for citizens with recurring obligations; converges with the account/portal productType.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (my-account) reach: 5 types (mechanical: high). Value-weighting: high — Reach: every authenticated citizen. Anchors the account/portal productType candidate."
         }
       ],
       "services": [
@@ -2527,6 +2995,8 @@
           "tier": "scenario_dependent"
         }
       ],
+      "value_weight": "high",
+      "value_weight_rationale": "Financial: billions/year (traffic fines, fuel tax, royalties). Reach: high (every fueling, every fine). Anchors the payment productType candidate.",
       "product_types_proposed": [
         "payment",
         "transaction"
@@ -2545,6 +3015,8 @@
         "ministry_count": 12,
         "passes_bar": true
       },
+      "priority": "high",
+      "priority_rationale": "Service-type weight: 27 services across 12 ministries (mechanical: medium). Value-weighting: high — Reach: every benefit recipient, every licence holder, every student loan borrower. Anchors the account/portal productType candidate.",
       "shared_shape": "Authenticated citizen looks up their own status, account, history, or records held by government. Often the back-half of an Apply or Transact flow.",
       "variations": "Status checks (immigration application, health coverage) vs. account management (student loan, support payments) vs. personal records (health records).",
       "product_types_used": [],
@@ -2560,23 +3032,73 @@
         "show-full-date-in-a-tooltip"
       ],
       "gaps": [
-        "No authenticated-account-home pattern.",
-        "No history/timeline pattern.",
-        "No status-with-action-affordance pattern. Often the status check leads to action (apply for deferral, dispute charge).",
-        "No record-detail pattern."
+        {
+          "text": "No authenticated-account-home pattern.",
+          "cross_cutting_refs": [
+            "my-account"
+          ],
+          "flavor_note": "Landing surface for the whole check-status type; the home itself.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (my-account) reach: 5 types (mechanical: high). Value-weighting: high — Reach: every authenticated citizen. Anchors the account/portal productType candidate."
+        },
+        {
+          "text": "No history/timeline pattern.",
+          "cross_cutting_refs": [
+            "my-account"
+          ],
+          "flavor_note": "Sub-pattern inside my-account: chronological list of past events with detail-view links.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (my-account) reach: 5 types (mechanical: high). Value-weighting: high — Reach: every authenticated citizen. Anchors the account/portal productType candidate."
+        },
+        {
+          "text": "No status-with-action-affordance pattern. Often the status check leads to action (apply for deferral, dispute charge).",
+          "cross_cutting_refs": [
+            "status-tracking",
+            "my-account"
+          ],
+          "flavor_note": "'And now what?' affordances on a status surface inside the account home.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (status-tracking) reach: 8 types (mechanical: high). Value-weighting: high — Reach: every applicant. Spans benefits, licences, grants, appeals, complaints, records requests. High frustration relief on long waits."
+        },
+        {
+          "text": "No record-detail pattern.",
+          "cross_cutting_refs": [
+            "my-account"
+          ],
+          "flavor_note": "Sub-pattern inside my-account: one record's full info with contextual actions.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (my-account) reach: 5 types (mechanical: high). Value-weighting: high — Reach: every authenticated citizen. Anchors the account/portal productType candidate."
+        }
       ],
       "proposed_examples": [
         {
           "concept": "My-account home",
-          "rationale": "Landing page with status cards, recent activity, and quick actions."
+          "rationale": "Landing page with status cards, recent activity, and quick actions.",
+          "cross_cutting_refs": [
+            "my-account"
+          ],
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (my-account) reach: 5 types (mechanical: high). Value-weighting: high — Reach: every authenticated citizen. Anchors the account/portal productType candidate."
         },
         {
           "concept": "History timeline",
-          "rationale": "List of past events (payments, decisions, applications) with filters and detail-view links."
+          "rationale": "List of past events (payments, decisions, applications) with filters and detail-view links.",
+          "cross_cutting_refs": [
+            "my-account"
+          ],
+          "flavor_note": "Timeline sub-pattern inside my-account.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (my-account) reach: 5 types (mechanical: high). Value-weighting: high — Reach: every authenticated citizen. Anchors the account/portal productType candidate."
         },
         {
           "concept": "Record detail with actions",
-          "rationale": "Page showing one record's full info with contextual actions (renew, dispute, download)."
+          "rationale": "Page showing one record's full info with contextual actions (renew, dispute, download).",
+          "cross_cutting_refs": [
+            "my-account"
+          ],
+          "flavor_note": "Detail-view sub-pattern inside my-account.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (my-account) reach: 5 types (mechanical: high). Value-weighting: high — Reach: every authenticated citizen. Anchors the account/portal productType candidate."
         }
       ],
       "services": [
@@ -2770,11 +3292,13 @@
           "tier": "scenario_dependent"
         }
       ],
+      "value_weight": "high",
+      "value_weight_rationale": "Reach: every benefit recipient, every licence holder, every student loan borrower. Anchors the account/portal productType candidate.",
       "product_types_proposed": [
         "account",
         "portal"
       ],
-      "note": "Likely needs an account / portal productType beyond workspace and public-form."
+      "note": "Likely needs an account / portal productType beyond workspace and public-form. The proposed examples here anchor that productType."
     },
     {
       "id": "search-a-public-register",
@@ -2788,6 +3312,8 @@
         "ministry_count": 17,
         "passes_bar": true
       },
+      "priority": "high",
+      "priority_rationale": "Service-type weight: 25 services across 17 ministries (mechanical: medium). Value-weighting: high — Reach: high (land titles, court records used heavily by businesses, lawyers, citizens). Anchors the registry-search variation of the directory productType candidate.",
       "shared_shape": "Citizen queries a public registry to verify a fact, find a record, or check status. May be free (most) or paid (court records, land titles). Result is a record or 'no record found.'",
       "variations": "Validation queries (is this professional registered?) vs. record retrieval (land title, court record) vs. lookup-and-decide (is this drug covered? is broadband available?). Some require authenticated access.",
       "product_types_used": [],
@@ -2805,22 +3331,48 @@
         "show-quick-links"
       ],
       "gaps": [
-        "No verify-a-fact pattern. 'Is this professional registered?' is yes/no with details.",
-        "No paid-search-with-payment pattern. Court records and land titles cost money.",
-        "No record-citation pattern. Records often need to be cited (legal proceedings, applications)."
+        {
+          "text": "No verify-a-fact pattern. 'Is this professional registered?' is yes/no with details.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 25 services across 17 ministries (mechanical: medium). Value-weighting: high — Reach: high (land titles, court records used heavily by businesses, lawyers, citizens). Anchors the registry-search variation of the directory productType candidate."
+        },
+        {
+          "text": "No paid-search-with-payment pattern. Court records and land titles cost money.",
+          "cross_cutting_refs": [
+            "payment"
+          ],
+          "flavor_note": "Pay-to-retrieve flavor: payment is gating record retrieval, not gating the whole flow.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (payment) reach: 3 types (mechanical: medium). Value-weighting: high — Financial: billions/year. Includes traffic fines, fuel tax, paid registry searches, licence application fees."
+        },
+        {
+          "text": "No record-citation pattern. Records often need to be cited (legal proceedings, applications).",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 25 services across 17 ministries (mechanical: medium). Value-weighting: high — Reach: high (land titles, court records used heavily by businesses, lawyers, citizens). Anchors the registry-search variation of the directory productType candidate."
+        }
       ],
       "proposed_examples": [
         {
           "concept": "Verification result",
-          "rationale": "'We found one match; here's what they're authorized to do' — yes/no with detail."
+          "rationale": "'We found one match; here's what they're authorized to do' — yes/no with detail.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 25 services across 17 ministries (mechanical: medium). Value-weighting: high — Reach: high (land titles, court records used heavily by businesses, lawyers, citizens). Anchors the registry-search variation of the directory productType candidate."
         },
         {
           "concept": "Paid-record retrieval",
-          "rationale": "Three-step pattern: search → confirm + pay → retrieve."
+          "rationale": "Three-step pattern: search → confirm + pay → retrieve.",
+          "cross_cutting_refs": [
+            "payment"
+          ],
+          "flavor_note": "Pay-to-retrieve flavor: payment between search confirmation and record release.",
+          "priority": "high",
+          "priority_rationale": "Cross-cutting (payment) reach: 3 types (mechanical: medium). Value-weighting: high — Financial: billions/year. Includes traffic fines, fuel tax, paid registry searches, licence application fees."
         },
         {
           "concept": "Citation-ready record view",
-          "rationale": "Printable, downloadable, or share-link pattern."
+          "rationale": "Printable, downloadable, or share-link pattern.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 25 services across 17 ministries (mechanical: medium). Value-weighting: high — Reach: high (land titles, court records used heavily by businesses, lawyers, citizens). Anchors the registry-search variation of the directory productType candidate."
         }
       ],
       "services": [
@@ -3000,6 +3552,8 @@
           "tier": "societal_needs_supports"
         }
       ],
+      "value_weight": "high",
+      "value_weight_rationale": "Reach: high (land titles, court records used heavily by businesses, lawyers, citizens). Anchors the registry-search variation of the directory productType candidate.",
       "product_types_proposed": [
         "directory"
       ]
@@ -3016,6 +3570,8 @@
         "ministry_count": 14,
         "passes_bar": true
       },
+      "priority": "high",
+      "priority_rationale": "Service-type weight: 20 services across 14 ministries (mechanical: medium). Value-weighting: high — Reach: every citizen who needs help finding a service. Need: people often in crisis (doctors, victim services, mental health). Anchors the provider-directory variation of the directory productType candidate.",
       "shared_shape": "Citizen searches by location and need, gets a directory of providers/places with contact info, hours, eligibility hints. Often the front-half of an Advise or Apply flow.",
       "variations": "Health providers (doctors, treatment, hospitals) vs. social supports (settlement services, victim services, mental health) vs. physical places (libraries, parks, government offices) vs. regulated providers.",
       "product_types_used": [],
@@ -3035,27 +3591,51 @@
         "link-to-an-external-page"
       ],
       "gaps": [
-        "No location-based-search pattern. 'Near me' is common — no example handles geolocation or postal code with results map.",
-        "No filter-by-criteria pattern for a directory.",
-        "No directory-card-with-contact-info pattern with the standard facts.",
-        "No no-results-with-recovery pattern."
+        {
+          "text": "No location-based-search pattern. 'Near me' is common — no example handles geolocation or postal code with results map.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 20 services across 14 ministries (mechanical: medium). Value-weighting: high — Reach: every citizen who needs help finding a service. Need: people often in crisis (doctors, victim services, mental health). Anchors the provider-directory variation of the directory productType candidate."
+        },
+        {
+          "text": "No filter-by-criteria pattern for a directory.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 20 services across 14 ministries (mechanical: medium). Value-weighting: high — Reach: every citizen who needs help finding a service. Need: people often in crisis (doctors, victim services, mental health). Anchors the provider-directory variation of the directory productType candidate."
+        },
+        {
+          "text": "No directory-card-with-contact-info pattern with the standard facts.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 20 services across 14 ministries (mechanical: medium). Value-weighting: high — Reach: every citizen who needs help finding a service. Need: people often in crisis (doctors, victim services, mental health). Anchors the provider-directory variation of the directory productType candidate."
+        },
+        {
+          "text": "No no-results-with-recovery pattern.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 20 services across 14 ministries (mechanical: medium). Value-weighting: high — Reach: every citizen who needs help finding a service. Need: people often in crisis (doctors, victim services, mental health). Anchors the provider-directory variation of the directory productType candidate."
+        }
       ],
       "proposed_examples": [
         {
           "concept": "Directory search page",
-          "rationale": "Combined filters + results in a public-facing directory shape."
+          "rationale": "Combined filters + results in a public-facing directory shape. Anchors the `directory` productType candidate (provider-directory variation).",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 20 services across 14 ministries (mechanical: medium). Value-weighting: high — Reach: every citizen who needs help finding a service. Need: people often in crisis (doctors, victim services, mental health). Anchors the provider-directory variation of the directory productType candidate."
         },
         {
           "concept": "Provider/place card",
-          "rationale": "Standard result card with name, location, hours, contact, eligibility, accessibility."
+          "rationale": "Standard result card with name, location, hours, contact, eligibility, accessibility.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 20 services across 14 ministries (mechanical: medium). Value-weighting: high — Reach: every citizen who needs help finding a service. Need: people often in crisis (doctors, victim services, mental health). Anchors the provider-directory variation of the directory productType candidate."
         },
         {
           "concept": "Empty state with recovery",
-          "rationale": "No-results pattern that suggests broader searches or contact."
+          "rationale": "No-results pattern that suggests broader searches or contact.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 20 services across 14 ministries (mechanical: medium). Value-weighting: high — Reach: every citizen who needs help finding a service. Need: people often in crisis (doctors, victim services, mental health). Anchors the provider-directory variation of the directory productType candidate."
         },
         {
           "concept": "Result detail page",
-          "rationale": "Click-through view of one provider with full info."
+          "rationale": "Click-through view of one provider with full info.",
+          "priority": "high",
+          "priority_rationale": "Service-type weight: 20 services across 14 ministries (mechanical: medium). Value-weighting: high — Reach: every citizen who needs help finding a service. Need: people often in crisis (doctors, victim services, mental health). Anchors the provider-directory variation of the directory productType candidate."
         }
       ],
       "services": [
@@ -3200,6 +3780,8 @@
           "tier": "societal_needs_supports"
         }
       ],
+      "value_weight": "high",
+      "value_weight_rationale": "Reach: every citizen who needs help finding a service. Need: people often in crisis (doctors, victim services, mental health). Anchors the provider-directory variation of the directory productType candidate.",
       "product_types_proposed": [
         "directory"
       ]
@@ -3217,13 +3799,19 @@
         "ministry_count": 11,
         "passes_bar": true
       },
+      "priority": "low",
+      "priority_rationale": "Service-type weight: 69 services across 11 ministries (mechanical: high). Value-weighting: low — No digital surface to design for. The gap is digitization, not design system. Value-weighting can't change that for this analysis.",
       "shared_shape": "Service exists but has no digital channel — citizen finds the program, calls or visits in person, gets human-mediated intake, receives the service. The digital surface (if any) is find-a-service-or-place shaped pointing at the program.",
       "variations": "Emergency/crisis services (shelter, evacuation support, crisis lines) vs. specialized in-person supports (food bank, addiction treatment, brain injury). Concentrated in ALSS/SCSS plus MHA, JUS, CFS.",
       "product_types_used": [],
       "existing_examples": [],
       "interaction_examples": [],
       "gaps": [
-        "By definition this is the gap. ~11% of Alberta services have no digital channel."
+        {
+          "text": "By definition this is the gap. ~11% of Alberta services have no digital channel.",
+          "priority": "low",
+          "priority_rationale": "Service-type weight: 69 services across 11 ministries (mechanical: high). Value-weighting: low — No digital surface to design for. The gap is digitization, not design system. Value-weighting can't change that for this analysis."
+        }
       ],
       "proposed_examples": [],
       "services": [
@@ -3711,6 +4299,8 @@
           "tier": "identity_credentials_access"
         }
       ],
+      "value_weight": "low",
+      "value_weight_rationale": "No digital surface to design for. The gap is digitization, not design system. Value-weighting can't change that for this analysis.",
       "intent_note": "Multi-intent. Emergency $ supports lean financial-support; shelter/crisis services lean protecting.",
       "note": "No new examples in this brief. Brief 07 should surface this category as 'services without a digital surface; design system can't help build for these until digitization decision is made.' The forward-looking response is intake-and-assess productType pairs (worker side), pursued in a follow-up brief per scope."
     },
@@ -3726,6 +4316,8 @@
         "ministry_count": 28,
         "passes_bar": true
       },
+      "priority": "low",
+      "priority_rationale": "Service-type weight: 190 services across 28 ministries (mechanical: high). Value-weighting: low — Content not action. Design system action surface doesn't differentiate this category regardless of value-weighting.",
       "shared_shape": "Citizen consumes content explaining a topic, regulation, right, or program. No personalization; published guidance for general audiences. Often the only digital surface for non-digitized programs.",
       "variations": "Rights/regulation content vs. program awareness vs. data and statistics vs. how-to guides. Quality and depth vary.",
       "product_types_used": [],
@@ -3747,22 +4339,40 @@
         "show-a-section-title-on-a-question-page"
       ],
       "gaps": [
-        "No structured-guidance page pattern.",
-        "No 'rules and rights' pattern.",
-        "No content-with-tools pattern (calculators, eligibility checkers embedded in guidance)."
+        {
+          "text": "No structured-guidance page pattern.",
+          "priority": "low",
+          "priority_rationale": "Service-type weight: 190 services across 28 ministries (mechanical: high). Value-weighting: low — Content not action. Design system action surface doesn't differentiate this category regardless of value-weighting."
+        },
+        {
+          "text": "No 'rules and rights' pattern.",
+          "priority": "low",
+          "priority_rationale": "Service-type weight: 190 services across 28 ministries (mechanical: high). Value-weighting: low — Content not action. Design system action surface doesn't differentiate this category regardless of value-weighting."
+        },
+        {
+          "text": "No content-with-tools pattern (calculators, eligibility checkers embedded in guidance).",
+          "priority": "low",
+          "priority_rationale": "Service-type weight: 190 services across 28 ministries (mechanical: high). Value-weighting: low — Content not action. Design system action surface doesn't differentiate this category regardless of value-weighting."
+        }
       ],
       "proposed_examples": [
         {
           "concept": "Long-form guidance page",
-          "rationale": "Standard structure for explanatory content."
+          "rationale": "Standard structure for explanatory content.",
+          "priority": "low",
+          "priority_rationale": "Service-type weight: 190 services across 28 ministries (mechanical: high). Value-weighting: low — Content not action. Design system action surface doesn't differentiate this category regardless of value-weighting."
         },
         {
           "concept": "Rules-and-rights page",
-          "rationale": "Specific pattern for rights/obligations content."
+          "rationale": "Specific pattern for rights/obligations content.",
+          "priority": "low",
+          "priority_rationale": "Service-type weight: 190 services across 28 ministries (mechanical: high). Value-weighting: low — Content not action. Design system action surface doesn't differentiate this category regardless of value-weighting."
         },
         {
           "concept": "Inline calculator",
-          "rationale": "Mini-tool embedded in guidance."
+          "rationale": "Mini-tool embedded in guidance.",
+          "priority": "low",
+          "priority_rationale": "Service-type weight: 190 services across 28 ministries (mechanical: high). Value-weighting: low — Content not action. Design system action surface doesn't differentiate this category regardless of value-weighting."
         }
       ],
       "services": [
@@ -5097,6 +5707,8 @@
           "tier": "industry_specific"
         }
       ],
+      "value_weight": "low",
+      "value_weight_rationale": "Content not action. Design system action surface doesn't differentiate this category regardless of value-weighting.",
       "note": "This service type is the largest in the corpus but has the lowest design-system value because it's content rather than action. Brief 07 should surface it as 'this category exists; the design system is action-shaped and does not yet differentiate offerings here.'"
     }
   ],
@@ -5109,7 +5721,11 @@
         "apply-for-a-licence-or-permit",
         "apply-for-a-grant-or-funding"
       ],
-      "summary": "Citizens need to know if they qualify before starting an application. No canonical pattern."
+      "summary": "Citizens need to know if they qualify before starting an application. No canonical pattern. Sometimes 4-5 questions yielding yes/no/maybe with reasons; sometimes an embedded calculator in guidance content.",
+      "value_weight": "high",
+      "value_weight_rationale": "Reach: everyone who considers applying asks this first. High frustration relief.",
+      "priority": "high",
+      "priority_rationale": "Cross-cutting reach: 3 types (mechanical: medium). Value-weighting: high — Reach: everyone who considers applying asks this first. High frustration relief."
     },
     {
       "id": "status-tracking",
@@ -5120,9 +5736,49 @@
         "apply-for-a-grant-or-funding",
         "report-a-concern-or-incident",
         "file-a-complaint",
-        "appeal-a-decision"
+        "appeal-a-decision",
+        "request-government-action-or-records",
+        "check-status-or-records"
       ],
-      "summary": "result-page covers the immediate confirmation, not the long wait for a decision."
+      "summary": "One structural pattern (where is my thing in its journey, what's expected, what can I act on) with per-type content flavors. result-page covers the immediate confirmation, not the long wait. Must include 'and now what?' affordances when the citizen can act (apply for deferral, dispute, withdraw).",
+      "value_weight": "high",
+      "value_weight_rationale": "Reach: every applicant. Spans benefits, licences, grants, appeals, complaints, records requests. High frustration relief on long waits.",
+      "flavors": [
+        {
+          "service_type": "apply-for-a-benefit",
+          "note": "Long-running decision tracking with clarification-request branch."
+        },
+        {
+          "service_type": "apply-for-a-licence-or-permit",
+          "note": "Application status + renewal-reminder timing."
+        },
+        {
+          "service_type": "apply-for-a-grant-or-funding",
+          "note": "Multi-phase tracking: submission → review → award → reporting."
+        },
+        {
+          "service_type": "report-a-concern-or-incident",
+          "note": "Reference number lookup; investigation may not loop back to reporter."
+        },
+        {
+          "service_type": "file-a-complaint",
+          "note": "Long-running investigation status surfacing; months not days."
+        },
+        {
+          "service_type": "appeal-a-decision",
+          "note": "Distinct appeal milestones; three-branch outcome ahead."
+        },
+        {
+          "service_type": "request-government-action-or-records",
+          "note": "Legislated timeline surfaced (FOI 30 days)."
+        },
+        {
+          "service_type": "check-status-or-records",
+          "note": "This whole service type is the status surface; primarily the 'and now what?' affordance side."
+        }
+      ],
+      "priority": "high",
+      "priority_rationale": "Cross-cutting reach: 8 types (mechanical: high). Value-weighting: high — Reach: every applicant. Spans benefits, licences, grants, appeals, complaints, records requests. High frustration relief on long waits."
     },
     {
       "id": "save-and-return",
@@ -5132,50 +5788,150 @@
         "apply-for-a-grant-or-funding",
         "apply-for-a-licence-or-permit"
       ],
-      "summary": "Long applications can't be done in one sitting; the public-form template assumes one session."
+      "summary": "Long applications can't be done in one sitting; the public-form template assumes one session. Couples with my-account for the partial-fill state landing.",
+      "value_weight": "high",
+      "value_weight_rationale": "Reach: anyone filling a long form. Means-tested benefit applications run 30-60 minutes; many citizens can't finish in one sitting.",
+      "priority": "high",
+      "priority_rationale": "Cross-cutting reach: 3 types (mechanical: medium). Value-weighting: high — Reach: anyone filling a long form. Means-tested benefit applications run 30-60 minutes; many citizens can't finish in one sitting."
     },
     {
-      "id": "account-or-portal",
-      "name": "Authenticated account home / portal",
+      "id": "my-account",
+      "name": "My account home",
       "applies_to": [
         "check-status-or-records",
         "apply-for-a-licence-or-permit",
-        "appeal-a-decision"
+        "appeal-a-decision",
+        "apply-for-a-benefit",
+        "pay-a-fee-or-fine"
       ],
-      "summary": "No account/portal productType exists. check-status-or-records can't be served without one. Renewal sub-shape inside apply-for-a-licence-or-permit also depends on this."
+      "summary": "Authenticated home where citizens see their stuff (applications, status, history, records) and act on it (renew, dispute, download). Distinct as a pattern from the `account/portal` productType candidate, though the two converge in commitment.",
+      "value_weight": "high",
+      "value_weight_rationale": "Reach: every authenticated citizen. Anchors the account/portal productType candidate.",
+      "priority": "high",
+      "priority_rationale": "Cross-cutting reach: 5 types (mechanical: high). Value-weighting: high — Reach: every authenticated citizen. Anchors the account/portal productType candidate."
     },
     {
-      "id": "payment-step",
-      "name": "Payment as a step in a flow",
+      "id": "payment",
+      "name": "Payment",
       "applies_to": [
         "apply-for-a-licence-or-permit",
         "search-a-public-register",
         "pay-a-fee-or-fine"
       ],
-      "summary": "No payment productType. Payment couples with licence applications and renewals, paid registry searches, fees and fines."
+      "summary": "Pay an amount as part of a service interaction. Couples with licence applications and renewals, paid registry searches, fees and fines. Distinct as a pattern from the `payment` productType candidate (which would be the whole pay-a-fee surface).",
+      "value_weight": "high",
+      "value_weight_rationale": "Financial: billions/year. Includes traffic fines, fuel tax, paid registry searches, licence application fees.",
+      "priority": "high",
+      "priority_rationale": "Cross-cutting reach: 3 types (mechanical: medium). Value-weighting: high — Financial: billions/year. Includes traffic fines, fuel tax, paid registry searches, licence application fees."
     },
     {
-      "id": "notifications-and-follow-up",
-      "name": "Notifications and follow-up",
+      "id": "service-messages",
+      "name": "Messages from government",
       "applies_to": [
         "apply-for-a-benefit",
         "apply-for-a-licence-or-permit",
         "report-a-concern-or-incident",
-        "file-a-complaint"
+        "file-a-complaint",
+        "apply-for-a-grant-or-funding"
       ],
-      "summary": "Every Apply-shape generates notifications (received, status changed, decision issued, renewal reminder). No notification example covers this depth."
+      "summary": "Emails, texts, in-app messages government sends citizens when state changes (we received it, we need more info, your decision is ready, your licence expires in 30 days). No template exists for how these are structured (subject, body, call-to-action, link to landing page).",
+      "value_weight": "high",
+      "value_weight_rationale": "Reach: every applicant receives at least one. Decision letters, renewal reminders, clarification requests, status updates.",
+      "priority": "high",
+      "priority_rationale": "Cross-cutting reach: 5 types (mechanical: high). Value-weighting: high — Reach: every applicant receives at least one. Decision letters, renewal reminders, clarification requests, status updates."
     },
     {
-      "id": "decision-letters",
-      "name": "Decision letters",
+      "id": "results",
+      "name": "Results",
       "applies_to": [
         "apply-for-a-benefit",
         "apply-for-a-licence-or-permit",
         "apply-for-a-grant-or-funding",
         "file-a-complaint",
+        "appeal-a-decision",
+        "request-government-action-or-records",
+        "register-something",
+        "report-a-concern-or-incident",
+        "pay-a-fee-or-fine"
+      ],
+      "summary": "One parent pattern (what happened, what's next, contact path) with content variants based on what the result is. The current `result-page` is the only candidate in the design system and is thin for the breadth of cases.",
+      "value_weight": "high",
+      "value_weight_rationale": "Reach: every service interaction ends in a result page of some kind. Five content variants cover decision letters, credentials, records release, appeal outcomes, submission receipts.",
+      "variants": [
+        {
+          "id": "submission-receipt",
+          "name": "Submission receipt",
+          "summary": "We received your thing; here's your reference number. Sent immediately at submission. Light content."
+        },
+        {
+          "id": "decision-letter",
+          "name": "Decision letter",
+          "summary": "Outcome of an application with reasoning and next steps. Long-form."
+        },
+        {
+          "id": "issued-credential",
+          "name": "Issued credential",
+          "summary": "Outcome plus a granted thing (licence, certificate). Print/save/wallet-add affordances."
+        },
+        {
+          "id": "records-release",
+          "name": "Records release",
+          "summary": "Outcome IS the records themselves, often with redaction explanation."
+        },
+        {
+          "id": "appeal-outcome",
+          "name": "Appeal outcome",
+          "summary": "Three-branch decision (uphold / overturn / remit) with reasoning."
+        }
+      ],
+      "priority": "high",
+      "priority_rationale": "Cross-cutting reach: 9 types (mechanical: high). Value-weighting: high — Reach: every service interaction ends in a result page of some kind. Five content variants cover decision letters, credentials, records release, appeal outcomes, submission receipts."
+    },
+    {
+      "id": "submit-supporting-documents",
+      "name": "Submit supporting documents",
+      "applies_to": [
+        "apply-for-a-grant-or-funding",
+        "report-a-concern-or-incident",
+        "file-a-complaint",
+        "request-government-action-or-records",
+        "apply-for-a-benefit",
+        "apply-for-a-licence-or-permit"
+      ],
+      "summary": "Multi-document checklist with upload status. 'Here are the N documents we need; here's which you've uploaded; here's what's missing.' Distinct from a single file-upload field.",
+      "value_weight": "high",
+      "value_weight_rationale": "Reach: high. Common in grant applications, reports, complaints, records requests, benefit applications, licence applications. High friction point when not handled well.",
+      "priority": "high",
+      "priority_rationale": "Cross-cutting reach: 6 types (mechanical: high). Value-weighting: high — Reach: high. Common in grant applications, reports, complaints, records requests, benefit applications, licence applications. High friction point when not handled well."
+    },
+    {
+      "id": "describe-what-happened",
+      "name": "Describe what happened, in order",
+      "applies_to": [
+        "file-a-complaint",
+        "appeal-a-decision",
+        "report-a-concern-or-incident"
+      ],
+      "summary": "Structured event-sequence input where the citizen recounts a sequence of events. Date-tagged segments, event-by-event, ordered. Distinct from a free-text textarea.",
+      "value_weight": "medium",
+      "value_weight_rationale": "Bounded volume (complaints, appeals, reports). Important for accuracy but not high-reach.",
+      "priority": "medium",
+      "priority_rationale": "Cross-cutting reach: 3 types (mechanical: medium). Value-weighting: medium — Bounded volume (complaints, appeals, reports). Important for accuracy but not high-reach."
+    },
+    {
+      "id": "look-up-and-pick",
+      "name": "Look up and pick (inside a flow)",
+      "applies_to": [
+        "file-a-complaint",
+        "apply-for-a-licence-or-permit",
+        "report-a-concern-or-incident",
         "appeal-a-decision"
       ],
-      "summary": "result-page is the only candidate and it's thin for the complexity of decision/outcome content."
+      "summary": "Embedded entity lookup as a step inside another flow: find the doctor you're complaining about, look up your existing licence to renew, identify the regulated party. Distinct from the `directory` productType which is the whole shape.",
+      "value_weight": "high",
+      "value_weight_rationale": "Sub-pattern but widely embedded. Useful in complaints, renewals, reports, find-place flows.",
+      "priority": "high",
+      "priority_rationale": "Cross-cutting reach: 4 types (mechanical: high). Value-weighting: high — Sub-pattern but widely embedded. Useful in complaints, renewals, reports, find-place flows."
     }
   ],
   "excluded_or_below_bar": [
@@ -5194,11 +5950,13 @@
   ],
   "source": {
     "data_dir": "data/ab/",
-    "method": "phase-1-classification of 637 supporting services by primary service task (channel-based with name-pattern overrides), then phase-2 clustering by name pattern within each task with leverage bar applied.",
+    "method": "phase-1-classification of 637 supporting services by primary service task (channel-based with name-pattern overrides), then phase-2 clustering by name pattern within each task with leverage bar applied. A critical-pass dedup followed: per-type gaps and proposed_examples that duplicate cross-cutting patterns now carry cross_cutting_refs and flavor_note fields. Priority is computed from two layered signals — mechanical (service-type weight or cross-cutting reach) and value-weighting (curated per type and per cross-cutting using reach, financial flow, need, dependency). When value_weight is set, it overrides the mechanical default and the rationale surfaces both reasons.",
     "constraints_applied": [
       "Citizen-side only. Worker-side service types (intake-and-assess, case management) deferred to a follow-up brief.",
-      "Brief 12 product demo patterns NOT used as input to avoid biasing the system view.",
-      "Size-agnostic example proposals — captures the concept rather than the size class."
+      "Product demo patterns NOT used as input to avoid biasing the system view.",
+      "Size-agnostic example proposals — captures the concept rather than the size class.",
+      "Value-weighting is a first-pass curation (Tom 2026-05-19, with input from Paul). Refinable as data sources for citizen reach and financial flow become available.",
+      "ALSS pilot tie-in not applied — pilot service pick happening over the next two weeks; matching service type's priority_rationale gets a targeted amendment once known."
     ]
   }
 }
