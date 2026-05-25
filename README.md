@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> **This repository has moved.** The GoA Service Maps platform now lives in **[twjeffery/hiro](https://github.com/twjeffery/hiro)** under **`service-maps/`** (folded in, full history preserved). This repo is an archived, read-only snapshot. The live site (https://goa-service-maps.netlify.app) deploys from Hiro.
+
 # GoA Service Maps
 
 Static site visualizing how Alberta government ministries deliver services to the public. Built by Paul and Tom as part of the Government of Alberta Design System initiative.
