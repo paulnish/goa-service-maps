@@ -591,6 +591,28 @@
   to = "/ti/legislation.html"
   status = 200
 
+# Entity shortcut: /enmax → service map
+[[redirects]]
+  from = "/enmax"
+  to = "/enmax/service-map.html"
+  status = 200
+
+[[redirects]]
+  from = "/enmax/"
+  to = "/enmax/service-map"
+  status = 301
+
+# Clean URLs for ENMAX pages
+[[redirects]]
+  from = "/enmax/service-map"
+  to = "/enmax/service-map.html"
+  status = 200
+
+[[redirects]]
+  from = "/enmax/legislation"
+  to = "/enmax/legislation.html"
+  status = 200
+
 # Headers
 [[headers]]
   for = "/data/*/*.json"

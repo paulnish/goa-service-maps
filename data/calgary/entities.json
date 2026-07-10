@@ -1,0 +1,9 @@
+[
+  {
+    "prefix": "enmax",
+    "name": "ENMAX Corporation",
+    "short_name": "ENMAX",
+    "blurb": "Calgary's municipally-owned electricity utility -- delivers safe, reliable, and affordable electricity through regulated transmission and distribution (ENMAX Power), competitive generation and retail (ENMAX Energy), and community investment programs.",
+    "entity_type": "utility"
+  }
+]

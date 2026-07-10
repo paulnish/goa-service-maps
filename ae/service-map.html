@@ -79,7 +79,7 @@
       function renderPage(data) {
         const html = `
         <div class="nav-bar">
-          <a href="/">All Ministries</a>
+          <a href="/">All Service Maps</a>
           <span class="sep">/</span>
           ${data.parent_ministry ? `
             <a href="/${escapeHtml(data.parent_ministry)}/service-map">${escapeHtml(data.parent_ministry_name || data.parent_ministry)}</a>

@@ -16,10 +16,10 @@
     </div>
     <div class="header">
       <p class="subtitle">
-        Government of Alberta — Legislation Cross-Reference
+        City of Calgary — Legislation Cross-Reference
       </p>
       <h1 id="ministryName"></h1>
-      <p>How enabling legislation maps to ministry services</p>
+      <p>How provincial legislation maps to services</p>
     </div>
     <div class="legend-bar">
       <div class="legend-row">
@@ -31,7 +31,7 @@
       <div class="stats-bar">
         <div class="stat">
           <div class="stat-num" id="actsCount">0</div>
-          <div class="stat-label">Acts administered</div>
+          <div class="stat-label">Acts & regulations</div>
         </div>
         <div class="stat">
           <div class="stat-num" id="sectionsCount">0</div>
@@ -54,7 +54,7 @@
         <div class="filter-toggle">
           <div class="toggle-left" onclick="togglePanel()">
             <h3>Filter by</h3>
-            <span class="chevron">▼</span>
+            <span class="chevron">&#9660;</span>
           </div>
           <div class="active-chips" id="activeChips"></div>
           <div class="toggle-right" onclick="togglePanel()">
@@ -92,7 +92,7 @@
       <div class="drawer-header">
         <div class="drawer-title" id="drawerTitle"></div>
         <div class="drawer-ref" id="drawerRef"></div>
-        <button class="drawer-close" id="drawerClose">×</button>
+        <button class="drawer-close" id="drawerClose">&times;</button>
       </div>
       <div class="drawer-body" id="drawerBody"></div>
     </div>
@@ -119,18 +119,18 @@
         return div.innerHTML;
       }
 
-      // Determine ministry prefix from URL path
+      // Determine entity prefix from URL path
       function getMinistryPrefix() {
         const path = window.location.pathname;
         const match = path.match(/\/([a-z]+)\/legislation/);
-        return match ? match[1] : "ag";
+        return match ? match[1] : "enmax";
       }
 
       // Load data and initialize page
       async function initializePage() {
         try {
           const prefix = getMinistryPrefix();
-          const response = await fetch(`../data/ab/${prefix}_legislation.json`);
+          const response = await fetch(`../data/calgary/${prefix}_legislation.json`);
           if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
           const data = await response.json();
@@ -165,7 +165,7 @@
           legislationLink.href = `/${prefix}/legislation`;
 
           const footerText = document.getElementById("footerText");
-          footerText.innerHTML = `March 2026 &nbsp;|&nbsp; <a href="/${prefix}/service-map">← Back to service map</a> &nbsp;|&nbsp; Service analysis using Kate Tarling's framework`;
+          footerText.innerHTML = `July 2026 &nbsp;|&nbsp; <a href="/${prefix}/service-map">&larr; Back to service map</a> &nbsp;|&nbsp; Service analysis using Kate Tarling's framework`;
 
           // Populate legend
           renderLegend();
@@ -589,7 +589,7 @@
       function createChip(label, onRemove) {
         const chip = document.createElement("div");
         chip.className = "chip";
-        chip.innerHTML = `${escapeHtml(label)} <span class="chip-remove" onclick="arguments[0].stopPropagation()">×</span>`;
+        chip.innerHTML = `${escapeHtml(label)} <span class="chip-remove" onclick="arguments[0].stopPropagation()">&times;</span>`;
         chip.querySelector(".chip-remove").addEventListener("click", onRemove);
         return chip;
       }

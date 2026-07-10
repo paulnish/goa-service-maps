@@ -5,5 +5,13 @@
     "short_name": "Alberta",
     "country": "CA",
     "type": "province"
+  },
+  {
+    "code": "calgary",
+    "name": "City of Calgary",
+    "short_name": "Calgary",
+    "country": "CA",
+    "type": "municipality",
+    "parent": "ab"
   }
 ]

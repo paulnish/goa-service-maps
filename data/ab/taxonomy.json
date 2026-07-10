@@ -23,6 +23,7 @@
             "safety_emergencies": { "label": "Safety & emergencies" },
             "justice_legal": { "label": "Justice & legal matters" },
             "transport_infrastructure": { "label": "Transport & infrastructure" },
+            "utilities": { "label": "Utilities" },
             "recreation_culture": { "label": "Recreation & culture" }
           }
         },
@@ -57,7 +58,8 @@
             "registration_legal": { "label": "Registration & legal structure" },
             "finances_taxes": { "label": "Finances & taxes" },
             "people_employment": { "label": "People & employment" },
-            "insurance_risk": { "label": "Insurance & risk" }
+            "insurance_risk": { "label": "Insurance & risk" },
+            "utilities": { "label": "Utilities" }
           }
         },
         "regulatory_compliance": {
