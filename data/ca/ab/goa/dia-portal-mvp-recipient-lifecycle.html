@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DIA Portal — MVP Recipient Lifecycle</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #fafaf7;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 48px 32px;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 1200px; margin: 0 auto; }
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 6px;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 0 0 8px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #1a1a1a;
+  }
+  .meta { color: #555; font-size: 14px; margin-bottom: 24px; }
+  .diagram-frame {
+    background: white;
+    border: 1px solid #e2e2dc;
+    border-radius: 8px;
+    padding: 32px;
+    overflow: auto;
+  }
+  .legend {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 24px 0;
+    font-size: 13px;
+    color: #555;
+  }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .swatch {
+    width: 14px; height: 14px;
+    border-radius: 3px;
+    border: 1px solid;
+    display: inline-block;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid #e2e2dc;
+    color: #555;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Companion to user-needs draft v0.16 · MVP recipient lifecycle · v0.1</div>
+  <h1>Disability Income Assistance Portal — MVP Recipient Lifecycle</h1>
+  <p class="meta">The journey through the portal for a recipient or applicant: from arriving in the system after applying externally, through the decision moment (approved or denied), into the steady state of receiving benefits, with the conditional excursions into re-application (during the AISH↔ADAP transition window) and appeals (whenever there's a decision to challenge). Solid arrows are the primary path; dashed arrows are conditional or recurring.</p>
+
+  <div class="legend">
+    <span><span class="swatch" style="background:#e6f0fa;border-color:#0070c0"></span>Stage in MVP scope</span>
+    <span><span class="swatch" style="background:#eaf3df;border-color:#548235"></span>Steady state</span>
+    <span><span class="swatch" style="background:#fff7ed;border-color:#bf8f00"></span>Decision point</span>
+    <span><span class="swatch" style="background:#f3f1ea;border-color:#888"></span>Out of portal scope</span>
+  </div>
+
+  <div class="diagram-frame">
+    <div class="mermaid">
+flowchart TD
+    Apply([Applied externally<br/>Stages 1-2 out of scope]):::ext
+    Apply --> S3
+
+    S3[Stage 3 · Wait &amp; track the assessment]:::box
+    S3 --> Decision{Decision rendered}:::diamond
+    Decision -->|Approved| S4
+    Decision -->|Denied| Den[Denial notice]:::box
+
+    S4[Stage 4 · Commencement]:::box
+    S4 --> S5
+
+    S5[Stage 5 · Receiving benefits<br/>+ account management]:::steady
+
+    S5 <-->|recurring obligation| S6[Stage 6 · Reports &amp; changes]:::box
+
+    S5 -.->|if eligible<br/>through Dec 2027| S9[Stage 9 · Re-apply<br/>ephemeral]:::box
+    S9 -.->|new decision needed| S3
+
+    S5 -.->|disagree with<br/>a decision| S10
+    Den -->|file appeal<br/>30-day window| S10[Stage 10 · Appeals]:::box
+    Den -.->|provide info<br/>within 12 months| S3
+
+    S10 -.->|outcome upholds| S5
+    S10 -.->|denial overturned| S4
+
+    S5 -.->|eventually<br/>phase 2| Exit([Transition off<br/>Stage 11 · Phase 2]):::ext
+
+    classDef ext fill:#f3f1ea,stroke:#888,color:#555
+    classDef box fill:#e6f0fa,stroke:#0070c0,color:#0a4a7a
+    classDef steady fill:#eaf3df,stroke:#548235,color:#2f4a14
+    classDef diamond fill:#fff7ed,stroke:#bf8f00,color:#7a5a00
+    </div>
+  </div>
+
+  <footer>
+    <p>Generated as a companion to the user-needs draft. Pairs with the navigation map (<code>dia-portal-mvp-navigation-map.html</code>) — that shows what's <em>where</em>; this shows what happens <em>when</em> and <em>why</em>. Iterate as MVP scope or lifecycle understanding evolves.</p>
+  </footer>
+</div>
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'base',
+    themeVariables: {
+      primaryColor: '#e6f0fa',
+      primaryTextColor: '#0a4a7a',
+      primaryBorderColor: '#0070c0',
+      lineColor: '#666',
+      fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
+      fontSize: '14px'
+    },
+    flowchart: { useMaxWidth: true, htmlLabels: true, curve: 'basis' }
+  });
+</script>
+</body>
+</html>

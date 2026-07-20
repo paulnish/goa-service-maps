@@ -46,8 +46,11 @@
   .journey-service .sdesc { font-size: 13px; color: #666; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
   .journey-service .smeta { display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
   .journey-service .stag { font-size: 11px; padding: 2px 8px; border-radius: 4px; }
-  .journey-service .stag.ministry { background: #f0f0f0; color: #555; }
   .journey-service .stag.domain { background: #e8f0fe; color: #1a56db; }
+  .svc-source { margin-top: 8px; font-size: 11px; color: #888; display: flex; align-items: center; gap: 4px; }
+  .svc-source .src-sep { color: #ccc; }
+  .svc-source a { color: #888; text-decoration: none; }
+  .svc-source a:hover { color: #1a56db; text-decoration: underline; }
   .journey-service .slinks { margin-top: 6px; }
   .journey-service .slinks a { font-size: 12px; color: #1a56db; text-decoration: none; margin-right: 12px; }
   .journey-service .slinks a:hover { text-decoration: underline; }
@@ -66,7 +69,7 @@
 <div class="nav-bar"><a href="/">All Service Maps</a> <span class="sep">/</span> <span class="current">Find a Service</span></div>
 
 <div class="header">
-  <h1>Government of Alberta</h1>
+  <h1>Service Directory</h1>
   <h2>What's happening in your life?</h2>
   <p>Select a life event to see all the government services that may be relevant to your situation.</p>
 </div>
@@ -87,7 +90,7 @@
     </div>
     <div class="journey-body" id="journey-body"></div>
     <div class="journey-footer">
-      <p>Services shown are from the Government of Alberta. Federal and municipal services may also apply.</p>
+      <p>Services shown are from mapped jurisdictions. Additional federal, provincial, or municipal services may also apply.</p>
     </div>
   </div>
 </div>
@@ -196,30 +199,45 @@ const LIFE_EVENTS = [
 let taxonomy = null;
 let allServices = [];
 
-async function init() {
-  const taxResp = await fetch('../data/ab/taxonomy.json');
-  taxonomy = await taxResp.json();
-
-  const ministResp = await fetch('../data/ab/ministries.json');
-  const ministries = await ministResp.json();
-
-  for (const m of ministries) {
-    if (m.is_test) continue;
+async function loadEntities(code) {
+  for (const file of ['entities.json', 'ministries.json']) {
     try {
-      const resp = await fetch(`../data/ab/${m.prefix}.json`);
-      const data = await resp.json();
-      extractServices(data, m.prefix, m.short_name);
-    } catch(e) {}
+      const resp = await fetch(`../data/${code}/${file}`);
+      if (resp.ok) return await resp.json();
+    } catch (e) { /* try next */ }
+  }
+  return [];
+}
+
+async function init() {
+  const [taxResp, jResp] = await Promise.all([
+    fetch('../data/taxonomy.json'),
+    fetch('../data/jurisdictions.json')
+  ]);
+  taxonomy = await taxResp.json();
+  const jurisdictions = await jResp.json();
+
+  for (const j of jurisdictions) {
+    const jName = j.short_name || j.name;
+    const entities = await loadEntities(j.path || j.code);
+    for (const e of entities) {
+      if (e.is_test) continue;
+      try {
+        const resp = await fetch(`../data/${j.path || j.code}/${e.prefix}.json`);
+        const data = await resp.json();
+        extractServices(data, e.prefix, e.short_name || e.name, jName);
+      } catch(err) {}
+    }
   }
 
   renderEvents();
 }
 
-function extractServices(data, prefix, ministryName) {
+function extractServices(data, prefix, ministryName, jurisdictionName) {
   function addService(svc) {
     if (typeof svc === 'string') return;
     if (!svc.taxonomy) return;
-    allServices.push({ ...svc, ministry: prefix, ministryName });
+    allServices.push({ ...svc, ministry: prefix, ministryName, jurisdiction: jurisdictionName });
   }
   for (const fs of data.foundational_services || []) addService(fs);
   for (const goal of data.goals || []) {
@@ -320,10 +338,12 @@ function openJourney(eventId) {
             <div class="journey-service">
               <h5>${svc.name}</h5>
               <div class="sdesc">${svc.desc || ''}</div>
-              <div class="smeta">
-                <span class="stag ministry">${svc.ministryName}</span>
-              </div>
               ${channels.length ? `<div class="slinks">${channels.map(c => `<a href="${c.url}" target="_blank">${c.label}</a>`).join('')}</div>` : ''}
+              <div class="svc-source">
+                <span>${svc.jurisdiction}</span>
+                <span class="src-sep">/</span>
+                <a href="/${svc.ministry}/service-map">${svc.ministryName}</a>
+              </div>
             </div>`;
         }).join('')}
       </div>`;

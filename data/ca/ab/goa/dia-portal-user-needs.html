@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Disability Income Assistance Portal — User Needs Plan (Working Draft)</title>
+<style>
+  :root {
+    --bg: #fafaf7;
+    --ink: #1a1a1a;
+    --muted: #555;
+    --line: #e2e2dc;
+    --accent: #0070c0;
+    --accent-2: #548235;
+    --warn: #bf8f00;
+    --critical: #b03a2e;
+    --soft: #f3f1ea;
+    --code: #f5f5f0;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+    font-size: 16px;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 48px 32px 96px; }
+  header.doc-head {
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+  }
+  header.doc-head .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  h1 { font-size: 30px; margin: 0 0 8px; line-height: 1.2; }
+  h2 {
+    font-size: 22px;
+    margin: 48px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--line);
+  }
+  h3 { font-size: 17px; margin: 24px 0 6px; }
+  h4 { font-size: 15px; margin: 16px 0 4px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  p, ul, ol { margin: 0 0 12px; }
+  ul, ol { padding-left: 22px; }
+  li { margin-bottom: 4px; }
+  .meta { color: var(--muted); font-size: 14px; }
+  .callout {
+    border-left: 4px solid var(--accent);
+    background: var(--soft);
+    padding: 14px 18px;
+    margin: 16px 0;
+    border-radius: 0 4px 4px 0;
+  }
+  .callout.warn { border-left-color: var(--warn); }
+  .callout.critical { border-left-color: var(--critical); }
+  .callout h4 { margin-top: 0; color: var(--ink); }
+  .stage {
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 24px;
+    margin: 24px 0;
+    background: #fff;
+  }
+  .stage .stage-head {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  .stage-num {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  .stage h3 { margin: 0; font-size: 19px; }
+  .stage .stage-blurb { color: var(--muted); font-size: 14px; margin: 0 0 16px 42px; }
+  .stage .stage-body { margin-left: 42px; }
+  .needs {
+    border: 1px solid var(--line);
+    border-collapse: collapse;
+    width: 100%;
+    margin: 8px 0 16px;
+    font-size: 14px;
+  }
+  .needs th, .needs td {
+    border: 1px solid var(--line);
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+  .needs th { background: var(--soft); font-weight: 600; }
+  .needs td.pri { white-space: nowrap; font-weight: 600; }
+  .pri-p0 { color: var(--critical); }
+  .pri-p1 { color: var(--accent); }
+  .pri-p2 { color: var(--accent-2); }
+  .pri-p3 { color: var(--muted); }
+  code, .src {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: var(--code);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+  }
+  .legend {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    margin: 12px 0;
+  }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+  .dot.p0 { background: var(--critical); }
+  .dot.p1 { background: var(--accent); }
+  .dot.p2 { background: var(--accent-2); }
+  .dot.p3 { background: var(--muted); }
+  .assumptions {
+    background: #fff8e6;
+    border: 1px solid #e7d493;
+    padding: 16px 20px;
+    border-radius: 6px;
+    margin: 16px 0 32px;
+  }
+  .assumptions h3 { margin-top: 0; }
+  .pillbar { display: flex; gap: 6px; flex-wrap: wrap; margin: 6px 0; }
+  .pill {
+    background: var(--soft);
+    padding: 2px 8px;
+    border-radius: 99px;
+    font-size: 12px;
+    color: var(--muted);
+    cursor: help;
+  }
+  .pill.evidence { background: #e6f0fa; color: #0a4a7a; }
+  .pill.policy { background: #eaf3df; color: #2f4a14; }
+  .pill.bench { background: #f1e6f7; color: #4a1f63; }
+  details { margin: 10px 0; }
+  details summary { cursor: pointer; font-weight: 600; color: var(--accent); }
+  .toc { background: #fff; border: 1px solid var(--line); padding: 16px 20px; border-radius: 6px; margin-bottom: 32px; }
+  .toc h4 { margin-top: 0; color: var(--ink); text-transform: none; letter-spacing: 0; font-size: 14px; }
+  .toc ol { margin-bottom: 0; }
+  .toc a { color: var(--ink); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  footer { margin-top: 64px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="doc-head">
+  <div class="eyebrow">Working draft · For internal thinking · v0.16</div>
+  <h1>Disability Income Assistance Portal — Citizen User Needs</h1>
+  <p class="meta">A journey-staged inventory of what AISH &amp; ADAP recipients (and applicants) need from a citizen-facing portal, prioritized by impact and grounded in the ALSS service map, the AISH Policy Manual, and benchmarks from comparable social-assistance portals.</p>
+</header>
+
+<div class="callout critical" style="border-left-color:var(--ink);background:#fff;padding:20px 24px;margin-bottom:32px">
+  <h4 style="margin-top:0;font-size:13px">The problem we are solving</h4>
+  <p style="font-size:17px;line-height:1.5;margin-bottom:0">After an Albertan applies for AISH or ADAP, the experience of staying in the program is opaque and fragmented. Recipients — and the trustees, family members, and advocates who help them — cannot reliably see where their file stands, report changes, request additional support, manage their account, or understand decisions made about them without phoning a contact centre or waiting on a caseworker. The portal exists to give them a single, transparent, trustworthy place to do all of this themselves.</p>
+</div>
+
+<div class="toc">
+  <h4>Contents</h4>
+  <ol>
+    <li><a href="#framing">Framing &amp; assumptions</a></li>
+    <li><a href="#sources">Source material</a></li>
+    <li><a href="#legend">How needs are prioritized</a></li>
+    <li><a href="#journey">Journey-staged user needs</a>
+      <ol>
+        <li><a href="#stage1">Discover &amp; understand the program <em>(out of scope)</em></a></li>
+        <li><a href="#stage2">Determine eligibility &amp; apply <em>(out of scope)</em></a></li>
+        <li><a href="#stage3">Wait for &amp; track the assessment process</a></li>
+        <li><a href="#stage4">Commencement</a></li>
+        <li><a href="#stage5">Receive benefits &amp; manage the account</a></li>
+        <li><a href="#stage6">Report changes &amp; meet obligations</a></li>
+        <li><a href="#stage7">Request additional supports</a></li>
+        <li><a href="#stage8">Handle overpayments &amp; underpayments</a></li>
+        <li><a href="#stage9">Re-apply during the AISH↔ADAP transition <em>(ephemeral)</em></a></li>
+        <li><a href="#stage10">Appeal a decision</a></li>
+        <li><a href="#stage11">Transition off the program</a></li>
+      </ol>
+    </li>
+    <li><a href="#manual">What the AISH Policy Manual adds (v0.2)</a></li>
+    <li><a href="#discourse">Public discourse review — visible pain points (v0.2)</a></li>
+    <li><a href="#crosscut">Cross-cutting needs (apply to every stage)</a></li>
+    <li><a href="#top10">Prioritized top-10 across the whole journey</a></li>
+    <li><a href="#oop">Out of scope &amp; open questions</a></li>
+    <li><a href="#hallu">Assumptions, uncertainties &amp; what I couldn't verify</a></li>
+  </ol>
+</div>
+
+<h2 id="framing">1. Framing &amp; assumptions</h2>
+
+<p><strong>Scope.</strong> A citizen-facing portal for Alberta's <em>Disability Income Assistance</em> services — currently the Assured Income for the Severely Handicapped (AISH) program and, from July 2026, the new Alberta Disability Assistance Program (ADAP). The portal serves <em>recipients, active applicants in the post-submission window, and the people who help them</em>. It is not a caseworker tool.</p>
+
+<div class="callout warn">
+  <h4>Explicitly out of scope</h4>
+  <p style="margin-bottom:0"><strong>Journey stages 1 (Discover &amp; understand the program) and 2 (Determine eligibility &amp; apply) are excluded.</strong> These are existing pieces of the puzzle — alberta.ca content, MyAlbertaSupports intake, the application itself — with their own dependencies and parallel work tracks. They are visible in §4 below as context for what comes before the portal, but the user needs at those stages are not this portal's problem to solve. The scope is <strong>stages 3 through 11</strong>: from "I have applied and am waiting" through "I am exiting the program."</p>
+</div>
+
+<p><strong>Three problems the portal must address (per the original brief).</strong></p>
+<ol>
+  <li><strong>Status.</strong> Today, an applicant or recipient often cannot answer "where is my file, what is happening, and when will I hear?" without phoning a contact centre.</li>
+  <li><strong>Providing additional information.</strong> Document submission, change reporting, and benefit requests are fragmented across channels (phone, mail, in-person, partial online). The portal should be the one place a citizen reliably puts new information in.</li>
+  <li><strong>Transparency &amp; accountability.</strong> Citizens need to see how decisions about them are made, what rules were applied, and what they can do if they disagree.</li>
+</ol>
+
+<div class="assumptions">
+  <h3>Assumptions I am making (push back on any of these)</h3>
+  <ul>
+    <li><strong>Citizen lens.</strong> "Transparency and accountability" means it from the recipient's point of view — what was decided, why, and how to challenge it. Not audit/compliance reporting for the ministry.</li>
+    <li><strong>Augment, don't replace, caseworkers.</strong> AISH/ADAP populations include people with cognitive, mental health, and severe physical disabilities. The portal must improve self-service, not force it.</li>
+    <li><strong>Third parties are first-class users.</strong> Trustees, financial administrators, family members, and advocates routinely act on a recipient's behalf. The service map explicitly names this (<em>Authorize a third party to act on your behalf</em>, <em>Informal Benefits Administration Program</em>). The portal cannot be designed as if it has a single individual user.</li>
+    <li><strong>AISH and ADAP share infrastructure but split journeys at points.</strong> Same intake; divergent benefit calculation, employment rules, and reassessment flows. The portal needs one front door with role-aware downstream experiences.</li>
+    <li><strong>Accessibility is a hard constraint.</strong> WCAG 2.2 AA is the floor, plain language is non-negotiable, and the portal must be usable on a phone over patchy connectivity.</li>
+    <li><strong>This list is "needs," not "features."</strong> A need like <em>"I need to know my application is moving"</em> can be met with a status page, an SMS, or a chatbot — that's a later design decision.</li>
+  </ul>
+</div>
+
+<h2 id="sources">2. Source material</h2>
+
+<p>Three classes of evidence are layered into every need below.</p>
+
+<ul>
+  <li><span class="pill evidence">SERVICE MAP</span> The Disability Income Assistance deep-dive in the ALSS service map (<span class="src">data/ab/alss_dia.json</span>) and the parent ALSS file (<span class="src">data/ab/alss.json</span>). This defines goals, main services, supporting services, foundational services, channels, and legislation.</li>
+  <li><span class="pill policy">POLICY</span> The AISH Policy Manual (<span class="src">manuals.alberta.ca/aish-policy-manual</span>, chapters 1–10: General, Eligibility, Income, Assets, Benefits, Overpayments, Debts Recovery, Underpayments, Personal Representatives, Appeals) plus the public alberta.ca AISH page tree and the alberta.ca ADAP fact sheet.</li>
+  <li><span class="pill bench">BENCHMARK</span> Best practices from comparable social-assistance and disability portals — SSA's <em>my Social Security</em> account, UK GOV.UK's PIP claim service, and Code for America's Integrated Benefits work.</li>
+  <li><span class="pill" style="background:#fde2e2;color:#7a0d0d">DISCOURSE</span> Public discourse on AISH/ADAP — CBC, Alberta Doctors' Digest, Inclusion Alberta, Voice of Albertans with Disabilities, Friends of Medicare, Public Interest Alberta, the Alberta Ombudsman case summaries, ARISE (recipient self-advocacy collective), and regional press. See §7 for the full review, biases, and limits.</li>
+</ul>
+
+<h2 id="legend">3. How needs are prioritized</h2>
+
+<p>Each need has a priority (P0–P3) based on four factors:</p>
+
+<ul>
+  <li><strong>Impact</strong> — what happens to the recipient if this need is unmet? (Loss of income or benefits = highest.)</li>
+  <li><strong>Frequency</strong> — how often does this come up across the recipient base?</li>
+  <li><strong>Current pain</strong> — is this a known failure point in the existing experience?</li>
+  <li><strong>Portal fit</strong> — is this actually something a portal can solve, or is it a policy / operational issue masquerading as a digital one?</li>
+</ul>
+
+<div class="legend">
+  <span><span class="dot p0"></span><strong>P0</strong> — Foundational. Portal is not credible without it.</span>
+  <span><span class="dot p1"></span><strong>P1</strong> — Core. Ship in v1 to deliver on the brief.</span>
+  <span><span class="dot p2"></span><strong>P2</strong> — Important but defer-able to v1.x.</span>
+  <span><span class="dot p3"></span><strong>P3</strong> — Worth building eventually; later phase.</span>
+</div>
+
+<h2 id="journey">4. Journey-staged user needs</h2>
+
+<p>Stages map roughly onto the AISH lifecycle. They overlap in practice — a recipient might be reporting a change, requesting a personal benefit, and waiting on an appeal all in the same week — but treating them separately surfaces distinct needs.</p>
+
+<div class="callout">
+  <h4>Scope reminder</h4>
+  <p style="margin-bottom:0">Stages 1 and 2 are shown as <em>adjacent context</em> only — they're greyed out and labelled Out of scope. <strong>The portal's scope is stages 3 through 11.</strong> The needs in stages 1–2 are real but belong to existing alberta.ca content, MyAlbertaSupports, and parallel work tracks. Read the journey as a whole for context; design against stages 3 onward.</p>
+</div>
+
+<!-- STAGE 1 -->
+<div class="stage" id="stage1" style="opacity:0.6;border-style:dashed">
+  <div class="stage-head">
+    <span class="stage-num" style="background:var(--muted)">1</span>
+    <h3>Discover &amp; understand the program <span style="font-size:12px;font-weight:600;color:var(--critical);text-transform:uppercase;letter-spacing:0.06em;margin-left:8px">Out of scope</span></h3>
+  </div>
+  <p class="stage-blurb"><em>Adjacent — existing alberta.ca content and other tracks own this. Kept here for journey context only.</em></p>
+  <p class="stage-blurb">Before any application happens. The person — or someone helping them — is trying to figure out whether AISH or ADAP applies to their situation.</p>
+  <div class="stage-body">
+    <p><strong>Who is here:</strong> potential applicants, families, doctors, social workers, settlement agencies, advocates.</p>
+    <table class="needs">
+      <thead><tr><th>User need</th><th>Why it matters</th><th class="pri">Priority</th><th>Evidence</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>"Tell me in plain language whether this program is for me, before I invest hours in an application."</td>
+          <td>Misrouting wastes weeks. The service map's <em>Check your eligibility for AISH or ADAP</em> exists for exactly this reason.</td>
+          <td class="pri pri-p0">P0</td>
+          <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span></td>
+        </tr>
+        <tr>
+          <td>"Show me clearly how AISH and ADAP differ — work expectations, payment, what changes if I get a job."</td>
+          <td>The two-program model only works if citizens understand the trade-off. ADAP launch July 2026 makes this acute.</td>
+          <td class="pri pri-p0">P0</td>
+          <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td>"Tell me what documents and information I'll need before I start, so I can gather them."</td>
+          <td>Highest abandonment point in benefit applications. Code for America research shows this directly.</td>
+          <td class="pri pri-p1">P1</td>
+          <td><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span></td>
+        </tr>
+        <tr>
+          <td>"Point me to related programs I might also qualify for (AHCIP, Income Support, federal disability tax credit, CPP-D)."</td>
+          <td>Cross-program awareness is the highest-leverage outcome of integrated benefit portals.</td>
+          <td class="pri pri-p1">P1</td>
+          <td><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span> <span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span></td>
+        </tr>
+        <tr>
+          <td>"Give me content I can read aloud, translate, or share with someone helping me."</td>
+          <td>Many applicants do not navigate alone. Content needs to work for the helper.</td>
+          <td class="pri pri-p2">P2</td>
+          <td><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- STAGE 2 -->
+<div class="stage" id="stage2" style="opacity:0.6;border-style:dashed">
+  <div class="stage-head">
+    <span class="stage-num" style="background:var(--muted)">2</span>
+    <h3>Determine eligibility &amp; apply <span style="font-size:12px;font-weight:600;color:var(--critical);text-transform:uppercase;letter-spacing:0.06em;margin-left:8px">Out of scope</span></h3>
+  </div>
+  <p class="stage-blurb"><em>Adjacent — MyAlbertaSupports and the application itself own this, with their own parallel work tracks. Kept here for journey context only.</em></p>
+  <p class="stage-blurb">The combined AISH/ADAP application via MyAlbertaSupports — or paper/in-person/assisted equivalents.</p>
+  <div class="stage-body">
+    <table class="needs">
+      <thead><tr><th>User need</th><th>Why it matters</th><th class="pri">Priority</th><th>Evidence</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>"Let me start, pause, and resume an application without losing my place."</td>
+          <td>Energy-limited, cognitively-impacted, and caregiving applicants cannot complete a long form in one sitting.</td>
+          <td class="pri pri-p0">P0</td>
+          <td><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span></td>
+        </tr>
+        <tr>
+          <td>"Don't ask me again for information government already has (address, ID, prior file, AHCIP)."</td>
+          <td>A defining feature of modern digital government. Reduces error, builds trust.</td>
+          <td class="pri pri-p1">P1</td>
+          <td><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span></td>
+        </tr>
+        <tr>
+          <td>"Let my doctor submit my medical assessment directly — or let me upload a photo of it from my phone."</td>
+          <td>Service map names <em>Submit medical documentation</em> as a discrete service. Today this is a major mail/fax bottleneck.</td>
+          <td class="pri pri-p0">P0</td>
+          <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td>"Show me a single confirmation that my application was received, with a reference number and what happens next."</td>
+          <td>Foundational trust signal. Its absence is the #1 source of repeat phone calls.</td>
+          <td class="pri pri-p0">P0</td>
+          <td><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span></td>
+        </tr>
+        <tr>
+          <td>"Let me apply with help — a caseworker, family member, or advocate, with my consent recorded."</td>
+          <td>The service map calls out the assisted-application channel explicitly. Portal must reflect this, not pretend it doesn't exist.</td>
+          <td class="pri pri-p1">P1</td>
+          <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span></td>
+        </tr>
+        <tr>
+          <td>"Let me request rapid reinstatement if I was on AISH within the last 24 months."</td>
+          <td>Named service in the data; existing policy. Today requires phone or in-person.</td>
+          <td class="pri pri-p2">P2</td>
+          <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span></td>
+        </tr>
+        <tr>
+          <td>"Read back to me, in plain language, what I just told you, before I submit."</td>
+          <td>Reduces error rates and the downstream "we need more information" cycle.</td>
+          <td class="pri pri-p1">P1</td>
+          <td><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- STAGE 3 -->
+<div class="stage" id="stage3">
+  <div class="stage-head">
+    <span class="stage-num">3</span>
+    <h3>Wait for &amp; track the assessment process</h3>
+  </div>
+  <p class="stage-blurb">The assessment process. The single biggest source of citizen anxiety and phone-call volume for our program.</p>
+  <div class="stage-body">
+    <div class="callout">
+      <h4>What this stage is really about</h4>
+      <p>Most often, the wait isn't the ministry deciding — it's the gap between a request being made and the applicant gathering and returning what was asked for. Communication today is often by letter, because reliable email or phone contact isn't always on file. A portal that makes the request visible, gives the applicant a digital channel to respond, and confirms receipt would directly attack that gap.</p>
+    </div>
+    <table class="needs">
+      <thead><tr><th>User need</th><th>Why it matters</th><th class="pri">Priority</th><th>Evidence</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>"Show me where my file is — received, under review, awaiting medical, decision ready — and what's next."</td>
+          <td>The brief's #1 ask. Status pages exist elsewhere; users still call. The bar is real-time, specific, and human-readable.</td>
+          <td class="pri pri-p0">P0</td>
+          <td><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span></td>
+        </tr>
+        <tr>
+          <td>"Tell me when something is waiting on me — and exactly what I need to do."</td>
+          <td>The actual delay in this stage is the request-to-receipt gap on additional documents. Today the request often arrives by letter; the portal can shorten that loop dramatically by surfacing the ask digitally with a clear definition of what's needed.</td>
+          <td class="pri pri-p0">P0</td>
+          <td><span class="pill" style="background:#fde2e2;color:#7a0d0d" title="Discourse — public discourse review (§6): news, advocacy organisations, Alberta Ombudsman case summaries, op-eds">D</span> + program knowledge</td>
+        </tr>
+        <tr>
+          <td>"Tell me roughly when I'll hear — even a range, even with caveats."</td>
+          <td>"We can't say" erodes trust. A range with explanation is honest and usable.</td>
+          <td class="pri pri-p1">P1</td>
+          <td><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span></td>
+        </tr>
+        <tr>
+          <td>"Notify me when something changes — by SMS or email — so I don't have to log in to check."</td>
+          <td>Mobile-first reality, and a direct replacement for the letter-only comms pattern (where reliable contact info is available).</td>
+          <td class="pri pri-p1">P1</td>
+          <td><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span> + program knowledge</td>
+        </tr>
+        <tr>
+          <td>"Let me see what's been submitted, by whom, and what's been received — so I can confirm whether my doctor (or any third party) sent what was needed."</td>
+          <td>Recurring failure mode: applicant believes the doctor has submitted; system doesn't have it; both wait. This is the operational shape of the medical-assessment bottleneck.</td>
+          <td class="pri pri-p1">P1</td>
+          <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> + <span class="pill" style="background:#fde2e2;color:#7a0d0d" title="Discourse — public discourse review (§6): news, advocacy organisations, Alberta Ombudsman case summaries, op-eds">D</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="meta" style="margin-top:12px"><em>Secure messaging — asking a question about your file without phoning — is treated as cross-cutting (§7). It first surfaces here.</em></p>
+  </div>
+</div>
+
+<!-- STAGE 4 -->
+<div class="stage" id="stage4">
+  <div class="stage-head">
+    <span class="stage-num">4</span>
+    <h3>Commencement</h3>
+  </div>
+  <p class="stage-blurb">The window between decision and ongoing benefits. The work happens behind the scenes in Case Management and at the commencement meeting; the portal's role in MVP is visibility into that process, a channel to provide documents back to the worker, and surfacing the outcome of retro calculations. Heavier needs (meeting logistics, commencement-date explanation, retro-period benefit-cost reimbursement workflow, meeting summary, 12-month re-submission countdown, full denial-path detail) deferred to phase 2.</p>
+  <div class="stage-body">
+    <div class="callout">
+      <h4>Augmentation, not replacement</h4>
+      <p>A commencement meeting is required by policy (AISH General Regulation s.2.1), and cohabiting partners and financial administrators <em>must</em> attend. The portal does not replace this meeting, the formal decision letter, or the existing phone and in-person channels — it offers a parallel digital surface alongside them.</p>
+    </div>
+    <table class="needs">
+      <thead><tr><th>User need</th><th>Why it matters</th><th class="pri">Priority</th><th>Evidence</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>"Show me what's happening with my file behind the scenes — what's pending, what's next."</td>
+          <td>Same status pattern as Stage 3, extended into the post-decision window. Covers both approved (pre-commencement work in progress) and denied (reassessment within 12 months) paths. The decision content itself is rendered via cross-cutting decision explainability (§7).</td>
+          <td class="pri pri-p0">P0</td>
+          <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td>"Let me provide documents back to my worker."</td>
+          <td>A general document-upload channel. Serves pre-meeting prep (approved cases), reassessment evidence (denied within 12-month window), or any time the worker requests something. Replaces multiple narrower needs from the previous draft.</td>
+          <td class="pri pri-p0">P0</td>
+          <td><span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td>"Show me the outcome of my retro payment calculation when it's been done."</td>
+          <td>CMS owns the calculation (amount, period, timing). The portal surfaces it read-only as a persistent record. The reimbursement workflow for retro-period out-of-pocket health and personal-benefit costs is deferred to phase 2.</td>
+          <td class="pri pri-p0">P0</td>
+          <td><span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- STAGE 5 -->
+<div class="stage" id="stage5">
+  <div class="stage-head">
+    <span class="stage-num">5</span>
+    <h3>Receive benefits &amp; manage the account</h3>
+  </div>
+  <p class="stage-blurb">The ongoing monthly cycle once benefits are flowing. Recipients return here when they need to see their next payment, check history, update account details, or get proof of enrollment — not as a daily destination.</p>
+  <div class="stage-body">
+    <table class="needs">
+      <thead><tr><th>User need</th><th>Why it matters</th><th class="pri">Priority</th><th>Evidence</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>"Show me my next payment — date, amount, and what's on it."</td>
+          <td>The most-asked recurring question. An existing IVR handles thousands of calls a month on payment-related queries — the portal mirrors that view in a single visible place.</td>
+          <td class="pri pri-p0">P0</td>
+          <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> + operational (IVR volume)</td>
+        </tr>
+        <tr>
+          <td>"Show me my payment history with the breakdown — living allowance, child benefit, personal benefits, deductions — and let me download each month's remittance statement."</td>
+          <td>Required for budgeting, tax filing, third-party rent payment, dispute resolution. In our jurisdiction the monthly remittance statement is also commonly used as proof of enrollment, so the downloadable statement serves double duty here.</td>
+          <td class="pri pri-p1">P1</td>
+          <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td>"Let me request changes to my direct deposit, mailing address, and contact info."</td>
+          <td>Initial setup happens at commencement (Stage 4). This is ongoing updates — moves, bank changes, new phone numbers. Today phone or in-person; the portal adds a self-serve request channel alongside. Writes back to Case Management as the system of record.</td>
+          <td class="pri pri-p1">P1</td>
+          <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> + tech context</td>
+        </tr>
+        <tr>
+          <td>"Let me request a replacement Alberta Adult Health Benefit card."</td>
+          <td>Named service. The request process changes in July, but the need persists — a simple ask that today consumes phone time.</td>
+          <td class="pri pri-p2">P2</td>
+          <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span></td>
+        </tr>
+        <tr>
+          <td>"Generate a formal proof-of-enrollment letter on demand."</td>
+          <td>A distinct, lower-volume need for third parties (some courts, banks, formal processes) that won't accept a monthly remittance statement and require a one-page "enrolled in AISH, receives $X/month" letter. Lower priority because volume is lower and the remittance statement covers most cases.</td>
+          <td class="pri pri-p2">P2</td>
+          <td>Program knowledge</td>
+        </tr>
+        <tr>
+          <td>"Download my annual tax slip."</td>
+          <td>Known annual need. Today this arrives by mail; the portal adds a downloadable digital copy alongside, available when it's issued and persistent year-over-year.</td>
+          <td class="pri pri-p2">P2</td>
+          <td>Program knowledge</td>
+        </tr>
+        <tr>
+          <td>"If my next payment is held or reduced for a routine reason (missing report, recovery deduction, etc.), tell me why and what I need to do."</td>
+          <td>Most holds and deductions are side effects of routine processes, not exceptional circumstances. Recipients today often learn about them only when the deposit lands smaller (or not at all) than expected. The portal surfaces the cause and the remedy alongside the payment view, before the deposit date where possible.</td>
+          <td class="pri pri-p1">P1</td>
+          <td>Program knowledge</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="meta" style="margin-top:12px"><em>"Why did my payment change?" (annual indexing, exemption-band changes, decision-driven adjustments) is decision-explainability — treated as cross-cutting (§7).</em></p>
+  </div>
+</div>
+
+<!-- STAGE 6 -->
+<div class="stage" id="stage6">
+  <div class="stage-head">
+    <span class="stage-num">6</span>
+    <h3>Report changes &amp; meet obligations</h3>
+  </div>
+  <p class="stage-blurb">Ongoing duty: any change in income, employment, living arrangements, medical condition, family, or assets must be reported.</p>
+  <div class="stage-body">
+    <div class="callout">
+      <h4>The accountability angle</h4>
+      <p>Reporting failures cause overpayments, which become debts recipients must repay. The most-cited recipient harm in the public discourse review (§6) is the surprise overpayment caused by an unreported change. A portal that makes reporting easy, complete, and predictable directly reduces that harm.</p>
+    </div>
+    <table class="needs">
+      <thead><tr><th>User need</th><th>Why it matters</th><th class="pri">Priority</th><th>Evidence</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>"Let me report a change in one place, in plain language — income, address, household, medical, employment."</td>
+          <td>Today fragmented across phone, mail, in-person. The portal adds a single digital channel alongside the existing ones — recipients use whichever works for them.</td>
+          <td class="pri pri-p0">P0</td>
+          <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td>"Let me submit my monthly income statement — including paystubs as photos."</td>
+          <td>Named service. Most relevant for recipients with employment income.</td>
+          <td class="pri pri-p0">P0</td>
+          <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span></td>
+        </tr>
+        <tr>
+          <td>"Show me my assigned reporting cadence and remind me when my next report is due."</td>
+          <td>Cadence is set at commencement and the recipient is told then, but persistent visibility plus reminders means they don't have to call to confirm. Quarterly cadence retires at ADAP launch.</td>
+          <td class="pri pri-p1">P1</td>
+          <td><span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span> + program knowledge</td>
+        </tr>
+        <tr>
+          <td>"Confirm my report was received, and show me what changed on my next payment after it's processed."</td>
+          <td>"Show your work" reduces shock when a deposit is smaller than expected. <em>Program-integrity note: framed as post-submission explanation, not pre-submission preview, to avoid enabling gaming of what to report.</em></td>
+          <td class="pri pri-p1">P1</td>
+          <td><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span> + program-integrity caveat</td>
+        </tr>
+        <tr>
+          <td>"Let me upload supporting documents to a single, persistent record I can refer back to."</td>
+          <td>Recipients lose paper. A persistent document vault avoids re-submission.</td>
+          <td class="pri pri-p2">P2</td>
+          <td><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span></td>
+        </tr>
+        <tr>
+          <td>"Let me see what I've reported recently — when, what type — so I can confirm I told you about that change."</td>
+          <td>A reporting-history view as a recipient-side sanity check. <em>Program-integrity note: scope to dates and report types by default; dollar impact accessible on click but not headline; needs review of delegated-access exposure.</em></td>
+          <td class="pri pri-p2">P2</td>
+          <td>Inferred + program-integrity caveat</td>
+        </tr>
+        <tr>
+          <td>"Show me my file review schedule — financial (annual) and medical (varies per case) — with what I'll need for each and reminders before they're due."</td>
+          <td>Under ADAP the file review structure changes: financial reviews are annual for existing clients; medical reviews are on per-case schedules set at medical adjudication, and some clients don't require them at all. Today opaque to recipients; the portal could make the schedule visible and proactively remind. <em>P2 — needs deeper investigation of how much of a user need this actually is.</em></td>
+          <td class="pri pri-p2">P2</td>
+          <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span> + program knowledge</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- STAGE 7 -->
+<div class="stage" id="stage7">
+  <div class="stage-head">
+    <span class="stage-num">7</span>
+    <h3>Request additional supports</h3>
+  </div>
+  <p class="stage-blurb">Personal benefits — the long tail of supplements available beyond the monthly living allowance. Categories range from special diets and medical equipment to moving costs, funeral expenses, and emergency support. Each benefit has its own eligibility test, dollar cap, substantiation requirement, and (often) a rolling counter or non-appealable decision. Most recipients today don't know the full scope of what they might be entitled to.</p>
+  <div class="stage-body">
+    <div class="callout">
+      <h4>Entitlement uptake is the underlying problem</h4>
+      <p>The manual describes 20+ personal benefit types across multiple chapters. The most frequent reason a recipient doesn't get a benefit they qualify for is that they don't know it exists. The portal's job at this stage is to surface entitlement and to make the apply → status → history lifecycle straightforward.</p>
+    </div>
+    <table class="needs">
+      <thead><tr><th>User need</th><th>Why it matters</th><th class="pri">Priority</th><th>Evidence</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Apply.</strong> "Let me submit a benefit request through the portal — alongside the existing phone and in-person channels — including the substantiation I need (physician letters, vendor quotes, receipts)."</td>
+          <td>Today personal benefit requests route through phone or in-person. The portal adds a digital submission channel with structured upload of substantiation. Highest short-term utility.</td>
+          <td class="pri pri-p0">P0</td>
+          <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span></td>
+        </tr>
+        <tr>
+          <td><strong>Status.</strong> "Track the status of my personal benefit request the same way I track my main file."</td>
+          <td>A request is a request — the recipient shouldn't need a separate mental model per benefit type. Pairs with Apply.</td>
+          <td class="pri pri-p0">P0</td>
+          <td><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span></td>
+        </tr>
+        <tr>
+          <td><strong>History.</strong> "Show me my personal benefits history — what I've requested, what I've received, when."</td>
+          <td>Useful for budgeting, planning, dispute. Completes the obvious-utility set with Apply and Status.</td>
+          <td class="pri pri-p0">P0</td>
+          <td><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span></td>
+        </tr>
+        <tr>
+          <td><strong>Browse what's available.</strong> "Show me what personal benefits might apply to my situation — let me explore by life situation (need to move, special diet, medical equipment, escaping abuse, etc.) or by category."</td>
+          <td>Discovery surface for the 20+ benefit types in the manual. Most recipients don't know what they could request. The first job of this stage is making the breadth visible without overwhelming. Conceptually the highest citizen need; lower v1 priority because the surface is broad and harder to build well than a request form.</td>
+          <td class="pri pri-p1">P1</td>
+          <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td><strong>See details on a specific benefit.</strong> "For a specific benefit I'm considering, show me eligibility tests, dollar cap, rolling counter / cooldown status (where applicable), what substantiation I need, whether the decision is appealable, whether it's a grant or a loan, and how to apply."</td>
+          <td>Practical planning and informed consent before applying. Many personal-benefit decisions are explicitly <em>not appealable</em>; some carry repayment agreements; some have rolling counters (clothing $354/12mo, employment supports $590/12mo, damage deposit/arrears once/3yrs, etc.). Recipients should see all of this in one place for the benefit they're considering.</td>
+          <td class="pri pri-p1">P1</td>
+          <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- STAGE 8 -->
+<div class="stage" id="stage8">
+  <div class="stage-head">
+    <span class="stage-num">8</span>
+    <h3>Handle overpayments &amp; underpayments</h3>
+  </div>
+  <p class="stage-blurb">When something has gone wrong — an overpayment has been assessed against you, or you've been underpaid by the program. Distinct from routine holds and deductions tied to normal processes (those live with the monthly payment view in Stage 5).</p>
+  <div class="stage-body">
+    <table class="needs">
+      <thead><tr><th>User need</th><th>Why it matters</th><th class="pri">Priority</th><th>Evidence</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Overpayment notice.</strong> "Tell me clearly: how much I owe, why, how it was calculated, what my repayment options are, and the appeal deadline."</td>
+          <td>Manual mandates the overpayment notice contains all of this. Today it's a dense letter; the portal mirrors it as structured, navigable content. The accountability brief in microcosm.</td>
+          <td class="pri pri-p0">P0</td>
+          <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td><strong>Request exemption from repayment.</strong> "Let me request an exemption alongside the existing phone channel — capturing the factors the director uses (administrative error, my disclosure history, my capacity)."</td>
+          <td>Manual: the director may exempt repayment under specific criteria, with administrative error explicitly named. An online channel reduces the barrier for recipients already facing financial difficulty from a debt.</td>
+          <td class="pri pri-p1">P1</td>
+          <td><span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td><strong>Voluntary repayment warning.</strong> "Warn me strongly before I voluntarily repay — I'd be waiving my appeal rights."</td>
+          <td>Manual: voluntary repayment via EMP12208 waives notice, evidence submission, and appeal rights. A high-consequence non-obvious rule. The portal should never allow voluntary repayment without an unambiguous warning.</td>
+          <td class="pri pri-p1">P1</td>
+          <td><span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td><strong>Underpayment notice.</strong> "Tell me if I was underpaid by the program, why, when, how much, and whether it's coming to me or being applied to an existing debt."</td>
+          <td>Manual Chapter 8: underpayments may be applied to existing debt before being paid to the recipient; this decision is NOT appealable, but the calculation IS. Visibility lets recipients understand what's happening and challenge the calculation if needed.</td>
+          <td class="pri pri-p1">P1</td>
+          <td><span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td><strong>Repayment agreement self-service.</strong> "Let me set up or change a repayment agreement from the portal — alongside existing channels."</td>
+          <td>Self-service should match the policy options (deduction from benefit, scheduled repayment). Limited program-integrity risk — the agreement is just terms, not amount.</td>
+          <td class="pri pri-p2">P2</td>
+          <td><span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- STAGE 9 -->
+<div class="stage" id="stage9">
+  <div class="stage-head">
+    <span class="stage-num">9</span>
+    <h3>Re-apply during the AISH↔ADAP transition <span style="font-size:12px;font-weight:600;color:var(--warn);text-transform:uppercase;letter-spacing:0.06em;margin-left:8px">Ephemeral</span></h3>
+  </div>
+  <p class="stage-blurb">The transition window between AISH and ADAP runs through December 31, 2027. During this window, a recipient who was moved from AISH to ADAP can re-apply for the new AISH. This stage exists for that purpose — it's bounded to a specific cohort and a specific window, not a permanent feature of the recipient journey. The portal surfaces the option and tracks the re-application; the application itself lives in Intake Management.</p>
+  <div class="stage-body">
+    <table class="needs">
+      <thead><tr><th>User need</th><th>Why it matters</th><th class="pri">Priority</th><th>Evidence</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>"Show me my re-application options and what re-applying would mean for me."</td>
+          <td>Recipients moved from AISH to ADAP can re-apply for the new AISH during the window. The portal explains what re-applying would mean — medical assessment, payment expectations, employment rules — before the recipient commits.</td>
+          <td class="pri pri-p0">P0</td>
+          <td><span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span> + program knowledge</td>
+        </tr>
+        <tr>
+          <td>"Track my re-application status."</td>
+          <td>Same status surface as Stage 3 for the main file, applied to a re-application track.</td>
+          <td class="pri pri-p0">P0</td>
+          <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- STAGE 10 -->
+<div class="stage" id="stage10">
+  <div class="stage-head">
+    <span class="stage-num">10</span>
+    <h3>Appeal a decision</h3>
+  </div>
+  <p class="stage-blurb">When the applicant or recipient disagrees with an eligibility, benefit, or overpayment decision. Administrative review is done in-program; the formal appeal process is conducted by an external body and is a black box from the program's perspective by design — that's a consequence of the appeals body's impartiality, not a gap.</p>
+  <div class="stage-body">
+    <table class="needs">
+      <thead><tr><th>User need</th><th>Why it matters</th><th class="pri">Priority</th><th>Evidence</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>"Tell me how to challenge a decision."</td>
+          <td>Section 10 of the AISH Act establishes the appeal right. Pairs with cross-cutting decision explainability (§7), which renders the decision itself; this need surfaces the appeal pathway, the 30-day countdown, and what to do.</td>
+          <td class="pri pri-p0">P0</td>
+          <td><span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span> <span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span></td>
+        </tr>
+        <tr>
+          <td>"Let me file a Notice of Appeal online within the 30-day window, with deadline countdown."</td>
+          <td>Statutory deadline (30 days). A missed deadline ends the appeal. The portal should make missing it nearly impossible.</td>
+          <td class="pri pri-p0">P0</td>
+          <td><span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td>"During administrative review, show me what's on file and let me submit additional information."</td>
+          <td>Scoped to administrative review — that's the in-program piece. Once the case moves into the formal appeal, the program (and the portal) deliberately don't have visibility into what the appeals body is considering. That's by design, not something for the portal to fix.</td>
+          <td class="pri pri-p1">P1</td>
+          <td><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span> + program knowledge</td>
+        </tr>
+        <tr>
+          <td>"Tell me where my case is — granular through administrative review, then 'in formal appeal' and finally the outcome."</td>
+          <td>Reflects the actual visibility split: admin review is tracked in-program (received → under review → decision); after the case is validated and moves to formal appeal, the program only sees "in appeal" and the final outcome.</td>
+          <td class="pri pri-p1">P1</td>
+          <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> + program knowledge</td>
+        </tr>
+        <tr>
+          <td>"Connect me to the Office of the Disability Advocate and the Alberta Ombudsman from inside the portal."</td>
+          <td>The service map already names independent advocacy as a service.</td>
+          <td class="pri pri-p2">P2</td>
+          <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- STAGE 11 -->
+<div class="stage" id="stage11">
+  <div class="stage-head">
+    <span class="stage-num">11</span>
+    <h3>Transition off the program</h3>
+  </div>
+  <p class="stage-blurb">The exits — voluntary departure, loss of eligibility, moving out of province, or death. Each has different mechanics, different stakeholders, and different downstream supports. The portal's role is to make the exit comprehensible (what's happening, what's owed or owing, what coverage continues, what comes next) and — at end of life — to give the family or estate representative a dignified path through funeral benefits and file closure.</p>
+  <div class="stage-body">
+
+    <h4 style="margin-top:8px;color:var(--ink);text-transform:none;letter-spacing:0;font-size:15px">Living-recipient exits</h4>
+    <table class="needs">
+      <thead><tr><th>User need</th><th>Why it matters</th><th class="pri">Priority</th><th>Evidence</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>"Tell me what happens when I leave: last payment, what's owed or refunded, when my health coverage ends, and how to come back if my situation changes."</td>
+          <td>Multiple voluntary exit paths exist. Rapid reinstatement within 24 months is available unless the original departure was due to a medical change. Today recipients learn this from caseworkers or letters; visible reference helps them plan.</td>
+          <td class="pri pri-p1">P1</td>
+          <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td>"Show me what changes if I move out of Alberta."</td>
+          <td>Manual has specific residency rules and outside-Alberta absence allowances. Move out is a defined exit with its own mechanics.</td>
+          <td class="pri pri-p2">P2</td>
+          <td><span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td>"Point me to the next support I might qualify for."</td>
+          <td>Many exits are transitions — aging into OAS, leaving for employment, moving to PDD-only support. The portal names the obvious next step and links out; the supporting program owns the actual transition.</td>
+          <td class="pri pri-p2">P2</td>
+          <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4 style="margin-top:24px;color:var(--ink);text-transform:none;letter-spacing:0;font-size:15px">End of life</h4>
+    <table class="needs">
+      <thead><tr><th>User need</th><th>Why it matters</th><th class="pri">Priority</th><th>Evidence</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>"Give the family or estate representative authorized access and a clear, dignified path through funeral benefits and file closure."</td>
+          <td>Two things in one: (1) end-of-life authorization — connects to the delegated-authority shared-service concept (Stage 4 architectural note); without it, the family can't act on the file. (2) Funeral benefits — the manual stacks multiple caps (burial $4,601, ceremony $1,041, embalming $781, transport $1.13/km beyond 20km, sheltering $37/day from day 11 by exception, alternate resting place $3,122, cemetery plots at 50%) with a 6-month reimbursement window from expense date. A guided applicator surfaces who's eligible, what's claimable, what evidence is needed, and the deadline. A bereaved family should not navigate a phone tree.</td>
+          <td class="pri pri-p1">P1</td>
+          <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span> + tech architecture</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+
+<h2 id="manual">5. What the AISH Policy Manual adds</h2>
+
+<p>v0.1 of this doc inferred policy needs from the service map and the public alberta.ca pages. v0.2 reads the Policy Manual itself. Several new portal needs surface — and several existing figures need correcting.</p>
+
+<div class="callout critical">
+  <h4>Corrections to v0.1 figures</h4>
+  <ul style="margin-bottom:0">
+    <li><strong>AISH employment exemption was incomplete.</strong> v0.1 cited "$1,072/mo" — the manual is more nuanced. Single recipients: first $1,072 fully exempt, then $1,072–$2,009 is 50% exempt (max exemption $1,541). Family: first $2,612 fully exempt, then up to $3,349 50% exempt (max exemption $2,981). The portal must show the full curve, not just the threshold.</li>
+    <li><strong>ADAP employment exemption was incomplete.</strong> v0.1 cited "$700/mo" — alberta.ca says earnings above $700 trigger gradual reduction of benefits, and recipients can earn up to roughly $45,000/year before fully losing financial benefits. Single-figure framing is misleading.</li>
+    <li><strong>The $200/month transition benefit is confirmed</strong> as a fixed $200 (not a calculated top-up, as v0.2 mistakenly flagged). Paid to AISH recipients who transition to ADAP on July 1, 2026, running through the December 31, 2027 transition window. <em>Note the coincidence: the federal Canada Disability Benefit is also $200/month, and Alberta is clawing that back from recipients — see §6 for the resulting compound confusion.</em></li>
+    <li><strong>Funeral benefits stack across 5+ caps</strong>, not just burial ($4,601) and ceremony ($1,041). Manual also names embalming ($781), additional transportation ($1.13/km beyond 20 km), safe sheltering ($37/day from day 11 by exception), alternate resting place ($3,122), and cemetery plots at 50% of normal charge. A funeral applicator needs all of these visible.</li>
+    <li><strong>Adjudication "5.3 weeks median, 9-week target"</strong> is a service-delivery metric from the ALSS business plan, not a policy rule. The manual does not commit to a timeline. Be careful about how this is shown to citizens.</li>
+  </ul>
+</div>
+
+<h3>New manual-derived needs by chapter</h3>
+
+<h4>Chapter 2 — Eligibility</h4>
+<ul>
+  <li><strong>"Tell me whether I'm in the 12-month window before my incomplete application is closed."</strong> Manual: incomplete applications with no required info for 12+ months are closed; client must restart. A visible countdown prevents this silent failure.</li>
+  <li><strong>"Recognize my situation (turning 18, leaving an institution, palliative) and tell me which sections I can skip."</strong> Manual allows parts of the application to be waived for these cases.</li>
+  <li><strong>"If I was approved for PDD after August 2009, skip the Part B medical form."</strong> Manual policy. Today this is silent — applicants don't know they qualify for the bypass.</li>
+  <li><strong>"Show me the date AISH considers my application 'complete' — that's my backdate."</strong> Benefits backdate to the month all required info was received. This date is invisible to applicants today.</li>
+  <li><strong>"Tell me which assessment stage I failed (general / medical / financial) and what would change the outcome — with a 12-month reassessment window."</strong> Manual mandates sequenced assessment and a 12-month window to submit new info before requiring full reapplication.</li>
+  <li><strong>"Let me log a trip outside Alberta with the right reason code, and show me how much of my 6-month allowance I've used."</strong> Out-of-province absences are limited (medical / training / other) with prior-approval requirements.</li>
+  <li><strong>"Show me my next periodic eligibility review date."</strong> Manual: at least every 3 years.</li>
+</ul>
+
+<h4>Chapter 3 — Income</h4>
+<ul>
+  <li><strong>"Tell me my reporting cadence (annual / quarterly / monthly), my next due date, and a fast way to file an interim change."</strong> Cadence is assigned per case based on stability. Recipients today rarely know their own cadence.</li>
+  <li><strong>"Give me a 'is this income reportable?' lookup."</strong> The manual's list of fully-exempt sources is long (RRSP/RDSP, scholarships, RESPs, education grants, rent supplements, gifts, tax refunds). Recipients over-report defensively.</li>
+  <li><strong>"Show me an exemption calculator — paycheque in, AISH cheque out, family vs single."</strong> The 50%-exempt band is invisible without one.</li>
+  <li><strong>"Tell me what happens to my health coverage if my job ends my AISH eligibility."</strong> AAHB transition rules (benefit year July 1–June 30, late-joiner rules) are obscure but high-stakes.</li>
+</ul>
+
+<h4>Chapter 4 — Assets</h4>
+<ul>
+  <li><strong>"Show me my live total against the $100K program limit and the $5K personal-benefits limit, with what counts in each."</strong> Two separate thresholds today managed by guesswork.</li>
+  <li><strong>"Start a 12-month timer on each lump sum I receive (inheritance, gift, home sale), showing the deadline to invest in an exempt asset."</strong> Manual: non-income money received is exempt for 12 months. Missing this deadline turns it into a non-exempt asset overnight.</li>
+</ul>
+
+<h4>Chapter 5 — Benefits &amp; Personal Benefits</h4>
+<ul>
+  <li><strong>"Show me each benefit line item I qualify for this month."</strong> Living allowance, modified living allowance variants ($373 personal + $2,482 private / $2,148 shared), child benefit ($232 first + $117 each additional), personal benefits — itemized.</li>
+  <li><strong>"For each personal benefit, tell me whether it's a grant or a loan and whether the decision is appealable."</strong> Manual: many personal benefit rates are explicitly not appealable, and some carry repayment agreements.</li>
+  <li><strong>"Guide me through a diet picker that respects the incompatibility table."</strong> Manual has 11 special-diet rates and an explicit incompatibility matrix (e.g., Renal Failure excludes Heart Healthy, Diabetic, etc.).</li>
+  <li><strong>"Maintain a rolling 12-month counter for capped benefits."</strong> Clothing $354/12mo, employment supports $590/12mo, damage deposit/arrears once per 3 years — these counters today live in caseworker spreadsheets, not in the recipient's view.</li>
+  <li><strong>"Track monthly medical supply spending against the $473/month cap."</strong></li>
+  <li><strong>"For equipment requests, let me upload prescription + two vendor quotes, and tell me up front whether my item exceeds the $2,351 cap."</strong> CPAP carve-outs (Auto-Pressure to $2,351 / Fixed Pressure $1,999, once per 3 years) deserve their own flow.</li>
+  <li><strong>"Tell me when the January indexation rate change publishes, and what my new amount will be."</strong> Manual: Jan 1 each year, lesser of 2% or Alberta CPI.</li>
+</ul>
+
+<h4>Chapter 6 — Overpayments</h4>
+<ul>
+  <li><strong>"Structure my overpayment notice as: period, reason, calculation, repayment options, appeal countdown — not a dense letter."</strong> Manual mandates these elements; today they arrive as prose.</li>
+  <li><strong>"Let me request exemption from repayment, capturing the factors the director uses (administrative error, my disclosure history, capacity)."</strong> Manual explicitly names administrative error as an exemption ground.</li>
+  <li><strong>"Warn me strongly before voluntary repayment — I'm waiving my appeal rights."</strong> Manual: the EMP12208 voluntary repayment agreement waives notice, evidence submission, and appeal rights. This should never be a silent click.</li>
+  <li><strong>"Tell me whether my underpayment is being paid to me or absorbed into an existing debt — and whether I can dispute it."</strong> Manual: calculation can be appealed; the decision to apply it to debt cannot.</li>
+</ul>
+
+<h4>Chapter 9 — Personal Representatives</h4>
+<ul>
+  <li><strong>"Distinguish between the kinds of helpers I might have."</strong> Manual recognizes personal representatives, financial administrators (appointed by AISH with or without client consent), attorneys under POA, trustees, ISC-appointed administrators. Each has different rights and reporting duties. The portal's permission model must mirror this.</li>
+  <li><strong>"Tell my financial administrator that they have the same reporting duties I do."</strong> Manual: identical obligations. The portal should make these duties visible at the moment of authorization.</li>
+</ul>
+
+<h4>Chapter 10 — Appeals</h4>
+<ul>
+  <li><strong>"Warn me strongly when I file an appeal: this locks the evidence."</strong> Manual: once a Notice of Appeal is filed, AISH cannot consider new information. To add evidence, the client must withdraw and resubmit. This is the highest-consequence non-obvious rule in the entire system.</li>
+  <li><strong>"Tag every recent decision about me as appealable / not appealable."</strong> Manual lists multiple decision types not subject to appeal panel review — personal benefit rates, hardship determinations, extension-of-time decisions, application of underpayments to debt, denial for not applying for CPP-D/OAS. Citizens cannot rationally challenge what they cannot identify.</li>
+  <li><strong>"Show me the 6-month judicial review window after a panel decision."</strong> Manual: this is the final route, easily missed.</li>
+  <li><strong>"Track my appeal status: admin review (14–21 days, up to +7) → hearing scheduled → decision issued."</strong> The administrative review timeline is concrete and surfaceable.</li>
+</ul>
+
+<h3>What the manual does not yet contain</h3>
+
+<div class="callout warn">
+  <p>As of the most recent retrieval, the AISH Policy Manual contains <strong>no ADAP-specific provisions</strong>. ADAP regulations are expected Spring 2026; the manual will evolve. The portal will need to incorporate ADAP policy as it lands — and may, for a meaningful window, be the most up-to-date source citizens can access if the manual lags. That's an opportunity and a responsibility.</p>
+</div>
+
+<h2 id="discourse">6. Public discourse review — visible pain points</h2>
+
+<p>What surfaces in news, advocacy, op-eds, and government-adjacent channels about how AISH is experienced. Distinct from "representative sentiment" — the people who post publicly skew toward those in crisis, denied, or organized through advocacy. <strong>Read this as a map of pain, not a map of experience.</strong></p>
+
+<div class="callout warn">
+  <h4>Caveats up front</h4>
+  <ul style="margin-bottom:0">
+    <li><strong>Selection bias is severe.</strong> Long-tenured recipients with stable caseworker relationships and predictable monthly deposits are essentially invisible here.</li>
+    <li><strong>The ADAP transition is currently dominating discourse</strong> (six weeks from launch). Persistent issues are real but visually drowned out.</li>
+    <li><strong>Reddit threads were a gap.</strong> Google's index of Reddit content since the 2023 API changes is sparse, so direct recipient voice from r/alberta / r/Edmonton / r/Calgary is under-represented. The "lived recipient voice" here leans on CBC interviews, advocacy testimonials, and Ombudsman case summaries.</li>
+    <li><strong>Recipients connected to advocacy networks are over-represented.</strong> Recipients without those connections are underrepresented.</li>
+  </ul>
+</div>
+
+<h3>Themes by signal strength</h3>
+
+<table class="needs">
+  <thead>
+    <tr><th>Theme</th><th>What people are saying</th><th>Type</th><th>Signal</th><th>Portal implication</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>ADAP transition fear</strong></td>
+      <td>Fear of forced reassessment (with self-paid medical form, year-long clinic wait); fear of income drop after transition window; fear of being pushed into work they can't sustain. "Like a burden on this government."</td>
+      <td>ADAP-spike (acute, last ~12 mo)</td>
+      <td><strong>STRONG</strong></td>
+      <td>Make recipient's current track (AISH vs ADAP) and personal implications crystal clear; clean reassessment-request path.</td>
+    </tr>
+    <tr>
+      <td><strong>CDB / DTC clawback &amp; the dual-$200 confusion</strong></td>
+      <td>Three compounding sources of confusion: (a) Alberta is the only province clawing back the federal Canada Disability Benefit from disability income recipients; (b) the federal CDB and the AISH→ADAP transition benefit are <em>both</em> $200/month — recipients routinely conflate them; (c) CDB application is becoming a prerequisite for AISH application. The September 2025 deadline letter caused documented system-wide panic — recipients didn't know whether they needed the federal application completed or merely started, the minister had to publicly clarify, and health providers were "deluged" with calls. This is not a closed chapter — it is the current operating reality.</td>
+      <td>Persistent + active</td>
+      <td><strong>STRONG</strong></td>
+      <td>Surface the recipient's federal-benefit status (CDB, DTC, CPP-D) alongside their AISH/ADAP file. Make the dual-$200 distinction explicit and visible. Treat CDB as a prerequisite gate in the application flow. A confirmation loop ("I have updated AISH on my CDB/DTC status") would have prevented the Sept 2025 panic outright and would prevent its repeats.</td>
+    </tr>
+    <tr>
+      <td><strong>Surprise overpayments</strong></td>
+      <td>Life events (marriage, retroactive CPP-D approval, unreported employment) create debts recipients didn't know they were incurring. 10% benefit clawback is destabilizing. Ombudsman case: system failed to consider "totality of circumstances" in waiver decisions.</td>
+      <td>Persistent</td>
+      <td><strong>STRONG</strong></td>
+      <td>Proactive prompts at life-event moments ("Did you get married? Did your CPP-D approval get backdated?"). Transparent debt ledger and repayment schedule. A "what counts as reportable" checklist.</td>
+    </tr>
+    <tr>
+      <td><strong>Medical-assessment bottleneck</strong></td>
+      <td>AISH approval routinely 3–6+ months. One reported NP clinic in Calgary with a one-year waitlist for AISH medical forms; patients pay $65+/form out of pocket. ADAP demand spike is overwhelming providers.</td>
+      <td>Persistent + ADAP-amplified</td>
+      <td><strong>STRONG</strong></td>
+      <td>Live "where is my file" status — but also: surface to the recipient what's waiting on whom (their doctor vs. the ministry), so they can chase the right party.</td>
+    </tr>
+    <tr>
+      <td><strong>Loss of dignity / treated as a suspect</strong></td>
+      <td>"Having to keep justifying my existence to the government." Recipients describe being made to feel like burdens or "lazy bums." The reassessment requirement under ADAP is read as a dignity insult, not just paperwork.</td>
+      <td>Persistent, decade+</td>
+      <td><strong>STRONG</strong></td>
+      <td>Tone is a feature. Language, defaults, and the way denials are explained will be judged. Avoid the suspect-verification framing the current paper system telegraphs.</td>
+    </tr>
+    <tr>
+      <td><strong>Helper-dependent navigation</strong></td>
+      <td>Multiple organizations (VAD, Inclusion Alberta, Workers' Resource Centre, Easter Seals, ARISE) exist substantially to help recipients fill in forms, decode letters, and follow up. Application widely described as overwhelming.</td>
+      <td>Persistent</td>
+      <td><strong>STRONG</strong></td>
+      <td>"Helper mode" is not optional. Plain-language defaults; a way to invite an advocate; structured third-party access with audit trail.</td>
+    </tr>
+    <tr>
+      <td><strong>Affordability crunch — rent, utilities, food</strong></td>
+      <td>2025 community-housing rent rise (rent ~$349 → $570 for a $1,901 recipient — 63% hike on rent). Edson recipient reported rent taking 70% of income. "Difference between almost living and barely existing."</td>
+      <td>Persistent, intensifying</td>
+      <td><strong>STRONG</strong></td>
+      <td>Even small portal failures have stakes. A delayed banking-change notification is a missed rent payment. Design for high-cost-of-error users.</td>
+    </tr>
+    <tr>
+      <td><strong>Appeal process is opaque and slow</strong></td>
+      <td>Alberta Ombudsman has formally called the AISH appeal process unfair (2022). 30-day window described as too short to gather medical re-documentation. Appeal panels found to issue insufficiently reasoned decisions.</td>
+      <td>Persistent</td>
+      <td>MODERATE–STRONG</td>
+      <td>Make appeal status visible and trackable. Show what evidence is missing and what would change a decision, instead of opaque outcome letters.</td>
+    </tr>
+    <tr>
+      <td><strong>Trustee / FA access friction</strong></td>
+      <td>Parents of intellectually-disabled adults need to act as financial administrators; getting the right people authorized takes paperwork and time. Historic asset/trust rules (the $100K trust trap, fixed 2018) shaped family fear that lingers.</td>
+      <td>Persistent</td>
+      <td>MODERATE</td>
+      <td>First-class third-party access — invite-a-trustee, role-scoped permissions, view-only vs act-on-behalf — needs to be v1, not bolted on.</td>
+    </tr>
+    <tr>
+      <td><strong>Rural disadvantage layered on top</strong></td>
+      <td>Central- and rural-Alberta coverage stresses harder employment access, thinner medical-assessment availability, and travel to AISH offices. "Will deepen poverty."</td>
+      <td>Persistent + ADAP-amplified</td>
+      <td>MODERATE</td>
+      <td>Don't assume in-person follow-up is feasible. Asynchronous self-serve and remote-friendly verification matter more for rural recipients.</td>
+    </tr>
+    <tr>
+      <td><strong>Status opacity — "where is my file?"</strong></td>
+      <td>Applicants and recipients describe not knowing where their file sits. Even basic changes (address, banking) generate uncertainty about whether they were received. No status surface today.</td>
+      <td>Persistent</td>
+      <td>MODERATE (under-articulated publicly but logically pervasive)</td>
+      <td>The single highest-value feature may be a visible file-status timeline with timestamped events.</td>
+    </tr>
+    <tr>
+      <td><strong>"We weren't asked"</strong></td>
+      <td>Recurring critique from both 2019 de-indexing and 2025 ADAP design: decisions made about recipients without them. ADAP consultations described as "lectures, not listening." Disability Action Hall closed February 2026 partly because funding was withdrawn.</td>
+      <td>Persistent</td>
+      <td>MODERATE</td>
+      <td>Posture, not feature: in-product feedback channels, transparent changelogs, no silent policy changes mid-flow.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>What this evidence shifts in the design</h3>
+
+<div class="callout">
+  <h4>Persistent operational pain &gt; one-time policy moment</h4>
+  <p>The temptation in v0.2 was to make the portal's value proposition the July 2026 ADAP launch. That framing has a problem: by the time any v1 ships, the launch will be in the rear-view. ADAP-related needs absolutely persist beyond July (the transition window runs until December 31, 2027, reassessment is an ongoing service, and most recipients will be making decisions about their track for years), but the design center of gravity should be the <em>persistent</em> pain points the discourse review surfaces — opacity, helper-dependent navigation, surprise overpayments, federal-benefit confusion, dignity. Those problems will be there in July 2026, July 2027, and July 2030. ADAP-related functionality is a stage in the journey (Stage 8), not the headline.</p>
+</div>
+
+<h3>Things that surprised me in the discourse</h3>
+
+<ul>
+  <li><strong>The September 2025 CDB/DTC deadline panic is a perfect case study</strong> of what bad status communication looks like — an ambiguous letter caused a documented system-wide panic, required a ministerial walkback, and could have been prevented entirely by a portal-level confirmation loop. Worth citing as a "the portal would have stopped this" example to stakeholders.</li>
+  <li><strong>Persistent rent/utility precarity is mentioned more than caseworker phone-tree pain</strong> in public discourse. Either phone-tree pain is so normalized people don't post about it, or financial precarity is so overwhelming it eats the oxygen. User research should probe this directly because the data is thinner than expected.</li>
+  <li><strong>Municipal governments piling on</strong> (Red Deer, Edmonton, Calgary, Lethbridge, Camrose, Claresholm, Rocky Mountain House, St. Albert) is unusual — cities don't normally weigh in on provincial benefit programs. Signal of how unusual the ADAP moment is.</li>
+  <li><strong>Disability Action Hall closure in February 2026</strong> removes a key advocacy voice exactly as ADAP launches. Shifts who speaks for recipients.</li>
+  <li><strong>The ARISE collective</strong> (AISH Recipients In Search of Equity) — recipients self-organized to "dispel myths." A natural stakeholder for portal user research.</li>
+</ul>
+
+<h2 id="crosscut">7. Cross-cutting needs (apply to every stage)</h2>
+
+<p>These are not stage-specific — they shape the portal's overall design and any one of them, done badly, can sink the rest. Grouped here into three categories so it's clear what's a buildable feature, what's foundation, and what's a design constraint that applies to everything.</p>
+
+<h3 style="margin-top:32px">Design qualities — constraints, not features</h3>
+<p style="color:var(--muted);font-size:14px">How everything is built, not work items to schedule. These apply to every feature and every screen.</p>
+
+<table class="needs">
+  <thead><tr><th>User need</th><th>Why it matters</th><th class="pri">Priority</th><th>Evidence</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Accessibility.</strong> WCAG 2.2 AA minimum, screen reader compatibility, plain language (~grade 6), keyboard navigation, generous touch targets, predictable behaviour.</td>
+      <td>The recipient population is, by definition, disabled. Portal accessibility is the program.</td>
+      <td class="pri pri-p0">P0</td>
+      <td><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span> + program reality</td>
+    </tr>
+    <tr>
+      <td><strong>Mobile-first.</strong> Every flow works on a phone over slow data.</td>
+      <td>Many recipients have only a phone. Code for America: 69%+ of safety net apps are mobile-responsive — but the bar is "usable on a phone," not just "loads on a phone."</td>
+      <td class="pri pri-p0">P0</td>
+      <td><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span></td>
+    </tr>
+    <tr>
+      <td><strong>Tone &amp; dignity.</strong> Language that treats the recipient as the principal, not a suspect to be verified. Denials and amounts explained in human language. Default to "we believe you; here's what we need to confirm."</td>
+      <td>"Loss of dignity" is a STRONG public-discourse theme. Tone is a feature in this product, not decoration.</td>
+      <td class="pri pri-p0">P0</td>
+      <td><span class="pill" style="background:#fde2e2;color:#7a0d0d" title="Discourse — public discourse review (§6): news, advocacy organisations, Alberta Ombudsman case summaries, op-eds">D</span></td>
+    </tr>
+    <tr>
+      <td><strong>Offline / assisted parity.</strong> Anything possible in the portal must be possible by phone or in-person with the same quality of explanation and the same status visibility.</td>
+      <td>A portal that creates two classes of recipients is worse than no portal. Really a service-design principle for the whole program; surfaced here because it constrains every portal flow.</td>
+      <td class="pri pri-p0">P0</td>
+      <td>Program knowledge + equity principle</td>
+    </tr>
+    <tr>
+      <td><strong>Trust signals.</strong> Plain language, no surprise re-asking, explicit consent, predictable navigation, no dark patterns, clear pathway out (cancel, withdraw, opt out).</td>
+      <td>This population has, on the whole, been failed before by digital and bureaucratic systems. The portal earns trust by being plain.</td>
+      <td class="pri pri-p1">P1</td>
+      <td><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span> <span class="pill" style="background:#fde2e2;color:#7a0d0d" title="Discourse — public discourse review (§6): news, advocacy organisations, Alberta Ombudsman case summaries, op-eds">D</span></td>
+    </tr>
+    <tr>
+      <td><strong>Error tolerance for high-cost-of-error users.</strong> A delayed banking-change confirmation, a misrouted document, or a silent hold can mean missed rent. Confirmations are reliable. Reversible actions are reversible. Critical actions are confirmed by a second channel.</td>
+      <td>Affordability precarity is the dominant lived reality for recipients. Portal failure modes that would be inconveniences elsewhere are crises here.</td>
+      <td class="pri pri-p1">P1</td>
+      <td><span class="pill" style="background:#fde2e2;color:#7a0d0d" title="Discourse — public discourse review (§6): news, advocacy organisations, Alberta Ombudsman case summaries, op-eds">D</span></td>
+    </tr>
+    <tr>
+      <td><strong>Multilingual support.</strong> Beyond English — at minimum, machine translation that doesn't strip meaning; ideally professionally translated for the most-used languages in the AISH population.</td>
+      <td>Newcomer Albertans with disabilities are particularly poorly served by English-only flows.</td>
+      <td class="pri pri-p2">P2</td>
+      <td><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span> <span class="pill" style="background:#fde2e2;color:#7a0d0d" title="Discourse — public discourse review (§6): news, advocacy organisations, Alberta Ombudsman case summaries, op-eds">D</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 style="margin-top:40px">Infrastructure — foundation, built once, consumed by features</h3>
+<p style="color:var(--muted);font-size:14px">Substantial deliverables in their own right. Most are precondition for multiple feature rows below.</p>
+
+<table class="needs">
+  <thead><tr><th>User need</th><th>Why it matters</th><th class="pri">Priority</th><th>Evidence</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Delegated authority as a shared service.</strong> A delegated-authority capability built once as a shared service consumed by Intake Management, Case Management, and this portal — not baked separately into each.</td>
+      <td>The Alberta.ca account (gov-wide auth) has no native "on behalf of" concept. Without a shared service, each consuming system would build its own delegation model, guaranteeing divergence over time and exposing recipients to inconsistent treatment across systems. A shared service is the precondition that makes the third-party access feature below coherent. Architectural commitment as well as a portal need.</td>
+      <td class="pri pri-p0">P0</td>
+      <td>Tech architecture + <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+    </tr>
+    <tr>
+      <td><strong>Notifications infrastructure.</strong> SMS and email delivery plumbing — never asking the user to log in just to find out what happened. Plain language, opt-in/opt-out per channel.</td>
+      <td>Status without notification is just a dashboard nobody visits. In the top-10. Builds on top of CMS event hooks; the actual notification UX (preferences, content) is the feature row below.</td>
+      <td class="pri pri-p0">P0</td>
+      <td><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span> + program knowledge</td>
+    </tr>
+    <tr>
+      <td><strong>A persistent record.</strong> Everything submitted, every decision, every payment is visible to the recipient (and authorized third parties) for the life of the file.</td>
+      <td>Accountability requires history. Today recipients keep paper because the system won't tell them what it knows. Depends entirely on what Case Management exposes — likely a significant integration effort.</td>
+      <td class="pri pri-p1">P1</td>
+      <td><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 style="margin-top:40px">Features — actual portal capabilities</h3>
+<p style="color:var(--muted);font-size:14px">Buildable items with their own UX, distinct from any single journey stage. Each is a coherent piece of work.</p>
+
+<table class="needs">
+  <thead><tr><th>User need</th><th>Why it matters</th><th class="pri">Priority</th><th>Evidence</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Third-party access with manual-grade role distinctions.</strong> Trustees, financial administrators (with or without my consent), attorneys under POA, ISC-appointed administrators, family, advocates — each acting with the right permissions and the right obligations on the file.</td>
+      <td>Service map names the service. Manual chapter 9 distinguishes the role types and their differing reporting duties. The portal must surface who is authorized, what they can do, and what their obligations are. Consumes the delegated-authority shared service above.</td>
+      <td class="pri pri-p0">P0</td>
+      <td><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+    </tr>
+    <tr>
+      <td><strong>Decision explainability.</strong> Every decision shown in the portal includes the rule applied and a link to the policy reference. Includes recurring payment-amount changes — annual indexing, exemption-band shifts, recovery deductions — which today silently shift recipients' monthly cheques. Also renders the AISH/ADAP eligibility decision itself; paired with Stage 10 for the appeal pathway.</td>
+      <td>Direct read on the brief's "transparency and accountability" goal.</td>
+      <td class="pri pri-p0">P0</td>
+      <td>Brief + <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+    </tr>
+    <tr>
+      <td><strong>Federal-benefit awareness.</strong> Surface what recipients need to know about CDB / DTC / CPP-D alongside the AISH/ADAP file — obligations, deadlines, the dual-$200 distinction (federal CDB vs provincial transition benefit), and a recipient-side confirmation loop ("I have updated AISH on my federal status").</td>
+      <td>The single most consistently confusing thing recipients face — and ongoing. Alberta is the only province clawing back federal CDB; the dual-$200 collision is a current source of error; the September 2025 deadline panic is a documented case the portal would have prevented outright. <em>Real integration with the federal government is not feasible — this is an information surface, not a data integration.</em></td>
+      <td class="pri pri-p0">P0</td>
+      <td><span class="pill" style="background:#fde2e2;color:#7a0d0d" title="Discourse — public discourse review (§6): news, advocacy organisations, Alberta Ombudsman case summaries, op-eds">D</span> + program knowledge</td>
+    </tr>
+    <tr>
+      <td><strong>Notification preferences.</strong> Let me add and verify an SMS number (since Alberta.ca account only gives email), choose which channels for which notification types, and opt out of non-essential notifications.</td>
+      <td>Email is "free" — every recipient has it because Alberta.ca account uses it. SMS is opt-in and requires verification. Without preferences the notification infrastructure either spams everyone equally or under-serves recipients who'd act on action-needed alerts if delivered via SMS.</td>
+      <td class="pri pri-p1">P1</td>
+      <td><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span> + program knowledge</td>
+    </tr>
+    <tr>
+      <td><strong>Secure messaging.</strong> Let me ask a question about my file without phoning. First surfaces in Stage 3 but applies across the post-decision journey. Alongside the existing phone channel, not a replacement.</td>
+      <td>The single feature that most reduces contact-centre load in peer portals; direct response to phone-tree friction noted in the discourse review.</td>
+      <td class="pri pri-p1">P1</td>
+      <td><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span> <span class="pill" style="background:#fde2e2;color:#7a0d0d" title="Discourse — public discourse review (§6): news, advocacy organisations, Alberta Ombudsman case summaries, op-eds">D</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="top10">8. Prioritized top-10 across the whole journey (v0.4)</h2>
+
+<p>If only ten things could be built, these are the ten — chosen for the largest combined impact on the three problems in the brief (status, providing information, transparency &amp; accountability), scoped to <strong>stages 3–11</strong> (post-application experience).</p>
+
+<ol>
+  <li><strong>A real status view of my file</strong> — where it is, what's next, what's blocking, when to expect movement. The single highest-value persistent feature, and the most direct read on the brief's "status" goal.</li>
+  <li><strong>"Action needed from you" surfacing</strong> — every blocker that requires applicant or recipient action shown clearly, in plain language, with what to do. Pairs with #1; together they replace the bulk of "where is my file?" phone calls.</li>
+  <li><strong>Federal-benefit awareness: CDB / DTC / CPP-D obligations &amp; confirmation loop</strong> — surface federal obligations and deadlines alongside the AISH/ADAP file, with an explicit federal-$200-CDB vs provincial-$200-transition-benefit distinction and a recipient-side confirmation loop. Would have prevented the documented Sept 2025 deadline panic; still relevant because the underlying dynamic is ongoing. <em>Information surface, not a data integration — real federal integration is not feasible.</em></li>
+  <li><strong>Plain-language decisions with the rule applied, tagged as appealable / not appealable</strong> — every approval, denial, payment change, hold, and overpayment shown with explanation, policy reference, and explicit appeal-rights label.</li>
+  <li><strong>Report a change in one place</strong>, structured around the manual's 12 reportable categories, with confirmation of receipt and impact preview before the next payment. Directly reduces the surprise-overpayment harm pattern.</li>
+  <li><strong>Online appeal filing within the 30-day window</strong>, with deadline countdown, evidence upload, <em>and a strong upfront warning that filing locks the evidence</em>. The "lock" rule is the highest-consequence non-obvious rule in the program.</li>
+  <li><strong>Document upload that works from a phone</strong> with a persistent shared record. Surface to the recipient who is holding what (their doctor vs the ministry) so they can chase the right party.</li>
+  <li><strong>Third-party access with manual-grade role distinctions</strong> — invite-a-trustee/FA/POA with the right permissions and the right disclosed obligations. Audit trail.</li>
+  <li><strong>Notifications that don't require login</strong> <em>(elevated in v0.4)</em> — SMS and email for status changes, action-needed alerts, reporting reminders, and deadline countdowns. Status without notification is just a dashboard nobody visits.</li>
+  <li><strong>Personal track view (AISH or ADAP) with reassessment path</strong> — every recipient sees their current track, their personal options, and a clean path to request reassessment between AISH and ADAP. The transition window runs through Dec 31, 2027 and reassessment is an ongoing service.</li>
+</ol>
+
+<p><em>Notes:</em> "Save &amp; resume the application" (v0.3 item 9) has been removed because it sits in stage 2 (out of scope). Other items not in the top-10 — self-service account housekeeping, full personal-benefit catalog with entitlement awareness — remain P1 in their stages. Push back on the order, particularly the ranking of #3 vs #2 and whether #9 (notifications) belongs higher.</p>
+
+<h2 id="oop">9. Out of scope &amp; open questions</h2>
+
+<div class="callout">
+  <h4>Scope framing — what the portal is and isn't</h4>
+  <p>The portal cannot fix policy. If adjudication takes 9 weeks because adjudication takes 9 weeks, no portal will hide that. If ADAP reduces earnings exemption thresholds, no portal will reverse that. <strong>What the portal can do is reduce avoidable operational harm</strong> — surprise overpayments caused by unreported changes the recipient didn't know counted, panic caused by ambiguous deadline letters, missed appeals caused by buried 30-day windows, missed rent caused by silent banking-change failures. The persistent operational pain surfaced in §6 is the durable problem space; the portal is a long-running answer to it, not a launch-window response to any single policy event.</p>
+</div>
+
+<h4>Deliberately not addressed in this pass</h4>
+<ul>
+  <li><strong>Caseworker-facing tools.</strong> A separate (related) problem. The portal can't be designed in isolation, but it isn't the same product.</li>
+  <li><strong>Internal adjudication workflow.</strong> If adjudication itself is slow, no portal will hide that — but it can make the wait less harmful.</li>
+  <li><strong>Direct federal-government integration.</strong> v0.2 elevates surfacing CDB/DTC/CPP-D status, but actual ESDC/CRA system integration is bigger than v1.</li>
+  <li><strong>Detailed feature design.</strong> These are needs. The next pass converts them to flows, wireframes, and acceptance criteria.</li>
+  <li><strong>Policy advocacy.</strong> The portal is not the place to argue with ADAP policy. It is the place to make the policy survivable for the people it lands on.</li>
+</ul>
+
+<h4>Open questions to resolve before building</h4>
+<ul>
+  <li>What identity layer? MyAlbertaSupports / Alberta.ca Account is the obvious answer — but its current accessibility and third-party-access model needs to be assessed before assuming it's adequate.</li>
+  <li>How does this relate to <em>MyAlbertaSupports</em> today? Replace, wrap, or coexist?</li>
+  <li>What's the actual contact-centre call-reason data? It would sharpen prioritization considerably — public discourse suggests phone-tree pain is real but underreported.</li>
+  <li>Are there existing user research insights (Alberta Supports, ALSS UX, the Office of the Advocate for Persons with Disabilities annual reports) we should ingest before doing fresh discovery?</li>
+  <li>How should the portal integrate with Alberta Supports Centres (the in-person channel)? Front-desk staff should ideally see the same view the citizen sees.</li>
+  <li>Who is the recipient stakeholder voice for design? With Disability Action Hall closed (Feb 2026), ARISE, VAD, and Inclusion Alberta are the natural channels — but the recipients who are not connected to any of those need a path in too.</li>
+  <li>What's the relationship to the AISH Policy Manual itself? The manual will lag ADAP policy. Will the portal be the canonical reference for ADAP rules during the gap?</li>
+</ul>
+
+<h2 id="hallu">10. Assumptions, uncertainties &amp; what I couldn't verify</h2>
+
+<div class="callout warn">
+  <h4>What v0.3 got wrong and corrected</h4>
+  <ul style="margin-bottom:0">
+    <li><strong>v0.2 mis-flagged the $200 transition benefit as unverified.</strong> It is a fixed $200, paid to AISH recipients who transition to ADAP on July 1, 2026, through Dec 31, 2027. Confirmed by the project owner. v0.3 restores the figure throughout.</li>
+    <li><strong>v0.2 framed scope around "absorbing the operational chaos of the July 2026 ADAP launch."</strong> That framing has two problems: (1) it assumed the portal needed to justify itself, which it doesn't; (2) it assumed v1 would ship in time to matter for the launch, which it won't. v0.3 reframes scope around persistent operational harms, with ADAP-related needs sitting in their natural place in the journey rather than at the headline.</li>
+  </ul>
+</div>
+
+<div class="callout warn">
+  <h4>Per your preference — remaining assumptions and possible hallucinations, flagged</h4>
+  <ul>
+    <li><strong>Income exemption ranges in v0.1 were incomplete.</strong> The manual is more nuanced (50%-exempt band on AISH; gradual reduction up to ~$45K on ADAP). v0.2 incorporates this in §5 — anywhere v0.1 used a single threshold figure, v0.2 either uses the curve or notes the curve exists.</li>
+    <li><strong>Funeral and several personal-benefit figures in v0.1 were partial.</strong> The manual has stacking caps that v0.1 missed. Corrected in §5; if you reuse v0.1 figures elsewhere, they are likely underreporting maximums.</li>
+    <li><strong>"AISH adjudication median 5.3 weeks (target 9.0)"</strong> is from <span class="src">alss.json</span> metrics and reflects the ALSS business plan, not the Policy Manual. The manual makes no SLA commitment. Recent enough to cite, but verify against current quarterly reporting before showing it to citizens.</li>
+    <li><strong>"Today's experience" claims</strong> (e.g. direct deposit changes require phone today, personal benefit requests are phone-driven, document submission has gaps) are inferred from service map channels plus general knowledge of the Alberta Supports stack. Worth validating with a journey audit before locking the plan.</li>
+    <li><strong>"Office of the Disability Advocate" naming.</strong> The formal title is "Alberta Advocate for Persons with Disabilities" — minor terminology variance kept consistent with the service map.</li>
+    <li><strong>Code for America "69%" mobile-responsive figure</strong> is from their Benefits Enrollment Field Guide — general to U.S. safety-net programs, not Alberta-specific. Used as directional benchmark only.</li>
+    <li><strong>SSA and UK PIP comparisons</strong> are used for design lessons, not as templates. Different populations, regimes, politics.</li>
+    <li><strong>Public-discourse review (§7) is heavily selection-biased.</strong> People who post are disproportionately in crisis, denied, or organized through advocacy. The 30,000+ recipients with stable arrangements and predictable deposits are essentially invisible. Read §7 as a map of pain, not a map of experience.</li>
+    <li><strong>Direct Reddit recipient threads were a gap.</strong> Google's indexing of Reddit post-2023 API changes is sparse. The discourse review compensated with CBC interviews, advocacy testimonials, and Ombudsman case summaries, but the "operational pain in the recipient's own voice" is under-sampled. A direct on-platform read of r/alberta and r/Edmonton AISH threads would strengthen §7 themes 4, 6, 9, 11 (status opacity, helper dependence, trustee access, caseworker contact friction).</li>
+    <li><strong>ADAP policy provisions are not in the Policy Manual yet</strong> as of the most recent retrieval. ADAP regulations are expected Spring 2026. Anywhere v0.2 cites ADAP rules, the citation is to the alberta.ca consumer-facing ADAP fact sheet, not the manual. The portal will need to track manual updates as they land.</li>
+    <li><strong>Annual reports from the Office of the Advocate for Persons with Disabilities</strong> were not read in this pass; they likely contain systematic complaint patterns that would sharpen §7.</li>
+    <li><strong>Alberta.ca account is auth only.</strong> The gov-wide identity system has no native "on behalf of" concept and no client data — client and stakeholder data lives in Case Management. Any delegated-authority capability must be built as a shared service (see Stage 4 architectural note and §7 cross-cutting).</li>
+    <li><strong>Augmentation, not replacement, is a hard constraint.</strong> Letters, phone, and in-person channels remain available throughout. The portal adds a parallel digital surface alongside them. This shapes every need in the doc and is not optional.</li>
+    <li><strong>Real integration with the federal government is not feasible.</strong> Federal-benefit awareness in the portal (CDB / DTC / CPP-D) is an information surface and a recipient-side confirmation loop — not a data integration. Anywhere the doc previously used "integration" framing has been corrected.</li>
+    <li><strong>Proof-of-enrollment letter (Stage 5, P2) and file-review schedule (Stage 6, P2) needs require jurisdiction-specific validation.</strong> Both are credibly real but neither is yet evidence-grounded for AISH/ADAP recipients in our jurisdiction. Validate via contact-centre call reasons, in-person visit reasons, or stakeholder interviews before promoting.</li>
+    <li><strong>Forward-looking dependency: Alberta.ca Wallet.</strong> If credentials like the AAHB card move to the Wallet in future, several portal needs (e.g., replacement card request in Stage 5) may shift in shape. No roadmap visibility today.</li>
+  </ul>
+</div>
+
+<h4>Challenges to the original brief</h4>
+<ul>
+  <li><strong>The helper layer is real and is a known challenge</strong> <em>(confirmed by project owner in v0.3)</em>. Trustees, financial administrators, family members, and advocates are not a niche use case — they are how a meaningful share of AISH/ADAP recipients interact with the program at all. Anywhere the portal is designed as if for an individual abstract user, it is excluding them. This needs to be a first-order design constraint, not a future iteration.</li>
+  <li><strong>"Transparency" without "accuracy" backfires.</strong> Status pages that show wrong information are worse than no status pages. The portal's first job is to be honest; its second is to be helpful.</li>
+  <li><strong>Portals don't fix policy</strong> <em>(confirmed by project owner in v0.3)</em>. If adjudication takes 9 weeks because adjudication takes 9 weeks, the portal will be honest about that — and the political/policy question of <em>why</em> doesn't go away.</li>
+  <li><strong>Timing realism</strong> <em>(added in v0.3)</em>. v1 will not realistically ship before the July 2026 ADAP launch. Plan accordingly: features that pre-empt the launch are out of reach; features that support recipients through the multi-year ADAP transition window (through Dec 31, 2027) and the persistent operational pain that long predates ADAP are in reach.</li>
+  <li><strong>The portal is one consumer among several</strong> <em>(added in v0.13)</em>. Shared services like delegated authority and identity are consumed by Intake Management, Case Management, and this portal. Designing the portal in isolation would risk duplicating capability that belongs at the system level.</li>
+</ul>
+
+<h2 id="versions" style="margin-top:64px">Version history</h2>
+
+<div class="callout">
+  <p style="margin:6px 0"><strong>v0.2:</strong> Added manual-derived needs (§5), public discourse review (§6), federal-benefit integration as cross-cutting need.</p>
+  <p style="margin:6px 0"><strong>v0.3:</strong> Restored fixed $200 transition benefit; strengthened federal CDB / dual-$200 / clawback framing; removed the ADAP-launch-urgency framing; reordered top-10.</p>
+  <p style="margin:6px 0"><strong>v0.4:</strong> Added "The problem we are solving"; tightened scope (stages 1–2 marked out of scope); top-10 updated; layout restructured.</p>
+  <p style="margin:6px 0"><strong>v0.5:</strong> Stage 3 rewritten ("assessment process", augmentation framing in callout); new Stage 4 (Commencement) inserted with approved and denial paths; renumbered all subsequent stages; secure messaging moved to cross-cutting note.</p>
+  <p style="margin:6px 0"><strong>v0.6:</strong> Stage 5 rewritten with IVR-volume evidence on payment view, payment-history absorbed remittance-statement download (the de facto proof of enrollment in our jurisdiction), formal proof-letter need split out as P2, tax slip added (P2), decision-explainability moved to cross-cutting.</p>
+  <p style="margin:6px 0"><strong>v0.7:</strong> Stage 6 rewritten — callout reframed away from administrative-cost angle and toward recipient-harm (surprise overpayment); need 1 framed as augmentation; new "show me my cadence + remind me" need; pre-submission impact preview reframed as post-submission explanation with program-integrity caveat; new reporting-history need at P2 with program-integrity caveat.</p>
+  <p style="margin:6px 0"><strong>v0.8:</strong> Stage 7 reordered around the lifecycle (Apply / Status / History / Browse / See details); Apply/Status/History elevated to P0; rolling counters folded into See details; appealability and grant-vs-loan folded into See details; year-end recap removed.</p>
+  <p style="margin:6px 0"><strong>v0.9:</strong> Stage 8 rewritten and renamed to "Handle overpayments &amp; underpayments" — scoped to exceptional scenarios only; five needs (overpayment notice P0, exemption request P1, voluntary repayment warning P1, underpayment notice P1, repayment agreement self-service P2). Stage 5 added a P1 need for routine holds/deductions visibility.</p>
+  <p style="margin:6px 0"><strong>v0.10:</strong> Stage 9 reframed as ephemeral "Re-apply during the AISH↔ADAP transition" (2 needs at P0); Stage 6 picked up the file-review-schedule need at P2.</p>
+  <p style="margin:6px 0"><strong>v0.11:</strong> Stage 10 rescoped to reflect program / external-body split. Admin review is in-program; formal appeal is conducted by an external body and is a black box by design (impartiality, not a gap). Need 3 narrowed to "during admin review, show me what's on file and let me submit." Need 4 narrowed to granular admin-review tracking, then binary "in appeal" → "outcome."</p>
+  <p style="margin:6px 0"><strong>v0.12:</strong> Stage 11 revised and restructured into Living-recipient exits / End of life sub-tables. Sharpened with rapid-reinstatement specifics, new out-of-province need, kept handoff-to-next-support need, condensed end-of-life into a single combined need (estate authorization + funeral-benefits applicator with full manual-mandated caps and 6-month reimbursement window). Data-portability need dropped. Journey review complete.</p>
+  <p style="margin:6px 0"><strong>v0.13:</strong> §7 cross-cutting expanded with a separate Delegated-authority-as-shared-service row (P0); federal "integration" → "awareness"; decision-explainability absorbed Stage 5's "why did my payment change"; notifications elevated to P0; new secure messaging row (P1). §10 added Alberta.ca-auth-only, augmentation-as-constraint, federal-integration-not-feasible, validation flags, Wallet forward-looking dependency, and a new portal-as-one-consumer challenge.</p>
+  <p style="margin:6px 0"><strong>v0.14:</strong> §7 cross-cutting table gained an Evidence column. All 14 rows now have evidence tags consistent with the journey-stage tables.</p>
+  <p style="margin:6px 0"><strong>v0.15:</strong> Evidence chips gained hover tooltips throughout. cursor:help added to pill styling.</p>
+  <p style="margin:6px 0"><strong>v0.16 (current) — MVP scope review:</strong></p>
+  <ul style="margin-bottom:0">
+    <li><strong>Stage 4 (Commencement) trimmed from 14 needs to 3.</strong> Most of the workflow detail (meeting logistics, commencement-date explanation, retro-period benefit-cost reimbursement, summary of meeting, 12-month re-submission countdown, full denial-path detail) deferred to phase 2. MVP keeps: status visibility into the post-decision process, document upload back to the worker, and read-only display of the retro payment calculation outcome.</li>
+    <li><strong>Stage 4 / Stage 10 appeals overlap consolidated.</strong> Stage 4 denial path absorbed into other sections (decision rendering → cross-cutting decision explainability; appeal pathway → Stage 10; caseworker contact → cross-cutting secure messaging; reassessment evidence → Stage 4's general document-upload need). Stage 10 Need 1 reworded to "Tell me how to challenge a decision" — the decision content itself is rendered via cross-cutting decision explainability rather than restated here.</li>
+    <li><strong>Cross-cutting (§7) restructured into three groups:</strong> Design qualities (7 — accessibility, mobile, tone &amp; dignity, offline parity, trust signals, error tolerance, multilingual), Infrastructure (3 — delegated authority shared service, notifications infrastructure, persistent record), Features (5 — third-party access, decision explainability, federal-benefit awareness, secure messaging, plus new notification preferences). Makes it clear what's a buildable feature, what's foundation, and what's a design constraint.</li>
+    <li><strong>New cross-cutting feature: Notification preferences (P1).</strong> Alberta.ca account gives us email by default but SMS requires opt-in and verification. Preferences let recipients choose channels per notification type. Pairs with the Notifications infrastructure (P0) above.</li>
+  </ul>
+  <p style="margin:12px 0 6px;color:var(--muted);font-size:13px"><em>Old v0.13 changelog detail:</em></p>
+  <ul style="margin-bottom:0">
+    <li><strong>§7 cross-cutting updated:</strong> third-party access row rewritten to focus on role distinctions and obligations; new separate row for <em>delegated authority as a shared service</em> (P0) — important enough to stand on its own as an architectural commitment; federal-benefit row renamed from "integration" to "awareness" with explicit note that real integration with GoC is not feasible; decision-explainability row absorbs the "why did my payment change" content moved from Stage 5; notifications elevated from P1 to P0; new secure messaging row (P1) — first surfaces in Stage 3 but applies across the post-decision journey.</li>
+    <li><strong>§10 assumptions updated:</strong> added Alberta.ca-account-is-auth-only constraint; augmentation-not-replacement as a hard constraint; federal-integration-not-feasible note; flagged proof-of-enrollment and file-review-schedule needs as requiring jurisdiction validation; forward-looking Wallet dependency. Added a new challenge to the brief: the portal is one consumer among several of shared services.</li>
+    <li><strong>Top-10 item 3 reworded</strong> to drop "integration" framing — now "Federal-benefit awareness."</li>
+  </ul>
+  <p style="margin:12px 0 6px;color:var(--muted);font-size:13px"><em>Old v0.11 changelog detail:</em></p>
+  <ul style="margin-bottom:0">
+    <li><strong>Stage 10 rescoped to reflect program / external-body split.</strong> Administrative review is in-program; the formal appeal process is conducted by an external body and is deliberately a black box (impartiality, not a gap). Need 3 narrowed to "during admin review, show me what's on file and let me submit." Need 4 narrowed to granular admin-review tracking, then binary "in appeal" → "outcome." Blurb updated to make the split explicit.</li>
+  </ul>
+  <p style="margin:12px 0 6px;color:var(--muted);font-size:13px"><em>Old v0.10 changelog detail:</em></p>
+  <ul style="margin-bottom:0">
+    <li><strong>Stage 9 reframed and renamed to "Re-apply during the AISH↔ADAP transition" — flagged as ephemeral.</strong> The whole stage exists only for the transition cohort during the window through Dec 31, 2027. Two needs: re-application options (P0) and status tracking (P0). The old reassessment / file-review framing was conflating two distinct things and overstating an "ongoing transition."</li>
+    <li><strong>Stage 6 added a file-review-schedule need at P2,</strong> moved from old Stage 9. Under ADAP the file review structure changes (financial annual, medical varies per case). P2 because the actual depth of user need still needs investigation.</li>
+  </ul>
+  <p style="margin:12px 0 6px;color:var(--muted);font-size:13px"><em>Old v0.9 changelog detail:</em></p>
+  <ul style="margin-bottom:0">
+    <li><strong>Stage 8 rewritten and renamed to "Handle overpayments &amp; underpayments."</strong> Scoped to exceptional scenarios only. Five needs: overpayment notice (P0), request exemption from repayment (P1), voluntary repayment warning (P1) — the appeal-rights waiver is the highest-consequence non-obvious rule in the manual, new underpayment notice need (P1) covering Chapter 8, repayment agreement self-service (P2). Removed the "silent holds" need (those are routine side effects, not exceptional).</li>
+    <li><strong>Stage 5 expanded:</strong> new need added covering routine holds and deductions (missing report, recovery deductions, etc.) with the payment view as the surface (P1) — moved here from Stage 8 where it didn't fit the exceptional-scenario framing.</li>
+  </ul>
+  <p style="margin:12px 0 6px;color:var(--muted);font-size:13px"><em>Old v0.8 changelog detail:</em></p>
+  <ul style="margin-bottom:0">
+    <li><strong>Stage 7 rewritten:</strong> reordered around the lifecycle (Apply → Status → History → Browse → See details) instead of conceptual grouping; entitlement-uptake callout added; Apply/Status/History elevated to P0 for short-term utility; old "show me everything" need split into Browse (what might apply to my situation) and See details (deep-dive on one benefit); rolling counters folded into See details; appealability / grant-vs-loan folded into See details; year-end recap removed (covered by History and the Stage 5 tax slip).</li>
+  </ul>
+  <p style="margin:12px 0 6px;color:var(--muted);font-size:13px"><em>Old v0.7 changelog detail:</em></p>
+  <ul style="margin-bottom:0">
+    <li><strong>Stage 6 rewritten:</strong> callout reframed away from internal administrative cost and toward the recipient-harm (surprise overpayment) angle from §6; need 1 reframed as augmentation (single digital channel alongside existing ones, not canonical); cadence-and-reminder need reframed as reference-and-reminder (cadence is known at commencement, not a mystery); pre-submission impact preview reframed as post-submission explanation with program-integrity caveat; new reporting-history need added at P2 with program-integrity caveat (default to dates/types; dollar impact on click).</li>
+  </ul>
+  <p style="margin:12px 0 6px;color:var(--muted);font-size:13px"><em>Old v0.6 changelog detail:</em></p>
+  <ul style="margin-bottom:0">
+    <li><strong>Stage 5 rewritten:</strong> blurb reframed (not a daily destination); need 1 evidence updated to reference the existing IVR handling thousands of calls a month; need 2 expanded to absorb the remittance-statement download (which is the proof-of-enrollment artifact used in our jurisdiction today); need 3 reframed as "request changes" (updates only — initial setup is at commencement) writing back to Case Management; need 5 narrowed to a formal proof-of-enrollment letter (P2) — distinct, lower-volume artifact for third parties that won't accept a remittance statement; new tax-slip need added; "why did my payment change?" moved out of stage and treated as cross-cutting decision-explainability (§7).</li>
+  </ul>
+  <p style="margin:12px 0 6px;color:var(--muted);font-size:13px"><em>Old v0.5 changelog detail:</em></p>
+  <ul style="margin-bottom:0">
+    <li><strong>Stage 3 rewritten:</strong> "adjudication" → "assessment process"; "in disability income programs anywhere" → "for our program"; callout reframed around the request-to-receipt gap and letter-comms default rather than the internal adjudication metric; secure messaging moved to cross-cutting (§7).</li>
+    <li><strong>New Stage 4 inserted: Commencement.</strong> Confirmed in the AISH Policy Manual (General Regulation s.2.1). Covers both the approved path (commencement meeting, retro payment, first cheque) and the denial path (which eligibility stage failed, 12-month re-submission window, 30-day appeal countdown). All needs framed as <em>augmenting</em> the existing letter/phone/in-person channels, not replacing them.</li>
+    <li><strong>Renumbered:</strong> all subsequent stages shifted +1 (old 4→5, old 10→11). TOC, cross-references, and scope language updated.</li>
+  </ul>
+  <p style="margin:12px 0 6px;color:var(--muted);font-size:13px"><em>Old v0.4 changelog detail:</em></p>
+  <ul style="margin-bottom:0">
+    <li><strong>Added "The problem we are solving"</strong> at the top of the document.</li>
+    <li><strong>Tightened scope.</strong> Journey stages 1 (Discover &amp; understand the program) and 2 (Determine eligibility &amp; apply) are now explicitly <em>out of scope</em> — they're existing infrastructure (alberta.ca/aish, MyAlbertaSupports, the application itself) with parallel work tracks and dependencies that don't belong to this portal. The scope is stages 3–11: the post-application experience.</li>
+    <li><strong>Top-10 updated</strong> to remove the "save &amp; resume the application" item (stage 2) and elevate notifications-that-don't-require-login in its place.</li>
+    <li><strong>Restructured layout:</strong> problem statement moved above the table of contents; version history moved to the bottom of the doc.</li>
+  </ul>
+</div>
+
+<footer>
+  <p>v0.16 working draft prepared from the ALSS service map (<span class="src">data/ab/alss.json</span>, <span class="src">data/ab/alss_dia.json</span>, <span class="src">data/ab/alss_legislation.json</span>), the AISH Policy Manual (<span class="src">manuals.alberta.ca/aish-policy-manual</span>, chapters 1–10), the AISH and ADAP program pages on alberta.ca, benchmarks from Code for America / U.S. SSA / UK PIP, and a public-discourse review of CBC, Alberta Doctors' Digest, the Tyee, regional press, Inclusion Alberta, Voice of Albertans with Disabilities, the Alberta Ombudsman, and other channels. Not a finished plan — a starting point for discovery, prioritization, and design.</p>
+</footer>
+
+</div>
+</body>
+</html>

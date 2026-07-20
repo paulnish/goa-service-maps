@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DIA Portal — Scope Breakdown (Boulders, Rocks, Pebbles)</title>
+<style>
+  :root {
+    --bg: #fafaf7;
+    --ink: #1a1a1a;
+    --muted: #555;
+    --line: #e2e2dc;
+    --soft: #f3f1ea;
+    --boulder: #6b21a8;
+    --boulder-bg: #f3e8ff;
+    --boulder-border: #c084fc;
+    --rock: #0070c0;
+    --rock-bg: #e6f0fa;
+    --rock-border: #93c5fd;
+    --pebble: #548235;
+    --pebble-bg: #eaf3df;
+    --pebble-border: #a3d977;
+    --constraint: #555;
+    --constraint-bg: #f3f1ea;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    margin: 0;
+    padding: 48px 32px;
+    line-height: 1.55;
+    font-size: 16px;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; }
+  header.doc-head {
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+  }
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  h1 { font-size: 30px; margin: 0 0 8px; line-height: 1.2; }
+  .meta { color: var(--muted); font-size: 14px; }
+
+  .legend {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin: 24px 0 40px;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 14px;
+  }
+  .legend strong { color: var(--ink); }
+  .swatch {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    margin-right: 6px;
+    vertical-align: middle;
+    border: 1px solid;
+  }
+
+  .tier {
+    margin: 48px 0 24px;
+  }
+  .tier-head {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+  }
+  .tier-head h2 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+  }
+  .tier-head .count {
+    background: rgba(255,255,255,0.25);
+    color: white;
+    padding: 2px 10px;
+    border-radius: 99px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .tier-head .blurb {
+    color: rgba(255,255,255,0.9);
+    font-size: 14px;
+    margin: 0;
+    flex: 1;
+    text-align: right;
+  }
+  .tier.boulders .tier-head { background: var(--boulder); }
+  .tier.rocks .tier-head { background: var(--rock); }
+  .tier.pebbles .tier-head { background: var(--pebble); }
+  .tier.constraints .tier-head { background: var(--constraint); }
+
+  .items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: item;
+  }
+  .items li {
+    background: white;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--rock-border);
+    border-radius: 0 6px 6px 0;
+    padding: 14px 18px;
+    margin-bottom: 8px;
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    gap: 12px;
+  }
+  .tier.boulders .items li { border-left-color: var(--boulder-border); background: #fbf6ff; }
+  .tier.rocks .items li { border-left-color: var(--rock-border); }
+  .tier.pebbles .items li { border-left-color: var(--pebble-border); }
+  .tier.constraints .items li { border-left-color: var(--muted); background: var(--soft); grid-template-columns: 1fr; }
+
+  .items li::before {
+    counter-increment: item;
+    content: counter(item);
+    font-weight: 700;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .tier.constraints .items li::before { content: ''; counter-increment: none; }
+
+  .item-body .title {
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+  .item-body .why {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .item-body .ref {
+    display: inline-block;
+    background: var(--soft);
+    color: var(--muted);
+    padding: 1px 8px;
+    border-radius: 99px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-left: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .sequencing {
+    margin-top: 48px;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 24px;
+  }
+  .sequencing h2 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  .sequencing ul { margin: 12px 0 0; padding-left: 20px; }
+  .sequencing li { margin-bottom: 8px; }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 13px;
+  }
+  code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: var(--soft);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="doc-head">
+  <div class="eyebrow">Companion to user-needs draft v0.16 · MVP scope breakdown</div>
+  <h1>Disability Income Assistance Portal — Boulders, Rocks &amp; Pebbles</h1>
+  <p class="meta">A user-perspective sizing of the portal scope. Boulders are transformational shifts the portal isn't credible without. Rocks are significant features that each unlock a distinct recipient situation. Pebbles are refinements and polish — quick to ship, additive value.</p>
+</header>
+
+<div class="legend">
+  <span><span class="swatch" style="background:var(--boulder-bg);border-color:var(--boulder-border)"></span><strong>Boulders</strong> — fundamental</span>
+  <span><span class="swatch" style="background:var(--rock-bg);border-color:var(--rock-border)"></span><strong>Rocks</strong> — significant features</span>
+  <span><span class="swatch" style="background:var(--pebble-bg);border-color:var(--pebble-border)"></span><strong>Pebbles</strong> — refinements</span>
+  <span><span class="swatch" style="background:var(--constraint-bg);border-color:var(--muted)"></span><strong>Constraints</strong> — apply throughout</span>
+</div>
+
+<!-- BOULDERS -->
+<div class="tier boulders">
+  <div class="tier-head">
+    <h2>Boulders</h2><span class="count">5</span>
+    <p class="blurb">Fundamental to the portal being credible. Without these, it doesn't serve its purpose.</p>
+  </div>
+  <ol class="items">
+    <li><div class="item-body">
+      <div class="title">A real-time view of where my file stands<span class="ref">Stages 3, 4, 10</span></div>
+      <div class="why">File status timeline, action-needed surfacing, behind-the-scenes visibility, decision rendering. Direct read on the brief's "transparency" goal.</div>
+    </div></li>
+    <li><div class="item-body">
+      <div class="title">The whole payment surface<span class="ref">Stage 5</span></div>
+      <div class="why">Next payment, history with downloadable statements, breakdown, why-it-changed explainers, holds and deductions visibility. What most recipients want most often.</div>
+    </div></li>
+    <li><div class="item-body">
+      <div class="title">Reporting changes in one place<span class="ref">Stage 6</span></div>
+      <div class="why">Single reporting channel with cadence visibility and proactive reminders. Directly attacks the surprise-overpayment harm pattern surfaced in the discourse review.</div>
+    </div></li>
+    <li><div class="item-body">
+      <div class="title">Third-party access via a delegated-authority shared service<span class="ref">Cross-cutting</span></div>
+      <div class="why">First-class support for trustees, financial administrators, attorneys under POA, family, advocates. Without this, a meaningful share of recipients are locked out at launch. Architectural commitment beyond the portal.</div>
+    </div></li>
+    <li><div class="item-body">
+      <div class="title">Decision explainability throughout<span class="ref">Cross-cutting</span></div>
+      <div class="why">Every payment change, every denial, every approval shown with the rule applied and a link to the policy reference. Direct read on the brief's "accountability" goal.</div>
+    </div></li>
+  </ol>
+</div>
+
+<!-- ROCKS -->
+<div class="tier rocks">
+  <div class="tier-head">
+    <h2>Rocks</h2><span class="count">9</span>
+    <p class="blurb">Significant features that broaden value. Each one unlocks a distinct recipient situation.</p>
+  </div>
+  <ol class="items" start="6">
+    <li><div class="item-body">
+      <div class="title">Notifications + preferences<span class="ref">Cross-cutting</span></div>
+      <div class="why">SMS and email infrastructure plus the preferences UX (add and verify SMS, choose channels per type, opt out of non-essentials). The infrastructure is foundation; the preferences are the feature on top.</div>
+    </div></li>
+    <li><div class="item-body">
+      <div class="title">Federal-benefit awareness<span class="ref">Cross-cutting</span></div>
+      <div class="why">CDB / DTC / CPP-D context, the dual-$200 distinction (federal CDB vs provincial transition benefit), and a recipient-side confirmation loop. Would have prevented the documented September 2025 CDB-deadline panic.</div>
+    </div></li>
+    <li><div class="item-body">
+      <div class="title">Document upload back to the worker<span class="ref">Stage 4 + Stage 6</span></div>
+      <div class="why">General upload channel — covers pre-meeting prep, reassessment evidence, any worker request. Replaces multiple narrower workflows with one consistent surface.</div>
+    </div></li>
+    <li><div class="item-body">
+      <div class="title">Secure messaging<span class="ref">Cross-cutting</span></div>
+      <div class="why">Ask a question about my file without phoning. The single feature that most reduces contact-centre load in peer portals.</div>
+    </div></li>
+    <li><div class="item-body">
+      <div class="title">Appeals surface<span class="ref">Stage 10</span></div>
+      <div class="why">How to challenge a decision, file Notice of Appeal within the 30-day window (with countdown), submit evidence during admin review, case status. The "lock the evidence" warning is the highest-consequence non-obvious rule in the program.</div>
+    </div></li>
+    <li><div class="item-body">
+      <div class="title">Re-application during the transition window<span class="ref">Stage 9 · ephemeral</span></div>
+      <div class="why">Options + tracking for the AISH↔ADAP cohort through Dec 31, 2027. The whole stage is time-bounded but high-value while the window is open.</div>
+    </div></li>
+    <li><div class="item-body">
+      <div class="title">Personal benefits sub-lifecycle<span class="ref">Stage 7 · phase 2</span></div>
+      <div class="why">Apply, status, history, browse what's available, see details on a specific benefit. Entitlement uptake is the underlying problem — recipients don't know what they could request.</div>
+    </div></li>
+    <li><div class="item-body">
+      <div class="title">Overpayments + underpayments handling<span class="ref">Stage 8 · phase 2</span></div>
+      <div class="why">Overpayment notice with structured breakdown, exemption request, voluntary repayment warning (critical — waives appeal rights), underpayment notice, repayment agreement self-service.</div>
+    </div></li>
+    <li><div class="item-body">
+      <div class="title">Persistent record<span class="ref">Cross-cutting infrastructure</span></div>
+      <div class="why">Everything submitted, every decision, every payment visible to the recipient (and authorized third parties) for the life of the file. Today recipients keep paper because the system won't tell them what it knows.</div>
+    </div></li>
+  </ol>
+</div>
+
+<!-- PEBBLES -->
+<div class="tier pebbles">
+  <div class="tier-head">
+    <h2>Pebbles</h2><span class="count">12</span>
+    <p class="blurb">Refinements and polish. On their own each is a known want; collectively they make the portal feel finished rather than functional.</p>
+  </div>
+  <ol class="items" start="15">
+    <li><div class="item-body">
+      <div class="title">Annual tax slip download<span class="ref">Stage 5</span></div>
+      <div class="why">Known annual need. Today arrives by mail; the portal adds a downloadable digital copy.</div>
+    </div></li>
+    <li><div class="item-body">
+      <div class="title">Replacement health benefits card request<span class="ref">Stage 5</span></div>
+      <div class="why">Trivial transaction that today consumes phone time.</div>
+    </div></li>
+    <li><div class="item-body">
+      <div class="title">Proof-of-enrollment letter<span class="ref">Stage 5</span></div>
+      <div class="why">Distinct from the remittance statement — for third parties (some courts, banks) that require a formal one-page enrollment confirmation.</div>
+    </div></li>
+    <li><div class="item-body">
+      <div class="title">Personalized greeting + program identifier<span class="ref">Home dashboard</span></div>
+      <div class="why">"You're on AISH" at a glance so the recipient knows their track without digging.</div>
+    </div></li>
+    <li><div class="item-body">
+      <div class="title">Recent activity feed<span class="ref">Home dashboard</span></div>
+      <div class="why">Recent events — payments, reports submitted, account changes, decisions. Quick orientation.</div>
+    </div></li>
+    <li><div class="item-body">
+      <div class="title">Quick actions panel<span class="ref">Home dashboard</span></div>
+      <div class="why">Shortcuts to the most common tasks (report a change, upload a document, message my worker).</div>
+    </div></li>
+    <li><div class="item-body">
+      <div class="title">Reporting history view<span class="ref">Stage 6</span></div>
+      <div class="why">Recipient-side sanity check on what they've reported recently. Program-integrity caveat: dates and types by default, dollar impact on click.</div>
+    </div></li>
+    <li><div class="item-body">
+      <div class="title">File review schedule visibility<span class="ref">Stage 6</span></div>
+      <div class="why">Under ADAP financial reviews are annual; medical reviews vary per case. Lets recipients prepare. Needs deeper validation of user demand.</div>
+    </div></li>
+    <li><div class="item-body">
+      <div class="title">Advocate / Ombudsman connection links<span class="ref">Stage 10</span></div>
+      <div class="why">Minimal content surface to the Alberta Advocate for Persons with Disabilities and the Alberta Ombudsman from inside the appeals flow.</div>
+    </div></li>
+    <li><div class="item-body">
+      <div class="title">Estate authorization + funeral benefits applicator<span class="ref">Stage 11 · phase 2</span></div>
+      <div class="why">End-of-life path: authorize an estate representative and guide them through the funeral benefits applicator (multiple manual-mandated caps, 6-month reimbursement window). Lower frequency, high recipient/family stakes when it happens.</div>
+    </div></li>
+    <li><div class="item-body">
+      <div class="title">Out-of-province exit guidance<span class="ref">Stage 11 · phase 2</span></div>
+      <div class="why">Specific residency rules and outside-Alberta absence allowances. Defined exit with its own mechanics.</div>
+    </div></li>
+    <li><div class="item-body">
+      <div class="title">Handoff to next support<span class="ref">Stage 11 · phase 2</span></div>
+      <div class="why">Aging into OAS, leaving for employment, moving to PDD-only support. The portal names the obvious next step and links out; the supporting program owns the actual transition.</div>
+    </div></li>
+  </ol>
+</div>
+
+<!-- CONSTRAINTS -->
+<div class="tier constraints">
+  <div class="tier-head">
+    <h2>Constraints — not boulders / rocks / pebbles</h2><span class="count">8</span>
+    <p class="blurb">These shape <em>how</em> everything above is built, not what gets built. They apply throughout.</p>
+  </div>
+  <ul class="items">
+    <li><div class="item-body"><strong>Accessibility</strong> — WCAG 2.2 AA, screen reader, plain language (~grade 6), keyboard nav, generous touch targets, predictable behaviour.</div></li>
+    <li><div class="item-body"><strong>Mobile-first</strong> — every flow works on a phone over slow data.</div></li>
+    <li><div class="item-body"><strong>Tone &amp; dignity</strong> — language that treats the recipient as the principal, not a suspect to be verified.</div></li>
+    <li><div class="item-body"><strong>Offline / assisted parity</strong> — anything possible in the portal is possible by phone or in-person with the same quality.</div></li>
+    <li><div class="item-body"><strong>Trust signals</strong> — plain language, explicit consent, predictable navigation, no dark patterns, clear pathway out.</div></li>
+    <li><div class="item-body"><strong>Error tolerance for high-cost-of-error users</strong> — reliable confirmations, reversible actions, critical actions confirmed by a second channel.</div></li>
+    <li><div class="item-body"><strong>Multilingual support</strong> — beyond English; professionally translated for the most-used languages in the recipient population.</div></li>
+    <li><div class="item-body"><strong>Augmentation, not replacement</strong> — letters, phone, and in-person channels remain available throughout. The portal sits alongside them, not in place of them.</div></li>
+  </ul>
+</div>
+
+<!-- SEQUENCING NOTES -->
+<div class="sequencing">
+  <h2>On using this</h2>
+  <ul>
+    <li><strong>Boulders are sequencing-critical.</strong> They're hard to phase in incrementally without leaving the portal feeling incomplete. Best built together as a foundation wave.</li>
+    <li><strong>Rocks can ship independently.</strong> Each one can land on its own and add real value without prerequisites (beyond the boulders + infrastructure).</li>
+    <li><strong>Pebbles are optimization plays.</strong> Schedule them when there's slack capacity, or batch a few together for a polish release.</li>
+    <li><strong>Constraints don't sequence.</strong> They're applied to whatever is being built, by whoever is building it.</li>
+  </ul>
+</div>
+
+<footer>
+  <p>Companion to <code>dia-portal-user-needs.html</code> (v0.16), <code>dia-portal-user-needs-by-priority.html</code>, <code>dia-portal-mvp-scoping.html</code>, <code>dia-portal-mvp-navigation-map.html</code>, and <code>dia-portal-mvp-recipient-lifecycle.html</code>. Update when scope changes meaningfully.</p>
+</footer>
+
+</div>
+</body>
+</html>
