@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Disability Income Assistance Portal — MVP Scoping</title>
+<style>
+  :root {
+    --bg: #fafaf7;
+    --ink: #1a1a1a;
+    --muted: #555;
+    --line: #e2e2dc;
+    --accent: #0070c0;
+    --soft: #f3f1ea;
+    --warn: #bf8f00;
+    --critical: #b03a2e;
+    --good: #548235;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+    font-size: 16px;
+    margin: 0; padding: 0;
+    background: var(--bg); color: var(--ink);
+  }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 48px 32px 96px; }
+  header.doc-head {
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 16px; margin-bottom: 32px;
+  }
+  .eyebrow {
+    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 12px; color: var(--muted); margin-bottom: 6px;
+  }
+  h1 { font-size: 30px; margin: 0 0 8px; line-height: 1.2; }
+  h2 {
+    font-size: 22px;
+    margin: 48px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--line);
+  }
+  h3 { font-size: 17px; margin: 24px 0 6px; }
+  p, ul, ol { margin: 0 0 12px; }
+  ul, ol { padding-left: 22px; }
+  li { margin-bottom: 4px; }
+  .meta { color: var(--muted); font-size: 14px; }
+  .callout {
+    border-left: 4px solid var(--accent);
+    background: var(--soft);
+    padding: 14px 18px;
+    margin: 16px 0;
+    border-radius: 0 4px 4px 0;
+  }
+  .callout.critical { border-left-color: var(--critical); }
+  .callout.warn { border-left-color: var(--warn); }
+  .callout.good { border-left-color: var(--good); }
+  .callout h4 { margin-top: 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 20px;
+    font-size: 14px;
+    background: #fff;
+  }
+  th, td {
+    border: 1px solid var(--line);
+    padding: 9px 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th { background: var(--soft); font-weight: 600; font-size: 13px; }
+  .count {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 99px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .count.warn { background: var(--warn); }
+  .count.good { background: var(--good); }
+  .count.muted { background: var(--muted); }
+  code, .src {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f5f5f0;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+  }
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 16px 0;
+  }
+  .grid-2 .card {
+    border: 1px solid var(--line);
+    background: #fff;
+    border-radius: 6px;
+    padding: 16px 18px;
+  }
+  .grid-2 .card h4 { margin: 0 0 8px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+  footer { margin-top: 64px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+  .toc { background: #fff; border: 1px solid var(--line); padding: 16px 20px; border-radius: 6px; margin-bottom: 32px; }
+  .toc h4 { margin-top: 0; }
+  .toc ol { margin-bottom: 0; }
+  .toc a { color: var(--ink); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="doc-head">
+  <div class="eyebrow">Companion to user-needs draft v0.16 · MVP scoping</div>
+  <h1>Disability Income Assistance Portal — MVP Scoping</h1>
+  <p class="meta">A concise statement of what the MVP is, how it's delivered, what's deferred, and the dependencies and open questions that affect timing.</p>
+</header>
+
+<div class="toc">
+  <h4>Contents</h4>
+  <ol>
+    <li><a href="#model">The delivery model</a></li>
+    <li><a href="#stack">The stack</a></li>
+    <li><a href="#scope">Design scope vs. MVP wiring scope</a></li>
+    <li><a href="#mvp">What's in MVP</a></li>
+    <li><a href="#phase2">What's deferred to phase 2</a></li>
+    <li><a href="#principles">Two principles that shape sequencing</a></li>
+    <li><a href="#deps">Dependencies and risks</a></li>
+    <li><a href="#open">Open questions to resolve early</a></li>
+  </ol>
+</div>
+
+<h2 id="model">1. The delivery model</h2>
+
+<div class="callout">
+  <p style="margin:0">Design builds the full citizen-facing user experience in code, in the production stack, using the production design system. Back-end teams wire that front-end to real CMS and Azure services. The intent is to <strong>10x the combined design and development timeline</strong> by eliminating the design→development handoff and removing UI re-implementation from the back-end critical path.</p>
+</div>
+
+<p>This inverts the traditional sequence. Instead of design producing mockups, back-end implementing those mockups in code, and then both iterating on what doesn't quite work — the design team ships a working Angular application that uses real components, real layouts, real interaction patterns, and mocked data. The back-end team picks up that working application and replaces the mocks with real APIs.</p>
+
+<p>For this to work, two things have to hold:</p>
+
+<ul>
+  <li><strong>Design works in the production stack.</strong> Same Angular, same <code>@abgov/angular-components</code>, same TypeScript that production will use. No re-implementation between design and prod.</li>
+  <li><strong>The front-end shell is comprehensive.</strong> Design ships <em>all</em> in-scope needs as designed-in-code surfaces — not just the MVP wiring scope. Phase 2 surfaces ship as fully-designed-but-not-wired (or with explicit "coming soon" framing where they appear). This keeps the design work whole and de-risks phase 2 wiring.</li>
+</ul>
+
+<h2 id="stack">2. The stack</h2>
+
+<div class="grid-2">
+  <div class="card">
+    <h4>Front-end (what design builds)</h4>
+    <ul style="margin-bottom:0">
+      <li>Angular</li>
+      <li><code>@abgov/angular-components</code> (GoA Design System)</li>
+      <li>TypeScript</li>
+      <li>Mock data services in TypeScript interfaces — become API contracts at handoff</li>
+      <li>Deployable as a static Angular build (Azure Static Web Apps is the natural fit) for review and usability testing on real URLs</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h4>Back-end (what dev wires)</h4>
+    <ul style="margin-bottom:0">
+      <li>Node.js</li>
+      <li>Azure Functions for serverless processing (including notification workers)</li>
+      <li>Azure Web Services for hosted services</li>
+      <li>Azure SQL for the data layer</li>
+      <li>Implements the TypeScript API contracts the design build defines</li>
+    </ul>
+  </div>
+</div>
+
+<p>Notification infrastructure (SMS + email) sits naturally in Azure Functions. The <strong>delegated-authority shared service</strong> (see §7) is a separate Azure service consumed by Intake Management, Case Management, and this portal — not part of the portal back-end specifically.</p>
+
+<h2 id="scope">3. Design scope vs. MVP wiring scope</h2>
+
+<p>Two distinct things, often confused. Naming them explicitly:</p>
+
+<table>
+  <thead>
+    <tr><th>Scope</th><th>What it includes</th><th>Count</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Design scope</strong><br><em>What the design team builds in code</em></td>
+      <td>Every in-scope need from the user-needs draft. Stages 3 through 11, all cross-cutting needs. Phase 2 stages get designed too — they ship as completed surfaces, awaiting back-end wiring.</td>
+      <td><span class="count">All 58</span></td>
+    </tr>
+    <tr>
+      <td><strong>MVP wiring scope</strong><br><em>What back-end teams wire to real CMS and services in the first release</em></td>
+      <td>Stages 3, 4 (trimmed), 5, 6, 9, 10 plus all cross-cutting. The "A + B + S9" shape. Each stage in scope is wired end-to-end as a coherent vertical slice.</td>
+      <td><span class="count good">44</span></td>
+    </tr>
+    <tr>
+      <td><strong>Phase 2 wiring</strong><br><em>What gets wired in the next release wave</em></td>
+      <td>Stages 7, 8, 11 plus the Stage 4 needs trimmed from MVP (meeting logistics, commencement-date explanation, retro-period reimbursement workflow, etc.)</td>
+      <td><span class="count warn">25</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The design work is the same whether something is MVP or phase 2 — and it happens once. Sequencing happens on the back-end side.</p>
+
+<h2 id="mvp">4. What's in MVP</h2>
+
+<p>The "A + B + S9" shape. All cross-cutting plus six stages, each fully wired:</p>
+
+<table>
+  <thead>
+    <tr><th>Stage</th><th>What's in MVP</th><th>Needs</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Stage 3</strong> — Wait for &amp; track the assessment process</td>
+      <td>File status view; "action needed from you" surfacing; timing range; document submission visibility</td>
+      <td><span class="count">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>Stage 4</strong> — Commencement <em>(trimmed)</em></td>
+      <td>Status visibility into the post-decision process; document upload back to worker; read-only retro payment outcome</td>
+      <td><span class="count">3</span></td>
+    </tr>
+    <tr>
+      <td><strong>Stage 5</strong> — Receive benefits &amp; manage the account</td>
+      <td>Next payment view; payment history + remittance download; account housekeeping requests; replacement card; proof-of-enrollment letter; tax slip; holds &amp; deductions explanation</td>
+      <td><span class="count">7</span></td>
+    </tr>
+    <tr>
+      <td><strong>Stage 6</strong> — Report changes &amp; meet obligations</td>
+      <td>Report a change in one place; submit monthly income statement; show cadence + remind; post-submission impact; document upload; reporting history; file review schedule</td>
+      <td><span class="count">7</span></td>
+    </tr>
+    <tr>
+      <td><strong>Stage 9</strong> — Re-apply during the AISH↔ADAP transition <em>(ephemeral)</em></td>
+      <td>Re-application options + what it would mean; track re-application status</td>
+      <td><span class="count">2</span></td>
+    </tr>
+    <tr>
+      <td><strong>Stage 10</strong> — Appeal a decision</td>
+      <td>How to challenge a decision; file Notice of Appeal within 30 days; admin-review evidence visibility; case status; advocate / ombudsman connections</td>
+      <td><span class="count">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>Cross-cutting §7</strong></td>
+      <td>All design qualities (7), all infrastructure (3), all features (5) — third-party access, decision explainability, federal-benefit awareness, notification preferences, secure messaging</td>
+      <td><span class="count">15</span></td>
+    </tr>
+    <tr style="background:#f3f1ea;font-weight:600">
+      <td colspan="2" style="text-align:right">MVP total</td>
+      <td><span class="count good">44</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="phase2">5. What's deferred to phase 2</h2>
+
+<table>
+  <thead>
+    <tr><th>Stage</th><th>What's deferred</th><th>Why</th><th>Needs</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Stage 4 — trimmed items</strong></td>
+      <td>Meeting logistics (when/where/who must attend); commencement-date explanation; retro-period benefit-cost reimbursement workflow; meeting summary; 12-month re-submission countdown; full denial-path detail beyond what's redistributed</td>
+      <td>Each is a substantive workflow on its own. MVP keeps the bare-minimum visibility + upload + retro-outcome surface; the heavier workflow detail comes in phase 2.</td>
+      <td><span class="count warn">~11</span></td>
+    </tr>
+    <tr>
+      <td><strong>Stage 7</strong> — Request additional supports</td>
+      <td>Apply, status, history, browse, see details — the full personal-benefits sub-lifecycle</td>
+      <td>Distinct sub-system with 20+ benefit types, eligibility tests, dollar caps, substantiation requirements. Coherent to ship as one phase 2 package.</td>
+      <td><span class="count warn">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>Stage 8</strong> — Handle overpayments &amp; underpayments</td>
+      <td>Overpayment notice; exemption request; voluntary repayment warning; underpayment notice; repayment agreement self-service</td>
+      <td>Exceptional scenarios, lower frequency but high recipient harm when they hit. Coherent phase 2 package.</td>
+      <td><span class="count warn">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>Stage 11</strong> — Transition off the program</td>
+      <td>Living-recipient exits (general, out-of-province, next-support handoff); end-of-life (estate access + funeral benefits applicator)</td>
+      <td>Lower frequency. Funeral benefits applicator is its own substantial workflow.</td>
+      <td><span class="count warn">4</span></td>
+    </tr>
+    <tr style="background:#fef2c8;font-weight:600">
+      <td colspan="3" style="text-align:right">Phase 2 total (approx)</td>
+      <td><span class="count warn">~25</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="principles">6. Two principles that shape sequencing</h2>
+
+<h3>Coherent vertical slices, not back-end-easy cuts</h3>
+<p>If a stage is in MVP, <em>all</em> of its needs get wired end-to-end. "Show next payment but not payment history" or "Submit a change but not see the impact" creates exactly the disjointed experience that breaks user trust. The unit of MVP delivery is a complete stage, not an individual need.</p>
+
+<h3>Design covers everything, MVP is a wiring choice</h3>
+<p>Phase 2 needs are designed now, alongside MVP needs, in the same Angular build. They ship as completed designs awaiting back-end wiring. The cost of designing them now is small (same team, same components); the cost of designing them later is much larger.</p>
+
+<h2 id="deps">7. Dependencies and risks</h2>
+
+<div class="callout critical">
+  <h4>Biggest speed risk: delegated authority shared service</h4>
+  <p>The delegated-authority capability — letting trustees, financial administrators, attorneys under POA, and other authorized representatives act on a recipient's behalf — must be built as a <strong>shared service</strong> consumed by Intake Management, Case Management, and the portal. Three reasons it's the dominant timeline risk:</p>
+  <ul style="margin-bottom:0">
+    <li>It requires <strong>coordination across multiple consuming systems</strong> (not just portal work).</li>
+    <li>It's <strong>security/privacy-sensitive</strong> — auth and authorization for "on behalf of" relationships needs careful review, audit, and likely a privacy impact assessment.</li>
+    <li>It requires <strong>policy alignment</strong> on who can delegate to whom, under what evidence, with what revocation rules.</li>
+  </ul>
+</div>
+
+<h3>Other dependencies worth flagging</h3>
+<table>
+  <thead><tr><th>Dependency</th><th>Risk level</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>Notifications infrastructure (SMS + email)</td>
+      <td>Medium</td>
+      <td>Azure Functions fit. Requires CMS event hooks for what triggers what. Notification preferences feature rides on top.</td>
+    </tr>
+    <tr>
+      <td>CMS read APIs</td>
+      <td>Low–Medium</td>
+      <td>Most MVP needs are reading data CMS already owns. Depends on existing API surface and how much new work is needed to expose what the portal needs.</td>
+    </tr>
+    <tr>
+      <td>CMS write APIs</td>
+      <td>Medium</td>
+      <td>Needed for any portal-initiated change (address updates, change reporting, document submission, benefit requests). Newer work, more careful auth scoping.</td>
+    </tr>
+    <tr>
+      <td>Re-application flow in Intake Management</td>
+      <td>Low</td>
+      <td>Confirmed: the existing application flow is leveraged. No new build in Intake Management to support Stage 9.</td>
+    </tr>
+    <tr>
+      <td>Alberta.ca account integration</td>
+      <td>Low</td>
+      <td>Auth only. No "on behalf of" — see delegated authority dependency above.</td>
+    </tr>
+    <tr>
+      <td>Federal-benefit data integration</td>
+      <td>N/A</td>
+      <td>Real federal integration is not feasible. The portal surfaces awareness and a recipient-side confirmation loop — no GoC data fetch needed.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="open">8. Open questions to resolve early</h2>
+
+<p>None of these have to be answered today, but each one will silently slow the work if left open.</p>
+
+<ol>
+  <li><strong>Delegated-authority shared service — timeline and ownership.</strong> Who owns the spec? Who builds it? Is there appetite for the shared-service work, or is it likely to land on the portal team by default? When is it realistically usable?</li>
+  <li><strong>Where does the design build live during the design phase?</strong> Azure Static Web Apps is the natural fit, but choosing the deployment target affects whether real-user usability testing can happen on real URLs or stays local.</li>
+  <li><strong>API contract format.</strong> OpenAPI is the obvious choice for the handoff between the design build's TypeScript interfaces and the Azure Functions implementation. Worth confirming Case Management's existing conventions before the design build defines new contracts.</li>
+  <li><strong>Team composition.</strong> Specifically: are there Angular-comfortable designers, or does "design builds in code" require bringing in front-end developers who report to design rather than to the dev team? The model only works if the design team can actually ship code.</li>
+</ol>
+
+<footer>
+  <p>Companion to <code>dia-portal-user-needs.html</code> (v0.16) and <code>dia-portal-user-needs-by-priority.html</code>. Update this scoping doc when MVP scope changes meaningfully — it's the canonical statement of what the first release is and what comes next.</p>
+</footer>
+
+</div>
+</body>
+</html>

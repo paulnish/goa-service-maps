@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Disability Income Assistance Portal — User Needs by Priority</title>
+<style>
+  :root { --bg: #fafaf7; --ink: #1a1a1a; --muted: #555; --line: #e2e2dc; --soft: #f3f1ea; --p0: #b03a2e; --p1: #0070c0; --p2: #548235; --p3: #888; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.55; font-size: 16px; margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 48px 32px 96px; }
+  header.doc-head { border-bottom: 2px solid var(--ink); padding-bottom: 16px; margin-bottom: 24px; }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.08em; font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+  h1 { font-size: 28px; margin: 0 0 8px; line-height: 1.2; }
+  .meta { color: var(--muted); font-size: 14px; }
+  .summary { background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 14px 20px; margin: 16px 0 32px; font-size: 15px; }
+  .summary a { color: var(--ink); text-decoration: none; padding: 0 4px; }
+  .summary a:hover { text-decoration: underline; }
+  .pri-header { margin: 48px 0 12px; padding: 10px 16px; border-radius: 4px; font-size: 20px; color: white; }
+  .pri-p0-header { background: var(--p0); }
+  .pri-p1-header { background: var(--p1); }
+  .pri-p2-header { background: var(--p2); }
+  .pri-p3-header { background: var(--p3); }
+  table.needs-table { width: 100%; border-collapse: collapse; margin-bottom: 32px; background: #fff; font-size: 14px; }
+  .needs-table th, .needs-table td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
+  .needs-table th { background: var(--soft); font-weight: 600; font-size: 13px; }
+  .needs-table td:nth-child(1) { width: 70%; }
+  .needs-table td:nth-child(2) { width: 80px; text-align: center; }
+  .needs-table td:nth-child(3) { width: 24%; }
+  .stage-tag { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; font-weight: 600; }
+  .need-text { font-size: 14px; line-height: 1.5; }
+  .pri-cell { font-weight: 700; font-size: 14px; }
+  .pri-p0 { color: var(--p0); }
+  .pri-p1 { color: var(--p1); }
+  .pri-p2 { color: var(--p2); }
+  .pri-p3 { color: var(--p3); }
+  .evidence-cell { font-size: 13px; color: var(--muted); }
+  .pill { background: var(--soft); padding: 2px 8px; border-radius: 99px; font-size: 12px; color: var(--muted); cursor: help; display: inline-block; margin: 1px 0; }
+  .pill.evidence { background: #e6f0fa; color: #0a4a7a; }
+  .pill.policy { background: #eaf3df; color: #2f4a14; }
+  .pill.bench { background: #f1e6f7; color: #4a1f63; }
+  footer { margin-top: 64px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="doc-head">
+  <div class="eyebrow">Companion view · v0.16 source</div>
+  <h1>Disability Income Assistance Portal — User Needs by Priority</h1>
+  <p class="meta">A priority-grouped view of every user need defined in the main working draft. Out-of-scope stages (1 and 2) are excluded. Stages 3–11 and cross-cutting needs only. Hover any evidence chip for what it stands for.</p>
+</header>
+
+<div class="summary">
+  <strong>Counts:</strong> <strong>P0:</strong> 25 · <strong>P1:</strong> 22 · <strong>P2:</strong> 11 · <em>Total in-scope needs: 58</em>
+  <br>
+  <strong>Jump to:</strong> <a href="#p0">P0</a> · <a href="#p1">P1</a> · <a href="#p2">P2</a>
+  <br>
+  <em style="font-size:13px;color:var(--muted)">Source: dia-portal-user-needs.html (main draft v0.16)</em>
+</div>
+
+
+  <h2 id="p0" class="pri-header pri-p0-header">P0 — 25 needs</h2>
+  <table class="needs-table">
+    <thead>
+      <tr><th>Need (with originating section)</th><th>Priority</th><th>Evidence</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><div class="stage-tag">Stage 3: Wait for &amp; track the assessment process</div><div class="need-text">&quot;Show me where my file is — received, under review, awaiting medical, decision ready — and what&#x27;s next.&quot;</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell"><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 3: Wait for &amp; track the assessment process</div><div class="need-text">&quot;Tell me when something is waiting on me — and exactly what I need to do.&quot;</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell"><span class="pill" style="background:#fde2e2;color:#7a0d0d" title="Discourse — public discourse review (§6): news, advocacy organisations, Alberta Ombudsman case summaries, op-eds">D</span> + program knowledge</td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 4: Commencement</div><div class="need-text">&quot;Show me what&#x27;s happening with my file behind the scenes — what&#x27;s pending, what&#x27;s next.&quot;</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell"><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 4: Commencement</div><div class="need-text">&quot;Let me provide documents back to my worker.&quot;</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell"><span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 4: Commencement</div><div class="need-text">&quot;Show me the outcome of my retro payment calculation when it&#x27;s been done.&quot;</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell"><span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 5: Receive benefits &amp; manage the account</div><div class="need-text">&quot;Show me my next payment — date, amount, and what&#x27;s on it.&quot;</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell"><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> + operational (IVR volume)</td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 6: Report changes &amp; meet obligations</div><div class="need-text">&quot;Let me report a change in one place, in plain language — income, address, household, medical, employment.&quot;</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell"><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 6: Report changes &amp; meet obligations</div><div class="need-text">&quot;Let me submit my monthly income statement — including paystubs as photos.&quot;</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell"><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 7: Request additional supports</div><div class="need-text">Apply. &quot;Let me submit a benefit request through the portal — alongside the existing phone and in-person channels — including the substantiation I need (physician letters, vendor quotes, receipts).&quot;</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell"><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 7: Request additional supports</div><div class="need-text">Status. &quot;Track the status of my personal benefit request the same way I track my main file.&quot;</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell"><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 7: Request additional supports</div><div class="need-text">History. &quot;Show me my personal benefits history — what I&#x27;ve requested, what I&#x27;ve received, when.&quot;</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell"><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 8: Handle overpayments &amp; underpayments</div><div class="need-text">Overpayment notice. &quot;Tell me clearly: how much I owe, why, how it was calculated, what my repayment options are, and the appeal deadline.&quot;</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell"><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 9: Re-apply during the AISH↔ADAP transition</div><div class="need-text">&quot;Show me my re-application options and what re-applying would mean for me.&quot;</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell"><span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span> + program knowledge</td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 9: Re-apply during the AISH↔ADAP transition</div><div class="need-text">&quot;Track my re-application status.&quot;</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell"><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 10: Appeal a decision</div><div class="need-text">&quot;Tell me how to challenge a decision.&quot;</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell"><span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span> <span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 10: Appeal a decision</div><div class="need-text">&quot;Let me file a Notice of Appeal online within the 30-day window, with deadline countdown.&quot;</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell"><span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Cross-cutting</div><div class="need-text">Accessibility. WCAG 2.2 AA minimum, screen reader compatibility, plain language (~grade 6), keyboard navigation, generous touch targets, predictable behaviour.</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell"><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span> + program reality</td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Cross-cutting</div><div class="need-text">Mobile-first. Every flow works on a phone over slow data.</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell"><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Cross-cutting</div><div class="need-text">Tone &amp; dignity. Language that treats the recipient as the principal, not a suspect to be verified. Denials and amounts explained in human language. Default to &quot;we believe you; here&#x27;s what we need to confirm.&quot;</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell"><span class="pill" style="background:#fde2e2;color:#7a0d0d" title="Discourse — public discourse review (§6): news, advocacy organisations, Alberta Ombudsman case summaries, op-eds">D</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Cross-cutting</div><div class="need-text">Offline / assisted parity. Anything possible in the portal must be possible by phone or in-person with the same quality of explanation and the same status visibility.</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell">Program knowledge + equity principle</td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Cross-cutting</div><div class="need-text">Delegated authority as a shared service. A delegated-authority capability built once as a shared service consumed by Intake Management, Case Management, and this portal — not baked separately into each.</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell">Tech architecture + <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Cross-cutting</div><div class="need-text">Notifications infrastructure. SMS and email delivery plumbing — never asking the user to log in just to find out what happened. Plain language, opt-in/opt-out per channel.</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell"><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span> + program knowledge</td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Cross-cutting</div><div class="need-text">Third-party access with manual-grade role distinctions. Trustees, financial administrators (with or without my consent), attorneys under POA, ISC-appointed administrators, family, advocates — each acting with the right permissions and the right obligations on the file.</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell"><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Cross-cutting</div><div class="need-text">Decision explainability. Every decision shown in the portal includes the rule applied and a link to the policy reference. Includes recurring payment-amount changes — annual indexing, exemption-band shifts, recovery deductions — which today silently shift recipients&#x27; monthly cheques. Also renders the AISH/ADAP eligibility decision itself; paired with Stage 10 for the appeal pathway.</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell">Brief + <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Cross-cutting</div><div class="need-text">Federal-benefit awareness. Surface what recipients need to know about CDB / DTC / CPP-D alongside the AISH/ADAP file — obligations, deadlines, the dual-$200 distinction (federal CDB vs provincial transition benefit), and a recipient-side confirmation loop (&quot;I have updated AISH on my federal status&quot;).</div></td>
+          <td class="pri-cell pri-p0">P0</td>
+          <td class="evidence-cell"><span class="pill" style="background:#fde2e2;color:#7a0d0d" title="Discourse — public discourse review (§6): news, advocacy organisations, Alberta Ombudsman case summaries, op-eds">D</span> + program knowledge</td>
+        </tr>
+    </tbody>
+  </table>
+
+  <h2 id="p1" class="pri-header pri-p1-header">P1 — 22 needs</h2>
+  <table class="needs-table">
+    <thead>
+      <tr><th>Need (with originating section)</th><th>Priority</th><th>Evidence</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><div class="stage-tag">Stage 3: Wait for &amp; track the assessment process</div><div class="need-text">&quot;Tell me roughly when I&#x27;ll hear — even a range, even with caveats.&quot;</div></td>
+          <td class="pri-cell pri-p1">P1</td>
+          <td class="evidence-cell"><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 3: Wait for &amp; track the assessment process</div><div class="need-text">&quot;Notify me when something changes — by SMS or email — so I don&#x27;t have to log in to check.&quot;</div></td>
+          <td class="pri-cell pri-p1">P1</td>
+          <td class="evidence-cell"><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span> + program knowledge</td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 3: Wait for &amp; track the assessment process</div><div class="need-text">&quot;Let me see what&#x27;s been submitted, by whom, and what&#x27;s been received — so I can confirm whether my doctor (or any third party) sent what was needed.&quot;</div></td>
+          <td class="pri-cell pri-p1">P1</td>
+          <td class="evidence-cell"><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> + <span class="pill" style="background:#fde2e2;color:#7a0d0d" title="Discourse — public discourse review (§6): news, advocacy organisations, Alberta Ombudsman case summaries, op-eds">D</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 5: Receive benefits &amp; manage the account</div><div class="need-text">&quot;Show me my payment history with the breakdown — living allowance, child benefit, personal benefits, deductions — and let me download each month&#x27;s remittance statement.&quot;</div></td>
+          <td class="pri-cell pri-p1">P1</td>
+          <td class="evidence-cell"><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 5: Receive benefits &amp; manage the account</div><div class="need-text">&quot;Let me request changes to my direct deposit, mailing address, and contact info.&quot;</div></td>
+          <td class="pri-cell pri-p1">P1</td>
+          <td class="evidence-cell"><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> + tech context</td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 5: Receive benefits &amp; manage the account</div><div class="need-text">&quot;If my next payment is held or reduced for a routine reason (missing report, recovery deduction, etc.), tell me why and what I need to do.&quot;</div></td>
+          <td class="pri-cell pri-p1">P1</td>
+          <td class="evidence-cell">Program knowledge</td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 6: Report changes &amp; meet obligations</div><div class="need-text">&quot;Show me my assigned reporting cadence and remind me when my next report is due.&quot;</div></td>
+          <td class="pri-cell pri-p1">P1</td>
+          <td class="evidence-cell"><span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span> + program knowledge</td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 6: Report changes &amp; meet obligations</div><div class="need-text">&quot;Confirm my report was received, and show me what changed on my next payment after it&#x27;s processed.&quot;</div></td>
+          <td class="pri-cell pri-p1">P1</td>
+          <td class="evidence-cell"><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span> + program-integrity caveat</td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 7: Request additional supports</div><div class="need-text">Browse what&#x27;s available. &quot;Show me what personal benefits might apply to my situation — let me explore by life situation (need to move, special diet, medical equipment, escaping abuse, etc.) or by category.&quot;</div></td>
+          <td class="pri-cell pri-p1">P1</td>
+          <td class="evidence-cell"><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 7: Request additional supports</div><div class="need-text">See details on a specific benefit. &quot;For a specific benefit I&#x27;m considering, show me eligibility tests, dollar cap, rolling counter / cooldown status (where applicable), what substantiation I need, whether the decision is appealable, whether it&#x27;s a grant or a loan, and how to apply.&quot;</div></td>
+          <td class="pri-cell pri-p1">P1</td>
+          <td class="evidence-cell"><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 8: Handle overpayments &amp; underpayments</div><div class="need-text">Request exemption from repayment. &quot;Let me request an exemption alongside the existing phone channel — capturing the factors the director uses (administrative error, my disclosure history, my capacity).&quot;</div></td>
+          <td class="pri-cell pri-p1">P1</td>
+          <td class="evidence-cell"><span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 8: Handle overpayments &amp; underpayments</div><div class="need-text">Voluntary repayment warning. &quot;Warn me strongly before I voluntarily repay — I&#x27;d be waiving my appeal rights.&quot;</div></td>
+          <td class="pri-cell pri-p1">P1</td>
+          <td class="evidence-cell"><span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 8: Handle overpayments &amp; underpayments</div><div class="need-text">Underpayment notice. &quot;Tell me if I was underpaid by the program, why, when, how much, and whether it&#x27;s coming to me or being applied to an existing debt.&quot;</div></td>
+          <td class="pri-cell pri-p1">P1</td>
+          <td class="evidence-cell"><span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 10: Appeal a decision</div><div class="need-text">&quot;During administrative review, show me what&#x27;s on file and let me submit additional information.&quot;</div></td>
+          <td class="pri-cell pri-p1">P1</td>
+          <td class="evidence-cell"><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span> + program knowledge</td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 10: Appeal a decision</div><div class="need-text">&quot;Tell me where my case is — granular through administrative review, then &#x27;in formal appeal&#x27; and finally the outcome.&quot;</div></td>
+          <td class="pri-cell pri-p1">P1</td>
+          <td class="evidence-cell"><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> + program knowledge</td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 11: Transition off the program</div><div class="need-text">&quot;Tell me what happens when I leave: last payment, what&#x27;s owed or refunded, when my health coverage ends, and how to come back if my situation changes.&quot;</div></td>
+          <td class="pri-cell pri-p1">P1</td>
+          <td class="evidence-cell"><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 11: Transition off the program</div><div class="need-text">&quot;Give the family or estate representative authorized access and a clear, dignified path through funeral benefits and file closure.&quot;</div></td>
+          <td class="pri-cell pri-p1">P1</td>
+          <td class="evidence-cell"><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span> + tech architecture</td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Cross-cutting</div><div class="need-text">Trust signals. Plain language, no surprise re-asking, explicit consent, predictable navigation, no dark patterns, clear pathway out (cancel, withdraw, opt out).</div></td>
+          <td class="pri-cell pri-p1">P1</td>
+          <td class="evidence-cell"><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span> <span class="pill" style="background:#fde2e2;color:#7a0d0d" title="Discourse — public discourse review (§6): news, advocacy organisations, Alberta Ombudsman case summaries, op-eds">D</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Cross-cutting</div><div class="need-text">Error tolerance for high-cost-of-error users. A delayed banking-change confirmation, a misrouted document, or a silent hold can mean missed rent. Confirmations are reliable. Reversible actions are reversible. Critical actions are confirmed by a second channel.</div></td>
+          <td class="pri-cell pri-p1">P1</td>
+          <td class="evidence-cell"><span class="pill" style="background:#fde2e2;color:#7a0d0d" title="Discourse — public discourse review (§6): news, advocacy organisations, Alberta Ombudsman case summaries, op-eds">D</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Cross-cutting</div><div class="need-text">A persistent record. Everything submitted, every decision, every payment is visible to the recipient (and authorized third parties) for the life of the file.</div></td>
+          <td class="pri-cell pri-p1">P1</td>
+          <td class="evidence-cell"><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Cross-cutting</div><div class="need-text">Notification preferences. Let me add and verify an SMS number (since Alberta.ca account only gives email), choose which channels for which notification types, and opt out of non-essential notifications.</div></td>
+          <td class="pri-cell pri-p1">P1</td>
+          <td class="evidence-cell"><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span> + program knowledge</td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Cross-cutting</div><div class="need-text">Secure messaging. Let me ask a question about my file without phoning. First surfaces in Stage 3 but applies across the post-decision journey. Alongside the existing phone channel, not a replacement.</div></td>
+          <td class="pri-cell pri-p1">P1</td>
+          <td class="evidence-cell"><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span> <span class="pill" style="background:#fde2e2;color:#7a0d0d" title="Discourse — public discourse review (§6): news, advocacy organisations, Alberta Ombudsman case summaries, op-eds">D</span></td>
+        </tr>
+    </tbody>
+  </table>
+
+  <h2 id="p2" class="pri-header pri-p2-header">P2 — 11 needs</h2>
+  <table class="needs-table">
+    <thead>
+      <tr><th>Need (with originating section)</th><th>Priority</th><th>Evidence</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><div class="stage-tag">Stage 5: Receive benefits &amp; manage the account</div><div class="need-text">&quot;Let me request a replacement Alberta Adult Health Benefit card.&quot;</div></td>
+          <td class="pri-cell pri-p2">P2</td>
+          <td class="evidence-cell"><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 5: Receive benefits &amp; manage the account</div><div class="need-text">&quot;Generate a formal proof-of-enrollment letter on demand.&quot;</div></td>
+          <td class="pri-cell pri-p2">P2</td>
+          <td class="evidence-cell">Program knowledge</td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 5: Receive benefits &amp; manage the account</div><div class="need-text">&quot;Download my annual tax slip.&quot;</div></td>
+          <td class="pri-cell pri-p2">P2</td>
+          <td class="evidence-cell">Program knowledge</td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 6: Report changes &amp; meet obligations</div><div class="need-text">&quot;Let me upload supporting documents to a single, persistent record I can refer back to.&quot;</div></td>
+          <td class="pri-cell pri-p2">P2</td>
+          <td class="evidence-cell"><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 6: Report changes &amp; meet obligations</div><div class="need-text">&quot;Let me see what I&#x27;ve reported recently — when, what type — so I can confirm I told you about that change.&quot;</div></td>
+          <td class="pri-cell pri-p2">P2</td>
+          <td class="evidence-cell">Inferred + program-integrity caveat</td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 6: Report changes &amp; meet obligations</div><div class="need-text">&quot;Show me my file review schedule — financial (annual) and medical (varies per case) — with what I&#x27;ll need for each and reminders before they&#x27;re due.&quot;</div></td>
+          <td class="pri-cell pri-p2">P2</td>
+          <td class="evidence-cell"><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span> + program knowledge</td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 8: Handle overpayments &amp; underpayments</div><div class="need-text">Repayment agreement self-service. &quot;Let me set up or change a repayment agreement from the portal — alongside existing channels.&quot;</div></td>
+          <td class="pri-cell pri-p2">P2</td>
+          <td class="evidence-cell"><span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 10: Appeal a decision</div><div class="need-text">&quot;Connect me to the Office of the Disability Advocate and the Alberta Ombudsman from inside the portal.&quot;</div></td>
+          <td class="pri-cell pri-p2">P2</td>
+          <td class="evidence-cell"><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 11: Transition off the program</div><div class="need-text">&quot;Show me what changes if I move out of Alberta.&quot;</div></td>
+          <td class="pri-cell pri-p2">P2</td>
+          <td class="evidence-cell"><span class="pill policy" title="Policy — AISH Policy Manual (manuals.alberta.ca/aish-policy-manual) and related alberta.ca AISH/ADAP pages">P</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Stage 11: Transition off the program</div><div class="need-text">&quot;Point me to the next support I might qualify for.&quot;</div></td>
+          <td class="pri-cell pri-p2">P2</td>
+          <td class="evidence-cell"><span class="pill evidence" title="Service map — ALSS service map data (alss.json, alss_dia.json, alss_legislation.json)">SM</span> <span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span></td>
+        </tr>
+        <tr>
+          <td><div class="stage-tag">Cross-cutting</div><div class="need-text">Multilingual support. Beyond English — at minimum, machine translation that doesn&#x27;t strip meaning; ideally professionally translated for the most-used languages in the AISH population.</div></td>
+          <td class="pri-cell pri-p2">P2</td>
+          <td class="evidence-cell"><span class="pill bench" title="Benchmark — comparable social-assistance and disability portals: SSA my Social Security, UK GOV.UK PIP, Code for America Integrated Benefits">B</span> <span class="pill" style="background:#fde2e2;color:#7a0d0d" title="Discourse — public discourse review (§6): news, advocacy organisations, Alberta Ombudsman case summaries, op-eds">D</span></td>
+        </tr>
+    </tbody>
+  </table>
+
+<footer>
+  <p>Generated from the main user-needs draft. Re-generate after each version bump to keep priorities in sync.</p>
+  <p>Evidence legend (also surfaced as tooltips on chips): <strong>SM</strong> = service map · <strong>P</strong> = policy manual · <strong>B</strong> = benchmark · <strong>D</strong> = public discourse · plus inline notes for tech architecture, program knowledge, equity principle, and the original brief.</p>
+</footer>
+
+</div>
+</body>
+</html>

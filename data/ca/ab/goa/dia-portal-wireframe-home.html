@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DIA Portal — Home wireframe (v0.2, real GoA components)</title>
+
+<!-- Brand fonts — Acumin Pro from Adobe Typekit (GoA kit) -->
+<link rel="stylesheet" href="https://use.typekit.net/nur5yta.css">
+
+<!-- Roboto Mono for numeric display (--goa-font-family-number) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- GoA Design System styles (tokens + component CSS) -->
+<link rel="stylesheet" href="https://unpkg.com/@abgov/web-components@2.2.0/index.css">
+
+<!-- Ionicons used by the design system -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<!-- GoA Design System web components (registers all goa-* tags globally) -->
+<script type="module" src="https://unpkg.com/@abgov/web-components@2.2.0/index.js"></script>
+
+<style>
+  body {
+    margin: 0;
+    font-family: var(--goa-font-family-sans, -apple-system, BlinkMacSystemFont, sans-serif);
+    background: var(--goa-color-surface-page, #f8f8f8);
+    color: var(--goa-color-text-default, #1a1a1a);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* Wireframe annotation banner (not part of production UI) */
+  .wf-banner {
+    background: #fffbea;
+    border-bottom: 1px solid #e7d493;
+    padding: 12px 24px;
+    font-size: 13px;
+    color: #7a5a00;
+  }
+  .wf-banner code {
+    background: #fef3c7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 12px;
+  }
+
+  /* Layout — uses GoA spacing tokens */
+  .page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--goa-space-l, 1.5rem) var(--goa-space-l, 1.5rem) var(--goa-space-3xl, 4rem);
+  }
+  .greeting {
+    margin-bottom: var(--goa-space-l, 1.5rem);
+  }
+  .greeting h1 {
+    font-family: var(--goa-font-family-sans);
+    font-weight: var(--goa-font-weight-bold, 700);
+    font-size: var(--goa-font-size-8, 2rem);
+    line-height: var(--goa-line-height-6, 2.5rem);
+    margin: 0 0 var(--goa-space-2xs, 0.25rem);
+    letter-spacing: var(--goa-letter-spacing-l, -0.078125rem);
+  }
+  .greeting .meta {
+    color: var(--goa-color-text-secondary, #6f6f6f);
+    font-size: var(--goa-font-size-3, 1rem);
+  }
+  .greeting .meta strong {
+    color: var(--goa-color-text-default);
+    font-weight: var(--goa-font-weight-semi-bold, 600);
+  }
+
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--goa-space-l, 1.5rem);
+    margin-top: var(--goa-space-l, 1.5rem);
+  }
+  @media (max-width: 900px) {
+    .dashboard-grid { grid-template-columns: 1fr; }
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+    gap: var(--goa-space-l, 1.5rem);
+  }
+  /* Force goa-card to behave as block element with explicit margin
+     (web components in shadow DOM can ignore flex gap inconsistently) */
+  goa-card {
+    display: block;
+  }
+  .col > goa-card + goa-card {
+    margin-top: var(--goa-space-l, 1.5rem);
+  }
+
+  /* Card content helpers */
+  .card-eyebrow {
+    color: var(--goa-color-text-secondary);
+    font-size: var(--goa-font-size-1, 0.75rem);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: var(--goa-font-weight-semi-bold, 600);
+    margin: 0 0 var(--goa-space-xs, 0.5rem);
+  }
+  .pay-amount {
+    font-family: var(--goa-font-family-number, "Roboto Mono", monospace);
+    font-size: var(--goa-font-size-10, 3rem);
+    font-weight: var(--goa-font-weight-semi-bold, 600);
+    line-height: 1.1;
+    margin: 0;
+    color: var(--goa-color-text-default);
+  }
+  .pay-when {
+    color: var(--goa-color-text-secondary);
+    margin: var(--goa-space-2xs, 0.25rem) 0 var(--goa-space-m, 1rem);
+    font-size: var(--goa-font-size-3, 1rem);
+  }
+  .pay-row {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--goa-space-2xs, 0.25rem) 0;
+    font-size: var(--goa-font-size-3, 1rem);
+  }
+  .pay-row .label { color: var(--goa-color-text-secondary); }
+  .pay-row.total {
+    border-top: 1px solid var(--goa-color-greyscale-200, #cdcdcd);
+    margin-top: var(--goa-space-xs, 0.5rem);
+    padding-top: var(--goa-space-s, 0.75rem);
+    font-weight: var(--goa-font-weight-semi-bold, 600);
+  }
+
+  .activity-row {
+    padding: var(--goa-space-s, 0.75rem) 0;
+    border-top: 1px solid var(--goa-color-greyscale-150, #e9e9e9);
+    display: flex;
+    justify-content: space-between;
+    gap: var(--goa-space-s, 0.75rem);
+    font-size: var(--goa-font-size-3, 1rem);
+  }
+  .activity-row:first-child {
+    border-top: none;
+    padding-top: var(--goa-space-2xs, 0.25rem);
+  }
+  .activity-row .when {
+    color: var(--goa-color-text-secondary);
+    font-size: var(--goa-font-size-2, 0.875rem);
+    white-space: nowrap;
+  }
+
+  .quick-action {
+    display: flex;
+    align-items: center;
+    gap: var(--goa-space-xs, 0.5rem);
+    padding: var(--goa-space-s, 0.75rem) var(--goa-space-m, 1rem);
+    border: 1px solid var(--goa-color-greyscale-200, #cdcdcd);
+    border-radius: var(--goa-border-radius-m, 0.5rem);
+    color: var(--goa-color-interactive-default, #006dcc);
+    text-decoration: none;
+    background: var(--goa-color-surface-card, #fff);
+    font-size: var(--goa-font-size-3, 1rem);
+    font-weight: var(--goa-font-weight-medium, 500);
+    cursor: pointer;
+  }
+  .quick-action + .quick-action { margin-top: var(--goa-space-xs, 0.5rem); }
+  .quick-action:hover {
+    background: var(--goa-color-interactive-secondary, #e0f1ff);
+    border-color: var(--goa-color-interactive-default);
+  }
+  .quick-action goa-icon { color: var(--goa-color-interactive-default); }
+
+  .notification-row {
+    padding: var(--goa-space-s, 0.75rem) 0;
+    border-top: 1px solid var(--goa-color-greyscale-150, #e9e9e9);
+    font-size: var(--goa-font-size-2, 0.875rem);
+  }
+  .notification-row:first-child {
+    border-top: none;
+    padding-top: var(--goa-space-2xs, 0.25rem);
+  }
+  .notification-row .nf-title {
+    font-weight: var(--goa-font-weight-semi-bold, 600);
+    color: var(--goa-color-text-default);
+    margin-bottom: 2px;
+  }
+  .notification-row .nf-meta {
+    color: var(--goa-color-text-secondary);
+    font-size: var(--goa-font-size-1, 0.75rem);
+  }
+  .notification-row.unread {
+    border-left: 3px solid var(--goa-color-interactive-default);
+    padding-left: var(--goa-space-s, 0.75rem);
+    margin-left: calc(-1 * var(--goa-space-s, 0.75rem));
+  }
+
+  .rep-row {
+    display: flex;
+    align-items: center;
+    gap: var(--goa-space-s, 0.75rem);
+    padding: var(--goa-space-xs, 0.5rem) 0;
+  }
+  .rep-avatar {
+    width: 32px;
+    height: 32px;
+    background: var(--goa-color-interactive-secondary, #e0f1ff);
+    color: var(--goa-color-interactive-hover, #045092);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--goa-font-weight-semi-bold, 600);
+    font-size: var(--goa-font-size-2, 0.875rem);
+  }
+  .rep-name {
+    font-weight: var(--goa-font-weight-semi-bold, 600);
+  }
+  .rep-role {
+    color: var(--goa-color-text-secondary);
+    font-size: var(--goa-font-size-1, 0.75rem);
+  }
+</style>
+</head>
+<body>
+
+<!-- Wireframe annotation banner (not part of production UI) -->
+<div class="wf-banner">
+  <strong>Wireframe v0.4</strong> — using actual <code>@abgov/web-components</code> v2.2.0 loaded from unpkg CDN. State depicted: steady-state recipient with one active action item. <strong>Note:</strong> Acumin Pro brand fonts are domain-restricted to alberta.ca via Adobe Typekit — they fall back to system fonts when this file is opened locally (<code>file://</code>). Fonts will render correctly once deployed.
+</div>
+
+<!-- Alberta.ca microsite header — small bar at top of every GoA site -->
+<goa-microsite-header type="live"></goa-microsite-header>
+
+<!-- App header — version 2 pattern. Nav items are direct <a slot="navigation"> children. -->
+<goa-app-header version="2" url="/" heading="Disability Income Assistance">
+  <a slot="navigation" href="#" aria-current="page">Dashboard</a>
+  <a slot="navigation" href="#">Payments</a>
+  <a slot="navigation" href="#">Reports &amp; changes</a>
+  <a slot="navigation" href="#">Documents</a>
+  <a slot="navigation" href="#">Appeals</a>
+  <a slot="navigation" href="#">Settings</a>
+</goa-app-header>
+
+<main class="page">
+
+  <!-- Greeting -->
+  <div class="greeting">
+    <h1>Hello, Jane</h1>
+    <div class="meta">You're on <strong>AISH</strong> · Receiving benefits since March 2018</div>
+  </div>
+
+  <!-- Action needed callout — real goa-callout component -->
+  <goa-callout type="important" heading="Your monthly income report is due in 5 days">
+    Report any employment income for November. If you had no income, you still need to confirm that.
+    <div style="margin-top: var(--goa-space-m); display: flex; gap: var(--goa-space-xs); flex-wrap: wrap;">
+      <goa-button type="primary">Submit my income report</goa-button>
+      <goa-button type="tertiary">Remind me later</goa-button>
+    </div>
+  </goa-callout>
+
+  <!-- Two-column dashboard -->
+  <div class="dashboard-grid">
+
+    <!-- Main column -->
+    <div class="col">
+
+      <!-- Next payment card -->
+      <goa-card>
+        <p class="card-eyebrow">Your next payment</p>
+        <div class="pay-amount">$1,940.00</div>
+        <div class="pay-when">scheduled to arrive Tuesday, December 1, 2026</div>
+
+        <goa-divider></goa-divider>
+
+        <div style="margin-top: var(--goa-space-s);">
+          <div class="pay-row"><span class="label">Living allowance</span><span>$1,940.00</span></div>
+          <div class="pay-row"><span class="label">Child benefit</span><span>—</span></div>
+          <div class="pay-row"><span class="label">Personal benefits</span><span>—</span></div>
+          <div class="pay-row"><span class="label">Deductions</span><span>$0.00</span></div>
+          <div class="pay-row total"><span>Total</span><span>$1,940.00</span></div>
+        </div>
+
+        <div style="margin-top: var(--goa-space-m); display: flex; gap: var(--goa-space-xs);">
+          <goa-button type="secondary">See payment details</goa-button>
+          <goa-button type="tertiary" trailingicon="arrow-forward">Payment history</goa-button>
+        </div>
+      </goa-card>
+
+      <!-- Recent activity card -->
+      <goa-card>
+        <p class="card-eyebrow">Recent activity</p>
+        <div class="activity-row">
+          <span>Monthly payment received — $1,940.00</span>
+          <span class="when">Nov 1, 2026</span>
+        </div>
+        <div class="activity-row">
+          <span>Address change request approved</span>
+          <span class="when">Oct 22, 2026</span>
+        </div>
+        <div class="activity-row">
+          <span>Income report submitted — October</span>
+          <span class="when">Oct 8, 2026</span>
+        </div>
+        <div class="activity-row">
+          <span>Monthly payment received — $1,940.00</span>
+          <span class="when">Oct 1, 2026</span>
+        </div>
+        <div style="margin-top: var(--goa-space-m);">
+          <goa-button type="tertiary" trailingicon="arrow-forward">View all activity</goa-button>
+        </div>
+      </goa-card>
+
+    </div>
+
+    <!-- Sidebar -->
+    <div class="col">
+
+      <!-- Quick actions card -->
+      <goa-card>
+        <p class="card-eyebrow">Quick actions</p>
+        <a class="quick-action"><goa-icon type="add-circle"></goa-icon>Report a change</a>
+        <a class="quick-action"><goa-icon type="cloud-upload"></goa-icon>Upload a document</a>
+        <a class="quick-action"><goa-icon type="chatbubbles"></goa-icon>Message my worker</a>
+        <a class="quick-action"><goa-icon type="document-text"></goa-icon>Download proof of enrollment</a>
+      </goa-card>
+
+      <!-- Notifications snapshot card -->
+      <goa-card>
+        <p class="card-eyebrow">Notifications</p>
+        <div class="notification-row unread">
+          <div class="nf-title">Income report due in 5 days</div>
+          <div class="nf-meta">Reminder · today, 8:00 AM</div>
+        </div>
+        <div class="notification-row unread">
+          <div class="nf-title">Your CDB application status was updated</div>
+          <div class="nf-meta">Federal benefits · 2 days ago</div>
+        </div>
+        <div class="notification-row unread">
+          <div class="nf-title">Address change approved</div>
+          <div class="nf-meta">Account · Oct 22</div>
+        </div>
+        <div style="margin-top: var(--goa-space-m);">
+          <goa-button type="tertiary" trailingicon="arrow-forward">View all notifications</goa-button>
+        </div>
+      </goa-card>
+
+      <!-- Authorized representative card -->
+      <goa-card>
+        <p class="card-eyebrow">Authorized to act on my file</p>
+        <div class="rep-row">
+          <span class="rep-avatar">MS</span>
+          <div>
+            <div class="rep-name">Mary Smith</div>
+            <div class="rep-role">Financial administrator · since 2021</div>
+          </div>
+        </div>
+        <div style="margin-top: var(--goa-space-s);">
+          <goa-button type="tertiary" trailingicon="arrow-forward">Manage representatives</goa-button>
+        </div>
+      </goa-card>
+
+    </div>
+  </div>
+
+</main>
+
+<!-- GoA footer -->
+<goa-footer>
+  <span slot="copyright">© 2026 Government of Alberta</span>
+  <a slot="meta" href="#">Privacy</a>
+  <a slot="meta" href="#">Accessibility</a>
+  <a slot="meta" href="#">Contact</a>
+  <a slot="meta" href="#">Sign out</a>
+</goa-footer>
+
+</body>
+</html>

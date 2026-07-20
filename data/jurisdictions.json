@@ -1,9 +1,19 @@
 [
   {
-    "code": "ab",
+    "code": "goa",
     "name": "Government of Alberta",
     "short_name": "Alberta",
     "country": "CA",
-    "type": "province"
+    "type": "province",
+    "path": "ca/ab/goa"
+  },
+  {
+    "code": "calgary",
+    "name": "City of Calgary",
+    "short_name": "Calgary",
+    "country": "CA",
+    "type": "municipality",
+    "parent": "goa",
+    "path": "ca/ab/calgary"
   }
 ]

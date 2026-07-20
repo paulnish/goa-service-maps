@@ -6,3 +6,11 @@ node_modules/
 
 # Local Netlify folder
 .netlify
+*.pyc
+__pycache__/
+
+# Backup folder (legacy files, analysis scripts)
+_backup/
+
+# SQLite databases
+*.db

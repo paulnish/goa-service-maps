@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DIA Portal — MVP Navigation Map</title>
+<style>
+  :root {
+    --bg: #fafaf7;
+    --ink: #1a1a1a;
+    --muted: #555;
+    --line: #e2e2dc;
+    --soft: #f3f1ea;
+    --accent: #0070c0;
+    --warn: #bf8f00;
+    --good: #548235;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    margin: 0;
+    padding: 48px 32px;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 1200px; margin: 0 auto; }
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 0 0 8px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--ink);
+  }
+  .meta { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+
+  /* Entry hierarchy */
+  .entry-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 40px;
+  }
+  .hub {
+    background: white;
+    border: 1px solid var(--line);
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-align: center;
+    min-width: 280px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .hub.primary {
+    background: #0f172a;
+    color: white;
+    border-color: #0f172a;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .arrow {
+    color: #999;
+    font-size: 18px;
+  }
+
+  /* Groups grid */
+  .groups {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  @media (max-width: 880px) {
+    .groups { grid-template-columns: 1fr; }
+  }
+
+  .group {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 20px 24px;
+  }
+  .group-head {
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--line);
+  }
+  .group-head h3 {
+    margin: 0 0 4px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+  }
+  .group-head .blurb {
+    color: var(--muted);
+    font-size: 13px;
+    margin: 0;
+  }
+
+  /* Section card within group */
+  .section {
+    background: #f8f8f4;
+    border-left: 3px solid var(--accent);
+    padding: 12px 14px;
+    border-radius: 0 4px 4px 0;
+    margin-bottom: 12px;
+  }
+  .section:last-child { margin-bottom: 0; }
+  .section.ephemeral {
+    border-left-color: var(--warn);
+    background: #fff7ed;
+  }
+  .section.always {
+    border-left-color: var(--warn);
+    background: #fff7ed;
+  }
+  .section.settings {
+    border-left-color: var(--good);
+    background: #f3f8eb;
+  }
+  .section h4 {
+    margin: 0 0 6px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .section .stage-tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    font-weight: 600;
+    margin-right: 8px;
+  }
+  .section ul {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .section ul li { margin-bottom: 3px; color: #333; }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 13px;
+  }
+  code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f5f5f0;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Companion to user-needs draft v0.16 · MVP navigation map · v0.2</div>
+  <h1>Disability Income Assistance Portal — MVP Navigation Map</h1>
+  <p class="meta">Information architecture for the MVP. Shows what's where, grouped by how the recipient relates to it: things they come back to often, discrete process moments, things always at hand, and account settings. For the journey through time — when and why these get used — see <code>dia-portal-mvp-recipient-lifecycle.html</code>.</p>
+
+  <div class="entry-stack">
+    <div class="hub">Sign in via Alberta.ca account</div>
+    <div class="arrow">↓</div>
+    <div class="hub primary">Home / Dashboard</div>
+  </div>
+
+  <div class="groups">
+
+    <!-- Day-to-day -->
+    <div class="group">
+      <div class="group-head">
+        <h3>Day-to-day</h3>
+        <p class="blurb">Where most recipients spend most of their time on the portal.</p>
+      </div>
+      <div class="section">
+        <h4><span class="stage-tag">Stage 5</span>Payments &amp; account</h4>
+        <ul>
+          <li>Next payment + breakdown</li>
+          <li>Payment history + downloadable monthly remittance statements</li>
+          <li>Why was my payment different? (holds, deductions)</li>
+          <li>Request account changes (address, banking, contact)</li>
+          <li>Proof of enrollment letter</li>
+          <li>Annual tax slip</li>
+          <li>Replacement health benefits card</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h4><span class="stage-tag">Stage 6</span>Reports &amp; changes</h4>
+        <ul>
+          <li>Report a change in circumstances</li>
+          <li>Submit monthly income statement</li>
+          <li>My reporting cadence + reminders</li>
+          <li>Post-submission impact</li>
+          <li>Reporting history</li>
+          <li>File review schedule</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Process-driven -->
+    <div class="group">
+      <div class="group-head">
+        <h3>Process-driven moments</h3>
+        <p class="blurb">Discrete events triggered by where the recipient is in the lifecycle.</p>
+      </div>
+      <div class="section">
+        <h4><span class="stage-tag">Stage 3</span>Wait &amp; track the assessment</h4>
+        <ul>
+          <li>File status timeline</li>
+          <li>Action needed from me</li>
+          <li>Documents I've submitted</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h4><span class="stage-tag">Stage 4</span>Commencement</h4>
+        <ul>
+          <li>What's happening with my file behind the scenes</li>
+          <li>Upload documents to my worker</li>
+          <li>Retro payment outcome</li>
+        </ul>
+      </div>
+      <div class="section ephemeral">
+        <h4><span class="stage-tag">Stage 9</span>Re-apply during transition <em style="font-weight:normal;color:var(--muted);font-size:12px">(ephemeral)</em></h4>
+        <ul>
+          <li>Re-application options + what it would mean</li>
+          <li>Track re-application status</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h4><span class="stage-tag">Stage 10</span>Appeals</h4>
+        <ul>
+          <li>How to challenge a decision</li>
+          <li>File Notice of Appeal (30-day countdown)</li>
+          <li>Submit evidence during admin review</li>
+          <li>Case status</li>
+          <li>Connect to Advocate / Ombudsman</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Always available -->
+    <div class="group">
+      <div class="group-head">
+        <h3>Always available</h3>
+        <p class="blurb">Cross-cutting affordances surfaced from anywhere in the portal — not destinations you navigate to from Home in the usual sense.</p>
+      </div>
+      <div class="section always">
+        <h4>Notifications inbox</h4>
+        <ul>
+          <li>Status changes</li>
+          <li>Action-needed alerts</li>
+          <li>Reporting reminders</li>
+          <li>Deadline countdowns</li>
+        </ul>
+      </div>
+      <div class="section always">
+        <h4>Secure messaging</h4>
+        <ul>
+          <li>Ask a question about my file without phoning</li>
+          <li>Conversation history with my worker</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Settings -->
+    <div class="group">
+      <div class="group-head">
+        <h3>Settings</h3>
+        <p class="blurb">Account-level preferences and access management. Not visited often, but high-trust when they are.</p>
+      </div>
+      <div class="section settings">
+        <h4>Notification preferences</h4>
+        <ul>
+          <li>Add and verify my SMS number</li>
+          <li>Choose channels per notification type (SMS / email / both)</li>
+          <li>Opt out of non-essential notifications</li>
+        </ul>
+      </div>
+      <div class="section settings">
+        <h4>Authorized representatives</h4>
+        <ul>
+          <li>Who can act on my file (trustees, FAs, attorneys, family)</li>
+          <li>Role and permissions per representative</li>
+          <li>Audit trail of actions taken on my behalf</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Generated as a first-cut IA visualization to support design build planning. Iterate as the MVP scope or screen list evolves. Companion to <code>dia-portal-user-needs.html</code> (v0.16) and <code>dia-portal-mvp-scoping.html</code>.</p>
+    <p><strong>What changed from v0.1:</strong> previous Mermaid version was unreadable due to the volume of nodes. Rebuilt as a card-based sitemap with explicit groupings.</p>
+  </footer>
+</div>
+</body>
+</html>

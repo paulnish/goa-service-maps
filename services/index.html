@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Find a Government Service — Alberta</title>
+<title>Find a Service — Service Directory</title>
+<link rel="stylesheet" href="../css/style.css" />
 <style>
   :root {
     --blue-900: #0a3161;
@@ -312,8 +313,23 @@
     font-weight: 500;
     white-space: nowrap;
   }
-  .tag-jurisdiction { background: #dbeafe; color: #1e40af; }
-  .tag-ministry { background: var(--gray-100); color: var(--gray-600); }
+  .svc-source {
+    margin-top: 8px;
+    font-size: 11px;
+    color: var(--gray-500);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .svc-source .src-sep { color: var(--gray-300); }
+  .svc-source a {
+    color: var(--gray-500);
+    text-decoration: none;
+  }
+  .svc-source a:hover {
+    color: var(--blue-link);
+    text-decoration: underline;
+  }
   .tag-both { background: var(--green-50); color: var(--green-600); }
   .tag-relationship { background: var(--amber-100); color: var(--amber-800); cursor: help; }
   .tag-foundational { background: #faf5ff; color: #7c3aed; }
@@ -476,9 +492,10 @@
 </style>
 </head>
 <body>
+<div class="nav-bar"><a href="/">All Service Maps</a> <span class="sep">/</span> <span class="current">Find a Service</span></div>
 
 <div class="header">
-  <div class="header-badge">Government of Alberta</div>
+  <div class="header-badge">Service Directory</div>
   <h1>Find a government service</h1>
   <p>Browse by topic below, or search for what you need.</p>
   <div class="search-wrap">
@@ -531,13 +548,12 @@
 </div>
 
 <div class="footer">
-  This is a prototype. Data reflects the Government of Alberta's current ministry structure.
+  This is a prototype. Data reflects mapped jurisdictions and their current organizational structures.
 </div>
 
 <script>
 // ── Config ───────────────────────────────────────
-const DATA_BASE = '../data/ab';
-const JURISDICTION = 'Alberta';
+const DATA_ROOT = '../data';
 
 const DOMAIN_ICONS = {
   health_wellbeing: '🏥', family_relationships: '👨‍👩‍👧', education_training: '🎓',
@@ -628,24 +644,40 @@ const activeUserGroups = new Set();
 let allUserGroups = []; // populated after data loads
 let ugExpanded = false;
 
+// ── Helper: load entity list for a jurisdiction ──
+async function loadEntities(code) {
+  for (const file of ['entities.json', 'ministries.json']) {
+    try {
+      const resp = await fetch(`${DATA_ROOT}/${code}/${file}`);
+      if (resp.ok) return await resp.json();
+    } catch (e) { /* try next */ }
+  }
+  return [];
+}
+
 // ── Init ─────────────────────────────────────────
 async function init() {
-  const [taxResp, minResp] = await Promise.all([
-    fetch(`${DATA_BASE}/taxonomy.json`),
-    fetch(`${DATA_BASE}/ministries.json`)
+  // Load taxonomy (shared) and jurisdictions list
+  const [taxResp, jResp] = await Promise.all([
+    fetch(`${DATA_ROOT}/taxonomy.json`),
+    fetch(`${DATA_ROOT}/jurisdictions.json`)
   ]);
   taxonomy = await taxResp.json();
-  const ministries = await minResp.json();
+  const jurisdictions = await jResp.json();
 
-  // Load all ministry data in parallel
-  const loads = ministries
-    .filter(m => !m.is_test)
-    .map(m => fetch(`${DATA_BASE}/${m.prefix}.json`)
-      .then(r => r.json())
-      .then(data => extractServices(data, m.prefix, m.short_name))
-      .catch(e => console.warn(`Skipped ${m.prefix}:`, e))
-    );
-  await Promise.all(loads);
+  // For each jurisdiction, load its entities then each entity's data
+  for (const j of jurisdictions) {
+    const jName = j.short_name || j.name;
+    const entities = await loadEntities(j.path || j.code);
+    const loads = entities
+      .filter(e => !e.is_test)
+      .map(e => fetch(`${DATA_ROOT}/${j.path || j.code}/${e.prefix}.json`)
+        .then(r => r.json())
+        .then(data => extractServices(data, e.prefix, e.short_name || e.name, jName))
+        .catch(err => console.warn(`Skipped ${j.path || j.code}/${e.prefix}:`, err))
+      );
+    await Promise.all(loads);
+  }
 
   buildFilterChips();
   updateCounts();
@@ -656,14 +688,14 @@ async function init() {
 }
 
 // ── Extract services from ministry data ──────────
-function extractServices(data, prefix, ministryName) {
+function extractServices(data, prefix, ministryName, jurisdictionName) {
   function add(svc, type, goalNum, msNum) {
     if (typeof svc === 'string' || !svc.taxonomy) return;
     allServices.push({
       ...svc,
       ministry: prefix,
       ministryName,
-      jurisdiction: JURISDICTION,
+      jurisdiction: jurisdictionName,
       serviceType: type,
       _goal: goalNum,
       _ms: msNum
@@ -931,19 +963,24 @@ function renderServiceItem(s) {
     return `<span class="tag tag-ug${hl}">${g}</span>`;
   }).join('') : '';
 
+  const tagsHtml = [
+    s.serviceType === 'foundational' ? '<span class="tag tag-foundational">Foundational</span>' : '',
+    s.taxonomy.track === 'both' ? '<span class="tag tag-both">Individuals &amp; businesses</span>' : '',
+    ugHtml,
+    relHtml
+  ].filter(Boolean).join('');
+
   return `
     <div class="svc-item">
       <div class="svc-name">${s.name}</div>
       ${s.desc ? `<div class="svc-desc">${s.desc}</div>` : ''}
-      <div class="svc-tags">
-        <span class="tag tag-jurisdiction">${s.jurisdiction}</span>
-        <span class="tag tag-ministry">${s.ministryName}</span>
-        ${s.serviceType === 'foundational' ? '<span class="tag tag-foundational">Foundational</span>' : ''}
-        ${s.taxonomy.track === 'both' ? '<span class="tag tag-both">Individuals &amp; businesses</span>' : ''}
-        ${ugHtml}
-        ${relHtml}
-      </div>
+      ${tagsHtml ? `<div class="svc-tags">${tagsHtml}</div>` : ''}
       ${channelHtml ? `<div class="svc-channels">${channelHtml}</div>` : ''}
+      <div class="svc-source">
+        <span>${s.jurisdiction}</span>
+        <span class="src-sep">/</span>
+        <a href="/${s.ministry}/service-map">${s.ministryName}</a>
+      </div>
     </div>`;
 }
 

@@ -3,227 +3,231 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Ministries - Service Maps</title>
+    <title>Service Analysis</title>
     <link rel="stylesheet" href="css/style.css" />
     <style>
-      .view-toggle {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        background: #f0f2f5;
-        border-radius: 6px;
-        padding: 3px;
+      /* Landing page layout */
+      .landing-header {
+        background: #1a1a2e;
+        color: white;
+        padding: 48px 48px 40px;
       }
-      .view-toggle button {
-        padding: 5px 12px;
-        border: none;
-        border-radius: 4px;
-        background: transparent;
-        font-size: 13px;
-        color: #666;
-        cursor: pointer;
-        transition: background 0.15s, color 0.15s;
-      }
-      .view-toggle button.active {
-        background: white;
-        color: #00405c;
-        font-weight: 600;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-      }
-      .view-toggle button:hover:not(.active) {
-        color: #333;
-      }
-      .toolbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 24px;
-      }
-      .toolbar h2 {
-        font-size: 20px;
-        font-weight: 600;
-        color: #333;
-        margin: 0;
-      }
-
-      /* Card view */
-      .ministry-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 24px;
-      }
-      .ministry-card {
-        border: 1px solid #e0e0e0;
-        border-radius: 8px;
-        padding: 20px;
-        background: white;
-        transition: box-shadow 0.15s;
-      }
-      .ministry-card:hover {
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-      }
-      .ministry-card h3 {
-        font-size: 16px;
-        font-weight: 600;
+      .landing-header h1 {
+        font-size: 32px;
+        font-weight: 700;
         margin-bottom: 8px;
       }
-      .ministry-card h3 a {
-        color: #00405c;
-        text-decoration: none;
+      .landing-header p {
+        font-size: 15px;
+        color: rgba(255,255,255,0.75);
+        max-width: 640px;
+        line-height: 1.6;
       }
-      .ministry-card h3 a:hover {
-        text-decoration: underline;
+
+      .landing-sections {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 40px 48px 60px;
       }
-      .ministry-card .mc-name {
+
+      /* Section headers */
+      .section-block {
+        margin-bottom: 48px;
+      }
+      .section-block h2 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #1a1a2e;
+        margin-bottom: 6px;
+      }
+      .section-block .section-desc {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 20px;
+        max-width: 600px;
+      }
+
+      /* Find a Service card */
+      .find-service-card {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        background: white;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        padding: 28px 32px;
+        transition: box-shadow 0.15s;
+      }
+      .find-service-card:hover {
+        box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      }
+      .find-service-info {
+        flex: 1;
+      }
+      .find-service-info h3 {
+        font-size: 17px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 6px;
+      }
+      .find-service-info p {
         font-size: 13px;
         color: #666;
-        margin-bottom: 12px;
         line-height: 1.5;
       }
-      .ministry-card .mc-blurb {
-        font-size: 12px;
-        color: #888;
-        margin-bottom: 16px;
-        line-height: 1.5;
+      .find-service-links {
+        display: flex;
+        gap: 10px;
+        flex-shrink: 0;
       }
-      .ministry-card .mc-link {
+      .find-service-links a {
         display: inline-block;
-        padding: 8px 16px;
+        padding: 9px 18px;
         background: #00405c;
         color: white;
         text-decoration: none;
-        border-radius: 4px;
+        border-radius: 6px;
         font-size: 13px;
         font-weight: 500;
+        transition: background 0.15s;
       }
-      .ministry-card .mc-link:hover {
+      .find-service-links a:hover {
         background: #005a7a;
       }
-
-      /* List view */
-      .ministry-list {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-      }
-      .ministry-list-item {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        padding: 14px 16px;
-        border-bottom: 1px solid #eee;
-        transition: background 0.1s;
-      }
-      .ministry-list-item:first-child {
-        border-top: 1px solid #eee;
-      }
-      .ministry-list-item:hover {
-        background: #f8f9fa;
-      }
-      .ministry-list-item .ml-name {
-        flex: 1;
-        min-width: 0;
-      }
-      .ministry-list-item .ml-name a {
-        font-size: 15px;
-        font-weight: 600;
+      .find-service-links a.secondary {
+        background: white;
         color: #00405c;
+        border: 1px solid #ccc;
+      }
+      .find-service-links a.secondary:hover {
+        background: #f5f5f5;
+      }
+
+      /* Jurisdiction cards */
+      .jurisdiction-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+        gap: 24px;
+      }
+      .jurisdiction-card {
+        display: block;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        background: white;
+        overflow: hidden;
+        transition: box-shadow 0.15s, border-color 0.15s;
         text-decoration: none;
+        color: inherit;
+        padding: 24px 28px;
+        border-left: 5px solid transparent;
       }
-      .ministry-list-item .ml-name a:hover {
-        text-decoration: underline;
+      .jurisdiction-card:hover {
+        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        border-color: #ccc;
       }
-      .ministry-list-item .ml-blurb {
+      .jc-type {
         font-size: 12px;
         color: #888;
-        margin-top: 2px;
-        line-height: 1.4;
-      }
-      .ministry-list-item .ml-link {
-        flex-shrink: 0;
-        padding: 6px 14px;
-        background: #00405c;
-        color: white;
-        text-decoration: none;
-        border-radius: 4px;
-        font-size: 12px;
-        font-weight: 500;
-        white-space: nowrap;
-      }
-      .ministry-list-item .ml-link:hover {
-        background: #005a7a;
-      }
-
-      .hidden { display: none !important; }
-
-      /* Test data styling */
-      .test-badge {
-        display: inline-block;
-        font-size: 10px;
-        font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.5px;
-        background: #fef3c7;
-        color: #92400e;
-        padding: 2px 6px;
-        border-radius: 3px;
-        margin-left: 8px;
-        vertical-align: middle;
+        margin-bottom: 14px;
       }
-      .ministry-card.is-test,
-      .ministry-list-item.is-test {
-        opacity: 0.7;
-        border-style: dashed;
+      .jurisdiction-card h3 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #1a1a2e;
+        margin-bottom: 4px;
       }
-      .test-toggle {
+
+      /* Stats row */
+      .jc-stats {
         display: flex;
-        align-items: center;
-        gap: 6px;
-        font-size: 12px;
-        color: #888;
-        cursor: pointer;
-        user-select: none;
+        gap: 28px;
+        margin-bottom: 12px;
       }
-      .test-toggle input {
-        cursor: pointer;
+      .jc-stat {
+        display: flex;
+        flex-direction: column;
+      }
+      .jc-stat-value {
+        font-size: 26px;
+        font-weight: 700;
+        color: #1a1a2e;
+        line-height: 1.1;
+      }
+      .jc-stat-label {
+        font-size: 11px;
+        color: #888;
+        margin-top: 2px;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+      }
+
+      .jc-cta {
+        font-size: 13px;
+        font-weight: 500;
+        color: #00405c;
+      }
+      .jurisdiction-card:hover .jc-cta {
+        text-decoration: underline;
+      }
+
+      /* Responsive */
+      @media (max-width: 600px) {
+        .jurisdiction-grid {
+          grid-template-columns: 1fr;
+        }
+        .find-service-card {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 16px;
+        }
+        .landing-header, .landing-sections {
+          padding-left: 24px;
+          padding-right: 24px;
+        }
+        .jc-stats {
+          gap: 20px;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="nav-bar">
-      <span class="current">All Ministries</span>
+    <div class="landing-header">
+      <h1>Service Analysis</h1>
+      <p>Mapping how governments and public-sector organizations deliver services to citizens, using Kate Tarling's service mapping framework.</p>
     </div>
 
-    <div class="header">
-      <p class="subtitle">Government of Alberta</p>
-      <h1>Service Maps</h1>
-      <p>
-        Explore how Alberta government ministries deliver services to the
-        public.
-      </p>
-    </div>
-
-    <div class="container">
-      <div class="toolbar">
-        <h2>Ministries</h2>
-        <div style="display: flex; align-items: center; gap: 16px;">
-          <label class="test-toggle" id="testToggleLabel" class="hidden">
-            <input type="checkbox" id="showTest" /> Show test data
-          </label>
-          <div class="view-toggle">
-            <button id="btnCard" class="active" title="Card view">Cards</button>
-            <button id="btnList" title="List view">List</button>
+    <div class="landing-sections">
+      <!-- Section 1: Find a Service -->
+      <div class="section-block">
+        <h2>Find a Service</h2>
+        <p class="section-desc">Search, browse, or explore services across all mapped jurisdictions, organized by what citizens need to do.</p>
+        <div class="find-service-card">
+          <div class="find-service-info">
+            <h3>Service Directory</h3>
+            <p>Browse services by category, search across all organizations, or follow life-event pathways to find the right service.</p>
+          </div>
+          <div class="find-service-links">
+            <a href="/services/">Browse Services</a>
+            <a href="/services/search" class="secondary">Search</a>
+            <a href="/services/life-events" class="secondary">Life Events</a>
           </div>
         </div>
       </div>
-      <div id="ministryGrid" class="ministry-grid">
-        <div style="color: #888; font-size: 14px">Loading ministries…</div>
+
+      <!-- Section 2: Service Maps -->
+      <div class="section-block">
+        <h2>Service Maps</h2>
+        <p class="section-desc">Detailed maps showing how each organization structures its services, channels, and enabling legislation.</p>
+        <div id="jurisdictionGrid" class="jurisdiction-grid">
+          <div style="color: #888; font-size: 14px;">Loading jurisdictions...</div>
+        </div>
       </div>
-      <div id="ministryList" class="ministry-list hidden"></div>
     </div>
 
     <div class="footer">
-      <p>Government of Alberta Service Maps | March 2026</p>
+      <p>Service Analysis | July 2026 | Built with Kate Tarling's framework</p>
     </div>
 
     <script>
@@ -236,99 +240,125 @@
           .replace(/"/g, "&quot;");
       }
 
+      function pluralize(word, count) {
+        if (count === 1) return word.toLowerCase();
+        const w = word.toLowerCase();
+        if (w.endsWith("y")) return w.slice(0, -1) + "ies";
+        return w + "s";
+      }
+
+      // Load entities list for a jurisdiction
+      async function loadEntities(path) {
+        for (const file of ["entities.json", "ministries.json"]) {
+          try {
+            const resp = await fetch(`data/${path}/${file}`);
+            if (resp.ok) return await resp.json();
+          } catch (e) { /* try next */ }
+        }
+        return [];
+      }
+
+      // Load a single entity's data to count services
+      async function loadEntityData(path, prefix) {
+        try {
+          const resp = await fetch(`data/${path}/${prefix}.json`);
+          if (!resp.ok) return null;
+          return await resp.json();
+        } catch (e) { return null; }
+      }
+
+      // Count services within an entity's data
+      function countServices(data) {
+        if (!data || !data.goals) return { goals: 0, mainServices: 0, supportingServices: 0 };
+        let mainServices = 0, supportingServices = 0;
+        for (const goal of data.goals) {
+          if (!goal.main_services) continue;
+          mainServices += goal.main_services.length;
+          for (const ms of goal.main_services) {
+            if (ms.supporting) supportingServices += ms.supporting.length;
+          }
+        }
+        return { goals: data.goals.length, mainServices, supportingServices };
+      }
+
       document.addEventListener("DOMContentLoaded", async () => {
         try {
-          const resp = await fetch("data/ab/ministries.json");
-          if (!resp.ok) throw new Error("Failed to load ministries");
-          const ministries = await resp.json();
+          const jResp = await fetch("data/jurisdictions.json");
+          if (!jResp.ok) throw new Error("Failed to load jurisdictions");
+          const jurisdictions = await jResp.json();
 
-          // Sort alphabetically by short_name
-          ministries.sort((a, b) =>
-            a.short_name.localeCompare(b.short_name, "en", { sensitivity: "base" })
+          // Load config + entities for each jurisdiction
+          const jurisdictionData = await Promise.all(
+            jurisdictions.map(async (j) => {
+              const [config, entities] = await Promise.all([
+                fetch(`data/${j.path || j.code}/config.json`).then(r => r.ok ? r.json() : {}),
+                loadEntities(j.path || j.code)
+              ]);
+              return { ...j, config, entities };
+            })
           );
 
-          const grid = document.getElementById("ministryGrid");
-          const list = document.getElementById("ministryList");
-
-          const hasTestData = ministries.some((m) => m.is_test);
-          const testToggleLabel = document.getElementById("testToggleLabel");
-          const showTestCheckbox = document.getElementById("showTest");
-
-          // Only show toggle if there's test data
-          if (!hasTestData) {
-            testToggleLabel.classList.add("hidden");
+          // Load entity data in parallel to count services
+          for (const j of jurisdictionData) {
+            const liveEntities = j.entities.filter(e => !e.is_test);
+            const entityDataList = await Promise.all(
+              liveEntities.map(e => loadEntityData(j.path || j.code, e.prefix))
+            );
+            let totalGoals = 0, totalMain = 0, totalSupporting = 0;
+            for (const data of entityDataList) {
+              const counts = countServices(data);
+              totalGoals += counts.goals;
+              totalMain += counts.mainServices;
+              totalSupporting += counts.supportingServices;
+            }
+            j.stats = {
+              entities: liveEntities.length,
+              goals: totalGoals,
+              mainServices: totalMain,
+              supportingServices: totalSupporting
+            };
           }
 
-          function renderViews(items) {
-            // Render card view
-            grid.innerHTML = items
-              .map(
-                (m) => `
-      <div class="ministry-card${m.is_test ? " is-test" : ""}">
-        <h3>
-          <a href="${escapeHtml(m.prefix)}/service-map">
-            ${escapeHtml(m.short_name)}
-          </a>
-          ${m.is_test ? '<span class="test-badge">Test</span>' : ""}
-        </h3>
-        <p class="mc-name">${escapeHtml(m.name)}</p>
-        ${m.blurb ? `<p class="mc-blurb">${escapeHtml(m.blurb)}</p>` : ""}
-        <a class="mc-link" href="${escapeHtml(m.prefix)}/service-map">
-          View Service Map
-        </a>
-      </div>
-    `,
-              )
-              .join("");
+          const grid = document.getElementById("jurisdictionGrid");
 
-            // Render list view
-            list.innerHTML = items
-              .map(
-                (m) => `
-      <div class="ministry-list-item${m.is_test ? " is-test" : ""}">
-        <div class="ml-name">
-          <a href="${escapeHtml(m.prefix)}/service-map">${escapeHtml(m.short_name)}</a>
-          ${m.is_test ? '<span class="test-badge">Test</span>' : ""}
-          ${m.blurb ? `<div class="ml-blurb">${escapeHtml(m.blurb)}</div>` : ""}
-        </div>
-        <a class="ml-link" href="${escapeHtml(m.prefix)}/service-map">View</a>
-      </div>
-    `,
-              )
-              .join("");
-          }
+          grid.innerHTML = jurisdictionData.map(j => {
+            const brandColor = j.config.brand_color || "#00405c";
+            const orgLabel = j.config.org_unit_label || "Organization";
+            const jType = j.type === "province" ? "Province" : j.type === "municipality" ? "Municipality" : j.type || "";
+            const entityCount = j.stats.entities;
+            const serviceCount = j.stats.supportingServices;
 
-          // Initial render — hide test data by default
-          renderViews(ministries.filter((m) => !m.is_test));
+            return `
+              <a class="jurisdiction-card" href="/${escapeHtml(j.code)}/" style="border-left-color: ${escapeHtml(brandColor)};">
+                <div class="jc-type">${escapeHtml(jType)}</div>
+                <h3>${escapeHtml(j.name)}</h3>
+                <div class="jc-stats">
+                  <div class="jc-stat">
+                    <span class="jc-stat-value">${entityCount}</span>
+                    <span class="jc-stat-label">${escapeHtml(pluralize(orgLabel, entityCount))} mapped</span>
+                  </div>
+                  <div class="jc-stat">
+                    <span class="jc-stat-value">${serviceCount}</span>
+                    <span class="jc-stat-label">services</span>
+                  </div>
+                  <div class="jc-stat">
+                    <span class="jc-stat-value">${j.stats.goals}</span>
+                    <span class="jc-stat-label">goals</span>
+                  </div>
+                  <div class="jc-stat">
+                    <span class="jc-stat-value">${j.stats.mainServices}</span>
+                    <span class="jc-stat-label">main services</span>
+                  </div>
+                </div>
+                <span class="jc-cta">View all ${entityCount} ${escapeHtml(pluralize(orgLabel, entityCount))} &#8594;</span>
+              </a>
+            `;
+          }).join('');
 
-          // Test data toggle
-          showTestCheckbox.addEventListener("change", () => {
-            const filtered = showTestCheckbox.checked
-              ? ministries
-              : ministries.filter((m) => !m.is_test);
-            renderViews(filtered);
-          });
-
-          // View toggle
-          const btnCard = document.getElementById("btnCard");
-          const btnList = document.getElementById("btnList");
-
-          btnCard.addEventListener("click", () => {
-            btnCard.classList.add("active");
-            btnList.classList.remove("active");
-            grid.classList.remove("hidden");
-            list.classList.add("hidden");
-          });
-
-          btnList.addEventListener("click", () => {
-            btnList.classList.add("active");
-            btnCard.classList.remove("active");
-            list.classList.remove("hidden");
-            grid.classList.add("hidden");
-          });
         } catch (err) {
-          document.getElementById("ministryGrid").innerHTML =
-            '<div style="color: #c00; font-size: 14px;">Error loading ministries. Check that data/ministries.json exists.</div>';
+          console.error(err);
+          document.getElementById("jurisdictionGrid").innerHTML =
+            '<div style="color: #c00; font-size: 14px;">Error loading data. Check that data/jurisdictions.json exists.</div>';
         }
       });
     </script>

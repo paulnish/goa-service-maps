@@ -1,0 +1,495 @@
+{
+  "prefix": "enmax",
+  "name": "ENMAX Corporation",
+  "short_name": "ENMAX",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0054a6",
+      "short_name": "Safe and reliable electricity for Calgary",
+      "legend_label": "Reliability & safety",
+      "main_services": [
+        { "number": 1, "name": "Have your home connected to and served by Calgary's electrical grid" },
+        { "number": 2, "name": "Have your business connected to and served by Calgary's electrical grid" },
+        { "number": 3, "name": "Be protected from electrical hazards in your community" }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#e8740c",
+      "short_name": "Affordable energy choices for Albertans",
+      "legend_label": "Affordability & choice",
+      "main_services": [
+        { "number": 1, "name": "Choose how you buy and pay for electricity" },
+        { "number": 2, "name": "Receive clear and consolidated billing for your services" },
+        { "number": 3, "name": "Stay connected to electricity when facing financial hardship" }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#2e7d32",
+      "short_name": "Enabling Calgary's energy future",
+      "legend_label": "Energy transition",
+      "main_services": [
+        { "number": 1, "name": "Generate and export your own solar energy" },
+        { "number": 2, "name": "Charge electric vehicles at home and at work" }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "EUA",
+      "full_name": "Electric Utilities Act",
+      "color": "#0054a6",
+      "citation": "SA 2003, c E-5.1",
+      "summary": "Alberta's primary electricity legislation. Establishes the structure of the deregulated electricity market, defines the roles of distribution system owners (like ENMAX Power), retailers, and the regulated rate provider. Governs distribution obligations, customer connection rights, metering, the regulated rate option, competitive retail, micro-generation, and consumer protections.",
+      "full_text": "<span class=\"part-anchor\" id=\"EUA-Part-1\">Part 1</span> – Interpretation and Application\n<span class=\"part-anchor\" id=\"EUA-Part-2\">Part 2</span> – Purposes of Electricity Legislation, Powers, Duties and Functions\n<span class=\"part-anchor\" id=\"EUA-Part-3\">Part 3</span> – Independent System Operator\n<span class=\"part-anchor\" id=\"EUA-Part-4\">Part 4</span> – Balancing Pool\n<span class=\"part-anchor\" id=\"EUA-Part-5\">Part 5</span> – Liability\n<span class=\"part-anchor\" id=\"EUA-Part-6\">Part 6</span> – Generation\n<span class=\"part-anchor\" id=\"EUA-Part-7\">Part 7</span> – Distribution\n  <span class=\"sec-anchor\" id=\"EUA-s100\">100</span> Definitions\n  <span class=\"sec-anchor\" id=\"EUA-s101\">101</span> Duties of ISO re distribution\n  <span class=\"sec-anchor\" id=\"EUA-s102\">102</span> Terms and conditions of service\n  <span class=\"sec-anchor\" id=\"EUA-s103\">103</span> Regulated rate option\n  <span class=\"sec-anchor\" id=\"EUA-s104\">104</span> Financial reporting\n  <span class=\"sec-anchor\" id=\"EUA-s105\">105</span> Duties of owner of electric distribution system\n  <span class=\"sec-anchor\" id=\"EUA-s106\">106</span> Code of conduct\n  <span class=\"sec-anchor\" id=\"EUA-s107\">107</span> Regulated rate option provider\n  <span class=\"sec-anchor\" id=\"EUA-s108\">108</span> Regulations\n<span class=\"part-anchor\" id=\"EUA-Part-8\">Part 8</span> – Retail\n  <span class=\"sec-anchor\" id=\"EUA-s109\">109</span> Interpretation\n  <span class=\"sec-anchor\" id=\"EUA-s110\">110</span> Right of customers to choose retailer\n  <span class=\"sec-anchor\" id=\"EUA-s111\">111</span> Functions of retailer\n  <span class=\"sec-anchor\" id=\"EUA-s112\">112</span> Default supply\n  <span class=\"sec-anchor\" id=\"EUA-s113\">113</span> Code of conduct\n  <span class=\"sec-anchor\" id=\"EUA-s114\">114</span> Regulations\n<span class=\"part-anchor\" id=\"EUA-Part-9\">Part 9</span> – Regulation by the Commission\n  Division 1 – Rate Regulation\n  Division 2 – Facilities\n  Division 3 – Market Rules\n  Division 4 – Compliance and Enforcement\n  Division 5 – Other",
+      "sections": [
+        {
+          "ref": "Part 7, ss. 101, 105",
+          "title": "Distribution — Obligation to Provide Service",
+          "description": "Section 105 establishes the duties of owners of electric distribution systems, including the obligation to provide service to customers within the service area. Section 101 sets out the ISO's duties regarding distribution. Together they govern ENMAX Power's core obligation to deliver safe, reliable electricity distribution.",
+          "anchor_id": "EUA-s105",
+          "services": [
+            {
+              "type": "supporting",
+              "name": "Receive reliable electricity at your home",
+              "goal_number": 1,
+              "goal_color": "#0054a6",
+              "ms_number": 1,
+              "ms_name": "Have your home connected to and served by Calgary's electrical grid"
+            },
+            {
+              "type": "supporting",
+              "name": "Receive reliable electricity at your business",
+              "goal_number": 1,
+              "goal_color": "#0054a6",
+              "ms_number": 2,
+              "ms_name": "Have your business connected to and served by Calgary's electrical grid"
+            }
+          ]
+        },
+        {
+          "ref": "Part 7, ss. 102, 105, 108",
+          "title": "Distribution — Connection and Extension",
+          "description": "Section 105 establishes the owner's duties to connect customers and extend the distribution system. Section 102 governs the terms and conditions of service. Section 108 enables regulations governing connection standards, extension policies, and customer contribution requirements.",
+          "anchor_id": "EUA-s102",
+          "services": [
+            {
+              "type": "supporting",
+              "name": "Get your home's electrical service modified or upgraded",
+              "goal_number": 1,
+              "goal_color": "#0054a6",
+              "ms_number": 1,
+              "ms_name": "Have your home connected to and served by Calgary's electrical grid"
+            },
+            {
+              "type": "supporting",
+              "name": "Get electrical infrastructure built for new development",
+              "goal_number": 1,
+              "goal_color": "#0054a6",
+              "ms_number": 2,
+              "ms_name": "Have your business connected to and served by Calgary's electrical grid"
+            },
+            {
+              "type": "supporting",
+              "name": "Get your business property's electrical service modified or upgraded",
+              "goal_number": 1,
+              "goal_color": "#0054a6",
+              "ms_number": 2,
+              "ms_name": "Have your business connected to and served by Calgary's electrical grid"
+            }
+          ]
+        },
+        {
+          "ref": "Part 7, s. 105",
+          "title": "Distribution — Third-party Access",
+          "description": "Section 105 governs the duties of distribution system owners, including terms under which third parties (such as telecommunications providers) may access distribution infrastructure — poles, ducts, and rights-of-way.",
+          "anchor_id": "EUA-s105-access",
+          "services": [
+            {
+              "type": "supporting",
+              "name": "Access utility infrastructure for telecom installations",
+              "goal_number": 1,
+              "goal_color": "#0054a6",
+              "ms_number": 2,
+              "ms_name": "Have your business connected to and served by Calgary's electrical grid"
+            }
+          ]
+        },
+        {
+          "ref": "Part 7, ss. 105, 108",
+          "title": "Distribution — Metering",
+          "description": "Section 105 establishes the owner's duties regarding metering on the distribution system. Section 108 enables regulations governing meter installation, ownership, testing, and accuracy requirements, ensuring customers can trust that their consumption is measured correctly.",
+          "anchor_id": "EUA-s105-meter",
+          "services": [
+            {
+              "type": "supporting",
+              "name": "Have your electricity consumption measured accurately",
+              "goal_number": 1,
+              "goal_color": "#0054a6",
+              "ms_number": 1,
+              "ms_name": "Have your home connected to and served by Calgary's electrical grid"
+            }
+          ]
+        },
+        {
+          "ref": "Part 7, ss. 103, 107",
+          "title": "Regulated Rate Option",
+          "description": "Section 103 establishes the regulated rate option (RRO) as the default electricity supply for customers who do not choose a competitive retailer. Section 107 designates the regulated rate option provider. Together they define how the RRO is offered and set consumer protections for customers on the regulated rate.",
+          "anchor_id": "EUA-s103",
+          "services": [
+            {
+              "type": "supporting",
+              "name": "Choose an electricity rate and plan that fits your budget",
+              "goal_number": 2,
+              "goal_color": "#e8740c",
+              "ms_number": 1,
+              "ms_name": "Choose how you buy and pay for electricity"
+            }
+          ]
+        },
+        {
+          "ref": "Part 8, ss. 110–112",
+          "title": "Customer Choice and Retail",
+          "description": "Section 110 establishes the right of customers to choose their electricity retailer. Section 111 defines the functions of retailers. Section 112 governs default supply arrangements. Together they create the competitive retail framework in which ENMAX Energy operates.",
+          "anchor_id": "EUA-s110",
+          "services": [
+            {
+              "type": "supporting",
+              "name": "Choose an electricity rate and plan that fits your budget",
+              "goal_number": 2,
+              "goal_color": "#e8740c",
+              "ms_number": 1,
+              "ms_name": "Choose how you buy and pay for electricity"
+            },
+            {
+              "type": "supporting",
+              "name": "Choose energy supply options that fit your business operations",
+              "goal_number": 2,
+              "goal_color": "#e8740c",
+              "ms_number": 1,
+              "ms_name": "Choose how you buy and pay for electricity"
+            }
+          ]
+        },
+        {
+          "ref": "Part 7, ss. 105, 108",
+          "title": "Disconnection and Reconnection",
+          "description": "Section 105 establishes the owner's duties regarding service continuity. Section 108 enables regulations governing disconnection, including notice requirements, prohibitions on winter disconnection, reconnection procedures, and hardship protections.",
+          "anchor_id": "EUA-s105-disconnect",
+          "services": [
+            {
+              "type": "supporting",
+              "name": "Get help staying connected when you can't afford your electricity",
+              "goal_number": 2,
+              "goal_color": "#e8740c",
+              "ms_number": 3,
+              "ms_name": "Stay connected to electricity when facing financial hardship"
+            }
+          ]
+        },
+        {
+          "ref": "Part 7, ss. 105, 108",
+          "title": "Micro-generation — Enabling Framework",
+          "description": "Section 105 establishes distribution system owner duties including accommodating distributed generation connections. Section 108 enables the Micro-generation Regulation (Alta Reg 27/2008), which provides the detailed framework for customers to generate electricity from renewable sources and receive credit for exported power. (Note: Part 5 of the EUA is 'Liability', not micro-generation.)",
+          "anchor_id": "EUA-s108-micro",
+          "services": [
+            {
+              "type": "supporting",
+              "name": "Connect your home solar system to the grid and earn credits for exported power",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Generate and export your own solar energy"
+            },
+            {
+              "type": "supporting",
+              "name": "Connect your commercial solar or distributed energy system to the grid",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Generate and export your own solar energy"
+            }
+          ]
+        },
+        {
+          "ref": "Part 2",
+          "title": "Market Structure and Administration",
+          "description": "Establishes the structure of Alberta's deregulated electricity market, including the separation of generation, transmission, distribution, and retail functions. Governs the Alberta Electric System Operator (AESO) and the framework for market operations.",
+          "anchor_id": "EUA-Part2",
+          "services": [
+            {
+              "type": "foundational",
+              "name": "Access Calgary's electricity market infrastructure",
+              "goal_number": null,
+              "goal_color": null,
+              "ms_number": null,
+              "ms_name": null
+            }
+          ]
+        },
+        {
+          "ref": "Part 9",
+          "title": "Regulations — Regulatory Framework",
+          "description": "Authorizes regulations governing tariffs, distribution standards, retail market rules, customer service standards, and reporting obligations. Provides the basis for the detailed regulatory instruments (RRO Regulation, Code of Conduct Regulation, etc.) that govern ENMAX's operations.",
+          "anchor_id": "EUA-Part9",
+          "services": [
+            {
+              "type": "foundational",
+              "name": "Access regulatory documentation, tariffs, and technical standards",
+              "goal_number": null,
+              "goal_color": null,
+              "ms_number": null,
+              "ms_name": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "HEEA",
+      "full_name": "Hydro and Electric Energy Act",
+      "color": "#1a237e",
+      "citation": "RSA 2000, c H-16",
+      "summary": "Governs the generation and transmission of electric energy in Alberta. Requires approvals for the construction and operation of power plants and transmission lines. Ensures the adequacy and reliability of Alberta's electricity supply through generation and transmission planning.",
+      "full_text": "Part 1 – Interpretation\nPart 2 – Generation of Electric Energy\nPart 3 – Transmission of Electric Energy\nPart 4 – Small Power Research and Development\nPart 5 – General Provisions",
+      "sections": [
+        {
+          "ref": "Parts 2–3",
+          "title": "Generation and Transmission Approvals",
+          "description": "Requires approvals from the AUC for the construction and operation of power plants and transmission facilities. Ensures that generation capacity and transmission infrastructure are adequate to deliver reliable electricity to distribution systems like ENMAX Power's Calgary grid.",
+          "anchor_id": "HEEA-Parts2-3",
+          "services": [
+            {
+              "type": "supporting",
+              "name": "Receive reliable electricity at your home",
+              "goal_number": 1,
+              "goal_color": "#0054a6",
+              "ms_number": 1,
+              "ms_name": "Have your home connected to and served by Calgary's electrical grid"
+            },
+            {
+              "type": "supporting",
+              "name": "Receive reliable electricity at your business",
+              "goal_number": 1,
+              "goal_color": "#0054a6",
+              "ms_number": 2,
+              "ms_name": "Have your business connected to and served by Calgary's electrical grid"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "AUCA",
+      "full_name": "Alberta Utilities Commission Act",
+      "color": "#546e7a",
+      "citation": "SA 2007, c A-37.2",
+      "summary": "Establishes the Alberta Utilities Commission (AUC) as the regulator for Alberta's electricity and natural gas sectors. The AUC approves rates and tariffs, adjudicates complaints, and oversees market participants including ENMAX Power (distribution) and ENMAX Energy (retail and regulated rate provision).",
+      "full_text": "Part 1 – Interpretation\nPart 2 – Alberta Utilities Commission\n  Division 1 – Establishment\n  Division 2 – Jurisdiction and Powers\n  Division 3 – Proceedings\nPart 3 – Rates and Tariffs\nPart 4 – Market Surveillance Administrator\nPart 5 – Appeals\nPart 6 – General",
+      "sections": [
+        {
+          "ref": "Parts 2–3",
+          "title": "AUC Jurisdiction — Rate and Tariff Approval",
+          "description": "Grants the AUC jurisdiction to approve or deny rates and tariffs charged by utilities, including ENMAX Power's distribution tariff and ENMAX Energy's regulated rate. Ensures rates are just, reasonable, and not unduly discriminatory. Governs the process by which tariff schedules and technical standards are approved and published.",
+          "anchor_id": "AUCA-Parts2-3",
+          "services": [
+            {
+              "type": "foundational",
+              "name": "Access regulatory documentation, tariffs, and technical standards",
+              "goal_number": null,
+              "goal_color": null,
+              "ms_number": null,
+              "ms_name": null
+            }
+          ]
+        },
+        {
+          "ref": "Part 4",
+          "title": "Market Surveillance Administrator",
+          "description": "Continues the Market Surveillance Administrator (MSA) as an independent body to monitor the fair, efficient, and openly competitive operation of Alberta's electricity market. Relevant to ENMAX's compliance with market conduct rules and the competitive separation between ENMAX Power and ENMAX Energy.",
+          "anchor_id": "AUCA-Part4",
+          "services": [
+            {
+              "type": "foundational",
+              "name": "Access Calgary's electricity market infrastructure",
+              "goal_number": null,
+              "goal_color": null,
+              "ms_number": null,
+              "ms_name": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "RRR",
+      "full_name": "Regulated Rate Option Regulation",
+      "color": "#e8740c",
+      "citation": "Alta Reg 262/2005",
+      "summary": "Specifies how the regulated rate option (RRO) is calculated for residential and small commercial customers who have not chosen a competitive retailer. ENMAX Energy is the regulated rate provider for ENMAX Power's distribution service area. The regulation sets the methodology for rate calculation, hedging requirements, and consumer protections.",
+      "full_text": "Part 1 – Interpretation\nPart 2 – Regulated Rate Option\nPart 3 – Rate Calculation\nPart 4 – Consumer Protections\nPart 5 – Reporting",
+      "sections": [
+        {
+          "ref": "Parts 2–3",
+          "title": "Regulated Rate Calculation and Application",
+          "description": "Defines who is eligible for the regulated rate option (customers who have not chosen a competitive retailer), how the rate is calculated based on market prices with hedging, and the obligations of the regulated rate provider (ENMAX Energy) in setting and communicating the rate.",
+          "anchor_id": "RRR-Parts2-3",
+          "services": [
+            {
+              "type": "supporting",
+              "name": "Choose an electricity rate and plan that fits your budget",
+              "goal_number": 2,
+              "goal_color": "#e8740c",
+              "ms_number": 1,
+              "ms_name": "Choose how you buy and pay for electricity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "COCR",
+      "full_name": "Code of Conduct Regulation",
+      "color": "#7b1fa2",
+      "citation": "Alta Reg 58/2015",
+      "summary": "Regulates the conduct of distribution system owners (ENMAX Power) and their affiliated retailers (ENMAX Energy) to ensure fair competition in the retail electricity market. Requires operational and information separation, protects customer information confidentiality, ensures equal access to distribution services for all retailers, and prevents cross-subsidization.",
+      "full_text": "Part 1 – Interpretation\nPart 2 – Objectives\nPart 3 – Conduct of Owners\nPart 4 – Conduct of Affiliated Retailers\nPart 5 – Customer Information\nPart 6 – Compliance Plans\nPart 7 – Complaints",
+      "sections": [
+        {
+          "ref": "Parts 3–4",
+          "title": "Separation of Distribution and Retail Operations",
+          "description": "Requires that ENMAX Power (distribution) and ENMAX Energy (retail) operate with appropriate separation to prevent the distribution monopoly from giving the affiliated retailer an unfair advantage. Governs information barriers, operational separation, and equal treatment of all retailers accessing the distribution system.",
+          "anchor_id": "COCR-Parts3-4",
+          "services": [
+            {
+              "type": "foundational",
+              "name": "Access Calgary's electricity market infrastructure",
+              "goal_number": null,
+              "goal_color": null,
+              "ms_number": null,
+              "ms_name": null
+            }
+          ]
+        },
+        {
+          "ref": "Part 5",
+          "title": "Customer Information Protection",
+          "description": "Protects the confidentiality of customer information collected through distribution services. Prohibits ENMAX Power from sharing customer information with ENMAX Energy or any other retailer without customer consent, ensuring fair competition and customer privacy.",
+          "anchor_id": "COCR-Part5",
+          "services": [
+            {
+              "type": "foundational",
+              "name": "Access regulatory documentation, tariffs, and technical standards",
+              "goal_number": null,
+              "goal_color": null,
+              "ms_number": null,
+              "ms_name": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "MGR",
+      "full_name": "Micro-generation Regulation",
+      "color": "#2e7d32",
+      "citation": "Alta Reg 27/2008",
+      "summary": "Governs the interconnection of small-scale generating units (under 5 MW) to the distribution system. Enables residential and commercial customers to generate electricity from solar and other renewable sources, connect to the grid through ENMAX Power, and receive credit for energy exported to the distribution system.",
+      "full_text": "Part 1 – Interpretation\nPart 2 – Micro-generation\n  Division 1 – Application and Connection\n  Division 2 – Metering and Settlement\n  Division 3 – Credit for Exported Electricity",
+      "sections": [
+        {
+          "ref": "Part 2, Divs 1–3",
+          "title": "Micro-generation Interconnection and Credit",
+          "description": "Establishes the process for customers to apply to connect micro-generation systems (such as rooftop solar panels) to the distribution system. Defines metering requirements, how exported electricity is measured, and the credit mechanism by which customers offset their consumption with their generation. ENMAX Power processes interconnection applications and manages the billing credits.",
+          "anchor_id": "MGR-Part2",
+          "services": [
+            {
+              "type": "supporting",
+              "name": "Connect your home solar system to the grid and earn credits for exported power",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Generate and export your own solar energy"
+            },
+            {
+              "type": "supporting",
+              "name": "Connect your commercial solar or distributed energy system to the grid",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Generate and export your own solar energy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "OHSA",
+      "full_name": "Occupational Health and Safety Act",
+      "color": "#c62828",
+      "citation": "SA 2020, c O-2.2",
+      "summary": "Establishes the framework for workplace health and safety in Alberta. Relevant to ENMAX's operations in maintaining electrical infrastructure and to public safety around power lines, substations, and other electrical facilities. Defines duties of employers, workers, and the public regarding electrical hazards.",
+      "full_text": "Part 1 – Purpose, Application and Interpretation\nPart 2 – Duties\nPart 3 – Occupational Health and Safety Code\nPart 4 – Officers\nPart 5 – Administrative Penalties\nPart 6 – Offences and Penalties\nPart 7 – General",
+      "sections": [
+        {
+          "ref": "Parts 2–3",
+          "title": "Duties Regarding Electrical Hazards",
+          "description": "Establishes duties of employers, workers, and contractors to ensure safety around electrical infrastructure. The OHS Code (enabled under Part 3) sets specific technical rules for work near power lines, minimum approach distances, and requirements for electrical safety training. Relevant to both ENMAX workers and third parties working near ENMAX infrastructure.",
+          "anchor_id": "OHSA-Parts2-3",
+          "services": [
+            {
+              "type": "supporting",
+              "name": "Live and work safely around electrical infrastructure in your community",
+              "goal_number": 1,
+              "goal_color": "#0054a6",
+              "ms_number": 3,
+              "ms_name": "Be protected from electrical hazards in your community"
+            },
+            {
+              "type": "supporting",
+              "name": "Access safety standards and training for working near electrical infrastructure",
+              "goal_number": 1,
+              "goal_color": "#0054a6",
+              "ms_number": 3,
+              "ms_name": "Be protected from electrical hazards in your community"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "SCR",
+      "full_name": "Safety Codes Act",
+      "color": "#ef6c00",
+      "citation": "RSA 2000, c S-1",
+      "summary": "Establishes Alberta's safety codes system, which sets technical standards for buildings, electrical systems, plumbing, gas, and other safety disciplines. Relevant to ENMAX services involving electrical permits, inspections, and compliance with the Alberta Electrical Code for service connections, modifications, and installations.",
+      "full_text": "Part 1 – Interpretation\nPart 2 – Safety Codes Council\nPart 3 – Accredited Municipalities and Agencies\nPart 4 – Safety Codes Officers\nPart 5 – Permits and Inspections\nPart 6 – Orders\nPart 7 – Appeals\nPart 8 – Offences and Penalties\nPart 9 – General",
+      "sections": [
+        {
+          "ref": "Parts 5–6",
+          "title": "Electrical Permits, Inspections, and Safety Codes",
+          "description": "Governs the permit and inspection process for electrical work, including service connections, modifications, and upgrades. The Alberta Electrical Code (adopted under this Act) sets the technical standards that electrical installations must meet. Relevant when customers modify their electrical service or install new systems (such as EV charging or solar panels) that require electrical permits.",
+          "anchor_id": "SCR-Parts5-6",
+          "services": [
+            {
+              "type": "supporting",
+              "name": "Access safety standards and training for working near electrical infrastructure",
+              "goal_number": 1,
+              "goal_color": "#0054a6",
+              "ms_number": 3,
+              "ms_name": "Be protected from electrical hazards in your community"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 8,
+    "sections_count": 19,
+    "services_with_leg_count": 16,
+    "services_multi_act_count": 8
+  }
+}

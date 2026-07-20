@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Service Maps</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      /* Jurisdiction landing page */
+      .jl-header {
+        color: white;
+        padding: 40px 48px 32px;
+      }
+      .jl-header .jl-type {
+        font-size: 12px;
+        color: rgba(255,255,255,0.6);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 4px;
+      }
+      .jl-header h1 {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      .jl-header .jl-stats-row {
+        display: flex;
+        gap: 32px;
+        margin-top: 16px;
+      }
+      .jl-header .jl-stat {
+        display: flex;
+        flex-direction: column;
+      }
+      .jl-header .jl-stat-value {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.1;
+      }
+      .jl-header .jl-stat-label {
+        font-size: 11px;
+        color: rgba(255,255,255,0.65);
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        margin-top: 2px;
+      }
+
+      /* Entity listing */
+      .jl-body {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 32px 48px 60px;
+      }
+      .jl-body h2 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #1a1a2e;
+        margin-bottom: 4px;
+      }
+      .jl-body .entity-count {
+        font-size: 13px;
+        color: #888;
+        margin-bottom: 20px;
+      }
+      .test-toggle {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 12px;
+        color: #888;
+        cursor: pointer;
+        user-select: none;
+        margin-bottom: 16px;
+      }
+      .test-toggle input { cursor: pointer; }
+      .hidden { display: none !important; }
+
+      /* Entity cards */
+      .entity-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .entity-card {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        background: white;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 16px 20px;
+        transition: box-shadow 0.15s, border-color 0.15s;
+      }
+      .entity-card:hover {
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        border-color: #ccc;
+      }
+      .entity-card.is-test {
+        opacity: 0.5;
+      }
+      .ec-info {
+        flex: 1;
+        min-width: 0;
+      }
+      .ec-info a {
+        font-size: 15px;
+        font-weight: 600;
+        color: #00405c;
+        text-decoration: none;
+      }
+      .ec-info a:hover {
+        text-decoration: underline;
+      }
+      .ec-blurb {
+        font-size: 12px;
+        color: #888;
+        margin-top: 3px;
+        line-height: 1.4;
+      }
+      .test-badge {
+        display: inline-block;
+        font-size: 9px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        background: #fef3c7;
+        color: #92400e;
+        padding: 1px 5px;
+        border-radius: 3px;
+        margin-left: 6px;
+        vertical-align: middle;
+      }
+      .ec-links {
+        display: flex;
+        gap: 8px;
+        flex-shrink: 0;
+      }
+      .ec-links a {
+        padding: 7px 14px;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+      .ec-links .ec-map {
+        background: #00405c;
+        color: white;
+      }
+      .ec-links .ec-map:hover {
+        background: #005a7a;
+      }
+      .ec-links .ec-leg {
+        background: white;
+        color: #00405c;
+        border: 1px solid #ccc;
+      }
+      .ec-links .ec-leg:hover {
+        background: #f5f5f5;
+      }
+
+      @media (max-width: 600px) {
+        .jl-header, .jl-body {
+          padding-left: 24px;
+          padding-right: 24px;
+        }
+        .entity-card {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+        }
+        .jl-header .jl-stats-row {
+          gap: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <a href="/">All Service Maps</a>
+      <span class="sep">/</span>
+      <span class="current" id="navCurrent">Loading...</span>
+    </div>
+    <div class="jl-header" id="pageHeader" style="background: #1a1a2e;">
+      <div class="jl-type" id="jurisdictionType"></div>
+      <h1 id="jurisdictionName">Loading...</h1>
+      <div class="jl-stats-row" id="statsRow"></div>
+    </div>
+
+    <div class="jl-body">
+      <h2 id="listHeading">Service Maps</h2>
+      <div class="entity-count" id="entityCount"></div>
+      <label class="test-toggle hidden" id="testToggleLabel">
+        <input type="checkbox" id="showTest" /> Show test data
+      </label>
+      <div id="entityList" class="entity-list">
+        <div style="color: #888; font-size: 14px;">Loading...</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Service Analysis | July 2026 | Built with Kate Tarling's framework</p>
+    </div>
+
+    <script>
+      const JURISDICTION_CODE = "calgary";
+
+      function escapeHtml(str) {
+        if (!str) return "";
+        return String(str)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+
+      function pluralize(word, count) {
+        if (count === 1) return word.toLowerCase();
+        const w = word.toLowerCase();
+        if (w.endsWith("y")) return w.slice(0, -1) + "ies";
+        return w + "s";
+      }
+
+      async function loadEntities(code) {
+        for (const file of ["entities.json", "ministries.json"]) {
+          try {
+            const resp = await fetch(`../data/${code}/${file}`);
+            if (resp.ok) return await resp.json();
+          } catch (e) { /* try next */ }
+        }
+        return [];
+      }
+
+      async function loadEntityData(code, prefix) {
+        try {
+          const resp = await fetch(`../data/${code}/${prefix}.json`);
+          if (!resp.ok) return null;
+          return await resp.json();
+        } catch (e) { return null; }
+      }
+
+      function countServices(data) {
+        if (!data || !data.goals) return { goals: 0, mainServices: 0, supportingServices: 0 };
+        let mainServices = 0, supportingServices = 0;
+        for (const goal of data.goals) {
+          if (!goal.main_services) continue;
+          mainServices += goal.main_services.length;
+          for (const ms of goal.main_services) {
+            if (ms.supporting) supportingServices += ms.supporting.length;
+          }
+        }
+        return { goals: data.goals.length, mainServices, supportingServices };
+      }
+
+      document.addEventListener("DOMContentLoaded", async () => {
+        try {
+          // Load jurisdiction metadata
+          const jResp = await fetch("../data/jurisdictions.json");
+          const jurisdictions = await jResp.json();
+          const j = jurisdictions.find(x => x.code === JURISDICTION_CODE);
+          if (!j) throw new Error(`Jurisdiction "${JURISDICTION_CODE}" not found`);
+
+          // Load config + entities
+          const [config, entities] = await Promise.all([
+            fetch(`../data/${j.path || j.code}/config.json`).then(r => r.ok ? r.json() : {}),
+            loadEntities(j.path || j.code)
+          ]);
+
+          const brandColor = config.brand_color || "#00405c";
+          const orgLabel = config.org_unit_label || "Organization";
+          const jType = j.type === "province" ? "Province" : j.type === "municipality" ? "Municipality" : j.type || "";
+
+          // Set header
+          document.getElementById("pageHeader").style.background = brandColor;
+          document.getElementById("navCurrent").textContent = j.short_name || j.name;
+          document.getElementById("jurisdictionType").textContent = jType;
+          document.getElementById("jurisdictionName").textContent = j.name;
+          document.title = `${j.short_name || j.name} — Service Maps`;
+
+          // Count services across all live entities
+          const liveEntities = entities.filter(e => !e.is_test);
+          const entityDataList = await Promise.all(
+            liveEntities.map(e => loadEntityData(j.path || j.code, e.prefix))
+          );
+          let totalGoals = 0, totalMain = 0, totalSupporting = 0;
+          for (const data of entityDataList) {
+            const counts = countServices(data);
+            totalGoals += counts.goals;
+            totalMain += counts.mainServices;
+            totalSupporting += counts.supportingServices;
+          }
+
+          // Render stats
+          document.getElementById("statsRow").innerHTML = `
+            <div class="jl-stat">
+              <span class="jl-stat-value">${liveEntities.length}</span>
+              <span class="jl-stat-label">${escapeHtml(pluralize(orgLabel, liveEntities.length))} mapped</span>
+            </div>
+            <div class="jl-stat">
+              <span class="jl-stat-value">${totalSupporting}</span>
+              <span class="jl-stat-label">services</span>
+            </div>
+            <div class="jl-stat">
+              <span class="jl-stat-value">${totalGoals}</span>
+              <span class="jl-stat-label">goals</span>
+            </div>
+            <div class="jl-stat">
+              <span class="jl-stat-value">${totalMain}</span>
+              <span class="jl-stat-label">main services</span>
+            </div>
+          `;
+
+          // Test data toggle
+          const hasTestData = entities.some(e => e.is_test);
+          const testToggleLabel = document.getElementById("testToggleLabel");
+          const showTestCheckbox = document.getElementById("showTest");
+          if (hasTestData) {
+            testToggleLabel.classList.remove("hidden");
+          }
+
+          const listEl = document.getElementById("entityList");
+          const countEl = document.getElementById("entityCount");
+          const headingEl = document.getElementById("listHeading");
+
+          function render(showTest) {
+            const filtered = showTest ? entities : entities.filter(e => !e.is_test);
+            filtered.sort((a, b) =>
+              (a.short_name || a.name).localeCompare(b.short_name || b.name, "en", { sensitivity: "base" })
+            );
+
+            headingEl.textContent = `All ${escapeHtml(pluralize(orgLabel, filtered.length))}`;
+            countEl.textContent = `${filtered.length} ${pluralize(orgLabel, filtered.length)} with service maps`;
+
+            listEl.innerHTML = filtered.map(e => `
+              <div class="entity-card${e.is_test ? ' is-test' : ''}">
+                <div class="ec-info">
+                  <a href="/${escapeHtml(e.prefix)}/service-map">${escapeHtml(e.short_name || e.name)}</a>
+                  ${e.is_test ? '<span class="test-badge">Test</span>' : ''}
+                  ${e.blurb ? `<div class="ec-blurb">${escapeHtml(e.blurb)}</div>` : ''}
+                </div>
+                <div class="ec-links">
+                  <a class="ec-map" href="/${escapeHtml(e.prefix)}/service-map">Service Map</a>
+                  <a class="ec-leg" href="/${escapeHtml(e.prefix)}/legislation">Legislation</a>
+                </div>
+              </div>
+            `).join('');
+          }
+
+          render(false);
+
+          showTestCheckbox.addEventListener("change", () => {
+            render(showTestCheckbox.checked);
+          });
+
+        } catch (err) {
+          console.error(err);
+          document.getElementById("entityList").innerHTML =
+            '<div style="color: #c00; font-size: 14px;">Error loading data.</div>';
+        }
+      });
+    </script>
+  </body>
+</html>

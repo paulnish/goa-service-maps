@@ -1,377 +1,208 @@
 [build]
   publish = "."
 
-# Clean URLs — replaces .htaccess rewrite rules
-
-# Ministry shortcut: /tec → service map
+# ── Jurisdiction landing pages ────────────────────────────────
 [[redirects]]
-  from = "/tec"
-  to = "/tec/service-map.html"
+  from = "/goa"
+  to = "/data/ca/ab/goa/index.html"
   status = 200
 
 [[redirects]]
-  from = "/tec/"
+  from = "/goa/"
+  to = "/goa"
+  status = 301
+
+[[redirects]]
+  from = "/calgary"
+  to = "/data/ca/ab/calgary/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/calgary/"
+  to = "/calgary"
+  status = 301
+
+# ── GoA ministry pages (service-map + legislation) ───────────
+# /prefix → service map (shortcut)
+# /prefix/service-map → service map page
+# /prefix/legislation → legislation page
+
+# Service map shortcuts: /prefix → /prefix/service-map
+[[redirects]]
+  from = "/tec"
   to = "/tec/service-map"
   status = 301
 
-# Ministry shortcut: /alss → service map
 [[redirects]]
   from = "/alss"
-  to = "/alss/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/alss/"
   to = "/alss/service-map"
   status = 301
 
-# Clean URLs for ministry pages
-[[redirects]]
-  from = "/tec/service-map"
-  to = "/tec/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/tec/legislation"
-  to = "/tec/legislation.html"
-  status = 200
-
-[[redirects]]
-  from = "/alss/service-map"
-  to = "/alss/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/alss/legislation"
-  to = "/alss/legislation.html"
-  status = 200
-
-# Ministry shortcut: /jus → service map
 [[redirects]]
   from = "/jus"
-  to = "/jus/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/jus/"
   to = "/jus/service-map"
   status = 301
 
-# Clean URLs for Justice pages
-[[redirects]]
-  from = "/jus/service-map"
-  to = "/jus/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/jus/legislation"
-  to = "/jus/legislation.html"
-  status = 200
-
-# Ministry shortcut: /ae → service map
 [[redirects]]
   from = "/ae"
-  to = "/ae/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/ae/"
   to = "/ae/service-map"
   status = 301
 
-# Clean URLs for Advanced Education pages
-[[redirects]]
-  from = "/ae/service-map"
-  to = "/ae/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/ae/legislation"
-  to = "/ae/legislation.html"
-  status = 200
-
-# Ministry shortcut: /edu → service map
 [[redirects]]
   from = "/edu"
-  to = "/edu/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/edu/"
   to = "/edu/service-map"
   status = 301
 
-# Clean URLs for Education pages
-[[redirects]]
-  from = "/edu/service-map"
-  to = "/edu/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/edu/legislation"
-  to = "/edu/legislation.html"
-  status = 200
-
-# Ministry shortcut: /cfs → service map
 [[redirects]]
   from = "/cfs"
-  to = "/cfs/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/cfs/"
   to = "/cfs/service-map"
   status = 301
 
-# Clean URLs for Children & Family Services pages
-[[redirects]]
-  from = "/cfs/service-map"
-  to = "/cfs/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/cfs/legislation"
-  to = "/cfs/legislation.html"
-  status = 200
-
-# Ministry shortcut: /alss_dia → service map
 [[redirects]]
   from = "/alss_dia"
-  to = "/alss_dia/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/alss_dia/"
   to = "/alss_dia/service-map"
   status = 301
 
-# Clean URLs for ALSS DIA pages
-[[redirects]]
-  from = "/alss_dia/service-map"
-  to = "/alss_dia/service-map.html"
-  status = 200
-
-# Ministry shortcut: /fp → service map
 [[redirects]]
   from = "/fp"
-  to = "/fp/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/fp/"
   to = "/fp/service-map"
   status = 301
 
-# Clean URLs for Forestry & Parks pages
-[[redirects]]
-  from = "/fp/service-map"
-  to = "/fp/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/fp/legislation"
-  to = "/fp/legislation.html"
-  status = 200
-
-# Ministry shortcut: /ts → service map
 [[redirects]]
   from = "/ts"
-  to = "/ts/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/ts/"
   to = "/ts/service-map"
   status = 301
 
-# Clean URLs for Tourism & Sport pages
-[[redirects]]
-  from = "/ts/service-map"
-  to = "/ts/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/ts/legislation"
-  to = "/ts/legislation.html"
-  status = 200
-
-# Ministry shortcut: /acsw → service map
 [[redirects]]
   from = "/acsw"
-  to = "/acsw/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/acsw/"
   to = "/acsw/service-map"
   status = 301
 
-# Clean URLs for Arts, Culture & Status of Women pages
-[[redirects]]
-  from = "/acsw/service-map"
-  to = "/acsw/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/acsw/legislation"
-  to = "/acsw/legislation.html"
-  status = 200
-
-# Ministry shortcut: /au → service map
 [[redirects]]
   from = "/au"
-  to = "/au/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/au/"
   to = "/au/service-map"
   status = 301
 
-# Clean URLs for Affordability & Utilities pages
-[[redirects]]
-  from = "/au/service-map"
-  to = "/au/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/au/legislation"
-  to = "/au/legislation.html"
-  status = 200
-
-# Ministry shortcut: /ag → service map
 [[redirects]]
   from = "/ag"
-  to = "/ag/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/ag/"
   to = "/ag/service-map"
   status = 301
 
-# Clean URLs for Agriculture & Irrigation pages
-[[redirects]]
-  from = "/ag/service-map"
-  to = "/ag/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/ag/legislation"
-  to = "/ag/legislation.html"
-  status = 200
-
-# Ministry shortcut: /em → service map
 [[redirects]]
   from = "/em"
-  to = "/em/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/em/"
   to = "/em/service-map"
   status = 301
 
-# Clean URLs for Energy & Minerals pages
-[[redirects]]
-  from = "/em/service-map"
-  to = "/em/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/em/legislation"
-  to = "/em/legislation.html"
-  status = 200
-
-# Ministry shortcut: /epa → service map
 [[redirects]]
   from = "/epa"
-  to = "/epa/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/epa/"
   to = "/epa/service-map"
   status = 301
 
-# Clean URLs for Environment & Protected Areas pages
-[[redirects]]
-  from = "/epa/service-map"
-  to = "/epa/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/epa/legislation"
-  to = "/epa/legislation.html"
-  status = 200
-
-# Ministry shortcut: /pphs → service map
 [[redirects]]
   from = "/pphs"
-  to = "/pphs/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/pphs/"
   to = "/pphs/service-map"
   status = 301
 
-# Clean URLs for Primary & Preventative Health pages
-[[redirects]]
-  from = "/pphs/service-map"
-  to = "/pphs/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/pphs/legislation"
-  to = "/pphs/legislation.html"
-  status = 200
-
-# Ministry shortcut: /hshs → service map
 [[redirects]]
   from = "/hshs"
-  to = "/hshs/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/hshs/"
   to = "/hshs/service-map"
   status = 301
 
-# Clean URLs for Hospital & Surgical Health pages
-[[redirects]]
-  from = "/hshs/service-map"
-  to = "/hshs/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/hshs/legislation"
-  to = "/hshs/legislation.html"
-  status = 200
-
-# Ministry shortcut: /mha → service map
 [[redirects]]
   from = "/mha"
-  to = "/mha/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/mha/"
   to = "/mha/service-map"
   status = 301
 
-# Clean URLs for Mental Health & Addiction pages
 [[redirects]]
-  from = "/mha/service-map"
-  to = "/mha/service-map.html"
+  from = "/cpe"
+  to = "/cpe/service-map"
+  status = 301
+
+[[redirects]]
+  from = "/jeti"
+  to = "/jeti/service-map"
+  status = 301
+
+[[redirects]]
+  from = "/ir"
+  to = "/ir/service-map"
+  status = 301
+
+[[redirects]]
+  from = "/infra"
+  to = "/infra/service-map"
+  status = 301
+
+[[redirects]]
+  from = "/tbf"
+  to = "/tbf/service-map"
+  status = 301
+
+[[redirects]]
+  from = "/ma"
+  to = "/ma/service-map"
+  status = 301
+
+[[redirects]]
+  from = "/pses"
+  to = "/pses/service-map"
+  status = 301
+
+[[redirects]]
+  from = "/sa"
+  to = "/sa/service-map"
+  status = 301
+
+[[redirects]]
+  from = "/ti"
+  to = "/ti/service-map"
+  status = 301
+
+[[redirects]]
+  from = "/scss"
+  to = "/scss/service-map"
+  status = 301
+
+[[redirects]]
+  from = "/enmax"
+  to = "/enmax/service-map"
+  status = 301
+
+# Clean URLs: rewrite /prefix/page → actual file location
+
+# Calgary entities (explicit, before GoA wildcard)
+[[redirects]]
+  from = "/enmax/service-map"
+  to = "/data/ca/ab/calgary/enmax/service-map.html"
   status = 200
 
 [[redirects]]
-  from = "/mha/legislation"
-  to = "/mha/legislation.html"
+  from = "/enmax/legislation"
+  to = "/data/ca/ab/calgary/enmax/legislation.html"
   status = 200
 
-# Legacy /health redirects to /pphs (primary ministry)
+# GoA ministries (wildcard catch-all)
+[[redirects]]
+  from = "/:prefix/service-map"
+  to = "/data/ca/ab/goa/:prefix/service-map.html"
+  status = 200
+
+[[redirects]]
+  from = "/:prefix/legislation"
+  to = "/data/ca/ab/goa/:prefix/legislation.html"
+  status = 200
+
+# ── Legacy redirects ─────────────────────────────────────────
+[[redirects]]
+  from = "/ab"
+  to = "/goa"
+  status = 301
+
+[[redirects]]
+  from = "/ab/*"
+  to = "/goa/:splat"
+  status = 301
+
 [[redirects]]
   from = "/health"
   to = "/pphs/service-map"
@@ -382,51 +213,6 @@
   to = "/pphs/:splat"
   status = 301
 
-# Ministry shortcut: /cpe → service map
-[[redirects]]
-  from = "/cpe"
-  to = "/cpe/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/cpe/"
-  to = "/cpe/service-map"
-  status = 301
-
-# Clean URLs for Communications & Public Engagement pages
-[[redirects]]
-  from = "/cpe/service-map"
-  to = "/cpe/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/cpe/legislation"
-  to = "/cpe/legislation.html"
-  status = 200
-
-# Ministry shortcut: /jeti → service map
-[[redirects]]
-  from = "/jeti"
-  to = "/jeti/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/jeti/"
-  to = "/jeti/service-map"
-  status = 301
-
-# Clean URLs for Jobs, Economy, Trade & Immigration pages
-[[redirects]]
-  from = "/jeti/service-map"
-  to = "/jeti/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/jeti/legislation"
-  to = "/jeti/legislation.html"
-  status = 200
-
-# Legacy /im redirects to /jeti (ministry replaced)
 [[redirects]]
   from = "/im"
   to = "/jeti/service-map"
@@ -437,163 +223,30 @@
   to = "/jeti/:splat"
   status = 301
 
-# Ministry shortcut: /ir → service map
+# ── Service directory clean URLs ─────────────────────────────
 [[redirects]]
-  from = "/ir"
-  to = "/ir/service-map.html"
+  from = "/services"
+  to = "/services/index.html"
   status = 200
 
 [[redirects]]
-  from = "/ir/"
-  to = "/ir/service-map"
-  status = 301
-
-# Clean URLs for Indigenous Relations pages
-[[redirects]]
-  from = "/ir/service-map"
-  to = "/ir/service-map.html"
+  from = "/services/browse"
+  to = "/services/browse.html"
   status = 200
 
 [[redirects]]
-  from = "/ir/legislation"
-  to = "/ir/legislation.html"
-  status = 200
-
-# Ministry shortcut: /infra → service map
-[[redirects]]
-  from = "/infra"
-  to = "/infra/service-map.html"
+  from = "/services/search"
+  to = "/services/search.html"
   status = 200
 
 [[redirects]]
-  from = "/infra/"
-  to = "/infra/service-map"
-  status = 301
-
-# Clean URLs for Infrastructure pages
-[[redirects]]
-  from = "/infra/service-map"
-  to = "/infra/service-map.html"
+  from = "/services/life-events"
+  to = "/services/life-events.html"
   status = 200
 
-[[redirects]]
-  from = "/infra/legislation"
-  to = "/infra/legislation.html"
-  status = 200
-
-# Ministry shortcut: /tbf → service map
-[[redirects]]
-  from = "/tbf"
-  to = "/tbf/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/tbf/"
-  to = "/tbf/service-map"
-  status = 301
-
-# Clean URLs for Treasury Board & Finance pages
-[[redirects]]
-  from = "/tbf/service-map"
-  to = "/tbf/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/tbf/legislation"
-  to = "/tbf/legislation.html"
-  status = 200
-
-# Ministry shortcut: /ma → service map
-[[redirects]]
-  from = "/ma"
-  to = "/ma/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/ma/"
-  to = "/ma/service-map"
-  status = 301
-
-# Clean URLs for Municipal Affairs pages
-[[redirects]]
-  from = "/ma/service-map"
-  to = "/ma/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/ma/legislation"
-  to = "/ma/legislation.html"
-  status = 200
-
-# Ministry shortcut: /pses → service map
-[[redirects]]
-  from = "/pses"
-  to = "/pses/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/pses/"
-  to = "/pses/service-map"
-  status = 301
-
-# Clean URLs for Public Safety & Emergency Services pages
-[[redirects]]
-  from = "/pses/service-map"
-  to = "/pses/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/pses/legislation"
-  to = "/pses/legislation.html"
-  status = 200
-
-# Ministry shortcut: /sa → service map
-[[redirects]]
-  from = "/sa"
-  to = "/sa/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/sa/"
-  to = "/sa/service-map"
-  status = 301
-
-# Clean URLs for Service Alberta & Red Tape Reduction pages
-[[redirects]]
-  from = "/sa/service-map"
-  to = "/sa/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/sa/legislation"
-  to = "/sa/legislation.html"
-  status = 200
-
-# Ministry shortcut: /ti → service map
-[[redirects]]
-  from = "/ti"
-  to = "/ti/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/ti/"
-  to = "/ti/service-map"
-  status = 301
-
-# Clean URLs for Technology & Innovation pages
-[[redirects]]
-  from = "/ti/service-map"
-  to = "/ti/service-map.html"
-  status = 200
-
-[[redirects]]
-  from = "/ti/legislation"
-  to = "/ti/legislation.html"
-  status = 200
-
-# Headers
+# ── Headers ──────────────────────────────────────────────────
 [[headers]]
-  for = "/data/*/*.json"
+  for = "/data/*"
   [headers.values]
     Access-Control-Allow-Origin = "*"
     Cache-Control = "public, max-age=3600"

@@ -1,0 +1,1204 @@
+{
+  "prefix": "enmax",
+  "full_name": "ENMAX Corporation",
+  "short_name": "ENMAX",
+  "blurb": "Calgary's municipally-owned electricity utility -- delivers safe, reliable, and affordable electricity through regulated transmission and distribution (ENMAX Power), competitive generation and retail (ENMAX Energy), and community investment programs.",
+  "nav_name": "ENMAX Corporation",
+  "has_registry_agents": false,
+  "entity_type": "utility",
+  "shareholder": "City of Calgary",
+  "regulatory_bodies": [
+    "Alberta Utilities Commission"
+  ],
+  "business_units": [
+    {
+      "code": "enmax_power",
+      "name": "ENMAX Power Corporation",
+      "type": "regulated",
+      "description": "Regulated transmission and distribution utility serving approximately 603,000 customers across Calgary"
+    },
+    {
+      "code": "enmax_energy",
+      "name": "ENMAX Energy Corporation",
+      "type": "competitive",
+      "description": "Competitive generation (1,486 MW) and retail electricity and natural gas services to approximately 677,000 customers across Alberta"
+    },
+    {
+      "code": "versant",
+      "name": "Versant Power",
+      "type": "regulated",
+      "description": "Regulated transmission and distribution utility serving approximately 166,000 customers in northern and eastern Maine"
+    }
+  ],
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0054a6",
+      "title": "PRIORITY 1",
+      "short_name": "Safe and reliable electricity for Calgary",
+      "legend_label": "Reliability & safety",
+      "description": "Deliver safe, reliable electricity to a growing city through sustained infrastructure investment, proactive maintenance, and operational excellence across the regulated transmission and distribution system",
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Have your home connected to and served by Calgary's electrical grid",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Receive reliable electricity at your home",
+              "desc": "ENMAX Power delivers electricity through Calgary's transmission and distribution network to residential customers. Includes outage response, restoration, proactive maintenance, and infrastructure renewal. Record 9,169 residential lots connected and 22,467 new meters installed in 2025.",
+              "users": "Calgary homeowners, renters, condo residents",
+              "user_groups": [
+                "Residential customers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "enmax.com: outage map",
+                  "url": "https://outages.enmax.com"
+                },
+                {
+                  "type": "ch-app",
+                  "label": "ENMAX app: outage alerts",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "ENMAX 24/7 emergency line",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "enmax.com/outages",
+                  "url": "https://www.enmax.com/outages"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EUA",
+                  "color": "#0054a6",
+                  "full_name": "Electric Utilities Act"
+                },
+                {
+                  "abbrev": "HEEA",
+                  "color": "#2e7d32",
+                  "full_name": "Hydro and Electric Energy Act"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "utilities",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Receive reliable electricity at your business",
+                    "ministry": "enmax"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Have your electricity consumption measured accurately",
+              "desc": "ENMAX installs, maintains, and reads electricity meters across Calgary. Includes smart meter deployment, meter accuracy verification, expired meter replacement, and making consumption data available to customers and retailers. Updated 2025 Metering Standard aligns with current electrical codes and distributed energy resource requirements.",
+              "users": "All ENMAX Power customers (residential)",
+              "user_groups": [
+                "Residential customers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "enmax.com: usage portal",
+                  "url": "https://www.enmax.com/sign-in"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "ENMAX customer care",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "enmax.com: metering standard",
+                  "url": "https://www.enmax.com/operating-a-business/metering"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EUA",
+                  "color": "#0054a6",
+                  "full_name": "Electric Utilities Act"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "utilities",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get your home's electrical service modified or upgraded",
+              "desc": "Request changes to your home's electrical service connection -- panel upgrades, temporary disconnects for renovation, permanent disconnects, new site IDs for connections, and service capacity increases",
+              "users": "Homeowners, renovators, new home builders",
+              "user_groups": [
+                "Residential customers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "enmax.com: service request",
+                  "url": "https://www.enmax.com/homes/service-connections"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "ENMAX customer care",
+                  "url": null
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Licensed electrical contractor",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EUA",
+                  "color": "#0054a6",
+                  "full_name": "Electric Utilities Act"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Get your business property's electrical service modified or upgraded",
+                    "ministry": "enmax"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Have your business connected to and served by Calgary's electrical grid",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Receive reliable electricity at your business",
+              "desc": "ENMAX Power delivers electricity through Calgary's transmission and distribution network to commercial and industrial customers. Includes outage response, restoration, proactive maintenance, and planned infrastructure renewal.",
+              "users": "Calgary businesses, commercial property owners, industrial operations",
+              "user_groups": [
+                "Business customers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "enmax.com: outage map",
+                  "url": "https://outages.enmax.com"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "ENMAX 24/7 emergency line",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "enmax.com/outages",
+                  "url": "https://www.enmax.com/outages"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EUA",
+                  "color": "#0054a6",
+                  "full_name": "Electric Utilities Act"
+                },
+                {
+                  "abbrev": "HEEA",
+                  "color": "#2e7d32",
+                  "full_name": "Hydro and Electric Energy Act"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "utilities",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Receive reliable electricity at your home",
+                    "ministry": "enmax"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Get electrical infrastructure built for new development",
+              "desc": "ENMAX Power designs and builds electrical distribution infrastructure for new residential subdivisions and commercial developments. Includes Developer Choice model, Underground Residential Development (joint trenching), system capacity planning, and new service connections. Over $300 million invested annually in system growth.",
+              "users": "Land developers, subdivision builders, commercial developers",
+              "user_groups": [
+                "Business customers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "enmax.com: development services",
+                  "url": "https://www.enmax.com/operating-a-business/development-services"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "ENMAX development services",
+                  "url": null
+                },
+                {
+                  "type": "ch-email",
+                  "label": "ENMAX development inquiries",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EUA",
+                  "color": "#0054a6",
+                  "full_name": "Electric Utilities Act"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "construction",
+                "relationships": []
+              }
+            },
+            {
+              "name": "Get your business property's electrical service modified or upgraded",
+              "desc": "Request changes to your business property's electrical service -- capacity increases, three-phase power, temporary construction power, service relocations, and panel upgrades",
+              "users": "Commercial property owners, facility managers, contractors",
+              "user_groups": [
+                "Business customers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "enmax.com: service request",
+                  "url": "https://www.enmax.com/operating-a-business/service-connections"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "ENMAX commercial services",
+                  "url": null
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Licensed electrical contractor",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EUA",
+                  "color": "#0054a6",
+                  "full_name": "Electric Utilities Act"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "utilities",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Get your home's electrical service modified or upgraded",
+                    "ministry": "enmax"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Access utility infrastructure for telecom installations",
+              "desc": "Telecom companies apply to attach equipment to ENMAX Power's poles and infrastructure for communications network deployment",
+              "users": "Telecommunications companies, internet service providers",
+              "user_groups": [
+                "Business customers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "enmax.com: infrastructure access",
+                  "url": "https://www.enmax.com/operating-a-business"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "ENMAX infrastructure inquiries",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EUA",
+                  "color": "#0054a6",
+                  "full_name": "Electric Utilities Act"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Be protected from electrical hazards in your community",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Live and work safely around electrical infrastructure in your community",
+              "desc": "Safety education, emergency hazard reporting (downed powerlines, sparking equipment), buried utility locates before digging, and public awareness about working safely near power lines. 1,774 proactive safety measures completed in Alberta in 2025.",
+              "users": "All Calgarians, homeowners, yard maintenance workers",
+              "user_groups": [
+                "Residential customers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "ENMAX 24/7 emergency line",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "enmax.com: safety",
+                  "url": "https://www.enmax.com/safety"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "Alberta One-Call: buried utilities",
+                  "url": "https://www.albertaonecall.com"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "OHSA",
+                  "color": "#cc0000",
+                  "full_name": "Occupational Health and Safety Act"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Access safety standards and training for working near electrical infrastructure",
+                    "ministry": "enmax"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Access safety standards and training for working near electrical infrastructure",
+              "desc": "HEAT (Hazard and Electrical Awareness Training) sessions, contractor safety screening, safe work procedures for construction and maintenance near energized equipment, and the contractor portal",
+              "users": "Electrical contractors, construction crews, utility workers, trades professionals",
+              "user_groups": [
+                "Business customers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "enmax.com: contractor safety",
+                  "url": "https://www.enmax.com/operating-a-business/contractor-safety"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "enmax.com: contractor portal",
+                  "url": "https://www.enmax.com/operating-a-business"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "HEAT safety training sessions",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "OHSA",
+                  "color": "#cc0000",
+                  "full_name": "Occupational Health and Safety Act"
+                },
+                {
+                  "abbrev": "SCR",
+                  "color": "#cc6600",
+                  "full_name": "Safety Codes Act"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "safety_codes_standards",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Live and work safely around electrical infrastructure in your community",
+                    "ministry": "enmax"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#e8740c",
+      "title": "PRIORITY 2",
+      "short_name": "Affordable energy choices for Albertans",
+      "legend_label": "Affordability & choice",
+      "description": "Provide affordable electricity options and customer choice through competitive retail, transparent billing, and affordability support programs that keep customers connected",
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Choose how you buy and pay for electricity",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Choose an electricity rate and plan that fits your budget",
+              "desc": "ENMAX Energy offers competitive electricity plans (fixed-rate, floating-rate, green energy) and the regulated rate option (RRO) as retailer of last resort. Also offers bundled natural gas. Easymax brand for simplified pricing. Approximately 677,000 retail customers across Alberta.",
+              "users": "Alberta residential electricity consumers",
+              "user_groups": [
+                "Residential customers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "enmax.com: sign up / switch plans",
+                  "url": "https://www.enmax.com/homes/plans-and-rates"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "ENMAX customer care",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "enmax.com: compare plans",
+                  "url": "https://www.enmax.com/homes/plans-and-rates"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "ucahelps.alberta.ca: rate comparisons",
+                  "url": "https://ucahelps.alberta.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EUA",
+                  "color": "#0054a6",
+                  "full_name": "Electric Utilities Act"
+                },
+                {
+                  "abbrev": "RRR",
+                  "color": "#e8740c",
+                  "full_name": "Regulated Rate Option Regulation"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Choose energy supply options that fit your business operations",
+                    "ministry": "enmax"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Choose energy supply options that fit your business operations",
+              "desc": "ENMAX Energy offers commercial and industrial electricity supply contracts, natural gas supply, demand management options, and customized pricing for large consumers",
+              "users": "Alberta business electricity consumers, commercial property managers, industrial operations",
+              "user_groups": [
+                "Business customers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "enmax.com: business plans",
+                  "url": "https://www.enmax.com/operating-a-business/plans-and-rates"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "ENMAX commercial sales",
+                  "url": null
+                },
+                {
+                  "type": "ch-email",
+                  "label": "ENMAX business inquiries",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EUA",
+                  "color": "#0054a6",
+                  "full_name": "Electric Utilities Act"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Choose an electricity rate and plan that fits your budget",
+                    "ministry": "enmax"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Receive clear and consolidated billing for your services",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Receive one consolidated bill for electricity and municipal services",
+              "desc": "Under a service contract with the City of Calgary, ENMAX bills residential customers for electricity alongside City water, sewer, storm sewer, solid waste, and recycling services on a single monthly statement. Includes equalized payment options and multiple payment channels.",
+              "users": "Calgary residential customers",
+              "user_groups": [
+                "Residential customers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "enmax.com: view your bill",
+                  "url": "https://www.enmax.com/sign-in"
+                },
+                {
+                  "type": "ch-transact",
+                  "label": "enmax.com: pay online",
+                  "url": "https://www.enmax.com/sign-in"
+                },
+                {
+                  "type": "ch-app",
+                  "label": "ENMAX app: billing",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "ENMAX customer care",
+                  "url": null
+                },
+                {
+                  "type": "ch-mail",
+                  "label": "Paper bill by mail",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Stay connected to electricity when facing financial hardship",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get help staying connected when you can't afford your electricity",
+              "desc": "ENMAX partners with community organizations to support customers facing financial hardship. Includes payment arrangements, deferred payment plans, connections to essential needs funding through United Way and other agencies, and energy efficiency education. $4.2 million invested in community support programs in 2025.",
+              "users": "Low-income households, customers in financial crisis, vulnerable populations",
+              "user_groups": [
+                "Residential customers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "ENMAX customer care",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "enmax.com: payment support",
+                  "url": "https://www.enmax.com/homes/help-with-your-bill"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Community partner agencies (United Way, etc.)",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EUA",
+                  "color": "#0054a6",
+                  "full_name": "Electric Utilities Act -- customer protection provisions"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#2e7d32",
+      "title": "PRIORITY 3",
+      "short_name": "Enabling Calgary's energy future",
+      "legend_label": "Energy transition",
+      "description": "Support the energy transition by enabling customers to generate their own solar power, connect distributed energy resources to the grid, and adopt electric vehicles -- expanding what a utility does for citizens",
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Generate and export your own solar energy",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Connect your home solar system to the grid and earn credits for exported power",
+              "desc": "Residential customers can install solar panels and connect a micro-generation system to ENMAX Power's distribution grid under Alberta's Micro-generation Regulation. Exported electricity earns bill credits. Includes site assessment, interconnection application, bidirectional metering, and carbon credit eligibility.",
+              "users": "Homeowners with solar installations, micro-generation system owners",
+              "user_groups": [
+                "Residential customers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "enmax.com: micro-generation application",
+                  "url": "https://www.enmax.com/homes/solar"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "enmax.com: solar information",
+                  "url": "https://www.enmax.com/homes/solar"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "enmax.com: solar potential tool",
+                  "url": "https://www.enmax.com/homes/solar"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "ENMAX solar inquiries",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MGR",
+                  "color": "#2e7d32",
+                  "full_name": "Micro-generation Regulation"
+                },
+                {
+                  "abbrev": "EUA",
+                  "color": "#0054a6",
+                  "full_name": "Electric Utilities Act"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Connect your commercial solar or distributed energy system to the grid",
+                    "ministry": "enmax"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Connect your commercial solar or distributed energy system to the grid",
+              "desc": "Commercial and industrial customers can connect solar panels, battery storage, or other distributed energy resources (DER) to the ENMAX Power distribution grid. Includes interconnection application, capacity assessment, bidirectional metering, and technical standards compliance.",
+              "users": "Commercial property owners, industrial facilities, institutional buildings",
+              "user_groups": [
+                "Business customers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "enmax.com: commercial DER application",
+                  "url": "https://www.enmax.com/operating-a-business/solar"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "enmax.com: commercial solar",
+                  "url": "https://www.enmax.com/operating-a-business/solar"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "ENMAX commercial services",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MGR",
+                  "color": "#2e7d32",
+                  "full_name": "Micro-generation Regulation"
+                },
+                {
+                  "abbrev": "EUA",
+                  "color": "#0054a6",
+                  "full_name": "Electric Utilities Act"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Connect your home solar system to the grid and earn credits for exported power",
+                    "ministry": "enmax"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Charge electric vehicles at home and at work",
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get your home's electrical system ready for EV charging",
+              "desc": "Assess your home's electrical capacity for EV charger installation, request service upgrades if needed, and understand electrical load implications of Level 2 or DC fast charging",
+              "users": "EV owners, homeowners considering EVs",
+              "user_groups": [
+                "Residential customers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "enmax.com: EV charging",
+                  "url": "https://www.enmax.com/homes/ev-charging"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "ENMAX customer care",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Install EV charging infrastructure at your business",
+                    "ministry": "enmax"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Install EV charging infrastructure at your business",
+              "desc": "Plan and install workplace or commercial EV charging stations. Includes electrical capacity assessment, service upgrades, and integration with building electrical systems.",
+              "users": "Commercial property owners, fleet operators, parking facility managers",
+              "user_groups": [
+                "Business customers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "enmax.com: business EV solutions",
+                  "url": "https://www.enmax.com/operating-a-business/ev-charging"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "ENMAX commercial services",
+                  "url": null
+                },
+                {
+                  "type": "ch-email",
+                  "label": "ENMAX business EV inquiries",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Get your home's electrical system ready for EV charging",
+                    "ministry": "enmax"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Access Calgary's electricity market infrastructure",
+      "desc": "Retailers, generators, and wholesale market participants access ENMAX Power's regulated distribution network to serve their retail customers. Includes retailer enrollment, load settlement, meter data management, settlement data, and retailer service requests. This infrastructure enables competitive retail choice for all Calgary electricity customers.",
+      "users": "Licensed electricity retailers, generators, wholesale market participants",
+      "channels": [
+        {
+          "type": "ch-check",
+          "label": "enmax.com: retailer portal",
+          "url": "https://www.enmax.com/operating-a-business/retailers"
+        },
+        {
+          "type": "ch-email",
+          "label": "ENMAX retailer services",
+          "url": null
+        }
+      ],
+      "legislation": [
+        {
+          "abbrev": "EUA",
+          "color": "#0054a6",
+          "full_name": "Electric Utilities Act"
+        },
+        {
+          "abbrev": "COCR",
+          "color": "#cc6600",
+          "full_name": "Code of Conduct Regulation"
+        }
+      ],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "industry_specific",
+        "domain": "energy_minerals",
+        "relationships": []
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Be informed and consulted about electrical infrastructure projects in your community",
+      "desc": "ENMAX engages with communities about planned infrastructure projects -- new substations, transmission line upgrades, distribution system changes -- through public notices, open houses, and neighbourhood engagement. Community sponsorships and partnerships including Calgary Stampede, Amplifier Fund, and energy education programs.",
+      "users": "Calgary residents, neighbourhood associations, community organizations",
+      "channels": [
+        {
+          "type": "ch-engage",
+          "label": "enmax.com: community engagement",
+          "url": "https://www.enmax.com/about-us/community"
+        },
+        {
+          "type": "ch-web",
+          "label": "enmax.com: projects and news",
+          "url": "https://www.enmax.com/news"
+        },
+        {
+          "type": "ch-email",
+          "label": "Community relations inquiries",
+          "url": null
+        }
+      ],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "utilities",
+        "relationships": []
+      }
+    },
+    {
+      "id": "f-3",
+      "name": "Access real-time information about electricity grid status and demand",
+      "desc": "Real-time information about Calgary's electricity system including current system demand, outage status, and grid conditions. Supports situational awareness for customers, media, and market participants.",
+      "users": "General public, media, market participants, researchers",
+      "channels": [
+        {
+          "type": "ch-check",
+          "label": "enmax.com: system demand",
+          "url": "https://www.enmax.com/generation-and-wholesale"
+        },
+        {
+          "type": "ch-check",
+          "label": "enmax.com: outage map",
+          "url": "https://outages.enmax.com"
+        },
+        {
+          "type": "ch-web",
+          "label": "AESO: Alberta grid status",
+          "url": "https://www.aeso.ca"
+        }
+      ],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "both",
+        "individual": {
+          "tier": "societal_needs_supports",
+          "domain": "utilities"
+        },
+        "business": {
+          "tier": "industry_specific",
+          "domain": "energy_minerals"
+        },
+        "relationships": []
+      }
+    },
+    {
+      "id": "f-4",
+      "name": "Access regulatory documentation, tariffs, and technical standards",
+      "desc": "ENMAX publishes its distribution tariff, rate schedules, technical standards (metering, interconnection), AUC filings, Code of Conduct compliance plan, and regulatory notices. Required by the Electric Utilities Act and Alberta Utilities Commission.",
+      "users": "Retailers, contractors, developers, regulators, researchers, general public",
+      "channels": [
+        {
+          "type": "ch-web",
+          "label": "enmax.com: tariff and rates",
+          "url": "https://www.enmax.com/operating-a-business/tariff"
+        },
+        {
+          "type": "ch-web",
+          "label": "enmax.com: standards",
+          "url": "https://www.enmax.com/operating-a-business/metering"
+        },
+        {
+          "type": "ch-pub",
+          "label": "AUC regulatory filings",
+          "url": "https://www.auc.ab.ca"
+        },
+        {
+          "type": "ch-web",
+          "label": "enmax.com: compliance plan",
+          "url": "https://www.enmax.com/about-us/direction-and-leadership/our-plan-of-compliance"
+        }
+      ],
+      "legislation": [
+        {
+          "abbrev": "EUA",
+          "color": "#0054a6",
+          "full_name": "Electric Utilities Act"
+        },
+        {
+          "abbrev": "COCR",
+          "color": "#cc6600",
+          "full_name": "Code of Conduct Regulation"
+        },
+        {
+          "abbrev": "AUCA",
+          "color": "#7b1fa2",
+          "full_name": "Alberta Utilities Commission Act"
+        }
+      ],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "both",
+        "individual": {
+          "tier": "societal_needs_supports",
+          "domain": "utilities"
+        },
+        "business": {
+          "tier": "regulatory_compliance",
+          "domain": "reporting_obligations"
+        },
+        "relationships": []
+      }
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-transact",
+      "label": "Online transaction",
+      "bg_color": "#c8e6c9",
+      "text_color": "#1b5e20"
+    },
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-engage",
+      "label": "Engage",
+      "bg_color": "#e1bee7",
+      "text_color": "#6a1b9a"
+    },
+    {
+      "code": "ch-app",
+      "label": "Mobile app",
+      "bg_color": "#e0f2f1",
+      "text_color": "#00695c"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-email",
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-mail",
+      "label": "Mail",
+      "bg_color": "#f3e5f5",
+      "text_color": "#6a1b9a"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    {
+      "code": "ch-pub",
+      "label": "Publication",
+      "bg_color": "#f5f5f5",
+      "text_color": "#616161"
+    }
+  ],
+  "user_group_filters": [
+    "Residential customers",
+    "Business customers"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg_color": "#c8e6c9",
+      "text_color": "#1b5e20"
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg_color": "#e1bee7",
+      "text_color": "#6a1b9a"
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg_color": "#e0f2f1",
+      "text_color": "#00695c"
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg_color": "#f3e5f5",
+      "text_color": "#6a1b9a"
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg_color": "#f5f5f5",
+      "text_color": "#616161"
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

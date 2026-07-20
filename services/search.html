@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Find a Government Service — Search</title>
+<link rel="stylesheet" href="../css/style.css" />
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; color: #1a1a1a; line-height: 1.5; }
@@ -36,7 +37,10 @@
   .result-meta { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
   .tag { font-size: 11px; padding: 3px 10px; border-radius: 12px; }
   .tag.domain { background: #e8f0fe; color: #1a56db; }
-  .tag.ministry { background: #f0f0f0; color: #555; }
+  .svc-source { margin-top: 8px; font-size: 11px; color: #888; display: flex; align-items: center; gap: 4px; }
+  .svc-source .src-sep { color: #ccc; }
+  .svc-source a { color: #888; text-decoration: none; }
+  .svc-source a:hover { color: #1a56db; text-decoration: underline; }
   .tag.track-both { background: #ecfdf5; color: #059669; }
   .tag.relationship { background: #fef3c7; color: #92400e; }
 
@@ -58,9 +62,10 @@
 </style>
 </head>
 <body>
+<div class="nav-bar"><a href="/">All Service Maps</a> <span class="sep">/</span> <span class="current">Find a Service</span></div>
 
 <div class="hero">
-  <h1>Government of Alberta</h1>
+  <h1>Service Directory</h1>
   <h2>How can we help?</h2>
   <p>Search for a government service, or try one of the suggestions below</p>
   <div class="search-box">
@@ -97,20 +102,35 @@ let taxonomy = null;
 let allServices = [];
 let currentFilter = 'all';
 
-async function init() {
-  const taxResp = await fetch('../data/ab/taxonomy.json');
-  taxonomy = await taxResp.json();
-
-  const ministResp = await fetch('../data/ab/ministries.json');
-  const ministries = await ministResp.json();
-
-  for (const m of ministries) {
-    if (m.is_test) continue;
+async function loadEntities(code) {
+  for (const file of ['entities.json', 'ministries.json']) {
     try {
-      const resp = await fetch(`../data/ab/${m.prefix}.json`);
-      const data = await resp.json();
-      extractServices(data, m.prefix, m.short_name);
-    } catch(e) {}
+      const resp = await fetch(`../data/${code}/${file}`);
+      if (resp.ok) return await resp.json();
+    } catch (e) { /* try next */ }
+  }
+  return [];
+}
+
+async function init() {
+  const [taxResp, jResp] = await Promise.all([
+    fetch('../data/taxonomy.json'),
+    fetch('../data/jurisdictions.json')
+  ]);
+  taxonomy = await taxResp.json();
+  const jurisdictions = await jResp.json();
+
+  for (const j of jurisdictions) {
+    const jName = j.short_name || j.name;
+    const entities = await loadEntities(j.path || j.code);
+    for (const e of entities) {
+      if (e.is_test) continue;
+      try {
+        const resp = await fetch(`../data/${j.path || j.code}/${e.prefix}.json`);
+        const data = await resp.json();
+        extractServices(data, e.prefix, e.short_name || e.name, jName);
+      } catch(err) {}
+    }
   }
 
   setupSearch();
@@ -118,11 +138,11 @@ async function init() {
   setupSuggestions();
 }
 
-function extractServices(data, prefix, ministryName) {
+function extractServices(data, prefix, ministryName, jurisdictionName) {
   function addService(svc, type) {
     if (typeof svc === 'string') return;
     if (!svc.taxonomy) return;
-    allServices.push({ ...svc, ministry: prefix, ministryName, serviceType: type });
+    allServices.push({ ...svc, ministry: prefix, ministryName, jurisdiction: jurisdictionName, serviceType: type });
   }
   for (const fs of data.foundational_services || []) addService(fs, 'foundational');
   for (const goal of data.goals || []) {
@@ -212,11 +232,15 @@ function renderResults(results, query) {
         <div class="desc">${svc.desc || ''}</div>
         <div class="result-meta">
           <span class="tag domain">${domainLabel}</span>
-          <span class="tag ministry">${svc.ministryName}</span>
           ${svc.taxonomy.track === 'both' ? '<span class="tag track-both">Individuals &amp; businesses</span>' : ''}
           ${rels.map(r => `<span class="tag relationship">${taxonomy.relationship_types[r.type]?.label || r.type}</span>`).join('')}
         </div>
         ${channels.length ? `<div class="channels">${channels.map(c => `<a class="channel-link" href="${c.url}" target="_blank">${c.label}</a>`).join('')}</div>` : ''}
+        <div class="svc-source">
+          <span>${svc.jurisdiction}</span>
+          <span class="src-sep">/</span>
+          <a href="/${svc.ministry}/service-map">${svc.ministryName}</a>
+        </div>
       </div>`;
   }).join('');
 }
