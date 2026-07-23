@@ -230,7 +230,7 @@ for (const ev of LIFE_EVENTS) {
 // "All jurisdictions" is the explicit cross-government comparison mode.
 const JUR_SCOPE_KEY = 'smd-jurisdiction-scope';
 let jurisdictionsList = [];
-let currentScope = localStorage.getItem(JUR_SCOPE_KEY) || 'goa';
+let currentScope = localStorage.getItem(JUR_SCOPE_KEY) || 'all';
 function scopeCodes() {
   if (currentScope === 'all') return null;
   const codes = new Set([currentScope]);
