@@ -120,6 +120,13 @@ let taxonomy = null;
 let allServices = [];
 let currentTrack = 'individual';
 
+// Jurisdiction-aware ministry page URLs. GoA/Calgary pages live at the root
+// wildcard; other jurisdictions are path-scoped in netlify.toml.
+const JURISDICTION_URL_PREFIX = { gnb: '/nb', bcgov: '/bc' };
+function svcMapUrl(s) {
+  return `${JURISDICTION_URL_PREFIX[s.jCode] || ''}/${s.ministry}/service-map`;
+}
+
 async function loadEntities(code) {
   for (const file of ['entities.json', 'ministries.json']) {
     try {
@@ -146,7 +153,7 @@ async function init() {
       try {
         const resp = await fetch(`../data/${j.path || j.code}/${e.prefix}.json`);
         const data = await resp.json();
-        extractServices(data, e.prefix, e.short_name || e.name, jName);
+        extractServices(data, e.prefix, e.short_name || e.name, jName, j.code);
       } catch(err) { console.warn(`Failed to load ${j.path || j.code}/${e.prefix}`, err); }
     }
   }
@@ -155,13 +162,13 @@ async function init() {
   setupTabs();
 }
 
-function extractServices(data, prefix, ministryName, jurisdictionName) {
+function extractServices(data, prefix, ministryName, jurisdictionName, jCode) {
   function addService(svc, type) {
     if (typeof svc === 'string') return;
     if (!svc.taxonomy) return;
     allServices.push({
       ...svc, ministry: prefix, ministryName, jurisdiction: jurisdictionName,
-      serviceType: type
+      jCode, serviceType: type
     });
   }
   for (const fs of data.foundational_services || []) addService(fs, 'foundational');
@@ -270,7 +277,7 @@ function openPanel(track, tier, domain) {
         <div class="svc-source">
           <span>${s.jurisdiction}</span>
           <span class="src-sep">/</span>
-          <a href="/${s.ministry}/service-map">${s.ministryName}</a>
+          <a href="${svcMapUrl(s)}">${s.ministryName}</a>
         </div>
       </div>`;
   }).join('');

@@ -96,69 +96,81 @@
 </div>
 
 <script>
-// Life events — each maps to a set of domains and keyword filters
+// Life events — the citizen–government interaction model applied to moments of need.
+// Matching rules (see matchEvent):
+//   1. track must fit the event (individual events never surface business-only services)
+//   2. the service's taxonomy domain must be one of the event's domains — the model is the filter
+//   3. keywords act only as a relevance booster and tie-breaker, matched at word start
 const LIFE_EVENTS = [
   {
     id: 'baby',
     icon: '👶',
     title: "I'm having a baby",
     desc: "Birth registration, health coverage, parental benefits, child care, and family supports",
+    track: 'individual',
     domains: ['family_relationships', 'health_wellbeing', 'money_taxes_benefits', 'vital_records_id'],
-    keywords: ['birth', 'baby', 'child', 'parental', 'maternity', 'newborn', 'childcare', 'child care', 'prenatal', 'family']
+    keywords: ['birth', 'baby', 'parental', 'maternity', 'newborn', 'childcare', 'child care', 'child benefit', 'prenatal', 'midwif', 'early childhood', 'fertility', 'adopt']
   },
   {
     id: 'death',
     icon: '🕊️',
     title: "Someone has died",
     desc: "Death registration, estate administration, support orders, bereavement, and survivor benefits",
+    track: 'individual',
     domains: ['vital_records_id', 'justice_legal', 'family_relationships', 'money_taxes_benefits', 'housing_property'],
-    keywords: ['death', 'deceased', 'estate', 'bereavement', 'funeral', 'survivor', 'will', 'probate']
+    keywords: ['death', 'deceased', 'estate', 'bereavement', 'funeral', 'survivor', 'will', 'probate', 'coroner']
   },
   {
     id: 'job-loss',
     icon: '💼',
     title: "I lost my job",
     desc: "Employment standards, income support, retraining, career services, and financial assistance",
+    track: 'individual',
     domains: ['working_employment', 'money_taxes_benefits', 'education_training'],
-    keywords: ['employment', 'income support', 'job', 'unemploy', 'termination', 'layoff', 'severance', 'retrain', 'career']
+    keywords: ['employment', 'income support', 'income assistance', 'job', 'unemploy', 'termination', 'layoff', 'severance', 'retrain', 'career', 'upgrad', 'skills']
   },
   {
     id: 'moving',
     icon: '🏠',
-    title: "I'm moving to Alberta",
+    title: "I'm moving here",
     desc: "Driver's licence, health card, vehicle registration, credential recognition, and settlement services",
+    track: 'individual',
     domains: ['immigration_settling', 'driving_vehicles', 'health_wellbeing', 'vital_records_id', 'professional_credentials', 'housing_property'],
-    keywords: ['move', 'moving', 'newcomer', 'settle', 'immigrat', 'licence', 'health card', 'register', 'credential', 'IQAS']
+    keywords: ['move', 'moving', 'newcomer', 'settle', 'immigrat', 'licence', 'health card', 'register', 'credential', 'IQAS', 'enrol']
   },
   {
     id: 'business',
     icon: '🏪',
     title: "I'm starting a business",
     desc: "Business registration, licences, permits, tax accounts, and employer obligations",
+    track: 'business',
     domains: ['registration_legal', 'licences_permits', 'finances_taxes', 'people_employment'],
-    keywords: ['business', 'register', 'incorporat', 'licence', 'permit', 'employer', 'hire', 'tax account', 'startup']
+    keywords: ['business', 'register', 'incorporat', 'licence', 'permit', 'employer', 'hire', 'tax account', 'startup', 'sole proprietor', 'partnership']
   },
   {
     id: 'retire',
     icon: '🌅',
     title: "I'm retiring",
     desc: "Pension information, health benefits, seniors programs, housing options, and financial planning",
+    track: 'individual',
     domains: ['money_taxes_benefits', 'health_wellbeing', 'housing_property'],
-    keywords: ['pension', 'retire', 'senior', 'elder', 'lodge', 'continuing care', 'aged', 'CPP', 'benefit']
+    keywords: ['pension', 'retire', 'senior', 'elder', 'lodge', 'continuing care', 'aged', 'CPP', 'benefit', 'deferment']
   },
   {
     id: 'disaster',
     icon: '🌊',
     title: "My home was damaged",
     desc: "Disaster recovery assistance, emergency alerts, insurance information, and rebuilding permits",
+    track: 'individual',
     domains: ['safety_emergencies', 'housing_property', 'money_taxes_benefits', 'disaster_recovery'],
-    keywords: ['disaster', 'flood', 'fire', 'wildfire', 'emergency', 'damage', 'recovery', 'evacuat', 'rebuild']
+    keywords: ['disaster', 'flood', 'wildfire', 'house fire', 'emergency', 'damage', 'recovery', 'evacuat', 'rebuild', 'insurance']
   },
   {
     id: 'victim',
     icon: '⚖️',
     title: "I've been a victim of crime",
     desc: "Victim services, protection orders, legal aid, compensation, and safety planning",
+    track: 'individual',
     domains: ['justice_legal', 'safety_emergencies', 'family_relationships'],
     keywords: ['victim', 'crime', 'protect', 'restrain', 'assault', 'violence', 'trafficking', 'abuse', 'legal aid', 'compensation']
   },
@@ -167,37 +179,56 @@ const LIFE_EVENTS = [
     icon: '💔',
     title: "I'm leaving a relationship",
     desc: "Family law, child support, custody, protection orders, and financial assistance",
+    track: 'individual',
     domains: ['justice_legal', 'family_relationships', 'money_taxes_benefits', 'housing_property'],
-    keywords: ['divorce', 'separation', 'custody', 'child support', 'family law', 'mediation', 'protection order', 'domestic']
+    keywords: ['divorce', 'separation', 'custody', 'child support', 'family law', 'mediation', 'protection order', 'domestic', 'maintenance enforcement']
   },
   {
     id: 'turning-18',
     icon: '🎂',
     title: "I'm turning 18",
     desc: "Driver's licence, health card in your name, voting, post-secondary, and transitioning from child services",
+    track: 'individual',
     domains: ['driving_vehicles', 'vital_records_id', 'education_training', 'health_wellbeing', 'working_employment'],
-    keywords: ['licence', 'driver', 'vote', 'adult', 'post-secondary', 'university', 'college', 'transition', 'youth', 'aging out', 'student loan']
+    keywords: ['licence', 'driver', 'vote', 'adult', 'post-secondary', 'university', 'college', 'transition', 'youth', 'aging out', 'student loan', 'apprentice', 'tuition']
   },
   {
     id: 'caregiver',
     icon: '🤝',
     title: "I'm caring for an aging parent",
     desc: "Continuing care options, respite, home care, financial supports, and legal planning",
+    track: 'individual',
     domains: ['health_wellbeing', 'family_relationships', 'money_taxes_benefits', 'housing_property'],
-    keywords: ['senior', 'elder', 'caregiver', 'continuing care', 'lodge', 'home care', 'respite', 'abuse', 'capacity', 'directive', 'power of attorney']
+    keywords: ['senior', 'elder', 'caregiver', 'continuing care', 'lodge', 'home care', 'respite', 'abuse', 'capacity', 'directive', 'power of attorney', 'long-term care']
   },
   {
     id: 'addiction',
     icon: '🫂',
     title: "I'm dealing with addiction",
     desc: "Treatment options, detox, counselling, recovery supports, and crisis resources",
+    track: 'individual',
     domains: ['health_wellbeing'],
     keywords: ['addiction', 'substance', 'alcohol', 'drug', 'opioid', 'detox', 'treatment', 'recovery', 'counsell', 'crisis', 'mental health', 'harm reduction']
   }
 ];
 
+// Word-start keyword matching: 'retrain' matches "retraining", but 'fire'
+// no longer matches "firearm" via bare substring inclusion.
+function escapeRegExp(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+for (const ev of LIFE_EVENTS) {
+  ev._res = ev.keywords.map(kw => new RegExp('\\b' + escapeRegExp(kw.toLowerCase())));
+}
+
 let taxonomy = null;
 let allServices = [];
+const svcIndex = new Map(); // "jCode|prefix|service name" → service
+
+// Jurisdiction-aware ministry page URLs. GoA/Calgary pages live at the root
+// wildcard; other jurisdictions are path-scoped in netlify.toml.
+const JURISDICTION_URL_PREFIX = { gnb: '/nb', bcgov: '/bc' };
+function svcMapUrl(s) {
+  return `${JURISDICTION_URL_PREFIX[s.jCode] || ''}/${s.ministry}/service-map`;
+}
 
 async function loadEntities(code) {
   for (const file of ['entities.json', 'ministries.json']) {
@@ -225,19 +256,21 @@ async function init() {
       try {
         const resp = await fetch(`../data/${j.path || j.code}/${e.prefix}.json`);
         const data = await resp.json();
-        extractServices(data, e.prefix, e.short_name || e.name, jName);
+        extractServices(data, e.prefix, e.short_name || e.name, jName, j.code);
       } catch(err) {}
     }
   }
 
+  for (const s of allServices) svcIndex.set(`${s.jCode}|${s.ministry}|${s.name}`, s);
+
   renderEvents();
 }
 
-function extractServices(data, prefix, ministryName, jurisdictionName) {
+function extractServices(data, prefix, ministryName, jurisdictionName, jCode) {
   function addService(svc) {
     if (typeof svc === 'string') return;
     if (!svc.taxonomy) return;
-    allServices.push({ ...svc, ministry: prefix, ministryName, jurisdiction: jurisdictionName });
+    allServices.push({ ...svc, ministry: prefix, ministryName, jurisdiction: jurisdictionName, jCode });
   }
   for (const fs of data.foundational_services || []) addService(fs);
   for (const goal of data.goals || []) {
@@ -266,15 +299,46 @@ function getDomainLabel(domain) {
   return domain;
 }
 
+function svcTracks(svc) {
+  const t = svc.taxonomy;
+  return t.track === 'both' ? ['individual', 'business'] : [t.track];
+}
+
+// The interaction model is the filter; keywords only rank within it.
+// A service qualifies only when (a) it serves the event's track and
+// (b) its taxonomy domain is one of the event's domains. Keyword hits
+// then boost: name hit (3) > description hit (2) > domain-only (0 = excluded,
+// keeping journeys focused rather than dumping whole domains).
 function matchEvent(svc, event) {
+  if (!svcTracks(svc).includes(event.track)) return 0;
   const domains = getServiceDomains(svc);
-  const domainMatch = domains.some(d => event.domains.includes(d));
-  const text = `${svc.name} ${svc.desc || ''}`.toLowerCase();
-  const keywordMatch = event.keywords.some(kw => text.includes(kw));
-  // Require at least one match; prioritize keyword matches
-  if (keywordMatch) return 3;
-  if (domainMatch && event.keywords.some(kw => svc.name.toLowerCase().includes(kw))) return 2;
+  if (!domains.some(d => event.domains.includes(d))) return 0;
+  const name = svc.name.toLowerCase();
+  if (event._res.some(re => re.test(name))) return 3;
+  const desc = (svc.desc || '').toLowerCase();
+  if (event._res.some(re => re.test(desc))) return 2;
   return 0;
+}
+
+// Follow taxonomy relationship links from matched services to their
+// documented counterparts (same jurisdiction), e.g. a protection order
+// service linking to its enforcement pair.
+function getConnectedServices(matched) {
+  const matchedKeys = new Set(matched.map(s => `${s.jCode}|${s.ministry}|${s.name}`));
+  const connected = new Map();
+  for (const svc of matched) {
+    for (const rel of (svc.taxonomy.relationships || [])) {
+      const relMinistry = (rel.ministry || rel.target_ministry || svc.ministry).split('/').pop();
+      const relName = rel.service || rel.target_service;
+      const key = `${svc.jCode}|${relMinistry}|${relName}`;
+      if (matchedKeys.has(key) || connected.has(key)) continue;
+      const target = svcIndex.get(key);
+      if (!target) continue;
+      const relType = taxonomy.relationship_types[rel.type];
+      connected.set(key, { svc: target, relLabel: relType?.label || rel.type, via: svc.name });
+    }
+  }
+  return [...connected.values()].slice(0, 12);
 }
 
 function getEventServices(event) {
@@ -326,28 +390,37 @@ function openJourney(eventId) {
     return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
   });
 
+  function serviceCard(svc, relBadge) {
+    const channels = (svc.channels || []).filter(c => c.url).slice(0, 2);
+    return `
+      <div class="journey-service">
+        <h5>${svc.name}</h5>
+        <div class="sdesc">${svc.desc || ''}</div>
+        ${relBadge ? `<div class="smeta"><span class="stag domain">${relBadge}</span></div>` : ''}
+        ${channels.length ? `<div class="slinks">${channels.map(c => `<a href="${c.url}" target="_blank">${c.label}</a>`).join('')}</div>` : ''}
+        <div class="svc-source">
+          <span>${svc.jurisdiction}</span>
+          <span class="src-sep">/</span>
+          <a href="${svcMapUrl(svc)}">${svc.ministryName}</a>
+        </div>
+      </div>`;
+  }
+
+  const connected = getConnectedServices(services);
+
   const body = document.getElementById('journey-body');
   body.innerHTML = sortedDomains.map(domain => {
     const svcs = byDomain[domain];
     return `
       <div class="domain-group">
         <h4>${getDomainLabel(domain)} (${svcs.length})</h4>
-        ${svcs.map(svc => {
-          const channels = (svc.channels || []).filter(c => c.url).slice(0, 2);
-          return `
-            <div class="journey-service">
-              <h5>${svc.name}</h5>
-              <div class="sdesc">${svc.desc || ''}</div>
-              ${channels.length ? `<div class="slinks">${channels.map(c => `<a href="${c.url}" target="_blank">${c.label}</a>`).join('')}</div>` : ''}
-              <div class="svc-source">
-                <span>${svc.jurisdiction}</span>
-                <span class="src-sep">/</span>
-                <a href="/${svc.ministry}/service-map">${svc.ministryName}</a>
-              </div>
-            </div>`;
-        }).join('')}
+        ${svcs.map(svc => serviceCard(svc)).join('')}
       </div>`;
-  }).join('');
+  }).join('') + (connected.length ? `
+      <div class="domain-group">
+        <h4>Connected services (${connected.length})</h4>
+        ${connected.map(c => serviceCard(c.svc, `${c.relLabel} — linked from “${c.via}”`)).join('')}
+      </div>` : '');
 
   document.getElementById('journey-overlay').classList.add('open');
   body.scrollTop = 0;
