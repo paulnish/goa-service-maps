@@ -1,0 +1,1649 @@
+{
+  "prefix": "hma",
+  "full_name": "Ministry of Housing and Municipal Affairs",
+  "short_name": "Housing & Municipal Affairs",
+  "blurb": "Leads housing supply and affordability — residential tenancy, BC Housing programs, building codes — and supports local governments across B.C.",
+  "nav_name": "Housing and Municipal Affairs",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "GOAL 1",
+      "short_name": "Tenants and landlords have fair, accessible tenancy processes",
+      "legend_label": "Residential tenancies",
+      "description": "The ministry funds the Residential Tenancy Branch, which sets and enforces the rules for renting and strata living in B.C. and resolves disputes between landlords and tenants.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Start, manage and end a residential tenancy",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Learn your rights when starting a tenancy",
+              "desc": "Information for tenants and landlords on tenancy agreements, deposits, and the rights and responsibilities that apply from the start of a tenancy.",
+              "users": "Tenants, landlords",
+              "user_groups": [
+                "General public",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Residential tenancies",
+                  "url": "https://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancies"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Residential Tenancy Branch: 1-800-665-8779",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "RTA",
+                  "color": "#1565c0",
+                  "full_name": "Residential Tenancy Act  -  Tenancy agreements and starting a tenancy"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancies"
+              }
+            },
+            {
+              "name": "Resolve a tenancy dispute with your landlord or tenant",
+              "desc": "Apply for dispute resolution through the Residential Tenancy Branch — facilitation, a participatory hearing, an expedited hearing for urgent issues, or a direct request for straightforward claims like a missing deposit.",
+              "users": "Tenants, landlords",
+              "user_groups": [
+                "General public",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply for dispute resolution",
+                  "url": "https://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancies/solving-problems/tenancy-dispute-resolution"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Residential Tenancy Branch: 1-800-665-8779",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "RTA",
+                  "color": "#1565c0",
+                  "full_name": "Residential Tenancy Act  -  Dispute resolution and arbitration"
+                },
+                {
+                  "abbrev": "MHPTA",
+                  "color": "#5c6bc0",
+                  "full_name": "Manufactured Home Park Tenancy Act  -  Dispute resolution"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "text": "Support tenants with interventions that deliver affordability and a high quality of living without compromising rental housing supply or rental housing standards"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancies/solving-problems/tenancy-dispute-resolution"
+              }
+            },
+            {
+              "name": "End a tenancy or respond to an eviction notice",
+              "desc": "Rules and options for ending a tenancy lawfully, including tenant notice, landlord eviction notices, mutual agreements, breaking a lease, and moving-out and deposit steps.",
+              "users": "Tenants, landlords",
+              "user_groups": [
+                "General public",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "End a tenancy",
+                  "url": "https://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancies/ending-a-tenancy"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "RTA",
+                  "color": "#1565c0",
+                  "full_name": "Residential Tenancy Act  -  Ending a tenancy and evictions"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancies/ending-a-tenancy"
+              }
+            },
+            {
+              "name": "Check the rules on rent and rent increases",
+              "desc": "Tenants and landlords can look up the maximum allowable rent increase, rules for paying rent, and calculators for rent-related questions.",
+              "users": "Tenants, landlords",
+              "user_groups": [
+                "General public",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Residential tenancies",
+                  "url": "https://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancies"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "RTA",
+                  "color": "#1565c0",
+                  "full_name": "Residential Tenancy Act  -  Rent and rent increases"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "text": "Support tenants with interventions that deliver affordability and a high quality of living without compromising rental housing supply or rental housing standards"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancies"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Live in and manage strata housing",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Understand your strata's bylaws and rules",
+              "desc": "Strata owners, tenants and council members can learn how strata bylaws and rules work, including restrictions some stratas set on pets, short-term rentals or smoking.",
+              "users": "Strata owners, tenants, council members",
+              "user_groups": [
+                "General public",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Strata housing",
+                  "url": "https://www2.gov.bc.ca/gov/content/housing-tenancy/strata-housing"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SPA",
+                  "color": "#00695c",
+                  "full_name": "Strata Property Act  -  Bylaws and rules"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/housing-tenancy/strata-housing"
+              }
+            },
+            {
+              "name": "Resolve a strata property dispute",
+              "desc": "Strata disputes can be resolved within the strata corporation, through the Civil Resolution Tribunal, in court, or by arbitration.",
+              "users": "Strata owners, council members",
+              "user_groups": [
+                "General public",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Resolving strata disputes",
+                  "url": "https://www2.gov.bc.ca/gov/content/housing-tenancy/strata-housing/resolving-disputes"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SPA",
+                  "color": "#00695c",
+                  "full_name": "Strata Property Act  -  Dispute resolution"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Resolve a low-value dispute through the Civil Resolution Tribunal",
+                    "ministry": "ag"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/housing-tenancy/strata-housing"
+              }
+            },
+            {
+              "name": "Wind up a strata corporation",
+              "desc": "Strata corporations can terminate — wind up and cancel the strata plan — with an 80% vote of all owners.",
+              "users": "Strata owners",
+              "user_groups": [
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Strata termination",
+                  "url": "https://www2.gov.bc.ca/gov/content/housing-tenancy/strata-housing/termination"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SPA",
+                  "color": "#00695c",
+                  "full_name": "Strata Property Act  -  Termination of a strata corporation"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/housing-tenancy/strata-housing"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "title": "GOAL 2",
+      "short_name": "Renters, homeowners and people in housing need can find and afford a place to live",
+      "legend_label": "Housing affordability & supports",
+      "description": "Through BC Housing, the ministry funds rent assistance, subsidized and affordable housing, homelessness services, and home-adaptation and home-ownership programs.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get help paying rent",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for rental assistance as a senior renter",
+              "desc": "The Shelter Aid for Elderly Renters (SAFER) program provides a monthly cash payment to help make rent affordable for B.C. renters aged 60 and over with low to moderate income.",
+              "users": "Renters aged 60 and over",
+              "user_groups": [
+                "Seniors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Shelter Aid for Elderly Renters (SAFER)",
+                  "url": "https://www.bchousing.org/housing-assistance/rental-assistance-programs/SAFER"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "SAFER application form",
+                  "url": "https://www.bchousing.org/sites/default/files/media/documents/SAFER-Application-Form.pdf"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "BC Housing: 604-433-2218 / 1-800-257-7756",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.bchousing.org/housing-assistance/rental-assistance-programs/SAFER"
+              }
+            },
+            {
+              "name": "Apply for rental assistance as a low-income working family",
+              "desc": "The Rental Assistance Program (RAP) helps eligible low-income working families pay their monthly rent in the private market.",
+              "users": "Low-income working families",
+              "user_groups": [
+                "Families & caregivers",
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Rental Assistance Program (RAP)",
+                  "url": "https://www.bchousing.org/housing-assistance/rental-assistance-programs/RAP"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "BC Housing: 604-433-2218 / 1-800-257-7756",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.bchousing.org/housing-assistance/rental-assistance-programs/RAP"
+              }
+            },
+            {
+              "name": "Apply for the Canada-BC Housing Benefit",
+              "desc": "A joint federal-provincial rent supplement for low-income households, delivered by BC Housing alongside SAFER and RAP.",
+              "users": "Low-income renters",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Canada-BC Housing Benefit",
+                  "url": "https://www.bchousing.org/housing-assistance/rental-assistance-programs/CBCHB"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Find subsidized or affordable rental housing",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for subsidized housing",
+              "desc": "Long-term subsidized housing for low-income B.C. residents who meet eligibility criteria, applied for through the BC Housing Registry.",
+              "users": "Low-income residents",
+              "user_groups": [
+                "General public",
+                "Families & caregivers",
+                "Seniors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Subsidized housing",
+                  "url": "https://www.bchousing.org/housing-assistance/rental-housing/subsidized-housing"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "How to apply for rental housing",
+                  "url": "https://www.bchousing.org/housing-assistance/rental-housing/how-to-apply"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "text": "Increase the supply of rental, co-op and non-market housing"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.bchousing.org/housing-assistance/rental-housing/subsidized-housing"
+              }
+            },
+            {
+              "name": "Search housing listings for affordable and market rentals",
+              "desc": "An online tool to search BC Housing's rental buildings and build a list of options based on your criteria, including affordable, market-rent and subsidized units.",
+              "users": "Renters",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Housing Listings",
+                  "url": "https://housingsearch.bchousing.org/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/housing"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Get help if you're experiencing homelessness",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Find an emergency shelter near you",
+              "desc": "An interactive map and list of emergency shelters, extreme-weather response spaces and drop-in centres across B.C.",
+              "users": "People experiencing homelessness",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Homelessness Services & Programs",
+                  "url": "https://www.bchousing.org/housing-assistance/homelessness-services"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "Emergency Shelter Map",
+                  "url": "https://smap.bchousing.org/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/housing"
+              }
+            },
+            {
+              "name": "Connect with a homeless outreach worker",
+              "desc": "Outreach workers help people who are homeless or at risk of homelessness with immediate needs, and connect them with housing, income support and other services.",
+              "users": "People experiencing or at risk of homelessness",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Find a Homeless Outreach Worker",
+                  "url": "https://www.bchousing.org/housing-assistance/homelessness-services/find-homeless-outreach-worker"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 6,
+                  "text": "Support local governments and others affected by encampments with dignified, prompt and effective interventions to move people living in encampments inside before encampments can become entrenched"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.bchousing.org/housing-assistance/homelessness-services/find-homeless-outreach-worker"
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "name": "Adapt your home for accessibility",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for a home accessibility adaptation rebate",
+              "desc": "The BC Rebate for Accessible Home Adaptations (BC RAHA) provides up to $20,000 to eligible low- and moderate-income households — homeowners, or tenants applying jointly with their landlord — to adapt a home for a senior or a person with a permanent disability.",
+              "users": "Homeowners, tenants and landlords",
+              "user_groups": [
+                "Seniors",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "BC RAHA program overview",
+                  "url": "https://www.bchousing.org/housing-assistance/BC-RAHA/program-overview"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "BC RAHA Calculator",
+                  "url": "https://bcrahacalculator.bchousing.org/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.bchousing.org/housing-assistance/BC-RAHA/program-overview"
+              }
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "name": "Manage home ownership costs",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for the home owner grant to reduce your property tax",
+              "desc": "The home owner grant reduces the amount of property tax homeowners pay each year on their principal residence.",
+              "users": "Homeowners",
+              "user_groups": [
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Home owner grant",
+                  "url": "https://www2.gov.bc.ca/gov/content/taxes/property-taxes/annual-property-tax/home-owner-grant"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 2,
+                  "text": "Work to make homeownership a reality for more British Columbians"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/taxes/property-taxes/annual-property-tax/home-owner-grant"
+              }
+            },
+            {
+              "name": "Defer your property taxes as a senior or person with a disability",
+              "desc": "Eligible homeowners — including those 55 and older, surviving spouses, people with disabilities, and families financially supporting a child — can apply to defer paying annual property tax on their home.",
+              "users": "Homeowners",
+              "user_groups": [
+                "Seniors",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Property tax deferment programs",
+                  "url": "https://www2.gov.bc.ca/gov/content?id=CD6BF356979D4951910FA9D6BD5674E8"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/housing-tenancy/owning-a-home"
+              }
+            },
+            {
+              "name": "Appeal your property assessment",
+              "desc": "Homeowners who disagree with their annual BC Assessment notice can file a Notice of Complaint with a Property Assessment Review Panel by January 31.",
+              "users": "Homeowners",
+              "user_groups": [
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Property Assessment Review Panel",
+                  "url": "https://www2.gov.bc.ca/gov/content/housing-tenancy/owning-a-home/property-assessment-review-panels2"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/housing-tenancy/owning-a-home"
+              }
+            },
+            {
+              "name": "Buy an attainable home through a below-market housing initiative",
+              "desc": "The Attainable Housing Initiative at the Heather Lands aims to provide homeownership for up to 2,600 middle-income households in Vancouver at below-market prices.",
+              "users": "Middle-income households",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Attainable Housing Initiative – Heather Lands",
+                  "url": "https://gov.bc.ca/AHIHeatherlands"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 2,
+                  "text": "Work to make homeownership a reality for more British Columbians"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/housing"
+              }
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "name": "Access Indigenous housing supports",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Access Indigenous housing programs and providers",
+              "desc": "Information and provider listings for Indigenous housing on and off Nation, including Indigenous-run housing societies delivering rental and supportive housing.",
+              "users": "Indigenous individuals and families, Indigenous housing providers",
+              "user_groups": [
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Indigenous housing",
+                  "url": "https://www2.gov.bc.ca/gov/content/housing-tenancy/indigenous-housing"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/housing-tenancy"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#b45309",
+      "title": "GOAL 3",
+      "short_name": "Homes are built to code and short-term rentals support B.C.'s housing supply",
+      "legend_label": "Building safety & short-term rentals",
+      "description": "The ministry sets B.C.'s construction codes and builder licensing rules, and administers the province's short-term rental registry and enforcement program.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Build, renovate or buy a home to code",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Check building code requirements for your project",
+              "desc": "Look up the BC Building, Plumbing and Fire codes that apply to constructing, renovating or altering a building, including energy-efficiency and accessibility requirements.",
+              "users": "Homeowners, builders, designers",
+              "user_groups": [
+                "General public",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "BC Building, Plumbing and Fire codes",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/construction-industry/building-codes-standards/bc-codes"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "BA",
+                  "color": "#8d6e63",
+                  "full_name": "Building Act  -  Provincial building code"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "scenario_dependent",
+                  "domain": "housing_property"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "safety_codes_standards"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/construction-industry/building-codes-standards"
+              }
+            },
+            {
+              "name": "Get a permit before you build or renovate",
+              "desc": "Understand the land use and permitting process, and what building permits a local government may require for your construction or renovation project.",
+              "users": "Homeowners, builders",
+              "user_groups": [
+                "General public",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Land use and permitting",
+                  "url": "https://www2.gov.bc.ca/gov/content/housing-tenancy/building-or-renovating/before-you-start"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "BA",
+                  "color": "#8d6e63",
+                  "full_name": "Building Act  -  Building permits and local government authority"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 5,
+                  "text": "Work across ministries to expedite permits required for new housing construction"
+                }
+              ],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "scenario_dependent",
+                  "domain": "housing_property"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "licences_permits"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/construction-industry/building-codes-standards"
+              }
+            },
+            {
+              "name": "Become a licensed residential builder",
+              "desc": "General contractors, developers and building envelope renovators must hold a residential builder licence from BC Housing and arrange home warranty insurance before starting construction on a new home.",
+              "users": "General contractors, developers, building envelope renovators",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Licensed Residential Builders Portal",
+                  "url": "https://LRBportal.bchousing.org"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Apply to become a licensed residential builder",
+                  "url": "https://www.bchousing.org/licensing-consumer-services/builder-licensing/become-licensed-residential-builder"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HPA",
+                  "color": "#5d4037",
+                  "full_name": "Homeowner Protection Act  -  Residential builder licensing"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.bchousing.org/licensing-consumer-services/builder-licensing/become-licensed-residential-builder"
+              }
+            },
+            {
+              "name": "Register a new home for warranty protection",
+              "desc": "Licensed residential builders must register new homes for third-party home warranty insurance before construction begins, and buyers can check a home's warranty coverage.",
+              "users": "Builders, developers, new home buyers",
+              "user_groups": [
+                "Businesses & employers",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Register a new home",
+                  "url": "https://www.bchousing.org/licensing-consumer-services/warranty/register-new-home"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HPA",
+                  "color": "#5d4037",
+                  "full_name": "Homeowner Protection Act  -  New home warranty registration"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Use standardized housing designs to speed up your build",
+              "desc": "Pre-approved standardized housing designs and a Building Permit Hub help homebuilders and local governments move projects through design and permitting faster.",
+              "users": "Homebuilders, local governments",
+              "user_groups": [
+                "Businesses & employers",
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Digital construction tools",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/construction-industry/building-codes-standards/innovation"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 8,
+                  "text": "Continue work with the Minister of Jobs and Economic Growth on standardized modular housing design"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "construction",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/construction-industry/building-codes-standards"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Register and operate a short-term rental",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Register your short-term rental as a host",
+              "desc": "Short-term rental hosts, platforms and strata hotel platforms operating in B.C. must register and pay annual registration fees through the provincial short-term rental registry, and renew each year to keep operating.",
+              "users": "Short-term rental hosts and platforms",
+              "user_groups": [
+                "Property owners",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Register as a Host",
+                  "url": "https://host.shorttermrental.registry.gov.bc.ca/en-CA/auth/login"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "ServiceBC: 1-833-828-2240",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "STRAA",
+                  "color": "#c2185b",
+                  "full_name": "Short-Term Rental Accommodations Act  -  Provincial registration"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": [
+                  {
+                    "type": "complainant_regulated_party",
+                    "service": "Report a short-term rental compliance concern",
+                    "ministry": "hma"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/housing-tenancy/short-term-rentals/registry"
+              }
+            },
+            {
+              "name": "Check if the principal residence requirement applies to your rental",
+              "desc": "In many B.C. communities, short-term rentals are limited to a host's principal residence plus one secondary suite or accessory dwelling unit on the same property.",
+              "users": "Short-term rental hosts",
+              "user_groups": [
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Provincial principal residence requirement",
+                  "url": "https://www2.gov.bc.ca/gov/content/housing-tenancy/short-term-rentals/principal-residence-requirement"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "STRAA",
+                  "color": "#c2185b",
+                  "full_name": "Short-Term Rental Accommodations Act  -  Principal residence requirement"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/housing-tenancy/short-term-rentals"
+              }
+            },
+            {
+              "name": "Report a short-term rental compliance concern",
+              "desc": "The Compliance and Enforcement Unit in the Short-Term Rental Branch investigates and enforces the provincial short-term rental rules.",
+              "users": "General public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Compliance and enforcement",
+                  "url": "https://www2.gov.bc.ca/gov/content/housing-tenancy/short-term-rentals/ceu"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "STRAA",
+                  "color": "#c2185b",
+                  "full_name": "Short-Term Rental Accommodations Act  -  Compliance and enforcement"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": [
+                  {
+                    "type": "complainant_regulated_party",
+                    "service": "Register your short-term rental as a host",
+                    "ministry": "hma"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/housing-tenancy/short-term-rentals"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#6a1b9a",
+      "title": "GOAL 4",
+      "short_name": "Local governments have the funding, tools and democratic processes to serve their communities",
+      "legend_label": "Local government support",
+      "description": "The ministry funds local government infrastructure and operations, sets the legislative framework for municipalities and regional districts, and administers B.C.'s general local elections.",
+      "metrics": [],
+      "css_class": "goal-4",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Access local government funding programs",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for local government infrastructure or community grant funding",
+              "desc": "Local governments can access conditional and unconditional provincial grants, including the Growing Communities Fund, infrastructure grants, and small community and regional district grants.",
+              "users": "Municipalities, regional districts",
+              "user_groups": [
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Local government grants and transfers",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/local-governments/grants-transfers"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Victoria office: 250-387-4060",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "LGGA",
+                  "color": "#6a1b9a",
+                  "full_name": "Local Government Grants Act  -  Grants to local governments"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 7,
+                  "text": "Work with local governments to achieve housing targets and address concerns related to infrastructure"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/local-governments/grants-transfers"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Take part in local government elections",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Run for local government office",
+              "desc": "Residents interested in running for mayor, councillor, regional district director, school trustee or other local office must meet residency and nomination requirements set by provincial legislation, and follow campaign financing and advertising rules.",
+              "users": "Prospective candidates",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Running for local office",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/local-governments/governance-powers/general-local-elections/running-for-local-office"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Candidate's Guide to Local Elections in B.C.",
+                  "url": "https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/local-governments/governance-powers/candidates_guide_to_local_elections.pdf"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "LGA",
+                  "color": "#8e24aa",
+                  "full_name": "Local Government Act  -  Nomination and eligibility for local office"
+                },
+                {
+                  "abbrev": "LECFA",
+                  "color": "#00838f",
+                  "full_name": "Local Elections Campaign Financing Act  -  Campaign financing rules for candidates"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/local-governments/governance-powers/general-local-elections"
+              }
+            },
+            {
+              "name": "Vote in a local government election",
+              "desc": "B.C. holds general local elections every four years on the third Saturday in October — the next is October 17, 2026. Eligible residents and property owners can vote at advance opportunities, on general voting day, or by mail ballot where offered.",
+              "users": "Eligible voters",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Voting in local elections",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/local-governments/governance-powers/general-local-elections/voting-local-elections"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "LGA",
+                  "color": "#8e24aa",
+                  "full_name": "Local Government Act  -  Voter eligibility and voting"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/local-governments/governance-powers/general-local-elections"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Understand local government powers and bylaws",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Look up your local government's bylaws",
+              "desc": "Municipal councils and regional district boards make bylaws under provincial legislation covering things like zoning, business licensing and short-term rentals; check with your local government for the bylaws that apply to you.",
+              "users": "Residents, property owners, businesses",
+              "user_groups": [
+                "General public",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Local Government Bylaws",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/local-governments/governance-powers/bylaws"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CC",
+                  "color": "#00897b",
+                  "full_name": "Community Charter  -  Municipal bylaw-making authority"
+                },
+                {
+                  "abbrev": "LGA",
+                  "color": "#8e24aa",
+                  "full_name": "Local Government Act  -  Regional district bylaw-making authority"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Ministry program and funding review",
+      "desc": "Ongoing review of ministry programs and initiatives with the Ministry of Finance to keep spending efficient and focused on affordable housing, economic growth and affordability, in the context of provincial budget and cost pressures.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [
+        {
+          "number": 1,
+          "text": "Work with the Minister of Finance to review all existing Ministry of Housing and Municipal Affairs programs and initiatives to ensure programs are efficient and remain relevant to delivering affordable housing, growing the economy and helping keep costs low for British Columbians"
+        }
+      ],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "scenario_dependent",
+        "domain": "housing_property",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Housing supply and affordability policy development",
+      "desc": "Policy work to increase the supply of rental, co-op and non-market housing, identify surplus government real estate for housing, remove barriers to small-scale multi-unit housing, and work with homebuilders on construction cost and interest-rate barriers.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [
+        {
+          "number": 3,
+          "text": "Increase the supply of rental, co-op and non-market housing. Identify under-used capital that can be leveraged to construct new purpose-built rental housing across the province"
+        }
+      ],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "scenario_dependent",
+        "domain": "housing_property",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-3",
+      "name": "Housing targets and local government infrastructure coordination",
+      "desc": "Coordinates with local governments to set and achieve housing targets and address the infrastructure needs that come with new housing growth.",
+      "users": "Internal program staff, local governments",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [
+        {
+          "number": 7,
+          "text": "Work with local governments to achieve housing targets and address concerns related to infrastructure"
+        }
+      ],
+      "taxonomy": {
+        "track": "business",
+        "tier": "core_business_needs",
+        "domain": "finances_taxes",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    }
+  ],
+  "mandate_date": "July 17, 2025",
+  "mandate_minister": "Christine Boyle",
+  "mandate_pdf": "https://www2.gov.bc.ca/assets/gov/government/ministries-organizations/premier-cabinet-mlas/minister-letter/mandate_letter_christine_boyle.pdf",
+  "cross_cutting": [
+    "Economic growth and jobs",
+    "Affordability and housing",
+    "Health care",
+    "Community safety",
+    "Climate action",
+    "Indigenous reconciliation"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Work with the Minister of Finance to review all existing Ministry of Housing and Municipal Affairs programs and initiatives to ensure programs are efficient and remain relevant to delivering affordable housing, growing the economy and helping keep costs low for British Columbians",
+      "mapping": "-> Ministry program and funding review"
+    },
+    {
+      "number": 2,
+      "text": "Work to make homeownership a reality for more British Columbians",
+      "mapping": "-> Apply for the home owner grant to reduce your property tax; Buy an attainable home through a below-market housing initiative"
+    },
+    {
+      "number": 3,
+      "text": "Increase the supply of rental, co-op and non-market housing. Identify under-used capital that can be leveraged to construct new purpose-built rental housing across the province",
+      "mapping": "-> Apply for subsidized housing; Housing supply and affordability policy development"
+    },
+    {
+      "number": 4,
+      "text": "Support tenants with interventions that deliver affordability and a high quality of living without compromising rental housing supply or rental housing standards",
+      "mapping": "-> Resolve a tenancy dispute with your landlord or tenant; Check the rules on rent and rent increases"
+    },
+    {
+      "number": 5,
+      "text": "Work across ministries to expedite permits required for new housing construction",
+      "mapping": "-> Get a permit before you build or renovate"
+    },
+    {
+      "number": 6,
+      "text": "Support local governments, the Minister of Transportation and Transit, the Minister of Environment and Parks, and others affected by encampments with dignified, prompt and effective interventions to move people living in encampments inside before encampments can become entrenched",
+      "mapping": "-> Connect with a homeless outreach worker; Find an emergency shelter near you"
+    },
+    {
+      "number": 7,
+      "text": "Work with local governments to achieve housing targets and address concerns related to infrastructure",
+      "mapping": "-> Apply for local government infrastructure or community grant funding; Housing targets and local government infrastructure coordination"
+    },
+    {
+      "number": 8,
+      "text": "Continue work with the Minister of Jobs and Economic Growth on standardized modular housing design",
+      "mapping": "-> Use standardized housing designs to speed up your build"
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Seniors",
+    "Families & caregivers",
+    "Workers & job seekers",
+    "Businesses & employers",
+    "Property owners",
+    "Municipalities & local governments",
+    "Indigenous communities"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

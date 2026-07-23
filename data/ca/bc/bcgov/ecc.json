@@ -1,0 +1,1634 @@
+{
+  "prefix": "ecc",
+  "full_name": "Ministry of Education and Child Care",
+  "short_name": "Education & Child Care",
+  "blurb": "Leads B.C.'s K-12 public and independent school systems and the child care sector — from StrongStartBC early learning through graduation.",
+  "nav_name": "Education and Child Care",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "title": "GOAL 1",
+      "short_name": "Every child in B.C. can access a K-12 education that fits their family",
+      "legend_label": "K-12 access & choice",
+      "description": "The ministry oversees B.C.'s public school districts, independent schools, online learning and homeschooling so families can choose the K-12 option that works for their child, and supports the safety, inclusion and cultural belonging of every student.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Enrol your child in school",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Find a school in your community",
+              "desc": "Search for public and independent schools and contact your local school district or francophone education authority.",
+              "users": "Parents and caregivers of school-age children, new residents",
+              "user_groups": [
+                "Families & caregivers",
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "bcschoolcontacts.gov.bc.ca",
+                  "url": "https://bcschoolcontacts.gov.bc.ca/"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "gov.bc.ca/education-training/k-12",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/k-12"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/k-12"
+              }
+            },
+            {
+              "name": "Register your child for kindergarten or elementary school",
+              "desc": "Register a school-age child with a public school district's neighbourhood school or catchment-area school.",
+              "users": "Parents and guardians of children starting school",
+              "user_groups": [
+                "Families & caregivers",
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Local school or school district office",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "gov.bc.ca/education-training/k-12",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/k-12"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SA",
+                  "color": "#0070c0",
+                  "full_name": "School Act  -  s.3: Eligibility to enrol in an educational program"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Enrol in online learning for Kindergarten to Grade 12",
+              "desc": "Enrol with a Provincial or District Online Learning School to take a full or partial course load online, by web conferencing, teleconferencing or correspondence.",
+              "users": "Students in Grades K-12, especially Grades 8-12",
+              "user_groups": [
+                "Students & learners",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Classroom alternatives",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/classroom-alternatives"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "Online Learning BC",
+                  "url": "https://search.onlinelearningbc.com/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SA",
+                  "color": "#0070c0",
+                  "full_name": "School Act  -  s.1: Online learning and online learning school definitions"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/classroom-alternatives"
+              }
+            },
+            {
+              "name": "Register your child as a homeschooler",
+              "desc": "Parents who deliver their child's entire educational program at home must register the child with a public school principal or an independent school authority by September 30 each year.",
+              "users": "Parents and guardians choosing to homeschool",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Homeschooling",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/classroom-alternatives/homeschooling"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "School or school district office",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SA",
+                  "color": "#0070c0",
+                  "full_name": "School Act  -  s.13: Registration of children educated at home"
+                },
+                {
+                  "abbrev": "ISA",
+                  "color": "#6a1b9a",
+                  "full_name": "Independent School Act  -  s.10: Registration of home schooled children"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/classroom-alternatives/homeschooling"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Choose an independent or alternative school",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Establish a new independent school",
+              "desc": "Prospective school authorities apply through an 8-step process (expression of interest, application, interview, pre-certification, interim certification and external evaluation) to open a B.C.-certified independent school.",
+              "users": "Prospective independent school authorities (societies, non-profits)",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Independent School BC Online Portal",
+                  "url": "https://independentschoolservices.gov.bc.ca/login"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Establishing an Independent School policy",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/k-12/administration/legislation-policy/independent-schools/establishing-an-independent-school"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ISA",
+                  "color": "#6a1b9a",
+                  "full_name": "Independent School Act  -  s.4 and Schedule: Classification of independent schools"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/k-12/administration/legislation-policy/independent-schools/establishing-an-independent-school"
+              }
+            },
+            {
+              "name": "Get funding as a certified independent school",
+              "desc": "Certified independent school authorities receive per-student operating grants based on their Group 1-4 classification and per-student operating cost.",
+              "users": "Certified independent school authorities",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Grants to Independent Schools policy",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/k-12/administration/legislation-policy/independent-schools/grants-to-independent-schools"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ISA",
+                  "color": "#6a1b9a",
+                  "full_name": "Independent School Act  -  s.12: Grant; s.13: Special purpose grants"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/k-12/administration/legislation-policy/independent-schools"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Support your child's safety and wellbeing at school",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get support for school bullying, safety or inclusion concerns",
+              "desc": "erase (expect respect & a safe education) helps students, families, educators and community partners report concerns and find supports for safe, caring and inclusive school communities.",
+              "users": "Students, parents, educators",
+              "user_groups": [
+                "Students & learners",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "erase",
+                  "url": "https://www2.gov.bc.ca/gov/content/erase"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/education"
+              }
+            },
+            {
+              "name": "Get support for a child with additional learning needs",
+              "desc": "Inclusive education funding and program supports help students with disabilities or diverse abilities access a standard educational program alongside their peers.",
+              "users": "Students with support needs and their families",
+              "user_groups": [
+                "Students & learners",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gov.bc.ca/education-training/k-12",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/k-12"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "School or school district office",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SA",
+                  "color": "#0070c0",
+                  "full_name": "School Act  -  s.82: Standard educational program, including individual education plans"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Access Indigenous education programs and supports",
+              "desc": "Programs, curriculum resources and staff support the success of Indigenous students and help all students learn about Indigenous cultures, languages and history.",
+              "users": "Indigenous students and families, all students and educators",
+              "user_groups": [
+                "Students & learners",
+                "Indigenous communities",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Indigenous education",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/k-12/administration/program-management/indigenous-education"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/education"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "title": "GOAL 2",
+      "short_name": "Students progress through school and graduate prepared for what's next",
+      "legend_label": "Graduation & records",
+      "description": "The ministry maintains each student's education record and Personal Education Number, sets graduation requirements, and helps students move on to work or post-secondary study.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Manage your student record",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get your Personal Education Number (PEN)",
+              "desc": "Request the unique nine-digit Personal Education Number assigned to students in B.C.'s education system, needed to view exam results and order transcripts.",
+              "users": "Current and former B.C. students",
+              "user_groups": [
+                "Students & learners",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Get your PEN",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/pen-services/pen"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "PEN Services",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/pen-services"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "vital_records_id",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/pen-services"
+              }
+            },
+            {
+              "name": "Update the personal information on your student record",
+              "desc": "Former students can update the name or personal details linked to their Personal Education Number so future transcripts show current information.",
+              "users": "Former B.C. students",
+              "user_groups": [
+                "Students & learners",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Update your PEN information",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/pen-services/updating"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "vital_records_id",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/pen-services"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Graduate and plan your next step",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Order a high school transcript or certificate",
+              "desc": "View, order and send official B.C. or Yukon secondary school transcripts and certificates through the StudentTranscripts Service (STS).",
+              "users": "Current and former secondary students",
+              "user_groups": [
+                "Students & learners",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Order a transcript or certificate",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/transcripts-and-certificates/order-a-high-school-transcript-or-certificate"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Order transcripts and certificates",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/transcripts-and-certificates"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "vital_records_id",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/transcripts-and-certificates"
+              }
+            },
+            {
+              "name": "Meet B.C. graduation requirements for the Dogwood Diploma",
+              "desc": "Complete the 80 credits and provincial graduation assessments needed to earn the B.C. Certificate of Graduation (Dogwood Diploma), including French Immersion and Francophone Dual Dogwood pathways.",
+              "users": "Secondary students",
+              "user_groups": [
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Certificates of Graduation",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/graduation"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Graduation Program Policy Guide",
+                  "url": "https://www2.gov.bc.ca/assets/gov/education/administration/kindergarten-to-grade-12/graduation/graduation-policy-guide.pdf"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SA",
+                  "color": "#0070c0",
+                  "full_name": "School Act  -  s.168(6)(a): British Columbia Certificate of Graduation"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/graduation"
+              }
+            },
+            {
+              "name": "Get an Adult Graduation Diploma",
+              "desc": "Learners 18 or older can combine credits earned at secondary and post-secondary schools toward a B.C. Adult Graduation Diploma (Adult Dogwood).",
+              "users": "Adult learners (18+)",
+              "user_groups": [
+                "Students & learners",
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "B.C. Adult Graduation Diploma Program",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/adult-education/graduate-high-school/bc-adult-graduation-diploma-program"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SA",
+                  "color": "#0070c0",
+                  "full_name": "School Act  -  s.168(6)(b): British Columbia Adult Graduation Diploma"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/graduation"
+              }
+            },
+            {
+              "name": "Apply for a K-12 scholarship, grant, bursary or award",
+              "desc": "Provincial scholarship and awards programs recognize graduating students' academic standing and personal achievement.",
+              "users": "Graduating secondary students",
+              "user_groups": [
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Scholarships, Grants, Bursaries and Awards",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/scholarships"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/graduation"
+              }
+            },
+            {
+              "name": "Access dual credit courses toward high school and post-secondary credit",
+              "desc": "Take approved post-secondary courses while in secondary school to earn credit toward both a Dogwood Diploma and a post-secondary credential.",
+              "users": "Secondary students",
+              "user_groups": [
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Dual Credit",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/dual-credit"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/graduation"
+              }
+            },
+            {
+              "name": "Get education support as a student in government care",
+              "desc": "Additional educational planning, advocacy and support to help children and youth in government care stay engaged in school and succeed academically.",
+              "users": "Children and youth in government care",
+              "user_groups": [
+                "Students & learners",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Children and youth in care",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/students-in-care"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/graduation"
+              }
+            },
+            {
+              "name": "Get certified to teach in B.C. schools",
+              "desc": "Teacher certification through the Teacher Regulation Branch is required to teach in B.C. public schools and most independent schools, including pathways for out-of-province and internationally trained teachers.",
+              "users": "Aspiring, out-of-province and internationally trained teachers",
+              "user_groups": [
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Teaching in B.C.",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/k-12/teach"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TA",
+                  "color": "#b45309",
+                  "full_name": "Teachers Act  -  Part 4: Certification and Letters of Permission (s.30 Issuance of certificate)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "professional_credentials",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/education"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#6a1b9a",
+      "title": "GOAL 3",
+      "short_name": "Families can access affordable, quality early learning and child care",
+      "legend_label": "Affordable child care",
+      "description": "Through ChildCareBC, the ministry helps families find licensed child care and reduces what they pay for it, and supports free early learning through StrongStart BC.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Find and pay for child care",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Find licensed child care in your community",
+              "desc": "Search the child care map for licensed facilities by location, distance, program type, hours of operation and services offered.",
+              "users": "Parents and caregivers seeking child care",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Child care map",
+                  "url": "https://maps.gov.bc.ca/ess/hm/ccf/"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Child Care Service Centre: 1-888-338-6622",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": [
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "Open a licensed child care facility",
+                    "ministry": "ecc"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/family-information"
+              }
+            },
+            {
+              "name": "Get help finding child care through a resource and referral centre",
+              "desc": "Child Care Resource and Referral Centres offer clear information, support and referrals to families and child care providers looking for care.",
+              "users": "Families",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Child Care Resource and Referral Centres",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/child-care-resource-referral"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/education"
+              }
+            },
+            {
+              "name": "Apply for the Affordable Child Care Benefit",
+              "desc": "Monthly payment that helps eligible families, with a pre-tax income of up to $111,000, cover the cost of licensed or registered child care.",
+              "users": "Families with young children",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Affordable Child Care Benefit",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/child-care-benefit"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/family-information"
+              }
+            },
+            {
+              "name": "Get automatic child care fee reductions",
+              "desc": "Families using a child care provider enrolled in the Child Care Fee Reduction Initiative automatically save on fees without having to apply.",
+              "users": "Families using an enrolled provider",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Child Care Fee Reduction Initiative",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/child-care-fee-reduction-initiative-provider-opt-in-status"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/family-information"
+              }
+            },
+            {
+              "name": "Attend a $10 a Day ChildCareBC Centre",
+              "desc": "Families attending a participating $10 a Day ChildCareBC Centre pay no more than $200 a month per child; providers apply to join, families do not need to apply.",
+              "users": "Families",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "$10 a Day ChildCareBC Centres",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/10-a-day-childcarebc-centres"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/family-information"
+              }
+            },
+            {
+              "name": "Get child care cost help as a young parent",
+              "desc": "Parents under age 25 finishing high school may qualify for help paying for child care through the Young Parent Program.",
+              "users": "Young parents (under 25) completing high school",
+              "user_groups": [
+                "Families & caregivers",
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Young Parent Program",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/young-parent-program"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/family-information"
+              }
+            },
+            {
+              "name": "Attend a free StrongStart BC early learning program",
+              "desc": "Drop-in, play-based early learning program with stories, music and art for children from birth to age five and their parent or caregiver, led by a qualified early childhood educator.",
+              "users": "Parents and caregivers of children aged 0-5",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Find a StrongStart BC Centre",
+                  "url": "https://governmentofbc.maps.arcgis.com/home/webscene/viewer.html?layers=cfd60a6863cb42a3a5d658250aeab55d"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "StrongStart BC",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/early-learning/support/programs/strongstart-bc"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SA",
+                  "color": "#0070c0",
+                  "full_name": "School Act  -  s.1: Early learning program definition"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/early-learning/support/programs/strongstart-bc"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Access inclusive and Indigenous child care supports",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get inclusive child care supports for a child with extra needs",
+              "desc": "Funding and program supports help children with extra support needs participate in fully inclusive licensed child care settings.",
+              "users": "Families of children with support needs",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Inclusive Child Care",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/information-for-partners-providers/inclusive-child-care"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/family-information"
+              }
+            },
+            {
+              "name": "Access Indigenous child care programs",
+              "desc": "Distinctions-based, culturally safe child care and wraparound services developed with Indigenous people and partners.",
+              "users": "Indigenous families and communities",
+              "user_groups": [
+                "Indigenous communities",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Indigenous child care",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/indigenous-child-care"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/family-information"
+              }
+            },
+            {
+              "name": "Make a complaint about a licensed child care facility",
+              "desc": "Report concerns about the health, safety or well-being of a child at a licensed child care facility to the local health authority for investigation.",
+              "users": "Parents, caregivers, the public",
+              "user_groups": [
+                "Families & caregivers",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Make a complaint about a licensed facility",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/communications-engagement/reporting-on-child-care-facilities/making-a-complaint-about-a-licensed-child-day-care-facility"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CCALA",
+                  "color": "#c62828",
+                  "full_name": "Community Care and Assisted Living Act  -  Licensing and compliance of community care facilities"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": [
+                  {
+                    "type": "complainant_regulated_party",
+                    "service": "Open a licensed child care facility",
+                    "ministry": "ecc"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/family-information"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#b45309",
+      "title": "GOAL 4",
+      "short_name": "B.C.'s child care sector is safe, staffed and growing",
+      "legend_label": "Child care workforce & growth",
+      "description": "The ministry certifies early childhood educators, licenses child care facilities, and funds new spaces, maintenance and wages so ChildCareBC can keep growing.",
+      "metrics": [],
+      "css_class": "goal-4",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Work as an early childhood educator",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get certified as an early childhood educator",
+              "desc": "Apply through the My ECE Registry digital platform for the ECE or ECE Assistant certificate required to work in a licensed child care facility in B.C.",
+              "users": "Aspiring early childhood educators, including out-of-province and international applicants",
+              "user_groups": [
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "My ECE Registry",
+                  "url": "https://myeceregistry.gov.bc.ca/login"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "ECE Registry: 1-888-338-6622",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CCLR",
+                  "color": "#c62828",
+                  "full_name": "Child Care Licensing Regulation  -  Early childhood educator qualification requirements"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "professional_credentials",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Get a criminal record check through the Criminal Records Review Program",
+                    "ministry": "pssg"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/early-learning/teach/training-and-professional-development/become-an-early-childhood-educator"
+              }
+            },
+            {
+              "name": "Renew your ECE certificate",
+              "desc": "Certified early childhood educators renew their ECE or ECE Assistant certificate through the ECE Registry to keep working in licensed care.",
+              "users": "Certified early childhood educators",
+              "user_groups": [
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Renew your ECE certificate",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/early-learning/teach/training-and-professional-development/become-an-early-childhood-educator/renewal"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "professional_credentials",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/early-learning/teach/training-and-professional-development/become-an-early-childhood-educator"
+              }
+            },
+            {
+              "name": "Validate an early childhood educator's certificate",
+              "desc": "Confirm an ECE or ECE Assistant's certification status online using their first name, last name or registration number.",
+              "users": "Employers, families, the public",
+              "user_groups": [
+                "Businesses & employers",
+                "Families & caregivers",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Validate a certificate",
+                  "url": "https://myeceregistry.gov.bc.ca/lookup/certification"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "professional_credentials",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/early-learning/teach/training-and-professional-development/become-an-early-childhood-educator"
+              }
+            },
+            {
+              "name": "File a complaint about an early childhood educator",
+              "desc": "Report concerns about the character, skill or conduct of a certified ECE or ECE Assistant to the ECE Registry's investigations team.",
+              "users": "Parents, employers, the public",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Make a complaint",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/early-learning/teach/training-and-professional-development/become-an-early-childhood-educator/complaints"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "ECE Registry investigations: 1-888-338-6622",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/early-learning/teach/training-and-professional-development/become-an-early-childhood-educator"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Operate a licensed child care facility",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Open a licensed child care facility",
+              "desc": "Apply for a community care licence to operate a child care facility, meeting Child Care Licensing Regulation requirements for health, safety, staffing and facility design.",
+              "users": "Prospective child care operators",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Open a licensed child care facility",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/information-for-partners-providers/licensed-child-care-facility"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CCALA",
+                  "color": "#c62828",
+                  "full_name": "Community Care and Assisted Living Act  -  Licensing of community care facilities"
+                },
+                {
+                  "abbrev": "CCLR",
+                  "color": "#c62828",
+                  "full_name": "Child Care Licensing Regulation  -  Facility, health, safety and staffing requirements"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": [
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "Find licensed child care in your community",
+                    "ministry": "ecc"
+                  },
+                  {
+                    "type": "complainant_regulated_party",
+                    "service": "Make a complaint about a licensed child care facility",
+                    "ministry": "ecc"
+                  },
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Screen employees and volunteers as an organization",
+                    "ministry": "pssg"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/information-for-partners-providers"
+              }
+            },
+            {
+              "name": "Get child care operating funding",
+              "desc": "Ongoing per-space funding helps licensed and Registered Licence-Not-Required child care providers keep spaces open and deliver quality, affordable care.",
+              "users": "Licensed and registered child care providers",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Child Care Operating Funding",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/child-care-operating-funding"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/information-for-partners-providers"
+              }
+            },
+            {
+              "name": "Apply for child care space creation or maintenance funding",
+              "desc": "Start-Up Grants help create new licensed child care spaces, and the ChildCareBC Maintenance Fund helps providers maintain existing facilities.",
+              "users": "Child care operators, non-profits, local governments",
+              "user_groups": [
+                "Businesses & employers",
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Start-Up Grants",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/start-up-grants"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "ChildCareBC Maintenance Fund",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/maintenance-fund"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/information-for-partners-providers"
+              }
+            },
+            {
+              "name": "Get wage enhancement funding for early childhood educators",
+              "desc": "Funding helps licensed child care operators increase wages for qualified early childhood educators on staff, supporting workforce recruitment and retention.",
+              "users": "Licensed child care operators",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Early Childhood Educator Wage Enhancement",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/wage-enhancement"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "people_employment",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/information-for-partners-providers"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "K-12 curriculum, assessment and graduation policy development",
+      "desc": "Development and maintenance of B.C.'s curriculum, provincial graduation assessments, and the Graduation Program Policy Guide and Handbook of Procedures used by school districts and independent schools.",
+      "users": "Internal program staff, school districts, independent school authorities",
+      "channels": [],
+      "legislation": [
+        {
+          "abbrev": "SA",
+          "color": "#0070c0",
+          "full_name": "School Act  -  Ministerial authority over educational programs"
+        }
+      ],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "core_human_needs",
+        "domain": "education_training",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Child care facility licensing inspection and compliance",
+      "desc": "Health authorities inspect and monitor licensed child care facilities for compliance with the Child Care Licensing Regulation on behalf of the ministry, and publish inspection reports.",
+      "users": "Internal program staff, regional health authorities",
+      "channels": [],
+      "legislation": [
+        {
+          "abbrev": "CCALA",
+          "color": "#c62828",
+          "full_name": "Community Care and Assisted Living Act  -  Inspection and enforcement"
+        }
+      ],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "regulatory_compliance",
+        "domain": "licences_permits",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-3",
+      "name": "Independent school inspection and evaluation",
+      "desc": "The Inspector of Independent Schools conducts external evaluations and inspections to verify independent schools continue to meet Independent School Act and classification requirements.",
+      "users": "Internal program staff, Inspector of Independent Schools",
+      "channels": [],
+      "legislation": [
+        {
+          "abbrev": "ISA",
+          "color": "#6a1b9a",
+          "full_name": "Independent School Act  -  s.3: External evaluation committees"
+        }
+      ],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "regulatory_compliance",
+        "domain": "reporting_obligations",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    }
+  ],
+  "mandate_date": "January 16, 2025",
+  "mandate_minister": "Lisa Beare",
+  "mandate_pdf": "https://www2.gov.bc.ca/assets/gov/government/ministries-organizations/premier-cabinet-mlas/minister-letter/mandate_letter_lisa_beare.pdf",
+  "cross_cutting": [
+    "Growing the Economy",
+    "Reducing Costs for Families",
+    "Strengthening Health Care",
+    "Safer Communities"
+  ],
+  "mandate_legend": [],
+  "channel_filters": [
+    {
+      "code": "ch-transact",
+      "label": "Online transaction",
+      "bg_color": "#c8e6c9",
+      "text_color": "#1b5e20"
+    },
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Families & caregivers",
+    "Students & learners",
+    "Workers & job seekers",
+    "Businesses & employers",
+    "Municipalities & local governments",
+    "Indigenous communities"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

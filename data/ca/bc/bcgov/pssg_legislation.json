@@ -1,0 +1,598 @@
+{
+  "prefix": "pssg",
+  "name": "Public Safety and Solicitor General",
+  "short_name": "Public Safety & Solicitor General",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0d47a1",
+      "short_name": "British Columbians are protected by effective policing and community safety programs",
+      "legend_label": "Policing & community safety",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Access policing services in your community"
+        },
+        {
+          "number": 2,
+          "name": "Get a security industry licence"
+        },
+        {
+          "number": 3,
+          "name": "Get a criminal record check for work with children or vulnerable adults"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#8e0000",
+      "short_name": "People affected by crime get support, and offenders are safely supervised",
+      "legend_label": "Victim support & corrections",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get support as a victim of crime"
+        },
+        {
+          "number": 2,
+          "name": "Serve or manage a custodial or community sentence"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#4527a0",
+      "short_name": "Unlawful proceeds are seized and unexplained deaths are independently investigated",
+      "legend_label": "Civil forfeiture & coroners",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Report and recover proceeds of unlawful activity"
+        },
+        {
+          "number": 2,
+          "name": "Get information about a death investigated by the coroner"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#c62828",
+      "short_name": "Roads are safer and fire risks are managed through licensing, standards and enforcement",
+      "legend_label": "Road & fire safety",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Keep your driver's licence and driving privileges in good standing"
+        },
+        {
+          "number": 2,
+          "name": "Comply with fire safety standards"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "PA",
+      "full_name": "Police Act",
+      "color": "#0d47a1",
+      "citation": "RSBC 1996, c 367",
+      "summary": "Governs the structure, funding and standards of police services in B.C., municipal police boards, auxiliary constables, and the province-wide Protection Order Registry. Citation confirmed via a live link on the fetched 'Structure of police services in B.C.' page.",
+      "sections": [
+        {
+          "ref": "Parts 2-4",
+          "title": "Provision and structure of police services",
+          "description": "Sets out municipal, provincial, First Nations and integrated policing arrangements and the Police Tax financing model for small communities.",
+          "anchor_id": "PA-Structure",
+          "services": [
+            {
+              "name": "Find your local police service",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0d47a1",
+              "ms_number": 1,
+              "ms_name": "Access policing services in your community"
+            }
+          ]
+        },
+        {
+          "ref": "Part 5",
+          "title": "Municipal police boards",
+          "description": "Requires municipalities with independent police departments to be governed by a municipal police board.",
+          "anchor_id": "PA-Boards",
+          "services": [
+            {
+              "name": "Serve on a municipal police board",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0d47a1",
+              "ms_number": 1,
+              "ms_name": "Access policing services in your community"
+            }
+          ]
+        },
+        {
+          "ref": "Auxiliary constables",
+          "title": "Auxiliary constables",
+          "description": "Provides for the appointment and supervision of volunteer auxiliary constables who support police operations.",
+          "anchor_id": "PA-Auxiliary",
+          "services": [
+            {
+              "name": "Volunteer with police through the Auxiliary Program",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0d47a1",
+              "ms_number": 1,
+              "ms_name": "Access policing services in your community"
+            }
+          ]
+        },
+        {
+          "ref": "Protection Order Registry provisions",
+          "title": "Protection Order Registry",
+          "description": "Authorizes the confidential, province-wide registry of civil and criminal protection orders used by police to confirm and enforce orders.",
+          "anchor_id": "PA-POR",
+          "services": [
+            {
+              "name": "Search or register a protection order",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#8e0000",
+              "ms_number": 1,
+              "ms_name": "Get support as a victim of crime"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "SSA",
+      "full_name": "Security Services Act",
+      "color": "#6a1b9a",
+      "citation": "SBC 2007, c 30",
+      "summary": "Regulates the licensing of security workers and security businesses in B.C. and replaced the security provisions of the former Private Investigators and Security Agencies Act (RSBC 1996, c 374). Citation confirmed via CanLII and the BC Laws consolidation link.",
+      "sections": [
+        {
+          "ref": "Part 2",
+          "title": "Security worker licensing",
+          "description": "Requires a licence to work as a security guard, private investigator, locksmith, alarm installer, security consultant, armoured car guard or body armour salesperson.",
+          "anchor_id": "SSA-Workers",
+          "services": [
+            {
+              "name": "Get a security worker licence",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0d47a1",
+              "ms_number": 2,
+              "ms_name": "Get a security industry licence"
+            }
+          ]
+        },
+        {
+          "ref": "Part 3",
+          "title": "Security business licensing",
+          "description": "Requires a licence to operate a business that provides security services.",
+          "anchor_id": "SSA-Business",
+          "services": [
+            {
+              "name": "Get a security business licence",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0d47a1",
+              "ms_number": 2,
+              "ms_name": "Get a security industry licence"
+            }
+          ]
+        },
+        {
+          "ref": "Part 5",
+          "title": "Compliance and enforcement",
+          "description": "Gives the registrar powers to investigate complaints and take enforcement action against licensed security workers and businesses.",
+          "anchor_id": "SSA-Enforcement",
+          "services": [
+            {
+              "name": "Report a concern about a security worker or business",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0d47a1",
+              "ms_number": 2,
+              "ms_name": "Get a security industry licence"
+            }
+          ]
+        },
+        {
+          "ref": "Part 4",
+          "title": "Armoured vehicle and body armour permits",
+          "description": "Requires permits to operate an armoured vehicle or possess body armour in B.C.",
+          "anchor_id": "SSA-Permits",
+          "services": [
+            {
+              "name": "Get permits for armoured vehicles or body armour",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0d47a1",
+              "ms_number": 2,
+              "ms_name": "Get a security industry licence"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CRRA",
+      "full_name": "Criminal Records Review Act",
+      "color": "#00695c",
+      "citation": "RSBC 1996, c 86",
+      "summary": "Requires designated organizations to screen employees and volunteers who work with children or vulnerable adults through the Criminal Records Review Program. Citation confirmed via a live link on the fetched 'Law and policy: Criminal Records Review Program' page.",
+      "sections": [
+        {
+          "ref": "s.2-8",
+          "title": "Vulnerable sector criminal record checks",
+          "description": "Establishes the vulnerable sector check process administered by the Criminal Records Review Program.",
+          "anchor_id": "CRRA-CRC",
+          "services": [
+            {
+              "name": "Get a criminal record check through the Criminal Records Review Program",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0d47a1",
+              "ms_number": 3,
+              "ms_name": "Get a criminal record check for work with children or vulnerable adults"
+            }
+          ]
+        },
+        {
+          "ref": "s.9-14",
+          "title": "Organization screening duties",
+          "description": "Requires designated organizations to ensure their employees and volunteers are screened under the Act.",
+          "anchor_id": "CRRA-OrgDuties",
+          "services": [
+            {
+              "name": "Screen employees and volunteers as an organization",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0d47a1",
+              "ms_number": 3,
+              "ms_name": "Get a criminal record check for work with children or vulnerable adults"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "VOCA",
+      "full_name": "Victims of Crime Act",
+      "color": "#8e0000",
+      "citation": "RSBC 1996, c 478",
+      "summary": "Establishes victim services, victim notification and support programs for people affected by crime in B.C. Citation identified via BC Laws search results; not independently fetched from the consolidation site.",
+      "sections": [
+        {
+          "ref": "Part 1",
+          "title": "Victim services",
+          "description": "Authorizes funding and coordination of victim service programs including VictimLinkBC.",
+          "anchor_id": "VOCA-Services",
+          "services": [
+            {
+              "name": "Get 24/7 crisis support and referrals as a victim of crime",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#8e0000",
+              "ms_number": 1,
+              "ms_name": "Get support as a victim of crime"
+            }
+          ]
+        },
+        {
+          "ref": "Part 2",
+          "title": "Victim notification",
+          "description": "Establishes the Victim Safety Unit and victim notification program for registered victims.",
+          "anchor_id": "VOCA-Notification",
+          "services": [
+            {
+              "name": "Register for notification about an offender's status",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#8e0000",
+              "ms_number": 1,
+              "ms_name": "Get support as a victim of crime"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CVAA",
+      "full_name": "Crime Victim Assistance Act",
+      "color": "#b71c1c",
+      "citation": "SBC 2001, c 38",
+      "summary": "Governs the Crime Victim Assistance Program, which provides medical, counselling, income-support and other benefits to victims, family members and witnesses affected by violent crime. January 2024 amendments expanded eligibility and benefit rates. Citation confirmed via the BC Laws link cited directly on the fetched Crime Victim Assistance Program page.",
+      "sections": [
+        {
+          "ref": "Part 2",
+          "title": "Benefits for victims, family members and witnesses",
+          "description": "Sets out eligibility and benefit categories for victims, immediate family members and witnesses of violent crime.",
+          "anchor_id": "CVAA-Benefits",
+          "services": [
+            {
+              "name": "Apply for crime victim assistance benefits",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#8e0000",
+              "ms_number": 1,
+              "ms_name": "Get support as a victim of crime"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CA",
+      "full_name": "Correction Act",
+      "color": "#455a64",
+      "citation": "SBC 2004, c 46",
+      "summary": "Governs BC Corrections' management of adults in custody and under community supervision, and correctional programming. Replaced the former Correction Act, RSBC 1996, c 74. Citation confirmed via CanLII and the BC Laws consolidation link.",
+      "sections": [
+        {
+          "ref": "Parts 2-3",
+          "title": "Custody and community supervision",
+          "description": "Authorizes correctional centres, probation supervision, and conditions for community sentences such as bail and probation orders.",
+          "anchor_id": "CA-Supervision",
+          "services": [
+            {
+              "name": "Find a correctional centre or probation office",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#8e0000",
+              "ms_number": 2,
+              "ms_name": "Serve or manage a custodial or community sentence"
+            }
+          ]
+        },
+        {
+          "ref": "Part 2",
+          "title": "Correctional programs",
+          "description": "Authorizes rehabilitative programming addressing substance use, violence prevention and life skills for people in custody or under supervision.",
+          "anchor_id": "CA-Programs",
+          "services": [
+            {
+              "name": "Access programs to reduce reoffending while in custody or on probation",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#8e0000",
+              "ms_number": 2,
+              "ms_name": "Serve or manage a custodial or community sentence"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CFA",
+      "full_name": "Civil Forfeiture Act",
+      "color": "#4527a0",
+      "citation": "RSBC 2024, c 1 (consolidated from SBC 2005, c 29, effective June 17, 2024)",
+      "summary": "Authorizes the Director of Civil Forfeiture to forfeit to the Province property that is the proceeds or an instrument of unlawful activity, and to disburse forfeited funds to crime-prevention grants and victim compensation. Citation confirmed via CanLII and the BC Laws consolidation link.",
+      "sections": [
+        {
+          "ref": "Part 2",
+          "title": "Forfeiture of unlawfully obtained property",
+          "description": "Establishes the civil forfeiture process targeting proceeds and instruments of unlawful activity.",
+          "anchor_id": "CFA-Forfeiture",
+          "services": [
+            {
+              "name": "Report suspected proceeds or instruments of unlawful activity",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#4527a0",
+              "ms_number": 1,
+              "ms_name": "Report and recover proceeds of unlawful activity"
+            }
+          ]
+        },
+        {
+          "ref": "Part 3",
+          "title": "Disbursement of forfeited funds",
+          "description": "Authorizes the Director to fund crime-prevention grants and compensate eligible victims of unlawful activity from forfeited funds.",
+          "anchor_id": "CFA-Disbursement",
+          "services": [
+            {
+              "name": "Apply for a crime-prevention grant or victim compensation from forfeited funds",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#4527a0",
+              "ms_number": 1,
+              "ms_name": "Report and recover proceeds of unlawful activity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CorA",
+      "full_name": "Coroners Act",
+      "color": "#37474f",
+      "citation": "SBC 2007, c 15",
+      "summary": "Governs the BC Coroners Service's independent investigation of unnatural, sudden, unexpected, unexplained or unattended deaths, and the coroner's inquest process. Replaced RSBC 1996, c 72. Citation confirmed via a live link on the fetched BC Coroners Service page.",
+      "sections": [
+        {
+          "ref": "Part 2",
+          "title": "Duty to report and investigate reportable deaths",
+          "description": "Sets out which deaths are reportable to the Coroners Service and the coroner's duty to investigate.",
+          "anchor_id": "CorA-Reporting",
+          "services": [
+            {
+              "name": "Report a death to the BC Coroners Service",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#4527a0",
+              "ms_number": 2,
+              "ms_name": "Get information about a death investigated by the coroner"
+            }
+          ]
+        },
+        {
+          "ref": "Part 3",
+          "title": "Coroner's reports and inquests",
+          "description": "Governs coroner's investigation reports and public inquests, including death review panels.",
+          "anchor_id": "CorA-Reports",
+          "services": [
+            {
+              "name": "Request a coroner's report or family resources",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#4527a0",
+              "ms_number": 2,
+              "ms_name": "Get information about a death investigated by the coroner"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "MVA",
+      "full_name": "Motor Vehicle Act",
+      "color": "#c62828",
+      "citation": "RSBC 1996, c 318",
+      "summary": "Governs driver licensing, medical fitness, driving prohibitions, suspensions and vehicle impoundment in B.C., administered by RoadSafetyBC and the Superintendent of Motor Vehicles. Citation confirmed via a live link on the fetched RoadSafetyBC prohibitions page.",
+      "sections": [
+        {
+          "ref": "Part 3",
+          "title": "Driver medical fitness and Superintendent of Motor Vehicles",
+          "description": "Authorizes the Superintendent of Motor Vehicles to assess driver medical fitness and make licensing decisions.",
+          "anchor_id": "MVA-MedicalFitness",
+          "services": [
+            {
+              "name": "Get your driver's medical fitness assessed",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#c62828",
+              "ms_number": 1,
+              "ms_name": "Keep your driver's licence and driving privileges in good standing"
+            }
+          ]
+        },
+        {
+          "ref": "Part 3, Division 3",
+          "title": "Driving prohibitions and reviews",
+          "description": "Authorizes alcohol- and drug-related driving prohibitions and suspensions and the process to apply for a review.",
+          "anchor_id": "MVA-Prohibitions",
+          "services": [
+            {
+              "name": "Apply for a review of a driving prohibition or suspension",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#c62828",
+              "ms_number": 1,
+              "ms_name": "Keep your driver's licence and driving privileges in good standing"
+            }
+          ]
+        },
+        {
+          "ref": "Part 3, Division 5",
+          "title": "Vehicle impoundment",
+          "description": "Authorizes impoundment of vehicles driven by high-risk offenders and the process to recover an impounded vehicle.",
+          "anchor_id": "MVA-Impoundment",
+          "services": [
+            {
+              "name": "Get your vehicle back after an impoundment",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#c62828",
+              "ms_number": 1,
+              "ms_name": "Keep your driver's licence and driving privileges in good standing"
+            }
+          ]
+        },
+        {
+          "ref": "Part 3",
+          "title": "High-risk driver programs",
+          "description": "Authorizes driver improvement, ignition interlock and responsible driver programs for high-risk drivers.",
+          "anchor_id": "MVA-HighRiskPrograms",
+          "services": [
+            {
+              "name": "Complete a high-risk driver program",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#c62828",
+              "ms_number": 1,
+              "ms_name": "Keep your driver's licence and driving privileges in good standing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "FVPA",
+      "full_name": "Firearm Violence Prevention Act",
+      "color": "#1565c0",
+      "citation": "SBC 2021, c 7",
+      "summary": "Gives police new civil powers, including firearm violence prevention orders, to remove firearms from situations of risk. Citation confirmed via CanLII and the BC Laws consolidation link.",
+      "sections": [
+        {
+          "ref": "Part 2",
+          "title": "Firearm violence prevention orders",
+          "description": "Authorizes courts to make firearm violence prevention orders restricting a person's access to firearms.",
+          "anchor_id": "FVPA-Orders",
+          "services": [
+            {
+              "name": "Prevent and respond to firearm and gang violence",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0d47a1",
+              "ms_number": 1,
+              "ms_name": "Access policing services in your community"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "FSA2024",
+      "full_name": "Fire Safety Act",
+      "color": "#ef6c00",
+      "citation": "SBC 2016, c 19 (in force August 1, 2024, replacing the Fire Services Act, RSBC 1996, c 144)",
+      "summary": "Governs fire safety standards, enforcement, incident reporting and training requirements for firefighters, fire inspectors and investigators, administered by the Office of the Fire Commissioner. Citation and in-force date confirmed via BC Laws and a 2024 government news release.",
+      "sections": [
+        {
+          "ref": "Part 3",
+          "title": "Mandatory fire incident reporting",
+          "description": "Requires designated parties to report specific fire incidents to the Office of the Fire Commissioner.",
+          "anchor_id": "FSA2024-Reporting",
+          "services": [
+            {
+              "name": "Report a fire incident",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#c62828",
+              "ms_number": 2,
+              "ms_name": "Comply with fire safety standards"
+            }
+          ]
+        },
+        {
+          "ref": "Part 4",
+          "title": "Training standards for fire service personnel",
+          "description": "Authorizes the Fire Commissioner to establish minimum training standards for firefighters, fire inspectors and investigators.",
+          "anchor_id": "FSA2024-Training",
+          "services": [
+            {
+              "name": "Get trained and certified as a firefighter, fire inspector or investigator",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#c62828",
+              "ms_number": 2,
+              "ms_name": "Comply with fire safety standards"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 11,
+    "sections_count": 26,
+    "services_with_leg_count": 26,
+    "services_multi_act_count": 0
+  }
+}

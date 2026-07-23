@@ -1,0 +1,352 @@
+{
+  "prefix": "ag",
+  "name": "Ministry of Attorney General",
+  "short_name": "Attorney General",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "B.C.'s courts are fair, safe and accessible",
+      "legend_label": "Courts & registries",
+      "main_services": [
+        { "number": 1, "name": "Resolve a civil or small claims dispute" },
+        { "number": 2, "name": "Get help filling out and filing court forms" }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "short_name": "Families can resolve family law matters and keep children safe",
+      "legend_label": "Family justice",
+      "main_services": [
+        { "number": 1, "name": "Resolve a separation, divorce or parenting dispute" },
+        { "number": 2, "name": "Get child or spousal support calculated and enforced" }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#b45309",
+      "short_name": "People are protected and supported through the criminal justice system",
+      "legend_label": "Criminal justice & victims",
+      "main_services": [
+        { "number": 1, "name": "Get support as a victim or witness of crime" },
+        { "number": 2, "name": "Understand how criminal charges are assessed and prosecuted" }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#6a1b9a",
+      "short_name": "British Columbians can access justice and have their human rights protected",
+      "legend_label": "Human rights & access to justice",
+      "main_services": [
+        { "number": 1, "name": "Get help with a human rights complaint or protection" },
+        { "number": 2, "name": "Get free or low-cost legal help" }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "HRC",
+      "full_name": "Human Rights Code",
+      "color": "#6a1b9a",
+      "citation": "RSBC 1996, c 210",
+      "summary": "Protects people in B.C. from discrimination and harassment based on protected characteristics; establishes the independent Human Rights Tribunal to mediate and adjudicate complaints.",
+      "sections": [
+        {
+          "ref": "Complaints and Human Rights Tribunal",
+          "title": "Human Rights Tribunal and complaint process",
+          "description": "Sections on filing, deferring, dismissing and settling complaints, and the powers and procedure of the Human Rights Tribunal.",
+          "anchor_id": "HRC-tribunal",
+          "services": [
+            {
+              "name": "File a human rights complaint",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#6a1b9a",
+              "ms_number": 1,
+              "ms_name": "Get help with a human rights complaint or protection"
+            },
+            {
+              "name": "Get information about your rights under the Human Rights Code",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#6a1b9a",
+              "ms_number": 1,
+              "ms_name": "Get help with a human rights complaint or protection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "GDSDA",
+      "full_name": "Guide Dog and Service Dog Act",
+      "color": "#8e24aa",
+      "citation": "SBC 2015, c 17",
+      "summary": "Governs certification of guide dog and service dog teams, providing public access and tenancy protections for certified handlers.",
+      "sections": [
+        {
+          "ref": "Certification",
+          "title": "Certification of dog and handler teams",
+          "description": "Application, testing, certification, and cancellation or refusal of certification for guide and service dog teams.",
+          "anchor_id": "GDSDA-certification",
+          "services": [
+            {
+              "name": "Certify a guide dog or service dog team",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#6a1b9a",
+              "ms_number": 1,
+              "ms_name": "Get help with a human rights complaint or protection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "FLA",
+      "full_name": "Family Law Act",
+      "color": "#2e7d32",
+      "citation": "SBC 2011, c 25",
+      "summary": "Governs parentage, parenting arrangements, guardianship, child and spousal support, family property division, protection orders, and out-of-court resolution of family law disputes in B.C.",
+      "sections": [
+        {
+          "ref": "Resolution of family law disputes",
+          "title": "Resolution of family law disputes and Provincial Court orders",
+          "description": "Provisions on resolving family law disputes out of court and Provincial Court Family Law Act orders.",
+          "anchor_id": "FLA-resolution",
+          "services": [
+            {
+              "name": "Apply for a Family Law Act order online",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Get help filling out and filing court forms"
+            },
+            {
+              "name": "Get in-person, phone or video help with a family law issue",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Resolve a separation, divorce or parenting dispute"
+            },
+            {
+              "name": "Resolve a family dispute through mediation",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Resolve a separation, divorce or parenting dispute"
+            }
+          ]
+        },
+        {
+          "ref": "Protection orders",
+          "title": "Protection orders",
+          "description": "Provisions allowing the court to make protection orders to prevent family violence, and their registration.",
+          "anchor_id": "FLA-protection-orders",
+          "services": [
+            {
+              "name": "Get help keeping your family safe from violence",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Resolve a separation, divorce or parenting dispute"
+            },
+            {
+              "name": "Register a protection order",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#b45309",
+              "ms_number": 1,
+              "ms_name": "Get support as a victim or witness of crime"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "FMEA",
+      "full_name": "Family Maintenance Enforcement Act",
+      "color": "#1b5e20",
+      "citation": "RSBC 1996, c 127",
+      "summary": "Authorizes the BC Family Maintenance Agency to enforce child and spousal support orders and agreements.",
+      "sections": [
+        {
+          "ref": "Enforcement of support orders",
+          "title": "Enforcement of support orders and agreements",
+          "description": "Authority to collect, calculate and enforce payment of child and spousal support orders and agreements.",
+          "anchor_id": "FMEA-enforcement",
+          "services": [
+            {
+              "name": "Enrol a support order or agreement for enforcement",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Get child or spousal support calculated and enforced"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "LSSA",
+      "full_name": "Legal Services Society Act",
+      "color": "#004d40",
+      "citation": "SBC 2002, c 30",
+      "summary": "Continues the Legal Services Society (Legal Aid BC) to assist individuals in resolving legal problems and provide legal aid to people in British Columbia.",
+      "sections": [
+        {
+          "ref": "Role of the Legal Services Society",
+          "title": "Objects and role of the society",
+          "description": "The society's objects are to assist individuals to resolve legal problems, facilitate access to justice, and establish and administer legal aid.",
+          "anchor_id": "LSSA-role",
+          "services": [
+            {
+              "name": "Apply for legal aid",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#6a1b9a",
+              "ms_number": 2,
+              "ms_name": "Get free or low-cost legal help"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CCA",
+      "full_name": "Crown Counsel Act",
+      "color": "#b71c1c",
+      "citation": "RSBC 1996, c 87",
+      "summary": "Establishes the BC Prosecution Service and Crown Counsel's independent authority to make charge assessment decisions and conduct prosecutions and appeals.",
+      "sections": [
+        {
+          "ref": "Independence of Crown Counsel",
+          "title": "Independence and functions of Crown Counsel",
+          "description": "Crown Counsel act independently of police and government in charge assessment, prosecution, and appeals, and prepare victims and witnesses for court.",
+          "anchor_id": "CCA-independence",
+          "services": [
+            {
+              "name": "Learn how a criminal charge is assessed and prosecuted",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#b45309",
+              "ms_number": 2,
+              "ms_name": "Understand how criminal charges are assessed and prosecuted"
+            },
+            {
+              "name": "Prepare a victim impact statement",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#b45309",
+              "ms_number": 1,
+              "ms_name": "Get support as a victim or witness of crime"
+            },
+            {
+              "name": "Get information as a witness in a criminal case",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#b45309",
+              "ms_number": 1,
+              "ms_name": "Get support as a victim or witness of crime"
+            },
+            {
+              "name": "Conduct criminal prosecutions independent of political direction",
+              "type": "foundational",
+              "goal_number": null,
+              "goal_color": null,
+              "ms_number": null,
+              "ms_name": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "SCA",
+      "full_name": "Small Claims Act",
+      "color": "#e65100",
+      "citation": "RSBC 1996, c 430",
+      "summary": "Governs Small Claims Court procedures and the monetary jurisdiction for civil disputes.",
+      "sections": [
+        {
+          "ref": "Small Claims Court procedures",
+          "title": "Small Claims Court procedures and monetary jurisdiction",
+          "description": "Establishes Small Claims Court's monetary jurisdiction (up to $35,000) and simplified procedures compared to Supreme Court.",
+          "anchor_id": "SCA-procedures",
+          "services": [
+            {
+              "name": "Resolve a small claims dispute",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Resolve a civil or small claims dispute"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CRTA",
+      "full_name": "Civil Resolution Tribunal Act",
+      "color": "#01579b",
+      "citation": "SBC 2012, c 25",
+      "summary": "Establishes the Civil Resolution Tribunal, an online tribunal resolving small claims up to $5,000, and strata property and society disputes.",
+      "sections": [
+        {
+          "ref": "Tribunal jurisdiction",
+          "title": "Tribunal jurisdiction over small claims, strata and society disputes",
+          "description": "Sets out the Civil Resolution Tribunal's jurisdiction over small claims, strata property, and cooperative association and society disputes.",
+          "anchor_id": "CRTA-jurisdiction",
+          "services": [
+            {
+              "name": "Resolve a low-value dispute through the Civil Resolution Tribunal",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Resolve a civil or small claims dispute"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "JRTA",
+      "full_name": "Justice Reform and Transparency Act",
+      "color": "#616161",
+      "citation": "SBC 2013, c 7",
+      "summary": "Establishes the Justice and Public Safety Council to develop a strategic vision and plan for B.C.'s justice and public safety sector and advise the minister.",
+      "sections": [
+        {
+          "ref": "s.2-9",
+          "title": "Justice and Public Safety Council",
+          "description": "Establishes the council, its objects, advisory boards, strategic planning duties, and annual Justice Summit.",
+          "anchor_id": "JRTA-council",
+          "services": [
+            {
+              "name": "Coordinate justice system reform through the Justice and Public Safety Council",
+              "type": "foundational",
+              "goal_number": null,
+              "goal_color": null,
+              "ms_number": null,
+              "ms_name": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 9,
+    "sections_count": 10,
+    "services_with_leg_count": 17,
+    "services_multi_act_count": 0
+  }
+}

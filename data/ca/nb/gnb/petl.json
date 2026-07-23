@@ -1,0 +1,1116 @@
+{
+  "prefix": "petl",
+  "full_name": "Post-Secondary Education, Training and Labour",
+  "short_name": "Post-Secondary Education, Training & Labour",
+  "blurb": "Helps people get the education and skills for good jobs — student financial assistance, apprenticeship, employment services, employment standards, and immigration and settlement.",
+  "nav_name": "Post-Secondary Education, Training and Labour",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "title": "GOAL 1",
+      "short_name": "People get the education and skills for good jobs",
+      "legend_label": "Skills & training",
+      "description": "Students can afford post-secondary education, apprentices earn trade certification, and job seekers get help finding work.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Pay for post-secondary education",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for student financial assistance",
+              "desc": "Loans, grants, and bursaries help students pay for university, college, and private training, integrated with federal student aid.",
+              "users": "Post-secondary students",
+              "user_groups": [
+                "Students"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/post-secondary-training-labour.html",
+                  "url": "https://www.gnb.ca/en/org/post-secondary-training-labour.html"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "Student aid portal",
+                  "url": "https://www.gnb.ca/en/org/post-secondary-training-labour.html"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PSSFAA",
+                  "color": "#b45309",
+                  "full_name": "Post-Secondary Student Financial Assistance Act  -  Loans and bursaries"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Continue to make provincial student loans interest-free"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Learn a skilled trade",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Register as an apprentice and get certified in a trade",
+              "desc": "Apprenticeship registration, technical training, exams, and certification in designated occupations, including Red Seal trades.",
+              "users": "Apprentices and tradespeople",
+              "user_groups": [
+                "Students",
+                "Workers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/post-secondary-training-labour.html",
+                  "url": "https://www.gnb.ca/en/org/post-secondary-training-labour.html"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Apprenticeship office",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AOCA",
+                  "color": "#2e7d32",
+                  "full_name": "Apprenticeship and Occupational Certification Act  -  Registration and program management"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "professional_credentials",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Register a private training institution",
+              "desc": "Registration and student protection requirements for private career colleges and occupational training providers.",
+              "users": "Private training operators",
+              "user_groups": [
+                "Business owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/post-secondary-training-labour.html",
+                  "url": "https://www.gnb.ca/en/org/post-secondary-training-labour.html"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Registration application",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "POTA",
+                  "color": "#6a1b9a",
+                  "full_name": "Private Occupational Training Act  -  Registration of training organizations"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Find work and plan your career",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get help finding a job and planning your career",
+              "desc": "Employment counselling, job search support, training funding, and wage subsidy connections for job seekers.",
+              "users": "Job seekers, career changers",
+              "user_groups": [
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Regional employment services office",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/post-secondary-training-labour.html",
+                  "url": "https://www.gnb.ca/en/org/post-secondary-training-labour.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 7,
+                  "tip": "Support unemployed and underemployed New Brunswickers to upskill"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Get help recruiting and training your workforce",
+              "desc": "Wage subsidies, training funding, and workforce planning support for employers facing labour shortages.",
+              "users": "Employers",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Regional employment services office",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/post-secondary-training-labour.html",
+                  "url": "https://www.gnb.ca/en/org/post-secondary-training-labour.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "people_employment",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Get training and employment support as a person with a disability",
+              "desc": "Training and employment supports designed for persons with disabilities.",
+              "users": "Persons with disabilities",
+              "user_groups": [
+                "Persons with disabilities",
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Training and employment support",
+                  "url": "https://www.gnb.ca/en/topic/family-home-community/persons-with-disabilities/tess-disabilities.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/en/topic/family-home-community/persons-with-disabilities/tess-disabilities.html"
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "name": "Learn as an adult",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get a training grant to return to work",
+              "desc": "Grants for training and education that help you return to work.",
+              "users": "Unemployed and underemployed adults",
+              "user_groups": [
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Training support",
+                  "url": "https://www.gnb.ca/en/topic/education-training/adult-learning/training-development.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/en/topic/education-training/adult-learning/training-development.html"
+              }
+            },
+            {
+              "name": "Build essential skills for the workplace",
+              "desc": "Training that helps adults gain the essential skills to succeed at work.",
+              "users": "Adults employed or seeking work",
+              "user_groups": [
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Workplace essential skills",
+                  "url": "https://www.gnb.ca/en/topic/education-training/adult-learning/workplace-skills.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/en/topic/education-training/adult-learning/workplace-skills.html"
+              }
+            },
+            {
+              "name": "Finish your high school diploma as an adult",
+              "desc": "Earn the remaining credits needed to complete a high school diploma as an adult.",
+              "users": "Adults without a high school diploma",
+              "user_groups": [
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Adult diploma",
+                  "url": "https://www.gnb.ca/en/topic/education-training/adult-learning/adult-school-diploma.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/en/topic/education-training/adult-learning/adult-school-diploma.html"
+              }
+            },
+            {
+              "name": "Earn a high school equivalency credential",
+              "desc": "A credential recognized by employers and institutions as equivalent to a high school diploma.",
+              "users": "Adults without a high school diploma",
+              "user_groups": [
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Equivalency credential",
+                  "url": "https://www.gnb.ca/en/topic/education-training/adult-learning/adult-education-credential.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/en/topic/education-training/adult-learning/adult-education-credential.html"
+              }
+            },
+            {
+              "name": "Get free literacy training in your community",
+              "desc": "Community-based literacy training, including preparation for equivalency tests.",
+              "users": "Adults improving literacy",
+              "user_groups": [
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Community adult learning centre",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Community adult learning",
+                  "url": "https://www.gnb.ca/en/topic/education-training/adult-learning/community-adult-learning.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/en/topic/education-training/adult-learning/community-adult-learning.html"
+              }
+            },
+            {
+              "name": "Learn basic digital skills",
+              "desc": "Training that helps adults gain the digital skills needed for daily life and work.",
+              "users": "Adults new to digital technology",
+              "user_groups": [
+                "Individuals",
+                "Seniors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Digital literacy",
+                  "url": "https://www.gnb.ca/en/topic/education-training/adult-learning/digital-literacy-training.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/en/topic/education-training/adult-learning/digital-literacy-training.html"
+              }
+            },
+            {
+              "name": "Book an English or French language assessment",
+              "desc": "An evaluation of your overall ability to communicate in English or French.",
+              "users": "Adults needing a language evaluation",
+              "user_groups": [
+                "Newcomers",
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Language assessment",
+                  "url": "https://www.gnb.ca/en/topic/education-training/adult-learning/language-proficiency.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/en/topic/education-training/adult-learning/language-proficiency.html"
+              }
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "name": "Use your public library",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get a library card",
+              "desc": "A free card for use at more than 60 public libraries across the province.",
+              "users": "All residents",
+              "user_groups": [
+                "General public",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Any public library",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Public libraries",
+                  "url": "https://www.gnb.ca/content/gnb/en/departments/nbpl/online-library.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/content/gnb/en/departments/nbpl/online-library.html"
+              }
+            },
+            {
+              "name": "Borrow eBooks and audiobooks online",
+              "desc": "Browse the public library online anytime and borrow eBooks and audiobooks.",
+              "users": "Library card holders",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Online library",
+                  "url": "https://www.gnb.ca/content/gnb/en/departments/nbpl/online-library.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/content/gnb/en/departments/nbpl/online-library.html"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "title": "GOAL 2",
+      "short_name": "Workplaces are fair and productive",
+      "legend_label": "Fair workplaces",
+      "description": "Minimum employment standards protect workers, and employers understand and meet their obligations.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Know and apply the rules at work",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Learn about minimum employment standards as a worker",
+              "desc": "Information for workers on minimum wage, hours, overtime, vacation, and leaves under the Employment Standards Act.",
+              "users": "Workers",
+              "user_groups": [
+                "Workers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/post-secondary-training-labour.html",
+                  "url": "https://www.gnb.ca/en/org/post-secondary-training-labour.html"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Employment standards inquiries",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ESA",
+                  "color": "#0070c0",
+                  "full_name": "Employment Standards Act  -  Employment standards"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": [
+                  {
+                    "type": "worker_employer",
+                    "service": "Comply with employment standards as an employer",
+                    "ministry": "petl"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Comply with employment standards as an employer",
+              "desc": "Guidance for employers on wages, hours, leaves, and termination requirements under the Employment Standards Act.",
+              "users": "Employers and payroll administrators",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/post-secondary-training-labour.html",
+                  "url": "https://www.gnb.ca/en/org/post-secondary-training-labour.html"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Employment standards inquiries",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ESA",
+                  "color": "#0070c0",
+                  "full_name": "Employment Standards Act  -  Employment standards"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "people_employment",
+                "relationships": [
+                  {
+                    "type": "worker_employer",
+                    "service": "Learn about minimum employment standards as a worker",
+                    "ministry": "petl"
+                  },
+                  {
+                    "type": "complainant_regulated_party",
+                    "service": "File an employment standards complaint",
+                    "ministry": "petl"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "File an employment standards complaint",
+              "desc": "Workers can file a complaint about unpaid wages or other employment standards violations for investigation.",
+              "users": "Workers",
+              "user_groups": [
+                "Workers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Complaint form",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Employment standards inquiries",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ESA",
+                  "color": "#0070c0",
+                  "full_name": "Employment Standards Act  -  Enforcement"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": [
+                  {
+                    "type": "complainant_regulated_party",
+                    "service": "Comply with employment standards as an employer",
+                    "ministry": "petl"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#b45309",
+      "title": "GOAL 3",
+      "short_name": "Newcomers settle and succeed in New Brunswick",
+      "legend_label": "Immigration & settlement",
+      "description": "Provincial immigration programs attract newcomers, and settlement services help them build lives here.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Immigrate and settle in New Brunswick",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Immigrate to New Brunswick through provincial immigration programs",
+              "desc": "Provincial nominee and Atlantic immigration pathways for skilled workers, graduates, and entrepreneurs seeking permanent residence.",
+              "users": "Prospective immigrants",
+              "user_groups": [
+                "Newcomers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/post-secondary-training-labour.html",
+                  "url": "https://www.gnb.ca/en/org/post-secondary-training-labour.html"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "Immigration application portal",
+                  "url": "https://www.gnb.ca/en/org/post-secondary-training-labour.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 6,
+                  "tip": "Focus immigration pathways on critical labour needs and support newcomers"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "immigration_settling",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Hire a worker through provincial immigration streams",
+                    "ministry": "petl"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "unvalidated"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "immigration",
+                "note": "Population growth strategy runs through provincial streams"
+              }
+            },
+            {
+              "name": "Get help settling in New Brunswick",
+              "desc": "Settlement agencies funded by the province help newcomers with language, credentials, housing, and community connections.",
+              "users": "Newcomers",
+              "user_groups": [
+                "Newcomers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Settlement agency",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/post-secondary-training-labour.html",
+                  "url": "https://www.gnb.ca/en/org/post-secondary-training-labour.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "immigration_settling",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Get your international credentials recognized",
+              "desc": "Guidance and referrals help internationally trained workers have their qualifications assessed and recognized for work in New Brunswick.",
+              "users": "Internationally trained workers",
+              "user_groups": [
+                "Newcomers",
+                "Workers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/post-secondary-training-labour.html",
+                  "url": "https://www.gnb.ca/en/org/post-secondary-training-labour.html"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Settlement agency",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 2,
+                  "tip": "Improve foreign credential recognition for healthcare professionals already in the province"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "immigration_settling",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Hire a worker through provincial immigration streams",
+              "desc": "Employers can recruit and support foreign workers and graduates through provincial nominee and Atlantic immigration streams.",
+              "users": "Employers with labour shortages",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/post-secondary-training-labour.html",
+                  "url": "https://www.gnb.ca/en/org/post-secondary-training-labour.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "people_employment",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Immigrate to New Brunswick through provincial immigration programs",
+                    "ministry": "petl"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Fund universities and colleges",
+      "desc": "Operating funding and accountability for public universities and community colleges.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "core_human_needs",
+        "domain": "education_training",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Support adult learning and literacy",
+      "desc": "Adult education, GED, and community literacy programming.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "core_human_needs",
+        "domain": "education_training",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    }
+  ],
+  "mandate_date": "November 13, 2024",
+  "mandate_minister": "Alyson Townsend",
+  "mandate_pdf": "https://www.gnb.ca/en/gov/contacts/members-executive-council/mandates-letters/mandates-townsend.html",
+  "cross_cutting": [
+    "Healthcare",
+    "Affordability and Housing",
+    "Education",
+    "Economic Development",
+    "Environment",
+    "Leadership You Can Trust"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Create more medical training and residency seats with Dalhousie Medicine NB and CFMNB"
+    },
+    {
+      "number": 2,
+      "text": "Improve foreign credential recognition for healthcare professionals already in the province",
+      "mapping": "-> Get your international credentials recognized"
+    },
+    {
+      "number": 3,
+      "text": "Continue to make provincial student loans interest-free",
+      "mapping": "-> Apply for student financial assistance"
+    },
+    {
+      "number": 4,
+      "text": "Develop long-term student housing strategies with universities and colleges"
+    },
+    {
+      "number": 5,
+      "text": "Provide additional grants for students in healthcare, building trades and education"
+    },
+    {
+      "number": 6,
+      "text": "Focus immigration pathways on critical labour needs and support newcomers",
+      "mapping": "-> Immigrate to New Brunswick through provincial immigration programs"
+    },
+    {
+      "number": 7,
+      "text": "Support unemployed and underemployed New Brunswickers to upskill",
+      "mapping": "-> Get help finding a job and planning your career"
+    },
+    {
+      "number": 8,
+      "text": "Review and respond to the Systemic Racism Commissioner's final report"
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "Students",
+    "Workers",
+    "Business owners",
+    "Workers & job seekers",
+    "Businesses & employers",
+    "Persons with disabilities",
+    "Individuals",
+    "Seniors",
+    "Newcomers",
+    "General public",
+    "Families"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

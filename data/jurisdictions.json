@@ -15,5 +15,21 @@
     "type": "municipality",
     "parent": "goa",
     "path": "ca/ab/calgary"
+  },
+  {
+    "code": "gnb",
+    "name": "Government of New Brunswick",
+    "short_name": "New Brunswick",
+    "country": "CA",
+    "type": "province",
+    "path": "ca/nb/gnb"
+  },
+  {
+    "code": "bcgov",
+    "name": "Government of British Columbia",
+    "short_name": "British Columbia",
+    "country": "CA",
+    "type": "province",
+    "path": "ca/bc/bcgov"
   }
 ]

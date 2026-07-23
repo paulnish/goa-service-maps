@@ -1,0 +1,244 @@
+{
+  "prefix": "hlth",
+  "name": "Health",
+  "short_name": "Health",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "New Brunswickers can access the care they need",
+      "legend_label": "Access to care",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get covered by Medicare"
+        },
+        {
+          "number": 2,
+          "name": "Find and receive care"
+        },
+        {
+          "number": 3,
+          "name": "Get everyday and urgent care"
+        },
+        {
+          "number": 4,
+          "name": "Access reproductive and specialized care"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "short_name": "Public health protects the population",
+      "legend_label": "Public health",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Stay protected from disease and health hazards"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#b45309",
+      "short_name": "Mental health and addiction support is there when needed",
+      "legend_label": "Mental health & addictions",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get mental health and addiction support"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "MSPA",
+      "full_name": "Medical Services Payment Act",
+      "color": "#0070c0",
+      "citation": "RSNB 1973, c M-7",
+      "summary": "Establishes Medicare coverage of physician services.",
+      "sections": [
+        {
+          "ref": "s.2",
+          "title": "Medical services plan",
+          "description": "Medical services plan paying for entitled services to beneficiaries; registration detail in NB Reg 84-20.",
+          "anchor_id": "MSPA-s2",
+          "services": [
+            {
+              "name": "Apply for or renew your Medicare card",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Get covered by Medicare"
+            }
+          ]
+        },
+        {
+          "ref": "s.2.1",
+          "title": "Services outside the Province",
+          "description": "Reciprocal agreements and coverage while temporarily absent; out-of-country limits (s.2(2)-(3)).",
+          "anchor_id": "MSPA-s21",
+          "services": [
+            {
+              "name": "Get Medicare coverage for care outside New Brunswick",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Get covered by Medicare"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "PCDIA",
+      "full_name": "Prescription and Catastrophic Drug Insurance Act",
+      "color": "#2e7d32",
+      "citation": "SNB 2014, c 4",
+      "summary": "Public prescription drug plans.",
+      "sections": [
+        {
+          "ref": "Parts 3, 6",
+          "title": "Membership and benefits",
+          "description": "Voluntary membership in the Drug Insurance Plan; benefits.",
+          "anchor_id": "PCDIA-Parts36",
+          "services": [
+            {
+              "name": "Get prescription drug coverage",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Get covered by Medicare"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "PHA",
+      "full_name": "Public Health Act",
+      "color": "#b45309",
+      "citation": "SNB 1998, c P-22.4",
+      "summary": "Disease prevention, health protection, and public health powers.",
+      "sections": [
+        {
+          "ref": "Part III",
+          "title": "Notifiable diseases and immunization",
+          "description": "Disease control, proof of immunization (s.42.1), immunization registry (s.42.3).",
+          "anchor_id": "PHA-PartIII",
+          "services": [
+            {
+              "name": "Get immunized",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Stay protected from disease and health hazards"
+            }
+          ]
+        },
+        {
+          "ref": "s.4",
+          "title": "Reporting of health hazard",
+          "description": "Reporting and investigation of health hazards.",
+          "anchor_id": "PHA-s4",
+          "services": [
+            {
+              "name": "Check public health alerts and advisories",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Stay protected from disease and health hazards"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "MHA",
+      "full_name": "Mental Health Act",
+      "color": "#6a1b9a",
+      "citation": "RSNB 1973, c M-10",
+      "summary": "Mental health examination, admission, and patient rights.",
+      "sections": [
+        {
+          "ref": "Part II",
+          "title": "Examination and hospitalization",
+          "description": "Voluntary and involuntary admission and examination; community services also under the Mental Health Services Act, RSNB 2011, c 190.",
+          "anchor_id": "MHA-PartII",
+          "services": [
+            {
+              "name": "Access mental health services",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#b45309",
+              "ms_number": 1,
+              "ms_name": "Get mental health and addiction support"
+            },
+            {
+              "name": "Access addiction treatment services",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#b45309",
+              "ms_number": 1,
+              "ms_name": "Get mental health and addiction support"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "RHAA",
+      "full_name": "Regional Health Authorities Act",
+      "color": "#c62828",
+      "citation": "RSNB 2011, c 217",
+      "summary": "Establishes Horizon and Vitalité and their accountability.",
+      "sections": [
+        {
+          "ref": "s.16",
+          "title": "Establishment of regional health authorities",
+          "description": "Health regions and regional health authorities delivering hospital and community services.",
+          "anchor_id": "RHAA-s16",
+          "services": [
+            {
+              "name": "Get hospital and specialty care",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Find and receive care"
+            },
+            {
+              "name": "Find a primary care provider",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Find and receive care"
+            },
+            {
+              "name": "Receive nursing and rehabilitation care at home",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Find and receive care"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 5,
+    "sections_count": 7,
+    "services_with_leg_count": 10,
+    "services_multi_act_count": 0
+  }
+}

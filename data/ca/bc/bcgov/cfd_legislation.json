@@ -1,0 +1,249 @@
+{
+  "prefix": "cfd",
+  "name": "Ministry of Children and Family Development",
+  "short_name": "Children & Family Development",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#b71c1c",
+      "short_name": "Children and youth in B.C. are protected from abuse and neglect",
+      "legend_label": "Child protection",
+      "main_services": [
+        { "number": 1, "name": "Report and respond to a child protection concern" },
+        { "number": 2, "name": "Take part in a child protection legal process" }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "short_name": "Children and youth have stable, connected caregiving and permanency options",
+      "legend_label": "Caregiving & adoption",
+      "main_services": [
+        { "number": 1, "name": "Become a caregiver for a child or youth in care" },
+        { "number": 2, "name": "Adopt a child" }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#6a1b9a",
+      "short_name": "Children, youth and families get the mental health, disability and family supports they need to thrive",
+      "legend_label": "Family & youth supports",
+      "main_services": [
+        { "number": 1, "name": "Get mental health support for a child or youth" },
+        { "number": 2, "name": "Get support for a child or youth with a disability or support needs" },
+        { "number": 3, "name": "Get support to keep families together and help youth transition to adulthood" }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#b45309",
+      "short_name": "Indigenous children, youth and families exercise jurisdiction over their own child and family services",
+      "legend_label": "Indigenous jurisdiction",
+      "main_services": [
+        { "number": 1, "name": "Exercise Indigenous jurisdiction over child and family services" }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "CFCSA",
+      "full_name": "Child, Family and Community Service Act",
+      "color": "#b71c1c",
+      "citation": "RSBC 1996, c 46",
+      "summary": "The legislative authority for the ministry's child protection services. Sets out the duty to report abuse or neglect, the Director of Child Protection's delegated authority, foster home approval and standards, mediation, and youth agreements. Amended in 2018/2019 to strengthen Indigenous engagement and information-sharing in child welfare matters.",
+      "sections": [
+        {
+          "ref": "Duty to report",
+          "title": "Duty to report",
+          "description": "Everyone in B.C. has a legal duty to report if they believe a child or youth may be abused, neglected, or otherwise in need of protection.",
+          "anchor_id": "CFCSA-DutyToReport",
+          "services": [
+            {
+              "name": "Report suspected child abuse or neglect",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#b71c1c",
+              "ms_number": 1,
+              "ms_name": "Report and respond to a child protection concern"
+            }
+          ]
+        },
+        {
+          "ref": "Delegation of the Director's authority",
+          "title": "Delegation of the Director's authority",
+          "description": "The Minister designates the Director of Child Protection, who delegates provision of child protection services to social workers and delegated Aboriginal/Indigenous agencies province-wide.",
+          "anchor_id": "CFCSA-Delegation",
+          "services": [
+            {
+              "name": "Child protection social work and delegated authority administration",
+              "type": "foundational",
+              "goal_number": 0,
+              "goal_color": "#666666",
+              "ms_number": 0,
+              "ms_name": ""
+            }
+          ]
+        },
+        {
+          "ref": "Mediation and dispute resolution",
+          "title": "Mediation and dispute resolution",
+          "description": "Provides for voluntary mediation between families and the ministry as an alternative to court in child protection matters.",
+          "anchor_id": "CFCSA-Mediation",
+          "services": [
+            {
+              "name": "Take part in child protection mediation",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#b71c1c",
+              "ms_number": 2,
+              "ms_name": "Take part in a child protection legal process"
+            }
+          ]
+        },
+        {
+          "ref": "Youth agreements",
+          "title": "Youth agreements",
+          "description": "Authorizes agreements providing support to youth aged 16-18 who cannot safely live at home and are not in continuing care.",
+          "anchor_id": "CFCSA-YouthAgreements",
+          "services": [
+            {
+              "name": "Enter into a Youth Agreement for independent living support",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#b71c1c",
+              "ms_number": 2,
+              "ms_name": "Take part in a child protection legal process"
+            }
+          ]
+        },
+        {
+          "ref": "Approval of foster homes",
+          "title": "Approval of foster homes",
+          "description": "Social workers hold delegated authority to approve foster homes for children coming into the care of the ministry.",
+          "anchor_id": "CFCSA-FosterApproval",
+          "services": [
+            {
+              "name": "Become a foster caregiver",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Become a caregiver for a child or youth in care"
+            }
+          ]
+        },
+        {
+          "ref": "Standards for foster homes",
+          "title": "Standards for foster homes",
+          "description": "Sets minimum standards for the care and supervision of children and youth living in foster homes.",
+          "anchor_id": "CFCSA-FosterStandards",
+          "services": [
+            {
+              "name": "Get payments and support as a current foster caregiver",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Become a caregiver for a child or youth in care"
+            }
+          ]
+        },
+        {
+          "ref": "Indigenous engagement and information sharing (2018/2019 amendments)",
+          "title": "Indigenous engagement and information sharing",
+          "description": "2018 amendments (Bill 26) require early engagement with Indigenous communities and information-sharing to keep Indigenous children and families connected to their communities.",
+          "anchor_id": "CFCSA-IndigenousAmendments",
+          "services": [
+            {
+              "name": "Establish a coordination agreement for Indigenous jurisdiction over child and family services",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#b45309",
+              "ms_number": 1,
+              "ms_name": "Exercise Indigenous jurisdiction over child and family services"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "AA",
+      "full_name": "Adoption Act",
+      "color": "#2e7d32",
+      "citation": "RSBC 1996, c 5",
+      "summary": "Governs adoption in British Columbia, including placement for adoption, consents, care and guardianship, court proceedings, interprovincial and intercountry adoptions, and openness agreements.",
+      "sections": [
+        {
+          "ref": "Part 2, Division 1",
+          "title": "Adopting from foster care",
+          "description": "Sets out placement for adoption of children in government care by a director or adoption agency.",
+          "anchor_id": "AA-Part2Div1",
+          "services": [
+            {
+              "name": "Adopt a child from foster care",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Adopt a child"
+            }
+          ]
+        },
+        {
+          "ref": "Part 2, Divisions 1-2",
+          "title": "Placement for adoption and consents",
+          "description": "Governs who may place and receive a child for adoption, and the consents required from birth parents.",
+          "anchor_id": "AA-Part2Div12",
+          "services": [
+            {
+              "name": "Adopt an infant through a licensed adoption agency",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Adopt a child"
+            }
+          ]
+        },
+        {
+          "ref": "Part 4",
+          "title": "Interprovincial and intercountry adoptions",
+          "description": "Governs adoptions where a child is brought into B.C. from another province or country, including Hague Convention intercountry adoptions.",
+          "anchor_id": "AA-Part4",
+          "services": [
+            {
+              "name": "Adopt a child from another country",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Adopt a child"
+            }
+          ]
+        },
+        {
+          "ref": "Part 3",
+          "title": "Court proceedings for adoption",
+          "description": "Sets out who may apply to court to adopt a child, notice requirements, and the adoption order process.",
+          "anchor_id": "AA-Part3",
+          "services": [
+            {
+              "name": "Adopt a relative's child or your partner's stepchild",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Adopt a child"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 2,
+    "sections_count": 11,
+    "services_with_leg_count": 11,
+    "services_multi_act_count": 0
+  }
+}

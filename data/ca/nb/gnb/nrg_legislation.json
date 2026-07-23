@@ -1,0 +1,109 @@
+{
+  "prefix": "nrg",
+  "name": "Energy",
+  "short_name": "Energy",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "Energy is reliable, affordable and increasingly clean",
+      "legend_label": "Clean, affordable energy",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Save energy at home"
+        },
+        {
+          "number": 2,
+          "name": "Develop energy projects"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "short_name": "Energy decisions serve consumers",
+      "legend_label": "Consumer-focused policy",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Understand energy prices and regulation"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "ElA",
+      "full_name": "Electricity Act",
+      "color": "#0070c0",
+      "citation": "SNB 2013, c 7",
+      "summary": "Governs the electricity system, the provincial utility, and renewable requirements.",
+      "sections": [
+        {
+          "ref": "s.103",
+          "title": "Approval of rates",
+          "description": "Board approval of just and reasonable rates, considering s.68 electricity policy.",
+          "anchor_id": "ElA-s103",
+          "services": [
+            {
+              "name": "Learn how electricity and fuel prices are set and regulated",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Understand energy prices and regulation"
+            }
+          ]
+        },
+        {
+          "ref": "s.142",
+          "title": "Renewable resources regulations",
+          "description": "Regulation-making power behind the 40% renewable requirement (NB Reg 2015-60, s.3).",
+          "anchor_id": "ElA-s142",
+          "services": [
+            {
+              "name": "Develop renewable and clean energy projects",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Develop energy projects"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "EUBA",
+      "full_name": "Energy and Utilities Board Act",
+      "color": "#2e7d32",
+      "citation": "SNB 2006, c E-9.18",
+      "summary": "Continues the independent Energy and Utilities Board.",
+      "sections": [
+        {
+          "ref": "s.3; Part 3",
+          "title": "Board continuation and rate approval",
+          "description": "Board continued (s.3); tariff approval and just-and-reasonable review (ss.63-65).",
+          "anchor_id": "EUBA-s3Part3",
+          "services": [
+            {
+              "name": "Learn how electricity and fuel prices are set and regulated",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Understand energy prices and regulation"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 2,
+    "sections_count": 3,
+    "services_with_leg_count": 2,
+    "services_multi_act_count": 1
+  }
+}

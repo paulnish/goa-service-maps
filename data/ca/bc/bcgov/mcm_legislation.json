@@ -1,0 +1,336 @@
+{
+  "prefix": "mcm",
+  "name": "Ministry of Mining and Critical Minerals",
+  "short_name": "Mining & Critical Minerals",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#6a1b9a",
+      "short_name": "British Columbians can access and maintain mineral, placer and coal rights",
+      "legend_label": "Mineral titles",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Acquire and maintain a mineral, placer or coal title"
+        },
+        {
+          "number": 2,
+          "name": "Search title records and explore recreationally"
+        },
+        {
+          "number": 3,
+          "name": "Meet mineral and coal tax obligations"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#e65100",
+      "short_name": "Mines are permitted, operated and closed safely and responsibly",
+      "legend_label": "Mine permitting & safety",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get a mine permitted from exploration through closure"
+        },
+        {
+          "number": 2,
+          "name": "Meet mine health, safety and certification requirements"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#00838f",
+      "short_name": "B.C.'s critical minerals economy and geoscience knowledge base grow",
+      "legend_label": "Critical minerals & geoscience",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Access B.C.'s public geoscience information"
+        },
+        {
+          "number": 2,
+          "name": "Grow B.C.'s critical minerals sector"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "MTA",
+      "full_name": "Mineral Tenure Act",
+      "color": "#6a1b9a",
+      "citation": "RSBC 1996, c. 292",
+      "summary": "The primary statute authorizing the registration of mineral and placer titles with the province and providing the policy framework for mineral titles administration, including free miner certificates, claims and leases.",
+      "sections": [
+        {
+          "ref": "s. 11",
+          "title": "Free miner certificate and right of entry",
+          "description": "Only a free miner, or an agent of a free miner, may enter mineral lands to explore for minerals or placer minerals.",
+          "anchor_id": "MTA-s11",
+          "services": [
+            {
+              "name": "Get a Free Miner Certificate",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#6a1b9a",
+              "ms_number": 1,
+              "ms_name": "Acquire and maintain a mineral, placer or coal title"
+            },
+            {
+              "name": "Pan for gold at a recreational hand panning reserve",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#6a1b9a",
+              "ms_number": 2,
+              "ms_name": "Search title records and explore recreationally"
+            }
+          ]
+        },
+        {
+          "ref": "Part 2",
+          "title": "Mineral and placer claims",
+          "description": "Sets out how mineral and placer claims are located, recorded and maintained through Mineral Titles Online.",
+          "anchor_id": "MTA-part2-claims",
+          "services": [
+            {
+              "name": "Register a mineral or placer claim online",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#6a1b9a",
+              "ms_number": 1,
+              "ms_name": "Acquire and maintain a mineral, placer or coal title"
+            }
+          ]
+        },
+        {
+          "ref": "Part 2",
+          "title": "Mineral and placer leases",
+          "description": "Governs conversion of a recorded claim into a mineral or placer lease.",
+          "anchor_id": "MTA-part2-leases",
+          "services": [
+            {
+              "name": "Apply for a mineral or placer lease",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#6a1b9a",
+              "ms_number": 1,
+              "ms_name": "Acquire and maintain a mineral, placer or coal title"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "MA",
+      "full_name": "Mines Act",
+      "color": "#e65100",
+      "citation": "RSBC 1996, c. 293",
+      "summary": "Regulates all mining activities in British Columbia during exploration, development, construction, production, closure, reclamation and abandonment, including permits, reclamation security, certification and enforcement.",
+      "sections": [
+        {
+          "ref": "s. 10",
+          "title": "Permit to work in, on or about a mine",
+          "description": "Before starting any work in, on or about a mine, the owner, agent or manager must hold a permit issued by the chief permitting officer.",
+          "anchor_id": "MA-s10",
+          "services": [
+            {
+              "name": "Apply for a Mines Act permit to explore for minerals or coal",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#e65100",
+              "ms_number": 1,
+              "ms_name": "Get a mine permitted from exploration through closure"
+            },
+            {
+              "name": "Apply for a Mines Act permit to construct or operate a mine",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#e65100",
+              "ms_number": 1,
+              "ms_name": "Get a mine permitted from exploration through closure"
+            }
+          ]
+        },
+        {
+          "ref": "s. 10(4)-(5)",
+          "title": "Permit security for reclamation",
+          "description": "The chief permitting officer may require security as a condition of a permit to provide for protection of, and mitigation of damage to, land and watercourses affected by the mine.",
+          "anchor_id": "MA-s10-4-5",
+          "services": [
+            {
+              "name": "Post a reclamation security for a mine",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#e65100",
+              "ms_number": 1,
+              "ms_name": "Get a mine permitted from exploration through closure"
+            }
+          ]
+        },
+        {
+          "ref": "s. 10.1",
+          "title": "Reclamation compliance orders",
+          "description": "If an owner, agent, manager or permittee fails to comply with reclamation requirements in the code, regulations or permit, the chief inspector may issue an order to remedy the failure.",
+          "anchor_id": "MA-s10-1",
+          "services": [
+            {
+              "name": "Submit a mine reclamation and closure plan",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#e65100",
+              "ms_number": 1,
+              "ms_name": "Get a mine permitted from exploration through closure"
+            }
+          ]
+        },
+        {
+          "ref": "s. 26",
+          "title": "Certification of persons employed at a mine",
+          "description": "Each manager must ensure every person employed at a mine, if required by the regulations or code, is under the daily supervision of a person who holds a valid and appropriate certificate.",
+          "anchor_id": "MA-s26",
+          "services": [
+            {
+              "name": "Get a mine supervisor, shiftboss or blaster certification",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#e65100",
+              "ms_number": 2,
+              "ms_name": "Meet mine health, safety and certification requirements"
+            }
+          ]
+        },
+        {
+          "ref": "s. 7",
+          "title": "Investigation of incidents",
+          "description": "On the direction of the chief inspector, an inspector must investigate and report on an incident that has caused, or had the potential to cause, serious personal injury, loss of life or property, or environmental damage.",
+          "anchor_id": "MA-s7",
+          "services": [
+            {
+              "name": "Report a mine safety incident or hazard",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#e65100",
+              "ms_number": 2,
+              "ms_name": "Meet mine health, safety and certification requirements"
+            }
+          ]
+        },
+        {
+          "ref": "s. 34",
+          "title": "Health, Safety and Reclamation Code",
+          "description": "The minister must establish a health, safety and reclamation code committee to prepare and maintain a code dealing with all aspects of health, safety and reclamation in the operation of a mine.",
+          "anchor_id": "MA-s34",
+          "services": [
+            {
+              "name": "Follow the Health, Safety and Reclamation Code for Mines",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#e65100",
+              "ms_number": 2,
+              "ms_name": "Meet mine health, safety and certification requirements"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CA",
+      "full_name": "Coal Act",
+      "color": "#8d6e63",
+      "citation": "SBC 2004, c. 15",
+      "summary": "Authorizes the registration of coal titles with the province and provides the policy framework for coal licence and lease administration.",
+      "sections": [
+        {
+          "ref": "s. 12",
+          "title": "Application for a coal licence",
+          "description": "A person may apply to the minister for a coal licence in the form and manner the minister specifies.",
+          "anchor_id": "CA-s12",
+          "services": [
+            {
+              "name": "Apply for a coal licence or lease",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#6a1b9a",
+              "ms_number": 1,
+              "ms_name": "Acquire and maintain a mineral, placer or coal title"
+            }
+          ]
+        },
+        {
+          "ref": "s. 18",
+          "title": "Application for a coal lease",
+          "description": "A licensee or lessee may apply for a coal lease, converting exploration rights into production rights over the location.",
+          "anchor_id": "CA-s18",
+          "services": [
+            {
+              "name": "Apply for a coal licence or lease",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#6a1b9a",
+              "ms_number": 1,
+              "ms_name": "Acquire and maintain a mineral, placer or coal title"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "MTX",
+      "full_name": "Mineral Tax Act",
+      "color": "#2e7d32",
+      "citation": "RSBC 1996, c. 291",
+      "summary": "Imposes mineral tax on the commercial production of coal and mineral resources from B.C. mines, quarries and placer operations to compensate the province for the depletion of those resources.",
+      "sections": [
+        {
+          "ref": "Part 2",
+          "title": "Self-assessment and payment of mineral tax",
+          "description": "Mine operators must self-assess and pay mineral tax on taxable resources removed from their operations unless an exemption applies.",
+          "anchor_id": "MTX-part2",
+          "services": [
+            {
+              "name": "Pay mineral tax on mine production",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#6a1b9a",
+              "ms_number": 3,
+              "ms_name": "Meet mineral and coal tax obligations"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "MLTA",
+      "full_name": "Mineral Land Tax Act",
+      "color": "#c62828",
+      "citation": "RSBC 1996, c. 290",
+      "summary": "Imposes an annual tax on owners of freehold mineral rights, with the rate based on the size of the mineral land and whether minerals are being produced from it.",
+      "sections": [
+        {
+          "ref": "s. 3",
+          "title": "Annual tax on mineral land",
+          "description": "Not later than July 2 in every year, an owner of mineral land must pay to the minister a tax at a rate based on the size of the owner's total mineral land.",
+          "anchor_id": "MLTA-s3",
+          "services": [
+            {
+              "name": "Pay mineral land tax on freehold mineral rights",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#6a1b9a",
+              "ms_number": 3,
+              "ms_name": "Meet mineral and coal tax obligations"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 5,
+    "sections_count": 13,
+    "services_with_leg_count": 13,
+    "services_multi_act_count": 0
+  }
+}

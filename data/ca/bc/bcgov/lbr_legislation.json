@@ -1,0 +1,419 @@
+{
+  "prefix": "lbr",
+  "name": "Ministry of Labour",
+  "short_name": "Labour",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "Workers in B.C. have fair pay and safe, healthy workplaces",
+      "legend_label": "Worker rights & standards",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Know your rights and resolve a workplace problem"
+        },
+        {
+          "number": 2,
+          "name": "Get paid correctly and take leave when you need it"
+        },
+        {
+          "number": 3,
+          "name": "Handle the end of a job"
+        },
+        {
+          "number": 4,
+          "name": "Know your rights as a temporary foreign worker"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#e65100",
+      "short_name": "Employers meet clear obligations when hiring and managing staff",
+      "legend_label": "Employer obligations",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Meet your employment standards obligations"
+        },
+        {
+          "number": 2,
+          "name": "Hire temporary foreign workers the right way"
+        },
+        {
+          "number": 3,
+          "name": "License a staffing or recruitment business"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#6a1b9a",
+      "short_name": "Labour relations are stable and injured workers are treated fairly",
+      "legend_label": "Labour relations & comp",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Navigate union certification and collective bargaining"
+        },
+        {
+          "number": 2,
+          "name": "Get help with a workers' compensation matter"
+        },
+        {
+          "number": 3,
+          "name": "Register and manage workers' compensation coverage"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "ESA",
+      "full_name": "Employment Standards Act",
+      "color": "#1565c0",
+      "citation": "RSBC 1996, c. 113",
+      "summary": "Sets minimum standards for wages, hours, leave, termination and licensing in most B.C. workplaces. Administered by the Employment Standards Branch.",
+      "sections": [
+        {
+          "ref": "s.74-75",
+          "title": "Complaint and time limit; confidentiality",
+          "description": "Sets the process and time limits for filing an employment standards complaint, and allows a complainant to request confidentiality.",
+          "anchor_id": "ESA-s74-75",
+          "services": [
+            {
+              "name": "File an employment standards complaint",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Know your rights and resolve a workplace problem"
+            },
+            {
+              "name": "Respond to an employment standards complaint or investigation",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#e65100",
+              "ms_number": 1,
+              "ms_name": "Meet your employment standards obligations"
+            },
+            {
+              "name": "File a complaint about a temporary foreign worker employer or recruiter",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 4,
+              "ms_name": "Know your rights as a temporary foreign worker"
+            }
+          ]
+        },
+        {
+          "ref": "s.101",
+          "title": "Publication of violators' names",
+          "description": "Allows the Director of Employment Standards to publish information about determinations issued for contraventions of the Act or Regulation.",
+          "anchor_id": "ESA-s101",
+          "services": [
+            {
+              "name": "Check published employment standards violations",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Know your rights and resolve a workplace problem"
+            }
+          ]
+        },
+        {
+          "ref": "s.16, 16.1, 16.2",
+          "title": "Minimum wage and annual adjustment",
+          "description": "Requires employers to pay at least minimum wage and sets the annual CPI-based adjustment.",
+          "anchor_id": "ESA-s16",
+          "services": [
+            {
+              "name": "Check the current minimum wage rate",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Get paid correctly and take leave when you need it"
+            }
+          ]
+        },
+        {
+          "ref": "Part 6",
+          "title": "Leaves of absence",
+          "description": "Job-protected leaves including illness or injury, maternity and parental, family responsibility, compassionate care, critical illness, domestic or sexual violence, bereavement and jury duty.",
+          "anchor_id": "ESA-Part6",
+          "services": [
+            {
+              "name": "Take job-protected leave from work",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Get paid correctly and take leave when you need it"
+            }
+          ]
+        },
+        {
+          "ref": "Part 8",
+          "title": "Termination of employment",
+          "description": "Governs notice, compensation for length of service, and temporary layoffs when employment ends.",
+          "anchor_id": "ESA-Part8",
+          "services": [
+            {
+              "name": "Get notice or pay when your job ends",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 3,
+              "ms_name": "Handle the end of a job"
+            },
+            {
+              "name": "Understand your rights during a temporary layoff",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 3,
+              "ms_name": "Handle the end of a job"
+            }
+          ]
+        },
+        {
+          "ref": "Part 8, s.64",
+          "title": "Group terminations",
+          "description": "Requires employers terminating 50 or more employees at one location within two months to give written notice to affected employees, the Minister of Labour, and any trade union.",
+          "anchor_id": "ESA-Part8-s64",
+          "services": [
+            {
+              "name": "Notify government of a group termination",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#e65100",
+              "ms_number": 1,
+              "ms_name": "Meet your employment standards obligations"
+            }
+          ]
+        },
+        {
+          "ref": "Licensing",
+          "title": "Licensing of employment agencies",
+          "description": "Employment agencies that recruit or place workers for a fee must be licensed.",
+          "anchor_id": "ESA-lic-employment-agency",
+          "services": [
+            {
+              "name": "Get a licence to operate an employment agency",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#e65100",
+              "ms_number": 3,
+              "ms_name": "License a staffing or recruitment business"
+            }
+          ]
+        },
+        {
+          "ref": "Licensing",
+          "title": "Licensing of talent agencies",
+          "description": "Talent agencies that place performers and other talent for a fee must be licensed.",
+          "anchor_id": "ESA-lic-talent-agency",
+          "services": [
+            {
+              "name": "Get a licence to operate a talent agency",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#e65100",
+              "ms_number": 3,
+              "ms_name": "License a staffing or recruitment business"
+            }
+          ]
+        },
+        {
+          "ref": "Licensing",
+          "title": "Licensing of farm labour contractors",
+          "description": "Farm labour contractors who supply workers for planting, cultivating or harvesting must be licensed.",
+          "anchor_id": "ESA-lic-farm-labour",
+          "services": [
+            {
+              "name": "Get a licence as a farm labour contractor",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#e65100",
+              "ms_number": 3,
+              "ms_name": "License a staffing or recruitment business"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "TFWPA",
+      "full_name": "Temporary Foreign Worker Protection Act",
+      "color": "#2e7d32",
+      "citation": "SBC 2018, c. 45",
+      "summary": "Protects temporary foreign workers from unfair recruitment and employment practices by requiring employer registration, recruiter licensing, and setting recruiter and employer obligations. Most sections in force July 8, 2019.",
+      "sections": [
+        {
+          "ref": "Part 5",
+          "title": "Foreign worker recruiter and employer obligations",
+          "description": "Prohibits employers and recruiters from keeping a foreign worker's money or documents, threatening deportation without cause, or providing false or misleading information.",
+          "anchor_id": "TFWPA-Part5",
+          "services": [
+            {
+              "name": "Know your rights as a temporary foreign worker",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 4,
+              "ms_name": "Know your rights as a temporary foreign worker"
+            },
+            {
+              "name": "File a complaint about a temporary foreign worker employer or recruiter",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 4,
+              "ms_name": "Know your rights as a temporary foreign worker"
+            }
+          ]
+        },
+        {
+          "ref": "s.3",
+          "title": "Recruiter licensing requirement",
+          "description": "Requires individuals who provide recruitment services for foreign workers in B.C. to hold a licence.",
+          "anchor_id": "TFWPA-s3",
+          "services": [
+            {
+              "name": "Check if a foreign worker recruiter is licensed",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 4,
+              "ms_name": "Know your rights as a temporary foreign worker"
+            },
+            {
+              "name": "Get a licence to recruit foreign workers",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#e65100",
+              "ms_number": 2,
+              "ms_name": "Hire temporary foreign workers the right way"
+            }
+          ]
+        },
+        {
+          "ref": "Part 3",
+          "title": "Certificates of registration for employers of foreign nationals",
+          "description": "Requires employers hiring temporary foreign workers under most federal programs to hold a valid certificate of registration.",
+          "anchor_id": "TFWPA-Part3",
+          "services": [
+            {
+              "name": "Register to hire temporary foreign workers",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#e65100",
+              "ms_number": 2,
+              "ms_name": "Hire temporary foreign workers the right way"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "LRC",
+      "full_name": "Labour Relations Code",
+      "color": "#6a1b9a",
+      "citation": "RSBC 1996, c. 244",
+      "summary": "Governs union certification, collective bargaining, and dispute resolution between provincially-regulated employers, unions and employees. Administered by the BC Labour Relations Board.",
+      "sections": [
+        {
+          "ref": "General",
+          "title": "Union certification and collective bargaining rights",
+          "description": "Sets out how unions acquire collective bargaining rights, when bargaining starts, and how the Labour Relations Board mediates and adjudicates disputes.",
+          "anchor_id": "LRC-general",
+          "services": [
+            {
+              "name": "Apply for union certification",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#6a1b9a",
+              "ms_number": 1,
+              "ms_name": "Navigate union certification and collective bargaining"
+            },
+            {
+              "name": "Respond to a union certification or bargaining application",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#6a1b9a",
+              "ms_number": 1,
+              "ms_name": "Navigate union certification and collective bargaining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "WCA",
+      "full_name": "Workers Compensation Act",
+      "color": "#e65100",
+      "citation": "RSBC 2019, c. 1",
+      "summary": "Governs workplace injury compensation, occupational health and safety, and the WorkSafeBC system, including the government-funded Workers' and Employers' Advisers Offices.",
+      "sections": [
+        {
+          "ref": "s.351",
+          "title": "Workers' Advisers Office",
+          "description": "Establishes the Workers' Advisers Office to provide free advice, assistance and representation to workers and dependants regarding WorkSafeBC decisions.",
+          "anchor_id": "WCA-s351",
+          "services": [
+            {
+              "name": "Get free advice on a WorkSafeBC claim decision",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#6a1b9a",
+              "ms_number": 2,
+              "ms_name": "Get help with a workers' compensation matter"
+            }
+          ]
+        },
+        {
+          "ref": "s.350",
+          "title": "Employers' Advisers Office",
+          "description": "Requires government to provide workers' advisers and employers' advisers under the Act.",
+          "anchor_id": "WCA-s350",
+          "services": [
+            {
+              "name": "Get employer help with a workers' compensation claim or appeal",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#6a1b9a",
+              "ms_number": 3,
+              "ms_name": "Register and manage workers' compensation coverage"
+            }
+          ]
+        },
+        {
+          "ref": "Part 5",
+          "title": "Accident fund and employer assessment",
+          "description": "Governs employer registration, classification, and assessments that fund the accident fund maintained by WorkSafeBC.",
+          "anchor_id": "WCA-Part5",
+          "services": [
+            {
+              "name": "Register your business for workers' compensation coverage",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#6a1b9a",
+              "ms_number": 3,
+              "ms_name": "Register and manage workers' compensation coverage"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 4,
+    "sections_count": 16,
+    "services_with_leg_count": 21,
+    "services_multi_act_count": 1
+  }
+}

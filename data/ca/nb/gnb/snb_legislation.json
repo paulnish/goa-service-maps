@@ -1,0 +1,390 @@
+{
+  "prefix": "snb",
+  "name": "Service New Brunswick",
+  "short_name": "Service New Brunswick",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "People access government services easily",
+      "legend_label": "Services for people",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Handle driver and vehicle transactions"
+        },
+        {
+          "number": 2,
+          "name": "Record life events and get ID"
+        },
+        {
+          "number": 3,
+          "name": "Manage property records"
+        },
+        {
+          "number": 4,
+          "name": "Resolve disputes and pay what you owe"
+        },
+        {
+          "number": 5,
+          "name": "Pay bills and manage your accounts"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "short_name": "Businesses interact with government in one place",
+      "legend_label": "Services for business",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Register and maintain a business"
+        },
+        {
+          "number": 2,
+          "name": "Sell to government"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "MVA",
+      "full_name": "Motor Vehicle Act",
+      "color": "#0070c0",
+      "citation": "RSNB 1973, c M-17",
+      "summary": "Driver licensing and vehicle registration.",
+      "sections": [
+        {
+          "ref": "s.78, s.85",
+          "title": "Driver's licences",
+          "description": "Licence requirement and application.",
+          "anchor_id": "MVA-s78s85",
+          "services": [
+            {
+              "name": "Renew or replace your driver's licence",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Handle driver and vehicle transactions"
+            },
+            {
+              "name": "Take a knowledge or road test to get your driver's licence",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Handle driver and vehicle transactions"
+            },
+            {
+              "name": "Get your driving record",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Handle driver and vehicle transactions"
+            }
+          ]
+        },
+        {
+          "ref": "s.9, s.17",
+          "title": "Registration of vehicles",
+          "description": "Registration of motor vehicles.",
+          "anchor_id": "MVA-s9s17",
+          "services": [
+            {
+              "name": "Register and plate your vehicle",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Handle driver and vehicle transactions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "VStA",
+      "full_name": "Vital Statistics Act",
+      "color": "#2e7d32",
+      "citation": "SNB 1979, c V-3",
+      "summary": "Registration of births, marriages, and deaths.",
+      "sections": [
+        {
+          "ref": "ss.7, 27, 29, 39",
+          "title": "Vital event registration and certificates",
+          "description": "Birth (s.7), marriage (s.27), death (s.29) registration; certificates (s.39).",
+          "anchor_id": "VStA-ss7272939",
+          "services": [
+            {
+              "name": "Get a birth, marriage or death certificate",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Record life events and get ID"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CNA",
+      "full_name": "Change of Name Act",
+      "color": "#b45309",
+      "citation": "RSNB 2014, c 103",
+      "summary": "Legal change of name.",
+      "sections": [
+        {
+          "ref": "s.4, s.9",
+          "title": "Application and granting",
+          "description": "Application to change a registered name; granting.",
+          "anchor_id": "CNA-s4s9",
+          "services": [
+            {
+              "name": "Change your legal name",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Record life events and get ID"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "MarA",
+      "full_name": "Marriage Act",
+      "color": "#6a1b9a",
+      "citation": "RSNB 2011, c 188",
+      "summary": "Solemnization of marriage and marriage licences.",
+      "sections": [
+        {
+          "ref": "s.16",
+          "title": "Issuance of marriage licences",
+          "description": "Licence issuance; issuers appointed under s.14.",
+          "anchor_id": "MarA-s16",
+          "services": [
+            {
+              "name": "Get a marriage licence",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Record life events and get ID"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "AsA",
+      "full_name": "Assessment Act",
+      "color": "#c62828",
+      "citation": "RSNB 1973, c A-14",
+      "summary": "Annual assessment of real property.",
+      "sections": [
+        {
+          "ref": "s.25, s.27",
+          "title": "Review and appeal",
+          "description": "Request for review to the Director; appeal to the Assessment and Planning Appeal Tribunal.",
+          "anchor_id": "AsA-s25s27",
+          "services": [
+            {
+              "name": "Review or appeal your property assessment",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 3,
+              "ms_name": "Manage property records"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "LTA",
+      "full_name": "Land Titles Act",
+      "color": "#00695c",
+      "citation": "SNB 1981, c L-1.1",
+      "summary": "Registration of interests in land.",
+      "sections": [
+        {
+          "ref": "s.18",
+          "title": "Registration of instruments",
+          "description": "Registration passes estates and interests (s.15); priority on registration (s.19).",
+          "anchor_id": "LTA-s18",
+          "services": [
+            {
+              "name": "Register land and property documents",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 3,
+              "ms_name": "Manage property records"
+            },
+            {
+              "name": "Look up property and mapping information",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 3,
+              "ms_name": "Manage property records"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "PPSA",
+      "full_name": "Personal Property Security Act",
+      "color": "#283593",
+      "citation": "SNB 1993, c P-7.1",
+      "summary": "Registration of security interests in personal property.",
+      "sections": [
+        {
+          "ref": "Part IV (ss.42-43)",
+          "title": "Personal Property Registry",
+          "description": "Registry and registration of financing statements.",
+          "anchor_id": "PPSA-PartIVss4243",
+          "services": [
+            {
+              "name": "Register or search personal property liens",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Register and maintain a business"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "BCorA",
+      "full_name": "Business Corporations Act",
+      "color": "#996515",
+      "citation": "SNB 1981, c B-9.1",
+      "summary": "Incorporation and corporate filings.",
+      "sections": [
+        {
+          "ref": "Part II (ss.3-12)",
+          "title": "Incorporation",
+          "description": "Articles and certificate of incorporation.",
+          "anchor_id": "BCorA-PartIIss312",
+          "services": [
+            {
+              "name": "Register a business or incorporate",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Register and maintain a business"
+            }
+          ]
+        },
+        {
+          "ref": "s.187",
+          "title": "Annual return",
+          "description": "Annual return filing.",
+          "anchor_id": "BCorA-s187",
+          "services": [
+            {
+              "name": "File your corporate annual return",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Register and maintain a business"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "PBNRA",
+      "full_name": "Partnerships and Business Names Registration Act",
+      "color": "#5d4037",
+      "citation": "RSNB 1973, c P-5",
+      "summary": "Registration of business names and partnerships.",
+      "sections": [
+        {
+          "ref": "s.9",
+          "title": "Business and trade name certificates",
+          "description": "Certificates respecting business or trade names; name reservation (s.12.4).",
+          "anchor_id": "PBNRA-s9",
+          "services": [
+            {
+              "name": "Register a business or incorporate",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Register and maintain a business"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "RTA",
+      "full_name": "The Residential Tenancies Act",
+      "color": "#01579b",
+      "citation": "SNB 1975, c R-10.2",
+      "summary": "Rights and obligations of landlords and tenants, including the rent cap (ss.11.11-11.14).",
+      "sections": [
+        {
+          "ref": "s.8, s.26",
+          "title": "Security deposits and tenancies officers",
+          "description": "Security deposit fund; residential tenancies officers resolve disputes; eviction (s.21).",
+          "anchor_id": "RTA-s8s26",
+          "services": [
+            {
+              "name": "Resolve a dispute between a landlord and tenant",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 4,
+              "ms_name": "Resolve disputes and pay what you owe"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "PrA",
+      "full_name": "Procurement Act",
+      "color": "#4e342e",
+      "citation": "RSNB 2012, c 20",
+      "summary": "Public procurement of goods and services.",
+      "sections": [
+        {
+          "ref": "s.2",
+          "title": "Procurement by the Minister",
+          "description": "Central procurement authority; tendering detail in NB Regs 2014-93 and 2022-78.",
+          "anchor_id": "PrA-s2",
+          "services": [
+            {
+              "name": "Bid on government procurement opportunities",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Sell to government"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 11,
+    "sections_count": 13,
+    "services_with_leg_count": 15,
+    "services_multi_act_count": 1
+  }
+}

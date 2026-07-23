@@ -1,0 +1,1551 @@
+{
+  "prefix": "for",
+  "full_name": "Ministry of Forests",
+  "short_name": "Forests",
+  "blurb": "Stewards B.C.'s forest and range lands — timber tenures and pricing, wildfire management through the BC Wildfire Service, and forest health and silviculture.",
+  "nav_name": "Forests",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#2e7d32",
+      "title": "GOAL 1",
+      "short_name": "B.C.'s forests are stewarded sustainably for future generations",
+      "legend_label": "Forest stewardship",
+      "description": "The ministry maintains healthy, resilient forests through reforestation, forest health monitoring, old growth protection and collaborative landscape planning with First Nations and communities.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Reforest and monitor forest health after harvesting",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Report silviculture surveys and reforestation data",
+              "desc": "Licensees and surveyors submit stocking surveys and reforestation results through the RESULTS system to confirm that free-growing and reforestation requirements are being met.",
+              "users": "Forest licensees, silviculture surveyors",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "RESULTS - Reporting Silviculture Updates and Land Status Tracking System",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/managing-our-forest-resources/silviculture/surveys-data-reporting"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Silviculture",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/managing-our-forest-resources/silviculture"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FRPA",
+                  "color": "#0070c0",
+                  "full_name": "Forest and Range Practices Act  -  Stocking standards and reforestation obligations"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/managing-our-forest-resources/silviculture"
+              }
+            },
+            {
+              "name": "Get guidance on forest pest, disease and wildfire-damaged stand management",
+              "desc": "The ministry monitors bark beetles, defoliators, pathogens and other forest health factors through aerial overview surveys and publishes forest health bulletins and chief forester guidance for managing affected stands.",
+              "users": "Forest licensees, silviculture practitioners",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Forest health",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/managing-our-forest-resources/forest-health"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Forest Practices Branch",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/managing-our-forest-resources/forest-health"
+              }
+            },
+            {
+              "name": "Access funding for forest health and silviculture innovation",
+              "desc": "The Silviculture Innovation Program and related forest investment funding accelerate research and adoption of innovative reforestation and stand-tending practices.",
+              "users": "Forest licensees, researchers, silviculture contractors",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Silviculture Innovation Program",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/managing-our-forest-resources/old-growth-forests"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/managing-our-forest-resources/old-growth-forests"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Protect old growth forests and plan forest landscapes",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Learn about old growth deferral areas and forest management",
+              "desc": "Information on old growth strategic review recommendations, deferral areas and the province's action plan to change how ancient forests are managed.",
+              "users": "General public, First Nations, industry, conservation groups",
+              "user_groups": [
+                "General public",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Old Growth Forests",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/managing-our-forest-resources/old-growth-forests"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/managing-our-forest-resources/old-growth-forests"
+              }
+            },
+            {
+              "name": "Participate in forest landscape planning with First Nations and communities",
+              "desc": "Forest landscape plans bring together First Nations, government, industry and local representation to set long-term approaches to managing timber, cultural and biodiversity values.",
+              "users": "First Nations, industry, local governments",
+              "user_groups": [
+                "Indigenous communities",
+                "Industry",
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Forest landscape plans",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/managing-our-forest-resources/forest-landscape-plans"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/managing-our-forest-resources/old-growth-forests"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Prepare and track a forest stewardship plan",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Prepare a forest stewardship plan for your tenure",
+              "desc": "Forest agreement holders must prepare and get approval for a forest stewardship plan under the Forest Act before harvesting or road-building can begin.",
+              "users": "Forest tenure holders",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Forest Stewardship Plans",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/managing-our-forest-resources/forest-stewardship-plans"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#2e7d32",
+                  "full_name": "Forest Act  -  Requirement for an approved forest stewardship plan"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/managing-our-forest-resources"
+              }
+            },
+            {
+              "name": "Track your forest stewardship plan online",
+              "desc": "The FSP Tracking System lets licensees and the public follow the status of forest stewardship plans through the review and approval process.",
+              "users": "Forest tenure holders, public reviewers",
+              "user_groups": [
+                "Industry",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "FSP Tracking System",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/managing-our-forest-resources/forest-stewardship-plans/forest-stewardship-plan-tracking-system"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/forest-tenures"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#0070c0",
+      "title": "GOAL 2",
+      "short_name": "Crown timber is allocated, priced and harvested responsibly",
+      "legend_label": "Timber tenures & pricing",
+      "description": "The ministry administers forest tenures, timber sales, pricing and scaling so that Crown timber is harvested, measured and paid for fairly, from large commercial licences down to a household firewood permit.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get rights to harvest Crown timber",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for a woodlot licence",
+              "desc": "A woodlot licence grants the holder exclusive rights to manage and harvest Crown timber within a small licence area, awarded competitively or by direct award to First Nations.",
+              "users": "Small forest operators, individuals, First Nations",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Woodlot Licence",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/forest-tenures/timber-harvesting-rights/woodlot-licence"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#2e7d32",
+                  "full_name": "Forest Act  -  Division 8: Woodlot licences"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/forest-tenures/timber-harvesting-rights/woodlot-licence"
+              }
+            },
+            {
+              "name": "Apply for a community forest agreement",
+              "desc": "A community forest agreement is an area-based licence managed by a local government, community group or First Nation for the benefit of the whole community, awarded by direct invitation.",
+              "users": "Local governments, community groups, First Nations",
+              "user_groups": [
+                "Municipalities & local governments",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Community Forest Agreements",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/forest-tenures/timber-harvesting-rights/community-forest-agreements"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#2e7d32",
+                  "full_name": "Forest Act  -  Division 7.1: Community forest agreements"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/forest-tenures/timber-harvesting-rights/community-forest-agreements"
+              }
+            },
+            {
+              "name": "Get a licence to cut timber on Crown land",
+              "desc": "Forestry licences to cut and occupant licences to cut authorize one-time or occupant-based timber harvesting outside of a major tenure, including for wildfire salvage or land occupants.",
+              "users": "Landowners, contractors, tenure holders",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Licence to Cut",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/forest-tenures/timber-harvesting-rights/licence-to-cut"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#2e7d32",
+                  "full_name": "Forest Act  -  Division 8.2: Licences to cut"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/forest-tenures/timber-harvesting-rights"
+              }
+            },
+            {
+              "name": "Get a road permit to build a forestry resource road",
+              "desc": "A road permit authorizes construction, modification and use of a resource road to access Crown timber, and may include the right to harvest timber within the right-of-way.",
+              "users": "Forest tenure holders, road builders",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Road Permit - Forestry",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/forest-tenures/timber-harvesting-rights/road-permit-forestry"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#2e7d32",
+                  "full_name": "Forest Act  -  Part 8: Roads and rights of way"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/forest-tenures/timber-harvesting-rights"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get a permit for personal timber use on Crown land",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get a free-use permit for firewood",
+              "desc": "Members of the public can get a free 'Free Use Permit for Firewood' from a Natural Resource District to cut dead or downed trees on vacant Crown land for personal use only.",
+              "users": "General public",
+              "user_groups": [
+                "General public",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Firewood permits by district",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/natural-resource-use/natural-resource-permits/firewood-permits"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#2e7d32",
+                  "full_name": "Forest Act  -  Division 9: Free use permits for First Nations and others"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/natural-resource-use/natural-resource-permits/firewood-permits"
+              }
+            },
+            {
+              "name": "Get a permit to cut a Christmas tree on Crown land",
+              "desc": "Members of the public can get a free 'Free Use Permit for a Christmas Tree' from each Natural Resource District where they intend to cut one tree for personal use.",
+              "users": "General public",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Christmas tree permits by district",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/natural-resource-use/natural-resource-permits/christmas-tree-permits"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#2e7d32",
+                  "full_name": "Forest Act  -  Division 9.1: Christmas tree permits"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/natural-resource-use/natural-resource-permits/christmas-tree-permits"
+              }
+            },
+            {
+              "name": "Get a free use permit for cultural, scientific or agricultural timber use",
+              "desc": "Free use permits authorize removal of minor volumes of Crown timber for First Nation traditional and cultural activities, scientific investigation, mining claim development or agricultural lease purposes.",
+              "users": "First Nations, researchers, agricultural lease holders",
+              "user_groups": [
+                "Indigenous communities",
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Free Use Permit - Forestry",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/forest-tenures/timber-harvesting-rights/free-use-permit"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#2e7d32",
+                  "full_name": "Forest Act  -  Division 9: Free use permits for First Nations and others"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/forest-tenures/timber-harvesting-rights/free-use-permit"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Register, mark and transport harvested timber",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for a private timber mark",
+              "desc": "A private timber mark certifies ownership and is required to transport logs harvested from privately-owned land, helping prevent theft of Crown timber.",
+              "users": "Private landowners, timber owners",
+              "user_groups": [
+                "Property owners",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Application for Private Timber Mark",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/forest-tenures/private-timber-marks"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#2e7d32",
+                  "full_name": "Forest Act  -  Part 5: Timber marking"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/forest-tenures/private-timber-marks"
+              }
+            },
+            {
+              "name": "Apply for a forest client number",
+              "desc": "A forest client number is required to do business with the Ministry of Forests — receiving volume statements, invoices, payments, contracts and official correspondence.",
+              "users": "Timber mark holders, forestry contractors",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply for a client number",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/natural-resource-use/client-number"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/forest-tenures/private-timber-marks"
+              }
+            },
+            {
+              "name": "Apply to export logs from British Columbia",
+              "desc": "Exporting unmanufactured timber requires an exemption from the requirement to manufacture in B.C., a provincial export permit and, for exports outside Canada, a federal permit.",
+              "users": "Log exporters, coastal timber owners",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply online (LEXIS)",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/competitive-forest-industry/log-exports/apply-online-lexis"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Log Exports",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/competitive-forest-industry/log-exports"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#2e7d32",
+                  "full_name": "Forest Act  -  Part 10: Manufacture in British Columbia"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "exporting_trade",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/competitive-forest-industry/log-exports"
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "name": "Get timber priced, measured and sold",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Look up stumpage rates for Crown timber",
+              "desc": "Stumpage is the fee paid to government for timber harvested from Crown land; rates are set through coast and interior appraisal systems and published for licensees.",
+              "users": "Forest tenure holders",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Electronic Commerce Appraisal System (ECAS)",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/competitive-forest-industry/timber-pricing"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#2e7d32",
+                  "full_name": "Forest Act  -  Part 7: Payments to the government (stumpage)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/competitive-forest-industry/timber-pricing"
+              }
+            },
+            {
+              "name": "Submit harvest billing and scale data",
+              "desc": "The Harvest Billing System manages scale data submission and invoicing for stumpage owed on timber harvested from Crown land.",
+              "users": "Forest tenure holders, scalers",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Harvest Billing System",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/competitive-forest-industry/timber-pricing/harvest-billing-system"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/competitive-forest-industry/timber-pricing"
+              }
+            },
+            {
+              "name": "Bid on a BC Timber Sales timber sale licence",
+              "desc": "BC Timber Sales auctions up to 13 million cubic metres of public timber annually through competitive timber sale licences, setting cost and price benchmarks for the province.",
+              "users": "Forest companies, market loggers",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Timber Sale Licences",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/bc-timber-sales/tsl"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#2e7d32",
+                  "full_name": "Forest Act  -  Division 3: Timber sale licences"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/bc-timber-sales"
+              }
+            },
+            {
+              "name": "Bid on BC Timber Sales contracting opportunities",
+              "desc": "BCTS advertises contracting opportunities in planning, development, professional services and silviculture across its 33 business areas and field offices.",
+              "users": "Forestry contractors, silviculture companies",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Contracting opportunities",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/bc-timber-sales/contracting"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/bc-timber-sales"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "title": "GOAL 3",
+      "short_name": "British Columbians stay safe from wildfire and burn responsibly",
+      "legend_label": "Wildfire safety",
+      "description": "The BC Wildfire Service prevents, prepares for, responds to and recovers from wildfire, and regulates campfires and open burning to keep people and communities safe.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Prevent wildfires and follow fire restrictions",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Check current campfire bans and fire restrictions",
+              "desc": "Check open fire prohibitions, equipment/activity prohibitions and area restrictions by fire centre before lighting a campfire or open fire anywhere in B.C.",
+              "users": "General public, campers, land occupants",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Fire Prohibitions and Restrictions",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/wildfire-status/prevention/fire-bans-and-restrictions"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "Wildfire situation interactive map",
+                  "url": "https://wildfiresituation.nrs.gov.bc.ca/map"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WA",
+                  "color": "#c62828",
+                  "full_name": "Wildfire Act  -  ss.10-13: Prohibition, restriction and leave area orders"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": [
+                  {
+                    "type": "universal_regulation",
+                    "service": "Get a permit to conduct open burning",
+                    "ministry": "env"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/wildfire-status/prevention/fire-bans-and-restrictions"
+              }
+            },
+            {
+              "name": "Register a Category 3 open fire",
+              "desc": "Anyone planning a category 3 open fire (large piles, windrows, grass or stubble burning) must obtain a burn registration number through the Open Fire Tracking System before burning.",
+              "users": "Farmers, landowners, land clearing operators",
+              "user_groups": [
+                "Producers & ranchers",
+                "Property owners",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Online Burn Registration Form",
+                  "url": "https://forms.office.com/Pages/ResponsePage.aspx?id=AFLbbw09ikqwNtNoXjWa3I3pZxE-VGRHpWU0V38mJOBUREZISEI3QjBWT0w0SU4zVEZKWEI0Q0YyQS4u"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Burn registration line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WA",
+                  "color": "#c62828",
+                  "full_name": "Wildfire Act  -  Wildfire Regulation, s.22: Category 3 open fire requirements"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "societal_needs_supports",
+                  "domain": "safety_emergencies"
+                },
+                "business": {
+                  "tier": "industry_specific",
+                  "domain": "forestry"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/wildfire-status/prevention/fire-bans-and-restrictions/ofts-burn-registration"
+              }
+            },
+            {
+              "name": "Apply for wildfire risk reduction funding for your community",
+              "desc": "The Community Resiliency Investment program and the Forest Enhancement Society of BC fund FireSmart activities and fuel management projects on Crown and private land.",
+              "users": "Local governments, First Nations, contractors",
+              "user_groups": [
+                "Municipalities & local governments",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Funding for wildfire prevention",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/wildfire-status/prevention/funding-for-wildfire-prevention"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/wildfire-status/prevention/funding-for-wildfire-prevention"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Report and respond to wildfire",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Report a wildfire",
+              "desc": "Call 1-800-663-5555 or *5555 from a cell phone to report a wildfire to the BC Wildfire Service.",
+              "users": "General public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Report a wildfire: 1-800-663-5555 (*5555 on a cell)",
+                  "url": null
+                },
+                {
+                  "type": "ch-app",
+                  "label": "BC Wildfire Service mobile app",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/wildfire-status"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/wildfire-status"
+              }
+            },
+            {
+              "name": "Check the current wildfire situation and evacuation alerts",
+              "desc": "View an interactive map of active wildfires, wildfire statistics and provincial evacuation orders and alerts.",
+              "users": "General public, residents in fire-affected areas",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Current wildfire situation map",
+                  "url": "https://wildfiresituation.nrs.gov.bc.ca/map"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "BC Wildfire Service",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/wildfire-status"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Get verified emergency information during an active disaster",
+                    "ministry": "emcr"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/wildfire-status"
+              }
+            },
+            {
+              "name": "Get post-wildfire timber salvage guidance",
+              "desc": "Wildfire timber salvage guidance sets planning and cutting permit requirements so tenure holders and non-tenure holders can recover fire-damaged timber and reforest affected areas.",
+              "users": "Forest tenure holders, First Nations",
+              "user_groups": [
+                "Industry",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Wildfire Timber Salvage Planning and Administration Guide",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/forest-tenures"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FA",
+                  "color": "#2e7d32",
+                  "full_name": "Forest Act  -  Cutting permits for wildfire timber salvage"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/forest-tenures"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Work safely in forestry and timber sale operations",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get SAFE Company safety certification for forestry operations",
+              "desc": "Companies and contractors working on BC Timber Sales licence areas must be SAFE Company certified, endorsed as new entrants, or otherwise safety certified through the BC Forest Safety Council.",
+              "users": "Forestry contractors, timber sale licensees",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers",
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Forest sector safety",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/bc-timber-sales/safety"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "people_employment",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/bc-timber-sales/safety"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#6a1b9a",
+      "title": "GOAL 4",
+      "short_name": "Forest workers, businesses and communities adapt to a changing sector",
+      "legend_label": "Industry & worker transition",
+      "description": "As the forest sector faces mill closures, softwood lumber tariffs and reduced harvest levels, the ministry supports workers, contractors and communities and helps grow higher-value wood manufacturing and trade.",
+      "metrics": [],
+      "css_class": "goal-4",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get support through forestry sector change",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get retraining and job search support as a forestry worker",
+              "desc": "WorkBC Centres, the StrongerBC future skills grant and SkilledTradesBC pre-apprenticeship programs help forestry workers affected by curtailments and closures find new jobs and training.",
+              "users": "Forestry workers, contractors",
+              "user_groups": [
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Supports for Forestry Workers, Communities and Businesses",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/supports-for-forestry-workers"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "WorkBC",
+                  "url": "https://www.workbc.ca/search-and-prepare-job"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/supports-for-forestry-workers"
+              }
+            },
+            {
+              "name": "Apply for manufacturing modernization funding for your forestry business",
+              "desc": "The BC Manufacturing Jobs Fund helps forestry manufacturers modernize, innovate and grow through funding for capital projects, prioritizing retrofits to new value-added business lines.",
+              "users": "Forestry and wood product manufacturers",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "BC Manufacturing Jobs Fund",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/economic-development/support-organizations-community-partners/rural-economic-development/manufacturing-jobs-fund"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/supports-for-forestry-workers"
+              }
+            },
+            {
+              "name": "Get community transition support after a mill closure",
+              "desc": "Community Transition Services coordinate on-the-ground supports across ministries and organizations for individuals and communities affected by a mill closure or other economic disruption.",
+              "users": "Rural and forestry-dependent communities",
+              "user_groups": [
+                "Municipalities & local governments",
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Community Transition Services",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/economic-development/support-organizations-community-partners/community-transition-services"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/supports-for-forestry-workers"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Grow value-added wood manufacturing and trade",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get support to diversify into value-added wood manufacturing",
+              "desc": "Value-Added Accelerators help wood product manufacturers sustain, diversify and grow their operations to create more jobs from the same volume of harvested timber.",
+              "users": "Value-added wood manufacturers",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Value-Added Wood Manufacturing",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/competitive-forest-industry/value-added-wood-manufacturing"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/managing-our-forest-resources/old-growth-forests"
+              }
+            },
+            {
+              "name": "Get information on softwood lumber trade issues with the U.S.",
+              "desc": "Information on the U.S. lumber industry's softwood tariff petitions and other cross-border trade issues affecting Canadian lumber shipments.",
+              "users": "Forestry and wood product exporters",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Softwood Lumber Dispute with the U.S.",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/forestry/competitive-forest-industry/softwood-lumber-trade-with-the-u-s"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "exporting_trade",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/forests"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Determine allowable annual cut for timber supply areas and tree farm licences",
+      "desc": "The chief forester, an independent statutory decision maker, determines allowable annual cut levels for Crown forest land based on environmental, social and economic factors.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [
+        {
+          "abbrev": "FA",
+          "color": "#2e7d32",
+          "full_name": "Forest Act  -  s.8: Allowable annual cut"
+        }
+      ],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "industry_specific",
+        "domain": "forestry",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/industry/forestry/managing-our-forest-resources/sustainable-forest-management-practices"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Maintain forest resource inventory and timber supply data",
+      "desc": "Ongoing collection and maintenance of forest inventory, timber supply and forest health data used to inform allowable annual cut and stewardship decisions.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "industry_specific",
+        "domain": "forestry",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-3",
+      "name": "Administer forest tenure files and cut control",
+      "desc": "Internal administration of forest tenure records, cut control accounting and compliance monitoring across all forms of forest agreement.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "industry_specific",
+        "domain": "forestry",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    }
+  ],
+  "mandate_date": "January 16, 2025",
+  "mandate_minister": "Ravi Parmar",
+  "mandate_pdf": "https://www2.gov.bc.ca/assets/gov/government/ministries-organizations/premier-cabinet-mlas/minister-letter/mandate_letter_ravi_parmar.pdf",
+  "cross_cutting": [
+    "Grow the economy",
+    "Reduce costs for families",
+    "Strengthen health care",
+    "Make neighbourhoods and communities safer"
+  ],
+  "mandate_legend": [],
+  "channel_filters": [
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-app",
+      "label": "Mobile app",
+      "bg_color": "#e0f2f1",
+      "text_color": "#00695c"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    },
+    {
+      "code": "ch-email",
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Industry",
+    "Businesses & employers",
+    "Producers & ranchers",
+    "Property owners",
+    "Municipalities & local governments",
+    "Indigenous communities",
+    "Workers & job seekers",
+    "Families & caregivers"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

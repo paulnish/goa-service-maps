@@ -1,0 +1,1517 @@
+{
+  "prefix": "hlth",
+  "full_name": "Ministry of Health",
+  "short_name": "Health",
+  "blurb": "Funds and oversees B.C.'s health system — MSP coverage, hospitals and health authorities, PharmaCare, primary care, public health, and seniors' care.",
+  "nav_name": "Health",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "title": "GOAL 1",
+      "short_name": "Every British Columbian has access to public health coverage and primary care",
+      "legend_label": "Coverage & primary care",
+      "description": "The ministry enrols residents in public health and drug coverage, issues the BC Services Card, and connects people who don't have a family doctor to primary care.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Enrol in public health and drug coverage",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Enrol in the Medical Services Plan (MSP)",
+              "desc": "All B.C. residents must by law enrol in the Medical Services Plan, which pays for medically required services of physicians and surgeons, and dental or oral surgery performed in a hospital.",
+              "users": "B.C. residents, new residents, people moving from another province",
+              "user_groups": [
+                "General public",
+                "Newcomers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "BC Application for Health and Drug Coverage",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/health-drug-coverage/ahdc"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "How to apply for MSP",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/health-drug-coverage/msp/bc-residents/eligibility-and-enrolment/how-to-enrol"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MPA",
+                  "color": "#0070c0",
+                  "full_name": "Medicare Protection Act  -  Enrolment in the Medical Services Plan"
+                },
+                {
+                  "abbrev": "HIA",
+                  "color": "#1565c0",
+                  "full_name": "Hospital Insurance Act  -  Insured hospital services"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Get a BC Services Card",
+                    "ministry": "citz"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/health-drug-coverage/msp/bc-residents/eligibility-and-enrolment/how-to-enrol"
+              }
+            },
+            {
+              "name": "Apply for B.C. health and drug coverage using one form",
+              "desc": "The B.C. Application for Health and Drug Coverage lets you apply for MSP, Fair PharmaCare and Supplementary Benefits at the same time, online or by mail.",
+              "users": "B.C. residents",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply now (online)",
+                  "url": "https://my.gov.bc.ca/ahdc"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Application for BC Health and Drug Coverage (HLTH 101)",
+                  "url": "https://www2.gov.bc.ca/assets/gov/health/forms/101fil.pdf"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/health-drug-coverage/ahdc"
+              }
+            },
+            {
+              "name": "Get a BC Services Card",
+              "desc": "Completing MSP enrolment at an ICBC driver licensing office produces a BC Services Card, which carries your Personal Health Number and provides access to provincial health care benefits.",
+              "users": "B.C. residents 18 and over",
+              "user_groups": [
+                "General public",
+                "Newcomers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Book an ICBC driver licensing appointment",
+                  "url": "https://www.icbc.com/driver-licensing/visit-dl-office/Pages/Book-a-knowledge-test-and-other-services.aspx"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "BC Services Card",
+                  "url": "https://gov.bc.ca/bcservicescard"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "vital_records_id",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/health-drug-coverage/msp/bc-residents/eligibility-and-enrolment/how-to-enrol"
+              }
+            },
+            {
+              "name": "Register for the Fair PharmaCare plan",
+              "desc": "Fair PharmaCare helps B.C. families pay for many prescription drugs, dispensing fees and some medical supplies, with coverage based on family income.",
+              "users": "B.C. residents enrolled in MSP",
+              "user_groups": [
+                "General public",
+                "Seniors",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Register online for Fair PharmaCare",
+                  "url": "https://my.gov.bc.ca/ahdc"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Health Insurance BC toll-free",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PSA",
+                  "color": "#2e7d32",
+                  "full_name": "Pharmaceutical Services Act  -  PharmaCare plans and drug benefits"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/health-drug-coverage/pharmacare-for-bc-residents/who-we-cover/fair-pharmacare-plan"
+              }
+            },
+            {
+              "name": "Apply for MSP Supplementary Benefits",
+              "desc": "Supplementary Benefits provide partial payment for services such as acupuncture and massage therapy for individuals or families with an adjusted net income of $42,000 a year or less.",
+              "users": "Lower-income B.C. residents enrolled in MSP",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply for Supplementary Benefits (AHDC)",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/health-drug-coverage/ahdc"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/health-drug-coverage/ahdc"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Find a family doctor or primary care",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Register for the Health Connect Registry to find a family doctor or nurse practitioner",
+              "desc": "People in B.C. who need a family doctor or nurse practitioner can register on the Health Connect Registry, which shares the list with attachment coordinators working to match people with primary care providers.",
+              "users": "B.C. residents without a family doctor or nurse practitioner",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Register for Health Connect Registry",
+                  "url": "https://hcr.healthlinkbc.ca/"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "HealthLink BC 8-1-1",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.healthlinkbc.ca/find-care/health-connect-registry"
+              }
+            },
+            {
+              "name": "Call HealthLink BC 8-1-1 for 24/7 health advice",
+              "desc": "HealthLink BC connects British Columbians with a health service navigator any time of day or night, with access to registered nurses, dietitians, pharmacists and exercise professionals, in over 130 languages.",
+              "users": "General public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "HealthLink BC (8-1-1)",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "HealthLink BC",
+                  "url": "https://www.healthlinkbc.ca/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.healthlinkbc.ca/"
+              }
+            },
+            {
+              "name": "Get same-day care at an Urgent and Primary Care Centre",
+              "desc": "Urgent and Primary Care Centres provide same-day, non-emergency urgent care and are often open evenings, weekends and statutory holidays, as an alternative to a hospital visit.",
+              "users": "General public, people waiting for a family doctor",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Urgent and Primary Care Centres",
+                  "url": "https://www.healthlinkbc.ca/node/12047"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.healthlinkbc.ca/find-care/health-connect-registry"
+              }
+            },
+            {
+              "name": "Access your health records through Health Gateway",
+              "desc": "Health Gateway lets British Columbians view their health records, lab test results, medications and immunizations online.",
+              "users": "General public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Health Gateway",
+                  "url": "https://www.healthgateway.gov.bc.ca/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/managing-your-health/immunizations"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "title": "GOAL 2",
+      "short_name": "British Columbians get help paying for medications, medical supplies and care",
+      "legend_label": "Drug & medical costs",
+      "description": "The ministry helps residents afford prescription drugs and medical supplies through PharmaCare, funds fertility treatment, and helps cover the cost of travel and accommodation for medical care.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get help paying for prescription drugs and medical supplies",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get help paying for prescription drugs and medical supplies through BC PharmaCare",
+              "desc": "BC PharmaCare is a public program that helps B.C. residents pay for many prescription drugs, some medical devices and supplies, and pharmacy services, processed at the pharmacy counter.",
+              "users": "B.C. residents enrolled in MSP",
+              "user_groups": [
+                "General public",
+                "Seniors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "BC PharmaCare",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/health-drug-coverage/pharmacare-for-bc-residents"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "Search the PharmaCare drug list",
+                  "url": "https://pharmacareformularysearch.gov.bc.ca/Search.xhtml"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PSA",
+                  "color": "#2e7d32",
+                  "full_name": "Pharmaceutical Services Act  -  PharmaCare plans and drug benefits"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/health-drug-coverage/pharmacare-for-bc-residents"
+              }
+            },
+            {
+              "name": "Ask your prescriber to apply for Special Authority drug coverage",
+              "desc": "Some drugs need a Special Authority request from a prescriber before PharmaCare will cover them; requests must be approved before you pay for the prescription.",
+              "users": "B.C. residents prescribed a restricted drug",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Drugs that require Special Authority",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/health-drug-coverage/pharmacare-for-bc-residents/what-we-cover/drugs-requiring-pre-approval"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/health-drug-coverage/pharmacare-for-bc-residents"
+              }
+            },
+            {
+              "name": "Get a copy of your prescription records through PharmaNet",
+              "desc": "British Columbians can get a record of the prescriptions filled at B.C. community pharmacies through Health Gateway or by ordering a copy through PharmaNet.",
+              "users": "General public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Health Gateway",
+                  "url": "https://www.healthgateway.gov.bc.ca/"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Order a copy through PharmaNet",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/health-drug-coverage/pharmacare-for-bc-residents/pharmanet"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/health-drug-coverage/pharmacare-for-bc-residents"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get help with fertility treatment costs",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for publicly funded IVF treatment funding",
+              "desc": "The Publicly Funded IVF Program provides one-time, income-based funding of up to $19,000 for a standard IVF cycle for eligible B.C. residents, applied for through a participating fertility clinic.",
+              "users": "B.C. residents enrolled in MSP who need IVF to build their family",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Publicly funded IVF program",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/accessing-health-care/publicly-funded-ivf-program"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/accessing-health-care/publicly-funded-ivf-program"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Get help with the cost of medical travel and accommodation",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for the Travel Assistance Program (TAP BC)",
+              "desc": "TAP BC is a partnership between the Ministry of Health and private transportation carriers that offers discounted fares to residents travelling within B.C. for specialist medical care.",
+              "users": "B.C. residents travelling for specialist medical care",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Travel Assistance Program (TAP BC)",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/accessing-health-care/tap-bc/travel-assistance-program-tap-bc"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/accessing-health-care/tap-bc"
+              }
+            },
+            {
+              "name": "Get accommodation help through the BC Family Residence Program",
+              "desc": "The BC Family Residence Program provides accommodation and enhanced travel assistance so families can stay together when a child needs medical care at BC Children's Hospital or Sunny Hill Health Centre for Children.",
+              "users": "Families of children needing hospital care away from home",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "BC Family Residence Program",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/accessing-health-care/tap-bc/bc-family-residence-program"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/accessing-health-care/tap-bc"
+              }
+            },
+            {
+              "name": "Access regional medical travel assistance through Health Connections",
+              "desc": "Health Connections is a regional medical travel assistance program run by four regional health authorities to help reduce transportation costs for rural residents travelling for care.",
+              "users": "Rural and remote B.C. residents travelling for medical care",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Health Connections",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/accessing-health-care/tap-bc/health-connections"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/accessing-health-care/tap-bc"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#6a1b9a",
+      "title": "GOAL 3",
+      "short_name": "British Columbians get mental health, substance use and public health protection",
+      "legend_label": "Mental health & public health",
+      "description": "The ministry supports access to mental health and substance use care, protects the public against infectious disease through immunization, and gives people a way to resolve concerns about health care they receive.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get mental health and substance use support",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Find mental health and substance use services near you",
+              "desc": "HelpStartsHere lists over 2,500 mental health and substance use services and supports available across B.C.",
+              "users": "General public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Mental health and substance use services",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/mental-health-and-addictions/find-mental-health-and-substance-use-services"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "HelpStartsHere",
+                  "url": "https://helpstartshere.gov.bc.ca/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/mental-health-and-addictions"
+              }
+            },
+            {
+              "name": "Call the Opioid Treatment Access Line for same-day addiction treatment",
+              "desc": "The Opioid Treatment Access Line connects people to same-day opioid agonist treatment and a clinical team, free and confidential, every day from 9 am to 4 pm.",
+              "users": "People struggling with opioid addiction",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Opioid Treatment Access Line",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Opioid Treatment Access Line",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/mental-health-and-addictions/opioid-treatment-access-line"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/mental-health-and-addictions/opioid-treatment-access-line"
+              }
+            },
+            {
+              "name": "Access B.C.'s Road to Recovery addictions care model",
+              "desc": "Road to Recovery is B.C.'s model for addictions care, tailoring treatment and recovery supports to each person's unique needs.",
+              "users": "People seeking addictions treatment and their families",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Road to Recovery",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/mental-health-and-addictions/road-to-recovery"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/health"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Stay protected against infectious disease",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get immunized against measles, flu, COVID-19 and other diseases",
+              "desc": "Immunizations are available at community pharmacies, public health units, community health centres and primary care clinics throughout the province, following the B.C. Immunization Schedule.",
+              "users": "General public",
+              "user_groups": [
+                "General public",
+                "Families & caregivers",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Immunizations",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/managing-your-health/immunizations"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "Find an immunization location",
+                  "url": "https://www.healthlinkbc.ca/find-care/find-health-services"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PHA",
+                  "color": "#6a1b9a",
+                  "full_name": "Public Health Act  -  Communicable disease prevention and immunization"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/managing-your-health/immunizations"
+              }
+            },
+            {
+              "name": "Get the HPV vaccine",
+              "desc": "The HPV vaccine is offered free through B.C.'s school immunization program in grade 6, and free of charge to a wider range of eligible people up to age 45.",
+              "users": "Students, eligible adults",
+              "user_groups": [
+                "General public",
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "HPV vaccine (HealthLink BC)",
+                  "url": "https://www.healthlinkbc.ca/health-library/health-features/get-hpv-vaccine"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/managing-your-health/immunizations"
+              }
+            },
+            {
+              "name": "Submit or update your immunization records",
+              "desc": "British Columbians can view immunization records on Health Gateway, or submit or update a record in the Provincial Immunization Registry if it is missing.",
+              "users": "General public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Submit or update your immunization record",
+                  "url": "https://www.immunizationrecord.gov.bc.ca/"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "Health Gateway",
+                  "url": "https://www.healthgateway.gov.bc.ca/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/managing-your-health/immunizations"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Resolve a concern about health care",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "File a complaint about the quality of health care services",
+              "desc": "If a concern about the quality of health care you or a loved one received is not resolved where care was provided, you can file a formal complaint with the Patient Care Quality Office in your health region.",
+              "users": "Patients and families",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Filing a Complaint About the Quality of Health Care Services",
+                  "url": "https://www.patientcarequalityreviewboard.ca/makecomplaint.html"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Patient and Client Relations",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/about-bc-s-health-care-system/health-care-complaints"
+              }
+            },
+            {
+              "name": "Request a review of extra billing for an MSP insured service",
+              "desc": "If you think you were inappropriately charged for an MSP-insured service, you can request a review of the extra billing.",
+              "users": "MSP-insured patients",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Request a Review of Extra Billing",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/health-drug-coverage/msp/bc-residents/benefits/additional-fees-and-charges"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MPA",
+                  "color": "#0070c0",
+                  "full_name": "Medicare Protection Act  -  Prohibition on extra billing"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/about-bc-s-health-care-system/health-care-complaints"
+              }
+            },
+            {
+              "name": "File a complaint about an assisted living residence",
+              "desc": "The Assisted Living Registry investigates complaints related to the health and safety of people living in assisted living residences.",
+              "users": "Residents, families, staff and members of the public",
+              "user_groups": [
+                "General public",
+                "Seniors",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Making a Complaint About an Assisted Living Residence",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/assisted-living-in-bc/making-a-complaint"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CCALA",
+                  "color": "#00838f",
+                  "full_name": "Community Care and Assisted Living Act  -  Assisted living registry"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/about-bc-s-health-care-system/health-care-complaints"
+              }
+            },
+            {
+              "name": "File a complaint about a residential care facility",
+              "desc": "If you have a concern about the health, safety or well-being of a person in a licensed residential care facility, you can file a complaint at any time.",
+              "users": "Residents, families and members of the public",
+              "user_groups": [
+                "General public",
+                "Seniors",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Filing a Complaint About a Residential Care Facility",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/accessing-health-care/finding-assisted-living-or-residential-care/residential-care-facilities/making-a-complaint-about-a-residential-care-facility"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CCALA",
+                  "color": "#00838f",
+                  "full_name": "Community Care and Assisted Living Act  -  Residential care facility licensing"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/about-bc-s-health-care-system/health-care-complaints"
+              }
+            },
+            {
+              "name": "File a complaint about an emergency medical assistant",
+              "desc": "The Emergency Medical Assistants Licensing Board investigates complaints regarding the practice of emergency medical assistants in British Columbia.",
+              "users": "General public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Filing a Complaint About an Emergency Medical Assistant",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/about-bc-s-health-care-system/partners/colleges-boards-and-commissions/emergency-medical-assistants-licensing-board/complaints"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EHSA",
+                  "color": "#5d4037",
+                  "full_name": "Emergency Health Services Act  -  Emergency Medical Assistants Licensing Board"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/about-bc-s-health-care-system/health-care-complaints"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#00838f",
+      "title": "GOAL 4",
+      "short_name": "British Columbians get supportive care as they age and access life event records",
+      "legend_label": "Seniors' care & vital records",
+      "description": "The ministry helps people access subsidized home, community and residential care as their needs change, and the Vital Statistics Agency registers births, deaths and name changes for every British Columbian.",
+      "metrics": [],
+      "css_class": "goal-4",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get home, community or residential care",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for subsidized home and community care services",
+              "desc": "Publicly subsidized home and community care services help people with acute, chronic, palliative or rehabilitative needs stay independent at home, or move into assisted living or long-term care when needed.",
+              "users": "Seniors and people with ongoing health needs",
+              "user_groups": [
+                "Seniors",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Home and community care",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/accessing-health-care/home-community-care"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CCA",
+                  "color": "#8d6e63",
+                  "full_name": "Continuing Care Act  -  Home and community care services"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/accessing-health-care/home-community-care"
+              }
+            },
+            {
+              "name": "Find assisted living or residential care",
+              "desc": "Understand the difference between assisted living residences and licensed residential care facilities, and find options through the Assisted Living Registry.",
+              "users": "Seniors and people needing daily living support",
+              "user_groups": [
+                "Seniors",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Assisted living or residential care",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/accessing-health-care/finding-assisted-living-or-residential-care"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CCALA",
+                  "color": "#00838f",
+                  "full_name": "Community Care and Assisted Living Act  -  Assisted living registry"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/accessing-health-care/finding-assisted-living-or-residential-care"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Register a birth, death, marriage or name change",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Register your newborn's birth",
+              "desc": "Online Birth Registration lets you register your child's birth and order a birth certificate at the same time; registration is free and takes 3-4 weeks to process.",
+              "users": "Parents of newborns",
+              "user_groups": [
+                "Families & caregivers",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Register your newborn (Online Birth Registration)",
+                  "url": "https://ebr.vs.gov.bc.ca/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "VSA",
+                  "color": "#c62828",
+                  "full_name": "Vital Statistics Act  -  Registration of births"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "vital_records_id",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/life-events/birth-adoption"
+              }
+            },
+            {
+              "name": "Order a birth, death or marriage certificate",
+              "desc": "The Vital Statistics Agency's online certificate ordering system lets British Columbians order certificates, certified registration copies and extracts, or apply in person at a Service BC location.",
+              "users": "General public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Online certificate ordering system",
+                  "url": "https://ecos.vs.gov.bc.ca/"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Service BC",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/citizens-services/servicebc"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "VSA",
+                  "color": "#c62828",
+                  "full_name": "Vital Statistics Act  -  Certificates and certified copies"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "vital_records_id",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/life-events"
+              }
+            },
+            {
+              "name": "Apply for a legal change of name",
+              "desc": "British Columbians can apply to legally change their name through the Vital Statistics Agency.",
+              "users": "General public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Legal change of name application",
+                  "url": "https://www2.gov.bc.ca/gov/content/life-events/legal-changes-of-name/legal-change-of-name-application"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "VSA",
+                  "color": "#c62828",
+                  "full_name": "Vital Statistics Act  -  Change of name"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "vital_records_id",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/life-events"
+              }
+            },
+            {
+              "name": "Register a death",
+              "desc": "Learn what to do when someone dies in B.C., including registering the death with the Vital Statistics Agency.",
+              "users": "Families, funeral directors and executors",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Death",
+                  "url": "https://www2.gov.bc.ca/gov/content/life-events/death"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "VSA",
+                  "color": "#c62828",
+                  "full_name": "Vital Statistics Act  -  Registration of deaths"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "vital_records_id",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Report a death to the BC Coroners Service",
+                    "ministry": "pssg"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/life-events"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Health system funding and payment to physicians and health authorities",
+      "desc": "Administers MSP fee-for-service payments to physicians, funding agreements with B.C.'s health authorities, and hospital funding under the Hospital Insurance Act.",
+      "users": "Internal program staff, health authorities, physicians",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "core_human_needs",
+        "domain": "health_wellbeing",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Provincial public health surveillance and health officer guidance",
+      "desc": "The Office of the Provincial Health Officer monitors population health, issues public health orders, and provides medical health officer guidance to protect British Columbians.",
+      "users": "Internal program staff, health authorities",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "core_human_needs",
+        "domain": "health_wellbeing",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-3",
+      "name": "Health profession college oversight and credential standards",
+      "desc": "Oversight of the health profession regulatory colleges under the Health Professions and Occupations Act, setting standards for professional credentialing and public protection.",
+      "users": "Internal program staff, regulatory colleges",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "identity_credentials_access",
+        "domain": "professional_credentials",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    }
+  ],
+  "mandate_date": "November 25, 2025",
+  "mandate_minister": "Josie Osborne",
+  "mandate_pdf": "https://www2.gov.bc.ca/assets/gov/government/ministries-organizations/premier-cabinet-mlas/minister-letter/mandate_letter_josie_osborne.pdf",
+  "cross_cutting": [
+    "Growing the economy",
+    "Reducing costs for families",
+    "Strengthening health care",
+    "Making communities safer"
+  ],
+  "mandate_legend": [],
+  "channel_filters": [
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Families & caregivers",
+    "Seniors",
+    "Newcomers",
+    "Students & learners",
+    "Indigenous communities"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

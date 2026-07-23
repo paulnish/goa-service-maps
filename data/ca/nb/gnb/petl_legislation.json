@@ -1,0 +1,191 @@
+{
+  "prefix": "petl",
+  "name": "Post-Secondary Education, Training and Labour",
+  "short_name": "Post-Secondary Education, Training & Labour",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "People get the education and skills for good jobs",
+      "legend_label": "Skills & training",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Pay for post-secondary education"
+        },
+        {
+          "number": 2,
+          "name": "Learn a skilled trade"
+        },
+        {
+          "number": 3,
+          "name": "Find work and plan your career"
+        },
+        {
+          "number": 4,
+          "name": "Learn as an adult"
+        },
+        {
+          "number": 5,
+          "name": "Use your public library"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "short_name": "Workplaces are fair and productive",
+      "legend_label": "Fair workplaces",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Know and apply the rules at work"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#b45309",
+      "short_name": "Newcomers settle and succeed in New Brunswick",
+      "legend_label": "Immigration & settlement",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Immigrate and settle in New Brunswick"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "ESA",
+      "full_name": "Employment Standards Act",
+      "color": "#0070c0",
+      "citation": "SNB 1982, c E-7.2",
+      "summary": "Minimum employment standards for workers and employers.",
+      "sections": [
+        {
+          "ref": "Part III",
+          "title": "Employment standards",
+          "description": "Minimum wage, hours, vacations, and leaves including maternity, sick, family responsibility, and domestic violence leave.",
+          "anchor_id": "ESA-PartIII",
+          "services": [
+            {
+              "name": "Learn about minimum employment standards as a worker",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Know and apply the rules at work"
+            },
+            {
+              "name": "Comply with employment standards as an employer",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Know and apply the rules at work"
+            }
+          ]
+        },
+        {
+          "ref": "Part V",
+          "title": "Enforcement",
+          "description": "Complaints, administrative orders, and offences.",
+          "anchor_id": "ESA-PartV",
+          "services": [
+            {
+              "name": "File an employment standards complaint",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Know and apply the rules at work"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "AOCA",
+      "full_name": "Apprenticeship and Occupational Certification Act",
+      "color": "#2e7d32",
+      "citation": "SNB 2012, c 19",
+      "summary": "Apprenticeship training and trade certification.",
+      "sections": [
+        {
+          "ref": "s.23",
+          "title": "Registration and program management",
+          "description": "Director registers participants and manages programs; certificates under s.8(2)(d); detail in NB Reg 97-125.",
+          "anchor_id": "AOCA-s23",
+          "services": [
+            {
+              "name": "Register as an apprentice and get certified in a trade",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Learn a skilled trade"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "PSSFAA",
+      "full_name": "Post-Secondary Student Financial Assistance Act",
+      "color": "#b45309",
+      "citation": "SNB 2007, c P-9.315",
+      "summary": "Student loans, grants, and bursaries.",
+      "sections": [
+        {
+          "ref": "ss.15, 17",
+          "title": "Loans and bursaries",
+          "description": "Direct loan agreements and bursaries; detail in NB Reg 87-18.",
+          "anchor_id": "PSSFAA-ss1517",
+          "services": [
+            {
+              "name": "Apply for student financial assistance",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Pay for post-secondary education"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "POTA",
+      "full_name": "Private Occupational Training Act",
+      "color": "#6a1b9a",
+      "citation": "RSNB 1973, c P-16.1",
+      "summary": "Regulation of private training organizations.",
+      "sections": [
+        {
+          "ref": "ss.3.1-6",
+          "title": "Registration of training organizations",
+          "description": "Registration required (s.3.1, replaced former ss.2-3 in 2024); public registry (s.6); Training Completions Fund (s.6.41).",
+          "anchor_id": "POTA-ss316",
+          "services": [
+            {
+              "name": "Register a private training institution",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Learn a skilled trade"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 4,
+    "sections_count": 5,
+    "services_with_leg_count": 6,
+    "services_multi_act_count": 0
+  }
+}

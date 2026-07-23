@@ -1,0 +1,300 @@
+{
+  "prefix": "jps",
+  "name": "Justice and Public Safety",
+  "short_name": "Justice & Public Safety",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "The justice system is fair and accessible",
+      "legend_label": "Justice access",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Resolve legal and family matters"
+        },
+        {
+          "number": 2,
+          "name": "Operate regulated activities"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "short_name": "Communities are safe and prepared",
+      "legend_label": "Public safety",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Prepare for and recover from emergencies"
+        },
+        {
+          "number": 2,
+          "name": "Meet vehicle and installation safety requirements"
+        },
+        {
+          "number": 3,
+          "name": "Keep your community safe"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "JA",
+      "full_name": "Judicature Act",
+      "color": "#0070c0",
+      "citation": "RSNB 1973, c J-2",
+      "summary": "Constitutes the superior courts and their jurisdiction.",
+      "sections": [
+        {
+          "ref": "ss.2-7.3",
+          "title": "Constitution of the court",
+          "description": "Court of Appeal and Court of King's Bench; divisions.",
+          "anchor_id": "JA-ss273",
+          "services": [
+            {
+              "name": "Go to court or respond to a court matter",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Resolve legal and family matters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "SEA",
+      "full_name": "Support Enforcement Act",
+      "color": "#2e7d32",
+      "citation": "SNB 2005, c S-15.5",
+      "summary": "Enforcement of child and spousal support orders.",
+      "sections": [
+        {
+          "ref": "Parts 2-4",
+          "title": "Support enforcement",
+          "description": "Office of Support Enforcement; payment orders; enforcement mechanisms including licence suspension (s.26).",
+          "anchor_id": "SEA-Parts24",
+          "services": [
+            {
+              "name": "Get help collecting or paying family support",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Resolve legal and family matters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "VSA",
+      "full_name": "Victims Services Act",
+      "color": "#b45309",
+      "citation": "RSNB 2016, c 113",
+      "summary": "Services and compensation for victims of crime.",
+      "sections": [
+        {
+          "ref": "ss.14-22",
+          "title": "Victims Services Fund",
+          "description": "Fund supporting victim services; compensation under NB Reg 96-81.",
+          "anchor_id": "VSA-ss1422",
+          "services": [
+            {
+              "name": "Get help as a victim of crime",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Resolve legal and family matters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "LCA",
+      "full_name": "Liquor Control Act",
+      "color": "#6a1b9a",
+      "citation": "RSNB 1973, c L-10",
+      "summary": "Licensing and control of liquor sale and service.",
+      "sections": [
+        {
+          "ref": "Part III (s.63+)",
+          "title": "Licences",
+          "description": "Classes and issuance of liquor licences; permits in Part II.",
+          "anchor_id": "LCA-PartIIIs63",
+          "services": [
+            {
+              "name": "Get a liquor licence for your establishment",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Operate regulated activities"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "GCA",
+      "full_name": "Gaming Control Act",
+      "color": "#c62828",
+      "citation": "SNB 2008, c G-1.5",
+      "summary": "Regulation of gaming including charitable gaming.",
+      "sections": [
+        {
+          "ref": "s.34",
+          "title": "Licensing of lottery schemes",
+          "description": "Charitable gaming licensing; detail in NB Reg 2021-79.",
+          "anchor_id": "GCA-s34",
+          "services": [
+            {
+              "name": "Get a licence for charitable gaming",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Operate regulated activities"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "PISSA",
+      "full_name": "Private Investigators and Security Services Act",
+      "color": "#00695c",
+      "citation": "RSNB 2011, c 209",
+      "summary": "Licensing of private security and investigation services.",
+      "sections": [
+        {
+          "ref": "ss.6-7",
+          "title": "Necessity and issuance of licence",
+          "description": "Licence requirement and issuance for agencies, guards, and investigators.",
+          "anchor_id": "PISSA-ss67",
+          "services": [
+            {
+              "name": "Get a licence for private security or investigation services",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Operate regulated activities"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "MVA",
+      "full_name": "Motor Vehicle Act",
+      "color": "#283593",
+      "citation": "RSNB 1973, c M-17",
+      "summary": "Vehicle safety requirements including mandatory inspection.",
+      "sections": [
+        {
+          "ref": "ss.247-248",
+          "title": "Inspection of vehicles and official testing stations",
+          "description": "Periodic safety inspection; licensing of official testing stations.",
+          "anchor_id": "MVA-ss247248",
+          "services": [
+            {
+              "name": "Get your vehicle's annual safety inspection",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Meet vehicle and installation safety requirements"
+            },
+            {
+              "name": "Operate a licensed vehicle inspection station",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Operate regulated activities"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "EMA",
+      "full_name": "Emergency Measures Act",
+      "color": "#996515",
+      "citation": "RSNB 2011, c 147",
+      "summary": "Emergency preparedness, response, and disaster assistance.",
+      "sections": [
+        {
+          "ref": "ss.6-10",
+          "title": "Emergency planning and declarations",
+          "description": "Emergency measures plans; declaration of a state of emergency (s.10).",
+          "anchor_id": "EMA-ss610",
+          "services": [
+            {
+              "name": "Prepare for emergencies and get emergency alerts",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Prepare for and recover from emergencies"
+            }
+          ]
+        },
+        {
+          "ref": "s.20",
+          "title": "Disaster relief fund",
+          "description": "Disaster relief funding; program detail in NB Reg 83-71.",
+          "anchor_id": "EMA-s20",
+          "services": [
+            {
+              "name": "Apply for disaster financial assistance",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Prepare for and recover from emergencies"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "EIIA",
+      "full_name": "Electrical Installation and Inspection Act",
+      "color": "#5d4037",
+      "citation": "RSNB 2011, c 144",
+      "summary": "Permits and inspection of electrical installations.",
+      "sections": [
+        {
+          "ref": "s.3.1, s.5",
+          "title": "Permits and inspections",
+          "description": "Permit issuance agreements; inspections and orders; wiring permit detail in NB Reg 84-165.",
+          "anchor_id": "EIIA-s31s5",
+          "services": [
+            {
+              "name": "Get an electrical, plumbing or boiler permit and inspection",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Meet vehicle and installation safety requirements"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 9,
+    "sections_count": 10,
+    "services_with_leg_count": 11,
+    "services_multi_act_count": 0
+  }
+}

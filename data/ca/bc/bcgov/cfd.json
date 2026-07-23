@@ -1,0 +1,1393 @@
+{
+  "prefix": "cfd",
+  "full_name": "Ministry of Children and Family Development",
+  "short_name": "Children & Family Development",
+  "blurb": "Supports vulnerable children, youth and families — child protection, foster care and adoption, youth services, and services for children and youth with support needs.",
+  "nav_name": "Children and Family Development",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#b71c1c",
+      "title": "GOAL 1",
+      "short_name": "Children and youth in B.C. are protected from abuse and neglect",
+      "legend_label": "Child protection",
+      "description": "The ministry operates the province's child protection system, investigating reports of abuse or neglect and taking the least disruptive action needed to keep a child safe.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Report and respond to a child protection concern",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Report suspected child abuse or neglect",
+              "desc": "Anyone in B.C. has a legal duty to report if they believe a child or youth under 19 may be abused, neglected, or otherwise in need of protection. Reports go to Provincial Centralized Screening (PCS), available 24 hours a day, 365 days a year; you don't have to give your name.",
+              "users": "General public, family members, professionals working with children",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Provincial Centralized Screening: 1-800-663-9122",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Reporting child abuse",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/public-safety/protecting-children/reporting-child-abuse"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CFCSA",
+                  "color": "#b71c1c",
+                  "full_name": "Child, Family and Community Service Act  -  Duty to report"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/public-safety/protecting-children/reporting-child-abuse"
+              }
+            },
+            {
+              "name": "Get help through the Helpline for Children if you're a child or youth in danger",
+              "desc": "A free, confidential 24-hour helpline for children and youth who are unsafe or being abused. Calls are free and you do not have to give your name.",
+              "users": "Children and youth",
+              "user_groups": [
+                "Students & learners",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Helpline for Children: 1-877-631-8282",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Protecting children in B.C.",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/public-safety/protecting-children"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/public-safety/protecting-children"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Take part in a child protection legal process",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Take part in child protection mediation",
+              "desc": "A voluntary, facilitated mediation process that helps families and the ministry reach agreements about a child's safety and care as an alternative to court.",
+              "users": "Parents, caregivers and extended family involved in a child protection matter",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Child Protection Mediation",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/public-safety/protecting-children/child-protection-mediation"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CFCSA",
+                  "color": "#b71c1c",
+                  "full_name": "Child, Family and Community Service Act  -  Mediation and dispute resolution"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Enter into a Youth Agreement for independent living support",
+              "desc": "Youth agreements provide financial and other support to youth aged 16-18 who cannot safely live at home and are not in the ministry's continuing care.",
+              "users": "Youth aged 16-18",
+              "user_groups": [
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Youth Agreements",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/public-safety/protecting-children/youth-agreements"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CFCSA",
+                  "color": "#b71c1c",
+                  "full_name": "Child, Family and Community Service Act  -  Youth agreements"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "title": "GOAL 2",
+      "short_name": "Children and youth have stable, connected caregiving and permanency options",
+      "legend_label": "Caregiving & adoption",
+      "description": "The ministry recruits and supports caregivers — foster, kinship, respite and contracted agency — and provides adoption services so children who can't live with their birth family have a safe, permanent home.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Become a caregiver for a child or youth in care",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Become a foster caregiver",
+              "desc": "Welcome a child or youth into your home on a temporary basis while helping them stay connected to family, community and culture, until they can safely return home.",
+              "users": "Individuals and families",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Caring for children and youth in B.C.",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/fostering/caringforchildrenandyouth"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CFCSA",
+                  "color": "#b71c1c",
+                  "full_name": "Child, Family and Community Service Act  -  Approval of foster homes"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Get a criminal record check through the Criminal Records Review Program",
+                    "ministry": "pssg"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/fostering/caringforchildrenandyouth"
+              }
+            },
+            {
+              "name": "Become a kinship care provider for a child you're related to",
+              "desc": "Care for a child or youth you have kinship ties, a relationship with, or a cultural responsibility to, when they need care outside their parents' home.",
+              "users": "Family and community members",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Caring for children and youth in B.C.",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/fostering/caringforchildrenandyouth"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/fostering/caringforchildrenandyouth"
+              }
+            },
+            {
+              "name": "Become a contracted agency caregiver",
+              "desc": "Work for a community social service agency that provides specialized, complex-needs care for children and youth as an employee.",
+              "users": "Individuals seeking employment in child and youth care",
+              "user_groups": [
+                "Workers & job seekers",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Caring for children and youth in B.C.",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/fostering/caringforchildrenandyouth"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/fostering/caringforchildrenandyouth"
+              }
+            },
+            {
+              "name": "Provide respite care for a child or youth",
+              "desc": "Care for a child or youth on a part-time basis to give parents or primary caregivers a break, helping families stay together.",
+              "users": "Individuals and families",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Caring for children and youth in B.C.",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/fostering/caringforchildrenandyouth"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/fostering/caringforchildrenandyouth"
+              }
+            },
+            {
+              "name": "Get payments and support as a current foster caregiver",
+              "desc": "Approved foster caregivers receive a monthly maintenance payment based on home type, must complete mandatory PRIDE In-Service training, and can access insurance and coverage information.",
+              "users": "Approved foster caregivers",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Current foster caregivers",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/fostering/currentfostercaregivers"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Foster Family Handbook",
+                  "url": "https://www2.gov.bc.ca/assets/gov/family-and-social-supports/foster-parenting/foster_family_handbook.pdf"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CFCSA",
+                  "color": "#b71c1c",
+                  "full_name": "Child, Family and Community Service Act  -  Standards for foster homes"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/fostering/currentfostercaregivers"
+              }
+            },
+            {
+              "name": "Get an affordability payment for a child in your care as a relative",
+              "desc": "Relatives caring for a child or youth through the Child in Home of Relative (CIHR) program can receive an annual affordability payment.",
+              "users": "Relatives caring for a child outside the formal foster system",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Foster caregiving and kinship care",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/fostering"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/fostering"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Adopt a child",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Adopt a child from foster care",
+              "desc": "Provide a permanent, loving home for a child in government care who is waiting for an adoptive family.",
+              "users": "Prospective adoptive parents",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Ways to Adopt in B.C.",
+                  "url": "https://www2.gov.bc.ca/gov/content/life-events/birth-adoption/adoptions/how-to-adopt-a-child"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Belonging Network: 1-877-236-7807",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AA",
+                  "color": "#2e7d32",
+                  "full_name": "Adoption Act  -  Adopting from foster care"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/life-events/birth-adoption/adoptions/how-to-adopt-a-child"
+              }
+            },
+            {
+              "name": "Adopt an infant through a licensed adoption agency",
+              "desc": "Work with a licensed B.C. adoption agency to adopt an infant; birth parents can help choose the adoptive family and decide how involved they'd like to stay after the adoption.",
+              "users": "Prospective adoptive parents, birth parents",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Ways to Adopt in B.C.",
+                  "url": "https://www2.gov.bc.ca/gov/content/life-events/birth-adoption/adoptions/how-to-adopt-a-child"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AA",
+                  "color": "#2e7d32",
+                  "full_name": "Adoption Act  -  Placement for adoption and consents"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/life-events/birth-adoption/adoptions/how-to-adopt-a-child"
+              }
+            },
+            {
+              "name": "Adopt a child from another country",
+              "desc": "Work with a licensed B.C. adoption agency to complete the extra planning needed for an intercountry adoption.",
+              "users": "Prospective adoptive parents",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Ways to Adopt in B.C.",
+                  "url": "https://www2.gov.bc.ca/gov/content/life-events/birth-adoption/adoptions/how-to-adopt-a-child"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AA",
+                  "color": "#2e7d32",
+                  "full_name": "Adoption Act  -  Interprovincial and intercountry adoptions"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/life-events/birth-adoption/adoptions/how-to-adopt-a-child"
+              }
+            },
+            {
+              "name": "Adopt a relative's child or your partner's stepchild",
+              "desc": "Apply to court to adopt a child related to you by blood or your partner's child; legal advice is recommended for this kind of adoption.",
+              "users": "Relatives and step-parents",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Ways to Adopt in B.C.",
+                  "url": "https://www2.gov.bc.ca/gov/content/life-events/birth-adoption/adoptions/how-to-adopt-a-child"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AA",
+                  "color": "#2e7d32",
+                  "full_name": "Adoption Act  -  Court proceedings for adoption"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/life-events/birth-adoption/adoptions/how-to-adopt-a-child"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#6a1b9a",
+      "title": "GOAL 3",
+      "short_name": "Children, youth and families get the mental health, disability and family supports they need to thrive",
+      "legend_label": "Family & youth supports",
+      "description": "The ministry funds mental health services, disability supports, and family and youth programs so children, youth and families can get help before problems become a crisis.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get mental health support for a child or youth",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Access Child and Youth Mental Health (CYMH) services",
+              "desc": "Free mental health assessment, treatment and consultation services for children and youth aged 0-18 and their families, delivered through 92 clinics across the province, in person or virtually.",
+              "users": "Children, youth and families",
+              "user_groups": [
+                "Families & caregivers",
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Child & Youth Mental Health",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/managing-your-health/mental-health-substance-use/child-teen-mental-health"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "Find a CYMH clinic near you",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/managing-your-health/mental-health-substance-use/child-teen-mental-health/mental-health-intake-clinics"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "text": "Realign and improve services for children and youth with support and mental health needs (with Ministry of Health)"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/managing-your-health/mental-health-substance-use/child-teen-mental-health"
+              }
+            },
+            {
+              "name": "Get crisis support for a child or youth's mental health",
+              "desc": "24-hour crisis lines for suicide risk, mental health crises, and Indigenous-specific crisis support for children, youth and families.",
+              "users": "Children, youth and families in crisis",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Suicide crisis: 1-800-784-2433",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Mental health issue: 310-6789",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "KUU-US Aboriginal crisis line: 1-800-588-8717",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/managing-your-health/mental-health-substance-use/child-teen-mental-health"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get support for a child or youth with a disability or support needs",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get financial support for a child with a disability or support needs",
+              "desc": "The new BC Children and Youth Disability Benefit (starting April 2026) and Disability Supplement (starting July 2027) provide direct funding to families of children under 19 with significant, complex or lifelong disabilities, replacing some current programs.",
+              "users": "Families of children and youth with disabilities",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Children and Youth with Support Needs",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/managing-your-health/child-behaviour-development/support-needs"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "Documentation submission form",
+                  "url": "https://submit.digital.gov.bc.ca/app/form/submit?f=a83ec36f-ef92-40d7-9e42-006492347cfe"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "CYSN Resource Line: 1-833-882-0024",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "text": "Realign and improve services for children and youth with support and mental health needs (with Ministry of Health)"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Get transition planning support as a youth with a developmental disability",
+                    "ministry": "sdpr"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/managing-your-health/child-behaviour-development/support-needs"
+              }
+            },
+            {
+              "name": "Access community-based therapy and intervention services for your child",
+              "desc": "Free and low-cost community-based services — including speech-language, occupational and physio therapy, behavioural and mental health support, and navigation services — for children and youth with support needs, expanding over the next three years.",
+              "users": "Children and youth with support needs and their families",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Children and Youth with Support Needs — services",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/managing-your-health/child-behaviour-development/support-needs/services"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "text": "Realign and improve services for children and youth with support and mental health needs (with Ministry of Health)"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/managing-your-health/child-behaviour-development/support-needs"
+              }
+            },
+            {
+              "name": "Apply for Autism Funding for your child",
+              "desc": "Funding for autism intervention therapies for children and youth with an autism spectrum disorder diagnosis. New applications are accepted until March 2027, when the program transitions to the new Disability Benefit.",
+              "users": "Families of children and youth with autism spectrum disorder",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Children and Youth with Support Needs",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/managing-your-health/child-behaviour-development/support-needs"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Autism Funding Unit: 1-877-777-3530",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "text": "Realign and improve services for children and youth with support and mental health needs (with Ministry of Health)"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/managing-your-health/child-behaviour-development/support-needs"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Get support to keep families together and help youth transition to adulthood",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get help for family conflict or a youth's behavioural challenges",
+              "desc": "Connect with a local Child and Family Service office for programs that help families stay together, solve problems collaboratively, and support youth who are having difficulties.",
+              "users": "Families and youth",
+              "user_groups": [
+                "Families & caregivers",
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Help for youth and their families",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/youth-and-family-services/help-for-youth-and-their-families"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "Find a Child and Family Service office",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/data-monitoring-quality-assurance/find-services-for-children-teens-families"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/youth-and-family-services/help-for-youth-and-their-families"
+              }
+            },
+            {
+              "name": "Access Deaf and Hard of Hearing services for your child",
+              "desc": "Provincial Deaf and Hard of Hearing Services (PDHSS) support children and youth who are deaf or hard of hearing, and their families.",
+              "users": "Deaf and hard of hearing children and youth, and their families",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Youth and family services",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/youth-and-family-services"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/youth-and-family-services"
+              }
+            },
+            {
+              "name": "Get support transitioning out of foster care as a young adult",
+              "desc": "Young adults leaving government care can get help with education, health, housing, ID, employment and life skills, plus the SAJE program which supports care-experienced young people up to age 27.",
+              "users": "Young adults formerly in government care",
+              "user_groups": [
+                "Students & learners",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Aging out of Foster Care",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/youth-and-family-services/teens-in-foster-care/aging-out-of-care"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "SAJE program: MCF.SAJE@gov.bc.ca",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "SAJE program: 1-866-623-3001",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Get a tuition waiver as a current or former youth in care",
+                    "ministry": "psfs"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/youth-and-family-services/teens-in-foster-care/aging-out-of-care"
+              }
+            },
+            {
+              "name": "Get funding for education as a former youth in care",
+              "desc": "The Provincial Tuition Waiver Program and Learning for Future Grant waive tuition and provide grants for current and former youth in care studying at a B.C. public post-secondary institution.",
+              "users": "Current and former youth in care",
+              "user_groups": [
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Aging out of Foster Care",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/youth-and-family-services/teens-in-foster-care/aging-out-of-care"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/youth-and-family-services/teens-in-foster-care/aging-out-of-care"
+              }
+            },
+            {
+              "name": "Get income and transition support through the Agreements with Young Adults program",
+              "desc": "The Agreements with Young Adults (AYA) program provides income, housing and other support to young adults with care experience during their transition to independence.",
+              "users": "Young adults with care experience",
+              "user_groups": [
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Agreements with Young Adults",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/youth-and-family-services/teens-in-foster-care/agreements-with-young-adults"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/youth-and-family-services/teens-in-foster-care/aging-out-of-care"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#b45309",
+      "title": "GOAL 4",
+      "short_name": "Indigenous children, youth and families exercise jurisdiction over their own child and family services",
+      "legend_label": "Indigenous jurisdiction",
+      "description": "The ministry funds Indigenous-led prevention and family support, and works with First Nations, Métis and Inuit governing bodies as they take up jurisdiction over child and family services in their own communities.",
+      "metrics": [],
+      "css_class": "goal-4",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Exercise Indigenous jurisdiction over child and family services",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for Indigenous family support funding for your community or agency",
+              "desc": "First Nations and Métis-serving agencies can apply for funding to support community-designed prevention and family-support programs that help keep Indigenous families together.",
+              "users": "First Nations and Métis-serving agencies",
+              "user_groups": [
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Indigenous child and family development",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/supporting-communities/child-family-development"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/supporting-communities/child-family-development"
+              }
+            },
+            {
+              "name": "Establish a coordination agreement for Indigenous jurisdiction over child and family services",
+              "desc": "Indigenous governing bodies can negotiate coordination agreements with B.C. and Canada to exercise jurisdiction over child and family services for their community under their own Indigenous laws.",
+              "users": "Indigenous governing bodies",
+              "user_groups": [
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Indigenous child and family development",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/supporting-communities/child-family-development"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CFCSA",
+                  "color": "#b71c1c",
+                  "full_name": "Child, Family and Community Service Act  -  Indigenous engagement and information sharing (2018/2019 amendments)"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 2,
+                  "text": "Continue implementing legislation honouring Indigenous jurisdiction over child and family services and reduce overrepresentation of Indigenous children in government care"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/supporting-communities/child-family-development"
+              }
+            },
+            {
+              "name": "Access Indigenous Child and Youth Mental Health services",
+              "desc": "Ministry, delegated and contracted Child and Youth Mental Health teams focused on Indigenous children, youth and families provide culturally grounded assessment, treatment and support.",
+              "users": "Indigenous children, youth and families",
+              "user_groups": [
+                "Indigenous communities",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Child & Youth Mental Health",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/managing-your-health/mental-health-substance-use/child-teen-mental-health"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "text": "Realign and improve services for children and youth with support and mental health needs (with Ministry of Health)"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/managing-your-health/mental-health-substance-use/child-teen-mental-health"
+              }
+            },
+            {
+              "name": "Apply for funding under Jordan's Principle for a First Nations child",
+              "desc": "All B.C. First Nations children under 19 are guaranteed access to needed health and social services under Jordan's Principle, regardless of jurisdictional funding disputes.",
+              "users": "First Nations families and children",
+              "user_groups": [
+                "Indigenous communities",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Indigenous child and family development",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/supporting-communities/child-family-development"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Jordan's Principle Implementation: 778-951-0716",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "24-hour line: 1-855-572-4453",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/supporting-communities/child-family-development"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Child protection social work and delegated authority administration",
+      "desc": "Delegates the Director of Child Protection's authority to child protection social workers across 13 service delivery areas and a number of delegated Aboriginal/Indigenous agencies.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [
+        {
+          "abbrev": "CFCSA",
+          "color": "#b71c1c",
+          "full_name": "Child, Family and Community Service Act  -  Delegation of the Director's authority"
+        }
+      ],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "safety_emergencies",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/safety/public-safety/protecting-children"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Delegated Indigenous Child and Family Service Agency oversight and agreements management",
+      "desc": "Manages agreements with Indigenous governing bodies and delegated Indigenous agencies, and maintains the repository of agreements as B.C. transitions toward Indigenous jurisdiction over child and family services.",
+      "users": "Internal program staff, Indigenous governing bodies",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [
+        {
+          "number": 2,
+          "text": "Continue implementing legislation honouring Indigenous jurisdiction over child and family services and reduce overrepresentation of Indigenous children in government care"
+        }
+      ],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "core_human_needs",
+        "domain": "family_relationships",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/supporting-communities/child-family-development"
+      }
+    },
+    {
+      "id": "f-3",
+      "name": "Ministry data, monitoring and quality assurance reporting",
+      "desc": "Handles complaints, and produces reports, data and quality-assurance information on ministry services for clients and service providers.",
+      "users": "Internal program staff, public reporting",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [
+        {
+          "number": 1,
+          "text": "Review all MCFD programs and initiatives with the Ministry of Finance to ensure they remain relevant, efficient, and improve outcomes for vulnerable British Columbians"
+        },
+        {
+          "number": 3,
+          "text": "Lead work to design and implement a comprehensive child well-being plan and outcomes framework across ministries and agencies"
+        }
+      ],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "core_human_needs",
+        "domain": "family_relationships",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/family-social-supports"
+      }
+    }
+  ],
+  "mandate_date": "January 16, 2025",
+  "mandate_minister": "Jodie Wickens",
+  "mandate_pdf": "https://www2.gov.bc.ca/assets/gov/government/ministries-organizations/premier-cabinet-mlas/minister-letter/mandate_letter_jodie_wickens.pdf",
+  "cross_cutting": [
+    "Economic growth and jobs",
+    "Affordability and housing",
+    "Health care",
+    "Community safety",
+    "Climate action",
+    "Indigenous reconciliation"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Review all Ministry of Children and Family Development programs and initiatives with the Ministry of Finance to ensure they remain relevant, efficient, and improve the lives of vulnerable British Columbians",
+      "mapping": "-> Ministry data, monitoring and quality assurance reporting"
+    },
+    {
+      "number": 2,
+      "text": "Continue implementing B.C.'s historic legislation honouring Indigenous jurisdiction over the care of children and families, and continue to address and reduce the overrepresentation of Indigenous children in government care",
+      "mapping": "-> Establish a coordination agreement for Indigenous jurisdiction over child and family services; Delegated Indigenous Child and Family Service Agency oversight and agreements management"
+    },
+    {
+      "number": 3,
+      "text": "Lead work to design and implement a comprehensive child well-being plan and outcomes framework that aligns services across ministries and agencies, prioritizing a service model that brings the most vulnerable children and families to the front of the line",
+      "mapping": "-> Ministry data, monitoring and quality assurance reporting"
+    },
+    {
+      "number": 4,
+      "text": "Lead work with the Ministry of Health, Indigenous peoples, stakeholders and people with lived experience to realign and improve services for children and youth with support and mental health needs",
+      "mapping": "-> Access Child and Youth Mental Health (CYMH) services; Get financial support for a child with a disability or support needs; Access community-based therapy and intervention services for your child; Apply for Autism Funding for your child; Access Indigenous Child and Youth Mental Health services"
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    },
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-email",
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Families & caregivers",
+    "Students & learners",
+    "Workers & job seekers",
+    "Indigenous communities"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

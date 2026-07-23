@@ -1,0 +1,1288 @@
+{
+  "prefix": "sdpr",
+  "full_name": "Ministry of Social Development and Poverty Reduction",
+  "short_name": "Social Development & Poverty Reduction",
+  "blurb": "Supports people in need — income and disability assistance, employment supports through WorkBC, accessibility, and poverty reduction.",
+  "nav_name": "Social Development and Poverty Reduction",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "GOAL 1",
+      "short_name": "British Columbians in need have access to income and disability assistance",
+      "legend_label": "Income & disability assistance",
+      "description": "The ministry delivers BC Employment and Assistance — income assistance, disability assistance for people designated as Persons with Disabilities, and related supplements like the Senior's Supplement and BC Bus Pass — through My Self Serve, local offices, and a toll-free line.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Apply for and manage income assistance",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for income assistance",
+              "desc": "If you're out of work, waiting on other income, or urgently need food, shelter or medical attention, you may be eligible for BC Employment and Assistance (BCEA). Apply through My Self Serve or your local office; most applicants must complete a work search before an eligibility assessment.",
+              "users": "People with no other resources to meet their basic needs",
+              "user_groups": [
+                "General public",
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "My Self Serve",
+                  "url": "https://myselfserve.gov.bc.ca/"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Apply for income assistance",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/income-assistance/apply-for-assistance"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Toll-free: 1-866-866-0800",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EAA",
+                  "color": "#1565c0",
+                  "full_name": "Employment and Assistance Act  -  Income assistance eligibility and application"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/income-assistance/apply-for-assistance"
+              }
+            },
+            {
+              "name": "Manage your income or disability assistance case online",
+              "desc": "My Self Serve (MySS) gives income and disability assistance clients secure online access to apply, message the ministry, submit monthly reports, check upcoming payment eligibility, sign employment plans, and track the annual earnings exemption.",
+              "users": "Income and disability assistance clients",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "My Self Serve",
+                  "url": "https://myselfserve.gov.bc.ca/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://myselfserve.gov.bc.ca/"
+              }
+            },
+            {
+              "name": "Get emergency hardship assistance",
+              "desc": "If you don't meet the regular eligibility rules for income assistance but are still in urgent need, you may be able to receive hardship assistance depending on your circumstances.",
+              "users": "People in urgent financial need who don't meet regular eligibility",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Apply for income assistance",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/income-assistance/apply-for-assistance"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Toll-free: 1-866-866-0800",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EAA",
+                  "color": "#1565c0",
+                  "full_name": "Employment and Assistance Act  -  Hardship assistance"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/income-assistance/apply-for-assistance"
+              }
+            },
+            {
+              "name": "Ask for reconsideration of an assistance decision",
+              "desc": "If you disagree with a decision affecting your income or disability assistance, you can first speak to a worker about your concerns, then request a formal reconsideration and, if needed, appeal to the Employment and Assistance Appeal Tribunal.",
+              "users": "Income and disability assistance applicants and recipients",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Rights and responsibilities",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/income-assistance/apply-for-assistance/rights-responsibilities"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EAA",
+                  "color": "#1565c0",
+                  "full_name": "Employment and Assistance Act  -  Reconsideration and appeal rights"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/income-assistance/apply-for-assistance"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Apply for and manage disability assistance",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for the Persons with Disabilities designation",
+              "desc": "To receive disability assistance you must be designated as a Person with Disabilities (PWD). The application has three parts — a section you complete, a medical report from a doctor or nurse practitioner, and an assessor report from a prescribed professional.",
+              "users": "People with a severe, long-term physical or mental impairment",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Disability assistance",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/services-for-people-with-disabilities/disability-assistance"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Toll-free: 1-866-866-0800",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EAPWDA",
+                  "color": "#6a1b9a",
+                  "full_name": "Employment and Assistance for Persons with Disabilities Act  -  Persons with disabilities designation"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/services-for-people-with-disabilities/disability-assistance"
+              }
+            },
+            {
+              "name": "Apply for disability assistance",
+              "desc": "Disability assistance provides monthly financial and health support to people with the PWD designation who meet income and asset eligibility rules — general asset exemption limits are $100,000 for a single person or couple, and $200,000 for a couple where both partners have the designation.",
+              "users": "People with the PWD designation",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "My Self Serve",
+                  "url": "https://myselfserve.gov.bc.ca/"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Disability assistance",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/services-for-people-with-disabilities/disability-assistance"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EAPWDA",
+                  "color": "#6a1b9a",
+                  "full_name": "Employment and Assistance for Persons with Disabilities Act  -  Disability assistance and supplements"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/services-for-people-with-disabilities/disability-assistance"
+              }
+            },
+            {
+              "name": "Use a simplified application if you already receive disability-related benefits",
+              "desc": "People already receiving Community Living BC supports, the MCFD At Home Program, BC PharmaCare Plan P – Palliative Care Benefits, or CPP Disability Benefits can complete a shorter PWD application that lets the ministry confirm eligibility from that program, instead of a new medical assessment.",
+              "users": "People already receiving certain disability-related benefits",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Disability assistance",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/services-for-people-with-disabilities/disability-assistance"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EAPWDA",
+                  "color": "#6a1b9a",
+                  "full_name": "Employment and Assistance for Persons with Disabilities Act  -  Persons with disabilities designation"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/services-for-people-with-disabilities/disability-assistance"
+              }
+            },
+            {
+              "name": "Track your annual earnings exemption on disability assistance",
+              "desc": "People on disability assistance can work and earn money up to an annual limit without it affecting their monthly payment; My Self Serve lets clients track how much of the exemption they've used.",
+              "users": "People on disability assistance who are working",
+              "user_groups": [
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "My Self Serve",
+                  "url": "https://myselfserve.gov.bc.ca/"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Annual earnings exemption",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/services-for-people-with-disabilities/disability-assistance/on-disability-assistance/annual-earnings-exemption"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/services-for-people-with-disabilities/disability-assistance"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Get financial support as a senior or through the bus pass program",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get a monthly top-up to your federal seniors' pension",
+              "desc": "The Senior's Supplement is an automatic monthly payment for low-income seniors receiving Old Age Security and the Guaranteed Income Supplement (or the federal spouse's allowance) that tops up their federal income — no application is needed.",
+              "users": "Low-income seniors receiving OAS/GIS",
+              "user_groups": [
+                "Seniors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Senior's Supplement",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/seniors/financial-legal-matters/income-security-programs/seniors-supplement"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Toll-free: 1-866-866-0800",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EAA",
+                  "color": "#1565c0",
+                  "full_name": "Employment and Assistance Act  -  Senior's Supplement"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/seniors/financial-legal-matters/income-security-programs/seniors-supplement"
+              }
+            },
+            {
+              "name": "Get a reduced-cost bus pass as a senior or person with a disability",
+              "desc": "The BC Bus Pass Program provides a subsidized annual Compass Card pass, usable on BC Transit and TransLink, to low-income seniors and people receiving disability assistance. Apply, renew, or request a replacement online.",
+              "users": "Low-income seniors and people on disability assistance",
+              "user_groups": [
+                "Seniors",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Online Request for Service",
+                  "url": "https://myselfserve.gov.bc.ca/BusPass"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "BC Bus Pass Program",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/passenger-travel/buses-taxis-limos/bus-pass"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Toll-free: 1-866-866-0800",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EAA",
+                  "color": "#1565c0",
+                  "full_name": "Employment and Assistance Act  -  BC Bus Pass Program"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/passenger-travel/buses-taxis-limos/bus-pass"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#6a1b9a",
+      "title": "GOAL 2",
+      "short_name": "People with disabilities get community living supports and a more accessible B.C.",
+      "legend_label": "Disability supports & accessibility",
+      "description": "Community Living BC funds supports for adults with developmental disabilities, autism or FASD, while the Accessibility Directorate leads implementation of the Accessible B.C. Act across government.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get community living and disability supports",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get community living supports as an adult with a developmental disability",
+              "desc": "Community Living BC (CLBC), a provincial Crown corporation, funds home sharing, supported and independent living, community inclusion, and employment supports for adults 19 and older with a developmental disability, autism spectrum disorder, or fetal alcohol spectrum disorder who need significant help with daily tasks.",
+              "users": "Adults with developmental disabilities, autism, or FASD",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Community Living BC",
+                  "url": "https://www.communitylivingbc.ca/"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Toll-free: 1-877-660-2522",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CLAA",
+                  "color": "#00838f",
+                  "full_name": "Community Living Authority Act  -  Establishment of Community Living BC"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.communitylivingbc.ca/"
+              }
+            },
+            {
+              "name": "Request a review of a community living funding decision or file a complaint",
+              "desc": "People who disagree with a CLBC funding or eligibility decision can request a review through CLBC's complaints process, and can separately report abuse, neglect, or wrongdoing.",
+              "users": "CLBC clients and families",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Request a Review with the Complaints Process",
+                  "url": "https://www.communitylivingbc.ca/how-do-i-get-support/request-review-complaints-process/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CLAA",
+                  "color": "#00838f",
+                  "full_name": "Community Living Authority Act  -  Establishment of Community Living BC"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.communitylivingbc.ca/"
+              }
+            },
+            {
+              "name": "Get transition planning support as a youth with a developmental disability",
+              "desc": "A Navigator helps young people with a developmental disability, and their families, plan the move from Ministry of Children and Family Development supports into adult supports, including Community Living BC, as they approach age 19.",
+              "users": "Youth with developmental disabilities and their families",
+              "user_groups": [
+                "Families & caregivers",
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Transition Planning for Youth & Young Adults",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/services-for-people-with-disabilities/transition-planning-for-youth-young-adults"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Get financial support for a child with a disability or support needs",
+                    "ministry": "cfd"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/services-for-people-with-disabilities"
+              }
+            },
+            {
+              "name": "Find financial supports for people with disabilities",
+              "desc": "A directory of financial supports for people with disabilities to help cover costs of daily living and other essential needs, beyond disability assistance itself.",
+              "users": "People with disabilities",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Financial services and supports",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/services-for-people-with-disabilities/financial"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/services-for-people-with-disabilities"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Advance accessibility and service quality across government",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Give feedback on accessibility barriers in government services",
+              "desc": "The Accessibility Directorate's online feedback tool lets people report barriers they face accessing B.C. government services, buildings, and information, and routes feedback to the relevant ministry.",
+              "users": "People with disabilities, the public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Accessibility Feedback Tool",
+                  "url": "https://forms.social.gov.bc.ca/or/fr/social/Accessibility-Feedback/new"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Give feedback on accessibility",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/about-the-bc-government/initiatives/accessibility/feedback"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ABCA",
+                  "color": "#b45309",
+                  "full_name": "Accessible British Columbia Act  -  Accessibility feedback mechanisms"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "text": "With support from the Parliamentary Secretary for Accessibility, lead government's work on accessibility initiatives."
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/about-the-bc-government/initiatives/accessibility"
+              }
+            },
+            {
+              "name": "Track government's progress on accessibility standards and planning",
+              "desc": "The Accessibility Directorate coordinates development of government's accessibility standards, regulations, and accessibility plan under the Accessible B.C. Act, aiming to identify, remove, and prevent barriers for people with disabilities.",
+              "users": "General public, disability advocates",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Accessibility Directorate",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/about-the-bc-government/initiatives/accessibility"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "AccessibleBC Plan",
+                  "url": "https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/initiatives-plans-strategies/accessibility-directorate/accessiblebc-plan.pdf"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ABCA",
+                  "color": "#b45309",
+                  "full_name": "Accessible British Columbia Act  -  Accessibility standards and government accessibility plan"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "text": "With support from the Parliamentary Secretary for Accessibility, lead government's work on accessibility initiatives."
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/about-the-bc-government/initiatives/accessibility"
+              }
+            },
+            {
+              "name": "Get help resolving a service quality concern as a person with a disability",
+              "desc": "B.C.'s Advocate for Service Quality reports directly to the Minister of Social Development and Poverty Reduction and helps resolve concerns about the quality of disability and community living services.",
+              "users": "People with disabilities and their families",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Advocate for Service Quality",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/services-for-people-with-disabilities/advocate-for-service-quality"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/services-for-people-with-disabilities"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#2e7d32",
+      "title": "GOAL 3",
+      "short_name": "British Columbians facing employment barriers find and keep good jobs",
+      "legend_label": "Employment services",
+      "description": "WorkBC Employment Services Centres, delivered for the ministry, help job seekers — including people on income and disability assistance — find work, with extra training supports for single parents and people facing complex barriers.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get help finding and keeping a job",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get help finding a job at an employment services centre",
+              "desc": "WorkBC Employment Services Centres provide free help with job search, resume writing, interview preparation, and skills training to all British Columbians, including people on income or disability assistance.",
+              "users": "Job seekers, income and disability assistance clients",
+              "user_groups": [
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Find your WorkBC Centre",
+                  "url": "https://www.workbc.ca/Employment-Services/WorkBC-Centres/Find-your-WorkBC-Employment-Services-Centre-(1).aspx"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Income assistance",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/income-assistance"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EAA",
+                  "color": "#1565c0",
+                  "full_name": "Employment and Assistance Act  -  Employment-related programs"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 6,
+                  "text": "Lead work, with support from the Minister of Post-Secondary Education and Future Skills, to deliver skills and training initiatives for people facing multiple complex barriers that will enable them to access opportunities and build a dignified life."
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Search for jobs and labour market information through WorkBC",
+                    "ministry": "psfs"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/income-assistance"
+              }
+            },
+            {
+              "name": "Get training and support as a single parent to secure long-term employment",
+              "desc": "The Single Parent Employment Initiative offers single parents on income or disability assistance up to two years of funded training or paid work experience, continued assistance during training, child care and transportation costs covered, and a year of extended health coverage after starting work.",
+              "users": "Single parents on income or disability assistance",
+              "user_groups": [
+                "Families & caregivers",
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Single Parent Employment Initiative",
+                  "url": "https://www2.gov.bc.ca/gov/content/family-social-supports/income-assistance/on-assistance/employability-planning/spei"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "Find your WorkBC Centre",
+                  "url": "https://www.workbc.ca/discover-employment-services/workbc-centres/workbc-centre-locations"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EAA",
+                  "color": "#1565c0",
+                  "full_name": "Employment and Assistance Act  -  Employment-related programs"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 6,
+                  "text": "Lead work, with support from the Minister of Post-Secondary Education and Future Skills, to deliver skills and training initiatives for people facing multiple complex barriers that will enable them to access opportunities and build a dignified life."
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/income-assistance/on-assistance/employability-planning/spei"
+              }
+            },
+            {
+              "name": "Get help finding a job as a person with a disability",
+              "desc": "WorkBC offers employment services tailored to people with disabilities, alongside the BC Public Service's Work-Able program, a paid internship for recent post-secondary graduates who self-identify as having a disability.",
+              "users": "Job seekers with disabilities",
+              "user_groups": [
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "WorkBC services for people with disabilities",
+                  "url": "https://www.workbc.ca/Resources-for/People-with-Disabilities.aspx"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Work-Able Accessible Employment Program",
+                  "url": "https://www2.gov.bc.ca/gov/content/careers-myhr/job-seekers/internship-co-op-opportunities/work-able"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/family-social-supports/services-for-people-with-disabilities"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#b45309",
+      "title": "GOAL 4",
+      "short_name": "Poverty is reduced and British Columbians are more socially included",
+      "legend_label": "Poverty reduction",
+      "description": "British Columbia's 2024 Poverty Reduction Strategy sets legislated targets to cut overall, child, and seniors' poverty by 2034, tracked through annual progress reports and an independent advisory committee.",
+      "metrics": [],
+      "css_class": "goal-4",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Track and shape B.C.'s Poverty Reduction Strategy",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Track progress on BC's Poverty Reduction Strategy targets",
+              "desc": "British Columbia's 2024 Poverty Reduction Strategy sets legislated targets to cut overall poverty by 60%, child poverty by 75%, and — for the first time — seniors' poverty by 50%, by 2034, with annual progress reports published each year.",
+              "users": "General public, community organizations",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "B.C.'s 2024 Poverty Reduction Strategy",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/about-the-bc-government/strategies/poverty-reduction-strategy"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "2024 annual report",
+                  "url": "https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/initiatives-plans-strategies/poverty-reduction-strategy/prs-2024-annual-report.pdf"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PRSA",
+                  "color": "#2e7d32",
+                  "full_name": "Poverty Reduction Strategy Act  -  Targets, timelines and accountability"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 2,
+                  "text": "Continue to develop tools and approaches to prevent poverty and increase income, focusing first on youth growing up in families living in poverty, and work with the Ministers of Health, Finance, Citizens' Services and others to ensure low- and moderate-income British Columbians receive and retain the federal and provincial benefits they are eligible for, beginning with the Canada Disability Benefit."
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/about-the-bc-government/strategies/poverty-reduction-strategy"
+              }
+            },
+            {
+              "name": "Take part in an advisory committee on poverty reduction",
+              "desc": "An independent Poverty Reduction Advisory Committee — including advocates, experts, Indigenous Peoples, and people with lived experience of poverty — advises the Minister and publishes its views in each annual progress report.",
+              "users": "Advocates, experts, people with lived experience",
+              "user_groups": [
+                "General public",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Poverty Reduction Advisory Committee",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/about-the-bc-government/strategies/poverty-reduction-strategy/advisory-committee"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PRSA",
+                  "color": "#2e7d32",
+                  "full_name": "Poverty Reduction Strategy Act  -  Targets, timelines and accountability"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Share your experience of poverty in B.C.",
+              "desc": "Government periodically engages British Columbians — including a distinctions-based process with Indigenous Peoples — to hear about lived experiences of poverty and shape the Poverty Reduction Strategy.",
+              "users": "People with lived experience of poverty, general public",
+              "user_groups": [
+                "General public",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Engagement summaries and submissions",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/about-the-bc-government/strategies/poverty-reduction-strategy/public-input"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Ministry program and funding review",
+      "desc": "Ongoing review of all Ministry of Social Development and Poverty Reduction programs and initiatives with the Minister of Finance, to keep programs relevant and efficient in the context of provincial budget constraints, community safety, and poverty reduction goals.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [
+        {
+          "number": 1,
+          "text": "In order to protect key services that British Columbians rely on, work with the Minister of Finance to review all existing Ministry of Social Development and Poverty Reduction programs and initiatives to ensure our programs remain relevant, are efficient, ensure safe and strong communities, and reduce poverty. This is important in the context of current Provincial budget constraints and the priorities of communities in the province."
+        }
+      ],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "core_human_needs",
+        "domain": "money_taxes_benefits",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Poverty prevention and benefit uptake coordination",
+      "desc": "Cross-government work with the Ministries of Health, Finance, and Citizens' Services to help low- and moderate-income British Columbians receive and retain the federal and provincial benefits they're eligible for, beginning with the Canada Disability Benefit, and to prevent poverty among youth growing up in low-income families.",
+      "users": "Internal program staff, partner ministries",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [
+        {
+          "number": 2,
+          "text": "Continue to develop tools and approaches to prevent poverty and increase income, focusing first on youth growing up in families living in poverty, and work with the Ministers of Health, Finance, Citizens' Services and others to ensure low- and moderate-income British Columbians receive and retain the federal and provincial benefits they are eligible for, beginning with the Canada Disability Benefit."
+        }
+      ],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "core_human_needs",
+        "domain": "money_taxes_benefits",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-3",
+      "name": "Food security policy leadership",
+      "desc": "Leads cross-government work on food security for British Columbians struggling with the cost of food and unable to afford the basics, and looks for opportunities to support B.C. farmers and food producers in that work.",
+      "users": "Internal program staff, partner ministries",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [
+        {
+          "number": 4,
+          "text": "Support British Columbians struggling with the cost of food and unable to afford the basics by leading work on food security and find opportunities to support BC farmers and food producers in this work."
+        }
+      ],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "core_human_needs",
+        "domain": "health_wellbeing",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-4",
+      "name": "Community safety initiative coordination",
+      "desc": "Works with the Cabinet Committee on Community Safety to ensure initiatives it identifies are prioritized and delivered by the ministry as required.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [
+        {
+          "number": 5,
+          "text": "Work with the Cabinet Committee on Community Safety to ensure that initiatives identified by the committee are prioritized and delivered by your ministry as required."
+        }
+      ],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "safety_emergencies",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    }
+  ],
+  "mandate_date": "January 16, 2025",
+  "mandate_minister": "Sheila Malcolmson",
+  "mandate_pdf": "https://www2.gov.bc.ca/assets/gov/government/ministries-organizations/premier-cabinet-mlas/minister-letter/mandate_letter_sheila_malcolmson.pdf",
+  "cross_cutting": [
+    "Economic growth and jobs",
+    "Affordability and housing",
+    "Health care",
+    "Community safety",
+    "Climate action",
+    "Indigenous reconciliation"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "In order to protect key services that British Columbians rely on, work with the Minister of Finance to review all existing Ministry of Social Development and Poverty Reduction programs and initiatives to ensure our programs remain relevant, are efficient, ensure safe and strong communities, and reduce poverty. This is important in the context of current Provincial budget constraints and the priorities of communities in the province.",
+      "mapping": "-> Ministry program and funding review"
+    },
+    {
+      "number": 2,
+      "text": "Continue to develop tools and approaches to prevent poverty and increase income, focusing first on youth growing up in families living in poverty, and work with the Ministers of Health, Finance, Citizens' Services and others to ensure low- and moderate-income British Columbians receive and retain the federal and provincial benefits they are eligible for, beginning with the Canada Disability Benefit.",
+      "mapping": "-> Track progress on BC's Poverty Reduction Strategy targets; Poverty prevention and benefit uptake coordination"
+    },
+    {
+      "number": 3,
+      "text": "With support from the Parliamentary Secretary for Accessibility, lead government's work on accessibility initiatives.",
+      "mapping": "-> Give feedback on accessibility barriers in government services; Track government's progress on accessibility standards and planning"
+    },
+    {
+      "number": 4,
+      "text": "Support British Columbians struggling with the cost of food and unable to afford the basics by leading work on food security and find opportunities to support BC farmers and food producers in this work.",
+      "mapping": "-> Food security policy leadership"
+    },
+    {
+      "number": 5,
+      "text": "Work with the Cabinet Committee on Community Safety to ensure that initiatives identified by the committee are prioritized and delivered by your ministry as required.",
+      "mapping": "-> Community safety initiative coordination"
+    },
+    {
+      "number": 6,
+      "text": "Lead work, with support from the Minister of Post-Secondary Education and Future Skills, to deliver skills and training initiatives for people facing multiple complex barriers that will enable them to access opportunities and build a dignified life.",
+      "mapping": "-> Get training and support as a single parent to secure long-term employment; Get help finding a job at an employment services centre"
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Seniors",
+    "Families & caregivers",
+    "Workers & job seekers",
+    "Students & learners",
+    "Indigenous communities"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

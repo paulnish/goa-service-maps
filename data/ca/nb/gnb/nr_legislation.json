@@ -1,0 +1,236 @@
+{
+  "prefix": "nr",
+  "name": "Natural Resources",
+  "short_name": "Natural Resources",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "Crown lands and forests are managed sustainably",
+      "legend_label": "Crown lands & forests",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Use Crown land and forests"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "short_name": "Fish and wildlife thrive and are enjoyed responsibly",
+      "legend_label": "Fish & wildlife",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Hunt, fish and enjoy wildlife"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#b45309",
+      "short_name": "Mineral resources are developed responsibly",
+      "legend_label": "Minerals",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Explore and develop mineral resources"
+        },
+        {
+          "number": 2,
+          "name": "Explore for oil and natural gas"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "CLFA",
+      "full_name": "Crown Lands and Forests Act",
+      "color": "#0070c0",
+      "citation": "SNB 1980, c C-38.1",
+      "summary": "Administration of Crown lands and sustainable forest management.",
+      "sections": [
+        {
+          "ref": "ss.23-24",
+          "title": "Lease of Crown lands",
+          "description": "Minister's power to lease Crown lands; detail in NB Reg 2009-62.",
+          "anchor_id": "CLFA-ss2324",
+          "services": [
+            {
+              "name": "Apply to lease or use Crown land",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Use Crown land and forests"
+            }
+          ]
+        },
+        {
+          "ref": "ss.28-40",
+          "title": "Crown timber licences",
+          "description": "Allocation of Crown timber harvest under management plans.",
+          "anchor_id": "CLFA-ss2840",
+          "services": [
+            {
+              "name": "Get a timber harvesting licence on Crown land",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Use Crown land and forests"
+            }
+          ]
+        },
+        {
+          "ref": "s.56(1)(c)",
+          "title": "Crown timber sale — firewood",
+          "description": "Applications to cut small amounts of firewood as a Crown timber sale.",
+          "anchor_id": "CLFA-s561c",
+          "services": [
+            {
+              "name": "Get a permit to cut fuelwood on Crown land",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Use Crown land and forests"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "FWA",
+      "full_name": "Fish and Wildlife Act",
+      "color": "#2e7d32",
+      "citation": "SNB 1980, c F-14.1",
+      "summary": "Hunting, angling, trapping, and wildlife management.",
+      "sections": [
+        {
+          "ref": "s.82.1+",
+          "title": "Registration, licences and permits",
+          "description": "Licensing of hunting, angling, and trapping; species detail in NB Regs 84-133, 82-103, 84-124.",
+          "anchor_id": "FWA-s821",
+          "services": [
+            {
+              "name": "Get a hunting or angling licence",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Hunt, fish and enjoy wildlife"
+            },
+            {
+              "name": "Get a trapping or fur harvester licence",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Hunt, fish and enjoy wildlife"
+            }
+          ]
+        },
+        {
+          "ref": "ss.15-19",
+          "title": "Guides",
+          "description": "Licensing of guides; detail in NB Reg 2011-70.",
+          "anchor_id": "FWA-ss1519",
+          "services": [
+            {
+              "name": "Get an outfitter or guide licence",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Hunt, fish and enjoy wildlife"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "MinA",
+      "full_name": "Mining Act",
+      "color": "#b45309",
+      "citation": "SNB 1985, c M-14.1",
+      "summary": "Mineral tenure, exploration, and mine development. Note: a new Mineral Resources Act (2026, c 22) has appeared in the consolidated statutes as its successor.",
+      "sections": [
+        {
+          "ref": "Part V (ss.45-61)",
+          "title": "Mineral claims",
+          "description": "Claim staking, registration, and terms; prospecting licences in Part IV.",
+          "anchor_id": "MinA-PartVss4561",
+          "services": [
+            {
+              "name": "Register a mineral claim and get exploration approvals",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#b45309",
+              "ms_number": 1,
+              "ms_name": "Explore and develop mineral resources"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "QSA",
+      "full_name": "Quarriable Substances Act",
+      "color": "#6a1b9a",
+      "citation": "SNB 1991, c Q-1.1",
+      "summary": "Tenure and royalties for sand, gravel, and rock.",
+      "sections": [
+        {
+          "ref": "ss.5-6",
+          "title": "Quarry permit",
+          "description": "Permits for extraction of quarriable substances; leases at s.7.",
+          "anchor_id": "QSA-ss56",
+          "services": [
+            {
+              "name": "Get a quarry or aggregate permit",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#b45309",
+              "ms_number": 1,
+              "ms_name": "Explore and develop mineral resources"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "FFA",
+      "full_name": "Forest Fires Act",
+      "color": "#c62828",
+      "citation": "RSNB 2014, c 110",
+      "summary": "Forest fire prevention and burning restrictions.",
+      "sections": [
+        {
+          "ref": "ss.4-9, s.12",
+          "title": "Fire season restrictions and burning permits",
+          "description": "Fire season, burning restrictions, and burning permits (s.12(3)).",
+          "anchor_id": "FFA-ss49s12",
+          "services": [
+            {
+              "name": "Get a burn permit and check fire restrictions",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Use Crown land and forests"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 5,
+    "sections_count": 8,
+    "services_with_leg_count": 9,
+    "services_multi_act_count": 0
+  }
+}

@@ -1,0 +1,1379 @@
+{
+  "prefix": "citz",
+  "full_name": "Ministry of Citizens' Services",
+  "short_name": "Citizens' Services",
+  "blurb": "Delivers government services to people and businesses through Service BC, manages government digital services, data, procurement, and connectivity across the province.",
+  "nav_name": "Citizens' Services",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#234075",
+      "title": "GOAL 1",
+      "short_name": "British Columbians can easily get help from government in person, by phone, and online",
+      "legend_label": "Access to Service BC",
+      "description": "Service BC is the front line for hundreds of provincial programs and services, helping people get ID, order life-event documents, and connect with the right part of government by phone, text, email, or in person.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get help from Service BC",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get help with government programs and services by phone, text, or email",
+              "desc": "Service BC's contact centre answers general questions about provincial government programs and connects people to the right ministry or service, in over 220 languages, with accessible options including Video Relay Service and TDD.",
+              "users": "General public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "1-800-663-7867",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Get help with government services",
+                  "url": "https://www2.gov.bc.ca/gov/content/home/get-help-with-government-services"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Ask a general question",
+                  "url": "https://www2.gov.bc.ca/StaticWebResources/static/gov3/html/contact-form.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/home/get-help-with-government-services"
+              }
+            },
+            {
+              "name": "Visit a Service BC location for in-person help",
+              "desc": "Service BC offices across the province provide in-person help with hundreds of provincial programs and services, including ID, vital records, and business registrations.",
+              "users": "General public, businesses",
+              "user_groups": [
+                "General public",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Find a government service centre",
+                  "url": "https://www2.gov.bc.ca/gov/content/home/services-a-z"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Service BC counter",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/home/get-help-with-government-services"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get government ID and life event documents",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get a BC Services Card",
+              "desc": "The BC Services Card is government-issued photo ID used to access health services, verify identity, and set up a digital account to log in to online government services.",
+              "users": "B.C. residents",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Get a BC Services Card",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/government-id/bc-services-card/your-card/get-a-card"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "ICBC driver licensing office",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "vital_records_id",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Enrol in the Medical Services Plan (MSP)",
+                    "ministry": "hlth"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/government-id/bc-services-card"
+              }
+            },
+            {
+              "name": "Renew or replace your BC Services Card",
+              "desc": "Renew an expiring card, or replace a lost, stolen, or damaged BC Services Card.",
+              "users": "BC Services Card holders",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Renew or replace a card",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/government-id/bc-services-card/your-card/replace-renew-card"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "vital_records_id",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/government-id/bc-services-card"
+              }
+            },
+            {
+              "name": "Register your child's birth",
+              "desc": "Register a newborn's birth online through the Electronic Birth Registration System, a legal requirement in British Columbia.",
+              "users": "New parents",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Electronic Birth Registration System",
+                  "url": "https://ebr.vs.gov.bc.ca/"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Birth registration",
+                  "url": "https://www2.gov.bc.ca/gov/content/life-events/birth-adoption/births/birth-registration"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "vital_records_id",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/home/get-help-with-government-services"
+              }
+            },
+            {
+              "name": "Order a birth, marriage, or death certificate",
+              "desc": "Order certified copies of B.C. birth, marriage, and death certificates online through the Vital Statistics Online Certificate Ordering System.",
+              "users": "General public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Online Certificate Ordering System",
+                  "url": "https://ecos.vs.gov.bc.ca/"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Order certificates and copies",
+                  "url": "https://www2.gov.bc.ca/gov/content/life-events/order-certificates-copies"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "vital_records_id",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/home/get-help-with-government-services"
+              }
+            },
+            {
+              "name": "Get a marriage licence",
+              "desc": "Purchase a marriage licence before your wedding date, required to legally marry in British Columbia.",
+              "users": "Couples planning to marry",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Marriage licences",
+                  "url": "https://www2.gov.bc.ca/gov/content/life-events/marriage/marriage-licences"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Vital Statistics: 1-888-876-1633",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "vital_records_id",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/home/get-help-with-government-services"
+              }
+            },
+            {
+              "name": "Change your legal name",
+              "desc": "Apply for a legal change of name, or assume a spouse's last name after marriage.",
+              "users": "General public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Legal changes of name",
+                  "url": "https://www2.gov.bc.ca/gov/content/life-events/legal-changes-of-name"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Vital Statistics: 1-888-876-1633",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "vital_records_id",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/home/get-help-with-government-services"
+              }
+            },
+            {
+              "name": "Report a death and settle affairs after a death",
+              "desc": "Guidance on what to do when someone dies in B.C., including registering the death and an after-death checklist for settling affairs.",
+              "users": "Family members, executors",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "After a death",
+                  "url": "https://www2.gov.bc.ca/gov/content/life-events/death/after-death"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Vital Statistics: 1-888-876-1633",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "vital_records_id",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/home/get-help-with-government-services"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Keep your information up to date with government",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Update your address with multiple government organizations at once",
+              "desc": "Address Change BC lets people moving within British Columbia update their address with several provincial and local government organizations in a single online transaction.",
+              "users": "B.C. residents moving within the province",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Address Change BC",
+                  "url": "https://www.addresschange.gov.bc.ca/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/citizens-services/bc-registries-online-services"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#0072ce",
+      "title": "GOAL 2",
+      "short_name": "People and businesses have secure digital identity to access government services online",
+      "legend_label": "Digital identity & access",
+      "description": "The BC Services Card, BC Wallet, and BCeID give people and businesses a trusted way to prove who they are and log in to government services online, without a separate account for every site.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Set up secure digital ID",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Set up a BC Services Card account for online services",
+              "desc": "Create a BC Services Card digital account, using your physical BC Services Card, to log in to government and partner services online.",
+              "users": "B.C. residents",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Set up your account",
+                  "url": "https://id.gov.bc.ca/account/setup-instruction"
+                },
+                {
+                  "type": "ch-app",
+                  "label": "BC Services Card app",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/government-id/bc-services-card"
+              }
+            },
+            {
+              "name": "Get a BC Wallet or person credential",
+              "desc": "BC Wallet is a mobile app that lets people hold and share verifiable digital credentials, including a Person Credential based on their BC Services Card.",
+              "users": "B.C. residents",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "BC Wallet",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/government-id/bc-wallet"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Person credential",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/government-id/person-credential"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/government-id/bc-services-card"
+              }
+            },
+            {
+              "name": "Get a BCeID to access online government services",
+              "desc": "A BCeID account provides secure sign-in to a range of provincial and municipal online services for individuals and businesses.",
+              "users": "General public, businesses",
+              "user_groups": [
+                "General public",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "bceid.ca",
+                  "url": "https://www.bceid.ca/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "identity_credentials_access",
+                  "domain": "privacy_government_access"
+                },
+                "business": {
+                  "tier": "core_business_needs",
+                  "domain": "registration_legal"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/home/get-help-with-government-services"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Access government services online",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Log in to participating services with your BC Services Card",
+              "desc": "Use BC Services Card Login to sign in to websites and services that accept it, without creating a separate username and password for each one.",
+              "users": "General public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Websites that accept BC Services Card Login",
+                  "url": "https://id.gov.bc.ca/account/services"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "BC Services Card Login",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/government-id/bcservicescardapp"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/government-id/bc-services-card"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#2e7d32",
+      "title": "GOAL 3",
+      "short_name": "Government information is open, protected, and accountable to the public",
+      "legend_label": "Open & accountable government",
+      "description": "The ministry administers freedom of information and privacy law, publishes open government information, and oversees data standards, including the Anti-Racism Data Act.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Request government records",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Request information about government activities",
+              "desc": "Under the Freedom of Information and Protection of Privacy Act, anyone can request records about the activities or programs of a B.C. government ministry or agency.",
+              "users": "General public, media, researchers",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Request government records",
+                  "url": "https://foirequestform.gov.bc.ca/?general="
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Request information about government activities",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/about-the-bc-government/open-government/open-information/freedom-of-information/general-information-request"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FOIPPA",
+                  "color": "#2e7d32",
+                  "full_name": "Freedom of Information and Protection of Privacy Act  -  Right of access to records"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/about-the-bc-government/open-government/open-information/freedom-of-information"
+              }
+            },
+            {
+              "name": "Request your personal information from government records",
+              "desc": "Individuals can request their own personal information held in provincial government records, with no application fee.",
+              "users": "General public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Request your personal information",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/about-the-bc-government/open-government/open-information/freedom-of-information/personal-information-request"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FOIPPA",
+                  "color": "#2e7d32",
+                  "full_name": "Freedom of Information and Protection of Privacy Act  -  Right of access to records"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/about-the-bc-government/open-government/open-information/freedom-of-information"
+              }
+            },
+            {
+              "name": "Request personal information for someone else",
+              "desc": "Request personal information held by government on behalf of another person, for example as their legal representative.",
+              "users": "Legal representatives, family members",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Request personal information for someone else",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/about-the-bc-government/open-government/open-information/freedom-of-information/personal-information-request-for-someone-else"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FOIPPA",
+                  "color": "#2e7d32",
+                  "full_name": "Freedom of Information and Protection of Privacy Act  -  Right of access to records"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/about-the-bc-government/open-government/open-information/freedom-of-information"
+              }
+            },
+            {
+              "name": "Check the status of a freedom of information request",
+              "desc": "Check on the progress of a submitted freedom of information request.",
+              "users": "FOI applicants",
+              "user_groups": [
+                "General public",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Check the status of a request",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/about-the-bc-government/open-government/open-information/completed-foi-requests#status"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/about-the-bc-government/open-government/open-information/freedom-of-information"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Access open government information",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Search the open information catalogue",
+              "desc": "Search and browse government records that have already been released or are published proactively, before submitting a new FOI request.",
+              "users": "General public, researchers",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Search the catalogue",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/about-the-bc-government/open-government/open-information/browse-search-catalogue"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/about-the-bc-government/open-government/open-information/freedom-of-information"
+              }
+            },
+            {
+              "name": "View statistics on systemic racism and racial equity",
+              "desc": "Under the Anti-Racism Data Act, government publishes annual statistics and research to help identify and eliminate systemic racism in public programs and services.",
+              "users": "General public, researchers, Indigenous and racialized communities",
+              "user_groups": [
+                "General public",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Annual releases",
+                  "url": "https://antiracism.gov.bc.ca/annual-releases"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Anti-Racism Data Act",
+                  "url": "https://www2.gov.bc.ca/gov/content/data/policy-standards/legislation/anti-racism-data-act"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ARDA",
+                  "color": "#2e7d32",
+                  "full_name": "Anti-Racism Data Act  -  Publication of statistics and research"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/data/policy-standards/legislation/anti-racism-data-act"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#b45309",
+      "title": "GOAL 4",
+      "short_name": "B.C.'s registries, procurement, and connectivity connect people and businesses to the economy",
+      "legend_label": "Registries, procurement & connectivity",
+      "description": "BC Registries administers the legal framework for starting and searching businesses and other organizations, BC Bid and BC Auction connect suppliers and buyers with government, and connectivity programs expand high-speed internet to underserved communities.",
+      "metrics": [],
+      "css_class": "goal-4",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Register and search a business or organization",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Register a sole proprietorship or partnership",
+              "desc": "Start, register, and maintain a sole proprietorship or general partnership through the BC Business Registry.",
+              "users": "Small business owners",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Business Registry",
+                  "url": "https://www.account.bcregistry.gov.bc.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "registration_legal",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Register to collect PST",
+                    "ministry": "fin"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/citizens-services/bc-registries-online-services"
+              }
+            },
+            {
+              "name": "Incorporate or manage a company",
+              "desc": "Incorporate a limited company or benefit company, file annual reports, and manage director and share information through Corporate Online and the BC Registry application.",
+              "users": "Business owners, corporate officers",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Corporate Online",
+                  "url": "https://www.corporateonline.gov.bc.ca/"
+                },
+                {
+                  "type": "ch-transact",
+                  "label": "BC Registry application",
+                  "url": "https://www.business.bcregistry.gov.bc.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "BCA",
+                  "color": "#b45309",
+                  "full_name": "Business Corporations Act  -  Incorporation and corporate filings"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "registration_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/citizens-services/bc-registries-online-services"
+              }
+            },
+            {
+              "name": "Register or maintain a not-for-profit society",
+              "desc": "Incorporate, amalgamate, or maintain a not-for-profit society under the Societies Act through Societies Online.",
+              "users": "Not-for-profit organizations",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Societies Online",
+                  "url": "https://www.bcregistry.ca/societies/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "registration_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/citizens-services/bc-registries-online-services"
+              }
+            },
+            {
+              "name": "Register or maintain a cooperative association",
+              "desc": "Incorporate, dissolve, or maintain a cooperative association that provides goods or services such as housing, food, or health care to its members.",
+              "users": "Cooperative associations",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Cooperative associations",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/business/managing-a-business/permits-licences/businesses-incorporated-companies/cooperative-associations"
+                },
+                {
+                  "type": "ch-transact",
+                  "label": "BC Registry application",
+                  "url": "https://www.business.bcregistry.gov.bc.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "registration_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/citizens-services/bc-registries-online-services"
+              }
+            },
+            {
+              "name": "Search for business, lien, or manufactured home records",
+              "desc": "Search registered businesses, personal property liens, and manufactured home records, or request certificates of status and good standing.",
+              "users": "Lenders, buyers, businesses, home owners",
+              "user_groups": [
+                "Businesses & employers",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Personal Property Registry",
+                  "url": "https://www.assets.bcregistry.gov.bc.ca"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Manufactured Home Registry",
+                  "url": "https://www2.gov.bc.ca/gov/content/housing-tenancy/owning-a-home/manufactured-home-registry"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Request information about businesses",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/business/managing-a-business/permits-licences/businesses-incorporated-companies/searches-certificates"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "scenario_dependent",
+                  "domain": "housing_property"
+                },
+                "business": {
+                  "tier": "core_business_needs",
+                  "domain": "registration_legal"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/citizens-services/bc-registries-online-services"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Do business with government",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Bid on government contracts",
+              "desc": "BC Bid is the online marketplace where public sector organizations advertise contract opportunities for goods, services, and construction, and suppliers submit bids.",
+              "users": "Suppliers, contractors",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "BC Bid",
+                  "url": "https://www2.gov.bc.ca/gov/content?id=C8A3B1B982304D88B87FD75473A62B14"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "government_procurement",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content?id=C8A3B1B982304D88B87FD75473A62B14"
+              }
+            },
+            {
+              "name": "Buy surplus government assets",
+              "desc": "BC Auction sells used and surplus provincial government assets through online bidding, open to anyone with internet access.",
+              "users": "General public, businesses",
+              "user_groups": [
+                "General public",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "BC Auction",
+                  "url": "https://www.bcauction.ca/open.dll/welcome"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "government_procurement",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/citizens-services"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Get connected to high-speed internet",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for connectivity infrastructure funding",
+              "desc": "Connecting Communities BC funds projects that expand high-speed internet access to underserved households, with priority for rural, remote, and First Nations communities.",
+              "users": "Internet service providers, local and Indigenous governments",
+              "user_groups": [
+                "Municipalities & local governments",
+                "Indigenous communities",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Connecting Communities BC",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/connectivity-in-bc/20530/20601"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "utilities",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/connectivity-in-bc"
+              }
+            },
+            {
+              "name": "Check internet and cellular coverage in your area",
+              "desc": "Find out the current status of high-speed internet and cellular service availability across British Columbia.",
+              "users": "General public, community planners",
+              "user_groups": [
+                "General public",
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Connectivity coverage in B.C.",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/connectivity-in-bc/20358"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "utilities",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/connectivity-in-bc"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Provide identity assurance and authentication infrastructure for digital government services",
+      "desc": "Operates the BC Services Card Authentication Service and related identity infrastructure that lets other government services verify who a person is online.",
+      "users": "Government service teams, technology partners",
+      "channels": [
+        {
+          "type": "ch-web",
+          "label": "BC Services Card Authentication Service",
+          "url": null
+        }
+      ],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "identity_credentials_access",
+        "domain": "privacy_government_access",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/governments/government-id/bc-services-card"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Lead information technology strategy, policy, and shared infrastructure for government",
+      "desc": "Sets IT strategy, policy, and standards for the province through Connected Services BC, provides IT infrastructure and shared services, and manages IT capital investment across government.",
+      "users": "Government ministries and agencies",
+      "channels": [
+        {
+          "type": "ch-web",
+          "label": "Connected Services BC",
+          "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/central-government-agencies/csbc"
+        }
+      ],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "identity_credentials_access",
+        "domain": "privacy_government_access",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/citizens-services"
+      }
+    }
+  ],
+  "mandate_date": "July 17, 2025",
+  "mandate_minister": "Diana Gibson",
+  "mandate_pdf": "https://www2.gov.bc.ca/assets/gov/government/ministries-organizations/premier-cabinet-mlas/minister-letter/mandate_letter_diana_gibson.pdf",
+  "cross_cutting": [
+    "Growing the Economy & Good Jobs",
+    "Affordability & Housing Costs",
+    "Strengthening Health Care",
+    "Community Safety",
+    "Climate Action",
+    "Reconciliation with Indigenous Peoples"
+  ],
+  "mandate_legend": [],
+  "channel_filters": [
+    {
+      "code": "ch-transact",
+      "label": "Online transaction",
+      "bg_color": "#c8e6c9",
+      "text_color": "#1b5e20"
+    },
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-app",
+      "label": "Mobile app",
+      "bg_color": "#e0f2f1",
+      "text_color": "#00695c"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-email",
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Families & caregivers",
+    "Businesses & employers",
+    "Property owners",
+    "Municipalities & local governments",
+    "Indigenous communities"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

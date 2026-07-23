@@ -1,0 +1,338 @@
+{
+  "prefix": "hma",
+  "name": "Ministry of Housing and Municipal Affairs",
+  "short_name": "Housing & Municipal Affairs",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "Tenants and landlords have fair, accessible tenancy processes",
+      "legend_label": "Residential tenancies",
+      "main_services": [
+        { "number": 1, "name": "Start, manage and end a residential tenancy" },
+        { "number": 2, "name": "Live in and manage strata housing" }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "short_name": "Renters, homeowners and people in housing need can find and afford a place to live",
+      "legend_label": "Housing affordability & supports",
+      "main_services": [
+        { "number": 1, "name": "Get help paying rent" },
+        { "number": 2, "name": "Find subsidized or affordable rental housing" },
+        { "number": 3, "name": "Get help if you're experiencing homelessness" },
+        { "number": 4, "name": "Adapt your home for accessibility" },
+        { "number": 5, "name": "Manage home ownership costs" },
+        { "number": 6, "name": "Access Indigenous housing supports" }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#b45309",
+      "short_name": "Homes are built to code and short-term rentals support B.C.'s housing supply",
+      "legend_label": "Building safety & short-term rentals",
+      "main_services": [
+        { "number": 1, "name": "Build, renovate or buy a home to code" },
+        { "number": 2, "name": "Register and operate a short-term rental" }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#6a1b9a",
+      "short_name": "Local governments have the funding, tools and democratic processes to serve their communities",
+      "legend_label": "Local government support",
+      "main_services": [
+        { "number": 1, "name": "Access local government funding programs" },
+        { "number": 2, "name": "Take part in local government elections" },
+        { "number": 3, "name": "Understand local government powers and bylaws" }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "RTA",
+      "full_name": "Residential Tenancy Act",
+      "color": "#1565c0",
+      "citation": "SBC 2002, c 78",
+      "summary": "Governs most residential tenancies in B.C. and establishes the Residential Tenancy Branch's dispute resolution process. Referenced directly (bclaws document id statreg/02078_01) from the Residential Tenancy Branch's own tenancy dispute resolution page.",
+      "sections": [
+        {
+          "ref": "Starting a tenancy",
+          "title": "Tenancy agreements and starting a tenancy",
+          "description": "Sets out the requirements for tenancy agreements, deposits, and the rights and responsibilities of tenants and landlords at the start of a tenancy.",
+          "anchor_id": "RTA-Starting",
+          "services": [
+            { "name": "Learn your rights when starting a tenancy", "type": "supporting", "goal_number": 1, "goal_color": "#1565c0", "ms_number": 1, "ms_name": "Start, manage and end a residential tenancy" }
+          ]
+        },
+        {
+          "ref": "Dispute resolution",
+          "title": "Dispute resolution and arbitration",
+          "description": "Establishes the direct request, facilitation, participatory hearing and expedited hearing processes the Residential Tenancy Branch uses to resolve disputes.",
+          "anchor_id": "RTA-Dispute",
+          "services": [
+            { "name": "Resolve a tenancy dispute with your landlord or tenant", "type": "supporting", "goal_number": 1, "goal_color": "#1565c0", "ms_number": 1, "ms_name": "Start, manage and end a residential tenancy" }
+          ]
+        },
+        {
+          "ref": "Ending a tenancy",
+          "title": "Ending a tenancy and evictions",
+          "description": "Sets out the lawful ways a tenancy can end, including tenant notice, landlord eviction notices, mutual agreement and special circumstances.",
+          "anchor_id": "RTA-Ending",
+          "services": [
+            { "name": "End a tenancy or respond to an eviction notice", "type": "supporting", "goal_number": 1, "goal_color": "#1565c0", "ms_number": 1, "ms_name": "Start, manage and end a residential tenancy" }
+          ]
+        },
+        {
+          "ref": "Rent",
+          "title": "Rent and rent increases",
+          "description": "Sets the rules for paying rent and the maximum allowable annual rent increase.",
+          "anchor_id": "RTA-Rent",
+          "services": [
+            { "name": "Check the rules on rent and rent increases", "type": "supporting", "goal_number": 1, "goal_color": "#1565c0", "ms_number": 1, "ms_name": "Start, manage and end a residential tenancy" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "MHPTA",
+      "full_name": "Manufactured Home Park Tenancy Act",
+      "color": "#5c6bc0",
+      "citation": "SBC 2002, c 77",
+      "summary": "Governs tenancies in manufactured home parks in parallel with the Residential Tenancy Act. Referenced directly (bclaws document id statreg/02077_01) alongside the RTA on the Residential Tenancy Branch's dispute resolution page as one of the two acts a dispute must fall under.",
+      "sections": [
+        {
+          "ref": "Dispute resolution",
+          "title": "Dispute resolution",
+          "description": "Extends the Residential Tenancy Branch's dispute resolution processes to manufactured home park tenancies.",
+          "anchor_id": "MHPTA-Dispute",
+          "services": [
+            { "name": "Resolve a tenancy dispute with your landlord or tenant", "type": "supporting", "goal_number": 1, "goal_color": "#1565c0", "ms_number": 1, "ms_name": "Start, manage and end a residential tenancy" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "SPA",
+      "full_name": "Strata Property Act",
+      "color": "#00695c",
+      "citation": "SBC 1998, c 43",
+      "summary": "Governs strata corporations in B.C., including bylaws and rules, dispute resolution, and the process to terminate (wind up) a strata corporation. Named directly on the Province's strata legislation and changes page.",
+      "sections": [
+        {
+          "ref": "Bylaws and rules",
+          "title": "Bylaws and rules",
+          "description": "Authorizes strata corporations to set bylaws and rules governing the use of strata lots and common property.",
+          "anchor_id": "SPA-Bylaws",
+          "services": [
+            { "name": "Understand your strata's bylaws and rules", "type": "supporting", "goal_number": 1, "goal_color": "#1565c0", "ms_number": 2, "ms_name": "Live in and manage strata housing" }
+          ]
+        },
+        {
+          "ref": "Dispute resolution",
+          "title": "Dispute resolution",
+          "description": "Sets out how strata disputes can be resolved within the strata corporation, through the Civil Resolution Tribunal, in court, or by arbitration.",
+          "anchor_id": "SPA-Dispute",
+          "services": [
+            { "name": "Resolve a strata property dispute", "type": "supporting", "goal_number": 1, "goal_color": "#1565c0", "ms_number": 2, "ms_name": "Live in and manage strata housing" }
+          ]
+        },
+        {
+          "ref": "Termination",
+          "title": "Termination of a strata corporation",
+          "description": "Sets out the process for a strata corporation to wind up and cancel its strata plan with an 80% vote of all owners.",
+          "anchor_id": "SPA-Termination",
+          "services": [
+            { "name": "Wind up a strata corporation", "type": "supporting", "goal_number": 1, "goal_color": "#1565c0", "ms_number": 2, "ms_name": "Live in and manage strata housing" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "STRAA",
+      "full_name": "Short-Term Rental Accommodations Act",
+      "color": "#c2185b",
+      "citation": "SBC 2023, c 35",
+      "summary": "Establishes the provincial short-term rental registry, the principal residence requirement, and stronger local government enforcement tools. Confirmed via the Province's short-term rental legislation page and registration page, and Bill 35 (2023).",
+      "sections": [
+        {
+          "ref": "Registration",
+          "title": "Provincial registration",
+          "description": "Requires short-term rental hosts, platforms and strata hotel platforms operating in B.C. to register annually with the Province.",
+          "anchor_id": "STRAA-Registration",
+          "services": [
+            { "name": "Register your short-term rental as a host", "type": "supporting", "goal_number": 3, "goal_color": "#b45309", "ms_number": 2, "ms_name": "Register and operate a short-term rental" }
+          ]
+        },
+        {
+          "ref": "Principal residence requirement",
+          "title": "Principal residence requirement",
+          "description": "Limits short-term rentals in many communities to a host's principal residence plus one secondary suite or accessory dwelling unit.",
+          "anchor_id": "STRAA-PrincipalResidence",
+          "services": [
+            { "name": "Check if the principal residence requirement applies to your rental", "type": "supporting", "goal_number": 3, "goal_color": "#b45309", "ms_number": 2, "ms_name": "Register and operate a short-term rental" }
+          ]
+        },
+        {
+          "ref": "Compliance and enforcement",
+          "title": "Compliance and enforcement",
+          "description": "Establishes the provincial Compliance and Enforcement Unit and increased fines local governments can set for short-term rental bylaw offences.",
+          "anchor_id": "STRAA-Enforcement",
+          "services": [
+            { "name": "Report a short-term rental compliance concern", "type": "supporting", "goal_number": 3, "goal_color": "#b45309", "ms_number": 2, "ms_name": "Register and operate a short-term rental" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "BA",
+      "full_name": "Building Act",
+      "color": "#8d6e63",
+      "summary": "Establishes the provincial building code framework and streamlines local government building regulation across B.C. Named directly on the Province's construction standards page.",
+      "sections": [
+        {
+          "ref": "BC Codes",
+          "title": "Provincial building code",
+          "description": "Establishes the BC Building, Plumbing and Fire codes that apply to construction, renovation and alteration of buildings.",
+          "anchor_id": "BA-Codes",
+          "services": [
+            { "name": "Check building code requirements for your project", "type": "supporting", "goal_number": 3, "goal_color": "#b45309", "ms_number": 1, "ms_name": "Build, renovate or buy a home to code" }
+          ]
+        },
+        {
+          "ref": "Permits",
+          "title": "Building permits and local government authority",
+          "description": "Sets the provincial framework local governments use to require and issue building permits.",
+          "anchor_id": "BA-Permits",
+          "services": [
+            { "name": "Get a permit before you build or renovate", "type": "supporting", "goal_number": 3, "goal_color": "#b45309", "ms_number": 1, "ms_name": "Build, renovate or buy a home to code" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "HPA",
+      "full_name": "Homeowner Protection Act",
+      "color": "#5d4037",
+      "citation": "SBC 1998, c 31",
+      "summary": "Requires residential builders to be licensed and new homes to carry third-party warranty insurance. Confirmed via a direct bclaws link (document id freeside/00_98031_01) on BC Housing's builder licensing page.",
+      "sections": [
+        {
+          "ref": "Licensing",
+          "title": "Residential builder licensing",
+          "description": "Requires general contractors, developers and building envelope renovators to hold a residential builder licence before starting construction.",
+          "anchor_id": "HPA-Licensing",
+          "services": [
+            { "name": "Become a licensed residential builder", "type": "supporting", "goal_number": 3, "goal_color": "#b45309", "ms_number": 1, "ms_name": "Build, renovate or buy a home to code" }
+          ]
+        },
+        {
+          "ref": "Warranty registration",
+          "title": "New home warranty registration",
+          "description": "Requires new homes built by licensed residential builders to be registered for third-party home warranty insurance.",
+          "anchor_id": "HPA-Warranty",
+          "services": [
+            { "name": "Register a new home for warranty protection", "type": "supporting", "goal_number": 3, "goal_color": "#b45309", "ms_number": 1, "ms_name": "Build, renovate or buy a home to code" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "LGGA",
+      "full_name": "Local Government Grants Act",
+      "color": "#6a1b9a",
+      "citation": "RSBC 1996, c 275",
+      "summary": "Authorizes provincial grants and transfers to local governments. Confirmed via a direct bclaws link (document id statreg/96275_01) on the Province's local government grants and transfers page.",
+      "sections": [
+        {
+          "ref": "Grants",
+          "title": "Grants to local governments",
+          "description": "Authorizes conditional and unconditional grants to municipalities and regional districts, including infrastructure and small community grants.",
+          "anchor_id": "LGGA-Grants",
+          "services": [
+            { "name": "Apply for local government infrastructure or community grant funding", "type": "supporting", "goal_number": 4, "goal_color": "#6a1b9a", "ms_number": 1, "ms_name": "Access local government funding programs" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "LGA",
+      "full_name": "Local Government Act",
+      "color": "#8e24aa",
+      "citation": "RSBC 2015, c 1",
+      "summary": "The core legislative framework for regional districts and local government elections and bylaw powers in B.C. Confirmed via a direct bclaws link (document id lc/statreg/r15001_00) on the Province's general local elections page.",
+      "sections": [
+        {
+          "ref": "Candidate eligibility",
+          "title": "Nomination and eligibility for local office",
+          "description": "Sets residency and nomination requirements for candidates in general local elections.",
+          "anchor_id": "LGA-Candidates",
+          "services": [
+            { "name": "Run for local government office", "type": "supporting", "goal_number": 4, "goal_color": "#6a1b9a", "ms_number": 2, "ms_name": "Take part in local government elections" }
+          ]
+        },
+        {
+          "ref": "Voter eligibility",
+          "title": "Voter eligibility and voting",
+          "description": "Sets out who is eligible to vote in general local elections and how voting opportunities are provided.",
+          "anchor_id": "LGA-Voters",
+          "services": [
+            { "name": "Vote in a local government election", "type": "supporting", "goal_number": 4, "goal_color": "#6a1b9a", "ms_number": 2, "ms_name": "Take part in local government elections" }
+          ]
+        },
+        {
+          "ref": "Regional district bylaws",
+          "title": "Regional district bylaw-making authority",
+          "description": "Authorizes regional district boards to make bylaws under the powers and services set out in the Act.",
+          "anchor_id": "LGA-Bylaws",
+          "services": [
+            { "name": "Look up your local government's bylaws", "type": "supporting", "goal_number": 4, "goal_color": "#6a1b9a", "ms_number": 3, "ms_name": "Understand local government powers and bylaws" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CC",
+      "full_name": "Community Charter",
+      "color": "#00897b",
+      "citation": "SBC 2003, c 26",
+      "summary": "The core legislative framework for municipal governance and bylaw-making powers in B.C. Confirmed via a direct bclaws link (document id statreg/03026_00) on the Province's short-term rental legislation page.",
+      "sections": [
+        {
+          "ref": "Bylaw-making",
+          "title": "Municipal bylaw-making authority",
+          "description": "Grants municipal councils broad authority to make bylaws, including for business licensing and zoning.",
+          "anchor_id": "CC-Bylaws",
+          "services": [
+            { "name": "Look up your local government's bylaws", "type": "supporting", "goal_number": 4, "goal_color": "#6a1b9a", "ms_number": 3, "ms_name": "Understand local government powers and bylaws" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "LECFA",
+      "full_name": "Local Elections Campaign Financing Act",
+      "color": "#00838f",
+      "citation": "SBC 2014, c 18",
+      "summary": "Governs campaign financing and election advertising rules for candidates and elector organizations in general local elections. Confirmed via a direct bclaws link (document id statreg/14018) on the Province's general local elections page.",
+      "sections": [
+        {
+          "ref": "Campaign financing",
+          "title": "Campaign financing rules for candidates",
+          "description": "Sets campaign financing and election advertising rules that candidates and their financial agents must follow.",
+          "anchor_id": "LECFA-Financing",
+          "services": [
+            { "name": "Run for local government office", "type": "supporting", "goal_number": 4, "goal_color": "#6a1b9a", "ms_number": 2, "ms_name": "Take part in local government elections" }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 10,
+    "sections_count": 21,
+    "services_with_leg_count": 18,
+    "services_multi_act_count": 3
+  }
+}

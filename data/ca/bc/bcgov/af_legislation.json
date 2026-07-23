@@ -1,0 +1,372 @@
+{
+  "prefix": "af",
+  "name": "Agriculture and Food",
+  "short_name": "Agriculture & Food",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "Build and maintain a competitive and profitable agriculture and food sector",
+      "legend_label": "Competitive agri-food sector",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Grow and market a farm or food business"
+        },
+        {
+          "number": 2,
+          "name": "Get agriculture insurance and income protection"
+        },
+        {
+          "number": 3,
+          "name": "Buy and learn about local food"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "short_name": "B.C.'s agriculture and food sector manages risk and adapts to change",
+      "legend_label": "Risk management & food safety",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Keep livestock, crops and food safe"
+        },
+        {
+          "number": 2,
+          "name": "Resolve a farm practices or land use concern"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#00838f",
+      "short_name": "Fish and seafood are farmed, harvested and processed sustainably",
+      "legend_label": "Fisheries & aquaculture",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Operate an aquaculture site"
+        },
+        {
+          "number": 2,
+          "name": "Process, receive or sell seafood"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#6a1b9a",
+      "short_name": "Modernize B.C.'s liquor and cannabis licensing and enforcement system",
+      "legend_label": "Liquor & cannabis regulation",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get a liquor or cannabis licence"
+        },
+        {
+          "number": 2,
+          "name": "Comply with liquor and cannabis rules"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "FSAA",
+      "full_name": "Fish and Seafood Act",
+      "color": "#0077b6",
+      "citation": "SBC 2015, c 14",
+      "summary": "Governs licensing, food safety duties, traceability and enforcement for the handling and processing of fish, seafood and aquatic plants sold within B.C. Verified directly on bclaws.gov.bc.ca.",
+      "sections": [
+        {
+          "ref": "Part 3",
+          "title": "Licensing and duties of operators",
+          "description": "Division 1 covers issuing, varying and reviewing licences for fish receivers, seafood processors and fisher vendors.",
+          "anchor_id": "FSAA-Part3",
+          "services": [
+            {
+              "name": "Get a seafood processor licence",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#00838f",
+              "ms_number": 2,
+              "ms_name": "Process, receive or sell seafood"
+            },
+            {
+              "name": "Get a fish receiver licence",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#00838f",
+              "ms_number": 2,
+              "ms_name": "Process, receive or sell seafood"
+            },
+            {
+              "name": "Get a fisher vendor licence to sell your catch directly",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#00838f",
+              "ms_number": 2,
+              "ms_name": "Process, receive or sell seafood"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "LCLA",
+      "full_name": "Liquor Control and Licensing Act",
+      "color": "#6a1b9a",
+      "citation": "SBC 2015, c 19",
+      "summary": "Governs licensing, permits and enforcement for liquor manufacturers, retailers, and licensed establishments and events. Replaced RSBC 1996, c 267. Verified directly on bclaws.gov.bc.ca.",
+      "sections": [
+        {
+          "ref": "Licensing",
+          "title": "Licensing of establishments and events",
+          "description": "Provisions governing liquor licences and permits for restaurants, bars, manufacturers and special events, administered by the Liquor and Cannabis Regulation Branch.",
+          "anchor_id": "LCLA-Licensing",
+          "services": [
+            {
+              "name": "Apply for a liquor licence or permit for your business or event",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#6a1b9a",
+              "ms_number": 1,
+              "ms_name": "Get a liquor or cannabis licence"
+            }
+          ]
+        },
+        {
+          "ref": "Compliance and enforcement",
+          "title": "Inspections and enforcement",
+          "description": "Provisions enabling inspection, complaint investigation and enforcement action against licensees.",
+          "anchor_id": "LCLA-Enforcement",
+          "services": [
+            {
+              "name": "Report a liquor or cannabis compliance concern",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#6a1b9a",
+              "ms_number": 2,
+              "ms_name": "Comply with liquor and cannabis rules"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CCLA",
+      "full_name": "Cannabis Control and Licensing Act",
+      "color": "#ad1457",
+      "citation": "SBC 2018, c 29",
+      "summary": "Governs licensing, retail regulation and enforcement of non-medical cannabis in B.C. Citation corroborated via CanLII and the Liquor and Cannabis Regulation Branch's cannabis law and policy page.",
+      "sections": [
+        {
+          "ref": "Licensing",
+          "title": "Licensing of cannabis retail and related activities",
+          "description": "Provisions governing cannabis retail store licences and authorizations.",
+          "anchor_id": "CCLA-Licensing",
+          "services": [
+            {
+              "name": "Apply for a cannabis retail or production licence",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#6a1b9a",
+              "ms_number": 1,
+              "ms_name": "Get a liquor or cannabis licence"
+            }
+          ]
+        },
+        {
+          "ref": "Compliance and enforcement",
+          "title": "Compliance and enforcement",
+          "description": "Provisions enabling inspection, complaint investigation and enforcement action against cannabis licensees.",
+          "anchor_id": "CCLA-Enforcement",
+          "services": [
+            {
+              "name": "Report a liquor or cannabis compliance concern",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#6a1b9a",
+              "ms_number": 2,
+              "ms_name": "Comply with liquor and cannabis rules"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "FPPA",
+      "full_name": "Farm Practices Protection (Right to Farm) Act",
+      "color": "#8d6e63",
+      "citation": "RSBC 1996, c 131",
+      "summary": "Protects a farmer's right to conduct normal farm practices within the Agricultural Land Reserve and other designated farming areas, and establishes the BC Farm Industry Review Board complaint process. Verified directly on bclaws.gov.bc.ca.",
+      "sections": [
+        {
+          "ref": "s.2-6",
+          "title": "Determination of normal farm practice",
+          "description": "Sets out the right to farm test and the BC Farm Industry Review Board's process for hearing nuisance complaints.",
+          "anchor_id": "FPPA-s2-6",
+          "services": [
+            {
+              "name": "Resolve a complaint about noise, odour or dust from a farm operation",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Resolve a farm practices or land use concern"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "ALCA",
+      "full_name": "Agricultural Land Commission Act",
+      "color": "#33691e",
+      "citation": "SBC 2002, c 36",
+      "summary": "Establishes the Provincial Agricultural Land Commission and governs the Agricultural Land Reserve, a provincial land use zone protecting agricultural land. Citation corroborated via CanLII and the ministry's 2026/27 Service Plan (Appendix A).",
+      "sections": [
+        {
+          "ref": "Administration of the ALR",
+          "title": "Agricultural Land Reserve",
+          "description": "Provisions establishing the Agricultural Land Commission's mandate to preserve agricultural land and encourage farming.",
+          "anchor_id": "ALCA-ALR",
+          "services": [
+            {
+              "name": "Protect farmland through the Agricultural Land Reserve",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Resolve a farm practices or land use concern"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "FSA",
+      "full_name": "Food Safety Act",
+      "color": "#c62828",
+      "citation": "SBC 2002, c 28",
+      "summary": "Regulates food safety across B.C.'s food industry from agriculture and processing to retail and restaurants; the Ministry of Agriculture and Food administers the Act's Meat Inspection Regulation. Citation confirmed via the Ministry of Health's Food Safety Legislation page, which links directly to the bclaws.gov.bc.ca consolidation.",
+      "sections": [
+        {
+          "ref": "Meat Inspection Regulation",
+          "title": "Slaughter establishment licensing",
+          "description": "Graduated licensing of provincial slaughter establishments, administered by the Ministry of Agriculture and Food.",
+          "anchor_id": "FSA-MeatInspection",
+          "services": [
+            {
+              "name": "Get a meat inspection licence to operate a slaughter establishment",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Keep livestock, crops and food safe"
+            }
+          ]
+        },
+        {
+          "ref": "Duty to ensure food safety",
+          "title": "Food safety plans",
+          "description": "General duty of food establishments to ensure food safety and maintain documented food safety and sanitation plans.",
+          "anchor_id": "FSA-DutyFoodSafety",
+          "services": [
+            {
+              "name": "Develop a food safety plan for your processing business",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Keep livestock, crops and food safe"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "AHA",
+      "full_name": "Animal Health Act",
+      "color": "#ef6c00",
+      "citation": "SBC 2014, c 16",
+      "summary": "Modernized animal disease control legislation (in force January 19, 2015) expanding provincial disease control authority, inspection, seizure, quarantine and emergency powers. Confirmed via a BC Gov News release fetched from news.gov.bc.ca.",
+      "sections": [
+        {
+          "ref": "Disease control and inspection",
+          "title": "Disease control powers",
+          "description": "Provincial authority for inspections, seizures, quarantine and surveillance orders covering over 120 animal diseases.",
+          "anchor_id": "AHA-DiseaseControl",
+          "services": [
+            {
+              "name": "Report and manage animal disease and health concerns",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Keep livestock, crops and food safe"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "BeeA",
+      "full_name": "Bee Act",
+      "color": "#9c27b0",
+      "citation": "RSBC 1996, c 29",
+      "summary": "Requires registration of apiaries and beekeepers, and gives inspectors powers to control bee disease. Verified directly on bclaws.gov.bc.ca.",
+      "sections": [
+        {
+          "ref": "s.3-5",
+          "title": "Registration of apiaries and beekeepers",
+          "description": "A person must not keep bees except in a registered apiary; sets out the registration and certification process.",
+          "anchor_id": "BeeA-s3-5",
+          "services": [
+            {
+              "name": "Register your beehives",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Keep livestock, crops and food safe"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "MIA",
+      "full_name": "Milk Industry Act",
+      "color": "#5d4037",
+      "citation": "RSBC 1996, c 289",
+      "summary": "Regulates the safety and licensing of milk and dairy products, together with the Milk Industry Standards Regulation. Citation confirmed via the Ministry of Health's Food Safety Legislation page, which links directly to the bclaws.gov.bc.ca consolidation.",
+      "sections": [
+        {
+          "ref": "Dairy plant licensing",
+          "title": "Dairy licensing and standards",
+          "description": "Licensing and inspection of dairy plants and dairy product standards.",
+          "anchor_id": "MIA-DairyLicensing",
+          "services": [
+            {
+              "name": "Get a licence to operate a dairy, poultry, fur or game farming operation",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Keep livestock, crops and food safe"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 9,
+    "sections_count": 12,
+    "services_with_leg_count": 13,
+    "services_multi_act_count": 1
+  }
+}

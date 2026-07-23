@@ -1,0 +1,1736 @@
+{
+  "prefix": "tt",
+  "full_name": "Ministry of Transportation and Transit",
+  "short_name": "Transportation & Transit",
+  "blurb": "Plans and maintains B.C.'s transportation network — highways, bridges, public transit, BC Ferries oversight, and commercial vehicle safety.",
+  "nav_name": "Transportation and Transit",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "GOAL 1",
+      "short_name": "British Columbians travel safely on well-maintained highways and roads",
+      "legend_label": "Highways & roads",
+      "description": "The ministry builds, maintains and permits use of B.C.'s provincial highway network, and keeps travellers informed about conditions, closures and construction.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Know before you travel",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Check road conditions before you travel",
+              "desc": "DriveBC gives real-time road conditions, closures, delays and highway webcams so travellers can plan a route before setting out, including conditions for inland ferry crossings.",
+              "users": "Travellers, commuters, commercial drivers",
+              "user_groups": [
+                "General public",
+                "Drivers & vehicle owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "DriveBC",
+                  "url": "https://www.drivebc.ca/"
+                },
+                {
+                  "type": "ch-app",
+                  "label": "DriveBC mobile app",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Check your route and restrictions before you drive a commercial vehicle",
+                    "ministry": "tt"
+                  },
+                  {
+                    "type": "shared_information",
+                    "service": "Get verified emergency information during an active disaster",
+                    "ministry": "emcr"
+                  },
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Check ferry conditions and closures before you travel",
+                    "ministry": "tt"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.drivebc.ca/"
+              }
+            },
+            {
+              "name": "Report a highway problem",
+              "desc": "Report potholes, debris, signal outages and other highway problems through DriveBC so maintenance crews can respond.",
+              "users": "Travellers, residents near provincial highways",
+              "user_groups": [
+                "General public",
+                "Drivers & vehicle owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "DriveBC - report a problem",
+                  "url": "https://www.drivebc.ca/"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Ministry district office",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/transportation"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get a permit to build, access or use a provincial highway",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for a highway access permit for commercial or development access",
+              "desc": "Local governments, developers and businesses need a highway use permit to create or change commercial or development access off a provincial highway, including a traffic impact study for larger developments.",
+              "users": "Developers, businesses, local governments",
+              "user_groups": [
+                "Businesses & employers",
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "PASport - apply for a highway use permit",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/funding-engagement-permits/permits/pasport"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Form H0020 Provincial Public Highway Permit Application",
+                  "url": "https://www.th.gov.bc.ca/forms/getForm.aspx?formId=404"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TA",
+                  "color": "#1565c0",
+                  "full_name": "Transportation Act - Minister's rights, powers and advantages over highway right-of-way"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/funding-engagement-permits/permits/access"
+              }
+            },
+            {
+              "name": "Apply for a highway access permit for a rural home or farm driveway",
+              "desc": "Property owners must apply for a highway use permit to create or change a driveway off a provincially maintained controlled-access or numbered highway, including access for large farm equipment reaching fields or barns. A permit is not needed for a single-family driveway off an ordinary side road outside a municipal boundary.",
+              "users": "Rural property owners, farmers",
+              "user_groups": [
+                "Property owners",
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "PASport - apply for a highway use permit",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/funding-engagement-permits/permits/pasport"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Application Checklist - Access",
+                  "url": "https://www.th.gov.bc.ca/forms/getForm.aspx?formId=1467"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TA",
+                  "color": "#1565c0",
+                  "full_name": "Transportation Act - Minister's rights, powers and advantages over highway right-of-way"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "scenario_dependent",
+                  "domain": "housing_property"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "licences_permits"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/funding-engagement-permits/permits/access"
+              }
+            },
+            {
+              "name": "Apply for a highway works permit to build or repair near a highway",
+              "desc": "A highway use permit is needed to construct, repair or maintain works — such as utility lines, drainage or signage — on or along a provincial highway right-of-way.",
+              "users": "Contractors, utility companies, local governments",
+              "user_groups": [
+                "Businesses & employers",
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "PASport - apply for a highway use permit",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/funding-engagement-permits/permits/pasport"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Highway Permits & Approvals Manual",
+                  "url": "https://www2.gov.bc.ca/assets/gov/driving-and-transportation/funding-engagement-permits/highway-permits/highway_permits_approval_manual.pdf"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TA",
+                  "color": "#1565c0",
+                  "full_name": "Transportation Act - Minister's rights, powers and advantages over highway right-of-way"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/funding-engagement-permits/permits"
+              }
+            },
+            {
+              "name": "Apply for a highway event permit",
+              "desc": "Organizers need a highway use permit to hold an event, such as a race, parade or filming activity, on or along a provincial highway right-of-way.",
+              "users": "Event organizers, community groups, businesses",
+              "user_groups": [
+                "General public",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "PASport - apply for a highway use permit",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/funding-engagement-permits/permits/pasport"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TA",
+                  "color": "#1565c0",
+                  "full_name": "Transportation Act - Minister's rights, powers and advantages over highway right-of-way"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "societal_needs_supports",
+                  "domain": "recreation_culture"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "licences_permits"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/funding-engagement-permits/permits"
+              }
+            },
+            {
+              "name": "Get a subdivision development referral for rural land near a highway",
+              "desc": "Developers and local governments proposing a rural subdivision use the Permits, Approvals and Subdivisions Portal (PASport) to get the ministry's referral on highway access and traffic impacts before subdivision approval.",
+              "users": "Developers, land surveyors, local governments",
+              "user_groups": [
+                "Businesses & employers",
+                "Property owners",
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "PASport - development approvals login",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/funding-engagement-permits/permits/pasport"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TA",
+                  "color": "#1565c0",
+                  "full_name": "Transportation Act - Minister's rights, powers and advantages over highway right-of-way"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/funding-engagement-permits/permits/pasport"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Follow transportation infrastructure projects near you",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Find transportation and highway improvement projects in your area",
+              "desc": "Information on transportation and highway infrastructure projects underway across the province and how they may affect travel.",
+              "users": "General public, local governments",
+              "user_groups": [
+                "General public",
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Transportation projects",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation-projects"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 2,
+                  "text": "Support improvements in BC's road infrastructure balanced with integrated transit opportunities to ensure that people can get home and to work faster, and goods can get to market more efficiently in our province"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/transportation"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#b45309",
+      "title": "GOAL 2",
+      "short_name": "Commercial vehicles and goods move safely and efficiently across B.C.",
+      "legend_label": "Commercial transport",
+      "description": "The ministry permits, inspects and regulates commercial trucking through Commercial Vehicle Safety and Enforcement (CVSE), keeping goods moving safely on B.C. highways.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get a permit for your commercial vehicle or load",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for an oversize or overweight load permit",
+              "desc": "Term and single-trip permits for commercial loads that exceed standard weight or dimension limits, applied for online through onRouteBC or Commercial Vehicle Permits Online.",
+              "users": "Commercial carriers, trucking companies",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "onRouteBC",
+                  "url": "https://onroutebc.gov.bc.ca/"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Commercial Vehicle Permits",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/vehicle-safety-enforcement/services/permitting/commercial-transport-permits"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/vehicle-safety-enforcement/services/permitting/commercial-transport-permits"
+              }
+            },
+            {
+              "name": "Apply for an extraordinary load approval",
+              "desc": "Special authorizations and route approvals for extraordinary loads that exceed regular permit weight, width, height or length limits, coordinated with local authorities and utilities along the route.",
+              "users": "Commercial carriers, heavy-haul trucking companies",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "CVSE1049 - Extraordinary Load Approval Request",
+                  "url": "https://www.th.gov.bc.ca/forms/getForm.aspx?formId=1262"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Extraordinary Load Approval team",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/vehicle-safety-enforcement/services/permitting/extraordinary-loads"
+              }
+            },
+            {
+              "name": "Get a motive fuel user permit for your commercial vehicle",
+              "desc": "A temporary permit purchased by an owner or operator of a fuel-powered commercial vehicle entering B.C. that is not currently registered under the International Fuel Tax Agreement (IFTA).",
+              "users": "Out-of-province commercial carriers",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Commercial Vehicle Permits",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/vehicle-safety-enforcement/services/permitting/commercial-transport-permits"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/vehicle-safety-enforcement/services/permitting/commercial-transport-permits"
+              }
+            },
+            {
+              "name": "Check your route and restrictions before you drive a commercial vehicle",
+              "desc": "The Commercial Vehicle Routing Tool shows known route, bridge and dimension restrictions for commercial vehicles, since general mapping services are not accurate for truck routing in B.C.",
+              "users": "Commercial drivers, dispatchers",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Commercial Vehicle Routing Tool",
+                  "url": "https://twm.th.gov.bc.ca/?c=cvrt"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "transport_carriers",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Check road conditions before you travel",
+                    "ministry": "tt"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/vehicle-safety-enforcement/services/permitting/commercial-transport-permits"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Meet commercial vehicle safety requirements",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get a National Safety Code safety certificate for your fleet",
+              "desc": "Commercial carriers operating in B.C. must hold a National Safety Code safety certificate, tracking each carrier's safety record and compliance history.",
+              "users": "Trucking and bus companies",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "NSC Safety Certificate Application",
+                  "url": "http://www.cvse.ca/national_safety_code.htm"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "safety_codes_standards",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/vehicle-safety-enforcement/services"
+              }
+            },
+            {
+              "name": "Get your commercial vehicle inspected",
+              "desc": "Mandatory and on-demand safety inspections for commercial trucks, trailers and buses operating on B.C. highways.",
+              "users": "Commercial vehicle owners and operators",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Vehicle Inspections",
+                  "url": "http://www.cvse.ca/vehicle_inspections.htm"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "safety_codes_standards",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/vehicle-safety-enforcement/services"
+              }
+            },
+            {
+              "name": "Join the Weigh2GoBC weigh-scale bypass program",
+              "desc": "Free program that lets registered commercial carriers bypass weigh-in-motion inspection stations, saving time and fuel while letting CVSE focus roadside checks on higher-risk carriers.",
+              "users": "Commercial carriers and trucking fleets",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Weigh2GoBC registration",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/vehicle-safety-enforcement/services/weigh2gobc-join"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "transport_carriers",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/vehicle-safety-enforcement/services/weigh2gobc-join"
+              }
+            },
+            {
+              "name": "Apply to become a recognized Premium Carrier",
+              "desc": "The Premium Carrier Program recognizes and rewards commercial carriers with an exceptional safety record, offering reduced random inspections and free Weigh2GoBC transponders for their fleet.",
+              "users": "Trucking companies with strong safety records",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Premium Carrier Program application",
+                  "url": "https://www.th.gov.bc.ca/forms/getForm.aspx?formId=1159"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "transport_carriers",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/vehicle-safety-enforcement/services/premium-carrier"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#2e7d32",
+      "title": "GOAL 3",
+      "short_name": "People have convenient, accessible ways to get around B.C.",
+      "legend_label": "Passenger transportation",
+      "description": "The ministry oversees public transit, licenses taxi, limousine and ride-hail services, and connects communities by ferry, air and rail.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get around by public transit",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Find BC Transit routes and schedules in your community",
+              "desc": "BC Transit connects over 50 million customer trips a year in communities across the province, from small towns to large urban centres.",
+              "users": "Transit riders",
+              "user_groups": [
+                "General public",
+                "Students & learners",
+                "Seniors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "BC Transit route information",
+                  "url": "https://www.bctransit.com/choose-transit-system"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "BC Transit Plan Your Trip",
+                  "url": "https://www.bctransit.com/plan-your-trip/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "BCTA",
+                  "color": "#00695c",
+                  "full_name": "British Columbia Transit Act - Continuation and purposes of British Columbia Transit"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "text": "Find ways to support low-income people including seniors and young people in accessing affordable transit"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/passenger-travel/buses-taxis-limos"
+              }
+            },
+            {
+              "name": "Find TransLink routes and schedules in Metro Vancouver",
+              "desc": "TransLink operates the integrated bus, SkyTrain, SeaBus and West Coast Express network across Metro Vancouver.",
+              "users": "Transit riders in Metro Vancouver",
+              "user_groups": [
+                "General public",
+                "Students & learners",
+                "Seniors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "TransLink schedules & maps",
+                  "url": "https://www.translink.ca/schedules-and-maps"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SCBCTA",
+                  "color": "#6a1b9a",
+                  "full_name": "South Coast British Columbia Transportation Authority Act - Establishment of the transportation authority"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/passenger-travel/buses-taxis-limos"
+              }
+            },
+            {
+              "name": "Get accessible door-to-door transit through HandyDART",
+              "desc": "HandyDART is an accessible, door-to-door shared transit service for people whose disability prevents them from using fixed-route transit without assistance.",
+              "users": "People with disabilities",
+              "user_groups": [
+                "General public",
+                "Seniors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Find HandyDART service in your area",
+                  "url": "https://www.bctransit.com/choose-transit-system"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "TransLink HandyDART",
+                  "url": "https://www.translink.ca/rider-guide/transit-accessibility/handydart"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "BCTA",
+                  "color": "#00695c",
+                  "full_name": "British Columbia Transit Act - Continuation and purposes of British Columbia Transit"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 5,
+                  "text": "Ensure that our provincial transit services are being delivered in a way that is cost-effective for taxpayers, responsive to the concerns of transit riders, and not duplicative of administration by reviewing the private delivery model for provincial transit systems starting with handyDART"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/passenger-travel/buses-taxis-limos"
+              }
+            },
+            {
+              "name": "Travel long-distance by BC Bus North coach service",
+              "desc": "BC Bus North offers fixed-route, scheduled coach service connecting Prince Rupert, Prince George, Dawson Creek, Fort St. John, Fort Nelson and Valemount.",
+              "users": "Northern B.C. residents and travellers",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "BC Bus North schedules and fares",
+                  "url": "https://bcbus.ca/schedules-and-fares/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "text": "Drive the development and expansion of transit across the province and work with communities across BC to find ways to strengthen key rural and intercity transportation services"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/passenger-travel/buses-taxis-limos"
+              }
+            },
+            {
+              "name": "Dispute a TransLink fare evasion ticket",
+              "desc": "Process for disputing a fare evasion fine issued on the TransLink transit system.",
+              "users": "TransLink riders",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "TransLink Fare Evasion Fine Disputes",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/passenger-travel/buses-taxis-limos/translink-fare-disputes"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SCBCTA",
+                  "color": "#6a1b9a",
+                  "full_name": "South Coast British Columbia Transportation Authority Act - Establishment of the transportation authority"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/passenger-travel/buses-taxis-limos"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Use a licensed taxi, limousine or ride-hail service",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Find a licensed taxi or ride-hail company in your area",
+              "desc": "The Passenger Transportation Registry lists licensed taxi, limousine, shuttle and ride-hail operators approved by the Passenger Transportation Board, and the regions where ride-hail companies can operate.",
+              "users": "Travellers, riders",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Passenger Transportation Registry",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/vehicle-safety-enforcement/services/passenger-transportation/guidance-resources/passenger-transportation-registry"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PTA",
+                  "color": "#2e7d32",
+                  "full_name": "Passenger Transportation Act - Registrar of Passenger Transportation and licensee records"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 9,
+                  "text": "Find ways to support taxi and ride hail operators and ensure safe and affordable transportation options for British Columbians"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/vehicle-safety-enforcement/services/passenger-transportation/guidance-resources/passenger-transportation-registry"
+              }
+            },
+            {
+              "name": "Know your rights as a taxi passenger",
+              "desc": "The Taxi Bill of Rights sets out what passengers can expect from drivers, and what drivers can expect from passengers, on a taxi trip.",
+              "users": "Taxi passengers",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "B.C.'s Voluntary Taxi Bill of Rights",
+                  "url": "https://www.ptboard.bc.ca/taxi_rights.htm"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/passenger-travel/buses-taxis-limos"
+              }
+            },
+            {
+              "name": "Apply for a passenger transportation licence to operate a taxi, limo or ride-hail business",
+              "desc": "Operators of taxis, limousines, shuttles, inter-city buses and ride-hail (transportation network) services need a licence or temporary operating permit from the Registrar of Passenger Transportation or the Passenger Transportation Board.",
+              "users": "Taxi, limousine and ride-hail companies",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Registrar of Passenger Transportation",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/vehicle-safety-enforcement/services/passenger-transportation/guidance-resources/passenger-transportation-registry"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Registrar Forms & Documents",
+                  "url": "http://www.th.gov.bc.ca/forms/results.aspx?group=21"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PTA",
+                  "color": "#2e7d32",
+                  "full_name": "Passenger Transportation Act - Licences and temporary operating permits under Part 4"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 9,
+                  "text": "Find ways to support taxi and ride hail operators and ensure safe and affordable transportation options for British Columbians"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/passenger-travel"
+              }
+            },
+            {
+              "name": "Find requirements to drive a taxi, limousine or ride-hail vehicle",
+              "desc": "Driver requirements — including screening and vehicle identifier rules — for people driving passenger-directed vehicles such as taxis, limousines and ride-hail vehicles in B.C.",
+              "users": "Taxi, limousine and ride-hail drivers",
+              "user_groups": [
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "PDV Driver Requirements",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/vehicle-safety-enforcement/services/passenger-transportation/guidance-resources/pdv-driver-requirements"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PTA",
+                  "color": "#2e7d32",
+                  "full_name": "Passenger Transportation Act - Vehicle identifiers and driver requirements"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "professional_credentials",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/passenger-travel/buses-taxis-limos"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Travel by ferry, air or rail",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Check inland ferry schedules, capacity and crossing times",
+              "desc": "B.C.'s 14 free inland ferries — including the Kootenay Lake, Francois Lake and Lytton reaction ferries — operate under contract with the ministry, with schedule, crossing time and vehicle capacity information for each crossing.",
+              "users": "Rural and Interior travellers",
+              "user_groups": [
+                "General public",
+                "Drivers & vehicle owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Inland Ferries",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/passenger-travel/water-travel/inland-ferries"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Inland ferry maps and information",
+                  "url": "https://www2.gov.bc.ca/assets/gov/driving-and-transportation/passenger/inland-ferries/pdf/inlandferryservices_brochure.pdf"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/passenger-travel/water-travel/inland-ferries"
+              }
+            },
+            {
+              "name": "Check ferry conditions and closures before you travel",
+              "desc": "Inland ferry service closures, interruptions and delays are posted on DriveBC alongside road conditions.",
+              "users": "Rural and Interior travellers",
+              "user_groups": [
+                "General public",
+                "Drivers & vehicle owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "DriveBC - inland ferries",
+                  "url": "https://www.drivebc.ca/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Check road conditions before you travel",
+                    "ministry": "tt"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/passenger-travel/water-travel/inland-ferries"
+              }
+            },
+            {
+              "name": "Track BC Ferries fares and service levels",
+              "desc": "The province funds BC Ferries through the Coastal Ferry Services Contract, which sets routes, service levels and fare-affordability commitments for the independent, publicly-accountable ferry operator.",
+              "users": "Coastal ferry travellers",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Coastal Ferry Services Contract",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/passenger-travel/water-travel/coastal-ferry-services-contract"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "BC Ferries routes and schedules",
+                  "url": "https://www.bcferries.com"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 6,
+                  "text": "Work with BC ferries to address administrative costs and ensure affordable, reliable, and sustainable ferry services"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/passenger-travel/water-travel/coastal-ferry-services-contract"
+              }
+            },
+            {
+              "name": "Get information on air and rail travel in B.C.",
+              "desc": "Air and rail links are key to connecting remote B.C. communities to the rest of the province and beyond, including regional airports and passenger rail service.",
+              "users": "Travellers in remote and rural communities",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Air or Rail Travel",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/passenger-travel/air-or-rail-travel"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/passenger-travel"
+              }
+            },
+            {
+              "name": "Get transit and highway access along Highway 16",
+              "desc": "Public transportation services are available to residents and travellers along Highway 16 between Prince Rupert and Prince George.",
+              "users": "Highway 16 corridor residents and travellers",
+              "user_groups": [
+                "General public",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Highway 16 Community Access",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/passenger-travel/highway-16-community-access"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/passenger-travel"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#6a1b9a",
+      "title": "GOAL 4",
+      "short_name": "Communities get funding to build safer, more connected transportation options",
+      "legend_label": "Transportation funding",
+      "description": "The ministry cost-shares infrastructure investments with local governments, Indigenous communities and the taxi industry to expand active transportation, transit and aviation infrastructure.",
+      "metrics": [],
+      "css_class": "goal-4",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Apply for transportation infrastructure funding",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for active transportation infrastructure grants",
+              "desc": "Cost-sharing grants help Indigenous and local governments build multi-use paths, bike lanes and other active transportation infrastructure for all ages and abilities.",
+              "users": "Local governments, Indigenous governments",
+              "user_groups": [
+                "Municipalities & local governments",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "B.C. Active Transportation Infrastructure Grants Program",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/funding-engagement-permits/funding-grants/active-transportation-infrastructure-grants"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/funding-engagement-permits/funding-grants/active-transportation-infrastructure-grants"
+              }
+            },
+            {
+              "name": "Apply for an active transportation network planning grant",
+              "desc": "Cost-sharing grants help smaller communities with populations under 25,000 create or update an active transportation network plan.",
+              "users": "Small local governments, Indigenous governments",
+              "user_groups": [
+                "Municipalities & local governments",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Active Transportation Network Planning Grant",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/funding-engagement-permits/funding-grants/active-transportation-infrastructure-grants"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/funding-engagement-permits/funding-grants/active-transportation-infrastructure-grants"
+              }
+            },
+            {
+              "name": "Apply for transit minor betterments funding",
+              "desc": "Funding of up to $100,000 for transit-supportive projects such as bus stop improvements, transit shelters and accessibility upgrades.",
+              "users": "Local governments, transit partners",
+              "user_groups": [
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Transit Minor Betterments",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/funding-engagement-permits/funding-grants/transit-minor-betterments-funding"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/funding-engagement-permits/funding-grants"
+              }
+            },
+            {
+              "name": "Apply for passenger transportation accessibility program funding",
+              "desc": "The Passenger Transportation Accessibility Program (PTAP) funds and trains the taxi industry to improve services and experiences for the accessibility community.",
+              "users": "Taxi companies",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Passenger Transportation Accessibility Program",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/funding-engagement-permits/funding-grants/passenger-transportation-accessibility-program"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "transport_carriers",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/funding-engagement-permits/funding-grants"
+              }
+            },
+            {
+              "name": "Apply for aviation infrastructure funding",
+              "desc": "Cost-sharing programs support community aviation facility projects such as runway extensions, terminal expansions and lighting and navigational system upgrades.",
+              "users": "Local governments, regional airport authorities",
+              "user_groups": [
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Aviation Infrastructure Funding",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/funding-engagement-permits/funding-grants/aviation-infrastructure-funding"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "transport_infrastructure",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/funding-engagement-permits/funding-grants"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Provincial highway maintenance contract management",
+      "desc": "Manages performance-based highway maintenance contracts with private contractors across B.C.'s highway maintenance service areas.",
+      "users": "Internal program staff, maintenance contractors",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "industry_specific",
+        "domain": "transport_carriers",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Commercial Vehicle Safety and Enforcement roadside operations",
+      "desc": "Roadside inspection, weigh scale operations and compliance enforcement for commercial vehicles under the National Safety Code.",
+      "users": "Internal program staff, CVSE officers",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "regulatory_compliance",
+        "domain": "safety_codes_standards",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-3",
+      "name": "Ministry of Transportation and Transit program and initiative review",
+      "desc": "Ongoing review of ministry programs and initiatives, with the Ministry of Finance, to ensure they remain relevant, efficient and responsive to commuters within provincial budget constraints.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [
+        {
+          "number": 1,
+          "text": "In order to protect key services that British Columbians rely on, work with the Minister of Finance to review all existing Ministry of Transportation and Transit programs and initiatives to ensure our programs remain relevant, are efficient, are responsive to the needs of commuters, grow the economy, and help keep British Columbians moving"
+        }
+      ],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "transport_infrastructure",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-4",
+      "name": "Rapid transit and major capital project delivery",
+      "desc": "Delivery of major rapid transit capital projects, including the Broadway Subway extension to UBC and expansion of SkyTrain and RapidBus service, coordinated with TransLink, local governments and the federal government.",
+      "users": "Internal program staff, TransLink, local governments",
+      "channels": [],
+      "legislation": [
+        {
+          "abbrev": "SCBCTA",
+          "color": "#6a1b9a",
+          "full_name": "South Coast British Columbia Transportation Authority Act - Establishment of the transportation authority"
+        }
+      ],
+      "mandate_tags": [
+        {
+          "number": 7,
+          "text": "Identify affordable and efficient opportunities for expansion of SkyTrain, RapidBus, and rail service in the province to meet the transportation and goods movement needs of growing populations"
+        },
+        {
+          "number": 8,
+          "text": "Lead work to advance progress on the Broadway extension to UBC, including by working with the federal government, UBC, the City of Vancouver, First Nations, and all relevant government agency stakeholders"
+        }
+      ],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "transport_infrastructure",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-5",
+      "name": "Transit safety and enforcement technology partnerships",
+      "desc": "Works with the Ministry of Public Safety and Solicitor General, TransLink, BC Transit and local governments on technology to support safety and enforcement across the public transportation system.",
+      "users": "Internal program staff, TransLink, BC Transit",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [
+        {
+          "number": 10,
+          "text": "Support the Minister of Public Safety and Solicitor General in ensuring safety and efficiency across our public transportation system through partnerships with TransLink, BC Transit, and local governments to permit the use of technology in relation to enforcement of public transportation safety"
+        }
+      ],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "safety_emergencies",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    }
+  ],
+  "mandate_date": "January 16, 2025",
+  "mandate_minister": "Honourable Mike Farnworth",
+  "mandate_pdf": "https://www2.gov.bc.ca/assets/gov/government/ministries-organizations/premier-cabinet-mlas/minister-letter/mandate_letter_mike_farnworth.pdf",
+  "cross_cutting": [
+    "Economic Growth & Jobs",
+    "Affordability",
+    "Health Care",
+    "Community Safety",
+    "Climate Action",
+    "Reconciliation with Indigenous Peoples"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "In order to protect key services that British Columbians rely on, work with the Minister of Finance to review all existing Ministry of Transportation and Transit programs and initiatives to ensure our programs remain relevant, are efficient, are responsive to the needs of commuters, grow the economy, and help keep British Columbians moving",
+      "mapping": "-> Foundational: Ministry of Transportation and Transit program and initiative review"
+    },
+    {
+      "number": 2,
+      "text": "Support improvements in BC's road infrastructure balanced with integrated transit opportunities to ensure that people can get home and to work faster, and goods can get to market more efficiently in our province",
+      "mapping": "-> Find transportation and highway improvement projects in your area"
+    },
+    {
+      "number": 3,
+      "text": "Find ways to support low-income people including seniors and young people in accessing affordable transit",
+      "mapping": "-> Find BC Transit routes and schedules in your community"
+    },
+    {
+      "number": 4,
+      "text": "Drive the development and expansion of transit across the province and work with communities across BC to find ways to strengthen key rural and intercity transportation services, including supporting regional transportation plans such as the Central Okanagan Transit Future Plan and working toward regular local transit along the Sea to Sky corridor",
+      "mapping": "-> Travel long-distance by BC Bus North coach service"
+    },
+    {
+      "number": 5,
+      "text": "Ensure that our provincial transit services are being delivered in a way that is cost-effective for taxpayers, responsive to the concerns of transit riders, and not duplicative of administration by reviewing the private delivery model for provincial transit systems starting with handyDART",
+      "mapping": "-> Get accessible door-to-door transit through HandyDART"
+    },
+    {
+      "number": 6,
+      "text": "Work with BC ferries to address administrative costs and ensure affordable, reliable, and sustainable ferry services",
+      "mapping": "-> Track BC Ferries fares and service levels"
+    },
+    {
+      "number": 7,
+      "text": "Identify affordable and efficient opportunities for expansion of SkyTrain, RapidBus, and rail service in the province to meet the transportation and goods movement needs of growing populations",
+      "mapping": "-> Foundational: Rapid transit and major capital project delivery"
+    },
+    {
+      "number": 8,
+      "text": "Lead work to advance progress on the Broadway extension to UBC, including by working with the federal government, UBC, the City of Vancouver, First Nations, and all relevant government agency stakeholders",
+      "mapping": "-> Foundational: Rapid transit and major capital project delivery"
+    },
+    {
+      "number": 9,
+      "text": "Find ways to support taxi and ride hail operators and ensure safe and affordable transportation options for British Columbians",
+      "mapping": "-> Apply for a passenger transportation licence to operate a taxi, limo or ride-hail business; Find a licensed taxi or ride-hail company in your area"
+    },
+    {
+      "number": 10,
+      "text": "Support the Minister of Public Safety and Solicitor General in ensuring safety and efficiency across our public transportation system through partnerships with TransLink, BC Transit, and local governments to permit the use of technology in relation to enforcement of public transportation safety",
+      "mapping": "-> Foundational: Transit safety and enforcement technology partnerships"
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-app",
+      "label": "Mobile app",
+      "bg_color": "#e0f2f1",
+      "text_color": "#00695c"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-email",
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Drivers & vehicle owners",
+    "Property owners",
+    "Producers & ranchers",
+    "Businesses & employers",
+    "Industry",
+    "Municipalities & local governments",
+    "Indigenous communities",
+    "Students & learners",
+    "Seniors",
+    "Workers & job seekers"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

@@ -1,0 +1,383 @@
+{
+  "prefix": "hlth",
+  "name": "Ministry of Health",
+  "short_name": "Health",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "Every British Columbian has access to public health coverage and primary care",
+      "legend_label": "Coverage & primary care",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Enrol in public health and drug coverage"
+        },
+        {
+          "number": 2,
+          "name": "Find a family doctor or primary care"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "short_name": "British Columbians get help paying for medications, medical supplies and care",
+      "legend_label": "Drug & medical costs",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get help paying for prescription drugs and medical supplies"
+        },
+        {
+          "number": 2,
+          "name": "Get help with fertility treatment costs"
+        },
+        {
+          "number": 3,
+          "name": "Get help with the cost of medical travel and accommodation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#6a1b9a",
+      "short_name": "British Columbians get mental health, substance use and public health protection",
+      "legend_label": "Mental health & public health",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get mental health and substance use support"
+        },
+        {
+          "number": 2,
+          "name": "Stay protected against infectious disease"
+        },
+        {
+          "number": 3,
+          "name": "Resolve a concern about health care"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#00838f",
+      "short_name": "British Columbians get supportive care as they age and access life event records",
+      "legend_label": "Seniors' care & vital records",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get home, community or residential care"
+        },
+        {
+          "number": 2,
+          "name": "Register a birth, death, marriage or name change"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "MPA",
+      "full_name": "Medicare Protection Act",
+      "color": "#0070c0",
+      "citation": "RSBC 1996, c 286",
+      "summary": "Establishes the Medical Services Plan, sets out enrolment and eligibility for public health insurance, and prohibits extra billing for insured services. Citation confirmed via CanLII and the BC Laws consolidation, and cited directly in the disclaimer of the Ministry of Health's MSP page.",
+      "sections": [
+        {
+          "ref": "Enrolment",
+          "title": "Enrolment in the Medical Services Plan",
+          "description": "Requires B.C. residents to enrol in the Medical Services Plan and sets eligibility rules.",
+          "anchor_id": "MPA-Enrolment",
+          "services": [
+            {
+              "name": "Enrol in the Medical Services Plan (MSP)",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Enrol in public health and drug coverage"
+            }
+          ]
+        },
+        {
+          "ref": "Extra billing",
+          "title": "Prohibition on extra billing",
+          "description": "Prohibits practitioners from charging patients extra fees for MSP-insured services, with a review process for complaints.",
+          "anchor_id": "MPA-ExtraBilling",
+          "services": [
+            {
+              "name": "Request a review of extra billing for an MSP insured service",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#6a1b9a",
+              "ms_number": 3,
+              "ms_name": "Resolve a concern about health care"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "HIA",
+      "full_name": "Hospital Insurance Act",
+      "color": "#1565c0",
+      "citation": "RSBC 1996, c 204",
+      "summary": "Governs public insurance for hospital services in B.C., alongside the Medicare Protection Act. Cited directly in the disclaimer of the Ministry of Health's MSP page; citation corroborated via CanLII.",
+      "sections": [
+        {
+          "ref": "Insured services",
+          "title": "Insured hospital services",
+          "description": "Sets out hospital services insured under the province's public health insurance system.",
+          "anchor_id": "HIA-InsuredServices",
+          "services": [
+            {
+              "name": "Enrol in the Medical Services Plan (MSP)",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Enrol in public health and drug coverage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "PSA",
+      "full_name": "Pharmaceutical Services Act",
+      "color": "#2e7d32",
+      "citation": "SBC 2012, c 22",
+      "summary": "Provides the legal authority for BC PharmaCare's drug benefit plans, including Fair PharmaCare. Citation corroborated via CanLII and the BC Laws consolidation.",
+      "sections": [
+        {
+          "ref": "PharmaCare plans",
+          "title": "PharmaCare plans and drug benefits",
+          "description": "Authorizes PharmaCare's drug benefit plans, including income-based Fair PharmaCare coverage.",
+          "anchor_id": "PSA-PharmaCarePlans",
+          "services": [
+            {
+              "name": "Register for the Fair PharmaCare plan",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Enrol in public health and drug coverage"
+            },
+            {
+              "name": "Get help paying for prescription drugs and medical supplies through BC PharmaCare",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Get help paying for prescription drugs and medical supplies"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "PHA",
+      "full_name": "Public Health Act",
+      "color": "#6a1b9a",
+      "citation": "SBC 2008, c 28",
+      "summary": "Modernized public health legislation covering communicable disease control, immunization and the powers of medical health officers; replaced RSBC 1996, c 389 and c 475. Citation corroborated via CanLII and the BC Laws consolidation.",
+      "sections": [
+        {
+          "ref": "Communicable disease control",
+          "title": "Communicable disease prevention and immunization",
+          "description": "Provides authority for immunization programs and communicable disease control measures.",
+          "anchor_id": "PHA-CommunicableDisease",
+          "services": [
+            {
+              "name": "Get immunized against measles, flu, COVID-19 and other diseases",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#6a1b9a",
+              "ms_number": 2,
+              "ms_name": "Stay protected against infectious disease"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "VSA",
+      "full_name": "Vital Statistics Act",
+      "color": "#c62828",
+      "citation": "RSBC 1996, c 479",
+      "summary": "Governs registration of births, deaths, marriages and changes of name in B.C., administered by the Vital Statistics Agency. Citation corroborated via CanLII and the BC Laws consolidation.",
+      "sections": [
+        {
+          "ref": "Births",
+          "title": "Registration of births",
+          "description": "Requires registration of every birth in B.C.",
+          "anchor_id": "VSA-Births",
+          "services": [
+            {
+              "name": "Register your newborn's birth",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#00838f",
+              "ms_number": 2,
+              "ms_name": "Register a birth, death, marriage or name change"
+            }
+          ]
+        },
+        {
+          "ref": "Certificates",
+          "title": "Certificates and certified copies",
+          "description": "Authorizes the Vital Statistics Agency to issue certificates and certified copies of registered events.",
+          "anchor_id": "VSA-Certificates",
+          "services": [
+            {
+              "name": "Order a birth, death or marriage certificate",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#00838f",
+              "ms_number": 2,
+              "ms_name": "Register a birth, death, marriage or name change"
+            }
+          ]
+        },
+        {
+          "ref": "Change of name",
+          "title": "Change of name",
+          "description": "Sets out the process for legally changing a name in B.C.",
+          "anchor_id": "VSA-ChangeOfName",
+          "services": [
+            {
+              "name": "Apply for a legal change of name",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#00838f",
+              "ms_number": 2,
+              "ms_name": "Register a birth, death, marriage or name change"
+            }
+          ]
+        },
+        {
+          "ref": "Deaths",
+          "title": "Registration of deaths",
+          "description": "Requires registration of every death in B.C.",
+          "anchor_id": "VSA-Deaths",
+          "services": [
+            {
+              "name": "Register a death",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#00838f",
+              "ms_number": 2,
+              "ms_name": "Register a birth, death, marriage or name change"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CCALA",
+      "full_name": "Community Care and Assisted Living Act",
+      "color": "#00838f",
+      "citation": "SBC 2002, c 75",
+      "summary": "Governs the Assisted Living Registry and licensing of community care and residential care facilities in B.C.; replaced RSBC 1996, c 60. Citation corroborated via CanLII and the BC Laws consolidation.",
+      "sections": [
+        {
+          "ref": "Assisted living registry",
+          "title": "Assisted living registry",
+          "description": "Establishes the Assisted Living Registry's role in registering assisted living residences and investigating complaints.",
+          "anchor_id": "CCALA-Registry",
+          "services": [
+            {
+              "name": "Find assisted living or residential care",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#00838f",
+              "ms_number": 1,
+              "ms_name": "Get home, community or residential care"
+            },
+            {
+              "name": "File a complaint about an assisted living residence",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#6a1b9a",
+              "ms_number": 3,
+              "ms_name": "Resolve a concern about health care"
+            }
+          ]
+        },
+        {
+          "ref": "Residential care licensing",
+          "title": "Residential care facility licensing",
+          "description": "Provides for licensing and complaint investigation for community care and residential care facilities.",
+          "anchor_id": "CCALA-ResidentialCare",
+          "services": [
+            {
+              "name": "File a complaint about a residential care facility",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#6a1b9a",
+              "ms_number": 3,
+              "ms_name": "Resolve a concern about health care"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CCA",
+      "full_name": "Continuing Care Act",
+      "color": "#8d6e63",
+      "citation": "RSBC 1996, c 70",
+      "summary": "Provides the legislative basis for publicly subsidized home support, home care and community care services delivered through B.C.'s health authorities. Citation confirmed via the BC Laws consolidation.",
+      "sections": [
+        {
+          "ref": "Home and community care",
+          "title": "Home and community care services",
+          "description": "Authorizes subsidized home support and community care services for eligible residents.",
+          "anchor_id": "CCA-HomeCommunityCare",
+          "services": [
+            {
+              "name": "Apply for subsidized home and community care services",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#00838f",
+              "ms_number": 1,
+              "ms_name": "Get home, community or residential care"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "EHSA",
+      "full_name": "Emergency Health Services Act",
+      "color": "#5d4037",
+      "citation": "RSBC 1996, c 182",
+      "summary": "Establishes B.C.'s emergency health services system, including the Emergency Medical Assistants Licensing Board. Cited directly on the Ministry of Health's health care complaints page; citation corroborated via CanLII.",
+      "sections": [
+        {
+          "ref": "EMA licensing",
+          "title": "Emergency Medical Assistants Licensing Board",
+          "description": "Empowers the Emergency Medical Assistants Licensing Board to investigate complaints about emergency medical assistant practice.",
+          "anchor_id": "EHSA-EMALicensing",
+          "services": [
+            {
+              "name": "File a complaint about an emergency medical assistant",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#6a1b9a",
+              "ms_number": 3,
+              "ms_name": "Resolve a concern about health care"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 8,
+    "sections_count": 13,
+    "services_with_leg_count": 14,
+    "services_multi_act_count": 1
+  }
+}

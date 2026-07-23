@@ -1,0 +1,1214 @@
+{
+  "prefix": "lbr",
+  "full_name": "Ministry of Labour",
+  "short_name": "Labour",
+  "blurb": "Protects workers and supports fair workplaces — employment standards, temporary foreign worker protections, labour relations, and workers' compensation policy oversight.",
+  "nav_name": "Labour",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "GOAL 1",
+      "short_name": "Workers in B.C. have fair pay and safe, healthy workplaces",
+      "legend_label": "Worker rights & standards",
+      "description": "The ministry sets and enforces minimum standards for wages, hours, leave and termination, and protects temporary foreign workers from unfair recruitment and employment practices.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Know your rights and resolve a workplace problem",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get guidance on a workplace issue",
+              "desc": "The Solution Explorer tool gives employees tailored guidance on employment standards issues like unpaid wages, hours of work, and termination.",
+              "users": "Employees with a workplace problem",
+              "user_groups": [
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Solution Explorer",
+                  "url": "https://explore.labour.gov.bc.ca/"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Minimum wage",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/wages/minimum-wage"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/wages/minimum-wage"
+              }
+            },
+            {
+              "name": "File an employment standards complaint",
+              "desc": "The Employment Standards Branch investigates complaints about unpaid wages, illegal deductions, and other violations of the Employment Standards Act or Temporary Foreign Worker Protection Act. There is no fee, and complaints can be filed confidentially, anonymously, or on behalf of another employee.",
+              "users": "Employees owed wages or facing an employment standards issue",
+              "user_groups": [
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Submit a complaint",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/complaint-process/question-1"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "File an employment standards complaint",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/complaint-process"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ESA",
+                  "color": "#1565c0",
+                  "full_name": "Employment Standards Act  -  Complaint and time limit (s.74), confidentiality (s.75)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": [
+                  {
+                    "type": "worker_employer",
+                    "service": "Respond to an employment standards complaint or investigation",
+                    "ministry": "lbr"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/complaint-process"
+              }
+            },
+            {
+              "name": "Check published employment standards violations",
+              "desc": "A public registry lists employers who received a determination for violating the Employment Standards Act or Regulation on or after February 1, 2023.",
+              "users": "Workers, job seekers, general public",
+              "user_groups": [
+                "Workers & job seekers",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Published employer violations",
+                  "url": "https://services.labour.gov.bc.ca/EmployerViolations"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "File an employment standards complaint",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/complaint-process"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ESA",
+                  "color": "#1565c0",
+                  "full_name": "Employment Standards Act  -  Publication of violators' names (s.101)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/complaint-process"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get paid correctly and take leave when you need it",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Check the current minimum wage rate",
+              "desc": "B.C.'s general minimum wage rises each June 1 with the Consumer Price Index. Different minimum rates apply to liquor servers, live-in camp leaders, live-in home support workers, resident caretakers, and online platform (gig) workers.",
+              "users": "Employees, job seekers",
+              "user_groups": [
+                "Workers & job seekers",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Minimum wage",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/wages/minimum-wage"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ESA",
+                  "color": "#1565c0",
+                  "full_name": "Employment Standards Act  -  Minimum wage (s.16, 16.1, 16.2)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/wages/minimum-wage"
+              }
+            },
+            {
+              "name": "Take job-protected leave from work",
+              "desc": "Employees can take job-protected leave for illness or injury, maternity and parental leave, family responsibility, compassionate care, critical illness, domestic or sexual violence, bereavement, jury duty and other situations, without losing their job.",
+              "users": "Employees needing time off work",
+              "user_groups": [
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Taking time off",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/time-off"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ESA",
+                  "color": "#1565c0",
+                  "full_name": "Employment Standards Act  -  Leaves of absence (Part 6)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/time-off"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Handle the end of a job",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get notice or pay when your job ends",
+              "desc": "When an employer ends a job, they generally must give written working notice, compensation for length of service, or a combination of both, based on how long the employee worked.",
+              "users": "Employees who quit, are fired, or are laid off",
+              "user_groups": [
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Quitting, getting fired or laid off",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/termination"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ESA",
+                  "color": "#1565c0",
+                  "full_name": "Employment Standards Act  -  Termination of employment (Part 8)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/termination"
+              }
+            },
+            {
+              "name": "Understand your rights during a temporary layoff",
+              "desc": "A temporary layoff happens when an employee earns less than 50% of their regular weekly wages with a plan to return to regular hours. If the employee will not return, the layoff becomes a termination.",
+              "users": "Employees placed on temporary layoff",
+              "user_groups": [
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Quitting, getting fired or laid off",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/termination"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ESA",
+                  "color": "#1565c0",
+                  "full_name": "Employment Standards Act  -  Termination of employment (Part 8)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/termination"
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "name": "Know your rights as a temporary foreign worker",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Know your rights as a temporary foreign worker",
+              "desc": "The Temporary Foreign Worker Protection Act stops employers from keeping a foreign worker's money or documents, threatening deportation without cause, or misrepresenting jobs, housing or immigration services.",
+              "users": "Temporary foreign workers in B.C.",
+              "user_groups": [
+                "Workers & job seekers",
+                "Newcomers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Protections for foreign workers",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/hiring/hire-temporary-foreign-workers/protections"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Foreign workers infosheet",
+                  "url": "https://www2.gov.bc.ca/assets/gov/employment-business-and-economic-development/employment-standards-workplace-safety/employment-standards/factsheets-pdfs/pdfs/foreign_workers_infosheet.pdf"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TFWPA",
+                  "color": "#2e7d32",
+                  "full_name": "Temporary Foreign Worker Protection Act  -  Foreign worker recruiter and employer obligations (Part 5)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": [
+                  {
+                    "type": "worker_employer",
+                    "service": "Register to hire temporary foreign workers",
+                    "ministry": "lbr"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/hiring/hire-temporary-foreign-workers/protections"
+              }
+            },
+            {
+              "name": "Check if a foreign worker recruiter is licensed",
+              "desc": "Foreign workers can search the public list of licensed recruiters and registered employers before agreeing to any recruitment or job offer in B.C.",
+              "users": "Temporary foreign workers, prospective foreign workers",
+              "user_groups": [
+                "Workers & job seekers",
+                "Newcomers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Find a licensed recruiter",
+                  "url": "https://services.labour.gov.bc.ca/licensing/TFW_IssuancePublication"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Protections for foreign workers",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/hiring/hire-temporary-foreign-workers/protections"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TFWPA",
+                  "color": "#2e7d32",
+                  "full_name": "Temporary Foreign Worker Protection Act  -  Recruiter licensing requirement (s.3)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": [
+                  {
+                    "type": "worker_employer",
+                    "service": "Get a licence to recruit foreign workers",
+                    "ministry": "lbr"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/hiring/hire-temporary-foreign-workers/protections"
+              }
+            },
+            {
+              "name": "File a complaint about a temporary foreign worker employer or recruiter",
+              "desc": "Foreign workers with concerns about their recruitment or employment can file a complaint with the Employment Standards Branch, which enforces both the Employment Standards Act and the Temporary Foreign Worker Protection Act.",
+              "users": "Temporary foreign workers",
+              "user_groups": [
+                "Workers & job seekers",
+                "Newcomers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Make a complaint (temporary foreign worker)",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/hiring/hire-temporary-foreign-workers/complaint-process-tfw"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ESA",
+                  "color": "#1565c0",
+                  "full_name": "Employment Standards Act  -  Complaint and time limit (s.74)"
+                },
+                {
+                  "abbrev": "TFWPA",
+                  "color": "#2e7d32",
+                  "full_name": "Temporary Foreign Worker Protection Act  -  Foreign worker recruiter and employer obligations (Part 5)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/hiring/hire-temporary-foreign-workers/protections"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#e65100",
+      "title": "GOAL 2",
+      "short_name": "Employers meet clear obligations when hiring and managing staff",
+      "legend_label": "Employer obligations",
+      "description": "The ministry sets the rules employers must follow for pay, hours, leave and termination, and licenses those who hire or recruit temporary foreign workers and other regulated workers.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Meet your employment standards obligations",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Respond to an employment standards complaint or investigation",
+              "desc": "When a complaint is filed against a business, an Employment Standards investigator contacts the employer, shares complaint details, and attempts voluntary resolution before the Director issues a binding determination with mandatory administrative penalties for contraventions.",
+              "users": "Employers named in a complaint",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "File an employment standards complaint",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/complaint-process"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ESA",
+                  "color": "#1565c0",
+                  "full_name": "Employment Standards Act  -  Complaint and time limit (s.74), publication of violators' names (s.101)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "people_employment",
+                "relationships": [
+                  {
+                    "type": "worker_employer",
+                    "service": "File an employment standards complaint",
+                    "ministry": "lbr"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/complaint-process"
+              }
+            },
+            {
+              "name": "Notify government of a group termination",
+              "desc": "Employers terminating 50 or more employees at one location within a two-month period must give written notice of the group termination to each affected employee, the Minister of Labour, and any trade union representing the employees.",
+              "users": "Employers planning large-scale layoffs",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Group terminations (ESA Part 8, s.64)",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/forms-resources/igm/esa-part-8-section-64"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ESA",
+                  "color": "#1565c0",
+                  "full_name": "Employment Standards Act  -  Group terminations (Part 8, s.64)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "reporting_obligations",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/termination"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Hire temporary foreign workers the right way",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Register to hire temporary foreign workers",
+              "desc": "Employers hiring through most federal foreign worker programs (TFWP, SAWP, or programs requiring an LMIA) must hold a valid certificate of registration from the Employment Standards Branch before hiring, and must renew it before it expires.",
+              "users": "Employers hiring temporary foreign workers",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Register to hire foreign workers",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/hiring/hire-temporary-foreign-workers/register-as-employer/start"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "Find a registered employer",
+                  "url": "https://services.labour.gov.bc.ca/TFWRegistrationSearch"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TFWPA",
+                  "color": "#2e7d32",
+                  "full_name": "Temporary Foreign Worker Protection Act  -  Certificates of registration for employers of foreign nationals (Part 3)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": [
+                  {
+                    "type": "worker_employer",
+                    "service": "Know your rights as a temporary foreign worker",
+                    "ministry": "lbr"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/hiring/hire-temporary-foreign-workers/register-as-employer"
+              }
+            },
+            {
+              "name": "Get a licence to recruit foreign workers",
+              "desc": "Individuals who help employers find or hire foreign workers must be personally licensed, post a $20,000 financial security, and follow rules against charging workers fees or misrepresenting jobs.",
+              "users": "Foreign worker recruiters",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply for a recruiter's licence",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/hiring/hire-temporary-foreign-workers/licensed-recruiter/start"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "Find a licensed recruiter",
+                  "url": "https://services.labour.gov.bc.ca/licensing/TFW_IssuancePublication"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "TFWPA",
+                  "color": "#2e7d32",
+                  "full_name": "Temporary Foreign Worker Protection Act  -  Recruiter licensing (s.3, Parts 2 and 4)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": [
+                  {
+                    "type": "worker_employer",
+                    "service": "Check if a foreign worker recruiter is licensed",
+                    "ministry": "lbr"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/hiring/hire-temporary-foreign-workers/licensed-recruiter"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "License a staffing or recruitment business",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get a licence to operate an employment agency",
+              "desc": "Employment agencies that recruit or place workers for a fee must be licensed under the Employment Standards Act before operating in B.C.",
+              "users": "Employment agency operators",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Licensed employment agencies",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/licensing/licensing-employment-agencies"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ESA",
+                  "color": "#1565c0",
+                  "full_name": "Employment Standards Act  -  Licensing of employment agencies"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/licensing"
+              }
+            },
+            {
+              "name": "Get a licence to operate a talent agency",
+              "desc": "Talent agencies that place performers and other talent for a fee must be licensed under the Employment Standards Act before operating in B.C.",
+              "users": "Talent agency operators",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Licensing talent agencies",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/licensing/licensing-talent-agencies"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "Licensed talent agencies",
+                  "url": "https://services.labour.gov.bc.ca/LicensedTalentAgencies/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ESA",
+                  "color": "#1565c0",
+                  "full_name": "Employment Standards Act  -  Licensing of talent agencies"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/licensing"
+              }
+            },
+            {
+              "name": "Get a licence as a farm labour contractor",
+              "desc": "Farm labour contractors who supply workers for planting, cultivating or harvesting agricultural products must be licensed under the Employment Standards Act.",
+              "users": "Farm labour contractors",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Licensing farm labour contractors",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/licensing/licensing-farm-labour-contractors"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ESA",
+                  "color": "#1565c0",
+                  "full_name": "Employment Standards Act  -  Licensing of farm labour contractors"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/licensing"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#6a1b9a",
+      "title": "GOAL 3",
+      "short_name": "Labour relations are stable and injured workers are treated fairly",
+      "legend_label": "Labour relations & comp",
+      "description": "The ministry oversees the framework for union certification and collective bargaining, and funds independent advisers who help workers and employers navigate WorkSafeBC's workers' compensation system.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Navigate union certification and collective bargaining",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for union certification",
+              "desc": "The BC Labour Relations Board decides applications for union certification (unionization) and provides mediation for collective bargaining disputes under the Labour Relations Code.",
+              "users": "Employees seeking union certification, union representatives",
+              "user_groups": [
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "BC Labour Relations Board",
+                  "url": "https://www.lrb.bc.ca/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "LRC",
+                  "color": "#6a1b9a",
+                  "full_name": "Labour Relations Code  -  Union certification and collective bargaining rights"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": [
+                  {
+                    "type": "worker_employer",
+                    "service": "Respond to a union certification or bargaining application",
+                    "ministry": "lbr"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.lrb.bc.ca/"
+              }
+            },
+            {
+              "name": "Respond to a union certification or bargaining application",
+              "desc": "Employers involved in a certification application or collective bargaining dispute work with the BC Labour Relations Board, an independent tribunal that mediates and adjudicates matters under the Labour Relations Code.",
+              "users": "Employers in unionized or unionizing workplaces",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "BC Labour Relations Board",
+                  "url": "https://www.lrb.bc.ca/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "LRC",
+                  "color": "#6a1b9a",
+                  "full_name": "Labour Relations Code  -  Union certification and collective bargaining rights"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "people_employment",
+                "relationships": [
+                  {
+                    "type": "worker_employer",
+                    "service": "Apply for union certification",
+                    "ministry": "lbr"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.lrb.bc.ca/"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get help with a workers' compensation matter",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get free advice on a WorkSafeBC claim decision",
+              "desc": "The Workers' Advisers Office, created under the Workers Compensation Act and independent from WorkSafeBC, gives workers and their dependants free advice, assistance and representation when they disagree with a WorkSafeBC claim, prohibited-action, or occupational health and safety decision.",
+              "users": "Injured workers and their dependants",
+              "user_groups": [
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Workers' Advisers Office",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/personal-injury-and-workplace-safety"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "WAO Worker Portal",
+                  "url": "https://workerportal.labour.gov.bc.ca/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WCA",
+                  "color": "#e65100",
+                  "full_name": "Workers Compensation Act  -  Workers' Advisers Office (s.351)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": [
+                  {
+                    "type": "worker_employer",
+                    "service": "Get employer help with a workers' compensation claim or appeal",
+                    "ministry": "lbr"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/personal-injury-and-workplace-safety"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Register and manage workers' compensation coverage",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Register your business for workers' compensation coverage",
+              "desc": "The Employers' Advisers Office, a branch of the Ministry of Labour independent from WorkSafeBC, gives free advice on registering a business for workers' compensation coverage, understanding classification and premiums, and meeting reporting duties.",
+              "users": "New and existing employers",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Employers' Advisers Office",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/employers/employers-advisers-office"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "EAO toll-free duty line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WCA",
+                  "color": "#e65100",
+                  "full_name": "Workers Compensation Act  -  Accident fund and employer assessment (Part 5)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "insurance_risk",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/employers/employers-advisers-office"
+              }
+            },
+            {
+              "name": "Get employer help with a workers' compensation claim or appeal",
+              "desc": "The Employers' Advisers Office helps employers manage an injury claim, understand return-to-work planning, and represents employers at the Review Division and the Workers' Compensation Appeal Tribunal when disputing a WorkSafeBC decision.",
+              "users": "Employers managing a workers' compensation claim or appeal",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Employers' Advisers Office",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/employers/employers-advisers-office"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "EAO toll-free duty line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WCA",
+                  "color": "#e65100",
+                  "full_name": "Workers Compensation Act  -  Employers' Advisers Office (s.350)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "insurance_risk",
+                "relationships": [
+                  {
+                    "type": "worker_employer",
+                    "service": "Get free advice on a WorkSafeBC claim decision",
+                    "ministry": "lbr"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/employers/employers-advisers-office"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Employment standards investigations and enforcement",
+      "desc": "Investigation, voluntary resolution, and determination capacity that resolves employment standards and Temporary Foreign Worker Protection Act complaints and publishes violation records.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "regulatory_compliance",
+        "domain": "reporting_obligations",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Labour market and workplace policy development",
+      "desc": "Research, legislative review, and policy advice supporting the Employment Standards Act, Labour Relations Code, and workers' compensation framework, including the ongoing Labour Relations Code review.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "core_business_needs",
+        "domain": "people_employment",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    }
+  ],
+  "mandate_date": "January 16, 2025",
+  "mandate_minister": "Jennifer Whiteside",
+  "mandate_pdf": "https://www2.gov.bc.ca/assets/gov/government/ministries-organizations/premier-cabinet-mlas/minister-letter/mandate_letter_jennifer_whiteside.pdf",
+  "cross_cutting": [
+    "Growing the economy",
+    "Reducing costs for families",
+    "Strengthening health care",
+    "Making communities safer"
+  ],
+  "mandate_legend": [],
+  "channel_filters": [
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "Workers & job seekers",
+    "Businesses & employers",
+    "General public",
+    "Newcomers"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

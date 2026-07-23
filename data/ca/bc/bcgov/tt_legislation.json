@@ -1,0 +1,244 @@
+{
+  "prefix": "tt",
+  "name": "Ministry of Transportation and Transit",
+  "short_name": "Transportation & Transit",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "British Columbians travel safely on well-maintained highways and roads",
+      "legend_label": "Highways & roads",
+      "main_services": [
+        { "number": 1, "name": "Know before you travel" },
+        { "number": 2, "name": "Get a permit to build, access or use a provincial highway" },
+        { "number": 3, "name": "Follow transportation infrastructure projects near you" }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#b45309",
+      "short_name": "Commercial vehicles and goods move safely and efficiently across B.C.",
+      "legend_label": "Commercial transport",
+      "main_services": [
+        { "number": 1, "name": "Get a permit for your commercial vehicle or load" },
+        { "number": 2, "name": "Meet commercial vehicle safety requirements" }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#2e7d32",
+      "short_name": "People have convenient, accessible ways to get around B.C.",
+      "legend_label": "Passenger transportation",
+      "main_services": [
+        { "number": 1, "name": "Get around by public transit" },
+        { "number": 2, "name": "Use a licensed taxi, limousine or ride-hail service" },
+        { "number": 3, "name": "Travel by ferry, air or rail" }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#6a1b9a",
+      "short_name": "Communities get funding to build safer, more connected transportation options",
+      "legend_label": "Transportation funding",
+      "main_services": [
+        { "number": 1, "name": "Apply for transportation infrastructure funding" }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "TA",
+      "full_name": "Transportation Act",
+      "color": "#1565c0",
+      "citation": "SBC 2004, c. 44",
+      "summary": "Sets out the powers of the Minister of Transportation and Transit over provincial highways and highway right-of-way, including contracting for transportation projects, dealing with land (compensation, expropriation, disposition), and continuing the BC Transportation Financing Authority. Assented to May 13, 2004; verified current to November 26, 2024 on the official BC Laws consolidation.",
+      "sections": [
+        {
+          "ref": "Part 2, Division 3",
+          "title": "Minister's rights, powers and advantages over highway right-of-way",
+          "description": "Gives the minister rights, powers and advantages over provincial highway land, including entry, expropriation, injurious affection and disposition of land, which underpin the ministry's highway use permit system for access, works, events and rural subdivision referrals.",
+          "anchor_id": "TA-P2D3",
+          "services": [
+            {
+              "name": "Apply for a highway access permit for commercial or development access",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Get a permit to build, access or use a provincial highway"
+            },
+            {
+              "name": "Apply for a highway access permit for a rural home or farm driveway",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Get a permit to build, access or use a provincial highway"
+            },
+            {
+              "name": "Apply for a highway works permit to build or repair near a highway",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Get a permit to build, access or use a provincial highway"
+            },
+            {
+              "name": "Apply for a highway event permit",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Get a permit to build, access or use a provincial highway"
+            },
+            {
+              "name": "Get a subdivision development referral for rural land near a highway",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Get a permit to build, access or use a provincial highway"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "PTA",
+      "full_name": "Passenger Transportation Act",
+      "color": "#2e7d32",
+      "citation": "SBC 2004, c. 39",
+      "summary": "Establishes the Registrar of Passenger Transportation and the Passenger Transportation Board, and licenses taxis, limousines, inter-city buses, shuttles and ride-hail (transportation network services) operating in B.C. Assented to May 13, 2004; verified current to December 31, 2024 on the official BC Laws consolidation. Replaced the former Motor Carrier Act.",
+      "sections": [
+        {
+          "ref": "Part 2",
+          "title": "Registrar of Passenger Transportation and licensee records",
+          "description": "Establishes the Registrar of Passenger Transportation, who maintains the public index of licensees, permit holders and application decisions used in the passenger transportation registry.",
+          "anchor_id": "PTA-Part2",
+          "services": [
+            {
+              "name": "Find a licensed taxi or ride-hail company in your area",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Use a licensed taxi, limousine or ride-hail service"
+            }
+          ]
+        },
+        {
+          "ref": "Part 4",
+          "title": "Licences and temporary operating permits under Part 4",
+          "description": "Sets out how a person applies for, and the registrar or board issues, a licence or temporary operating permit authorizing a general passenger vehicle, inter-city bus, passenger directed vehicle or transportation network services authorization.",
+          "anchor_id": "PTA-Part4",
+          "services": [
+            {
+              "name": "Apply for a passenger transportation licence to operate a taxi, limo or ride-hail business",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Use a licensed taxi, limousine or ride-hail service"
+            }
+          ]
+        },
+        {
+          "ref": "s. 1",
+          "title": "Vehicle identifiers and driver requirements",
+          "description": "Defines vehicle identifiers, passenger directed vehicles and related terms that underpin driver and vehicle requirements for taxi, limousine and ride-hail service.",
+          "anchor_id": "PTA-s1",
+          "services": [
+            {
+              "name": "Find requirements to drive a taxi, limousine or ride-hail vehicle",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Use a licensed taxi, limousine or ride-hail service"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "BCTA",
+      "full_name": "British Columbia Transit Act",
+      "color": "#00695c",
+      "citation": "RSBC 1996, c. 38",
+      "summary": "Continues British Columbia Transit as a corporation and sets out its purposes: planning, acquiring, constructing, maintaining and operating public passenger transportation systems, including transit service areas outside Metro Vancouver and services such as HandyDART. Verified current to September 3, 2024 on the official BC Laws consolidation.",
+      "sections": [
+        {
+          "ref": "ss. 1-3",
+          "title": "Continuation and purposes of British Columbia Transit",
+          "description": "Continues British Columbia Transit as a corporation and sets its purposes and objects, including planning and operating public passenger transportation systems that support regional growth and community plans.",
+          "anchor_id": "BCTA-s1-3",
+          "services": [
+            {
+              "name": "Find BC Transit routes and schedules in your community",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Get around by public transit"
+            },
+            {
+              "name": "Get accessible door-to-door transit through HandyDART",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Get around by public transit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "SCBCTA",
+      "full_name": "South Coast British Columbia Transportation Authority Act",
+      "color": "#6a1b9a",
+      "citation": "SBC 1998, c. 30",
+      "summary": "Establishes the South Coast British Columbia Transportation Authority (TransLink) and its powers to plan, acquire, construct and operate rail transportation systems, busways and ancillary works in Metro Vancouver. Assented to July 30, 1998; verified current to October 29, 2024 on the official BC Laws consolidation.",
+      "sections": [
+        {
+          "ref": "Part 1",
+          "title": "Establishment of the transportation authority",
+          "description": "Establishes the South Coast British Columbia Transportation Authority and defines its rail transportation systems, busways and ancillary works, forming the legal basis for TransLink's transit operations and major rapid transit capital projects in Metro Vancouver.",
+          "anchor_id": "SCBCTA-Part1",
+          "services": [
+            {
+              "name": "Find TransLink routes and schedules in Metro Vancouver",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Get around by public transit"
+            },
+            {
+              "name": "Dispute a TransLink fare evasion ticket",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Get around by public transit"
+            },
+            {
+              "name": "Rapid transit and major capital project delivery",
+              "type": "foundational",
+              "goal_number": 0,
+              "goal_color": "#6a1b9a",
+              "ms_number": 0,
+              "ms_name": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 4,
+    "sections_count": 6,
+    "services_with_leg_count": 13,
+    "services_multi_act_count": 0
+  }
+}

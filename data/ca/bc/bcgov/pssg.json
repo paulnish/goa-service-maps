@@ -1,0 +1,1516 @@
+{
+  "prefix": "pssg",
+  "full_name": "Ministry of Public Safety and Solicitor General",
+  "short_name": "Public Safety & Solicitor General",
+  "blurb": "Keeps British Columbians safe — policing oversight, corrections and community supervision, victim services, road safety, security industry licensing, civil forfeiture and death investigations. Note: liquor and cannabis licensing and enforcement moved to the Ministry of Agriculture and Food in July 2025, and gambling regulation and enforcement (formerly the Gaming Policy and Enforcement Branch) moved to the independent Gambling Control Office effective April 13, 2026 under the modernized Gaming Control Act.",
+  "nav_name": "Public Safety and Solicitor General",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0d47a1",
+      "title": "GOAL 1",
+      "short_name": "British Columbians are protected by effective policing and community safety programs",
+      "legend_label": "Policing & community safety",
+      "description": "The ministry sets provincial policing standards, oversees the structure of police services, licenses the security industry, and runs crime-prevention programs including criminal record checks for people working with children and vulnerable adults.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Access policing services in your community",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Find your local police service",
+              "desc": "British Columbia receives policing from RCMP federal, provincial and municipal forces, a First Nations administered police service, and transit and railway police; this directory helps residents find who polices their area.",
+              "users": "General public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "B.C. Police Services",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/policing-in-bc/bc-police-services"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Policing in B.C.",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/policing-in-bc"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PA",
+                  "color": "#0d47a1",
+                  "full_name": "Police Act  -  Provision and structure of police services"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/policing-in-bc"
+              }
+            },
+            {
+              "name": "Serve on a municipal police board",
+              "desc": "Municipalities with populations of 5,000 or more are policed by an independent municipal police department or an RCMP municipal unit, and independent departments are governed by a municipal police board under the Police Act.",
+              "users": "Municipalities, community board members",
+              "user_groups": [
+                "Municipalities & local governments",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "The structure of police services in B.C.",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/policing-in-bc/the-structure-of-police-services-in-bc"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Municipal police boards",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/policing-in-bc/municipal-police-boards"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PA",
+                  "color": "#0d47a1",
+                  "full_name": "Police Act  -  Municipal police boards"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/policing-in-bc/the-structure-of-police-services-in-bc"
+              }
+            },
+            {
+              "name": "Volunteer with police through the Auxiliary Program",
+              "desc": "The Auxiliary Program lets members of the public volunteer alongside police on patrols, community events, traffic control and crime-prevention activities under an officer's supervision.",
+              "users": "Community volunteers",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "The structure of police services in B.C. (Auxiliary Program)",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/policing-in-bc/the-structure-of-police-services-in-bc"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PA",
+                  "color": "#0d47a1",
+                  "full_name": "Police Act  -  Auxiliary constables"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/policing-in-bc/the-structure-of-police-services-in-bc"
+              }
+            },
+            {
+              "name": "Prevent and respond to firearm and gang violence",
+              "desc": "The Firearm Violence Prevention Act gives police new powers to remove firearms from high-risk situations, and provincial programs coordinate crime-reduction and organized crime prevention efforts.",
+              "users": "General public, community organizations",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Firearm Violence Prevention Act",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/policing-in-bc/fvpa"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FVPA",
+                  "color": "#1565c0",
+                  "full_name": "Firearm Violence Prevention Act  -  Firearm violence prevention orders"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/policing-in-bc/the-structure-of-police-services-in-bc"
+              }
+            },
+            {
+              "name": "Report extortion or organized crime activity",
+              "desc": "The province works with police to investigate, prevent and stop extortion-related crimes targeting individuals and businesses in B.C. communities.",
+              "users": "General public, businesses targeted by extortion",
+              "user_groups": [
+                "General public",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Stop extortion",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/crime-prevention/extortion"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "societal_needs_supports",
+                  "domain": "safety_emergencies"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "reporting_obligations"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/public-safety-solicitor-general"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get a security industry licence",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get a security worker licence",
+              "desc": "Anyone working as a security guard, private investigator, locksmith, security alarm installer, security consultant, armoured car guard or body armour salesperson needs a security worker licence from the Security Programs Division.",
+              "users": "Security guards, private investigators, locksmiths, alarm installers",
+              "user_groups": [
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Security worker licence application",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/business/security-services/security-industry-licensing/workers"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "Check if a worker is licensed",
+                  "url": "https://justice.gov.bc.ca/security/security-licence-status-verification"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SSA",
+                  "color": "#6a1b9a",
+                  "full_name": "Security Services Act  -  Security worker licensing"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "professional_credentials",
+                "relationships": [
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "Get a security business licence",
+                    "ministry": "pssg"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/business/security-services/security-industry-licensing/workers"
+              }
+            },
+            {
+              "name": "Get a security business licence",
+              "desc": "Companies that provide security guarding, alarm, investigation or related services need a security business licence from the Security Programs Division.",
+              "users": "Security companies",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Security business licence application",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/business/security-services/security-industry-licensing/businesses"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "Check if a business is licensed",
+                  "url": "https://justice.gov.bc.ca/security/security-licence-status-verification"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SSA",
+                  "color": "#6a1b9a",
+                  "full_name": "Security Services Act  -  Security business licensing"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": [
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "Get a security worker licence",
+                    "ministry": "pssg"
+                  },
+                  {
+                    "type": "complainant_regulated_party",
+                    "service": "Report a concern about a security worker or business",
+                    "ministry": "pssg"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/business/security-services/security-industry-licensing"
+              }
+            },
+            {
+              "name": "Report a concern about a security worker or business",
+              "desc": "The public can submit a complaint about a licensed security worker or business, which the Security Programs Division investigates and enforces under the Security Services Act.",
+              "users": "General public, clients of security businesses",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "About security industry licensing (enforcement)",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/business/security-services/security-industry-licensing/about"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SSA",
+                  "color": "#6a1b9a",
+                  "full_name": "Security Services Act  -  Compliance and enforcement"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": [
+                  {
+                    "type": "complainant_regulated_party",
+                    "service": "Get a security business licence",
+                    "ministry": "pssg"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/business/security-services/security-industry-licensing/about"
+              }
+            },
+            {
+              "name": "Get permits for armoured vehicles or body armour",
+              "desc": "Businesses and individuals need provincial permits to operate an armoured vehicle or to possess body armour in B.C.",
+              "users": "Armoured vehicle operators, body armour buyers",
+              "user_groups": [
+                "Businesses & employers",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Armoured Vehicle permits",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/business/security-services/armoured-vehicles"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Body Armour permits",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/business/security-services/body-armour"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SSA",
+                  "color": "#6a1b9a",
+                  "full_name": "Security Services Act  -  Armoured vehicle and body armour permits"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "identity_credentials_access",
+                  "domain": "professional_credentials"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "licences_permits"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/public-safety-solicitor-general"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Get a criminal record check for work with children or vulnerable adults",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get a criminal record check through the Criminal Records Review Program",
+              "desc": "People who work or volunteer with children under 19 or vulnerable adults must complete a vulnerable sector check through the Criminal Records Review Program, run by the Security Programs Division.",
+              "users": "Employees, volunteers, adoptive parents",
+              "user_groups": [
+                "Workers & job seekers",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply for a criminal record check",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/crime-prevention/criminal-record-check/applicants/apply"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Criminal record checks",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/crime-prevention/criminal-record-check"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CRRA",
+                  "color": "#00695c",
+                  "full_name": "Criminal Records Review Act  -  Vulnerable sector criminal record checks"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "professional_credentials",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Become a foster caregiver",
+                    "ministry": "cfd"
+                  },
+                  {
+                    "type": "shared_information",
+                    "service": "Get certified as an early childhood educator",
+                    "ministry": "ecc"
+                  },
+                  {
+                    "type": "worker_employer",
+                    "service": "Screen employees and volunteers as an organization",
+                    "ministry": "pssg"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/crime-prevention/criminal-record-check/applicants"
+              }
+            },
+            {
+              "name": "Screen employees and volunteers as an organization",
+              "desc": "Organizations covered by the Criminal Records Review Act must screen people who work with children or vulnerable adults through the CRRP and manage screening through an organization account.",
+              "users": "Employers, non-profits, schools, care providers",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Organizations",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/crime-prevention/criminal-record-check/organizations"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CRRA",
+                  "color": "#00695c",
+                  "full_name": "Criminal Records Review Act  -  Organization screening duties"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "reporting_obligations",
+                "relationships": [
+                  {
+                    "type": "worker_employer",
+                    "service": "Get a criminal record check through the Criminal Records Review Program",
+                    "ministry": "pssg"
+                  },
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Open a licensed child care facility",
+                    "ministry": "ecc"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/crime-prevention/criminal-record-check/law-policy"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#8e0000",
+      "title": "GOAL 2",
+      "short_name": "People affected by crime get support, and offenders are safely supervised",
+      "legend_label": "Victim support & corrections",
+      "description": "The ministry funds victim services and financial assistance for people affected by crime, maintains the province-wide protection order registry, and BC Corrections manages adults in custody and under community supervision.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get support as a victim of crime",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get 24/7 crisis support and referrals as a victim of crime",
+              "desc": "VictimLinkBC is a toll-free, confidential, multilingual phone and text service available 24/7 across B.C. and the Yukon, providing information, referrals and immediate crisis support to victims of crime, family and sexual violence.",
+              "users": "Victims of crime, witnesses, family members",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "VictimLinkBC 1-800-563-0808",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/victims-of-crime/victimlinkbc"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "VOCA",
+                  "color": "#8e0000",
+                  "full_name": "Victims of Crime Act  -  Victim services"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/victims-of-crime/victimlinkbc"
+              }
+            },
+            {
+              "name": "Apply for crime victim assistance benefits",
+              "desc": "The Crime Victim Assistance Program provides medical, counselling, income-support, funeral and other benefits to victims of violent crime, immediate family members and some witnesses in B.C.",
+              "users": "Victims of violent crime, immediate family members, witnesses",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Crime Victim Assistance Program application forms",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/bcs-criminal-justice-system/if-you-are-a-victim-of-a-crime/victim-of-crime/cvap-forms"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Crime Victim Assistance Program (CVAP)",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/bcs-criminal-justice-system/if-you-are-a-victim-of-a-crime/victim-of-crime/financial-assistance-benefits"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CVAA",
+                  "color": "#b71c1c",
+                  "full_name": "Crime Victim Assistance Act  -  Benefits for victims, family members and witnesses"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/bcs-criminal-justice-system/if-you-are-a-victim-of-a-crime/victim-of-crime/financial-assistance-benefits"
+              }
+            },
+            {
+              "name": "Register for notification about an offender's status",
+              "desc": "The Victim Safety Unit lets registered victims receive ongoing information about the custody status, release dates and conditions of an accused or convicted offender.",
+              "users": "Registered victims of crime",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Victim notification",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/bcs-criminal-justice-system/if-you-are-a-victim-of-a-crime/victim-of-crime/victim-notification"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "VictimLinkBC (registration assistance)",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/victims-of-crime/victimlinkbc"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "VOCA",
+                  "color": "#8e0000",
+                  "full_name": "Victims of Crime Act  -  Victim notification"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/victims-of-crime"
+              }
+            },
+            {
+              "name": "Search or register a protection order",
+              "desc": "The Protection Order Registry is a confidential, province-wide database of civil and criminal protection orders that lets police confirm and enforce orders any time, day or night.",
+              "users": "Survivors of family or intimate partner violence, police",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Protection Order Registry",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/crime-prevention/protection-order-registry"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PA",
+                  "color": "#0d47a1",
+                  "full_name": "Police Act  -  Protection Order Registry"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/crime-prevention/protection-order-registry"
+              }
+            },
+            {
+              "name": "Get help travelling to a justice-related proceeding",
+              "desc": "The Victim Travel Fund provides funding for victims or family members to attend justice-related proceedings elsewhere in B.C.",
+              "users": "Victims of crime, family members",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Victim travel assistance",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/bcs-criminal-justice-system/if-you-are-a-victim-of-a-crime/victim-of-crime/victim-travel-assistance"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/victims-of-crime"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Serve or manage a custodial or community sentence",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Find a correctional centre or probation office",
+              "desc": "BC Corrections operates correctional centres for adults in custody and probation offices that supervise people serving community sentences such as bail or probation orders.",
+              "users": "People in custody, people on probation, families",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Correctional centres",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/corrections/correctional-centres"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "Probation offices",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/corrections/probation-offices"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CA",
+                  "color": "#455a64",
+                  "full_name": "Correction Act  -  Custody and community supervision"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/corrections"
+              }
+            },
+            {
+              "name": "Access programs to reduce reoffending while in custody or on probation",
+              "desc": "BC Corrections offers programs addressing substance use, violence prevention, intimate partner violence and life and work skills to help people in custody or under supervision reduce reoffending.",
+              "users": "People in custody, people on community supervision",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Reducing reoffending",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/corrections/reducing-reoffending"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CA",
+                  "color": "#455a64",
+                  "full_name": "Correction Act  -  Correctional programs"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/corrections"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#4527a0",
+      "title": "GOAL 3",
+      "short_name": "Unlawful proceeds are seized and unexplained deaths are independently investigated",
+      "legend_label": "Civil forfeiture & coroners",
+      "description": "The Civil Forfeiture Office targets the proceeds and instruments of unlawful activity, and the BC Coroners Service independently investigates unnatural, sudden, unexpected, unexplained or unattended deaths to improve public safety.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Report and recover proceeds of unlawful activity",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Report suspected proceeds or instruments of unlawful activity",
+              "desc": "The Civil Forfeiture Office targets property that is the proceeds or an instrument of unlawful activity so people cannot profit from crime or use property to seriously harm others.",
+              "users": "General public, police",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Civil Forfeiture Office",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/crime-prevention/civil-forfeiture-office"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CFA",
+                  "color": "#4527a0",
+                  "full_name": "Civil Forfeiture Act  -  Forfeiture of unlawfully obtained property"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/crime-prevention/civil-forfeiture-office"
+              }
+            },
+            {
+              "name": "Apply for a crime-prevention grant or victim compensation from forfeited funds",
+              "desc": "The Director of Civil Forfeiture disburses forfeited funds to community crime-prevention grants and to compensate eligible victims of unlawful activity.",
+              "users": "Community organizations, victims of unlawful activity",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Grants and compensation",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/crime-prevention/civil-forfeiture-office/grants-compensation"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CFA",
+                  "color": "#4527a0",
+                  "full_name": "Civil Forfeiture Act  -  Disbursement of forfeited funds"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/crime-prevention/civil-forfeiture-office"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get information about a death investigated by the coroner",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Report a death to the BC Coroners Service",
+              "desc": "Anyone can report an unnatural, sudden, unexpected, unexplained or unattended death to the BC Coroners Service, which investigates and classifies the death and may make recommendations to prevent future deaths.",
+              "users": "General public, families, police, hospitals",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Report a death 1-855-207-0637",
+                  "url": "https://www2.gov.bc.ca/gov/content/life-events/death/coroners-service"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "BC Coroners Service",
+                  "url": "https://www2.gov.bc.ca/gov/content/life-events/death/coroners-service"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CorA",
+                  "color": "#37474f",
+                  "full_name": "Coroners Act  -  Duty to report and investigate reportable deaths"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Register a death",
+                    "ministry": "hlth"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/life-events/death/coroners-service"
+              }
+            },
+            {
+              "name": "Request a coroner's report or family resources",
+              "desc": "Families and other eligible parties can request a coroner's investigation or inquest report, and access family resources on coping with bereavement and loss.",
+              "users": "Families of the deceased, funeral homes",
+              "user_groups": [
+                "Families & caregivers",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Request a report",
+                  "url": "https://www2.gov.bc.ca/gov/content/life-events/death/coroners-service/report-request"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Family resources",
+                  "url": "https://www2.gov.bc.ca/gov/content/life-events/death/coroners-service/resources"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CorA",
+                  "color": "#37474f",
+                  "full_name": "Coroners Act  -  Coroner's reports and inquests"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/life-events/death/coroners-service"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#c62828",
+      "title": "GOAL 4",
+      "short_name": "Roads are safer and fire risks are managed through licensing, standards and enforcement",
+      "legend_label": "Road & fire safety",
+      "description": "RoadSafetyBC assesses driver medical fitness, manages high-risk driving prohibitions and vehicle impoundment to work toward zero traffic deaths, and the Office of the Fire Commissioner enforces B.C.'s fire safety legislation and training standards.",
+      "metrics": [],
+      "css_class": "goal-4",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Keep your driver's licence and driving privileges in good standing",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get your driver's medical fitness assessed",
+              "desc": "RoadSafetyBC assesses drivers' medical fitness to drive and makes licensing decisions, including reviewing driver medical examination reports and requests to review a fitness decision.",
+              "users": "Drivers with a medical condition, health professionals",
+              "user_groups": [
+                "Drivers & vehicle owners",
+                "Seniors",
+                "Health professionals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Driver medical fitness",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/roadsafetybc/medical-fitness"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MVA",
+                  "color": "#c62828",
+                  "full_name": "Motor Vehicle Act  -  Driver medical fitness and Superintendent of Motor Vehicles"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/roadsafetybc"
+              }
+            },
+            {
+              "name": "Apply for a review of a driving prohibition or suspension",
+              "desc": "Drivers can apply online for a review of alcohol- or drug-related driving prohibitions and suspensions, including 24-hour, 3-, 7-, 30- and 90-day prohibitions issued under the Motor Vehicle Act.",
+              "users": "Drivers who have received a prohibition or suspension",
+              "user_groups": [
+                "Drivers & vehicle owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply for a driving prohibition review",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/roadsafetybc/prohibitions/apply-online"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Driving suspensions and prohibitions",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/roadsafetybc/prohibitions"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MVA",
+                  "color": "#c62828",
+                  "full_name": "Motor Vehicle Act  -  Driving prohibitions and reviews"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/roadsafetybc/prohibitions"
+              }
+            },
+            {
+              "name": "Get your vehicle back after an impoundment",
+              "desc": "The Vehicle Impoundment Program explains how to recover a vehicle impounded for high-risk driving offences, and the fees and conditions that apply.",
+              "users": "Drivers whose vehicle was impounded",
+              "user_groups": [
+                "Drivers & vehicle owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Vehicle Impoundment Program",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/roadsafetybc/impoundment"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MVA",
+                  "color": "#c62828",
+                  "full_name": "Motor Vehicle Act  -  Vehicle impoundment"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/roadsafetybc"
+              }
+            },
+            {
+              "name": "Complete a high-risk driver program",
+              "desc": "The Driver Improvement Program, Ignition Interlock Program and Responsible Driver Program help high-risk drivers address unsafe driving behaviour and regain driving privileges.",
+              "users": "High-risk and repeat-offence drivers",
+              "user_groups": [
+                "Drivers & vehicle owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Driver programs",
+                  "url": "https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/roadsafetybc/high-risk-driver"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MVA",
+                  "color": "#c62828",
+                  "full_name": "Motor Vehicle Act  -  High-risk driver programs"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/roadsafetybc"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Comply with fire safety standards",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Report a fire incident",
+              "desc": "Building owners, fire departments and other parties are required to report specific fires to the Office of the Fire Commissioner under B.C.'s fire safety legislation.",
+              "users": "Fire departments, building owners",
+              "user_groups": [
+                "Businesses & employers",
+                "Property owners",
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Fire incident reporting",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/public-safety/fire-safety/fire-reporting"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FSA2024",
+                  "color": "#ef6c00",
+                  "full_name": "Fire Safety Act  -  Mandatory fire incident reporting"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "reporting_obligations",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/public-safety/fire-safety"
+              }
+            },
+            {
+              "name": "Get trained and certified as a firefighter, fire inspector or investigator",
+              "desc": "The Office of the Fire Commissioner sets and delivers minimum training standards for firefighters, fire inspectors and fire investigators across B.C.",
+              "users": "Firefighters, fire inspectors, fire investigators",
+              "user_groups": [
+                "Workers & job seekers",
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Standards and training",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/public-safety/fire-safety/training"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FSA2024",
+                  "color": "#ef6c00",
+                  "full_name": "Fire Safety Act  -  Training standards for fire service personnel"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "professional_credentials",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/public-safety/fire-safety"
+              }
+            },
+            {
+              "name": "Apply for a fire service award",
+              "desc": "Firefighters and citizens who perform exemplary fire-related service may be eligible for a fire service award or recognition through the Office of the Fire Commissioner.",
+              "users": "Firefighters, citizens",
+              "user_groups": [
+                "General public",
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Fire service awards",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/public-safety/fire-safety/fire-service-awards"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/public-safety/fire-safety"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Provincial policing standards and oversight policy",
+      "desc": "Policy and standard-setting work for provincial policing standards, the Police Tax financing model, and coordination of federal, provincial, municipal, First Nations and integrated police services.",
+      "users": "Internal program staff, police agencies",
+      "channels": [],
+      "legislation": [
+        {
+          "abbrev": "PA",
+          "color": "#0d47a1",
+          "full_name": "Police Act  -  Provincial policing standards"
+        }
+      ],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "safety_emergencies",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Security Programs Division licence compliance and risk assessment",
+      "desc": "Back-office licensing administration, risk assessment, fingerprinting coordination and compliance monitoring for the security industry and criminal record check programs.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "regulatory_compliance",
+        "domain": "licences_permits",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-3",
+      "name": "Victim services program funding and coordination",
+      "desc": "Funding, coordination and policy support for community-based victim services and violence-against-women programs across British Columbia.",
+      "users": "Internal program staff, victim service providers",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "justice_legal",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-4",
+      "name": "BC Corrections research, evaluation and reporting",
+      "desc": "Research, program evaluation and public reporting on the adult correctional population, reoffending outcomes and the Indigenous Justice Framework.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "justice_legal",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    }
+  ],
+  "mandate_date": null,
+  "mandate_minister": "Nina Krieger (Minister of Public Safety and Solicitor General); Terry Yung (Minister of State for Community Safety and Integrated Services)",
+  "mandate_pdf": null,
+  "cross_cutting": [],
+  "mandate_legend": [],
+  "channel_filters": [
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Families & caregivers",
+    "Workers & job seekers",
+    "Businesses & employers",
+    "Drivers & vehicle owners",
+    "Seniors",
+    "Health professionals",
+    "Municipalities & local governments",
+    "Property owners"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

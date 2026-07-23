@@ -1,0 +1,1084 @@
+{
+  "prefix": "nr",
+  "full_name": "Natural Resources",
+  "short_name": "Natural Resources",
+  "blurb": "Manages New Brunswick's Crown lands, forests, fish and wildlife, and mineral resources — half the province is Crown land held in trust for its people.",
+  "nav_name": "Natural Resources",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "title": "GOAL 1",
+      "short_name": "Crown lands and forests are managed sustainably",
+      "legend_label": "Crown lands & forests",
+      "description": "Crown land is available for responsible use, timber is harvested sustainably, and wildfires are prevented and fought.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Use Crown land and forests",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply to lease or use Crown land",
+              "desc": "Leases, easements, and permits for uses of Crown land — from campsite leases and maple sugaries to commercial development.",
+              "users": "Residents, businesses, communities",
+              "user_groups": [
+                "General public",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/natural-resources.html",
+                  "url": "https://www.gnb.ca/en/org/natural-resources.html"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Crown land application",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CLFA",
+                  "color": "#0070c0",
+                  "full_name": "Crown Lands and Forests Act  -  Lease of Crown lands"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "societal_needs_supports",
+                  "domain": "environment_land"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "licences_permits"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Get a timber harvesting licence on Crown land",
+              "desc": "Licences and sub-licences allocate sustainable timber harvest on Crown forest under approved management plans.",
+              "users": "Forestry companies and contractors",
+              "user_groups": [
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/natural-resources.html",
+                  "url": "https://www.gnb.ca/en/org/natural-resources.html"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CLFA",
+                  "color": "#0070c0",
+                  "full_name": "Crown Lands and Forests Act  -  Crown timber licences"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "direct-economic",
+                "note": "Forestry is a leading NB export sector"
+              }
+            },
+            {
+              "name": "Get a burn permit and check fire restrictions",
+              "desc": "Daily category fire risk, burn permits for brush burning, and seasonal fire restrictions.",
+              "users": "Rural residents, woodlot owners, industry",
+              "user_groups": [
+                "General public",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Fire watch and burn conditions",
+                  "url": "https://www.gnb.ca/en/org/natural-resources.html"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Burn permit line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FFA",
+                  "color": "#c62828",
+                  "full_name": "Forest Fires Act  -  Fire season restrictions and burning permits"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "societal_needs_supports",
+                  "domain": "safety_emergencies"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "environmental_requirements"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Get a permit to cut fuelwood on Crown land",
+              "desc": "Domestic fuelwood permits let residents cut firewood for personal use in designated Crown land areas.",
+              "users": "Rural residents heating with wood",
+              "user_groups": [
+                "General public",
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Regional natural resources office",
+                  "url": null
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Regional natural resources office",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CLFA",
+                  "color": "#0070c0",
+                  "full_name": "Crown Lands and Forests Act  -  Crown timber sale — firewood"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Get a permit to gather wreath tips and branch material on Crown land",
+              "desc": "Permits to harvest evergreen tips and branches from Crown land for wreaths and decorations.",
+              "users": "Wreath makers, seasonal harvesters",
+              "user_groups": [
+                "Individuals",
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Wreath material permit",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.3995.Permit_for_Wreath_Tips_and_Branch_Material_.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.3995.Permit_for_Wreath_Tips_and_Branch_Material_.html"
+              }
+            },
+            {
+              "name": "Get a permit for activity in a protected natural area",
+              "desc": "Permits for research and other permitted activities inside protected natural areas.",
+              "users": "Researchers, organizations",
+              "user_groups": [
+                "Researchers",
+                "Organizations"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Protected area permit",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.3375.Permits_for_Activity_in_a_Protected_Natural_Area.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.3375.Permits_for_Activity_in_a_Protected_Natural_Area.html"
+              }
+            },
+            {
+              "name": "Post your land against hunting",
+              "desc": "How to legally post private land to prohibit or restrict hunting access.",
+              "users": "Landowners",
+              "user_groups": [
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Posting land",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.200890.Posting_Your_Land_Against_Hunting.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.200890.Posting_Your_Land_Against_Hunting.html"
+              }
+            },
+            {
+              "name": "Report forest insect or disease damage",
+              "desc": "Report signs of insect infestation or disease in trees and woodlots.",
+              "users": "Woodlot owners, public",
+              "user_groups": [
+                "General public",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Report forest damage",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.201173.Reporting_Forest_Damage_(insect_or_disease).html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.201173.Reporting_Forest_Damage_(insect_or_disease).html"
+              }
+            },
+            {
+              "name": "Get funding for silviculture work on your private woodlot",
+              "desc": "Support for planting, thinning, and other silviculture treatments on private woodlots.",
+              "users": "Private woodlot owners",
+              "user_groups": [
+                "Property owners",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Silviculture support",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.201362.Private_Woodlot_Silviculture_Program.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "forestry",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.201362.Private_Woodlot_Silviculture_Program.html"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "title": "GOAL 2",
+      "short_name": "Fish and wildlife thrive and are enjoyed responsibly",
+      "legend_label": "Fish & wildlife",
+      "description": "Hunting, angling, and trapping are managed sustainably, and wildlife conflicts and poaching are addressed.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Hunt, fish and enjoy wildlife",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get a hunting or angling licence",
+              "desc": "Licences for deer, moose, small game, and recreational angling, including draws for limited-entry hunts.",
+              "users": "Hunters and anglers",
+              "user_groups": [
+                "Individuals",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Service New Brunswick centre",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/natural-resources.html",
+                  "url": "https://www.gnb.ca/en/org/natural-resources.html"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FWA",
+                  "color": "#2e7d32",
+                  "full_name": "Fish and Wildlife Act  -  Registration, licences and permits"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": [
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "Get an outfitter or guide licence",
+                    "ministry": "nr"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "unvalidated"
+              },
+              "reach": {
+                "tier": "medium",
+                "estimate": "est. 100K+ licences/yr",
+                "basis": "annual"
+              }
+            },
+            {
+              "name": "Get a trapping or fur harvester licence",
+              "desc": "Licensing and training requirements for trapping furbearing animals in season.",
+              "users": "Trappers",
+              "user_groups": [
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Service New Brunswick centre",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/natural-resources.html",
+                  "url": "https://www.gnb.ca/en/org/natural-resources.html"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FWA",
+                  "color": "#2e7d32",
+                  "full_name": "Fish and Wildlife Act  -  Registration, licences and permits"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Get an outfitter or guide licence",
+              "desc": "Licensing of hunting and fishing guides and outfitting businesses serving residents and visitors.",
+              "users": "Guides and outfitters",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/natural-resources.html",
+                  "url": "https://www.gnb.ca/en/org/natural-resources.html"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Guide licence application",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FWA",
+                  "color": "#2e7d32",
+                  "full_name": "Fish and Wildlife Act  -  Guides"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "tourism_hospitality",
+                "relationships": [
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "Get a hunting or angling licence",
+                    "ministry": "nr"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Report poaching or a wildlife concern",
+              "desc": "Report illegal hunting and fishing, or get help with nuisance and injured wildlife.",
+              "users": "General public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Report poaching line",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Take hunter education and firearm safety training",
+              "desc": "The required hunter education course — in class, online, or by home study — before a first hunting licence.",
+              "users": "New hunters",
+              "user_groups": [
+                "Individuals",
+                "Youth"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Course provider",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Hunter education",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.5215.Hunter_Education_Course.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.5215.Hunter_Education_Course.html"
+              }
+            },
+            {
+              "name": "Enter the moose hunting licence draw",
+              "desc": "The annual random draw for resident moose hunting licences.",
+              "users": "Resident hunters",
+              "user_groups": [
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Moose draw",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.200853.Moose_Hunting_Licence_.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.200853.Moose_Hunting_Licence_.html"
+              }
+            },
+            {
+              "name": "Book Crown reserve angling waters",
+              "desc": "Licences to fish premium Crown reserve stretches allocated by daily or multi-day booking.",
+              "users": "Anglers",
+              "user_groups": [
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Crown reserve booking",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.201003.Fishing_-_Crown_Reserve_Licences.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.201003.Fishing_-_Crown_Reserve_Licences.html"
+              }
+            },
+            {
+              "name": "Bid to lease Crown angling waters at public auction",
+              "desc": "Multi-year leases of designated Crown angling stretches by public auction.",
+              "users": "Anglers, clubs, outfitters",
+              "user_groups": [
+                "Individuals",
+                "Organizations"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Angling lease auction",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.2335.Angling_Leases_-_Public_Auction.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.2335.Angling_Leases_-_Public_Auction.html"
+              }
+            },
+            {
+              "name": "Get licensed to operate a nuisance wildlife control business",
+              "desc": "Course and licence requirements for removing or controlling nuisance wildlife for clients.",
+              "users": "Wildlife control operators",
+              "user_groups": [
+                "Business owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Operator licence",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.4535.Nuisance_Wildlife_Control_Operator_Licence.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.4535.Nuisance_Wildlife_Control_Operator_Licence.html"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#b45309",
+      "title": "GOAL 3",
+      "short_name": "Mineral resources are developed responsibly",
+      "legend_label": "Minerals",
+      "description": "Mineral exploration and quarrying are enabled with clear tenure and environmental responsibility.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Explore and develop mineral resources",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Register a mineral claim and get exploration approvals",
+              "desc": "Online mineral claim staking, exploration approvals, and access to provincial geoscience data.",
+              "users": "Prospectors and mining companies",
+              "user_groups": [
+                "Mining companies",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/natural-resources.html",
+                  "url": "https://www.gnb.ca/en/org/natural-resources.html"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "Online claim staking",
+                  "url": "https://www.gnb.ca/en/org/natural-resources.html"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MinA",
+                  "color": "#b45309",
+                  "full_name": "Mining Act  -  Mineral claims"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Get a quarry or aggregate permit",
+              "desc": "Permits and royalties for quarriable substances — sand, gravel, and rock — on Crown and private land.",
+              "users": "Aggregate producers, contractors",
+              "user_groups": [
+                "Industry & contractors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/natural-resources.html",
+                  "url": "https://www.gnb.ca/en/org/natural-resources.html"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Quarry permit application",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "QSA",
+                  "color": "#6a1b9a",
+                  "full_name": "Quarriable Substances Act  -  Quarry permit"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Explore for oil and natural gas",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get rights to explore for oil and natural gas",
+              "desc": "Licences to search and geophysical exploration licences granting rights to explore designated areas.",
+              "users": "Energy exploration companies",
+              "user_groups": [
+                "Energy companies"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Minerals and petroleum branch",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Licence to search",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.3415.Oil_and_Natural_Gas_Licence_to_Search.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.3415.Oil_and_Natural_Gas_Licence_to_Search.html"
+              }
+            },
+            {
+              "name": "Lease oil and natural gas production rights",
+              "desc": "Leases and well licences required to produce oil and natural gas from Crown reserves.",
+              "users": "Energy companies",
+              "user_groups": [
+                "Energy companies"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Minerals and petroleum branch",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Oil and gas lease",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.1238.Oil_and_Natural_Gas_Lease.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.1238.Oil_and_Natural_Gas_Lease.html"
+              }
+            },
+            {
+              "name": "Get a pipeline or underground storage licence",
+              "desc": "Licences and construction permits for pipelines and underground hydrocarbon storage.",
+              "users": "Pipeline and storage operators",
+              "user_groups": [
+                "Energy companies"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Minerals and petroleum branch",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Pipeline licensing",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.19116.Pipe_Line_Licence.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/erd/services/services_renderer.19116.Pipe_Line_Licence.html"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Prevent and fight wildfires",
+      "desc": "Wildfire prevention, detection, and suppression across Crown and private forest.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "safety_emergencies",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Survey and map provincial geology and resources",
+      "desc": "Geoscience surveys, mapping, and resource inventories supporting exploration and land use decisions.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "industry_specific",
+        "domain": "energy_minerals",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    }
+  ],
+  "mandate_date": "November 7, 2024",
+  "mandate_minister": "John Herron",
+  "mandate_pdf": "https://www.gnb.ca/en/gov/contacts/members-executive-council/mandates-letters/mandates-herron.html",
+  "cross_cutting": [
+    "Healthcare",
+    "Affordability and Housing",
+    "Education",
+    "Economic Development",
+    "Environment",
+    "Leadership You Can Trust"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Increase conservation lands and waters from 10% to 15%, with a plan toward 30%"
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Industry",
+    "Individuals",
+    "Producers & ranchers",
+    "Researchers",
+    "Organizations",
+    "Property owners",
+    "Businesses & employers",
+    "Youth",
+    "Business owners",
+    "Mining companies",
+    "Industry & contractors",
+    "Energy companies"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

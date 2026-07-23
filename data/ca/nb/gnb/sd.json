@@ -1,0 +1,1055 @@
+{
+  "prefix": "sd",
+  "full_name": "Social Development",
+  "short_name": "Social Development",
+  "blurb": "Supports New Brunswickers who need help most — income assistance, affordable housing, child protection, disability supports, and long-term care for seniors.",
+  "nav_name": "Social Development",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "title": "GOAL 1",
+      "short_name": "People have income security and a place to live",
+      "legend_label": "Income & housing",
+      "description": "People with low incomes get financial assistance and access to affordable, suitable housing.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get financial help",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for social assistance",
+              "desc": "Monthly financial assistance and health card benefits for individuals and families with little or no income.",
+              "users": "People with low or no income",
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Social Development intake line",
+                  "url": null
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Regional Social Development office",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FISA",
+                  "color": "#0070c0",
+                  "full_name": "Family Income Security Act  -  Application for and provision of assistance"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Increase social assistance rates and stop regulations penalizing recipients"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "income-support",
+                "note": "Mandate commitment to raise rates and remove penalties"
+              },
+              "reach": {
+                "tier": "medium",
+                "estimate": "est. ~38K recipients",
+                "basis": "active"
+              }
+            },
+            {
+              "name": "Access disability support services",
+              "desc": "Individualized support plans, personal care, and community participation supports for adults with disabilities.",
+              "users": "Adults with disabilities",
+              "user_groups": [
+                "Persons with disabilities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Social Development intake line",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/social-development.html",
+                  "url": "https://www.gnb.ca/en/org/social-development.html"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FSA",
+                  "color": "#b45309",
+                  "full_name": "Family Services Act  -  Community social services"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Explore a basic income plan for New Brunswickers living with disabilities"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Get emergency help with heating costs",
+              "desc": "Emergency fuel and heating benefits help low-income households keep the heat on in winter.",
+              "users": "Low-income households in heating emergencies",
+              "user_groups": [
+                "Individuals",
+                "Families",
+                "Seniors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Social Development intake line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FISA",
+                  "color": "#0070c0",
+                  "full_name": "Family Income Security Act  -  Application for and provision of assistance"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Get help paying for dental, vision, hearing and mobility equipment",
+              "desc": "Health-related benefits including adaptive equipment, dental, vision, and hearing aids for people in financial need.",
+              "users": "Low-income individuals and families",
+              "user_groups": [
+                "Individuals",
+                "Persons with disabilities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Health services benefits",
+                  "url": "https://www.gnb.ca/content/gnb/en/departments/social_development/health_services.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/content/gnb/en/departments/social_development/health_services.html"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Find affordable housing",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for public housing or a rent supplement",
+              "desc": "Subsidized housing units and rent supplements make housing affordable for low-income households.",
+              "users": "Low-income renters",
+              "user_groups": [
+                "Individuals",
+                "Families",
+                "Seniors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "NB Housing Corporation",
+                  "url": "https://www.gnb.ca/en/org/housing-corporation.html"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Regional housing office",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "NBHA",
+                  "color": "#c62828",
+                  "full_name": "New Brunswick Housing Act  -  Objects and powers of the Corporation"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 8,
+                  "tip": "Renovate public housing and build new units; support 30,000 new homes by 2030"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              },
+              "economic_impact": {
+                "tag": "essential",
+                "category": "housing-affordability",
+                "note": "Mandate: renovate and expand public housing; 30K homes by 2030"
+              }
+            },
+            {
+              "name": "Get help with emergency housing and homelessness",
+              "desc": "Emergency shelter referrals and supports for people experiencing or at risk of homelessness.",
+              "users": "People experiencing homelessness",
+              "user_groups": [
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Social Development intake line",
+                  "url": null
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Regional Social Development office",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "NBHA",
+                  "color": "#c62828",
+                  "full_name": "New Brunswick Housing Act  -  Objects and powers of the Corporation"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 6,
+                  "tip": "Provide Housing First wraparound services for chronic homelessness"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "title": "GOAL 2",
+      "short_name": "Children, youth and families are safe and supported",
+      "legend_label": "Child & family wellbeing",
+      "description": "Children at risk are protected, and families get support to stay together or grow through fostering and adoption.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Protect and support children and families",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Report a child at risk of abuse or neglect",
+              "desc": "Anyone who suspects a child is being abused or neglected has a legal duty to report it for assessment and protection.",
+              "users": "Anyone concerned about a child",
+              "user_groups": [
+                "General public",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Child protection intake — 24 hours",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CYWBA",
+                  "color": "#2e7d32",
+                  "full_name": "Child and Youth Well-Being Act  -  Duty to report"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Become a foster or kinship caregiver",
+              "desc": "Recruitment, training, and support for foster families and kinship caregivers providing homes for children in care.",
+              "users": "Prospective caregivers",
+              "user_groups": [
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/social-development.html",
+                  "url": "https://www.gnb.ca/en/org/social-development.html"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Regional Social Development office",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CYWBA",
+                  "color": "#2e7d32",
+                  "full_name": "Child and Youth Well-Being Act  -  Protection services and placement"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Adopt a child",
+              "desc": "Adoption services for children in provincial care, including home studies, matching, and post-adoption support.",
+              "users": "Prospective adoptive parents",
+              "user_groups": [
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/social-development.html",
+                  "url": "https://www.gnb.ca/en/org/social-development.html"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Regional Social Development office",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CYWBA",
+                  "color": "#2e7d32",
+                  "full_name": "Child and Youth Well-Being Act  -  Adoption"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Apply to open sealed adoption records",
+              "desc": "Access to identifying information from sealed adoption records.",
+              "users": "Adoptees and birth families",
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Adoption records",
+                  "url": "https://www.gnb.ca/content/gnb/en/departments/social_development/promos/adoption.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/content/gnb/en/departments/social_development/promos/adoption.html"
+              }
+            },
+            {
+              "name": "Reconnect with birth relatives after an adoption",
+              "desc": "Post-adoption disclosure services help make contact with birth relatives.",
+              "users": "Adoptees and birth families",
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Post-adoption services",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get family and crisis supports",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Provide short-term respite care for a child or youth",
+              "desc": "Short-term relief care for children and youth to support their caregivers.",
+              "users": "Adults able to provide care",
+              "user_groups": [
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Respite care",
+                  "url": "https://socialsupportsnb.ca/en/program/supporting-caregivers-children-and-youth-through-respiterelief-care"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://socialsupportsnb.ca/en/program/supporting-caregivers-children-and-youth-through-respiterelief-care"
+              }
+            },
+            {
+              "name": "Get support as a youth leaving care",
+              "desc": "Engagement services help youth in care transition to adulthood.",
+              "users": "Youth in or leaving care",
+              "user_groups": [
+                "Youth"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Youth engagement services",
+                  "url": "https://socialsupportsnb.ca/en/program/youth-engagement-services-yes-program"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://socialsupportsnb.ca/en/program/youth-engagement-services-yes-program"
+              }
+            },
+            {
+              "name": "Plan for a child's safety with your extended family",
+              "desc": "Family group conferencing — a family-centred planning process for a child's safety and wellbeing.",
+              "users": "Families involved with child protection",
+              "user_groups": [
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Regional Social Development office",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Get support during pregnancy",
+              "desc": "Resources and help for people who are pregnant and need support.",
+              "users": "Pregnant individuals",
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Pregnancy supports",
+                  "url": "https://socialsupportsnb.ca/en/simple_page/support-during-pregnancy"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://socialsupportsnb.ca/en/simple_page/support-during-pregnancy"
+              }
+            },
+            {
+              "name": "Get emergency social help after hours",
+              "desc": "After-hours emergency social services for urgent situations, day or night.",
+              "users": "Individuals and families in crisis",
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "After-hours emergency social services",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#b45309",
+      "title": "GOAL 3",
+      "short_name": "Seniors live with dignity and the right level of care",
+      "legend_label": "Seniors & long-term care",
+      "description": "Seniors get assessed for care needs and supported at home or in licensed facilities, and vulnerable adults are protected.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get care and support as a senior",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get a long-term care needs assessment",
+              "desc": "Assessment of care needs and financial contribution determines access to home support, special care homes, and nursing homes.",
+              "users": "Seniors and adults needing care",
+              "user_groups": [
+                "Seniors",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Social Development intake line",
+                  "url": null
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Regional Social Development office",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "NHA",
+                  "color": "#6a1b9a",
+                  "full_name": "Nursing Homes Act  -  Licensing of nursing homes"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 11,
+                  "tip": "Fill nursing home staffing gaps, raise PSW wages, increase hours of care"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Get home support services",
+              "desc": "Home support workers help seniors with daily activities so they can stay in their homes longer.",
+              "users": "Seniors with assessed needs",
+              "user_groups": [
+                "Seniors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Social Development intake line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "NHA",
+                  "color": "#6a1b9a",
+                  "full_name": "Nursing Homes Act  -  Licensing of nursing homes"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 9,
+                  "tip": "Expand Nursing Homes Without Walls so seniors can stay home longer"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Report suspected abuse of a senior or vulnerable adult",
+              "desc": "Report concerns about neglect, abuse, or self-neglect of seniors and dependent adults for protective assessment.",
+              "users": "Anyone concerned about an adult",
+              "user_groups": [
+                "General public",
+                "Seniors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Adult protection intake",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FSA",
+                  "color": "#b45309",
+                  "full_name": "Family Services Act  -  Adult protection services"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Find a licensed nursing home or care home",
+              "desc": "Lists of licensed nursing homes, special care homes, and memory care homes by region.",
+              "users": "Seniors and their families",
+              "user_groups": [
+                "Seniors",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Licensed homes list",
+                  "url": "https://www.gnb.ca/content/gnb/en/departments/social_development/nursinghomes.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/content/gnb/en/departments/social_development/nursinghomes.html"
+              }
+            },
+            {
+              "name": "Report abuse or neglect of an adult with a disability",
+              "desc": "Report suspected abuse or neglect of adults with disabilities for protective response.",
+              "users": "Anyone concerned about an adult at risk",
+              "user_groups": [
+                "General public",
+                "Persons with disabilities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Adult protection intake",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "License and inspect long-term care and special care facilities",
+      "desc": "Standards, licensing, and inspection of nursing homes and adult residential facilities.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "regulatory_compliance",
+        "domain": "licences_permits",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Fund community social services organizations",
+      "desc": "Agreements with non-profits delivering shelters, family supports, and community services.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "core_human_needs",
+        "domain": "family_relationships",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    }
+  ],
+  "mandate_date": "November 2024",
+  "mandate_minister": "Cindy Miles; David Hickey (Housing); Lyne Chantal Boudreau (Seniors)",
+  "mandate_pdf": "https://www.gnb.ca/en/gov/contacts/members-executive-council/mandates-letters.html",
+  "cross_cutting": [
+    "Healthcare",
+    "Affordability and Housing",
+    "Education",
+    "Economic Development",
+    "Environment",
+    "Leadership You Can Trust"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Increase social assistance rates and stop regulations penalizing recipients",
+      "mapping": "-> Apply for social assistance"
+    },
+    {
+      "number": 2,
+      "text": "Let recipients participate in the workforce without losing benefits"
+    },
+    {
+      "number": 3,
+      "text": "Explore a basic income plan for New Brunswickers living with disabilities",
+      "mapping": "-> Access disability support services"
+    },
+    {
+      "number": 4,
+      "text": "Fund transition homes and frontline domestic violence services sustainably"
+    },
+    {
+      "number": 5,
+      "text": "Fund safety and accessibility retrofits so seniors and people with disabilities can stay home"
+    },
+    {
+      "number": 6,
+      "text": "Provide Housing First wraparound services for chronic homelessness",
+      "mapping": "-> Get help with emergency housing and homelessness"
+    },
+    {
+      "number": 7,
+      "text": "Introduce a 3% rent cap with a comprehensive Residential Tenancies Act update"
+    },
+    {
+      "number": 8,
+      "text": "Renovate public housing and build new units; support 30,000 new homes by 2030",
+      "mapping": "-> Apply for public housing or a rent supplement"
+    },
+    {
+      "number": 9,
+      "text": "Expand Nursing Homes Without Walls so seniors can stay home longer",
+      "mapping": "-> Get home support services"
+    },
+    {
+      "number": 10,
+      "text": "Implement a $250/month caregiver benefit for unpaid caregivers"
+    },
+    {
+      "number": 11,
+      "text": "Fill nursing home staffing gaps, raise PSW wages, increase hours of care",
+      "mapping": "-> Get a long-term care needs assessment"
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    }
+  ],
+  "user_group_filters": [
+    "Individuals",
+    "Families",
+    "Persons with disabilities",
+    "Seniors",
+    "General public",
+    "Youth"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

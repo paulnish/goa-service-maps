@@ -1,0 +1,315 @@
+{
+  "prefix": "sdpr",
+  "name": "Social Development and Poverty Reduction",
+  "short_name": "Social Development & Poverty Reduction",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "British Columbians in need have access to income and disability assistance",
+      "legend_label": "Income & disability assistance",
+      "main_services": [
+        { "number": 1, "name": "Apply for and manage income assistance" },
+        { "number": 2, "name": "Apply for and manage disability assistance" },
+        { "number": 3, "name": "Get financial support as a senior or through the bus pass program" }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#6a1b9a",
+      "short_name": "People with disabilities get community living supports and a more accessible B.C.",
+      "legend_label": "Disability supports & accessibility",
+      "main_services": [
+        { "number": 1, "name": "Get community living and disability supports" },
+        { "number": 2, "name": "Advance accessibility and service quality across government" }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#2e7d32",
+      "short_name": "British Columbians facing employment barriers find and keep good jobs",
+      "legend_label": "Employment services",
+      "main_services": [
+        { "number": 1, "name": "Get help finding and keeping a job" }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#b45309",
+      "short_name": "Poverty is reduced and British Columbians are more socially included",
+      "legend_label": "Poverty reduction",
+      "main_services": [
+        { "number": 1, "name": "Track and shape B.C.'s Poverty Reduction Strategy" }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "EAA",
+      "full_name": "Employment and Assistance Act",
+      "color": "#1565c0",
+      "citation": "SBC 2002, c 40",
+      "summary": "Assented to May 30, 2002. Governs income assistance and hardship assistance for people without the Persons with Disabilities designation, employment-related programs, reconsideration and appeal rights, and related supplements such as the Senior's Supplement and the BC Bus Pass Program. Confirmed current to November 5, 2024 on BC Laws.",
+      "sections": [
+        {
+          "ref": "Part 2",
+          "title": "Income assistance and supplements",
+          "description": "Sets out eligibility for income assistance, hardship assistance, and supplements provided under the Act.",
+          "anchor_id": "EAA-Part2",
+          "services": [
+            {
+              "name": "Apply for income assistance",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Apply for and manage income assistance"
+            },
+            {
+              "name": "Get emergency hardship assistance",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Apply for and manage income assistance"
+            }
+          ]
+        },
+        {
+          "ref": "s.17",
+          "title": "Reconsideration and appeal rights",
+          "description": "Allows applicants and recipients to request reconsideration of a decision and, if dissatisfied, appeal to the Employment and Assistance Appeal Tribunal.",
+          "anchor_id": "EAA-s17",
+          "services": [
+            {
+              "name": "Ask for reconsideration of an assistance decision",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Apply for and manage income assistance"
+            }
+          ]
+        },
+        {
+          "ref": "Regulation",
+          "title": "Senior's Supplement",
+          "description": "Provides the regulatory basis for the automatic monthly Senior's Supplement top-up for low-income seniors receiving OAS/GIS.",
+          "anchor_id": "EAA-SeniorsSupplement",
+          "services": [
+            {
+              "name": "Get a monthly top-up to your federal seniors' pension",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 3,
+              "ms_name": "Get financial support as a senior or through the bus pass program"
+            }
+          ]
+        },
+        {
+          "ref": "Regulation",
+          "title": "BC Bus Pass Program",
+          "description": "Provides the regulatory basis for subsidized annual bus passes for low-income seniors and people on disability assistance.",
+          "anchor_id": "EAA-BusPass",
+          "services": [
+            {
+              "name": "Get a reduced-cost bus pass as a senior or person with a disability",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 3,
+              "ms_name": "Get financial support as a senior or through the bus pass program"
+            }
+          ]
+        },
+        {
+          "ref": "s.7-8",
+          "title": "Employment-related programs",
+          "description": "Authorizes the minister to establish or fund employment-related programs, including WorkBC Employment Services Centres and the Single Parent Employment Initiative.",
+          "anchor_id": "EAA-s7-8",
+          "services": [
+            {
+              "name": "Get help finding a job at an employment services centre",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Get help finding and keeping a job"
+            },
+            {
+              "name": "Get training and support as a single parent to secure long-term employment",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Get help finding and keeping a job"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "EAPWDA",
+      "full_name": "Employment and Assistance for Persons with Disabilities Act",
+      "color": "#6a1b9a",
+      "citation": "SBC 2002, c 41",
+      "summary": "Assented to May 30, 2002. Governs the Persons with Disabilities (PWD) designation and disability assistance, hardship assistance and supplements for people with disabilities. Confirmed current to December 31, 2024 on BC Laws.",
+      "sections": [
+        {
+          "ref": "s.2",
+          "title": "Persons with disabilities designation",
+          "description": "Sets the criteria the minister uses to designate a person as a Person with Disabilities, including the simplified/prescribed-class application route.",
+          "anchor_id": "EAPWDA-s2",
+          "services": [
+            {
+              "name": "Apply for the Persons with Disabilities designation",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Apply for and manage disability assistance"
+            },
+            {
+              "name": "Use a simplified application if you already receive disability-related benefits",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Apply for and manage disability assistance"
+            }
+          ]
+        },
+        {
+          "ref": "s.5",
+          "title": "Disability assistance and supplements",
+          "description": "Authorizes the minister to provide disability assistance or a supplement to an eligible family unit that includes a person with disabilities.",
+          "anchor_id": "EAPWDA-s5",
+          "services": [
+            {
+              "name": "Apply for disability assistance",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Apply for and manage disability assistance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "ABCA",
+      "full_name": "Accessible British Columbia Act",
+      "color": "#b45309",
+      "citation": "SBC 2021, c 19",
+      "summary": "Establishes a framework for government to work with people with disabilities and the community to identify, remove, and prevent accessibility barriers, including accessibility standards, a government accessibility plan, and a public feedback mechanism. Citation corroborated via CanLII listing and the Accessibility Directorate's page on gov.bc.ca; direct BC Laws document rendering was not accessible during this research pass.",
+      "sections": [
+        {
+          "ref": "Part 2",
+          "title": "Accessibility feedback mechanisms",
+          "description": "Requires a process for receiving and responding to public feedback on accessibility barriers.",
+          "anchor_id": "ABCA-Part2",
+          "services": [
+            {
+              "name": "Give feedback on accessibility barriers in government services",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#6a1b9a",
+              "ms_number": 2,
+              "ms_name": "Advance accessibility and service quality across government"
+            }
+          ]
+        },
+        {
+          "ref": "Part 3",
+          "title": "Accessibility standards and government accessibility plan",
+          "description": "Provides for development of accessibility standards and regulations, and requires a government accessibility plan.",
+          "anchor_id": "ABCA-Part3",
+          "services": [
+            {
+              "name": "Track government's progress on accessibility standards and planning",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#6a1b9a",
+              "ms_number": 2,
+              "ms_name": "Advance accessibility and service quality across government"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "PRSA",
+      "full_name": "Poverty Reduction Strategy Act",
+      "color": "#2e7d32",
+      "citation": "SBC 2018, c 40",
+      "summary": "Requires government to maintain a poverty reduction strategy with legislated targets, timelines and an annual progress report. Amended in 2024 to set new 2034 targets (60% overall, 75% child, 50% seniors' poverty reduction, using 2016 as baseline). Citation corroborated via CanLII listing; direct BC Laws document rendering was not accessible during this research pass.",
+      "sections": [
+        {
+          "ref": "s.3-5",
+          "title": "Targets, timelines and accountability",
+          "description": "Sets the legislated poverty-reduction targets and timelines, and requires annual progress reports and an independent advisory committee.",
+          "anchor_id": "PRSA-s3-5",
+          "services": [
+            {
+              "name": "Track progress on BC's Poverty Reduction Strategy targets",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#b45309",
+              "ms_number": 1,
+              "ms_name": "Track and shape B.C.'s Poverty Reduction Strategy"
+            },
+            {
+              "name": "Take part in an advisory committee on poverty reduction",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#b45309",
+              "ms_number": 1,
+              "ms_name": "Track and shape B.C.'s Poverty Reduction Strategy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CLAA",
+      "full_name": "Community Living Authority Act",
+      "color": "#00838f",
+      "citation": "SBC 2004, c 60",
+      "summary": "Establishes Community Living BC (CLBC) as a provincial Crown agency responsible for planning and funding supports for adults with developmental disabilities, autism spectrum disorder, and fetal alcohol spectrum disorder. Citation corroborated via CanLII and Wikipedia listings; direct BC Laws document rendering was not accessible during this research pass.",
+      "sections": [
+        {
+          "ref": "Part 1",
+          "title": "Establishment of Community Living BC",
+          "description": "Establishes CLBC and its mandate to plan, fund, and monitor supports for eligible adults.",
+          "anchor_id": "CLAA-Part1",
+          "services": [
+            {
+              "name": "Get community living supports as an adult with a developmental disability",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#6a1b9a",
+              "ms_number": 1,
+              "ms_name": "Get community living and disability supports"
+            },
+            {
+              "name": "Request a review of a community living funding decision or file a complaint",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#6a1b9a",
+              "ms_number": 1,
+              "ms_name": "Get community living and disability supports"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 5,
+    "sections_count": 11,
+    "services_with_leg_count": 16,
+    "services_multi_act_count": 0
+  }
+}

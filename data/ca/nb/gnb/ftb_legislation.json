@@ -1,0 +1,184 @@
+{
+  "prefix": "ftb",
+  "name": "Finance and Treasury Board",
+  "short_name": "Finance & Treasury Board",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "Provincial finances are managed responsibly and transparently",
+      "legend_label": "Fiscal management",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Understand provincial finances"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "short_name": "Taxes are administered fairly",
+      "legend_label": "Fair taxation",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Pay provincial taxes"
+        },
+        {
+          "number": 2,
+          "name": "Get benefits and credits"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "FAA",
+      "full_name": "Financial Administration Act",
+      "color": "#0070c0",
+      "citation": "RSNB 2011, c 160",
+      "summary": "Financial management, budgeting, and public accounts.",
+      "sections": [
+        {
+          "ref": "s.25, s.41",
+          "title": "Estimates and Public Accounts",
+          "description": "Annual estimates; Public Accounts laid before the Legislature.",
+          "anchor_id": "FAA-s25s41",
+          "services": [
+            {
+              "name": "Access the provincial budget and public accounts",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Understand provincial finances"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "RPTA",
+      "full_name": "Real Property Tax Act",
+      "color": "#2e7d32",
+      "citation": "RSNB 1973, c R-2",
+      "summary": "Provincial real property taxation.",
+      "sections": [
+        {
+          "ref": "s.5",
+          "title": "Real property tax",
+          "description": "Annual tax on all real property.",
+          "anchor_id": "RPTA-s5",
+          "services": [
+            {
+              "name": "Understand and pay your provincial property tax",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Pay provincial taxes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "RPTRA",
+      "full_name": "Residential Property Tax Relief Act",
+      "color": "#b45309",
+      "citation": "RSNB 1973, c R-10",
+      "summary": "Residential property tax credits and allowances.",
+      "sections": [
+        {
+          "ref": "s.6.1",
+          "title": "Allowances",
+          "description": "Income-tested allowance applied against property taxes for eligible homeowners.",
+          "anchor_id": "RPTRA-s61",
+          "services": [
+            {
+              "name": "Apply for property tax relief for low-income homeowners",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Pay provincial taxes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "GMFTA",
+      "full_name": "Gasoline and Motive Fuel Tax Act",
+      "color": "#6a1b9a",
+      "citation": "RSNB 1973, c G-3",
+      "summary": "Fuel tax licensing, collection, refunds, and exemptions.",
+      "sections": [
+        {
+          "ref": "s.13, s.8",
+          "title": "Licences and collection of tax",
+          "description": "Wholesaler and retailer licences; collection and remission of tax.",
+          "anchor_id": "GMFTA-s13s8",
+          "services": [
+            {
+              "name": "Register for and remit fuel and tobacco taxes as a business",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Pay provincial taxes"
+            }
+          ]
+        },
+        {
+          "ref": "s.6(6)-(7)",
+          "title": "Tax exempt motive fuel and refunds",
+          "description": "Exemptions and refunds for eligible fuel uses.",
+          "anchor_id": "GMFTA-s667",
+          "services": [
+            {
+              "name": "Claim a fuel tax refund or exemption",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Pay provincial taxes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "TTA",
+      "full_name": "Tobacco Tax Act",
+      "color": "#c62828",
+      "citation": "RSNB 1973, c T-7",
+      "summary": "Tobacco tax licensing and collection.",
+      "sections": [
+        {
+          "ref": "s.2",
+          "title": "Licences of vendors",
+          "description": "Wholesale and retail vendor licences.",
+          "anchor_id": "TTA-s2",
+          "services": [
+            {
+              "name": "Register for and remit fuel and tobacco taxes as a business",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Pay provincial taxes"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 5,
+    "sections_count": 6,
+    "services_with_leg_count": 5,
+    "services_multi_act_count": 1
+  }
+}

@@ -1,0 +1,1585 @@
+{
+  "prefix": "psfs",
+  "full_name": "Ministry of Post-Secondary Education and Future Skills",
+  "short_name": "Post-Secondary Education & Future Skills",
+  "blurb": "Oversees universities, colleges and skills training — StudentAid BC, apprenticeship through SkilledTradesBC, and workforce readiness.",
+  "nav_name": "Post-Secondary Education and Future Skills",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "title": "GOAL 1",
+      "short_name": "Post-secondary education in B.C. is accessible and affordable",
+      "legend_label": "Access & affordability",
+      "description": "The ministry oversees B.C.'s public post-secondary system and StudentAid BC so students can find the right program, pay for their studies, and complete adult upgrading, English language learning and Indigenous-led education.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Choose and apply to a post-secondary program",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Find a post-secondary institution or program",
+              "desc": "Search public, private, theological and Aboriginal-controlled post-secondary institutions authorized to offer education and training in B.C., and use Find Your Path to match programs to career goals.",
+              "users": "Prospective post-secondary students",
+              "user_groups": [
+                "Students & learners",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Find an Institution",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/find-a-program-or-institution/find-an-institution"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "EducationPlannerBC / Find Your Path",
+                  "url": "https://www.educationplannerbc.ca/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CIA",
+                  "color": "#0070c0",
+                  "full_name": "College and Institute Act - Continuation and operation of colleges and institutes"
+                },
+                {
+                  "abbrev": "UA",
+                  "color": "#2e7d32",
+                  "full_name": "University Act - Continuation and operation of universities"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/find-a-program-or-institution/find-an-institution"
+              }
+            },
+            {
+              "name": "Apply to a public post-secondary program through EducationPlannerBC",
+              "desc": "Build a personal education plan and apply online to any of B.C.'s 25 public post-secondary institutions through the EducationPlannerBC portal.",
+              "users": "Prospective post-secondary students",
+              "user_groups": [
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "EducationPlannerBC",
+                  "url": "https://www.educationplannerbc.ca/"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Post-secondary education",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education"
+              }
+            },
+            {
+              "name": "Transfer course credit between B.C. institutions",
+              "desc": "Use the BC Transfer Guide to see how course credits transfer between B.C. post-secondary institutions and count toward a credential at another school.",
+              "users": "Post-secondary students transferring institutions",
+              "user_groups": [
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "BC Transfer Guide",
+                  "url": "http://www.bctransferguide.ca"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Transcripts & Credentials",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/transcripts-and-credentials"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/transcripts-and-credentials"
+              }
+            },
+            {
+              "name": "Get credit for prior learning and work experience",
+              "desc": "Public post-secondary institutions assess whether skills and knowledge gained through life and work experience are equivalent to a course, so students can obtain prior learning assessment (PLA) credit.",
+              "users": "Adult and returning students",
+              "user_groups": [
+                "Students & learners",
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Transcripts & Credentials",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/transcripts-and-credentials"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Your post-secondary institution",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/transcripts-and-credentials"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Pay for your post-secondary education",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for a student loan",
+              "desc": "Apply for an interest-free, integrated Canada-B.C. student loan through StudentAid BC to help cover tuition, fees and living costs while you study, with a single point of contact for repayment.",
+              "users": "Full-time and part-time post-secondary students",
+              "user_groups": [
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply for Financial Aid",
+                  "url": "https://sims.studentaidbc.ca"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Full-time student funding",
+                  "url": "https://studentaidbc.ca/explore/full-time"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://studentaidbc.ca/explore/full-time"
+              }
+            },
+            {
+              "name": "Apply for grants, scholarships and bursaries",
+              "desc": "Explore non-repayable provincial and federal grants, the B.C. Access Grant, disability funding, dependant grants and scholarship programs available through StudentAid BC.",
+              "users": "Post-secondary students",
+              "user_groups": [
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Grants, scholarships, and other financial supports",
+                  "url": "https://studentaidbc.ca/explore/grants-scholarships"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "Check Application Status",
+                  "url": "https://sims.studentaidbc.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://studentaidbc.ca/explore/full-time"
+              }
+            },
+            {
+              "name": "Get an Adult Upgrading Grant for ABE, ESL or adult special education",
+              "desc": "Eligible low-income students taking Adult Basic Education, English as a Second Language or Adult Special Education programs at public post-secondary institutions can get a non-repayable grant covering tuition, fees, books and unsubsidized child care.",
+              "users": "Low-income adult upgrading students",
+              "user_groups": [
+                "Students & learners",
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Adult Upgrading Grant",
+                  "url": "https://studentaidbc.ca/explore/grants-scholarships/adult-upgrading-grant-application"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/pay-for-school"
+              }
+            },
+            {
+              "name": "Get a tuition waiver as a current or former youth in care",
+              "desc": "The Provincial Tuition Waiver Program waives tuition and eligible fees for current and former children or youth in care studying at a B.C. public post-secondary institution, the Native Education College, or an approved union-based trades training provider.",
+              "users": "Current and former children and youth in government care",
+              "user_groups": [
+                "Students & learners",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Provincial Tuition Waiver Program",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/pay-for-school/provincial-tuition-waiver-program"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Learning for Future Grant",
+                  "url": "https://studentaidbc.ca/explore/grants-scholarships/learning-future-grant"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Get support transitioning out of foster care as a young adult",
+                    "ministry": "cfd"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/pay-for-school"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Complete adult upgrading and English language learning",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Take tuition-free adult upgrading courses to prepare for post-secondary studies",
+              "desc": "Adult Basic Education and academic upgrading courses are tuition-free for domestic students at 18 public post-secondary institutions and through school districts, helping adults improve literacy, complete high school credits, or meet post-secondary entrance requirements. The ministry also funds the Community Adult Literacy Program (CALP) in over 200 communities.",
+              "users": "Adult learners",
+              "user_groups": [
+                "Students & learners",
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Adult Upgrading",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/adult-education/adult-upgrading"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Public post-secondary institution or school district",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/adult-education/adult-upgrading"
+              }
+            },
+            {
+              "name": "Improve your English through adult English language learning programs",
+              "desc": "Tuition-free English Language Learning programs at public post-secondary institutions and school districts help adult learners, including newcomers, build the English skills needed for further education, work or daily life.",
+              "users": "Adult learners, newcomers to Canada",
+              "user_groups": [
+                "Newcomers",
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Learn English",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/adult-education/adult-upgrading-learn-english"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Adult education",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/adult-education"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/adult-education/adult-upgrading"
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "name": "Access Indigenous post-secondary education and skills training",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Access Indigenous post-secondary education programs and funding",
+              "desc": "The Indigenous Pathways and Partnerships Program and Indigenous Skills Training and Education (ISTE) program fund culturally relevant post-secondary access, retention and skills training initiatives developed with First Nations, Métis and Indigenous partners.",
+              "users": "Indigenous learners and communities",
+              "user_groups": [
+                "Indigenous communities",
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Indigenous Post-Secondary Education & Skills Training",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/aboriginal-education-training"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "PSFS Indigenous Policy and Engagement Branch",
+                  "url": "mailto:PSFS.IndigenousPolicyandEngagement@gov.bc.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/aboriginal-education-training"
+              }
+            },
+            {
+              "name": "Attend a First Nations mandated post-secondary institute",
+              "desc": "First Nations Mandated Post-Secondary Institutes (FNMPSIs) offer programs rooted in Indigenous language and culture; the province provides them ongoing operational and capacity funding as a key pillar of B.C.'s post-secondary system.",
+              "users": "First Nations learners",
+              "user_groups": [
+                "Indigenous communities",
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Indigenous Post-Secondary Education & Skills Training",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/aboriginal-education-training"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "First Nations Mandated Post-Secondary Institutes Act",
+                  "url": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/24017#section1t13"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FNMPSIA",
+                  "color": "#558b2f",
+                  "full_name": "First Nations Mandated Post-Secondary Institutes Act - Recognition and funding of FNMPSIs"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/aboriginal-education-training"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "title": "GOAL 2",
+      "short_name": "Skilled trades training builds B.C.'s workforce",
+      "legend_label": "Skilled trades & workforce",
+      "description": "SkilledTradesBC registers and certifies apprentices, enforces Skilled Trades Certification in compulsory trades, and the ministry funds micro-credentials and labour market information so workers can build in-demand skills.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Become a skilled tradesperson",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Register as an apprentice",
+              "desc": "Find a sponsor and register your apprenticeship through the SkilledTradesBC Portal to begin combined on-the-job training and in-class technical training toward a Certificate of Apprenticeship.",
+              "users": "New and partially experienced trades workers",
+              "user_groups": [
+                "Workers & job seekers",
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "SkilledTradesBC Portal registration",
+                  "url": "https://portal.skilledtradesbc.ca/Account/Login/Register"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Start an Apprenticeship",
+                  "url": "https://skilledtradesbc.ca/start-an-apprenticeship"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "STBCA",
+                  "color": "#b45309",
+                  "full_name": "Skilled Trades BC Act - Apprenticeship registration and trades training system"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://skilledtradesbc.ca/start-an-apprenticeship"
+              }
+            },
+            {
+              "name": "Get certified as a journeyperson through a certification exam",
+              "desc": "After completing work-based and in-class technical training, pass a certification exam to obtain a Certificate of Qualification or a nationally recognized Red Seal Endorsement issued by SkilledTradesBC.",
+              "users": "Apprentices completing certification",
+              "user_groups": [
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Get Certified",
+                  "url": "https://skilledtradesbc.ca/get-certified"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "Exam Results",
+                  "url": "https://skilledtradesbc.ca/exam-results"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "STBCA",
+                  "color": "#b45309",
+                  "full_name": "Skilled Trades BC Act - Certification of journeypersons"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "professional_credentials",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://skilledtradesbc.ca/start-an-apprenticeship"
+              }
+            },
+            {
+              "name": "Get financial support for your apprenticeship",
+              "desc": "Apprentices may access grants, Canada Apprentice Loans, Employment Insurance during technical training, and tax credits, along with child care, travel and lost-wage supports while training.",
+              "users": "Registered apprentices",
+              "user_groups": [
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Financial Support",
+                  "url": "https://skilledtradesbc.ca/financial-support"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Full-time student funding (apprentices)",
+                  "url": "https://studentaidbc.ca/explore/full-time"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://skilledtradesbc.ca/start-an-apprenticeship"
+              }
+            },
+            {
+              "name": "Meet Skilled Trades Certification requirements in a compulsory trade",
+              "desc": "Workers in compulsory (Skilled Trades Certification) trades — including construction and industrial electrician, powerline technician, steamfitter/pipefitter, refrigeration mechanic, gasfitter, sheet metal worker and crane operators — must be a registered apprentice, Trade Qualifier or certified journeyperson.",
+              "users": "Tradespeople in compulsory trades",
+              "user_groups": [
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Skilled Trades Certification (Compulsory Trades)",
+                  "url": "https://skilledtradesbc.ca/skilledtradescertification"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Are You Impacted?",
+                  "url": "https://skilledtradesbc.ca/are-you-impacted"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "STBCA",
+                  "color": "#b45309",
+                  "full_name": "Skilled Trades BC Act - Skilled Trades Certification (compulsory trades) requirements"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "professional_credentials",
+                "relationships": [
+                  {
+                    "type": "worker_employer",
+                    "service": "Sponsor an apprentice as an employer",
+                    "ministry": "psfs"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://skilledtradesbc.ca/skilledtradescertification"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Employ and sponsor apprentices",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Sponsor an apprentice as an employer",
+              "desc": "Employers sponsoring apprentices must maintain a maximum 2:1 apprentice-to-journeyperson supervision ratio, report work-based training hours, and complete an Employer Workforce Submission for workers in Skilled Trades Certification trades.",
+              "users": "Employers and sponsors of trades workers",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Employers and Skilled Trades Certification",
+                  "url": "https://skilledtradesbc.ca/stc-employers"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "SkilledTradesBC Portal",
+                  "url": "https://portal.skilledtradesbc.ca/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "STBCA",
+                  "color": "#b45309",
+                  "full_name": "Skilled Trades BC Act - Employer obligations and supervision ratios"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "people_employment",
+                "relationships": [
+                  {
+                    "type": "worker_employer",
+                    "service": "Meet Skilled Trades Certification requirements in a compulsory trade",
+                    "ministry": "psfs"
+                  },
+                  {
+                    "type": "worker_employer",
+                    "service": "Get hired through the Community Benefits Agreement on a public project",
+                    "ministry": "infr"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://skilledtradesbc.ca/skilledtradescertification"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Get short-term and micro-credential training",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Take a micro-credential program for in-demand skills",
+              "desc": "Micro-credentials are short, competency-based programs recognized by employers and post-secondary institutions that help learners quickly gain skills for high-demand jobs, with funding of up to $3,500 available through the StrongerBC future skills grant.",
+              "users": "Workers, career-changers and students seeking short-duration training",
+              "user_groups": [
+                "Students & learners",
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Search available micro-credential offerings",
+                  "url": "https://www.educationplannerbc.ca/search/search-results?type=Micro-credential"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Micro-credentials",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/micro-credentials"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/micro-credentials"
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "name": "Find work and labour market information",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Search for jobs and labour market information through WorkBC",
+              "desc": "Browse job postings, explore careers and high-opportunity occupations, and access training and employment services through WorkBC and its network of WorkBC Centres.",
+              "users": "Job seekers and workers",
+              "user_groups": [
+                "Workers & job seekers",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "WorkBC",
+                  "url": "https://www.workbc.ca/"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "WorkBC Centre",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Get help finding a job at an employment services centre",
+                    "ministry": "sdpr"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/post-secondary-education-and-future-skills"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#6a1b9a",
+      "title": "GOAL 3",
+      "short_name": "Post-secondary institutions and training providers meet quality standards",
+      "legend_label": "Institution quality & oversight",
+      "description": "The ministry sets Education Quality Assurance standards, authorizes degree-granting institutions, and certifies and enforces standards for private training institutions to protect students and maintain B.C.'s reputation for quality education.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Choose a quality-assured institution",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Check if an institution has Education Quality Assurance (EQA) designation",
+              "desc": "The EQA designation confirms an institution meets quality assurance standards above legislated requirements; all post-secondary institutions and language schools hosting international students on study permits must hold it.",
+              "users": "Prospective students, including international students",
+              "user_groups": [
+                "Students & learners",
+                "Newcomers",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Registry of EQA Designated Institutions",
+                  "url": "https://admin.bceqa.gov.bc.ca/report/"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Education Quality Assurance",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/institution-resources-administration/education-quality-assurance"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/institution-resources-administration/education-quality-assurance"
+              }
+            },
+            {
+              "name": "Check if a private training institution is certified",
+              "desc": "The Private Training Institution Directory lists institutions certified by the Private Training Institutions Regulatory Unit (PTIRU) and shows enforcement actions such as suspensions and cancellations.",
+              "users": "Prospective private training students",
+              "user_groups": [
+                "Students & learners",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Private Training Institution Directory",
+                  "url": "https://www.privatetraininginstitutions.gov.bc.ca/students/pti-directory"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Private Training Institutions",
+                  "url": "https://www.privatetraininginstitutions.gov.bc.ca/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PTA",
+                  "color": "#c62828",
+                  "full_name": "Private Training Act - s.17: Online directory of institutions"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": [
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "Apply for certification to operate a private training institution",
+                    "ministry": "psfs"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.privatetraininginstitutions.gov.bc.ca/"
+              }
+            },
+            {
+              "name": "Check if an institution is authorized to grant degrees",
+              "desc": "Confirm whether a private or out-of-province public institution is authorized under the Degree Authorization Act to grant degrees or use the word 'university' in B.C.",
+              "users": "Prospective degree-program students",
+              "user_groups": [
+                "Students & learners",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Degree Authorization",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/institution-resources-administration/degree-authorization"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Application Status",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/institution-resources-administration/degree-authorization/application-status"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "DAA",
+                  "color": "#00838f",
+                  "full_name": "Degree Authorization Act - s.3: Granting of degrees and use of \"university\" restricted"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": [
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "Apply for degree-granting authority in B.C.",
+                    "ministry": "psfs"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/institution-resources-administration/degree-authorization"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get help with a private training institution",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "File a complaint or tuition refund claim against a private training institution",
+              "desc": "Students can file a complaint with the Private Training Institutions Regulatory Unit or claim against the Student Tuition Protection Fund if a certified institution closes or breaches its obligations.",
+              "users": "Students of certified private training institutions",
+              "user_groups": [
+                "Students & learners",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "General Complaints and Tuition Refund Claims",
+                  "url": "https://www.privatetraininginstitutions.gov.bc.ca/students/complaints-tuition-protection-claims"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "PTIB student support: 778-945-0605",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PTA",
+                  "color": "#c62828",
+                  "full_name": "Private Training Act - Part 3: Consumer protection and Student Tuition Protection Fund"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": [
+                  {
+                    "type": "complainant_regulated_party",
+                    "service": "Apply for certification to operate a private training institution",
+                    "ministry": "psfs"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.privatetraininginstitutions.gov.bc.ca/"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Operate a post-secondary institution or training program",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for certification to operate a private training institution",
+              "desc": "Institutions offering career-related programs of 40+ instructional hours must obtain a certificate from the Private Training Institutions Regulatory Unit, including designation certification if hosting international students, and pay into the Student Tuition Protection Fund.",
+              "users": "Prospective private training institution operators",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "New Institutions – Application & Orientation",
+                  "url": "https://www.privatetraininginstitutions.gov.bc.ca/institutions/application-orientation"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Private Training Act Policy & Legislation",
+                  "url": "https://www.privatetraininginstitutions.gov.bc.ca/institutions/policy-manual"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PTA",
+                  "color": "#c62828",
+                  "full_name": "Private Training Act - s.2-10: Certificate required to provide career training programs"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": [
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "Check if a private training institution is certified",
+                    "ministry": "psfs"
+                  },
+                  {
+                    "type": "complainant_regulated_party",
+                    "service": "File a complaint or tuition refund claim against a private training institution",
+                    "ministry": "psfs"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.privatetraininginstitutions.gov.bc.ca/"
+              }
+            },
+            {
+              "name": "Apply for degree-granting authority in B.C.",
+              "desc": "Private and out-of-province public institutions seeking to grant degrees or use 'university' in their name apply through the Degree Quality Assessment Board's rigorous assessment process, administered via the PSIPS online system.",
+              "users": "Private and out-of-province institutions",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Assessment Criteria & Process",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/institution-resources-administration/degree-authorization/assessment-criteria-process"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "Online Application System (PSIPS)",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/institution-resources-administration/degree-authorization/online-application-system"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "DAA",
+                  "color": "#00838f",
+                  "full_name": "Degree Authorization Act - Ministerial consent to grant or confer a degree"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": [
+                  {
+                    "type": "consumer_regulated_provider",
+                    "service": "Check if an institution is authorized to grant degrees",
+                    "ministry": "psfs"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/institution-resources-administration/degree-authorization"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#00838f",
+      "title": "GOAL 4",
+      "short_name": "Internationally trained professionals and newcomers can work and settle in B.C.",
+      "legend_label": "Credential recognition & immigration",
+      "description": "The Office for International Credential Recognition streamlines credential recognition under the International Credentials Recognition Act, and the ministry leads the BC Provincial Nominee Program and newcomer settlement supports.",
+      "metrics": [],
+      "css_class": "goal-4",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get your international credentials recognized",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Have your international professional credentials recognized by a B.C. regulator",
+              "desc": "The Office for International Credential Recognition (OICR) oversees 18 regulatory authorities across 29 professions — including engineers, teachers, social workers, veterinarians and early childhood educators — to make credential recognition fairer, faster and more transparent for internationally trained professionals.",
+              "users": "Internationally trained professionals",
+              "user_groups": [
+                "Newcomers",
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Office for International Credential Recognition",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/regulatory-authorities/oicr"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Resources for professionals",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/regulatory-authorities/oicr/resources-for-professionals"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "FairCredentials@gov.bc.ca",
+                  "url": "mailto:FairCredentials@gov.bc.ca"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "1-236-478-1940",
+                  "url": "tel:1-236-478-1940"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ICRA",
+                  "color": "#00838f",
+                  "full_name": "International Credentials Recognition Act - Superintendent oversight and regulatory authority obligations"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "professional_credentials",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/regulatory-authorities/oicr"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Immigrate to and settle in B.C.",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply through the BC Provincial Nominee Program",
+              "desc": "The BC Provincial Nominee Program (BC PNP) is an accelerated pathway to Canadian permanent residence for skilled workers, entrepreneurs and businesses, with employer-support requirements and an online applicant portal.",
+              "users": "Skilled workers, entrepreneurs and employers seeking to nominate workers",
+              "user_groups": [
+                "Newcomers",
+                "Workers & job seekers",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "About the BC Provincial Nominee Program",
+                  "url": "https://www.welcomebc.ca/immigrate-to-b-c/about-the-bc-provincial-nominee-program"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "BC PNP Online User Portal",
+                  "url": "https://www.welcomebc.ca/immigrate-to-b-c/about-the-bc-provincial-nominee-program/bc-pnp-online-user-portal"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "immigration_settling",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.welcomebc.ca/Immigrate-to-B-C/B-C-Provincial-Nominee-Program"
+              }
+            },
+            {
+              "name": "Access newcomer settlement services and guides",
+              "desc": "WelcomeBC provides the B.C. Newcomers' Guide and a resource directory covering healthcare enrolment, housing, driving, banking and settlement services for people moving to B.C.",
+              "users": "Newcomers to B.C.",
+              "user_groups": [
+                "Newcomers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "B.C. Newcomers' Guide",
+                  "url": "https://www.welcomebc.ca/start-your-life-in-b-c/newcomers-guides"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "Resources directory (A-Z)",
+                  "url": "https://www.welcomebc.ca/start-your-life-in-b-c/support-and-help"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "immigration_settling",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.welcomebc.ca/Immigrate-to-B-C/B-C-Provincial-Nominee-Program"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Get student wellbeing supports",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Access free mental health counselling through Here2Talk",
+              "desc": "Here2Talk connects all domestic and international students currently registered at a B.C. post-secondary institution with free, confidential counselling and community referral services, available 24/7 by app, phone and web.",
+              "users": "Post-secondary students, including international students",
+              "user_groups": [
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Here2Talk",
+                  "url": "https://here2talk.ca/"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "24/7 phone support",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/post-secondary-education-and-future-skills"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Public post-secondary institution funding, accountability and capital planning",
+      "desc": "Sets annual budget letters, the accountability framework, financial reporting requirements and capital planning guidance for B.C.'s 25 public post-secondary institutions.",
+      "users": "Internal program staff, public post-secondary institutions",
+      "channels": [],
+      "legislation": [
+        {
+          "abbrev": "CIA",
+          "color": "#0070c0",
+          "full_name": "College and Institute Act - Governance and funding of colleges and institutes"
+        },
+        {
+          "abbrev": "UA",
+          "color": "#2e7d32",
+          "full_name": "University Act - Governance and funding of universities"
+        }
+      ],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "core_business_needs",
+        "domain": "finances_taxes",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Private training and international education compliance monitoring",
+      "desc": "Inspects private training institutions, monitors compliance with the Education Quality Assurance Code of Practice, and administers enforcement actions including compliance orders, administrative penalties, suspensions and cancellations.",
+      "users": "Internal program staff, Private Training Institutions Regulatory Unit",
+      "channels": [],
+      "legislation": [
+        {
+          "abbrev": "PTA",
+          "color": "#c62828",
+          "full_name": "Private Training Act - Part 4: Inspections, compliance orders and administrative penalties"
+        }
+      ],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "regulatory_compliance",
+        "domain": "reporting_obligations",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-3",
+      "name": "Labour market and skills training data analysis",
+      "desc": "Analyzes labour market trends, high-opportunity occupations and post-secondary outcomes data to inform funding decisions for micro-credentials, apprenticeship seats and the post-secondary funding formula.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "core_human_needs",
+        "domain": "working_employment",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    }
+  ],
+  "mandate_date": "July 17, 2025",
+  "mandate_minister": "Jessie Sunner",
+  "mandate_pdf": "https://www2.gov.bc.ca/assets/gov/government/ministries-organizations/premier-cabinet-mlas/minister-letter/mandate_letter_jessie_sunner.pdf",
+  "cross_cutting": [
+    "Growing the Economy",
+    "Reducing Costs for Families",
+    "Strengthening Health Care",
+    "Safer Communities"
+  ],
+  "mandate_legend": [],
+  "channel_filters": [
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-email",
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Families & caregivers",
+    "Students & learners",
+    "Workers & job seekers",
+    "Businesses & employers",
+    "Indigenous communities",
+    "Newcomers"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

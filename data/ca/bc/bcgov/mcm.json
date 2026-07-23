@@ -1,0 +1,1044 @@
+{
+  "prefix": "mcm",
+  "full_name": "Ministry of Mining and Critical Minerals",
+  "short_name": "Mining & Critical Minerals",
+  "blurb": "Oversees B.C.'s mining sector from claim to closure — mineral, placer and coal titles and the Free Miner Certificate, Mines Act permitting and health and safety, and the growth of British Columbia's critical minerals economy and public geoscience.",
+  "nav_name": "Mining and Critical Minerals",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#6a1b9a",
+      "title": "GOAL 1",
+      "short_name": "British Columbians can access and maintain mineral, placer and coal rights",
+      "legend_label": "Mineral titles",
+      "description": "The Mineral Titles Branch administers Free Miner Certificates and the claims, leases and licences that give prospectors and companies the right to explore for and develop mineral, placer and coal resources.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Acquire and maintain a mineral, placer or coal title",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get a Free Miner Certificate",
+              "desc": "A Free Miner Certificate lets an individual, partnership or company apply for, acquire and maintain a mineral or placer title and access their claim for exploration and development in B.C.",
+              "users": "Prospectors, mineral exploration companies",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "FMC registration form",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/mineral-titles/mineral-placer-titles/forms-maps-publications/forms-mineral-placer-titles"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "New client: Mineral and placer titles",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/mineral-titles/mineral-placer-titles/new-client"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MTA",
+                  "color": "#6a1b9a",
+                  "full_name": "Mineral Tenure Act  -  Free miner certificate and right of entry (s. 11)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/mineral-titles/mineral-placer-titles/new-client"
+              }
+            },
+            {
+              "name": "Register a mineral or placer claim online",
+              "desc": "Free miners use Mineral Titles Online (MTO) to apply for and register mineral or placer cell claims across British Columbia.",
+              "users": "Free miners, mineral exploration companies",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Mineral Titles Online (MTO)",
+                  "url": "https://www.mtonline.gov.bc.ca/mtov/home.do"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Getting Started with Mineral and Placer Titles",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/mineral-titles/mineral-placer-titles"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MTA",
+                  "color": "#6a1b9a",
+                  "full_name": "Mineral Tenure Act  -  Mineral and placer claims"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/mineral-titles/mineral-placer-titles"
+              }
+            },
+            {
+              "name": "Apply for a mineral or placer lease",
+              "desc": "Recorded claim holders can apply to convert a mineral or placer claim into a longer-term mining or placer lease for continued exploration and development.",
+              "users": "Free miners, mineral exploration companies",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Mineral Titles Online (MTO)",
+                  "url": "https://www.mtonline.gov.bc.ca/mtov/home.do"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Getting Started with Mineral and Placer Titles",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/mineral-titles/mineral-placer-titles"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MTA",
+                  "color": "#6a1b9a",
+                  "full_name": "Mineral Tenure Act  -  Mineral and placer leases"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/mineral-titles/mineral-placer-titles"
+              }
+            },
+            {
+              "name": "Apply for a coal licence or lease",
+              "desc": "Coal clients apply directly to the Mineral Titles Branch for a coal exploration licence, and can convert a licence into a coal lease for production.",
+              "users": "Coal exploration and mining companies",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Getting Started with Coal Titles",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/mineral-titles/coal-titles"
+                },
+                {
+                  "type": "ch-transact",
+                  "label": "Coal Titles - Mineral Titles Online",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/mineral-titles/coal-titles/coal-titles-mto"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CA",
+                  "color": "#8d6e63",
+                  "full_name": "Coal Act  -  Coal licences and leases (ss. 12, 18)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/mineral-titles/coal-titles"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Search title records and explore recreationally",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Search mineral title and land ownership records online",
+              "desc": "Mineral Titles Online map viewers and title and owner search tools let anyone check who holds a mineral, placer or coal title without needing a Free Miner Certificate.",
+              "users": "General public, landowners, mineral exploration companies",
+              "user_groups": [
+                "General public",
+                "Property owners",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Mineral Titles Online (MTO)",
+                  "url": "https://www.mtonline.gov.bc.ca/mtov/home.do"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "New client: Mineral and placer titles",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/mineral-titles/mineral-placer-titles/new-client"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "scenario_dependent",
+                  "domain": "housing_property"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "licences_permits"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/mineral-titles/mineral-placer-titles/new-client"
+              }
+            },
+            {
+              "name": "Pan for gold at a recreational hand panning reserve",
+              "desc": "Anyone can hand pan for gold using only a pan and shovel at one of B.C.'s recreational hand panning reserves — no Free Miner Certificate is required.",
+              "users": "General public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Recreational hand panning",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/mineral-titles/recreational-hand-panning"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "Recreational hand panning reserve web app",
+                  "url": "https://experience.arcgis.com/experience/52ba967c286c4ecf9a200c4b7b9e1b1b"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MTA",
+                  "color": "#6a1b9a",
+                  "full_name": "Mineral Tenure Act  -  Free miner certificate and right of entry (s. 11)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/mineral-titles/recreational-hand-panning"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Meet mineral and coal tax obligations",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Pay mineral tax on mine production",
+              "desc": "Mine operators must self-assess and pay mineral tax on coal, base metals, gemstones, industrial minerals, precious metals and other taxable resources removed from B.C. mines, quarries and placer operations.",
+              "users": "Mine operators",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Mineral tax",
+                  "url": "https://www2.gov.bc.ca/gov/content/taxes/natural-resource-taxes/mining/mineral-tax"
+                },
+                {
+                  "type": "ch-transact",
+                  "label": "eTaxBC",
+                  "url": "https://www.etax.gov.bc.ca/btp/eservices/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MTX",
+                  "color": "#2e7d32",
+                  "full_name": "Mineral Tax Act  -  Self-assessment and payment of mineral tax"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/taxes/natural-resource-taxes/mining/mineral-tax"
+              }
+            },
+            {
+              "name": "Pay mineral land tax on freehold mineral rights",
+              "desc": "Owners of freehold mineral rights pay an annual mineral land tax based on the size of their mineral land and whether minerals are being produced from it.",
+              "users": "Freehold mineral rights owners",
+              "user_groups": [
+                "Property owners",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Mineral land tax",
+                  "url": "https://www2.gov.bc.ca/gov/content/taxes/natural-resource-taxes/mining/mineral-land-tax"
+                },
+                {
+                  "type": "ch-transact",
+                  "label": "Pay your mineral land tax",
+                  "url": "https://www2.gov.bc.ca/gov/content/taxes/natural-resource-taxes/mining/mineral-land-tax/pay"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MLTA",
+                  "color": "#c62828",
+                  "full_name": "Mineral Land Tax Act  -  Annual tax on mineral land (s. 3)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/taxes/natural-resource-taxes/mining/mineral-land-tax"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#e65100",
+      "title": "GOAL 2",
+      "short_name": "Mines are permitted, operated and closed safely and responsibly",
+      "legend_label": "Mine permitting & safety",
+      "description": "The ministry regulates mining activity across British Columbia through the Mines Act, permitting exploration, construction, operation, reclamation and closure, and overseeing mine health and safety.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get a mine permitted from exploration through closure",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for a Mines Act permit to explore for minerals or coal",
+              "desc": "A Notice of Work application and Mines Act permit are required before mechanized exploration work — such as drilling, trenching or road building — can begin at a mineral, coal, placer, quarry or sand and gravel site.",
+              "users": "Mineral and coal exploration companies",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Mine exploration and discovery",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/permitting/mine-exploration"
+                },
+                {
+                  "type": "ch-transact",
+                  "label": "MineSpace",
+                  "url": "https://minespace.gov.bc.ca/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MA",
+                  "color": "#e65100",
+                  "full_name": "Mines Act  -  Permit to work in, on or about a mine (s. 10)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/permitting/mine-exploration"
+              }
+            },
+            {
+              "name": "Apply for a Mines Act permit to construct or operate a mine",
+              "desc": "Mineral and coal mines moving to construction and production need a Mines Act permit covering infrastructure, production, health and safety, and reclamation; permits for major mines are managed by the Major Mines Office.",
+              "users": "Mining companies",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Construction and Operation",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/permitting/mines-act-permits"
+                },
+                {
+                  "type": "ch-transact",
+                  "label": "MineSpace",
+                  "url": "https://minespace.gov.bc.ca/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MA",
+                  "color": "#e65100",
+                  "full_name": "Mines Act  -  Permit to work in, on or about a mine (s. 10)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/permitting/mines-act-permits"
+              }
+            },
+            {
+              "name": "Post a reclamation security for a mine",
+              "desc": "Mine permit holders post financial security — a guaranteed investment certificate, cash equivalent, letter of credit or surety bond — that the province holds until reclamation obligations are fulfilled.",
+              "users": "Mining companies",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Reclamation securities for mines in B.C.",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/permitting/mine-reclamation-securities"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MA",
+                  "color": "#e65100",
+                  "full_name": "Mines Act  -  Permit security for reclamation (s. 10(4)-(5))"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "environmental_requirements",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/permitting/mine-reclamation-securities"
+              }
+            },
+            {
+              "name": "Submit a mine reclamation and closure plan",
+              "desc": "Permit holders carry out progressive reclamation throughout the mine life cycle and submit annual reclamation reports, restoring land, watercourses and cultural heritage resources to a safe and stable state at closure.",
+              "users": "Mining companies",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Reclamation and Closure",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/permitting/reclamation-closure"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MA",
+                  "color": "#e65100",
+                  "full_name": "Mines Act  -  Reclamation compliance orders (s. 10.1)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "environmental_requirements",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/permitting/reclamation-closure"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Meet mine health, safety and certification requirements",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get a mine supervisor, shiftboss or blaster certification",
+              "desc": "The Health, Safety and Reclamation Code requires anyone supervising mine workers or performing blasting to hold a valid BC Mine Supervisor, Shiftboss or Blaster certificate issued by the ministry.",
+              "users": "Mine workers and supervisors",
+              "user_groups": [
+                "Workers & job seekers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "BC Mine Certifications",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/health-safety/certifications"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MA",
+                  "color": "#e65100",
+                  "full_name": "Mines Act  -  Certification of persons employed at a mine (s. 26)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "professional_credentials",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/health-safety/certifications"
+              }
+            },
+            {
+              "name": "Report a mine safety incident or hazard",
+              "desc": "Anyone can report a mine incident, hazard or safety complaint to the ministry's mine health and safety line for investigation by an inspector of mines.",
+              "users": "General public, mine workers",
+              "user_groups": [
+                "General public",
+                "Workers & job seekers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Mine inquiries and complaints (833-978-9798)",
+                  "url": null
+                },
+                {
+                  "type": "ch-email",
+                  "label": "mines.inquiries@gov.bc.ca",
+                  "url": "mailto:mines.inquiries@gov.bc.ca"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Mining Health and Safety",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/health-safety"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MA",
+                  "color": "#e65100",
+                  "full_name": "Mines Act  -  Investigation of incidents (s. 7)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/health-safety"
+              }
+            },
+            {
+              "name": "Follow the Health, Safety and Reclamation Code for Mines",
+              "desc": "Mine managers and permit holders must comply with the Health, Safety and Reclamation Code for Mines in British Columbia, which sets out workplace hazard, occupational health and mine rescue requirements.",
+              "users": "Mine managers, mining companies",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Health, Safety and Reclamation Code for Mines in British Columbia",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MA",
+                  "color": "#e65100",
+                  "full_name": "Mines Act  -  Health, Safety and Reclamation Code (s. 34)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "safety_codes_standards",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#00838f",
+      "title": "GOAL 3",
+      "short_name": "B.C.'s critical minerals economy and geoscience knowledge base grow",
+      "legend_label": "Critical minerals & geoscience",
+      "description": "The BC Geological Survey and Critical Minerals Office support mineral exploration investment and help B.C. capture a generational opportunity in the critical minerals needed for a low-carbon economy.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Access B.C.'s public geoscience information",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Access BC Geological Survey geoscience data and publications",
+              "desc": "MapPlace, MINFILE, ARIS and other BC Geological Survey tools give free public access to bedrock geology, mineral inventory, assessment reports and geochemical data supporting mineral exploration and land use planning.",
+              "users": "General public, mineral exploration companies, researchers",
+              "user_groups": [
+                "General public",
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "British Columbia Geological Survey",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/british-columbia-geological-survey"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "MapPlace",
+                  "url": "http://apps.empr.gov.bc.ca/pub/mapplace/mp2/fusion/templates/mapguide/slate/index.html?ApplicationDefinition=Library://mp2.ApplicationDefinition&locale=en"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/british-columbia-geological-survey"
+              }
+            },
+            {
+              "name": "Get technical advice from the Mineral Development Office",
+              "desc": "The Mineral Development Office, the Vancouver base of the BC Geological Survey, provides technical information and expertise to help identify and evaluate mineral exploration opportunities.",
+              "users": "Mineral exploration companies, prospectors",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Mineral Development Office",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/british-columbia-geological-survey/mineral-development-office"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/mining"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Grow B.C.'s critical minerals sector",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get support advancing a critical minerals project",
+              "desc": "The Critical Minerals Office helps advance critical minerals projects across the value chain — from exploration to processing and recycling — supporting implementation of B.C.'s Critical Minerals Strategy.",
+              "users": "Critical minerals project proponents",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Critical minerals strategy in B.C.",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/criticalminerals"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "critical.minerals@gov.bc.ca",
+                  "url": "mailto:critical.minerals@gov.bc.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/criticalminerals"
+              }
+            },
+            {
+              "name": "Engage on B.C.'s Critical Minerals Strategy",
+              "desc": "First Nations, industry and the public can share input on B.C.'s Critical Minerals Strategy through the Critical Minerals Advisory Committee and public engagement processes.",
+              "users": "First Nations, industry, general public",
+              "user_groups": [
+                "Indigenous communities",
+                "Businesses & employers",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-engage",
+                  "label": "Critical minerals strategy in B.C.",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/criticalminerals"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "FirstNationsCriticalMinerals@gov.bc.ca",
+                  "url": "mailto:FirstNationsCriticalMinerals@gov.bc.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/criticalminerals"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Mineral, placer and coal titles registry administration",
+      "desc": "Maintains the province's mineral, placer and coal title registries and the Mineral Titles Online (MTO) system used to record claims, leases and licences.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "industry_specific",
+        "domain": "energy_minerals",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Mine compliance and enforcement",
+      "desc": "Investigates non-compliance and enforces the Mines Act, the Health, Safety and Reclamation Code, and permit conditions across B.C. mines, including administrative penalties.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "regulatory_compliance",
+        "domain": "safety_codes_standards",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    }
+  ],
+  "mandate_date": "January 16, 2025",
+  "mandate_minister": "Jagrup Brar",
+  "mandate_pdf": "https://www2.gov.bc.ca/assets/gov/government/ministries-organizations/premier-cabinet-mlas/minister-letter/mandate_letter_jagrup_brar.pdf",
+  "cross_cutting": [
+    "Growing the economy",
+    "Reducing costs for families",
+    "Strengthening health care",
+    "Making communities safer"
+  ],
+  "mandate_legend": [],
+  "channel_filters": [
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-transact",
+      "label": "Online transaction",
+      "bg_color": "#c8e6c9",
+      "text_color": "#1b5e20"
+    },
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-engage",
+      "label": "Engage",
+      "bg_color": "#e1bee7",
+      "text_color": "#6a1b9a"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-email",
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Businesses & employers",
+    "Industry",
+    "Property owners",
+    "Workers & job seekers",
+    "Indigenous communities"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

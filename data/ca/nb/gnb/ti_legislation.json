@@ -1,0 +1,129 @@
+{
+  "prefix": "ti",
+  "name": "Transportation and Infrastructure",
+  "short_name": "Transportation & Infrastructure",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "People and goods move safely and efficiently",
+      "legend_label": "Safe movement",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Travel the provincial network"
+        },
+        {
+          "number": 2,
+          "name": "Move commercial goods and access the highway"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "short_name": "Public infrastructure serves the province",
+      "legend_label": "Public infrastructure",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Benefit from maintained public infrastructure"
+        },
+        {
+          "number": 2,
+          "name": "Deal with provincial property and roadsides"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "HA",
+      "full_name": "Highway Act",
+      "color": "#0070c0",
+      "citation": "RSNB 1973, c H-5",
+      "summary": "Construction, maintenance, and control of provincial highways and ferries.",
+      "sections": [
+        {
+          "ref": "s.3",
+          "title": "Supervision of highways and ferries",
+          "description": "Minister's general supervision of construction, operation, and maintenance.",
+          "anchor_id": "HA-s3",
+          "services": [
+            {
+              "name": "Report a problem on a provincial road",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Travel the provincial network"
+            },
+            {
+              "name": "Rely on winter highway maintenance",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Benefit from maintained public infrastructure"
+            },
+            {
+              "name": "Ride a provincial ferry",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Travel the provincial network"
+            }
+          ]
+        },
+        {
+          "ref": "s.44.1",
+          "title": "Highway usage permits",
+          "description": "Permits for structures and works on, over, or under highway rights-of-way.",
+          "anchor_id": "HA-s441",
+          "services": [
+            {
+              "name": "Get a highway access or roadside work permit",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Move commercial goods and access the highway"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "MVA",
+      "full_name": "Motor Vehicle Act",
+      "color": "#2e7d32",
+      "citation": "RSNB 1973, c M-17",
+      "summary": "Vehicle dimension and mass limits on highways.",
+      "sections": [
+        {
+          "ref": "s.261",
+          "title": "Special permits — dimension and mass",
+          "description": "Special permits for oversize and overweight movements; detail in NB Reg 2001-67.",
+          "anchor_id": "MVA-s261",
+          "services": [
+            {
+              "name": "Get an oversize or overweight vehicle permit",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Move commercial goods and access the highway"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 2,
+    "sections_count": 3,
+    "services_with_leg_count": 5,
+    "services_multi_act_count": 0
+  }
+}

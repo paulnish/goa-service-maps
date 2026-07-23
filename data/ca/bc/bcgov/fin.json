@@ -1,0 +1,1305 @@
+{
+  "prefix": "fin",
+  "full_name": "Ministry of Finance",
+  "short_name": "Finance",
+  "blurb": "Manages the province's finances — budget, taxation, public sector employer policy — and regulates financial services, real estate, and gambling policy.",
+  "nav_name": "Finance",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#234075",
+      "title": "GOAL 1",
+      "short_name": "British Columbians and businesses can pay provincial taxes easily and accurately",
+      "legend_label": "Tax administration",
+      "description": "The ministry administers B.C.'s major taxes — provincial sales tax, income tax, and property transfer tax — and provides eTaxBC as a single online service for filing, paying, and managing tax accounts.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Register and pay provincial sales tax",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Register to collect PST",
+              "desc": "Businesses that sell or lease taxable goods, software, or services in B.C. must register to collect and remit provincial sales tax (PST); some out-of-province and voluntary registrants may also register.",
+              "users": "Businesses, retailers, contractors",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Register to collect PST",
+                  "url": "https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/register"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "Register now (eTaxBC)",
+                  "url": "https://www.etax.gov.bc.ca/btp/eservices/?Link=Registration"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PSTA",
+                  "color": "#234075",
+                  "full_name": "Provincial Sales Tax Act  -  Registration to collect tax"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Register a sole proprietorship or partnership",
+                    "ministry": "citz"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/register"
+              }
+            },
+            {
+              "name": "Register to collect tax on short-term accommodation",
+              "desc": "Businesses that sell accommodation in B.C., such as hotels and short-term rentals, must register to collect PST and, where it applies, the Municipal and Regional District Tax (MRDT) under the same registration.",
+              "users": "Accommodation providers, short-term rental operators",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Register to collect PST — accommodation providers",
+                  "url": "https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/register"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "MRDT location map",
+                  "url": "https://municipal-regional-district-tax-map.apps.gov.bc.ca/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PSTA",
+                  "color": "#234075",
+                  "full_name": "Provincial Sales Tax Act  -  Accommodation and MRDT registration"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/register"
+              }
+            },
+            {
+              "name": "File and pay your provincial taxes through eTaxBC",
+              "desc": "eTaxBC is a free, secure online service for individuals and businesses to file returns, make payments, and communicate with the Ministry of Finance about PST and other provincial taxes and fees.",
+              "users": "General public, businesses, tax preparers",
+              "user_groups": [
+                "General public",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "eTaxBC online services",
+                  "url": "https://www2.gov.bc.ca/gov/content/taxes/etaxbc"
+                },
+                {
+                  "type": "ch-transact",
+                  "label": "Log on to eTaxBC",
+                  "url": "https://www.etax.gov.bc.ca/btp/eservices"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "core_human_needs",
+                  "domain": "money_taxes_benefits"
+                },
+                "business": {
+                  "tier": "core_business_needs",
+                  "domain": "finances_taxes"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/taxes/etaxbc"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Claim income tax credits",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Claim a personal income tax credit",
+              "desc": "B.C. offers refundable and non-refundable personal income tax credits, such as the renter's tax credit, training credit, and climate action credit, claimed on the annual income tax return.",
+              "users": "General public, taxpayers",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Personal income tax credits",
+                  "url": "https://www2.gov.bc.ca/gov/content/taxes/income-taxes/personal/credits"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ITA",
+                  "color": "#234075",
+                  "full_name": "Income Tax Act  -  Personal tax credits"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/taxes/income-taxes/personal/credits"
+              }
+            },
+            {
+              "name": "Claim a corporate income tax credit",
+              "desc": "Corporations may qualify for tax credits such as the scientific research and experimental development, film and television, interactive digital media, or manufacturing and processing investment credits.",
+              "users": "Corporations, businesses",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Corporate income tax credits",
+                  "url": "https://www2.gov.bc.ca/gov/content/taxes/income-taxes/corporate/credits"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ITA",
+                  "color": "#234075",
+                  "full_name": "Income Tax Act  -  Corporate tax credits"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/taxes/income-taxes/corporate/credits"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Pay tax on property transactions",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Pay property transfer tax when you buy property",
+              "desc": "Anyone who purchases or gains a registered interest in B.C. property must file a property transfer tax return and pay tax based on the property's fair market value, unless an exemption applies.",
+              "users": "Home buyers, property purchasers",
+              "user_groups": [
+                "Property owners",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Property transfer tax",
+                  "url": "https://www2.gov.bc.ca/gov/content/taxes/property-taxes/property-transfer-tax"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "Estimate your property transfer tax",
+                  "url": "https://submit.digital.gov.bc.ca/app/form/submit?f=a0cc2fd5-b029-433d-95a9-224d1c2a99ce"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PTTA",
+                  "color": "#234075",
+                  "full_name": "Property Transfer Tax Act  -  Tax on registration of property transfers"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/taxes/property-taxes/property-transfer-tax"
+              }
+            },
+            {
+              "name": "Claim a property transfer tax exemption",
+              "desc": "Buyers may qualify to reduce or eliminate property transfer tax through programs such as the first time home buyers' program, the newly built home exemption, or family and farm transfer exemptions.",
+              "users": "First-time home buyers, families, farm owners",
+              "user_groups": [
+                "Property owners",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Property transfer tax exemptions",
+                  "url": "https://www2.gov.bc.ca/gov/content/taxes/property-taxes/property-transfer-tax/exemptions"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PTTA",
+                  "color": "#234075",
+                  "full_name": "Property Transfer Tax Act  -  Exemptions"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/taxes/property-taxes/property-transfer-tax/exemptions"
+              }
+            },
+            {
+              "name": "Pay the additional property transfer tax as a foreign buyer",
+              "desc": "Foreign nationals, foreign corporations, and taxable trustees must pay an additional property transfer tax on the residential portion of property purchased within specified areas of B.C.",
+              "users": "Foreign buyers, foreign corporations",
+              "user_groups": [
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Additional property transfer tax",
+                  "url": "https://www2.gov.bc.ca/gov/content/taxes/property-taxes/property-transfer-tax"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PTTA",
+                  "color": "#234075",
+                  "full_name": "Property Transfer Tax Act  -  Additional tax for foreign entities"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/taxes/property-taxes/property-transfer-tax"
+              }
+            },
+            {
+              "name": "File a BC home flipping tax return",
+              "desc": "Individuals, corporations, partnerships, or trusts that dispose of a taxable residential property owned for less than 730 days must file a BC home flipping tax return and may owe tax on the profit.",
+              "users": "Property sellers, corporations, trusts",
+              "user_groups": [
+                "Property owners",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "BC home flipping tax",
+                  "url": "https://www2.gov.bc.ca/gov/content/taxes/income-taxes/bc-home-flipping-tax"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "File your BC home flipping tax return",
+                  "url": "https://www.etax.gov.bc.ca/btp/eservices/?link=WEBRPP"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HFTA",
+                  "color": "#234075",
+                  "full_name": "Residential Property (Short-Term Holding) Profit Tax Act  -  Tax on profit from short-term property sales"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "scenario_dependent",
+                  "domain": "housing_property"
+                },
+                "business": {
+                  "tier": "core_business_needs",
+                  "domain": "finances_taxes"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/taxes/income-taxes/bc-home-flipping-tax"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#0072ce",
+      "title": "GOAL 2",
+      "short_name": "Property owners get fair assessments and the tax relief they qualify for",
+      "legend_label": "Property tax & housing measures",
+      "description": "The ministry sets policy for annual property tax relief programs like the home owner grant and tax deferment, oversees the independent property assessment appeal process, and administers the speculation and vacancy tax to help address the housing crisis.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Reduce your annual property tax bill",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Claim the home owner grant",
+              "desc": "The home owner grant reduces the property taxes homeowners pay each year on their principal residence, with a higher additional grant available to seniors, veterans, and people with disabilities.",
+              "users": "Homeowners, seniors, veterans, people with disabilities",
+              "user_groups": [
+                "Property owners",
+                "Seniors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Home owner grant",
+                  "url": "https://www2.gov.bc.ca/gov/content/taxes/property-taxes/annual-property-tax/home-owner-grant"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "Apply for your grant",
+                  "url": "https://www2.gov.bc.ca/gov/content/taxes/property-taxes/annual-property-tax/home-owner-grant/apply"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "Check your application status",
+                  "url": "https://www.etax.gov.bc.ca/btp/HOG/?Link=HOGSTS"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HOGA",
+                  "color": "#0072ce",
+                  "full_name": "Home Owner Grant Act  -  Home owner grant"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/taxes/property-taxes/annual-property-tax/home-owner-grant"
+              }
+            },
+            {
+              "name": "Defer your property taxes",
+              "desc": "The property tax deferment program is a low-interest loan program that lets eligible homeowners — including those 55 or older, surviving spouses, people with disabilities, and families with children — defer their current year property taxes.",
+              "users": "Homeowners 55+, families with children, people with disabilities",
+              "user_groups": [
+                "Property owners",
+                "Seniors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Property tax deferment program",
+                  "url": "https://www2.gov.bc.ca/gov/content/taxes/property-taxes/annual-property-tax/property-tax-deferment-program"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "Check your application status",
+                  "url": "https://www.etax.gov.bc.ca/btp/ptd/_/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/taxes/property-taxes/annual-property-tax/property-tax-deferment-program"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Appeal your property assessment",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Appeal your property assessment",
+              "desc": "Property owners who disagree with their BC Assessment property assessment, classification, or exemptions can file a complaint with BC Assessment by January 31 for a hearing before an independently appointed Property Assessment Review Panel.",
+              "users": "Property owners",
+              "user_groups": [
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Property Assessment Review Panel",
+                  "url": "https://www2.gov.bc.ca/gov/content/housing-tenancy/owning-a-home/property-assessment-review-panels2"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Property Assessment Complaint line: 1-877-356-9313",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/housing-tenancy/owning-a-home/property-assessment-review-panels2"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Comply with the speculation and vacancy tax",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Check if your property is subject to the speculation and vacancy tax",
+              "desc": "Owners of residential property can use an interactive map to check whether their property is within a designated taxable area for the speculation and vacancy tax.",
+              "users": "Residential property owners",
+              "user_groups": [
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Speculation and vacancy tax",
+                  "url": "https://www2.gov.bc.ca/gov/content/taxes/speculation-vacancy-tax"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "Taxable areas map",
+                  "url": "https://map-spec-tax-areas.apps.gov.bc.ca/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SVTA",
+                  "color": "#0072ce",
+                  "full_name": "Speculation and Vacancy Tax Act  -  Designated taxable areas"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/taxes/speculation-vacancy-tax"
+              }
+            },
+            {
+              "name": "File a speculation and vacancy tax declaration",
+              "desc": "Residential property owners in designated taxable areas — including individuals, corporations, trusts, and business partnerships — must declare every year for the speculation and vacancy tax by March 31, even with no change to their information.",
+              "users": "Residential property owners, corporations, trusts",
+              "user_groups": [
+                "Property owners",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "How to declare",
+                  "url": "https://www2.gov.bc.ca/gov/content/taxes/speculation-vacancy-tax/how-to-declare"
+                },
+                {
+                  "type": "ch-transact",
+                  "label": "Declare now",
+                  "url": "https://www.etax.gov.bc.ca/SVT/_/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SVTA",
+                  "color": "#0072ce",
+                  "full_name": "Speculation and Vacancy Tax Act  -  Annual declaration requirement"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "scenario_dependent",
+                  "domain": "housing_property"
+                },
+                "business": {
+                  "tier": "core_business_needs",
+                  "domain": "finances_taxes"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/taxes/speculation-vacancy-tax/how-to-declare"
+              }
+            },
+            {
+              "name": "Claim a speculation and vacancy tax exemption or credit",
+              "desc": "Property owners in taxable areas may qualify for an exemption from the speculation and vacancy tax, or for a tax credit that reduces the amount owed if no exemption applies.",
+              "users": "Residential property owners",
+              "user_groups": [
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Exemptions and tax credits",
+                  "url": "https://www2.gov.bc.ca/gov/content/taxes/speculation-vacancy-tax"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SVTA",
+                  "color": "#0072ce",
+                  "full_name": "Speculation and Vacancy Tax Act  -  Exemptions and tax credits"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/taxes/speculation-vacancy-tax"
+              }
+            },
+            {
+              "name": "Pay the speculation and vacancy tax",
+              "desc": "Owners who owe speculation and vacancy tax pay by the first business day in July, based on the Notice of Assessment mailed after their declaration or an audit.",
+              "users": "Residential property owners",
+              "user_groups": [
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "How to pay",
+                  "url": "https://www2.gov.bc.ca/gov/content/taxes/speculation-vacancy-tax"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SVTA",
+                  "color": "#0072ce",
+                  "full_name": "Speculation and Vacancy Tax Act  -  Payment of tax"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/taxes/speculation-vacancy-tax"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#2e7d32",
+      "title": "GOAL 3",
+      "short_name": "Financial services and the public sector operate with sound oversight and transparency",
+      "legend_label": "Financial sector & public sector oversight",
+      "description": "The ministry oversees financial sector regulation through the BC Financial Services Authority, sets compensation and governance policy for the broader public sector, and administers pay transparency reporting requirements for employers.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Access regulated financial services with confidence",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get information about a regulated mortgage broker, real estate professional, or financial institution",
+              "desc": "The BC Financial Services Authority (BCFSA), a Crown agency accountable to the Minister of Finance, supervises and regulates credit unions, insurance, mortgage brokers, pensions, real estate professionals, and trusts.",
+              "users": "General public, consumers",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "BCFSA — About Us",
+                  "url": "https://www.bcfsa.ca/about-us"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "BCFSA public resources",
+                  "url": "https://www.bcfsa.ca/confident-financial-decisions-start-here"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FIA",
+                  "color": "#2e7d32",
+                  "full_name": "Financial Institutions Act  -  Regulation of financial services sector"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "professional_credentials",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.bcfsa.ca/about-us"
+              }
+            },
+            {
+              "name": "Report a concern about a regulated financial services provider",
+              "desc": "Members of the public can report a concern about a credit union, insurer, mortgage broker, pension plan, real estate professional, or trust company to the BC Financial Services Authority for investigation.",
+              "users": "General public, consumers",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Report a Concern",
+                  "url": "https://www.bcfsa.ca/public-protection/report-concern"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FIA",
+                  "color": "#2e7d32",
+                  "full_name": "Financial Institutions Act  -  Public protection and complaints"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.bcfsa.ca/about-us"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Oversee public sector compensation and governance",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Access public sector executive compensation disclosures",
+              "desc": "Crown corporations, health authorities, post-secondary institutions, school districts, and the BC Public Service must publicly disclose compensation paid to their CEO and next four highest-paid executives each year.",
+              "users": "General public, media, researchers",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Executive Compensation Disclosures",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/services-for-government/public-sector-management/compensation/executive-compensation-disclosures"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PSEA",
+                  "color": "#2e7d32",
+                  "full_name": "Public Sector Employers Act  -  Executive compensation disclosure"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/services-for-government/public-sector-management/compensation/executive-compensation-disclosures"
+              }
+            },
+            {
+              "name": "Apply to serve on a public sector board or agency",
+              "desc": "The Crown Agencies and Board Resourcing Office recruits and recommends candidates for appointment to B.C.'s Crown corporations, agencies, boards, and commissions, and provides governance training for appointees.",
+              "users": "General public, board candidates",
+              "user_groups": [
+                "General public",
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Crown Agencies and Board Resourcing Office",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/central-government-agencies/crown-agencies-secretariat/crown-agencies-and-board-resourcing-office"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "Learn about & apply for public boards",
+                  "url": "https://www2.gov.bc.ca/gov/content/bcpublicsectorboardapplications"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/central-government-agencies/crown-agencies-secretariat/crown-agencies-and-board-resourcing-office"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Comply with pay transparency requirements",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Publish a pay transparency report as an employer",
+              "desc": "Reporting employers — the B.C. government, certain Crown corporations, and businesses over a phased employee-count threshold — must prepare and publicly post an annual pay transparency report by November 1 each year under the Pay Transparency Act.",
+              "users": "Employers, HR professionals",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Pay transparency in B.C.",
+                  "url": "https://www2.gov.bc.ca/gov/content/gender-equity/pay-transparency-in-bc"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PTA",
+                  "color": "#2e7d32",
+                  "full_name": "Pay Transparency Act  -  Employer reporting obligations"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "reporting_obligations",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/gender-equity/pay-transparency-in-bc"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#b45309",
+      "title": "GOAL 4",
+      "short_name": "Government's budget and finances are transparent and well managed",
+      "legend_label": "Budget & public accounts",
+      "description": "The ministry prepares the provincial Budget, publishes the Public Accounts and other financial reports, and provides billing and payment services for amounts owed to government.",
+      "metrics": [],
+      "css_class": "goal-4",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Track the provincial budget and financial results",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Review the B.C. budget",
+              "desc": "The BC Budget website provides a reader-friendly, plain-language overview of the provincial budget, including tax changes announced each year.",
+              "users": "General public, media, businesses",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "BC Budget",
+                  "url": "https://www.bcbudget.gov.bc.ca/"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Tax changes",
+                  "url": "https://www2.gov.bc.ca/gov/content/taxes/tax-updates/budget-changes"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "BTAA",
+                  "color": "#b45309",
+                  "full_name": "Budget Transparency and Accountability Act  -  Budget documents"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/finance"
+              }
+            },
+            {
+              "name": "Access Public Accounts and government financial statements",
+              "desc": "The Public Accounts include the Province's audited annual financial statements and other key financial information, published under the Budget Transparency and Accountability Act, along with the Ministerial Accountability Report comparing expected and actual results.",
+              "users": "General public, researchers, media",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Public Accounts",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/finances/public-accounts"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Public Accounts 2024-25 (PDF)",
+                  "url": "https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/government-finances/public-accounts/2024-25/public-accounts-2024-25.pdf"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "BTAA",
+                  "color": "#b45309",
+                  "full_name": "Budget Transparency and Accountability Act  -  Public Accounts"
+                },
+                {
+                  "abbrev": "BBMAA",
+                  "color": "#b45309",
+                  "full_name": "Balanced Budget and Ministerial Accountability Act  -  Ministerial Accountability Report"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/finances/public-accounts"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Pay amounts owed to government",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Pay and manage your Revenue Services of BC account",
+              "desc": "Revenue Services of BC's Billing & Payment Services lets people track, pay, and manage bills for ambulance services, BC student loans, court fines, employment and assistance overpayments, the Medical Services Plan, and other government accounts in one profile.",
+              "users": "General public, students, patients",
+              "user_groups": [
+                "General public",
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "Billing & Payment Services",
+                  "url": "https://billing-and-payment.revenueservicesbc.gov.bc.ca/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "money_taxes_benefits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://billing-and-payment.revenueservicesbc.gov.bc.ca/"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Tax policy development and revenue forecasting",
+      "desc": "Establishes, implements, and reviews the province's economic, fiscal, financial management, and taxation policies, and forecasts government revenue to inform the annual budget.",
+      "users": "Internal program staff, Treasury Board",
+      "channels": [
+        {
+          "type": "ch-web",
+          "label": "Ministry of Finance",
+          "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/finance"
+        }
+      ],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "core_business_needs",
+        "domain": "finances_taxes",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/finance"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Financial reporting, accounting standards, and internal audit for government",
+      "desc": "The Office of the Comptroller General sets accounting policy and standards, prepares the Public Accounts, and provides internal audit and financial reporting oversight across ministries and the broader public sector.",
+      "users": "Government ministries and agencies",
+      "channels": [
+        {
+          "type": "ch-web",
+          "label": "Office of the Comptroller General",
+          "url": "https://www2.gov.bc.ca/gov/content/governments/finances/public-accounts"
+        }
+      ],
+      "legislation": [
+        {
+          "abbrev": "BTAA",
+          "color": "#b45309",
+          "full_name": "Budget Transparency and Accountability Act  -  Financial reporting requirements"
+        }
+      ],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "core_business_needs",
+        "domain": "finances_taxes",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/governments/finances/public-accounts"
+      }
+    }
+  ],
+  "mandate_date": "July 17, 2025",
+  "mandate_minister": "Brenda Bailey",
+  "mandate_pdf": "https://www2.gov.bc.ca/assets/gov/government/ministries-organizations/premier-cabinet-mlas/minister-letter/mandate_letter_brenda_bailey.pdf",
+  "cross_cutting": [
+    "Growing the Economy & Good Jobs",
+    "Affordability & Housing Costs",
+    "Strengthening Health Care",
+    "Community Safety",
+    "Climate Action",
+    "Reconciliation with Indigenous Peoples"
+  ],
+  "mandate_legend": [],
+  "channel_filters": [
+    {
+      "code": "ch-transact",
+      "label": "Online transaction",
+      "bg_color": "#c8e6c9",
+      "text_color": "#1b5e20"
+    },
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Property owners",
+    "Businesses & employers",
+    "Seniors",
+    "Workers & job seekers",
+    "Students & learners"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

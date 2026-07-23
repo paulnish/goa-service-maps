@@ -1,0 +1,1351 @@
+{
+  "prefix": "jeg",
+  "full_name": "Ministry of Jobs and Economic Growth",
+  "short_name": "Jobs & Economic Growth",
+  "blurb": "Grows B.C.'s economy — business advisory services and financing, trade and investment attraction, technology and innovation support, and regional and rural economic development. Formerly the Ministry of Jobs, Economic Development and Innovation.",
+  "nav_name": "Jobs and Economic Growth",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "GOAL 1",
+      "short_name": "British Columbians can start, grow and finance a successful business",
+      "legend_label": "Business start-up & growth",
+      "description": "The ministry provides free advisory services, step-by-step guides, business support connections and financing tools — including tax credit and equity investment programs — to help entrepreneurs start, run and grow a business in B.C.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Start and get advice for your business",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get free business advisory services",
+              "desc": "BC Business Advisory Services offers free one-on-one consultations, guidance on navigating government programs and funding, and resources to help entrepreneurs start, grow and thrive, in English and French.",
+              "users": "Entrepreneurs, small business owners",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "BC Business Advisory Services: 1-855-698-2157",
+                  "url": null
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Business.Advisors@gov.bc.ca",
+                  "url": "mailto:Business.Advisors@gov.bc.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "registration_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/business/small-business/help-for-small-businesses-and-entrepreneurs"
+              }
+            },
+            {
+              "name": "Find the permits and licences your business needs",
+              "desc": "BizPaL is a free online tool that generates a customized list of permits and licences a business may need to start or grow, based on its location and activities.",
+              "users": "Entrepreneurs, small business owners",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "BizPaL",
+                  "url": "https://www.bcbizpal.ca/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/business/managing-a-business/starting-a-business"
+              }
+            },
+            {
+              "name": "Follow step-by-step guidance to start your business",
+              "desc": "A step-by-step guide covers evaluating a business idea, market research, business planning, choosing a business structure, registration, permits, tax registration and hiring employees.",
+              "users": "New and prospective business owners",
+              "user_groups": [
+                "Businesses & employers",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Start your business",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/business/managing-a-business/starting-a-business"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "registration_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/business/managing-a-business/starting-a-business"
+              }
+            },
+            {
+              "name": "Connect with a business support organization",
+              "desc": "A directory of organizations offering advisory services, financing, mentorship and networking, including Community Futures, WeBC, Futurpreneur, the Black Business Association of BC, and support tailored to Indigenous, women, youth, newcomer and 2SLGBTQIA+ entrepreneurs.",
+              "users": "Entrepreneurs, small business owners",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Business support organizations",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/business/small-business/organizations"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "registration_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/business/small-business/organizations"
+              }
+            },
+            {
+              "name": "Share feedback to make it easier to do business in B.C.",
+              "desc": "The EaseBiz BC form lets businesses share the challenges and solutions they see, supporting the ministry's Ease of Doing Business initiative.",
+              "users": "Businesses of all sizes",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-engage",
+                  "label": "EaseBiz BC form",
+                  "url": "https://submit.digital.gov.bc.ca/app/form/submit?f=dbc46901-36e0-46d9-9840-664c3ce385bf"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Ease of Doing Business",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/business/ease-of-doing-business"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 9,
+                  "tip": "Work with business leaders to develop performance measurements on the ease of doing business in B.C. and address issues identified"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "registration_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/jobs-economic-development-and-innovation"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Access capital and financing for your business",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get a tax credit for investing in a small business",
+              "desc": "The Small Business Venture Capital Program offers tax credits to investors who make equity capital investments in registered venture capital corporations or eligible small businesses.",
+              "users": "Investors, small business corporations",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Venture Capital Program",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/investment-capital/venture-capital-programs"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Investment Capital: 1-800-665-6597",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SBVCA",
+                  "color": "#1565c0",
+                  "full_name": "Small Business Venture Capital Act  -  Venture capital corporation and eligible business tax credits"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/investment-capital"
+              }
+            },
+            {
+              "name": "Set up an employee share ownership plan",
+              "desc": "The Employee Share Ownership Program gives employees a 20% tax credit for investing in their employer's business, and can help a retiring owner transfer the company to its employees.",
+              "users": "Employers and employees",
+              "user_groups": [
+                "Businesses & employers",
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Employee Share Ownership Program",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/investment-capital/employee-share-ownership-program"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Investment Capital: 1-800-665-6597",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EIA",
+                  "color": "#00838f",
+                  "full_name": "Employee Investment Act  -  Registration and tax credits for employee share ownership plans"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "people_employment",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/investment-capital/employee-share-ownership-program"
+              }
+            },
+            {
+              "name": "Get growth equity investment for your business",
+              "desc": "InBC Investment Corp is a $500 million provincial strategic investment fund with a triple-bottom-line mandate that invests in B.C. businesses with high growth potential.",
+              "users": "High-growth-potential B.C. businesses",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "InBC Investment Corp",
+                  "url": "https://www.inbcinvestment.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/jobs-economic-development-and-innovation"
+              }
+            },
+            {
+              "name": "Prepare your business for economic disruption or disaster",
+              "desc": "Guides help businesses prepare for and recover from disasters and broader economic shocks, including impacts from U.S. tariffs.",
+              "users": "Businesses of all sizes",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Economic preparedness guide for businesses",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/economic-development/support-organizations-community-partners/preparing-for-and-recovering-from-economic-impacts-of-disasters/economic-preparedness-guide-for-businesses"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "EconomicRecovery@gov.bc.ca",
+                  "url": "mailto:EconomicRecovery@gov.bc.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Review all existing ministry programs and initiatives to ensure they remain relevant, are efficient, grow the economy and help keep costs low given budget constraints and tariff threats"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "disaster_recovery",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/business/small-business/help-for-small-businesses-and-entrepreneurs"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#c62828",
+      "title": "GOAL 2",
+      "short_name": "B.C. businesses trade internationally and attract investment",
+      "legend_label": "Trade & investment",
+      "description": "The ministry promotes B.C. internationally as a place to invest and do business, helps exporters diversify into new markets, and coordinates the province's response to U.S. tariffs and major project investment through the Look West strategy.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Grow your exports and international trade",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get help exporting your products to new markets",
+              "desc": "The Export Navigator Program's community-based advisors provide free, ongoing guidance to help B.C. businesses grow their sales outside the province.",
+              "users": "B.C. exporters and businesses new to export",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Export Navigator Program",
+                  "url": "https://exportnavigator.ca/"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Export Navigator: 1-855-667-2270",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "exporting_trade",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/business/small-business/help-for-small-businesses-and-entrepreneurs"
+              }
+            },
+            {
+              "name": "Get coaching to grow your international trade",
+              "desc": "The Trade Accelerator Program is a Canada-wide program offering strategic growth mentoring, skills training and coaching to help businesses expand into international trade.",
+              "users": "Growth-oriented B.C. exporters",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Trade Accelerator Program",
+                  "url": "https://www.boardoftrade.com/wtc/tap"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "exporting_trade",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/business/small-business/help-for-small-businesses-and-entrepreneurs"
+              }
+            },
+            {
+              "name": "Get help attracting investment or entering export markets",
+              "desc": "Trade and Invest BC works with B.C. and international businesses to help attract foreign investment and find new markets for B.C. goods and services, including through representative offices abroad.",
+              "users": "B.C. exporters, international investors",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Trade and Invest BC",
+                  "url": "https://www.britishcolumbia.ca/"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Trade and Invest BC: 604-775-2100",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 6,
+                  "tip": "Lead work with the Parliamentary Secretary for Trade to enhance and expand B.C.'s Trade Diversification Strategy and diversify B.C.'s sources of international investment"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "exporting_trade",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/international-investment-and-trade"
+              }
+            },
+            {
+              "name": "Learn how trade agreements affect your business",
+              "desc": "Information on B.C.'s trade and investment agreements and how to claim preferential tariff treatment in free trade agreement markets.",
+              "users": "B.C. exporters and importers",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Trade and Investment Agreements",
+                  "url": "https://www.britishcolumbia.ca/about-british-columbia-canada/trade-agreements"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "exporting_trade",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/international-investment-and-trade"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Attract investment and deliver major projects",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get support responding to U.S. tariffs",
+              "desc": "Resources and the BC Tariff Response Committee support B.C. businesses and workers facing U.S. tariffs, alongside the Look West strategy's push to diversify export markets.",
+              "users": "Businesses and workers affected by tariffs",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry",
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "B.C.'s response to unjustified U.S. tariffs",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/tariffs"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 2,
+                  "tip": "Work with partners to direct B.C.'s response to U.S. tariffs and other unfair trade actions"
+                },
+                {
+                  "number": 5,
+                  "tip": "Evolve the BC Tariff Response Committee to ensure continued integration with key partners in B.C.'s tariff response"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "financial_distress",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/international-investment-and-trade"
+              }
+            },
+            {
+              "name": "Track major clean energy, mineral and natural gas projects in B.C.",
+              "desc": "The Major Projects in B.C. website tracks accelerated clean energy, critical mineral, mining and natural gas projects the province is working to deliver faster as part of the Look West strategy.",
+              "users": "Industry, investors, general public",
+              "user_groups": [
+                "Industry",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Major projects in B.C. delivered faster",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/major-projects"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Lead work with colleagues to accelerate major investments in B.C.'s economy that create well-paying jobs"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/major-projects"
+              }
+            },
+            {
+              "name": "Apply for B.C. Strategic Investment Fund financing",
+              "desc": "The B.C. Strategic Investment Fund is a financing fund intended to encourage new investments in British Columbia; an application intake process is currently in development.",
+              "users": "Businesses seeking major project financing",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-email",
+                  "label": "majorinvestments@gov.bc.ca",
+                  "url": "mailto:majorinvestments@gov.bc.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/economic-development/strategic-investment-fund"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#6a1b9a",
+      "title": "GOAL 3",
+      "short_name": "B.C.'s technology, innovation and life sciences sectors grow",
+      "legend_label": "Technology & innovation",
+      "description": "Through Innovate BC, the B.C. Knowledge Development Fund and related programs, the ministry helps innovators and technology businesses access funding, research infrastructure and expert connections.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get support to launch and grow a tech or innovation business",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get funding, mentorship and connections to grow your tech business",
+              "desc": "Innovate BC, a provincial Crown agency, connects B.C. innovators with hiring grants, mentorship, research grants, pilot funding and innovation challenges.",
+              "users": "Technology and innovation businesses",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Innovate BC",
+                  "url": "https://www.innovatebc.ca/"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "info@innovatebc.ca",
+                  "url": "mailto:info@innovatebc.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 11,
+                  "tip": "Work with the Minister of State for Artificial Intelligence and New Technologies to expand B.C.'s AI and new technology sectors, including quantum and life sciences"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/technology-innovation/partner-organizations"
+              }
+            },
+            {
+              "name": "Apply for research infrastructure funding",
+              "desc": "The B.C. Knowledge Development Fund supports the development of research infrastructure like labs and equipment, helping institutions attract researchers and skilled technicians and collaborate with industry.",
+              "users": "Post-secondary institutions, researchers",
+              "user_groups": [
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "B.C. Knowledge Development Fund (BCKDF)",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/technology-innovation/bckdf"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/technology-innovation"
+              }
+            },
+            {
+              "name": "Get support to grow a life sciences or biomanufacturing business",
+              "desc": "The Province supports expansion of B.C.'s life sciences and biomanufacturing sector, which already employs more than 20,000 people, as part of the Look West strategy's targeted sectors.",
+              "users": "Life sciences and biomanufacturing businesses",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Life sciences and biomanufacturing",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/technology-innovation/life-sciences-biomanufacturing"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 11,
+                  "tip": "Work with the Minister of State for Artificial Intelligence and New Technologies to expand B.C.'s AI and new technology sectors, including quantum and life sciences"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/technology-innovation/life-sciences-biomanufacturing"
+              }
+            },
+            {
+              "name": "Get funding to improve workplace innovation and productivity",
+              "desc": "The B.C. Workplace Innovation Fund supports projects that help B.C. businesses and organizations adopt innovative workplace practices and technology.",
+              "users": "B.C. businesses and organizations",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "B.C. Workplace Innovation Fund",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/technology-innovation/workplace-innovation-fund"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/technology-innovation"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#00838f",
+      "title": "GOAL 4",
+      "short_name": "Communities across B.C. build stronger local economies",
+      "legend_label": "Regional & rural economic development",
+      "description": "Regional economic development staff, funding programs and planning toolkits help local governments, Indigenous communities and businesses plan, fund and deliver economic development initiatives across urban and rural B.C.",
+      "metrics": [],
+      "css_class": "goal-4",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get funding and planning support for local economic development",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Search for economic development funding and grants",
+              "desc": "A searchable database connects local governments, Indigenous communities and businesses with funding opportunities for economic development initiatives.",
+              "users": "Local governments, Indigenous communities, businesses",
+              "user_groups": [
+                "Municipalities & local governments",
+                "Businesses & employers",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Search funding & grants",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/economic-development/funding-and-grants"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "EconomicDevelopment@gov.bc.ca",
+                  "url": "mailto:EconomicDevelopment@gov.bc.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/economic-development/funding-and-grants"
+              }
+            },
+            {
+              "name": "Learn to plan and measure your community's economic development",
+              "desc": "A Strategic Planning Toolkit and Performance Measurement Toolkit help communities learn the basics of economic development, build a plan, and measure the impact of their activities.",
+              "users": "Local government and community economic development staff",
+              "user_groups": [
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Learn the Basics, Plan and Measure Your Economic Development Efforts",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/economic-development/plan-and-measure"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/economic-development"
+              }
+            },
+            {
+              "name": "Access Indigenous economic development resources",
+              "desc": "Partnerships, tools and resources support First Nations and Indigenous communities pursuing their economic development goals under the StrongerBC Economic Plan.",
+              "users": "Indigenous communities and organizations",
+              "user_groups": [
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Indigenous Economic Development Resources",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/economic-development/indigenous-economic-development-resources"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/economic-development"
+              }
+            },
+            {
+              "name": "Get support to recover from a major employer loss or economic shock",
+              "desc": "Community Transition Services help communities plan and recover after the loss of a major employer or another significant economic disruption.",
+              "users": "Communities affected by economic shocks",
+              "user_groups": [
+                "Municipalities & local governments",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Community Transition Services",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/economic-development/support-organizations-community-partners/community-transition-services"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "disaster_recovery",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/economic-development/support-organizations-community-partners/economic-development-services"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get regional economic development and investment attraction support",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Connect with a regional economic development manager",
+              "desc": "Government economic development staff based across B.C.'s regions provide free advice on strategic planning, funding, business retention, land development and investment attraction, and support for local governments, Indigenous communities and businesses.",
+              "users": "Local governments, Indigenous communities, businesses, economic development agencies",
+              "user_groups": [
+                "Municipalities & local governments",
+                "Businesses & employers",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Economic Development Services",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/economic-development/support-organizations-community-partners/economic-development-services"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 17,
+                  "tip": "In partnership with the Parliamentary Secretary for Rural Development, ensure government initiatives consider and deliver economic growth and benefits for rural and urban communities"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/economic-development/support-organizations-community-partners/economic-development-services"
+              }
+            },
+            {
+              "name": "Run a business retention and expansion program in your community",
+              "desc": "Tools help local governments and economic development organizations develop Business Retention and Expansion programs, organize Business Walks, and support business succession planning.",
+              "users": "Local governments, economic development organizations",
+              "user_groups": [
+                "Municipalities & local governments",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Support Business and Sector Development",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/economic-development/support-business-community"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/economic-development/support-business-community"
+              }
+            },
+            {
+              "name": "Attract investment and prepare land for development in your community",
+              "desc": "A Business Attraction Toolkit and Land Development Toolkit help communities position themselves to attract new investment and assess their readiness to develop land parcels.",
+              "users": "Local governments, economic development organizations",
+              "user_groups": [
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Prepare for Business Investment and Land Development",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/economic-development/market-and-attract"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 15,
+                  "tip": "Create an inventory of existing industrial lands, carry out a land-use needs assessment, and develop a strategy for protecting and growing the industrial land base"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/economic-development/market-and-attract"
+              }
+            },
+            {
+              "name": "Apply a rural lens to policies affecting your community",
+              "desc": "The Rural Initiative draft guidance helps ministries assess how provincial policies impact rural, remote and First Nations communities, which contribute over $84 billion annually to B.C.'s economy.",
+              "users": "Rural communities, ministries developing policy",
+              "user_groups": [
+                "Municipalities & local governments",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Rural Initiative - Draft Guidance",
+                  "url": "https://www2.gov.bc.ca/assets/gov/employment-business-and-economic-development/rural-initiative/rural_initiative_-_draft_guidance.pdf"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "RuralPolicy@gov.bc.ca",
+                  "url": "mailto:RuralPolicy@gov.bc.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 17,
+                  "tip": "In partnership with the Parliamentary Secretary for Rural Development, ensure government initiatives consider and deliver economic growth and benefits for rural and urban communities"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/rural-initiative"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Economic and labour market research and statistics",
+      "desc": "Collection and publication of economic data, major project tracking, and business and sector statistics that inform ministry programs and public research on B.C.'s economy.",
+      "users": "Internal program staff, economic development practitioners",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "core_business_needs",
+        "domain": "finances_taxes",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Trade and investment policy development and negotiation",
+      "desc": "Policy analysis and negotiation support underlying B.C.'s trade agreements, trade diversification strategy and investment attraction work.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "scenario_dependent",
+        "domain": "exporting_trade",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-3",
+      "name": "Major projects coordination and permitting support",
+      "desc": "Cross-ministry coordination that helps accelerate permitting and approvals for major clean energy, critical mineral and natural gas projects under the Look West strategy.",
+      "users": "Internal program staff, partner ministries",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "industry_specific",
+        "domain": "energy_minerals",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    }
+  ],
+  "mandate_date": "November 25, 2025",
+  "mandate_minister": "Ravi Kahlon",
+  "mandate_pdf": "https://www2.gov.bc.ca/assets/gov/government/ministries-organizations/premier-cabinet-mlas/minister-letter/mandate_letter_ravi_kahlon.pdf",
+  "cross_cutting": [
+    "Growing the economy",
+    "Reducing costs for families",
+    "Strengthening health care",
+    "Making communities safer"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Review all existing Ministry of Jobs and Economic Growth programs and initiatives to ensure they remain relevant, are efficient, grow the economy and help keep costs low, given current provincial budget constraints and the threat of American tariffs"
+    },
+    {
+      "number": 2,
+      "text": "Work with partners to direct B.C.'s response to U.S. tariffs and other unfair trade actions"
+    },
+    {
+      "number": 3,
+      "text": "Lead work with colleagues to accelerate major investments in B.C.'s economy that create well-paying jobs"
+    },
+    {
+      "number": 4,
+      "text": "Support the development and implementation of policies that increase economic growth in B.C. to improve opportunities for all British Columbians"
+    },
+    {
+      "number": 5,
+      "text": "Evolve the BC Tariff Response Committee to ensure continued integration with key partners in B.C.'s tariff response"
+    },
+    {
+      "number": 6,
+      "text": "Lead work with the Parliamentary Secretary for Trade to enhance and expand B.C.'s Trade Diversification Strategy and diversify B.C.'s sources of international investment"
+    },
+    {
+      "number": 7,
+      "text": "Ensure proposed legislation or regulations are considered through the lens of impact on B.C. businesses, bringing forward reforms to support competitiveness while promoting high standards on human rights, environment and social well-being"
+    },
+    {
+      "number": 8,
+      "text": "Continue to diversify B.C.'s economy and support good jobs through the BC Manufacturing Jobs Fund"
+    },
+    {
+      "number": 9,
+      "text": "Work with business leaders to develop performance measurements on the ease of doing business in B.C. and address issues identified to improve competitiveness"
+    },
+    {
+      "number": 10,
+      "text": "Assume lead responsibility for the international film and television production tax credit program and related policy"
+    },
+    {
+      "number": 11,
+      "text": "Work with the Minister of State for Artificial Intelligence and New Technologies to expand B.C.'s AI and new technology sectors, including quantum and life sciences, and prepare workers for AI opportunities"
+    },
+    {
+      "number": 12,
+      "text": "Work with grocery stores and pharmacies to get more B.C. products on B.C. shelves"
+    },
+    {
+      "number": 13,
+      "text": "Continue to support small and medium-sized businesses to innovate, grow and access global markets"
+    },
+    {
+      "number": 14,
+      "text": "Advocate strongly to the federal government for fair treatment of B.C. businesses in relation to economic growth and stimulus programs"
+    },
+    {
+      "number": 15,
+      "text": "Create an inventory of existing industrial lands, carry out a land-use needs assessment, and develop a strategy for protecting and growing the industrial land base"
+    },
+    {
+      "number": 16,
+      "text": "Work with the Minister of Transportation and Transit to expand export infrastructure and improve access to industrial land, supporting B.C.'s role in facilitating trade with Asia"
+    },
+    {
+      "number": 17,
+      "text": "In partnership with the Parliamentary Secretary for Rural Development, ensure government initiatives consider and deliver economic growth and benefits for rural and urban communities"
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-engage",
+      "label": "Engage",
+      "bg_color": "#e1bee7",
+      "text_color": "#6a1b9a"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-email",
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "Businesses & employers",
+    "Industry",
+    "Workers & job seekers",
+    "Municipalities & local governments",
+    "Indigenous communities",
+    "General public"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

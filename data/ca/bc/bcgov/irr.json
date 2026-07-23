@@ -1,0 +1,1033 @@
+{
+  "prefix": "irr",
+  "full_name": "Ministry of Indigenous Relations and Reconciliation",
+  "short_name": "Indigenous Relations & Reconciliation",
+  "blurb": "Leads B.C.'s pursuit of reconciliation with First Nations and Indigenous Peoples — implementing the Declaration on the Rights of Indigenous Peoples Act, negotiating treaties and reconciliation agreements, and supporting Indigenous economic development, communities, women and languages.",
+  "nav_name": "Indigenous Relations and Reconciliation",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#234075",
+      "title": "GOAL 1",
+      "short_name": "British Columbia's laws and relationships with Indigenous Peoples reflect the Declaration Act",
+      "legend_label": "Declaration Act & treaties",
+      "description": "The ministry leads B.C.'s participation in treaty and reconciliation negotiations and guides the cross-government implementation of the Declaration on the Rights of Indigenous Peoples Act.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Implement the Declaration on the Rights of Indigenous Peoples Act",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Track progress on Declaration Act implementation",
+              "desc": "Annual reports and the five-year Declaration Act Action Plan track the Province's progress aligning provincial laws with the UN Declaration and meeting reconciliation commitments.",
+              "users": "General public, Indigenous communities",
+              "user_groups": [
+                "General public",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Declaration on the Rights of Indigenous Peoples Act",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/new-relationship/united-nations-declaration-on-the-rights-of-indigenous-peoples"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Declaration Act Action Plan",
+                  "url": "https://www2.gov.bc.ca/assets/gov/government/ministries-organizations/ministries/indigenous-relations-reconciliation/declaration_act_action_plan.pdf"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "DA",
+                  "color": "#234075",
+                  "full_name": "Declaration on the Rights of Indigenous Peoples Act - Alignment of laws, action plan and annual reporting"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 7,
+                  "tip": "Lead work to review and update the Declaration Act Action Plan by 2027, for the next five-year period"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/new-relationship/united-nations-declaration-on-the-rights-of-indigenous-peoples"
+              }
+            },
+            {
+              "name": "Enter into a shared decision-making agreement with the Province",
+              "desc": "Sections 6 and 7 of the Declaration Act give the Province flexibility to enter into agreements with a broader range of Indigenous governing bodies and to exercise statutory decision-making authority together.",
+              "users": "Indigenous governing bodies",
+              "user_groups": [
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Making Decisions Together",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/new-relationship/united-nations-declaration-on-the-rights-of-indigenous-peoples/making-decisions-together"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "DA",
+                  "color": "#234075",
+                  "full_name": "Declaration on the Rights of Indigenous Peoples Act - Sections 6-7, agreements and joint decision-making"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/new-relationship/united-nations-declaration-on-the-rights-of-indigenous-peoples"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Negotiate a treaty or reconciliation agreement",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Negotiate a modern treaty with the Province and Canada",
+              "desc": "The ministry leads B.C.'s participation in Final Agreement and Agreement-in-Principle negotiations with First Nations and Canada, facilitated by the independent BC Treaty Commission's six-stage negotiations framework.",
+              "users": "First Nations in the treaty process",
+              "user_groups": [
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "About First Nations Treaty Process",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/natural-resource-stewardship/consulting-with-first-nations/first-nations-negotiations/about-first-nations-treaty-process"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Ministry of Indigenous Relations and Reconciliation",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 5,
+                  "tip": "Given the strains of conflict over boundaries, and the legal costs and uncertainty associated with unclear boundaries, work with First Nations partners to prioritize Action 1.1 of the Declaration Act Action Plan relating to overlap and boundary dispute resolution"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/environment/natural-resource-stewardship/consulting-with-first-nations/first-nations-negotiations/about-first-nations-treaty-process"
+              }
+            },
+            {
+              "name": "Negotiate a reconciliation agreement or other arrangement with the Province",
+              "desc": "The Province negotiates reconciliation agreements, accords, memorandums of understanding and other arrangements with First Nations outside the formal treaty process to close socio-economic gaps and create economic certainty.",
+              "users": "First Nations, tribal councils",
+              "user_groups": [
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Reconciliation & Other Agreements",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/natural-resource-stewardship/consulting-with-first-nations/first-nations-negotiations/reconciliation-other-agreements"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 2,
+                  "tip": "Build partnerships that advance reconciliation in measurable ways and create tangible benefits for First Nations and all British Columbians, such as building more affordable housing, generating clean energy, creating good jobs and protecting our environment"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/environment/natural-resource-stewardship/consulting-with-first-nations/first-nations-negotiations/reconciliation-other-agreements"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Get support for consultation on land and resource decisions",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get government support for consultation on decisions affecting your territory",
+              "desc": "Guidance and procedure manuals help government officials and project proponents meet legal obligations to consult and accommodate First Nations before decisions affecting Aboriginal rights, title or treaty rights.",
+              "users": "First Nations, proponents, government agencies",
+              "user_groups": [
+                "Indigenous communities",
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Consulting with First Nations",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/natural-resource-stewardship/consulting-with-first-nations"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "IRR Info",
+                  "url": "mailto:IRRInfo@gov.bc.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/environment/natural-resource-stewardship/consulting-with-first-nations"
+              }
+            },
+            {
+              "name": "Find your local First Nations consultation contacts",
+              "desc": "An interactive online mapping tool identifies First Nation contacts and consultation areas so the public, industry, other governments and First Nations can identify who to talk to about a proposed activity.",
+              "users": "General public, proponents, government agencies",
+              "user_groups": [
+                "General public",
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Consultation Areas Database map",
+                  "url": "https://maps.gov.bc.ca/ess/hm/cadb/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/environment/natural-resource-stewardship/consulting-with-first-nations"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "title": "GOAL 2",
+      "short_name": "Indigenous communities and businesses share in economic growth and reconciliation",
+      "legend_label": "Economic reconciliation",
+      "description": "The ministry supports Indigenous entrepreneurs and communities through business financing, capacity-building funds, and partnerships that create tangible economic and social benefits.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Grow an Indigenous business",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for an Indigenous business loan",
+              "desc": "The First Citizens Fund Business Loan Program provides business loans to Indigenous entrepreneurs, delivered by All Nations Trust Company in partnership with four Aboriginal Capital Corporations across the province.",
+              "users": "Indigenous entrepreneurs",
+              "user_groups": [
+                "Businesses & employers",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "First Citizens Fund Business Loan Program",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/economic-development/business-loan-program"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/economic-development/business-loan-program"
+              }
+            },
+            {
+              "name": "Get help starting or growing your Indigenous business",
+              "desc": "Indigenous Business Resources and regional Indigenous Business Advisory Centres in Cranbrook, Fort St. John and Prince George help entrepreneurs with business start-up, expansion, partnerships and planning.",
+              "users": "Indigenous entrepreneurs",
+              "user_groups": [
+                "Businesses & employers",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Indigenous Business Resources",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/business/small-business/indigenous-business-resources"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Economic Development",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/economic-development"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/economic-development"
+              }
+            },
+            {
+              "name": "Apply for Indigenous economic and community development funding",
+              "desc": "The independent New Relationship Trust invests a $100-million endowment in First Nations economic development, governance capacity, education, language and culture, and Elders and youth initiatives.",
+              "users": "First Nations communities and organizations",
+              "user_groups": [
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "New Relationship Trust",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/new-relationship-trust"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Ensure that at the end of this term, people living in Indigenous communities in the province have seen an improvement in their quality of life through our government's interventions"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/new-relationship-trust"
+              }
+            },
+            {
+              "name": "Apply for First Citizens Fund cultural, educational or economic funding",
+              "desc": "The First Citizens Fund, a perpetual fund created in 1969, uses investment earnings to support cultural, educational and economic development initiatives and organizations serving Indigenous people in B.C.",
+              "users": "Indigenous individuals, communities and organizations",
+              "user_groups": [
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "First Citizens Fund",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/first-citizens-fund"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/first-citizens-fund"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Access community and cultural support programs",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Find Indigenous organizations and services in your area",
+              "desc": "The Guide to Indigenous Organization and Services lists more than 1,100 Indigenous, First Nations and Métis organizations offering culture and language, business, child and family, education, employment, health, housing and legal services.",
+              "users": "General public, Indigenous people and communities",
+              "user_groups": [
+                "General public",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Guide to Indigenous Organization and Services",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/guide-to-indigenous-organization-and-services"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/guide-to-indigenous-organization-and-services"
+              }
+            },
+            {
+              "name": "Get support after the discovery of unmarked graves or a residential school site",
+              "desc": "A First Nations liaison and mental health, wellness and cultural supports help lead communities investigate, protect and commemorate the sites of former Indian Residential Schools and Indian Hospitals in B.C.",
+              "users": "First Nations and Tribal Councils with a former residential school or hospital site",
+              "user_groups": [
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "BC Residential School Response Fund",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/residential-school-response"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Residential Schools Response",
+                  "url": "mailto:residentialschoolsresponse@gov.bc.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/residential-school-response"
+              }
+            },
+            {
+              "name": "Get support as an urban or off-reserve Indigenous person",
+              "desc": "The Off-Reserve Aboriginal Action Plan and Friendship Centres Program support better education and job training, healthier family life, and strengthened cultures and traditions for the 78% of Indigenous people living, studying and working in urban and off-reserve areas.",
+              "users": "Urban and off-reserve Indigenous people",
+              "user_groups": [
+                "Indigenous communities",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Urban & Off-Reserve Aboriginal People",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/supporting-communities/urban-off-reserve-aboriginal-people"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/supporting-communities/urban-off-reserve-aboriginal-people"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#6a1b9a",
+      "title": "GOAL 3",
+      "short_name": "Indigenous women, languages and cultures are respected and represented",
+      "legend_label": "Women, language & culture",
+      "description": "The ministry supports Indigenous women's leadership and the revitalization of First Nations languages and cultures across the province.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get advice and representation as an Indigenous woman",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Take part in the Minister's Advisory Council on Indigenous Women",
+              "desc": "MACIW provides advice to government on how to improve the quality of life for Indigenous women in B.C., guided by Indigenous worldviews, and reports to the Minister of Indigenous Relations and Reconciliation.",
+              "users": "Indigenous women",
+              "user_groups": [
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Minister's Advisory Council on Indigenous Women (MACIW)",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/minister-s-advisory-council-on-indigenous-women-maciw"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "MACIW",
+                  "url": "mailto:MACIW@gov.bc.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/minister-s-advisory-council-on-indigenous-women-maciw"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Protect and revitalize Indigenous languages and culture",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Access Indigenous language and culture revitalization supports",
+              "desc": "The Province funds the First Peoples' Cultural Council and Declaration Act Action Plan commitments to protect and revitalize B.C.'s 35 First Nation languages and Indigenous cultures and heritage.",
+              "users": "Indigenous communities, language keepers",
+              "user_groups": [
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Indigenous Language & Culture",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/supporting-communities/culture-language"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/supporting-communities/culture-language"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Lead cross-government implementation of the Declaration Act",
+      "desc": "The Declaration Act Secretariat, a central agency established in 2022, guides and supports implementation of all sections of the Declaration Act across B.C. government, including alignment of provincial laws with the UN Declaration.",
+      "users": "Internal government staff, ministries",
+      "channels": [
+        {
+          "type": "ch-web",
+          "label": "Declaration Act Secretariat",
+          "url": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/new-relationship/united-nations-declaration-on-the-rights-of-indigenous-peoples/declaration-act-secretariat"
+        }
+      ],
+      "legislation": [
+        {
+          "abbrev": "DA",
+          "color": "#234075",
+          "full_name": "Declaration on the Rights of Indigenous Peoples Act - Sections 3-5, alignment of laws and action plan"
+        }
+      ],
+      "mandate_tags": [
+        {
+          "number": 6,
+          "tip": "Through the Declaration Act Secretariat, lead work with the Attorney General to ensure alignment of BC's laws with the rights of Indigenous peoples"
+        }
+      ],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "justice_legal",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/new-relationship/united-nations-declaration-on-the-rights-of-indigenous-peoples/declaration-act-secretariat"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Coordinate B.C.'s participation in treaty and reconciliation agreement negotiations",
+      "desc": "The ministry leads the Province's participation in treaty negotiations, interim measures and other agreements with First Nations and the federal government on lands, resources, governance, fiscal relations and capacity-building, and coordinates cross-government implementation once concluded.",
+      "users": "Internal program staff",
+      "channels": [
+        {
+          "type": "ch-web",
+          "label": "First Nations Negotiations",
+          "url": "https://www2.gov.bc.ca/gov/content/environment/natural-resource-stewardship/consulting-with-first-nations/first-nations-negotiations"
+        }
+      ],
+      "legislation": [],
+      "mandate_tags": [
+        {
+          "number": 4,
+          "tip": "Continue work with First Nations partners, local governments and agencies to implement treaties and other agreements"
+        }
+      ],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "justice_legal",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/environment/natural-resource-stewardship/consulting-with-first-nations/first-nations-negotiations"
+      }
+    },
+    {
+      "id": "f-3",
+      "name": "Provide advice and guidance on First Nations consultation to government agencies and proponents",
+      "desc": "The ministry provides advice and guidance in First Nations consultation to government decision-makers and produces resources that help proponents meet their consultation and accommodation obligations.",
+      "users": "Government agencies, proponents",
+      "channels": [
+        {
+          "type": "ch-web",
+          "label": "Consulting with First Nations",
+          "url": "https://www2.gov.bc.ca/gov/content/environment/natural-resource-stewardship/consulting-with-first-nations"
+        }
+      ],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "environment_land",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/environment/natural-resource-stewardship/consulting-with-first-nations"
+      }
+    },
+    {
+      "id": "f-4",
+      "name": "Administer the First Citizens Fund",
+      "desc": "The ministry administers the First Citizens Fund, a perpetual fund created in 1969 under the Special Accounts Appropriation and Control Act, whose principal is held as capital and whose investment earnings fund cultural, educational and economic initiatives for Indigenous people in B.C.",
+      "users": "Internal program staff",
+      "channels": [
+        {
+          "type": "ch-web",
+          "label": "First Citizens Fund",
+          "url": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/first-citizens-fund"
+        }
+      ],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "recreation_culture",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/first-citizens-fund"
+      }
+    },
+    {
+      "id": "f-5",
+      "name": "Support the Indigenous Business and Investment Council",
+      "desc": "The ministry supports the Indigenous Business and Investment Council, which develops strategies to increase Indigenous participation in the economy and promote investment models between Indigenous people and the private sector.",
+      "users": "Internal program staff",
+      "channels": [
+        {
+          "type": "ch-web",
+          "label": "Economic Development",
+          "url": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/economic-development"
+        }
+      ],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "core_business_needs",
+        "domain": "finances_taxes",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/governments/indigenous-people/economic-development"
+      }
+    },
+    {
+      "id": "f-6",
+      "name": "Review ministry programs and funding for efficiency and relevance",
+      "desc": "Ongoing review, with the Ministry of Finance, of all ministry programs and initiatives to ensure they remain relevant, efficient and deliver improved outcomes for Indigenous peoples within current budget constraints.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [
+        {
+          "number": 1,
+          "tip": "Work with the Minister of Finance to review all existing ministry programs and initiatives to ensure programs remain relevant, are efficient, grow the economy, and deliver an improved quality of life for Indigenous peoples in the province"
+        }
+      ],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "justice_legal",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-7",
+      "name": "Support work to address anti-Indigenous racism",
+      "desc": "The ministry works with the Parliamentary Secretary for Anti-Racism Initiatives on cross-government efforts to address anti-Indigenous racism.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [
+        {
+          "number": 8,
+          "tip": "Work with the Parliamentary Secretary for Anti-Racism Initiatives on anti-Indigenous racism"
+        }
+      ],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "justice_legal",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-8",
+      "name": "Coordinate Crown land transfers for First Nations economic development",
+      "desc": "In cooperation with the Ministry of Water, Land and Resource Stewardship, the ministry develops and implements approaches to accelerate agreed-upon Crown land transfers that support First Nation community and economic development.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [
+        {
+          "number": 9,
+          "tip": "In cooperation with the Minister of Water, Land and Resource Stewardship, continue to develop and implement approaches to accelerate agreed-upon land transfers that enhance First Nation community and economic development"
+        }
+      ],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "environment_land",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    }
+  ],
+  "mandate_date": "July 17, 2025",
+  "mandate_minister": "Spencer Chandra Herbert",
+  "mandate_pdf": "https://www2.gov.bc.ca/assets/gov/government/ministries-organizations/premier-cabinet-mlas/minister-letter/mandate_letter_spencer_chandra_herbert.pdf",
+  "cross_cutting": [
+    "Growing the economy and creating jobs",
+    "Reducing costs for families",
+    "Strengthening health care",
+    "Community safety",
+    "Climate action",
+    "Reconciliation with Indigenous peoples"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "In order to protect key services that British Columbians rely on, work with the Minister of Finance to review all existing ministry programs and initiatives to ensure programs remain relevant, are efficient, grow the economy, and deliver an improved quality of life for Indigenous peoples in the province",
+      "mapping": "-> Foundational: review ministry programs and funding for efficiency and relevance"
+    },
+    {
+      "number": 2,
+      "text": "Build partnerships that advance reconciliation in measurable ways and create tangible benefits for First Nations and all British Columbians, such as building more affordable housing, generating clean energy, creating good jobs and protecting our environment",
+      "mapping": "-> Negotiate a reconciliation agreement or other arrangement with the Province"
+    },
+    {
+      "number": 3,
+      "text": "Ensure that at the end of this term, people living in Indigenous communities in the province have seen an improvement in their quality of life through our government's interventions by prioritizing initiatives that make a meaningful difference in the lives of Indigenous peoples in this province",
+      "mapping": "-> Apply for Indigenous economic and community development funding"
+    },
+    {
+      "number": 4,
+      "text": "Continue work with First Nations partners, local governments and agencies to implement treaties and other agreements",
+      "mapping": "-> Foundational: coordinate B.C.'s participation in treaty and reconciliation agreement negotiations"
+    },
+    {
+      "number": 5,
+      "text": "Given the strains of conflict over boundaries, and the legal costs and uncertainty associated with unclear boundaries, work with First Nations partners to prioritize Action 1.1 of the Declaration Act Action Plan relating to overlap and boundary dispute resolution",
+      "mapping": "-> Negotiate a modern treaty with the Province and Canada"
+    },
+    {
+      "number": 6,
+      "text": "Through the Declaration Act Secretariat, lead work with the Attorney General to ensure alignment of BC's laws with the rights of Indigenous peoples",
+      "mapping": "-> Foundational: lead cross-government implementation of the Declaration Act"
+    },
+    {
+      "number": 7,
+      "text": "Lead work to review and update the Declaration Act Action Plan by 2027, for the next five-year period",
+      "mapping": "-> Track progress on Declaration Act implementation"
+    },
+    {
+      "number": 8,
+      "text": "Work with the Parliamentary Secretary for Anti-Racism Initiatives on anti-Indigenous racism",
+      "mapping": "-> Foundational: support work to address anti-Indigenous racism"
+    },
+    {
+      "number": 9,
+      "text": "In cooperation with the Minister of Water, Land and Resource Stewardship, continue to develop and implement approaches to accelerate agreed-upon land transfers that enhance First Nation community and economic development",
+      "mapping": "-> Foundational: coordinate Crown land transfers for First Nations economic development"
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-email",
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Indigenous communities",
+    "Businesses & employers",
+    "Industry"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

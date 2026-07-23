@@ -1,0 +1,369 @@
+{
+  "prefix": "for",
+  "name": "Forests",
+  "short_name": "Forests",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#2e7d32",
+      "short_name": "B.C.'s forests are stewarded sustainably for future generations",
+      "legend_label": "Forest stewardship",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Reforest and monitor forest health after harvesting"
+        },
+        {
+          "number": 2,
+          "name": "Protect old growth forests and plan forest landscapes"
+        },
+        {
+          "number": 3,
+          "name": "Prepare and track a forest stewardship plan"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#0070c0",
+      "short_name": "Crown timber is allocated, priced and harvested responsibly",
+      "legend_label": "Timber tenures & pricing",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get rights to harvest Crown timber"
+        },
+        {
+          "number": 2,
+          "name": "Get a permit for personal timber use on Crown land"
+        },
+        {
+          "number": 3,
+          "name": "Register, mark and transport harvested timber"
+        },
+        {
+          "number": 4,
+          "name": "Get timber priced, measured and sold"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#c62828",
+      "short_name": "British Columbians stay safe from wildfire and burn responsibly",
+      "legend_label": "Wildfire safety",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Prevent wildfires and follow fire restrictions"
+        },
+        {
+          "number": 2,
+          "name": "Report and respond to wildfire"
+        },
+        {
+          "number": 3,
+          "name": "Work safely in forestry and timber sale operations"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#6a1b9a",
+      "short_name": "Forest workers, businesses and communities adapt to a changing sector",
+      "legend_label": "Industry & worker transition",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get support through forestry sector change"
+        },
+        {
+          "number": 2,
+          "name": "Grow value-added wood manufacturing and trade"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "FA",
+      "full_name": "Forest Act",
+      "color": "#2e7d32",
+      "citation": "RSBC 1996, c 157",
+      "summary": "The core statute governing forest tenures, timber pricing, timber marking, timber sale licences, free use permits and harvesting rights on Crown land in British Columbia.",
+      "sections": [
+        {
+          "ref": "Division 8",
+          "title": "Woodlot licences",
+          "description": "Content and award of woodlot licences, granting exclusive rights to manage and harvest Crown timber within a small licence area.",
+          "anchor_id": "FA-Div8",
+          "services": [
+            {
+              "name": "Apply for a woodlot licence",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Get rights to harvest Crown timber"
+            }
+          ]
+        },
+        {
+          "ref": "Division 7.1",
+          "title": "Community forest agreements",
+          "description": "Applications, content and replacement of community forest agreements held by local governments, community groups and First Nations.",
+          "anchor_id": "FA-Div7-1",
+          "services": [
+            {
+              "name": "Apply for a community forest agreement",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Get rights to harvest Crown timber"
+            }
+          ]
+        },
+        {
+          "ref": "Division 8.2",
+          "title": "Licences to cut",
+          "description": "Occupant, master, forestry and fibre supply licences to cut timber outside of a major area-based tenure.",
+          "anchor_id": "FA-Div8-2",
+          "services": [
+            {
+              "name": "Get a licence to cut timber on Crown land",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Get rights to harvest Crown timber"
+            }
+          ]
+        },
+        {
+          "ref": "Part 8",
+          "title": "Roads and rights of way",
+          "description": "Issuance and content of road permits authorizing construction and use of forestry resource roads, including timber harvesting rights within the right-of-way.",
+          "anchor_id": "FA-Part8",
+          "services": [
+            {
+              "name": "Get a road permit to build a forestry resource road",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Get rights to harvest Crown timber"
+            }
+          ]
+        },
+        {
+          "ref": "Division 9",
+          "title": "Free use permits for First Nations and others",
+          "description": "Issuance and content of free use permits authorizing removal of minor volumes of Crown timber for personal, traditional, cultural, scientific or agricultural purposes.",
+          "anchor_id": "FA-Div9",
+          "services": [
+            {
+              "name": "Get a free-use permit for firewood",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Get a permit for personal timber use on Crown land"
+            },
+            {
+              "name": "Get a free use permit for cultural, scientific or agricultural timber use",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Get a permit for personal timber use on Crown land"
+            }
+          ]
+        },
+        {
+          "ref": "Division 9.1",
+          "title": "Christmas tree permits and government use",
+          "description": "Issuance of free use Christmas tree permits authorizing the public to cut a Christmas tree on Crown land for personal use.",
+          "anchor_id": "FA-Div9-1",
+          "services": [
+            {
+              "name": "Get a permit to cut a Christmas tree on Crown land",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Get a permit for personal timber use on Crown land"
+            }
+          ]
+        },
+        {
+          "ref": "Part 5",
+          "title": "Timber marking",
+          "description": "Requirement to mark timber, including private timber marks required to transport logs from privately-owned land.",
+          "anchor_id": "FA-Part5",
+          "services": [
+            {
+              "name": "Apply for a private timber mark",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#0070c0",
+              "ms_number": 3,
+              "ms_name": "Register, mark and transport harvested timber"
+            }
+          ]
+        },
+        {
+          "ref": "Part 10",
+          "title": "Manufacture in British Columbia",
+          "description": "Requirement that Crown timber and residuals be used or manufactured in B.C., subject to exemption and provincial/federal export permits.",
+          "anchor_id": "FA-Part10",
+          "services": [
+            {
+              "name": "Apply to export logs from British Columbia",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#0070c0",
+              "ms_number": 3,
+              "ms_name": "Register, mark and transport harvested timber"
+            }
+          ]
+        },
+        {
+          "ref": "Part 7",
+          "title": "Payments to the government",
+          "description": "Stumpage rate determination and payment for Crown timber, including appraisal, cruise and scale-based pricing.",
+          "anchor_id": "FA-Part7",
+          "services": [
+            {
+              "name": "Look up stumpage rates for Crown timber",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#0070c0",
+              "ms_number": 4,
+              "ms_name": "Get timber priced, measured and sold"
+            }
+          ]
+        },
+        {
+          "ref": "Division 3",
+          "title": "Timber sale licences",
+          "description": "Content of timber sale licences used by BC Timber Sales to competitively auction Crown timber.",
+          "anchor_id": "FA-Div3",
+          "services": [
+            {
+              "name": "Bid on a BC Timber Sales timber sale licence",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#0070c0",
+              "ms_number": 4,
+              "ms_name": "Get timber priced, measured and sold"
+            }
+          ]
+        },
+        {
+          "ref": "Part 3.1",
+          "title": "Cutting permits",
+          "description": "Requirement to obtain an approved cutting permit before harvesting; agreement holders must have an approved forest stewardship plan in effect, and salvage of wildfire-damaged timber is authorized through cutting permits, forestry licences to cut, or occupant licences to cut.",
+          "anchor_id": "FA-Part3-1",
+          "services": [
+            {
+              "name": "Prepare a forest stewardship plan for your tenure",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#2e7d32",
+              "ms_number": 3,
+              "ms_name": "Prepare and track a forest stewardship plan"
+            },
+            {
+              "name": "Get post-wildfire timber salvage guidance",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 2,
+              "ms_name": "Report and respond to wildfire"
+            }
+          ]
+        },
+        {
+          "ref": "s.8",
+          "title": "Allowable annual cut",
+          "description": "The chief forester determines the allowable annual cut for each timber supply area and tree farm licence based on environmental, social and economic factors.",
+          "anchor_id": "FA-s8",
+          "services": []
+        }
+      ]
+    },
+    {
+      "abbrev": "FRPA",
+      "full_name": "Forest and Range Practices Act",
+      "color": "#0070c0",
+      "citation": "SBC 2002, c 69",
+      "summary": "Governs how forest and range practices and resource-based activities are conducted on Crown land, including stocking standards, reforestation obligations and forest health.",
+      "sections": [
+        {
+          "ref": "s.169",
+          "title": "Stocking and reforestation standards",
+          "description": "The chief forester sets seed, seedling and stocking standards for reforestation of B.C.'s forests, tracked through RESULTS silviculture reporting.",
+          "anchor_id": "FRPA-s169",
+          "services": [
+            {
+              "name": "Report silviculture surveys and reforestation data",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Reforest and monitor forest health after harvesting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "WA",
+      "full_name": "Wildfire Act",
+      "color": "#c62828",
+      "citation": "SBC 2004, c 31",
+      "summary": "Defines legal responsibilities and obligations for fire use, wildfire prevention, wildfire control and rehabilitation in British Columbia. In force since March 31, 2005.",
+      "sections": [
+        {
+          "ref": "ss.10-13",
+          "title": "Prohibition, restriction and leave area orders",
+          "description": "Authorizes open fire prohibition orders (s.10), equipment/activity prohibition orders (s.12), area restriction orders (s.11) and leave area orders (s.13).",
+          "anchor_id": "WA-s10-13",
+          "services": [
+            {
+              "name": "Check current campfire bans and fire restrictions",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 1,
+              "ms_name": "Prevent wildfires and follow fire restrictions"
+            }
+          ]
+        },
+        {
+          "ref": "Wildfire Regulation, s.22",
+          "title": "Category 3 open fire requirements",
+          "description": "Defines category 3 open fires and requires burn registration through the Open Fire Tracking System, fuel breaks and fire suppression readiness.",
+          "anchor_id": "WA-Reg-s22",
+          "services": [
+            {
+              "name": "Register a Category 3 open fire",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#c62828",
+              "ms_number": 1,
+              "ms_name": "Prevent wildfires and follow fire restrictions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 3,
+    "sections_count": 15,
+    "services_with_leg_count": 16,
+    "services_multi_act_count": 0
+  }
+}

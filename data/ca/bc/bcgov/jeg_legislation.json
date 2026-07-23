@@ -1,0 +1,104 @@
+{
+  "prefix": "jeg",
+  "name": "Jobs and Economic Growth",
+  "short_name": "Jobs & Economic Growth",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "British Columbians can start, grow and finance a successful business",
+      "legend_label": "Business start-up & growth",
+      "main_services": [
+        { "number": 1, "name": "Start and get advice for your business" },
+        { "number": 2, "name": "Access capital and financing for your business" }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#c62828",
+      "short_name": "B.C. businesses trade internationally and attract investment",
+      "legend_label": "Trade & investment",
+      "main_services": [
+        { "number": 1, "name": "Grow your exports and international trade" },
+        { "number": 2, "name": "Attract investment and deliver major projects" }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#6a1b9a",
+      "short_name": "B.C.'s technology, innovation and life sciences sectors grow",
+      "legend_label": "Technology & innovation",
+      "main_services": [
+        { "number": 1, "name": "Get support to launch and grow a tech or innovation business" }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#00838f",
+      "short_name": "Communities across B.C. build stronger local economies",
+      "legend_label": "Regional & rural economic development",
+      "main_services": [
+        { "number": 1, "name": "Get funding and planning support for local economic development" },
+        { "number": 2, "name": "Get regional economic development and investment attraction support" }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "SBVCA",
+      "full_name": "Small Business Venture Capital Act",
+      "color": "#1565c0",
+      "citation": "RSBC 1996, c 429",
+      "summary": "Authorizes tax credits for investors who make equity capital investments in registered venture capital corporations and eligible small business corporations in B.C. Current to October 8, 2024.",
+      "sections": [
+        {
+          "ref": "Part 1",
+          "title": "Venture Capital Corporation Tax Credits",
+          "description": "Registration of venture capital corporations, investment requirements, and the tax credit or grant available to investors.",
+          "anchor_id": "SBVCA-Part1",
+          "services": [
+            {
+              "name": "Get a tax credit for investing in a small business",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Access capital and financing for your business"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "EIA",
+      "full_name": "Employee Investment Act",
+      "color": "#00838f",
+      "citation": "RSBC 1996, c 112",
+      "summary": "Governs registration of employee share ownership plans and venture capital plans, and the tax credits available for employee investment in B.C. businesses. Current to October 8, 2024.",
+      "sections": [
+        {
+          "ref": "Part 1",
+          "title": "Registration and tax credits for employee share ownership plans",
+          "description": "Sets out requirements for registering an employee share ownership plan and the tax credit available to participating employees.",
+          "anchor_id": "EIA-Part1",
+          "services": [
+            {
+              "name": "Set up an employee share ownership plan",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Access capital and financing for your business"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 2,
+    "sections_count": 2,
+    "services_with_leg_count": 2,
+    "services_multi_act_count": 0
+  }
+}

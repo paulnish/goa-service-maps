@@ -1,0 +1,213 @@
+{
+  "prefix": "eecd",
+  "name": "Education and Early Childhood Development",
+  "short_name": "Education & Early Childhood Development",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "Every child gets a strong start through early learning and child care",
+      "legend_label": "Early learning",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Find and pay for child care"
+        },
+        {
+          "number": 2,
+          "name": "Operate a child care facility"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "short_name": "Students succeed in inclusive anglophone and francophone school systems",
+      "legend_label": "Student success",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Enrol and support your child in school"
+        },
+        {
+          "number": 2,
+          "name": "Get certified and work in education"
+        },
+        {
+          "number": 3,
+          "name": "Navigate programs, credits and school life"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "EA",
+      "full_name": "Education Act",
+      "color": "#0070c0",
+      "citation": "SNB 1997, c E-1.12",
+      "summary": "Governs the K-12 public education system in both linguistic sectors.",
+      "sections": [
+        {
+          "ref": "s.8, s.15",
+          "title": "School privileges and compulsory attendance",
+          "description": "Free school privileges and enrolment entitlement; compulsory attendance.",
+          "anchor_id": "EA-s8s15",
+          "services": [
+            {
+              "name": "Register your child for school",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Enrol and support your child in school"
+            },
+            {
+              "name": "Find your school and school district",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Enrol and support your child in school"
+            }
+          ]
+        },
+        {
+          "ref": "s.4-5",
+          "title": "Language of instruction",
+          "description": "Two linguistic sectors; second-language instruction carve-out enables immersion programs (s.6 program powers).",
+          "anchor_id": "EA-s45",
+          "services": [
+            {
+              "name": "Choose a French second-language program for your child",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Enrol and support your child in school"
+            }
+          ]
+        },
+        {
+          "ref": "s.16(2)",
+          "title": "Effective instruction elsewhere",
+          "description": "Exemption from attendance where a child is under effective instruction elsewhere (home schooling).",
+          "anchor_id": "EA-s162",
+          "services": [
+            {
+              "name": "Home school your child",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Enrol and support your child in school"
+            }
+          ]
+        },
+        {
+          "ref": "s.53",
+          "title": "Conveyance and lodging of pupils",
+          "description": "Pupil transportation; detail in NB Reg 2001-51.",
+          "anchor_id": "EA-s53",
+          "services": [
+            {
+              "name": "Arrange school bus transportation for your child",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Enrol and support your child in school"
+            }
+          ]
+        },
+        {
+          "ref": "s.30",
+          "title": "Teacher certification",
+          "description": "Certification of teachers; detail in NB Reg 2004-8.",
+          "anchor_id": "EA-s30",
+          "services": [
+            {
+              "name": "Get certified to teach in New Brunswick",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Get certified and work in education"
+            }
+          ]
+        },
+        {
+          "ref": "s.12",
+          "title": "Personalized learning plans",
+          "description": "Programs and services for pupils requiring a personalized learning plan; common learning environment duty (s.12(3)).",
+          "anchor_id": "EA-s12",
+          "services": [
+            {
+              "name": "Get supports for your child's learning needs",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Enrol and support your child in school"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "ECSA",
+      "full_name": "Early Childhood Services Act",
+      "color": "#2e7d32",
+      "citation": "SNB 2010, c E-0.5",
+      "summary": "Licenses early learning facilities and enables parent subsidies.",
+      "sections": [
+        {
+          "ref": "Part 2 (ss.4-15)",
+          "title": "Licensing of facilities",
+          "description": "Licensing of early learning and childcare facilities; detail in NB Reg 2018-11.",
+          "anchor_id": "ECSA-Part2ss415",
+          "services": [
+            {
+              "name": "Get a licence to operate an early learning and child care facility",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Operate a child care facility"
+            },
+            {
+              "name": "Find licensed early learning and child care",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Find and pay for child care"
+            }
+          ]
+        },
+        {
+          "ref": "Part 4",
+          "title": "Childcare subsidies",
+          "description": "Parent fee assistance; detail in NB Reg 2018-12.",
+          "anchor_id": "ECSA-Part4",
+          "services": [
+            {
+              "name": "Apply for help with child care costs",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Find and pay for child care"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 2,
+    "sections_count": 8,
+    "services_with_leg_count": 10,
+    "services_multi_act_count": 0
+  }
+}

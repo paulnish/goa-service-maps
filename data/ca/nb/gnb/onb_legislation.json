@@ -1,0 +1,68 @@
+{
+  "prefix": "onb",
+  "name": "Opportunities New Brunswick",
+  "short_name": "Opportunities NB",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "Businesses start, grow and invest in New Brunswick",
+      "legend_label": "Business growth",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Grow your business"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "ONBA",
+      "full_name": "Opportunities New Brunswick Act",
+      "color": "#0070c0",
+      "citation": "SNB 2015, c 2",
+      "summary": "Establishes the provincial economic development corporation.",
+      "sections": [
+        {
+          "ref": "ss.4-5",
+          "title": "Objects, purposes and powers",
+          "description": "Corporation's economic development mandate; financial assistance under ss.22-27.",
+          "anchor_id": "ONBA-ss45",
+          "services": [
+            {
+              "name": "Get business growth financing and support",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Grow your business"
+            },
+            {
+              "name": "Get help exporting to new markets",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Grow your business"
+            },
+            {
+              "name": "Get support to invest or locate in New Brunswick",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Grow your business"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 1,
+    "sections_count": 1,
+    "services_with_leg_count": 3,
+    "services_multi_act_count": 0
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "prefix": "eco",
+  "name": "Executive Council Office",
+  "short_name": "Executive Council Office",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "Government is coordinated, open and accountable",
+      "legend_label": "Open government",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Access government information"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "RTIPPA",
+      "full_name": "Right to Information and Protection of Privacy Act",
+      "color": "#0070c0",
+      "citation": "SNB 2009, c R-10.6",
+      "summary": "Public access to government records and privacy protection.",
+      "sections": [
+        {
+          "ref": "ss.7-8",
+          "title": "Right of access",
+          "description": "Entitlement to request and receive information; request process; duty to assist (s.9).",
+          "anchor_id": "RTIPPA-ss78",
+          "services": [
+            {
+              "name": "Make a right to information request",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Access government information"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 1,
+    "sections_count": 1,
+    "services_with_leg_count": 1,
+    "services_multi_act_count": 0
+  }
+}

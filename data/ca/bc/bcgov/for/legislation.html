@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Legislation Cross-Reference</title>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <a href="/">All Service Maps</a>
+      <span class="sep">/</span>
+      <a href="/" id="ministryLink" class="ministry-link"></a>
+      <span class="sep">/</span>
+      <span class="current">Legislation</span>
+    </div>
+    <div class="header">
+      <p class="subtitle">
+        Government of British Columbia — Legislation Cross-Reference
+      </p>
+      <h1 id="ministryName"></h1>
+      <p>How enabling legislation maps to ministry services</p>
+    </div>
+    <div class="legend-bar">
+      <div class="legend-row">
+        <span class="legend-label">Goals</span>
+        <div id="legendContainer"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num" id="actsCount">0</div>
+          <div class="stat-label">Acts administered</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="sectionsCount">0</div>
+          <div class="stat-label">Sections mapped</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="servicesWithLegCount">0</div>
+          <div class="stat-label">Services with legislation link</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="servicesMultiActCount">0</div>
+          <div class="stat-label">Services spanning multiple acts</div>
+        </div>
+      </div>
+      <div class="view-tabs">
+        <div class="view-tab active" data-view="by-act">By Act</div>
+        <div class="view-tab" data-view="by-service">By Service</div>
+      </div>
+      <div class="filter-panel" id="filterPanel">
+        <div class="filter-toggle">
+          <div class="toggle-left" onclick="togglePanel()">
+            <h3>Filter by</h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="active-chips" id="activeChips"></div>
+          <div class="toggle-right" onclick="togglePanel()">
+            <span class="active-count" id="activeCount">No filters active</span>
+          </div>
+        </div>
+        <div class="filter-body">
+          <div class="filter-grid" id="filterGrid"></div>
+          <div class="filter-footer">
+            <button class="clear-all" onclick="clearAll()">
+              Clear all filters
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="view-section active" id="by-act">
+        <div id="actsContainer"></div>
+      </div>
+      <div class="view-section" id="by-service">
+        <table class="svc-table">
+          <thead>
+            <tr>
+              <th>Supporting Service</th>
+              <th>Main Service</th>
+              <th>Legislation</th>
+              <th>Sections</th>
+            </tr>
+          </thead>
+          <tbody id="serviceTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="drawer" id="drawer">
+      <div class="drawer-header">
+        <div class="drawer-title" id="drawerTitle"></div>
+        <div class="drawer-ref" id="drawerRef"></div>
+        <button class="drawer-close" id="drawerClose">×</button>
+      </div>
+      <div class="drawer-body" id="drawerBody"></div>
+    </div>
+    <div class="page-nav">
+      <a href="/" id="serviceMapLink">Service Map</a>
+      <span class="page-nav-disabled">Grid View</span>
+      <a href="/" id="legislationLink" class="active">Legislation</a>
+    </div>
+    <div class="footer">
+      <p id="footerText"></p>
+    </div>
+
+    <script>
+      // Global variables
+      let actsWithSections = [];
+      let goalsData = [];
+      let ministryData = {};
+      const filterState = { goals: new Set(), acts: new Set() };
+
+      // Utility function to escape HTML
+      function escapeHtml(text) {
+        const div = document.createElement("div");
+        div.textContent = text;
+        return div.innerHTML;
+      }
+
+      // Determine ministry prefix from URL path
+      function getMinistryPrefix() {
+        const path = window.location.pathname;
+        const match = path.match(/\/([a-z]+)\/legislation/);
+        return "for";
+      }
+
+      // Load data and initialize page
+      async function initializePage() {
+        try {
+          const prefix = getMinistryPrefix();
+          const response = await fetch(`/data/ca/bc/bcgov/${prefix}_legislation.json`);
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+          const data = await response.json();
+          ministryData = data;
+          goalsData = data.goals;
+
+          // Transform flat act data into nested format the rendering code expects
+          actsWithSections = data.acts.map((act) => ({
+            legislation: {
+              abbrev: act.abbrev,
+              full_name: act.full_name,
+              color: act.color,
+              citation: act.citation,
+              summary: act.summary,
+              full_text: act.full_text,
+            },
+            sections: act.sections, // sections are already flat: {ref, title, description, anchor_id, services}
+          }));
+
+          // Update page title and links
+          document.title = `${data.name} — Legislation Cross-Reference`;
+          document.getElementById("ministryName").textContent = data.name;
+
+          const ministryLink = document.getElementById("ministryLink");
+          ministryLink.href = `/bc/${prefix}/service-map`;
+          ministryLink.textContent = data.short_name;
+
+          const serviceMapLink = document.getElementById("serviceMapLink");
+          serviceMapLink.href = `/bc/${prefix}/service-map`;
+
+          const legislationLink = document.getElementById("legislationLink");
+          legislationLink.href = `/bc/${prefix}/legislation`;
+
+          const footerText = document.getElementById("footerText");
+          footerText.innerHTML = `March 2026 &nbsp;|&nbsp; <a href="/bc/${prefix}/service-map">← Back to service map</a> &nbsp;|&nbsp; Service analysis using Kate Tarling's framework`;
+
+          // Populate legend
+          renderLegend();
+
+          // Populate stats
+          document.getElementById("actsCount").textContent =
+            data.stats.acts_count;
+          document.getElementById("sectionsCount").textContent =
+            data.stats.sections_count;
+          document.getElementById("servicesWithLegCount").textContent =
+            data.stats.services_with_leg_count;
+          document.getElementById("servicesMultiActCount").textContent =
+            data.stats.services_multi_act_count;
+
+          // Build filter panel
+          buildFilterPanel();
+
+          // Render by-act view
+          renderActsView();
+
+          // Build service table
+          buildServiceTable();
+
+          // Attach event handlers
+          attachEventHandlers();
+        } catch (error) {
+          console.error("Error loading legislation data:", error);
+          document.body.innerHTML =
+            '<div style="padding: 2rem; color: red;">Error loading legislation data. Please check the console.</div>';
+        }
+      }
+
+      // Render legend items
+      function renderLegend() {
+        const container = document.getElementById("legendContainer");
+        container.innerHTML = "";
+        goalsData.forEach((goal) => {
+          const item = document.createElement("div");
+          item.className = "legend-item";
+          item.innerHTML = `
+          <div class="legend-dot" style="background: ${escapeHtml(goal.color)}"></div>
+          ${escapeHtml(goal.legend_label || goal.short_name)}
+        `;
+          container.appendChild(item);
+        });
+      }
+
+      // Build filter panel
+      function buildFilterPanel() {
+        const filterGrid = document.getElementById("filterGrid");
+        filterGrid.innerHTML = "";
+
+        // Add goal filter columns
+        goalsData.forEach((goal) => {
+          const col = document.createElement("div");
+          col.className = "filter-col";
+          col.style.setProperty("--col-color", goal.color);
+
+          const header = document.createElement("div");
+          header.className = "col-header";
+          header.style.color = goal.color;
+          header.style.borderColor = goal.color;
+          header.setAttribute("onclick", "toggleCol(this)");
+          header.innerHTML = `
+          <span class="col-check" style="border-color: ${escapeHtml(goal.color)}"></span>
+          Goal ${goal.number} — ${escapeHtml(goal.short_name)}
+        `;
+          col.appendChild(header);
+
+          goal.main_services.forEach((ms) => {
+            const item = document.createElement("div");
+            item.className = "filter-item";
+            item.setAttribute("data-goal", goal.number);
+            item.setAttribute("data-ms", ms.number);
+            item.style.setProperty("--col-color", goal.color);
+            item.innerHTML = `
+            <span class="check"></span>
+            <span class="item-id">${goal.number}.${ms.number}</span>
+            <span class="item-label">${escapeHtml(ms.name)}</span>
+          `;
+            item.addEventListener("click", function (e) {
+              if (e.target.closest(".check")) {
+                const isChecked = item.classList.contains("checked");
+                item.classList.toggle("checked");
+                if (!isChecked) {
+                  filterState.goals.add(goal.number);
+                } else if (
+                  !goal.main_services.some((m) =>
+                    document
+                      .querySelector(
+                        `[data-goal="${goal.number}"][data-ms="${m.number}"]`,
+                      )
+                      ?.classList.contains("checked"),
+                  )
+                ) {
+                  filterState.goals.delete(goal.number);
+                }
+                applyFilters();
+              }
+            });
+            col.appendChild(item);
+          });
+
+          filterGrid.appendChild(col);
+        });
+
+        // Add legislation filter column
+        const legCol = document.createElement("div");
+        legCol.className = "filter-col";
+        legCol.style.setProperty("--col-color", "#00405c");
+
+        const legHeader = document.createElement("div");
+        legHeader.className = "col-header";
+        legHeader.style.color = "#00405c";
+        legHeader.style.borderColor = "#00405c";
+        legHeader.setAttribute("onclick", "toggleCol(this)");
+        legHeader.innerHTML = `
+        <span class="col-check" style="border-color: #00405c"></span>
+        Enabling Legislation
+      `;
+        legCol.appendChild(legHeader);
+
+        actsWithSections.forEach((act) => {
+          const item = document.createElement("div");
+          item.className = "filter-item";
+          item.setAttribute("data-act", act.legislation.abbrev);
+          item.style.setProperty("--col-color", act.legislation.color);
+          item.innerHTML = `
+          <span class="check"></span>
+          <span class="act-abbr">${escapeHtml(act.legislation.abbrev)}</span>
+          <span class="act-full">${escapeHtml(act.legislation.full_name)}</span>
+        `;
+          item.addEventListener("click", function (e) {
+            if (e.target.closest(".check")) {
+              item.classList.toggle("checked");
+              if (item.classList.contains("checked")) {
+                filterState.acts.add(act.legislation.abbrev);
+              } else {
+                filterState.acts.delete(act.legislation.abbrev);
+              }
+              applyFilters();
+            }
+          });
+          legCol.appendChild(item);
+        });
+
+        filterGrid.appendChild(legCol);
+      }
+
+      // Render acts view
+      function renderActsView() {
+        const container = document.getElementById("actsContainer");
+        container.innerHTML = "";
+
+        actsWithSections.forEach((act) => {
+          const card = document.createElement("div");
+          card.className = "act-card";
+          card.id = `leg-${act.legislation.abbrev.toLowerCase()}`;
+          card.setAttribute("data-act", act.legislation.abbrev);
+          card.style.setProperty("--act-color", act.legislation.color);
+
+          const header = document.createElement("div");
+          header.className = "act-header";
+          header.style.background = act.legislation.color;
+          header.innerHTML = `
+          <div class="act-id">${escapeHtml(act.legislation.abbrev)}</div>
+          <div class="act-info">
+            <div class="act-name">${escapeHtml(act.legislation.full_name)}</div>
+            ${act.legislation.citation ? `<div class="act-citation">${escapeHtml(act.legislation.citation)}</div>` : ""}
+          </div>
+          <div class="act-stats">${act.sections.length} section${act.sections.length !== 1 ? "s" : ""}</div>
+        `;
+          card.appendChild(header);
+
+          if (act.legislation.summary) {
+            const summary = document.createElement("div");
+            summary.className = "act-summary";
+            summary.textContent = act.legislation.summary;
+            card.appendChild(summary);
+          }
+
+          const sectionsDiv = document.createElement("div");
+          sectionsDiv.className = "act-sections";
+
+          act.sections.forEach((entry) => {
+            const section = document.createElement("div");
+            section.className = "leg-section";
+            section.setAttribute("data-ref", entry.ref);
+
+            const refDiv = document.createElement("div");
+            refDiv.className = "sec-ref";
+            refDiv.setAttribute("data-drawer-act", act.legislation.abbrev);
+            refDiv.setAttribute("data-drawer-anchor", entry.anchor_id);
+            refDiv.setAttribute("data-drawer-ref", entry.ref);
+            refDiv.textContent = entry.ref;
+            refDiv.style.cursor = "pointer";
+            refDiv.addEventListener("click", () => {
+              openDrawer(act.legislation.abbrev, entry.anchor_id, entry.ref);
+            });
+
+            const body = document.createElement("div");
+            body.className = "sec-body";
+
+            const title = document.createElement("div");
+            title.className = "sec-title";
+            title.textContent = entry.title;
+            body.appendChild(title);
+
+            if (entry.description) {
+              const desc = document.createElement("div");
+              desc.className = "sec-desc";
+              desc.textContent = entry.description;
+              body.appendChild(desc);
+            }
+
+            const services = document.createElement("div");
+            services.className = "sec-services";
+
+            entry.services.forEach((svc) => {
+              const svcSpan = document.createElement("span");
+              svcSpan.className = "svc-link";
+              if (svc.goal_number) {
+                svcSpan.setAttribute("data-goal", svc.goal_number);
+              }
+              svcSpan.setAttribute("data-svc", svc.name);
+              const text = svc.goal_number
+                ? `[${svc.goal_number}.${svc.ms_number}] ${svc.name}`
+                : svc.name;
+              svcSpan.textContent = text;
+              services.appendChild(svcSpan);
+            });
+
+            body.appendChild(services);
+            section.appendChild(refDiv);
+            section.appendChild(body);
+            sectionsDiv.appendChild(section);
+          });
+
+          card.appendChild(sectionsDiv);
+          container.appendChild(card);
+        });
+      }
+
+      // Build service table
+      function buildServiceTable() {
+        const tbody = document.getElementById("serviceTableBody");
+        tbody.innerHTML = "";
+        const serviceMap = new Map();
+
+        actsWithSections.forEach((act) => {
+          act.sections.forEach((entry) => {
+            entry.services.forEach((svc) => {
+              const key = svc.name;
+              if (!serviceMap.has(key)) {
+                serviceMap.set(key, {
+                  name: svc.name,
+                  goal_number: svc.goal_number,
+                  goal_color: svc.goal_color,
+                  ms_name: svc.ms_name,
+                  acts: new Set(),
+                  sections: [],
+                });
+              }
+              const item = serviceMap.get(key);
+              item.acts.add(act.legislation.abbrev);
+              item.sections.push({
+                act: act.legislation.abbrev,
+                act_color: act.legislation.color,
+                ref: entry.ref,
+                title: entry.title,
+                anchor_id: entry.anchor_id,
+              });
+            });
+          });
+        });
+
+        const sorted = Array.from(serviceMap.values()).sort((a, b) =>
+          a.name.localeCompare(b.name),
+        );
+
+        sorted.forEach((svc) => {
+          const row = document.createElement("tr");
+          row.className = "svc-row";
+          if (svc.goal_number) row.setAttribute("data-goal", svc.goal_number);
+
+          const nameCell = document.createElement("td");
+          nameCell.className = "svc-name-cell";
+          nameCell.textContent = svc.name;
+          row.appendChild(nameCell);
+
+          const msCell = document.createElement("td");
+          msCell.className = "svc-ms-cell";
+          if (svc.goal_number && svc.ms_name) {
+            const label = document.createElement("span");
+            label.className = "ms-label";
+            label.style.color = svc.goal_color;
+            label.textContent = `${svc.goal_number} ${svc.ms_name}`;
+            msCell.appendChild(label);
+          }
+          row.appendChild(msCell);
+
+          const actsCell = document.createElement("td");
+          actsCell.className = "svc-acts-cell";
+          Array.from(svc.acts)
+            .sort()
+            .forEach((actAbbrev) => {
+              const act = actsWithSections.find(
+                (a) => a.legislation.abbrev === actAbbrev,
+              );
+              if (act) {
+                const tag = document.createElement("span");
+                tag.className = "act-tag";
+                tag.style.background = act.legislation.color;
+                tag.style.color = "white";
+                tag.setAttribute("data-act", actAbbrev);
+                tag.textContent = actAbbrev;
+                tag.addEventListener("click", () => filterByAct(actAbbrev));
+                actsCell.appendChild(tag);
+              }
+            });
+          row.appendChild(actsCell);
+
+          const refsCell = document.createElement("td");
+          refsCell.className = "svc-refs-cell";
+          svc.sections.forEach((sec) => {
+            const refItem = document.createElement("div");
+            refItem.className = "ref-item";
+            refItem.style.color = "#555";
+            refItem.innerHTML = `<span class="ref-act" style="color: ${escapeHtml(sec.act_color)}">${escapeHtml(sec.act)}</span> ${escapeHtml(sec.ref)} — ${escapeHtml(sec.title)}`;
+            refItem.setAttribute("data-drawer-act", sec.act);
+            refItem.setAttribute("data-drawer-anchor", sec.anchor_id);
+            refItem.setAttribute("data-drawer-ref", `${sec.act} ${sec.ref}`);
+            refItem.style.cursor = "pointer";
+            refItem.addEventListener("click", () =>
+              openDrawer(sec.act, sec.anchor_id, `${sec.act} ${sec.ref}`),
+            );
+            refsCell.appendChild(refItem);
+          });
+          row.appendChild(refsCell);
+          tbody.appendChild(row);
+        });
+      }
+
+      // Filter functions
+      function togglePanel() {
+        const body = document.querySelector(".filter-body");
+        body.classList.toggle("open");
+      }
+
+      function toggleCol(header) {
+        const col = header.closest(".filter-col");
+        const items = col.querySelectorAll(".filter-item");
+        const allChecked = Array.from(items).every((item) =>
+          item.classList.contains("checked"),
+        );
+        items.forEach((item) => {
+          if (allChecked) {
+            item.classList.remove("checked");
+          } else {
+            item.classList.add("checked");
+          }
+          // Update filter state
+          if (item.getAttribute("data-goal")) {
+            const goal = parseInt(item.getAttribute("data-goal"));
+            if (item.classList.contains("checked")) {
+              filterState.goals.add(goal);
+            }
+          }
+          if (item.getAttribute("data-act")) {
+            const act = item.getAttribute("data-act");
+            if (item.classList.contains("checked")) {
+              filterState.acts.add(act);
+            } else {
+              filterState.acts.delete(act);
+            }
+          }
+        });
+        applyFilters();
+      }
+
+      function applyFilters() {
+        updateActiveChips();
+        filterActCards();
+        filterServiceTable();
+      }
+
+      function updateActiveChips() {
+        const chipsDiv = document.getElementById("activeChips");
+        const countSpan = document.getElementById("activeCount");
+        chipsDiv.innerHTML = "";
+
+        let count = 0;
+
+        filterState.goals.forEach((goalNum) => {
+          const goal = goalsData.find((g) => g.number === goalNum);
+          if (goal) {
+            const chip = createChip(`Goal ${goal.number}`, () => {
+              filterState.goals.delete(goalNum);
+              applyFilters();
+            });
+            chipsDiv.appendChild(chip);
+            count++;
+          }
+        });
+
+        filterState.acts.forEach((actAbbrev) => {
+          const chip = createChip(actAbbrev, () => {
+            filterState.acts.delete(actAbbrev);
+            applyFilters();
+          });
+          chipsDiv.appendChild(chip);
+          count++;
+        });
+
+        countSpan.textContent =
+          count > 0
+            ? `${count} filter${count !== 1 ? "s" : ""} active`
+            : "No filters active";
+      }
+
+      function createChip(label, onRemove) {
+        const chip = document.createElement("div");
+        chip.className = "chip";
+        chip.innerHTML = `${escapeHtml(label)} <span class="chip-remove" onclick="arguments[0].stopPropagation()">×</span>`;
+        chip.querySelector(".chip-remove").addEventListener("click", onRemove);
+        return chip;
+      }
+
+      function filterActCards() {
+        const cards = document.querySelectorAll(".act-card");
+        cards.forEach((card) => {
+          const actAbbrev = card.getAttribute("data-act");
+          if (filterState.acts.size > 0 && !filterState.acts.has(actAbbrev)) {
+            card.style.display = "none";
+          } else {
+            card.style.display = "";
+          }
+
+          // Filter sections within card based on goals
+          const sections = card.querySelectorAll(".leg-section");
+          let hasVisibleSection = true;
+          if (filterState.goals.size > 0) {
+            hasVisibleSection = false;
+            sections.forEach((sec) => {
+              const links = sec.querySelectorAll(".svc-link[data-goal]");
+              let hasMatchingGoal = false;
+              links.forEach((link) => {
+                const goal = parseInt(link.getAttribute("data-goal"));
+                if (filterState.goals.has(goal)) {
+                  hasMatchingGoal = true;
+                }
+              });
+              if (hasMatchingGoal) {
+                sec.style.display = "";
+                hasVisibleSection = true;
+              } else {
+                sec.style.display = "none";
+              }
+            });
+          } else {
+            sections.forEach((sec) => (sec.style.display = ""));
+          }
+
+          if (!hasVisibleSection && filterState.goals.size > 0) {
+            card.style.display = "none";
+          }
+        });
+      }
+
+      function filterServiceTable() {
+        const rows = document.querySelectorAll(".svc-row");
+        rows.forEach((row) => {
+          let visible = true;
+
+          if (filterState.goals.size > 0) {
+            const goalAttr = row.getAttribute("data-goal");
+            visible = goalAttr && filterState.goals.has(parseInt(goalAttr));
+          }
+
+          if (visible && filterState.acts.size > 0) {
+            const actTags = row.querySelectorAll(".act-tag");
+            visible = Array.from(actTags).some((tag) =>
+              filterState.acts.has(tag.getAttribute("data-act")),
+            );
+          }
+
+          row.style.display = visible ? "" : "none";
+        });
+      }
+
+      function filterByAct(actAbbrev) {
+        filterState.acts.clear();
+        filterState.acts.add(actAbbrev);
+        applyFilters();
+        document.querySelector(".filter-body").classList.add("open");
+        document
+          .querySelector(`[data-act="${actAbbrev}"]`)
+          .classList.add("checked");
+      }
+
+      function clearAll() {
+        filterState.goals.clear();
+        filterState.acts.clear();
+        document
+          .querySelectorAll(".filter-item.checked")
+          .forEach((item) => item.classList.remove("checked"));
+        applyFilters();
+      }
+
+      // Drawer functions
+      function openDrawer(actAbbrev, anchorId, ref) {
+        const drawer = document.getElementById("drawer");
+        const overlay = document.getElementById("drawerOverlay");
+        const title = document.getElementById("drawerTitle");
+        const refDiv = document.getElementById("drawerRef");
+        const body = document.getElementById("drawerBody");
+
+        const act = actsWithSections.find(
+          (a) => a.legislation.abbrev === actAbbrev,
+        );
+        if (!act) return;
+
+        title.textContent = act.legislation.full_name;
+        refDiv.textContent = ref;
+        body.innerHTML = `<div class="act-text">${act.legislation.full_text || "(Full text not available)"}</div>`;
+
+        drawer.classList.add("open");
+        overlay.classList.add("open");
+
+        // Scroll to anchor if it exists
+        setTimeout(() => {
+          const matches = body.querySelectorAll(`[id="${anchorId}"]`);
+          let anchorEl = null;
+          if (matches.length === 1) {
+            anchorEl = matches[0];
+          } else if (matches.length > 1) {
+            // Part-level anchors: use last match (skip TOC). Section-level: use first.
+            const isPart = anchorId.includes("-Part");
+            anchorEl = isPart ? matches[matches.length - 1] : matches[0];
+          }
+          if (anchorEl) {
+            anchorEl.classList.add("highlight");
+            anchorEl.scrollIntoView({ block: "center" });
+          } else {
+            body.scrollTop = 0;
+          }
+        }, 100);
+
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeDrawer() {
+        const drawer = document.getElementById("drawer");
+        const overlay = document.getElementById("drawerOverlay");
+        drawer.classList.remove("open");
+        overlay.classList.remove("open");
+        document.body.style.overflow = "";
+      }
+
+      // Attach event handlers
+      function attachEventHandlers() {
+        // View tabs
+        document.querySelectorAll(".view-tab").forEach((tab) => {
+          tab.addEventListener("click", function () {
+            const viewName = this.getAttribute("data-view");
+            document
+              .querySelectorAll(".view-tab")
+              .forEach((t) => t.classList.remove("active"));
+            document
+              .querySelectorAll(".view-section")
+              .forEach((s) => s.classList.remove("active"));
+            this.classList.add("active");
+            document.getElementById(viewName).classList.add("active");
+          });
+        });
+
+        // Drawer close
+        const drawerClose = document.getElementById("drawerClose");
+        if (drawerClose) {
+          drawerClose.addEventListener("click", closeDrawer);
+        }
+
+        const overlay = document.getElementById("drawerOverlay");
+        if (overlay) {
+          overlay.addEventListener("click", closeDrawer);
+        }
+
+        // Escape key to close drawer
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") {
+            closeDrawer();
+          }
+        });
+      }
+
+      // Initialize when DOM is ready
+      document.addEventListener("DOMContentLoaded", initializePage);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,217 @@
+{
+  "prefix": "psfs",
+  "name": "Ministry of Post-Secondary Education and Future Skills",
+  "short_name": "Post-Secondary Education & Future Skills",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "Post-secondary education in B.C. is accessible and affordable",
+      "legend_label": "Access & affordability",
+      "main_services": [
+        { "number": 1, "name": "Choose and apply to a post-secondary program" },
+        { "number": 2, "name": "Pay for your post-secondary education" },
+        { "number": 3, "name": "Complete adult upgrading and English language learning" },
+        { "number": 4, "name": "Access Indigenous post-secondary education and skills training" }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "short_name": "Skilled trades training builds B.C.'s workforce",
+      "legend_label": "Skilled trades & workforce",
+      "main_services": [
+        { "number": 1, "name": "Become a skilled tradesperson" },
+        { "number": 2, "name": "Employ and sponsor apprentices" },
+        { "number": 3, "name": "Get short-term and micro-credential training" },
+        { "number": 4, "name": "Find work and labour market information" }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#6a1b9a",
+      "short_name": "Post-secondary institutions and training providers meet quality standards",
+      "legend_label": "Institution quality & oversight",
+      "main_services": [
+        { "number": 1, "name": "Choose a quality-assured institution" },
+        { "number": 2, "name": "Get help with a private training institution" },
+        { "number": 3, "name": "Operate a post-secondary institution or training program" }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#00838f",
+      "short_name": "Internationally trained professionals and newcomers can work and settle in B.C.",
+      "legend_label": "Credential recognition & immigration",
+      "main_services": [
+        { "number": 1, "name": "Get your international credentials recognized" },
+        { "number": 2, "name": "Immigrate to and settle in B.C." },
+        { "number": 3, "name": "Get student wellbeing supports" }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "CIA",
+      "full_name": "College and Institute Act",
+      "color": "#0070c0",
+      "citation": "RSBC 1996, c 52",
+      "summary": "Continues and governs B.C.'s colleges, institutes and BCIT, including their boards, education councils and continuing education programs.",
+      "sections": [
+        {
+          "ref": "Part 1",
+          "title": "Continuation and operation of colleges and institutes",
+          "description": "Defines colleges, college regions and institutions and sets out board and education council governance for public colleges and institutes, including BCIT.",
+          "anchor_id": "CIA-Part1",
+          "services": [
+            { "name": "Find a post-secondary institution or program", "type": "supporting", "goal_number": 1, "goal_color": "#0070c0", "ms_number": 1, "ms_name": "Choose and apply to a post-secondary program" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "UA",
+      "full_name": "University Act",
+      "color": "#2e7d32",
+      "citation": "RSBC 1996, c 468",
+      "summary": "Continues and governs B.C.'s public universities, including boards of governors, senates, chancellors and continuing education programs.",
+      "sections": [
+        {
+          "ref": "Part 1",
+          "title": "Continuation and operation of universities",
+          "description": "Establishes and continues B.C.'s public universities and sets out governance through boards of governors and senates.",
+          "anchor_id": "UA-Part1",
+          "services": [
+            { "name": "Find a post-secondary institution or program", "type": "supporting", "goal_number": 1, "goal_color": "#0070c0", "ms_number": 1, "ms_name": "Choose and apply to a post-secondary program" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "DAA",
+      "full_name": "Degree Authorization Act",
+      "color": "#00838f",
+      "citation": "SBC 2002, c 24",
+      "summary": "Requires private and out-of-province public post-secondary institutions to obtain ministerial consent to grant degrees or use the word \"university\" in British Columbia; does not apply to B.C. public post-secondary institutions.",
+      "sections": [
+        {
+          "ref": "s.3",
+          "title": "Granting of degrees and use of \"university\" restricted",
+          "description": "Prohibits granting a degree or using the term \"university\" without ministerial consent or specific legislative authority, subject to exemptions such as theological degrees.",
+          "anchor_id": "DAA-s3",
+          "services": [
+            { "name": "Check if an institution is authorized to grant degrees", "type": "supporting", "goal_number": 3, "goal_color": "#6a1b9a", "ms_number": 1, "ms_name": "Choose a quality-assured institution" },
+            { "name": "Apply for degree-granting authority in B.C.", "type": "supporting", "goal_number": 3, "goal_color": "#6a1b9a", "ms_number": 3, "ms_name": "Operate a post-secondary institution or training program" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "PTA",
+      "full_name": "Private Training Act",
+      "color": "#c62828",
+      "citation": "SBC 2015, c 5",
+      "summary": "Regulates private training institutions offering career training programs, requiring certification, program approval, an online institution directory, and consumer protections including the Student Tuition Protection Fund.",
+      "sections": [
+        {
+          "ref": "s.2-10",
+          "title": "Certificate required to provide career training programs",
+          "description": "Requires institutions to hold a certificate to provide career training programs and sets out the application and issuance process.",
+          "anchor_id": "PTA-s2-10",
+          "services": [
+            { "name": "Apply for certification to operate a private training institution", "type": "supporting", "goal_number": 3, "goal_color": "#6a1b9a", "ms_number": 3, "ms_name": "Operate a post-secondary institution or training program" }
+          ]
+        },
+        {
+          "ref": "s.17",
+          "title": "Online directory of institutions",
+          "description": "Requires the registrar to maintain an online directory of certified institutions, including enforcement actions taken against them.",
+          "anchor_id": "PTA-s17",
+          "services": [
+            { "name": "Check if a private training institution is certified", "type": "supporting", "goal_number": 3, "goal_color": "#6a1b9a", "ms_number": 1, "ms_name": "Choose a quality-assured institution" }
+          ]
+        },
+        {
+          "ref": "Part 3, Division 2",
+          "title": "Consumer protection and Student Tuition Protection Fund",
+          "description": "Sets out the dispute resolution process for student complaints (s.19) and the Student Tuition Protection Fund, including claims and repayment (s.20-27).",
+          "anchor_id": "PTA-Part3",
+          "services": [
+            { "name": "File a complaint or tuition refund claim against a private training institution", "type": "supporting", "goal_number": 3, "goal_color": "#6a1b9a", "ms_number": 2, "ms_name": "Get help with a private training institution" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "STBCA",
+      "full_name": "Skilled Trades BC Act",
+      "color": "#b45309",
+      "citation": "SBC 2022, c 4",
+      "summary": "Replaced the Industry Training Authority Act, transforming the Industry Training Authority into SkilledTradesBC and establishing Skilled Trades Certification (compulsory trades) requiring registered apprentices, Trade Qualifiers or certified journeypersons in designated trades.",
+      "sections": [
+        {
+          "ref": "Apprenticeship framework",
+          "title": "Apprenticeship registration and trades training system",
+          "description": "Establishes SkilledTradesBC's authority to register apprentices, approve training providers and issue Certificates of Apprenticeship, Qualification and Red Seal Endorsements.",
+          "anchor_id": "STBCA-apprenticeship",
+          "services": [
+            { "name": "Register as an apprentice", "type": "supporting", "goal_number": 2, "goal_color": "#2e7d32", "ms_number": 1, "ms_name": "Become a skilled tradesperson" },
+            { "name": "Get certified as a journeyperson through a certification exam", "type": "supporting", "goal_number": 2, "goal_color": "#2e7d32", "ms_number": 1, "ms_name": "Become a skilled tradesperson" }
+          ]
+        },
+        {
+          "ref": "Skilled Trades Certification",
+          "title": "Compulsory trades certification requirements",
+          "description": "Requires workers in designated compulsory trades to be a registered apprentice, Trade Qualifier or certified journeyperson, and sets employer supervision-ratio and workforce-reporting obligations.",
+          "anchor_id": "STBCA-stc",
+          "services": [
+            { "name": "Meet Skilled Trades Certification requirements in a compulsory trade", "type": "supporting", "goal_number": 2, "goal_color": "#2e7d32", "ms_number": 1, "ms_name": "Become a skilled tradesperson" },
+            { "name": "Sponsor an apprentice as an employer", "type": "supporting", "goal_number": 2, "goal_color": "#2e7d32", "ms_number": 2, "ms_name": "Employ and sponsor apprentices" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "ICRA",
+      "full_name": "International Credentials Recognition Act",
+      "color": "#00838f",
+      "citation": "SBC 2023, c 39",
+      "summary": "Requires regulatory authorities to increase fairness, efficiency, transparency and accountability in recognizing international credentials for 29 professions, overseen by a superintendent within the Office for International Credential Recognition.",
+      "sections": [
+        {
+          "ref": "Superintendent and regulatory authorities",
+          "title": "Oversight of regulatory authority credential recognition processes",
+          "description": "Establishes a superintendent to monitor regulatory authority performance, enforce compliance, and remove barriers such as Canadian work experience requirements and redundant language testing.",
+          "anchor_id": "ICRA-superintendent",
+          "services": [
+            { "name": "Have your international professional credentials recognized by a B.C. regulator", "type": "supporting", "goal_number": 4, "goal_color": "#00838f", "ms_number": 1, "ms_name": "Get your international credentials recognized" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "FNMPSIA",
+      "full_name": "First Nations Mandated Post-Secondary Institutes Act",
+      "color": "#558b2f",
+      "citation": "SBC 2024, c 17",
+      "summary": "Recognizes First Nations Mandated Post-Secondary Institutes (FNMPSIs) as a pillar of B.C.'s post-secondary system and commits the province to ongoing operational and capacity funding for eligible institutes.",
+      "sections": [
+        {
+          "ref": "s.1",
+          "title": "Recognition and funding of FNMPSIs",
+          "description": "Defines First Nations Mandated Post-Secondary Institutes and commits government to providing ongoing operational and capacity funding to eligible institutes.",
+          "anchor_id": "FNMPSIA-s1",
+          "services": [
+            { "name": "Attend a First Nations mandated post-secondary institute", "type": "supporting", "goal_number": 1, "goal_color": "#0070c0", "ms_number": 4, "ms_name": "Access Indigenous post-secondary education and skills training" }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 7,
+    "sections_count": 10,
+    "services_with_leg_count": 11,
+    "services_multi_act_count": 1
+  }
+}

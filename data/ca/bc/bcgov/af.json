@@ -1,0 +1,1306 @@
+{
+  "prefix": "af",
+  "full_name": "Ministry of Agriculture and Food",
+  "short_name": "Agriculture & Food",
+  "blurb": "Supports B.C.'s farmers, ranchers and food producers — farm business supports, food security, agricultural land use, and the growth of sustainable local food systems. Also responsible for liquor and cannabis regulation since July 2025.",
+  "nav_name": "Agriculture and Food",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "title": "GOAL 1",
+      "short_name": "Build and maintain a competitive and profitable agriculture and food sector",
+      "legend_label": "Competitive agri-food sector",
+      "description": "The ministry helps farm and food businesses start, grow, manage income risk, and reach new domestic and export markets, and connects British Columbians with locally grown food.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Grow and market a farm or food business",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get advice and connect with ministry agriculture programs",
+              "desc": "AgriService BC connects farm and food businesses to ministry programs, regional advisors, funding, and events across B.C.",
+              "users": "Farmers, food and beverage producers",
+              "user_groups": [
+                "Producers & ranchers",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "AgriService BC",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/agriservice-bc"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "AgriService BC toll-free",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/agriservice-bc"
+              }
+            },
+            {
+              "name": "Apply for farm business planning and development funding",
+              "desc": "Advisory and funding support (including the B.C. Agri-Business Planning Program and New Entrant Farm Business Accelerator Program) helps new and existing farm businesses plan, start up and grow.",
+              "users": "Farm businesses, new entrants to agriculture",
+              "user_groups": [
+                "Producers & ranchers",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Programs and services",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/programs"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "B.C. Agri-Business Planning Program",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/programs/agri-business-planning-program"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/programs"
+              }
+            },
+            {
+              "name": "Find land to lease or rent for farming",
+              "desc": "The B.C. Land Matching Program connects new and expanding farmers with landholders who have land available for agricultural use.",
+              "users": "New entrants and expanding farm businesses",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "B.C. Land Matching Program",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/programs/land-matching"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/programs"
+              }
+            },
+            {
+              "name": "Expand into new domestic and export markets for your products",
+              "desc": "Buy BC, Feed BC and related trade and market development programs help producers and processors grow domestic sales and diversify export markets, including in response to U.S. tariff threats.",
+              "users": "Agriculture, seafood and food and beverage businesses",
+              "user_groups": [
+                "Producers & ranchers",
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Buy BC",
+                  "url": "https://buybc.gov.bc.ca/"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Feed BC and the B.C. Food Hub Network",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/growbc-feedbc-buybc/feed-bc-and-the-bc-food-hub-network"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "exporting_trade",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/agriculture"
+              }
+            },
+            {
+              "name": "Access agritech and innovation support for your farm",
+              "desc": "The Agritech Concierge service connects producers with technology, research and innovation resources to modernize farm operations.",
+              "users": "Farm and food businesses adopting new technology",
+              "user_groups": [
+                "Producers & ranchers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Agritech Concierge",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/programs/agritech-concierge"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/programs"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get agriculture insurance and income protection",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Enrol in AgriStability to stabilize your farm income",
+              "desc": "AgriStability provides payments when a farm's net income drops by 30% or more, covering $0.80 on every dollar lost.",
+              "users": "Farmers and ranchers of all types and sizes",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "AgriStability",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/programs/agriculture-insurance-and-income-protection-programs/agristability"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "AgriStability toll-free",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "insurance_risk",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/programs/agriculture-insurance-and-income-protection-programs"
+              }
+            },
+            {
+              "name": "Get production insurance for crop losses",
+              "desc": "Crop-based Production Insurance protects farm income against yield reductions from weather and disaster events, with premiums up to 80% government-subsidized.",
+              "users": "Crop producers",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Production Insurance",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/programs/agriculture-insurance-and-income-protection-programs/redirect-production-insurance"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Production Insurance toll-free",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "insurance_risk",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/programs/agriculture-insurance-and-income-protection-programs"
+              }
+            },
+            {
+              "name": "Get compensation for crop or livestock losses caused by wildlife",
+              "desc": "The Agriculture Wildlife Program compensates producers for crop and livestock losses caused by wildlife.",
+              "users": "Crop and livestock producers",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Agriculture Wildlife Program",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/programs/agriculture-insurance-and-income-protection-programs/crop-loss-damage-due-to-wildlife"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Report human-wildlife conflict",
+                    "ministry": "wlrs"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/programs/agriculture-insurance-and-income-protection-programs"
+              }
+            },
+            {
+              "name": "Apply for emergency flood or disaster recovery funding for your farm",
+              "desc": "One-time recovery funding, such as the B.C. 2026 Food Security Flood Recovery Program for Sumas Prairie producers, helps cover uninsurable infrastructure repair and return-to-production costs after a disaster.",
+              "users": "Livestock and crop producers affected by disasters",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "B.C. 2026 Food Security Flood Recovery Program",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/programs/agriculture-insurance-and-income-protection-programs/2026-food-security-flood-recovery-program"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "disaster_recovery",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Apply for disaster financial assistance for your small business or farm",
+                    "ministry": "emcr"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/programs/agriculture-insurance-and-income-protection-programs"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Buy and learn about local food",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Find B.C.-grown food, farmers markets and local seafood",
+              "desc": "The Buy BC program helps consumers discover the variety of B.C.-grown food and beverages and the producers behind them.",
+              "users": "Consumers, local food shoppers",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Buy BC",
+                  "url": "https://buybc.gov.bc.ca/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/agriculture"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "title": "GOAL 2",
+      "short_name": "B.C.'s agriculture and food sector manages risk and adapts to change",
+      "legend_label": "Risk management & food safety",
+      "description": "The ministry safeguards animal and plant health, food safety and agricultural land, and helps the sector prepare for market uncertainty, climate impacts, pests and disease.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Keep livestock, crops and food safe",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Register your farm's premises for emergency and disease traceability",
+              "desc": "Premises ID links livestock and poultry operations to their geographic locations to support emergency planning and disease response.",
+              "users": "Livestock and poultry owners",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Premises ID",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/programs/premises-id"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/food-safety"
+              }
+            },
+            {
+              "name": "Report and manage animal disease and health concerns",
+              "desc": "The Office of the Chief Veterinarian and the Animal Health Centre diagnostic laboratory monitor and respond to livestock and poultry disease, including avian influenza.",
+              "users": "Livestock and poultry producers",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Office of the Chief Veterinarian",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/animals-and-crops/animal-health/office-of-the-chief-veterinarian"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Animal Health Centre",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/animals-and-crops/animal-health/animal-health-centre"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AHA",
+                  "color": "#ef6c00",
+                  "full_name": "Animal Health Act  -  Disease control and inspection powers"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/animals-and-crops"
+              }
+            },
+            {
+              "name": "Get a licence to operate a dairy, poultry, fur or game farming operation",
+              "desc": "Provincial licences are required for dairy, fur farming, game farming and poultry operations; dairy licensing and standards flow from the Milk Industry Act.",
+              "users": "Dairy, poultry, fur and game farm operators",
+              "user_groups": [
+                "Producers & ranchers",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Agricultural licences and forms",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/animals-and-crops/agricultural-licences-and-forms"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MIA",
+                  "color": "#5d4037",
+                  "full_name": "Milk Industry Act  -  Dairy plant licensing and standards"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/animals-and-crops/agricultural-licences-and-forms"
+              }
+            },
+            {
+              "name": "Get a meat inspection licence to operate a slaughter establishment",
+              "desc": "A graduated licensing approach under the Food Safety Act's Meat Inspection Regulation regulates slaughter establishments in B.C.",
+              "users": "Meat processors and abattoir operators",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Meat inspection and licensing",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/food-safety/meat-inspection-licensing"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FSA",
+                  "color": "#c62828",
+                  "full_name": "Food Safety Act  -  Meat Inspection Regulation (slaughter establishment licensing)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/food-safety"
+              }
+            },
+            {
+              "name": "Develop a food safety plan for your processing business",
+              "desc": "Food processing businesses must implement formal, documented food safety and sanitation plans under the Food Safety Act.",
+              "users": "Food and beverage processors",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Food safety in processing",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/food-safety/food-safety-processing"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FSA",
+                  "color": "#c62828",
+                  "full_name": "Food Safety Act  -  Duty to ensure food safety and food safety plans"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "safety_codes_standards",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/food-safety"
+              }
+            },
+            {
+              "name": "Get help identifying and managing crop pests and plant disease",
+              "desc": "The Plant Health Laboratory and related resources help growers identify and manage insects, plant diseases and weeds affecting agricultural crops.",
+              "users": "Crop producers",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Plant Health Laboratory",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/animals-and-crops/plant-health/plant-health-laboratory"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/animals-and-crops"
+              }
+            },
+            {
+              "name": "Register your beehives",
+              "desc": "Beekeepers must register their apiaries under the Bee Act to support disease surveillance and control.",
+              "users": "Beekeepers",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Bees",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/animals-and-crops/animal-production/bees"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "BeeA",
+                  "color": "#9c27b0",
+                  "full_name": "Bee Act  -  Registration of apiaries and beekeepers"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/animals-and-crops/agricultural-licences-and-forms"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Resolve a farm practices or land use concern",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Resolve a complaint about noise, odour or dust from a farm operation",
+              "desc": "The BC Farm Industry Review Board hears complaints about nuisances from farm operations and determines whether they result from a normal farm practice, protected under the Farm Practices Protection (Right to Farm) Act.",
+              "users": "Neighbours of farm operations, farmers",
+              "user_groups": [
+                "General public",
+                "Producers & ranchers",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Resolving farm concerns and complaints",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/agricultural-land-and-environment/farm-practices-protection/resolving-farm-concerns-and-complaints"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FPPA",
+                  "color": "#8d6e63",
+                  "full_name": "Farm Practices Protection (Right to Farm) Act  -  Determination of normal farm practice"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/agricultural-land-and-environment/farm-practices-protection"
+              }
+            },
+            {
+              "name": "Protect farmland through the Agricultural Land Reserve",
+              "desc": "The Agricultural Land Reserve is a provincial land use designation, administered by the Agricultural Land Commission, that recognizes farming as the priority use and restricts non-agricultural uses of the land base.",
+              "users": "Farmland owners, local governments",
+              "user_groups": [
+                "Producers & ranchers",
+                "Property owners",
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Agricultural Land Reserve",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/agricultural-land-and-environment/agricultural-land-reserve"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Agricultural Land Commission",
+                  "url": "https://www.alc.gov.bc.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ALCA",
+                  "color": "#33691e",
+                  "full_name": "Agricultural Land Commission Act  -  Administration of the Agricultural Land Reserve"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Get help adding tourism experiences to your farm",
+                    "ministry": "tacs"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/agricultural-land-and-environment/agricultural-land-reserve"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#00838f",
+      "title": "GOAL 3",
+      "short_name": "Fish and seafood are farmed, harvested and processed sustainably",
+      "legend_label": "Fisheries & aquaculture",
+      "description": "The ministry licenses and supports B.C.'s aquaculture operations, commercial fisheries, and seafood processing sector.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Operate an aquaculture site",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get a licence to farm fish, shellfish or aquatic plants",
+              "desc": "Aquaculture operators need site tenure and licensing to culture salmon and other finfish, shellfish, or marine plants in B.C.'s coastal waters.",
+              "users": "Aquaculture operators",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Aquaculture",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/fisheries-and-aquaculture/aquaculture"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/fisheries-and-aquaculture"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Process, receive or sell seafood",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get a seafood processor licence",
+              "desc": "A seafood processor licence is required to operate a seafood processing or cold-storage facility under the Fish and Seafood Act.",
+              "users": "Seafood processors",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Seafood processor licence application form",
+                  "url": "https://www2.gov.bc.ca/assets/gov/farming-natural-resources-and-industry/agriculture-and-seafood/fisheries-and-aquaculture/seafood-licensing/af_seafood_processor_application_october2024.pdf"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "FrontCounter BC or Service BC location",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/natural-resource-use/natural-resource-permits/fcbc-locations"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FSAA",
+                  "color": "#0077b6",
+                  "full_name": "Fish and Seafood Act  -  Licensing (seafood processors)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/fisheries-and-aquaculture/seafood-industry-licensing"
+              }
+            },
+            {
+              "name": "Get a fish receiver licence",
+              "desc": "A fish receiver licence is required for a shore-based facility, vehicle or vessel that receives fish directly from a commercial fisher, under the Fish and Seafood Act.",
+              "users": "Fish receiving businesses",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Fish receiver licence application form",
+                  "url": "https://www2.gov.bc.ca/assets/gov/farming-natural-resources-and-industry/agriculture-and-seafood/fisheries-and-aquaculture/seafood-licensing/af_fish_receiver_application_october2024.pdf"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "FrontCounter BC or Service BC location",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/natural-resource-use/natural-resource-permits/fcbc-locations"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FSAA",
+                  "color": "#0077b6",
+                  "full_name": "Fish and Seafood Act  -  Licensing (fish receivers)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/fisheries-and-aquaculture/seafood-industry-licensing"
+              }
+            },
+            {
+              "name": "Get a fisher vendor licence to sell your catch directly",
+              "desc": "Commercial fishers who sell their catch directly to the public, restaurants or retail stores need a fisher vendor licence under the Fish and Seafood Act.",
+              "users": "Commercial fishers",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Fisher vendor licence application form",
+                  "url": "https://www2.gov.bc.ca/assets/gov/farming-natural-resources-and-industry/agriculture-and-seafood/fisheries-and-aquaculture/seafood-licensing/af_fisher_vendor_application_october2024.pdf"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "FrontCounter BC or Service BC location",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/natural-resource-use/natural-resource-permits/fcbc-locations"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FSAA",
+                  "color": "#0077b6",
+                  "full_name": "Fish and Seafood Act  -  Licensing (fisher vendors)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/fisheries-and-aquaculture/seafood-industry-licensing"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#6a1b9a",
+      "title": "GOAL 4",
+      "short_name": "Modernize B.C.'s liquor and cannabis licensing and enforcement system",
+      "legend_label": "Liquor & cannabis regulation",
+      "description": "Since assuming responsibility for the Liquor Distribution Branch and Liquor and Cannabis Regulation Branch in July 2025, the ministry is simplifying and expediting liquor and cannabis licensing while focusing enforcement on high-risk, repeat non-compliant businesses.",
+      "metrics": [],
+      "css_class": "goal-4",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get a liquor or cannabis licence",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for a liquor licence or permit for your business or event",
+              "desc": "The Liquor and Cannabis Regulation Branch licenses restaurants, bars, pubs, liquor manufacturers, private liquor stores, caterers and special events under the Liquor Control and Licensing Act.",
+              "users": "Restaurants, bars, manufacturers, event organizers",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Liquor licence and permits",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/business/liquor-regulation-licensing/liquor-licence-permits"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "LCLA",
+                  "color": "#6a1b9a",
+                  "full_name": "Liquor Control and Licensing Act  -  Licensing of establishments and events"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/business/liquor-regulation-licensing"
+              }
+            },
+            {
+              "name": "Apply for a cannabis retail or production licence",
+              "desc": "The Liquor and Cannabis Regulation Branch licenses private cannabis stores and other cannabis activities under the Cannabis Control and Licensing Act.",
+              "users": "Cannabis retailers and licensees",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Apply for a cannabis licence",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/business/liquor-regulation-licensing/cannabis-licences/apply-cannabis-licence"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CCLA",
+                  "color": "#ad1457",
+                  "full_name": "Cannabis Control and Licensing Act  -  Licensing of cannabis retail and related activities"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/business/liquor-regulation-licensing/cannabis-licences/law-policy-cannabis-licence-authorization"
+              }
+            },
+            {
+              "name": "Get certified to serve liquor or sell cannabis responsibly",
+              "desc": "Serving It Right and Selling It Right are mandatory responsible-service certification courses for people serving liquor or selling cannabis.",
+              "users": "Servers, bartenders, cannabis retail staff",
+              "user_groups": [
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Serving It Right",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/business/liquor-regulation-licensing/liquor-licence-permits/liquor-resources-information/serving-it-right"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Selling It Right",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/business/liquor-regulation-licensing/cannabis-licences/cannabis-resources-information/selling-it-right"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "professional_credentials",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/business/liquor-regulation-licensing"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Comply with liquor and cannabis rules",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Report a liquor or cannabis compliance concern",
+              "desc": "The public can submit complaints about licensed establishments, which the Liquor and Cannabis Regulation Branch investigates and enforces under the Liquor Control and Licensing Act and Cannabis Control and Licensing Act.",
+              "users": "General public, neighbours of licensed establishments",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Inspections and enforcement",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/business/liquor-regulation-licensing/inspections-and-enforcement"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "LCLA",
+                  "color": "#6a1b9a",
+                  "full_name": "Liquor Control and Licensing Act  -  Compliance and enforcement"
+                },
+                {
+                  "abbrev": "CCLA",
+                  "color": "#ad1457",
+                  "full_name": "Cannabis Control and Licensing Act  -  Compliance and enforcement"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/employment-business/business/liquor-regulation-licensing"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Agricultural land use policy and mapping",
+      "desc": "Policy, land use inventories, and mapping work supporting agricultural land protection and use planning.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "industry_specific",
+        "domain": "agriculture",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Animal and plant health laboratory diagnostics",
+      "desc": "Diagnostic laboratory services (Animal Health Centre, Plant Health Laboratory) supporting animal and plant disease surveillance underlying public-facing programs.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "industry_specific",
+        "domain": "agriculture",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-3",
+      "name": "Agriculture and seafood statistics and market intelligence",
+      "desc": "Collection and publication of industry performance, market and trade statistics for the agriculture and seafood sector.",
+      "users": "Internal program staff, industry analysts",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "industry_specific",
+        "domain": "agriculture",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    }
+  ],
+  "mandate_date": "July 17, 2025",
+  "mandate_minister": "Lana Popham",
+  "mandate_pdf": "https://www2.gov.bc.ca/assets/gov/government/ministries-organizations/premier-cabinet-mlas/minister-letter/mandate_letter_lana_popham.pdf",
+  "cross_cutting": [
+    "Growing the economy",
+    "Reducing costs for families",
+    "Strengthening health care",
+    "Making communities safer"
+  ],
+  "mandate_legend": [],
+  "channel_filters": [
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "Producers & ranchers",
+    "Businesses & employers",
+    "Industry",
+    "Property owners",
+    "Municipalities & local governments",
+    "Workers & job seekers",
+    "General public"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

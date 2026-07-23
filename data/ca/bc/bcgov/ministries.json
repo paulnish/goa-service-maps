@@ -1,0 +1,140 @@
+[
+  {
+    "prefix": "af",
+    "name": "Agriculture and Food",
+    "short_name": "Agriculture & Food",
+    "blurb": "Supports B.C.'s farmers, ranchers and food producers — farm business supports, food security, agricultural land use, and the growth of sustainable local food systems."
+  },
+  {
+    "prefix": "ag",
+    "name": "Attorney General",
+    "short_name": "Attorney General",
+    "blurb": "Provides legal services to government, oversees the justice system and courts administration, and protects rights through legal aid, human rights, and family justice services."
+  },
+  {
+    "prefix": "cfd",
+    "name": "Children and Family Development",
+    "short_name": "Children & Family Development",
+    "blurb": "Supports vulnerable children, youth and families — child protection, foster care and adoption, youth services, and services for children and youth with support needs."
+  },
+  {
+    "prefix": "citz",
+    "name": "Citizens' Services",
+    "short_name": "Citizens' Services",
+    "blurb": "Delivers government services to people and businesses through Service BC, manages government digital services, data, procurement, and connectivity across the province."
+  },
+  {
+    "prefix": "ecc",
+    "name": "Education and Child Care",
+    "short_name": "Education & Child Care",
+    "blurb": "Leads B.C.'s K-12 public and independent school systems and the child care sector — from StrongStartBC early learning through graduation."
+  },
+  {
+    "prefix": "emcr",
+    "name": "Emergency Management and Climate Readiness",
+    "short_name": "Emergency Management & Climate Readiness",
+    "blurb": "Leads provincial preparedness, response and recovery for emergencies and disasters — floods, wildfires, earthquakes — and builds climate readiness across communities."
+  },
+  {
+    "prefix": "ecs",
+    "name": "Energy and Climate Solutions",
+    "short_name": "Energy & Climate Solutions",
+    "blurb": "Leads B.C.'s energy policy and climate action — clean electricity, energy efficiency, low-carbon fuels, and the CleanBC plan."
+  },
+  {
+    "prefix": "env",
+    "name": "Environment and Parks",
+    "short_name": "Environment & Parks",
+    "blurb": "Protects B.C.'s environment — environmental assessments, permitting and compliance, waste and recycling, and the BC Parks system."
+  },
+  {
+    "prefix": "fin",
+    "name": "Finance",
+    "short_name": "Finance",
+    "blurb": "Manages the province's finances — budget, taxation, public sector employer policy — and regulates financial services, real estate, and gambling policy."
+  },
+  {
+    "prefix": "for",
+    "name": "Forests",
+    "short_name": "Forests",
+    "blurb": "Stewards B.C.'s forest and range lands — timber tenures and pricing, wildfire management through BC Wildfire Service, and forest health and silviculture."
+  },
+  {
+    "prefix": "hlth",
+    "name": "Health",
+    "short_name": "Health",
+    "blurb": "Funds and oversees B.C.'s health system — MSP coverage, hospitals and health authorities, PharmaCare, primary care, public health, and seniors' care."
+  },
+  {
+    "prefix": "hma",
+    "name": "Housing and Municipal Affairs",
+    "short_name": "Housing & Municipal Affairs",
+    "blurb": "Leads housing supply and affordability — residential tenancy, BC Housing programs, building codes — and supports local governments across B.C."
+  },
+  {
+    "prefix": "irr",
+    "name": "Indigenous Relations and Reconciliation",
+    "short_name": "Indigenous Relations & Reconciliation",
+    "blurb": "Leads reconciliation with Indigenous Peoples — implementing the Declaration Act, negotiating treaties and agreements, and supporting Indigenous communities."
+  },
+  {
+    "prefix": "infr",
+    "name": "Infrastructure",
+    "short_name": "Infrastructure",
+    "blurb": "Plans and delivers major public infrastructure — schools, hospitals, and other government capital projects across the province."
+  },
+  {
+    "prefix": "jeg",
+    "name": "Jobs and Economic Growth",
+    "short_name": "Jobs & Economic Growth",
+    "blurb": "Grows B.C.'s economy — business supports, trade and investment attraction, small business services, and regional economic development."
+  },
+  {
+    "prefix": "lbr",
+    "name": "Labour",
+    "short_name": "Labour",
+    "blurb": "Protects workers and supports fair workplaces — employment standards, workers' compensation policy, and labour relations."
+  },
+  {
+    "prefix": "mcm",
+    "name": "Mining and Critical Minerals",
+    "short_name": "Mining & Critical Minerals",
+    "blurb": "Oversees B.C.'s mining sector — mineral titles, mine permitting and oversight, and growth of the critical minerals economy."
+  },
+  {
+    "prefix": "psfs",
+    "name": "Post-Secondary Education and Future Skills",
+    "short_name": "Post-Secondary Education & Future Skills",
+    "blurb": "Oversees universities, colleges and skills training — StudentAid BC, apprenticeship through SkilledTradesBC, and workforce readiness."
+  },
+  {
+    "prefix": "pssg",
+    "name": "Public Safety and Solicitor General",
+    "short_name": "Public Safety & Solicitor General",
+    "blurb": "Keeps communities safe — policing and law enforcement oversight, corrections, victim services, road safety, and liquor, cannabis and gambling enforcement."
+  },
+  {
+    "prefix": "sdpr",
+    "name": "Social Development and Poverty Reduction",
+    "short_name": "Social Development & Poverty Reduction",
+    "blurb": "Supports people in need — income and disability assistance, employment supports through WorkBC, accessibility, and poverty reduction."
+  },
+  {
+    "prefix": "tacs",
+    "name": "Tourism, Arts, Culture and Sport",
+    "short_name": "Tourism, Arts, Culture & Sport",
+    "blurb": "Champions B.C.'s tourism industry, arts and creative sector, multiculturalism and anti-racism, and amateur sport."
+  },
+  {
+    "prefix": "tt",
+    "name": "Transportation and Transit",
+    "short_name": "Transportation & Transit",
+    "blurb": "Plans and maintains B.C.'s transportation network — highways, bridges, public transit, BC Ferries oversight, and commercial vehicle safety."
+  },
+  {
+    "prefix": "wlrs",
+    "name": "Water, Land and Resource Stewardship",
+    "short_name": "Water, Land & Resource Stewardship",
+    "blurb": "Stewards B.C.'s water, land and natural resources — water licensing, Crown land authorizations, fish and wildlife, and land use planning."
+  }
+]

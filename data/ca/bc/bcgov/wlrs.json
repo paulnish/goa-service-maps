@@ -1,0 +1,1543 @@
+{
+  "prefix": "wlrs",
+  "full_name": "Ministry of Water, Land and Resource Stewardship",
+  "short_name": "Water, Land & Resource Stewardship",
+  "blurb": "Stewards B.C.'s water, land and natural resources — water licensing and dam safety, Crown land tenures and land use planning, and fish and wildlife management including hunting and freshwater fishing.",
+  "nav_name": "Water, Land and Resource Stewardship",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "title": "GOAL 1",
+      "short_name": "British Columbians have secure, sustainably managed water",
+      "legend_label": "Water stewardship",
+      "description": "The ministry licenses the use of surface water and groundwater, regulates dam safety, and helps communities and water users prepare for drought and flooding.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get a licence to use water",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for a water licence",
+              "desc": "A water right authorizing the diversion and use of surface water or non-domestic groundwater is granted through FrontCounter BC and reviewed by a water manager under the Water Sustainability Act.",
+              "users": "Landowners, farms, industry, municipalities",
+              "user_groups": [
+                "Businesses & employers",
+                "Producers & ranchers",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply for a Water Licence",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/water-licensing-rights/water-licences-approvals/apply-for-a-water-licence/apply-licence"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Apply for a Water Licence",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/water-licensing-rights/water-licences-approvals/apply-for-a-water-licence"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "FrontCounter BC",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WSA",
+                  "color": "#0070c0",
+                  "full_name": "Water Sustainability Act  -  Water licences and approvals"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/water-licensing-rights/water-licences-approvals/apply-for-a-water-licence"
+              }
+            },
+            {
+              "name": "Apply for a short-term water use approval",
+              "desc": "A time-limited approval under the Water Sustainability Act authorizes short-term diversion or use of water, such as for construction dewatering or temporary irrigation.",
+              "users": "Businesses, contractors, landowners",
+              "user_groups": [
+                "Businesses & employers",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply for a water use approval - short term",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/water-licensing-rights/water-licences-approvals/water-use-approval"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "FrontCounter BC",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WSA",
+                  "color": "#0070c0",
+                  "full_name": "Water Sustainability Act  -  Water licences and approvals"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/water-licensing-rights"
+              }
+            },
+            {
+              "name": "Apply for a change approval or notify the ministry of in-stream work",
+              "desc": "Making changes in and about a stream — such as building a crossing, bank protection, or other works near water — requires a licence, change approval, or notification under the Water Sustainability Act.",
+              "users": "Contractors, landowners, businesses working near streams",
+              "user_groups": [
+                "Businesses & employers",
+                "Property owners",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply for a Change Approval or Submit Notification of Instream Work",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/water-licensing-rights/water-licences-approvals/apply-for-a-change-approval-or-submit-notification-of-instream-work"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WSA",
+                  "color": "#0070c0",
+                  "full_name": "Water Sustainability Act  -  Working around water"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "environmental_requirements",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/water-licensing-rights"
+              }
+            },
+            {
+              "name": "Register your domestic water well",
+              "desc": "Well owners can register wells used for household or domestic livestock needs, which do not require a water licence, in the provincial Groundwater Wells and Aquifers (GWELLS) database.",
+              "users": "Rural property owners, well owners",
+              "user_groups": [
+                "Property owners",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Groundwater, aquifers and wells",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/groundwater-wells-aquifers"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "GWELLS database",
+                  "url": "https://apps.nrs.gov.bc.ca/gwells/aquifers/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WSA",
+                  "color": "#0070c0",
+                  "full_name": "Water Sustainability Act  -  Groundwater Protection Regulation"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/groundwater-wells-aquifers"
+              }
+            },
+            {
+              "name": "Get a groundwater licence for non-domestic use",
+              "desc": "Anyone using groundwater for irrigation, commercial or industrial purposes must hold a water licence under the Water Sustainability Act and pay applicable fees and rentals.",
+              "users": "Farms, industry, commercial groundwater users",
+              "user_groups": [
+                "Businesses & employers",
+                "Producers & ranchers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Requirements for groundwater users",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/water-licensing-rights/water-licences-approvals/new-requirements-for-groundwater-users"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "Apply for a Water Licence",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/water-licensing-rights/water-licences-approvals/apply-for-a-water-licence/apply-licence"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WSA",
+                  "color": "#0070c0",
+                  "full_name": "Water Sustainability Act  -  Non-domestic groundwater use"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/water-licensing-rights"
+              }
+            },
+            {
+              "name": "Search water rights and licence records",
+              "desc": "The Water Rights Databases let landowners, licensees and the public search existing water licences and approvals on a stream or aquifer.",
+              "users": "Landowners, licensees, applicants, researchers",
+              "user_groups": [
+                "Property owners",
+                "Businesses & employers",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Water Rights Databases",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/water-licensing-rights/water-licences-approvals/water-rights-databases"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/water-licensing-rights"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Manage drought, flood and dam risk",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Check drought conditions and water restrictions",
+              "desc": "The B.C. Drought Information Portal tracks drought levels across the province and shares water conservation guidance for households, farms and communities facing water shortages.",
+              "users": "General public, farmers, local governments",
+              "user_groups": [
+                "General public",
+                "Producers & ranchers",
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "B.C. Drought Information Portal",
+                  "url": "https://droughtportal.gov.bc.ca/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/water-land-and-resource-stewardship"
+              }
+            },
+            {
+              "name": "Get river flow forecasts and flood warnings",
+              "desc": "The River Forecast Centre analyses snowpack and issues seasonal water supply, freshet and flood risk forecasts and warnings for B.C.'s rivers and streams.",
+              "users": "General public, local governments, emergency managers",
+              "user_groups": [
+                "General public",
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "River Forecast Centre",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/drought-flooding-dikes-dams/river-forecast-centre"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Flood Warnings and Advisories",
+                  "url": "http://bcrfc.env.gov.bc.ca/warnings/index.htm"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/drought-flooding-dikes-dams"
+              }
+            },
+            {
+              "name": "Meet dam safety inspection and reporting requirements",
+              "desc": "Owners of the province's 1,900+ regulated dams must meet construction, inspection, emergency planning and reporting requirements under the Water Sustainability Act and Dam Safety Regulation.",
+              "users": "Dam owners, hydropower operators, agricultural dam owners",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry",
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Dam safety",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/drought-flooding-dikes-dams/dam-safety"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Contact the B.C. Dam Safety Program",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/drought-flooding-dikes-dams/dam-safety/contact-the-bc-dam-safety-program"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WSA",
+                  "color": "#0070c0",
+                  "full_name": "Water Sustainability Act  -  Dam Safety Regulation"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "safety_codes_standards",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/drought-flooding-dikes-dams/dam-safety"
+              }
+            },
+            {
+              "name": "Join or manage a Water Users' Community",
+              "desc": "Groups of six or more water licensees who share a diversion, storage or delivery system can form a Water Users' Community under the Water Users' Communities Act to jointly maintain their works.",
+              "users": "Groups of water licensees, irrigation districts",
+              "user_groups": [
+                "Property owners",
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Water Users' Communities",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/water-licensing-rights/water-users-communities"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WUCA",
+                  "color": "#2e7d32",
+                  "full_name": "Water Users' Communities Act  -  Formation and governance of water users' communities"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "registration_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/water-licensing-rights"
+              }
+            },
+            {
+              "name": "Get water service from a private water utility",
+              "desc": "About 30,000 B.C. households get domestic water from privately owned and operated water utilities, which must provide safe, clean water under the Water Utility Act and Utilities Commission Act.",
+              "users": "Rural and small-community property owners",
+              "user_groups": [
+                "Property owners",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Private water utilities",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/water-licensing-rights/private-water-utilities"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WUA",
+                  "color": "#6a1b9a",
+                  "full_name": "Water Utility Act  -  Regulation of private water utilities"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "utilities",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/water-licensing-rights"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#8d6e63",
+      "title": "GOAL 2",
+      "short_name": "Provincial public land is used and stewarded sustainably",
+      "legend_label": "Land stewardship",
+      "description": "The ministry authorizes the use of Crown land and water, leads strategic land use planning, and provides the geographic data that underpins resource decisions across B.C.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get authorization to use Crown land",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply to lease, purchase or use Crown land",
+              "desc": "Applications for tenures, leases, licences of occupation and Crown grants over provincial Crown land are submitted through FrontCounter BC, the province's window for natural resource permitting.",
+              "users": "Businesses, landowners, industry",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply to use Crown land",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/crown-land-water/crown-land/land-use-application/apply-tenure"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "FrontCounter BC",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "LA",
+                  "color": "#8d6e63",
+                  "full_name": "Land Act  -  Disposition of Crown land"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/crown-land-water/crown-land"
+              }
+            },
+            {
+              "name": "Search the Crown land registry",
+              "desc": "The Government Access Tool for Online Retrieval (GATOR) lets applicants and the public search the Crown land registry for existing tenures and land status.",
+              "users": "Businesses, landowners, applicants",
+              "user_groups": [
+                "Businesses & employers",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Crown Land Registry (GATOR)",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/crown-land-water/crown-land/gator"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "LA",
+                  "color": "#8d6e63",
+                  "full_name": "Land Act  -  Crown land registry"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/crown-land-water/crown-land"
+              }
+            },
+            {
+              "name": "Get a Crown land tenure for aggregate or quarry material extraction",
+              "desc": "Businesses that extract sand, gravel or quarry material from Crown land require a tenure specific to aggregate and quarry material use.",
+              "users": "Aggregate and construction material businesses",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Aggregates and quarry materials",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/crown-land-water/crown-land/crown-land-uses/aggregates-quarry-materials"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "LA",
+                  "color": "#8d6e63",
+                  "full_name": "Land Act  -  Crown land uses"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "construction",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/crown-land-water/crown-land/crown-land-uses"
+              }
+            },
+            {
+              "name": "Get a Crown land tenure for a recreation or tourism business",
+              "desc": "Commercial recreation and tourism operators need a tenure to run guided, lodge-based or other tourism activities on provincial Crown land.",
+              "users": "Tourism and outdoor recreation businesses",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Recreation/tourism on Crown land",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/crown-land-water/crown-land/crown-land-uses/recreation-tourism"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "LA",
+                  "color": "#8d6e63",
+                  "full_name": "Land Act  -  Crown land uses"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "tourism_hospitality",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/crown-land-water/crown-land/crown-land-uses"
+              }
+            },
+            {
+              "name": "Register an off-road vehicle for use on Crown land",
+              "desc": "A cross-government framework requires registration of off-road vehicles used on Crown land, part of measures to manage growing off-road vehicle use and protect people and the environment.",
+              "users": "Off-road vehicle owners",
+              "user_groups": [
+                "Drivers & vehicle owners",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Off-road vehicles on Crown land",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/crown-land-water/crown-land/crown-land-uses/off-road-vehicles"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/crown-land-water/crown-land"
+              }
+            },
+            {
+              "name": "Report misuse of Crown land",
+              "desc": "Members of the public can report unauthorized occupation, dumping, or other misuse of provincial Crown land to the ministry.",
+              "users": "General public, neighbouring landowners",
+              "user_groups": [
+                "General public",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Report a misuse of Crown land",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/crown-land-water/crown-land/misuse"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Plan and map provincial public land",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Take part in land use planning for public land and water",
+              "desc": "Land use planning sets strategic direction for the 94% of B.C. that is provincial public land, guiding sustainable resource stewardship in partnership with First Nations, local governments and communities.",
+              "users": "First Nations, local governments, stakeholders, communities",
+              "user_groups": [
+                "Indigenous communities",
+                "Municipalities & local governments",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Land Use Planning",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/crown-land-water/land-use-planning"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Land use planning enquiries",
+                  "url": "mailto:landuseplanning@gov.bc.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/crown-land-water/land-use-planning"
+              }
+            },
+            {
+              "name": "Access Crown land and resource mapping data",
+              "desc": "GeoBC provides web-based mapping, imagery, location APIs and topographic data that support land ownership, permitting and resource decisions across the province.",
+              "users": "Businesses, local governments, general public",
+              "user_groups": [
+                "Businesses & employers",
+                "Municipalities & local governments",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Geographic data and tools",
+                  "url": "https://www2.gov.bc.ca/gov/content/data/geographic-data-services"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "iMapBC",
+                  "url": "https://maps.gov.bc.ca/ess/hm/imap4m/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "societal_needs_supports",
+                  "domain": "environment_land"
+                },
+                "business": {
+                  "tier": "core_business_needs",
+                  "domain": "registration_legal"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/data/geographic-data-services"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#2e7d32",
+      "title": "GOAL 3",
+      "short_name": "B.C.'s fish and wildlife are healthy and sustainably used",
+      "legend_label": "Fish & wildlife",
+      "description": "The ministry licenses hunting, angling and guiding, manages wildlife populations and habitat, and helps protect species and ecosystems at risk.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Hunt in B.C.",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Buy a hunting licence",
+              "desc": "B.C. resident, non-resident and non-resident alien hunting licences are bought through the WILD system or in person, and are linked to a Fish and Wildlife ID (FWID) profile.",
+              "users": "Resident and non-resident hunters",
+              "user_groups": [
+                "General public",
+                "Seniors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "WILD system",
+                  "url": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/wild-system"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Hunting licences",
+                  "url": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/hunting/hunting-licences"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WA",
+                  "color": "#2e7d32",
+                  "full_name": "Wildlife Act  -  Hunting licences"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/hunting/hunting-licences"
+              }
+            },
+            {
+              "name": "Apply for Limited Entry Hunting",
+              "desc": "Limited Entry Hunting (LEH) draws let wildlife managers control hunter numbers for a species, area and time period beyond what general open seasons allow, with random draws run through WILD.",
+              "users": "Licensed hunters",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "LEH online applications",
+                  "url": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/hunting/limited-entry-hunting/leh-online-applications"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Limited Entry Hunting",
+                  "url": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/hunting/limited-entry-hunting"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WA",
+                  "color": "#2e7d32",
+                  "full_name": "Wildlife Act  -  Limited entry hunting regulation"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/hunting/limited-entry-hunting"
+              }
+            },
+            {
+              "name": "Get a guide outfitter licence",
+              "desc": "A guide outfitter licence authorizes guiding resident and non-resident hunters for big game in an exclusive guide area, issued for a 1-year or 5-year term after passing an exam on the Wildlife Act.",
+              "users": "Hunting guide outfitter businesses",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Guide outfitter licence",
+                  "url": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/hunting/guide-outfitter-licence"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WA",
+                  "color": "#2e7d32",
+                  "full_name": "Wildlife Act  -  Guide outfitter licensing"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": [
+                  {
+                    "type": "complainant_regulated_party",
+                    "service": "Report a poacher, polluter or environmental violation (RAPP)",
+                    "ministry": "env"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/hunting/guide-outfitter-licence"
+              }
+            },
+            {
+              "name": "Hire or become an assistant hunting guide",
+              "desc": "Guide outfitters can hire licensed assistant hunting guides to help guide clients within their guiding territory.",
+              "users": "Guide outfitters, assistant guides",
+              "user_groups": [
+                "Businesses & employers",
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Assistant hunting guides",
+                  "url": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/hunting/guide-outfitter-licence/assistant-hunting-guides"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WA",
+                  "color": "#2e7d32",
+                  "full_name": "Wildlife Act  -  Guide outfitter licensing"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/hunting/guide-outfitter-licence"
+              }
+            },
+            {
+              "name": "Report your hunting harvest",
+              "desc": "Hunters must submit compulsory harvest reports for certain species, and some species require compulsory inspection within a set number of days of the kill.",
+              "users": "Licensed hunters",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Compulsory reporting",
+                  "url": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/hunting/compulsory-reporting"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Mandatory hunter reporting",
+                  "url": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/hunting/mandatory-hunter-reporting"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WA",
+                  "color": "#2e7d32",
+                  "full_name": "Wildlife Act  -  Compulsory reporting and inspection"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Trap fur-bearing animals in B.C.",
+              "desc": "Trapping fur-bearing animals in B.C. requires a trapping licence and compliance with Wildlife Act trapping regulations.",
+              "users": "Licensed trappers",
+              "user_groups": [
+                "General public",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Trapping in B.C.",
+                  "url": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/hunting/trapping-in-bc"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WA",
+                  "color": "#2e7d32",
+                  "full_name": "Wildlife Act  -  Trapping licences"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Fish in B.C. waters",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Buy a freshwater fishing licence",
+              "desc": "Recreational freshwater fishing licences are one-day, eight-day or annual, purchased through WILD or in person, with fee reductions for seniors and residents with disabilities.",
+              "users": "Anglers",
+              "user_groups": [
+                "General public",
+                "Seniors",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-transact",
+                  "label": "WILD system",
+                  "url": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/wild-system/wild-login"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Recreational freshwater fishing licences",
+                  "url": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/fishing/recreational-freshwater-fishing-licence"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WA",
+                  "color": "#2e7d32",
+                  "full_name": "Wildlife Act  -  Freshwater fishing licensing"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/fishing/recreational-freshwater-fishing-licence"
+              }
+            },
+            {
+              "name": "Get an angling guide licence",
+              "desc": "Providing guided freshwater fishing services in B.C. requires a valid angling guide licence.",
+              "users": "Fishing guide businesses",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Angling guiding in B.C.",
+                  "url": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/fishing/freshwater-angling-guides"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WA",
+                  "color": "#2e7d32",
+                  "full_name": "Wildlife Act  -  Angling guide licensing"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": [
+                  {
+                    "type": "complainant_regulated_party",
+                    "service": "Report a poacher, polluter or environmental violation (RAPP)",
+                    "ministry": "env"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/fishing"
+              }
+            },
+            {
+              "name": "Check freshwater fishing regulations before you fish",
+              "desc": "The Freshwater Fishing Regulations Synopsis summarizes water- and species-specific rules, bag limits and in-season changes anglers must follow.",
+              "users": "Anglers",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Freshwater fishing regulations",
+                  "url": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/fishing/fishing-regulations"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WA",
+                  "color": "#2e7d32",
+                  "full_name": "Wildlife Act  -  Freshwater fishing regulations"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/fishing"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Protect and manage wildlife",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Report human-wildlife conflict",
+              "desc": "The public can report conflicts between people and wildlife, such as dangerous encounters or property damage, to help the ministry respond and prevent future conflicts.",
+              "users": "General public, property owners",
+              "user_groups": [
+                "General public",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Report Human-Wildlife Conflict",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/wildlife/human-wildlife-conflict/report-human-wildlife-conflict"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Get compensation for crop or livestock losses caused by wildlife",
+                    "ministry": "af"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/wildlife"
+              }
+            },
+            {
+              "name": "Get involved in wildlife stewardship and habitat conservation",
+              "desc": "Together for Wildlife and related stewardship programs let British Columbians take part in conserving wildlife and their habitats across the province.",
+              "users": "General public, conservation groups, Indigenous communities",
+              "user_groups": [
+                "General public",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Together for Wildlife",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/wildlife/together-for-wildlife"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Wildlife stewardship",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/wildlife/wildlife-conservation"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/wildlife"
+              }
+            },
+            {
+              "name": "Check if a species or ecosystem is at risk in B.C.",
+              "desc": "The BC Species and Ecosystems Explorer and Conservation Data Centre track species and ecosystems assessed as endangered, threatened or of special concern.",
+              "users": "General public, local governments, researchers",
+              "user_groups": [
+                "General public",
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "BC Species and Ecosystems Explorer",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/conservation-data-centre/explore-cdc-data/species-and-ecosystems-explorer"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Species and ecosystems at risk",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/species-ecosystems-at-risk"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/species-ecosystems-at-risk"
+              }
+            },
+            {
+              "name": "Get your harvest tested for Chronic Wasting Disease",
+              "desc": "Hunters harvesting deer, elk or moose in designated management units must submit samples for mandatory Chronic Wasting Disease testing at a designated drop-off location within one week of harvest.",
+              "users": "Hunters in CWD management zones",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Chronic Wasting Disease surveillance and testing",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/wildlife/wildlife-conservation/wildlife-health/chronic-wasting-disease/cwd-surveillance-and-testing"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "WA",
+                  "color": "#2e7d32",
+                  "full_name": "Wildlife Act  -  Compulsory reporting and inspection"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/water-land-and-resource-stewardship"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Water science, monitoring and groundwater data",
+      "desc": "Provincial groundwater observation well monitoring, the Water Science Series and other hydrological research support water licensing and drought and flood decisions.",
+      "users": "Internal program staff, researchers",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "environment_land",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Land and resource stewardship policy and planning",
+      "desc": "Policy, spatial data and legal direction that guide land use plans and resource stewardship decisions across provincial public land.",
+      "users": "Internal program staff, other ministries",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "environment_land",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-3",
+      "name": "Fish and wildlife population science and data",
+      "desc": "Hunter harvest data, wildlife health surveillance and population data support wildlife allocation, licensing and conservation decisions.",
+      "users": "Internal program staff, researchers",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "environment_land",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-4",
+      "name": "Coordinate First Nations consultation on land and resource decisions",
+      "desc": "Consultation and negotiation with First Nations informs land use planning, Crown land authorizations and natural resource decision-making across the ministry.",
+      "users": "Internal program staff, First Nations governments",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "environment_land",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    }
+  ],
+  "mandate_date": "January 16, 2025",
+  "mandate_minister": "Randene Neill",
+  "mandate_pdf": "https://www2.gov.bc.ca/assets/gov/government/ministries-organizations/premier-cabinet-mlas/minister-letter/mandate_letter_randene_neil.pdf",
+  "cross_cutting": [
+    "Grow the economy and create jobs",
+    "Reduce costs for families, including housing",
+    "Strengthen health care",
+    "Make neighbourhoods and communities safer"
+  ],
+  "mandate_legend": [],
+  "channel_filters": [
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-transact",
+      "label": "Online transaction",
+      "bg_color": "#c8e6c9",
+      "text_color": "#1b5e20"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-email",
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Families & caregivers",
+    "Seniors",
+    "Businesses & employers",
+    "Producers & ranchers",
+    "Industry",
+    "Municipalities & local governments",
+    "Indigenous communities",
+    "Property owners",
+    "Drivers & vehicle owners",
+    "Workers & job seekers"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

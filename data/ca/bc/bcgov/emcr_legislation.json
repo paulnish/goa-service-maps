@@ -1,0 +1,200 @@
+{
+  "prefix": "emcr",
+  "name": "Ministry of Emergency Management and Climate Readiness",
+  "short_name": "Emergency Management & Climate Readiness",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "British Columbians know their hazards and are ready before disaster strikes",
+      "legend_label": "Prepare",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Prepare your household for an emergency"
+        },
+        {
+          "number": 2,
+          "name": "Get ready to evacuate"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#c62828",
+      "short_name": "People, businesses and communities recover from disasters",
+      "legend_label": "Respond & recover",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get support during and after an evacuation"
+        },
+        {
+          "number": 2,
+          "name": "Apply for disaster financial assistance"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#2e7d32",
+      "short_name": "Communities and Indigenous partners are resilient to climate and disaster risks",
+      "legend_label": "Build resilience",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Build local and Indigenous community emergency management capacity"
+        },
+        {
+          "number": 2,
+          "name": "Understand and plan for climate and disaster risk"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "EDMA",
+      "full_name": "Emergency and Disaster Management Act",
+      "color": "#1565c0",
+      "citation": "SBC 2023, c 37",
+      "summary": "Assented to November 8, 2023. Repeals and replaces the Emergency Program Act. Governs all four phases of emergency management (mitigation, preparation, response, recovery), the Provincial Emergency Management Organization, local authority powers, agreements with Indigenous governing bodies, declarations of emergency, and disaster financial assistance.",
+      "sections": [
+        {
+          "ref": "Part 2, Division 2",
+          "title": "Provincial Emergency Management Organization",
+          "description": "Establishes the provincial emergency management organization within the ministry, led by a deputy minister and provincial administrator, responsible for oversight, leadership and coordination of emergency management across British Columbia (ss. 11-17).",
+          "anchor_id": "EDMA-P2D2",
+          "services": [
+            {
+              "name": "Lead provincial emergency management coordination and planning",
+              "type": "foundational",
+              "goal_number": 0,
+              "goal_color": "#1565c0",
+              "ms_number": 0,
+              "ms_name": ""
+            }
+          ]
+        },
+        {
+          "ref": "Part 3",
+          "title": "Agreements with Indigenous Governing Bodies",
+          "description": "Sets out coordination agreements, decision-making agreements and statutory power agreements negotiated with Indigenous governing bodies under the Declaration on the Rights of Indigenous Peoples Act (ss. 33 and following).",
+          "anchor_id": "EDMA-P3",
+          "services": [
+            {
+              "name": "Coordinate emergency management agreements with Indigenous governing bodies",
+              "type": "foundational",
+              "goal_number": 0,
+              "goal_color": "#1565c0",
+              "ms_number": 0,
+              "ms_name": ""
+            }
+          ]
+        },
+        {
+          "ref": "Part 4",
+          "title": "Mitigation and Preparation Phases",
+          "description": "Sets out powers and duties of the province, local authorities and Indigenous governing bodies to mitigate hazards and prepare emergency management plans and organizations.",
+          "anchor_id": "EDMA-P4",
+          "services": [
+            {
+              "name": "Create and maintain a local emergency management plan",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Build local and Indigenous community emergency management capacity"
+            },
+            {
+              "name": "Apply for disaster mitigation and community emergency funding",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Build local and Indigenous community emergency management capacity"
+            },
+            {
+              "name": "Get emergency management training",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Build local and Indigenous community emergency management capacity"
+            }
+          ]
+        },
+        {
+          "ref": "Part 6",
+          "title": "Local Authority Response and Recovery Phases",
+          "description": "Governs declarations of a state of local emergency, local recovery periods, and the response and recovery powers a local authority or First Nation may exercise, including evacuation orders and alerts (ss. 95 and following).",
+          "anchor_id": "EDMA-P6",
+          "services": [
+            {
+              "name": "Learn what to do during an evacuation alert or order",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Get ready to evacuate"
+            }
+          ]
+        },
+        {
+          "ref": "Part 7, Division 3",
+          "title": "Financial Assistance",
+          "description": "Authorizes disaster financial assistance for individuals, businesses, farms and charitable organizations, and the appeal process for eligibility and amount determinations; detailed eligibility and compensation rules are set out in the Compensation and Disaster Financial Assistance Regulation (B.C. Reg. 124/95).",
+          "anchor_id": "EDMA-P7D3",
+          "services": [
+            {
+              "name": "Apply for disaster financial assistance as a homeowner or tenant",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#c62828",
+              "ms_number": 2,
+              "ms_name": "Apply for disaster financial assistance"
+            },
+            {
+              "name": "Apply for disaster financial assistance for your small business or farm",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#c62828",
+              "ms_number": 2,
+              "ms_name": "Apply for disaster financial assistance"
+            },
+            {
+              "name": "Apply for disaster financial assistance for a charitable or non-profit organization",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#c62828",
+              "ms_number": 2,
+              "ms_name": "Apply for disaster financial assistance"
+            },
+            {
+              "name": "Appeal a disaster financial assistance decision",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#c62828",
+              "ms_number": 2,
+              "ms_name": "Apply for disaster financial assistance"
+            },
+            {
+              "name": "Administer disaster financial assistance program operations",
+              "type": "foundational",
+              "goal_number": 0,
+              "goal_color": "#1565c0",
+              "ms_number": 0,
+              "ms_name": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 1,
+    "sections_count": 5,
+    "services_with_leg_count": 11,
+    "services_multi_act_count": 0
+  }
+}

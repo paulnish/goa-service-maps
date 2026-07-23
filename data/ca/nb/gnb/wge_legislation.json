@@ -1,0 +1,77 @@
+{
+  "prefix": "wge",
+  "name": "Office of Women and Gender Equity",
+  "short_name": "Women & Gender Equity",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "Women and gender-diverse people live safely and equitably",
+      "legend_label": "Gender equity",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get support and drive change"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "PEA",
+      "full_name": "Pay Equity Act, 2009",
+      "color": "#0070c0",
+      "citation": "SNB 2009, c P-5.05",
+      "summary": "Pay equity in the public sector.",
+      "sections": [
+        {
+          "ref": "s.7, ss.11-23",
+          "title": "Duty to implement and process",
+          "description": "Employer duty to implement pay equity; implementation process; Pay Equity Bureau (s.29).",
+          "anchor_id": "PEA-s7ss1123",
+          "services": [
+            {
+              "name": "Get pay equity guidance for your workplace",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Get support and drive change"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "IPVIA",
+      "full_name": "Intimate Partner Violence Intervention Act",
+      "color": "#2e7d32",
+      "citation": "SNB 2017, c 5",
+      "summary": "Emergency intervention orders for intimate partner violence.",
+      "sections": [
+        {
+          "ref": "s.4",
+          "title": "Emergency intervention order",
+          "description": "Emergency orders on application to a hearing officer (s.3); court review (s.8).",
+          "anchor_id": "IPVIA-s4",
+          "services": [
+            {
+              "name": "Find help for intimate partner and family violence",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Get support and drive change"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 2,
+    "sections_count": 2,
+    "services_with_leg_count": 2,
+    "services_multi_act_count": 0
+  }
+}

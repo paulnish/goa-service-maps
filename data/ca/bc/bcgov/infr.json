@@ -1,0 +1,810 @@
+{
+  "prefix": "infr",
+  "full_name": "Ministry of Infrastructure",
+  "short_name": "Infrastructure",
+  "blurb": "Plans and delivers major public infrastructure — schools, hospitals, and other government capital projects across the province.",
+  "nav_name": "Infrastructure",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "GOAL 1",
+      "short_name": "Schools, hospitals and campuses are built for B.C.'s growing communities",
+      "legend_label": "Capital projects",
+      "description": "The Ministry of Infrastructure plans, funds and delivers major capital projects — schools, hospitals and health facilities, post-secondary student housing, and other public buildings — so services can keep pace with population growth.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Find out about capital projects in your community",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Find new and upgraded school projects near you",
+              "desc": "Look up current major K-12 capital projects — new schools, additions and seismic upgrades — underway across B.C. school districts, including funding programs like the Annual Facility Grant and School Enhancement Program.",
+              "users": "Parents, students, school communities",
+              "user_groups": [
+                "General public",
+                "Families & caregivers",
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Capital Management for Kindergarten to Grade 12",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/k-12/administration/capital"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Capital Project Initiatives Brochure",
+                  "url": "https://www2.gov.bc.ca/assets/gov/education/administration/resource-management/capital-planning/mecs-building-schools-together-capital-project-initiatives-brochure.pdf"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 2,
+                  "text": "Recognizing BC's growing communities and aging infrastructure, ensure faster delivery of cost-effective, high-quality generational investments"
+                },
+                {
+                  "number": 4,
+                  "text": "Identify and implement opportunities to reduce costs for taxpayers and expedite approval and construction of projects, including standardization of infrastructure like schools, hospital patient towers, child care facilities, and drug treatment or mental health facilities"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/k-12/administration/capital"
+              }
+            },
+            {
+              "name": "Track hospital, cancer centre and long-term care construction near you",
+              "desc": "Follow the status of new and upgraded hospitals, cancer centres, long-term care homes and urgent and primary care centres being built across B.C.'s five health regions — the largest health capital investment in the province's history.",
+              "users": "Patients, families, communities",
+              "user_groups": [
+                "General public",
+                "Seniors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Health infrastructure projects",
+                  "url": "https://www2.gov.bc.ca/gov/content/health/accessing-health-care/capital-projects"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 2,
+                  "text": "Recognizing BC's growing communities and aging infrastructure, ensure faster delivery of cost-effective, high-quality generational investments"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/health/accessing-health-care/capital-projects"
+              }
+            },
+            {
+              "name": "Find student housing being built at your post-secondary institution",
+              "desc": "Government loans, grants and institutional financing are funding thousands of new on-campus student housing beds at B.C. public post-secondary institutions, as part of the Homes for BC plan.",
+              "users": "Post-secondary students",
+              "user_groups": [
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "On-campus Student Housing",
+                  "url": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/institution-resources-administration/on-campus-student-housing"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/institution-resources-administration/on-campus-student-housing"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Access government real estate and facilities services",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Lease or buy surplus government property",
+              "desc": "Businesses and the public can view government properties listed for sale, sold properties, and surplus government space available for lease across B.C.",
+              "users": "Businesses, prospective tenants and buyers",
+              "user_groups": [
+                "Businesses & employers",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Real Estate Services for the Public Sector",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/services-for-government/real-estate-space"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "government_procurement",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/services-for-government/real-estate-space"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00838f",
+      "title": "GOAL 2",
+      "short_name": "Major infrastructure projects are delivered faster and more efficiently",
+      "legend_label": "Faster project delivery",
+      "description": "Through the new Infrastructure Projects Act and partnerships like Infrastructure BC, the ministry streamlines approvals and procurement so provincially significant capital projects can be reviewed and built more quickly.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get faster approvals for a provincially significant infrastructure project",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Request priority permitting review for a designated infrastructure project",
+              "desc": "Projects designated as provincially significant under the Infrastructure Projects Act can access priority permit reviews, an expedited environmental assessment pathway, and automatic issuance of some low-risk related permits.",
+              "users": "Project proponents, public sector agencies, developers",
+              "user_groups": [
+                "Businesses & employers",
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Infrastructure Projects Act",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/infrastructure/infrastructure-projects-act"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "How the Infrastructure Projects Act works (infographic)",
+                  "url": "https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/infrastructure/ipa_process_infographic.pdf"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "IPA",
+                  "color": "#00838f",
+                  "full_name": "Infrastructure Projects Act  -  Priority permitting and expedited environmental assessment tools"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 5,
+                  "text": "Work with your ministerial colleagues to address permit delays in major infrastructure projects and identify opportunities for reduced cost and increased efficiency"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/infrastructure/infrastructure-projects-act"
+              }
+            },
+            {
+              "name": "Request local government planning flexibility for a designated project",
+              "desc": "Local governments can ask the province to temporarily waive provincial land use planning requirements, such as official community plan updates, to avoid delays on designated provincially significant projects, and use a framework to reach faster agreements with project proponents.",
+              "users": "Local governments",
+              "user_groups": [
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Infrastructure Projects Act",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/infrastructure/infrastructure-projects-act"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "IPA",
+                  "color": "#00838f",
+                  "full_name": "Infrastructure Projects Act  -  Local government planning flexibility and agreements"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 5,
+                  "text": "Work with your ministerial colleagues to address permit delays in major infrastructure projects and identify opportunities for reduced cost and increased efficiency"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/infrastructure/infrastructure-projects-act"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Partner with government on complex capital project procurement",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Partner with Infrastructure BC on a major capital project",
+              "desc": "Infrastructure BC (formerly Partnerships BC) supports public sector organizations by leading procurement of complex capital projects delivered in partnership with the private sector.",
+              "users": "Public sector agencies, private sector partners",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Infrastructure BC",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/crown-corporations/infrastructure-bc"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "government_procurement",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/crown-corporations/infrastructure-bc"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#b45309",
+      "title": "GOAL 3",
+      "short_name": "Construction workers and businesses are paid fairly and safely employed",
+      "legend_label": "Fair construction industry",
+      "description": "New prompt-payment rules and Community Benefits Agreement hiring practices protect workers and businesses on B.C.'s public infrastructure projects.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get paid on time on a construction project",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get paid on time as a contractor or subcontractor",
+              "desc": "The Construction Prompt Payment Act sets mandatory payment deadlines — 28 days for owners to pay contractors after a proper invoice, and 7 days for contractors to pay subcontractors — once the Act is brought into force. It received Royal Assent November 27, 2025, and regulations and an adjudication authority are still being developed.",
+              "users": "Contractors, subcontractors, sub-subcontractors",
+              "user_groups": [
+                "Businesses & employers",
+                "Workers & job seekers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Prompt payment legislation",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/infrastructure/prompt-payment-legislation"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Construction Prompt Payment Act discussion paper",
+                  "url": "https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/infrastructure/cppa_discussion_paper.pdf"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CPPA",
+                  "color": "#b45309",
+                  "full_name": "Construction Prompt Payment Act  -  Proper invoices and payment deadlines"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/infrastructure/prompt-payment-legislation"
+              }
+            },
+            {
+              "name": "Resolve a construction payment dispute through adjudication",
+              "desc": "Once in force, the Construction Prompt Payment Act will let payment disputes be decided quickly by a qualified adjudicator instead of through the courts, with determinations issued within weeks.",
+              "users": "Contractors, subcontractors, project owners",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Prompt payment legislation",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/infrastructure/prompt-payment-legislation"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CPPA",
+                  "color": "#b45309",
+                  "full_name": "Construction Prompt Payment Act  -  Adjudication of payment disputes"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/infrastructure/prompt-payment-legislation"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Work on a major public construction project",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get hired through the Community Benefits Agreement on a public project",
+              "desc": "BC Infrastructure Benefits (BCIB) is the employer of record on select public infrastructure projects delivered under the Community Benefits Agreement, prioritizing hiring of local residents, Indigenous people and other underrepresented groups, and providing training and worker supports.",
+              "users": "Skilled trades workers, apprentices, Indigenous workers",
+              "user_groups": [
+                "Workers & job seekers",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "BC Infrastructure Benefits",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/crown-corporations/bc-infrastructure-benefits"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "text": "Structure our capital plan to minimize cost inflation due to labour shortages or overlapping demands on a limited pool of bidders while prioritizing delivery of high-quality infrastructure across the province"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "working_employment",
+                "relationships": [
+                  {
+                    "type": "worker_employer",
+                    "service": "Sponsor an apprentice as an employer",
+                    "ministry": "psfs"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/crown-corporations/bc-infrastructure-benefits"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "K-12 school capital planning and funding",
+      "desc": "Capital funding, planning guidelines and project approvals for site acquisition, new school construction, additions, renovations and the Seismic Mitigation Program, delivered with boards of education. The Education and Child Care Capital Branch sits within the Ministry of Infrastructure.",
+      "users": "Boards of education, Ministry of Education and Child Care",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [
+        {
+          "number": 1,
+          "text": "Work with the Minister of Finance to review all existing major infrastructure initiatives to ensure our capital program remains relevant, supports economic growth, and helps deliver high-quality services while keeping costs low for British Columbians"
+        },
+        {
+          "number": 4,
+          "text": "Identify and implement opportunities to reduce costs for taxpayers and expedite approval and construction of projects, including standardization of infrastructure like schools, hospital patient towers, child care facilities, and drug treatment or mental health facilities"
+        }
+      ],
+      "taxonomy": {
+        "track": "business",
+        "tier": "core_business_needs",
+        "domain": "finances_taxes",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/education-training/k-12/administration/capital"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Health facility capital planning and funding",
+      "desc": "Capital planning, funding and delivery of hospitals, cancer centres, long-term care homes and urgent and primary care centres, in partnership with B.C.'s five health authorities and the Ministry of Health.",
+      "users": "Health authorities, Ministry of Health",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [
+        {
+          "number": 1,
+          "text": "Work with the Minister of Finance to review all existing major infrastructure initiatives to ensure our capital program remains relevant, supports economic growth, and helps deliver high-quality services while keeping costs low for British Columbians"
+        }
+      ],
+      "taxonomy": {
+        "track": "business",
+        "tier": "core_business_needs",
+        "domain": "finances_taxes",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/health/accessing-health-care/capital-projects"
+      }
+    },
+    {
+      "id": "f-3",
+      "name": "Post-secondary capital planning and funding",
+      "desc": "Capital Asset Reference Guide standards, funding programs and project approvals for public post-secondary institution capital projects, including new priority investments, routine capital, the Carbon Neutral Capital Program and IM/IT capital.",
+      "users": "Public post-secondary institutions",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "core_business_needs",
+        "domain": "finances_taxes",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/institution-resources-administration/capital-planning"
+      }
+    },
+    {
+      "id": "f-4",
+      "name": "On-campus student housing capital financing",
+      "desc": "Government loans, grants and leading-practice agreement guidance support public post-secondary institutions building new on-campus student housing under the Homes for BC plan.",
+      "users": "Public post-secondary institutions",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "core_business_needs",
+        "domain": "finances_taxes",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/institution-resources-administration/on-campus-student-housing"
+      }
+    },
+    {
+      "id": "f-5",
+      "name": "Government real estate portfolio and facilities management",
+      "desc": "Manages the government's real estate portfolio — office space, leasing, facilities management, and workplace project management — for provincial public sector clients.",
+      "users": "Government ministries and public sector clients",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "scenario_dependent",
+        "domain": "government_procurement",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/governments/services-for-government/real-estate-space"
+      }
+    },
+    {
+      "id": "f-6",
+      "name": "Complex capital project procurement partnership (Infrastructure BC)",
+      "desc": "Infrastructure BC (formerly Partnerships BC) partners with the private sector to procure and structure complex public capital projects on behalf of the public sector, under the Business Corporations Act.",
+      "users": "Public sector agencies",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "scenario_dependent",
+        "domain": "government_procurement",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/crown-corporations/infrastructure-bc"
+      }
+    },
+    {
+      "id": "f-7",
+      "name": "Community Benefits Agreement workforce delivery (BCIB)",
+      "desc": "BC Infrastructure Benefits employs workers on Community Benefits Agreement projects, prioritizing local, Indigenous and underrepresented hires, and providing training, capacity-building and worker supports.",
+      "users": "Construction workforce, project partners",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [
+        {
+          "number": 3,
+          "text": "Structure our capital plan to minimize cost inflation due to labour shortages or overlapping demands on a limited pool of bidders while prioritizing delivery of high-quality infrastructure across the province"
+        }
+      ],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "core_human_needs",
+        "domain": "working_employment",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/crown-corporations/bc-infrastructure-benefits"
+      }
+    }
+  ],
+  "mandate_date": "July 17, 2025",
+  "mandate_minister": "Bowinn Ma",
+  "mandate_pdf": "https://www2.gov.bc.ca/assets/gov/government/ministries-organizations/premier-cabinet-mlas/minister-letter/mandate_letter_bowinn_ma.pdf",
+  "cross_cutting": [
+    "Economic growth and jobs",
+    "Affordability and housing",
+    "Health care",
+    "Community safety",
+    "Climate action",
+    "Indigenous reconciliation"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Work with the Minister of Finance to review all existing major infrastructure initiatives to ensure our capital program remains relevant, supports economic growth, and helps deliver high-quality services while keeping costs low for British Columbians",
+      "mapping": "-> K-12 school capital planning and funding; Health facility capital planning and funding"
+    },
+    {
+      "number": 2,
+      "text": "Recognizing BC's growing communities and aging infrastructure, ensure faster delivery of cost-effective, high-quality generational investments",
+      "mapping": "-> Find new and upgraded school projects near you; Track hospital, cancer centre and long-term care construction near you"
+    },
+    {
+      "number": 3,
+      "text": "Structure our capital plan to minimize cost inflation due to labour shortages or overlapping demands on a limited pool of bidders while prioritizing delivery of high-quality infrastructure across the province",
+      "mapping": "-> Get hired through the Community Benefits Agreement on a public project; Community Benefits Agreement workforce delivery (BCIB)"
+    },
+    {
+      "number": 4,
+      "text": "Identify and implement opportunities to reduce costs for taxpayers and expedite approval and construction of projects, including standardization of infrastructure like schools, hospital patient towers, child care facilities, and drug treatment or mental health facilities, but not limited to these projects",
+      "mapping": "-> Find new and upgraded school projects near you; K-12 school capital planning and funding"
+    },
+    {
+      "number": 5,
+      "text": "Work with your ministerial colleagues to address permit delays in major infrastructure projects and identify opportunities for reduced cost and increased efficiency",
+      "mapping": "-> Request priority permitting review for a designated infrastructure project; Request local government planning flexibility for a designated project"
+    },
+    {
+      "number": 6,
+      "text": "Advocate strongly with the federal government for fair cost share related to critical infrastructure projects with national importance",
+      "mapping": "-> No single service; cross-government federal cost-share advocacy"
+    },
+    {
+      "number": 7,
+      "text": "Work with the Cabinet Committee on Community Safety to ensure that initiatives identified by the committee are prioritized and delivered by your ministry as required",
+      "mapping": "-> No single service; cross-ministry community safety coordination"
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Families & caregivers",
+    "Students & learners",
+    "Seniors",
+    "Businesses & employers",
+    "Municipalities & local governments",
+    "Workers & job seekers",
+    "Indigenous communities"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

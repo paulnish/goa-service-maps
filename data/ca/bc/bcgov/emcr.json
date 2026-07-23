@@ -1,0 +1,1080 @@
+{
+  "prefix": "emcr",
+  "full_name": "Ministry of Emergency Management and Climate Readiness",
+  "short_name": "Emergency Management & Climate Readiness",
+  "blurb": "British Columbia's lead coordinating ministry for emergency management — mitigation, preparedness, response and recovery — and for building the province's resilience to climate-related hazards like wildfire, flood and drought.",
+  "nav_name": "Emergency Management and Climate Readiness",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "GOAL 1",
+      "short_name": "British Columbians know their hazards and are ready before disaster strikes",
+      "legend_label": "Prepare",
+      "description": "The ministry runs PreparedBC and works with partners across the province to help people, families and communities understand local hazards, build household plans and kits, and know how emergency alerts and evacuations work.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Prepare your household for an emergency",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Learn about hazards and make an emergency plan",
+              "desc": "Guides to help you identify the hazards most likely to affect where you live and build a step-by-step household emergency plan.",
+              "users": "Households, families",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Know the hazards",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc/know-your-hazards"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Make your plan",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc/make-your-plan"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc"
+              }
+            },
+            {
+              "name": "Build an emergency kit and grab-and-go bag",
+              "desc": "Guidance on putting together a household emergency kit and a portable grab-and-go bag in case you need to leave quickly.",
+              "users": "Households, families",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Build your kits",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc/build-an-emergency-kit-and-grab-and-go-bag"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc"
+              }
+            },
+            {
+              "name": "Find PreparedBC guides and community resources",
+              "desc": "Downloadable preparedness guides and resources covering specific hazards, for households, schools and communities.",
+              "users": "General public, local governments, schools",
+              "user_groups": [
+                "General public",
+                "Municipalities & local governments",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Guides and resources",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc/guides-and-resources"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc"
+              }
+            },
+            {
+              "name": "Understand and respond to BC Emergency Alerts",
+              "desc": "Emergency alerts are broadcast on TV, radio and to wireless devices during life-threatening emergencies; learn how the system works and what to do when you receive one.",
+              "users": "General public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "BC Emergency Alerts",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/public-safety/emergency-alerts"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/public-safety/emergency-alerts"
+              }
+            },
+            {
+              "name": "Access emergency preparedness education programs and toolkits",
+              "desc": "Social media packages, classroom resources and community event materials that build public awareness of hazards and preventable emergencies.",
+              "users": "Teachers, students, community organizers",
+              "user_groups": [
+                "Students & learners",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Education programs and toolkits",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/education-programs-toolkits"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/emergency-management"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get ready to evacuate",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Learn what to do during an evacuation alert or order",
+              "desc": "What Evacuation Alert, Evacuation Order and Evacuation Rescinded mean, where to go, and what to expect at a reception centre.",
+              "users": "General public",
+              "user_groups": [
+                "General public",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Evacuee guidance",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc/evacuation-recovery/evacuee-guidance"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EDMA",
+                  "color": "#c62828",
+                  "full_name": "Emergency and Disaster Management Act - Local authority response and recovery phases"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc/evacuation-recovery/evacuee-guidance"
+              }
+            },
+            {
+              "name": "Create an Emergency Support Services (ESS) profile before you're evacuated",
+              "desc": "Set up an Evacuee Registration and Assistance (ERA) profile in advance so you can access accommodation, food and other short-term supports faster if you're ever evacuated.",
+              "users": "General public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Create an ESS profile",
+                  "url": "https://era-evacuees.embc.gov.bc.ca/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://ess.gov.bc.ca/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#c62828",
+      "title": "GOAL 2",
+      "short_name": "People, businesses and communities recover from disasters",
+      "legend_label": "Respond & recover",
+      "description": "When disaster strikes, the ministry coordinates verified emergency information, short-term supports for evacuees, and financial assistance to help British Columbians recover.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get support during and after an evacuation",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Register for Emergency Support Services (ESS) as an evacuee",
+              "desc": "Evacuees without insurance or other resources can register with the Evacuee Registration and Assistance (ERA) tool to access short-term accommodation, food, clothing and other basic supports for up to 72 hours.",
+              "users": "Evacuees",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Register with ERA",
+                  "url": "https://era-evacuees.embc.gov.bc.ca/verified-registration"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "ESS toll-free support line",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://ess.gov.bc.ca/"
+              }
+            },
+            {
+              "name": "Get verified emergency information during an active disaster",
+              "desc": "EmergencyInfoBC shares verified event information and official response and recovery resources during partial and full-scale provincial emergencies.",
+              "users": "General public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "EmergencyInfoBC",
+                  "url": "https://www.emergencyinfobc.gov.bc.ca/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Check the current wildfire situation and evacuation alerts",
+                    "ministry": "for"
+                  },
+                  {
+                    "type": "shared_information",
+                    "service": "Check road conditions before you travel",
+                    "ministry": "tt"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/emergency-management-and-climate-readiness"
+              }
+            },
+            {
+              "name": "Get help recovering after a disaster",
+              "desc": "Recovery information and resources for cleaning up and rebuilding after a flood, wildfire or other disaster.",
+              "users": "Residents, property owners, small businesses",
+              "user_groups": [
+                "General public",
+                "Property owners",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Recovery information",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc/evacuation-recovery/emergency-recovery"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "societal_needs_supports",
+                  "domain": "safety_emergencies"
+                },
+                "business": {
+                  "tier": "scenario_dependent",
+                  "domain": "disaster_recovery"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc/evacuation-recovery/evacuee-guidance"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Apply for disaster financial assistance",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for disaster financial assistance as a homeowner or tenant",
+              "desc": "Homeowners and residential tenants whose principal residence is damaged in an authorized disaster may apply for compensation for uninsurable essential losses.",
+              "users": "Homeowners, residential tenants",
+              "user_groups": [
+                "General public",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "DFA application portal",
+                  "url": "https://dfa.gov.bc.ca/"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "DFA program line (1-888-257-4777)",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EDMA",
+                  "color": "#c62828",
+                  "full_name": "Emergency and Disaster Management Act - Financial assistance (Part 7, Division 3)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc/evacuation-recovery/disaster-financial-assistance"
+              }
+            },
+            {
+              "name": "Apply for disaster financial assistance for your small business or farm",
+              "desc": "Small business and farm owners who suffer uninsurable disaster losses, and would face financial jeopardy without assistance, may apply for compensation.",
+              "users": "Small business owners, farm owners",
+              "user_groups": [
+                "Businesses & employers",
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "DFA application portal",
+                  "url": "https://dfa.gov.bc.ca/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EDMA",
+                  "color": "#c62828",
+                  "full_name": "Emergency and Disaster Management Act - Financial assistance (Part 7, Division 3)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "disaster_recovery",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Apply for emergency flood or disaster recovery funding for your farm",
+                    "ministry": "af"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc/evacuation-recovery/disaster-financial-assistance"
+              }
+            },
+            {
+              "name": "Apply for disaster financial assistance for a charitable or non-profit organization",
+              "desc": "Registered charitable and non-profit organizations that serve the community may apply for compensation for uninsurable disaster damage.",
+              "users": "Charitable and non-profit organizations",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "DFA application portal",
+                  "url": "https://dfa.gov.bc.ca/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EDMA",
+                  "color": "#c62828",
+                  "full_name": "Emergency and Disaster Management Act - Financial assistance (Part 7, Division 3)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "disaster_recovery",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc/evacuation-recovery/disaster-financial-assistance"
+              }
+            },
+            {
+              "name": "Appeal a disaster financial assistance decision",
+              "desc": "Applicants who disagree with a disaster financial assistance eligibility or amount determination can register a written appeal within 60 days of the decision.",
+              "users": "DFA applicants",
+              "user_groups": [
+                "General public",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "DFA appeals process",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc/evacuation-recovery/disaster-financial-assistance"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "DFA.Appeals@gov.bc.ca",
+                  "url": "mailto:DFA.Appeals@gov.bc.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EDMA",
+                  "color": "#c62828",
+                  "full_name": "Emergency and Disaster Management Act - Financial assistance (Part 7, Division 3)"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "societal_needs_supports",
+                  "domain": "safety_emergencies"
+                },
+                "business": {
+                  "tier": "scenario_dependent",
+                  "domain": "disaster_recovery"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc/evacuation-recovery/disaster-financial-assistance"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#2e7d32",
+      "title": "GOAL 3",
+      "short_name": "Communities and Indigenous partners are resilient to climate and disaster risks",
+      "legend_label": "Build resilience",
+      "description": "The ministry supports local governments, First Nations and volunteers to plan for, mitigate and respond to emergencies, and provides data and tools to help the province adapt to climate-driven hazards.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Build local and Indigenous community emergency management capacity",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Create and maintain a local emergency management plan",
+              "desc": "Tools and templates to help local governments and Indigenous communities establish and maintain emergency management plans and organizations.",
+              "users": "Local government and Indigenous community emergency program coordinators",
+              "user_groups": [
+                "Municipalities & local governments",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Establishing an emergency program",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/local-emergency-programs/establishing-an-emergency-program"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EDMA",
+                  "color": "#2e7d32",
+                  "full_name": "Emergency and Disaster Management Act - Mitigation and preparation phases"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/local-emergency-programs"
+              }
+            },
+            {
+              "name": "Apply for disaster mitigation and community emergency funding",
+              "desc": "Funding programs help communities understand natural hazards and complete projects that reduce the risk and cost of future disasters, including flood and wildfire mitigation.",
+              "users": "Local governments, Indigenous communities",
+              "user_groups": [
+                "Municipalities & local governments",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Disaster mitigation funding programs",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/local-emergency-programs/financial"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EDMA",
+                  "color": "#2e7d32",
+                  "full_name": "Emergency and Disaster Management Act - Mitigation and preparation phases"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 2,
+                  "tip": "Support the Minister of Forests to mitigate wildfire risk while ensuring a consistent fibre supply"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/local-emergency-programs/bc-disaster-mitigation"
+              }
+            },
+            {
+              "name": "Get emergency management training",
+              "desc": "Training opportunities for local government, Indigenous community and volunteer emergency responders.",
+              "users": "Local government and Indigenous community staff, volunteers",
+              "user_groups": [
+                "Municipalities & local governments",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Emergency management training",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/local-emergency-programs/em-training-program"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "EDMA",
+                  "color": "#2e7d32",
+                  "full_name": "Emergency and Disaster Management Act - Mitigation and preparation phases"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/local-emergency-programs"
+              }
+            },
+            {
+              "name": "Volunteer for emergency response",
+              "desc": "Public Safety Lifeline Volunteers lead emergency support services, search and rescue, road rescue, air search and radio communications support across the province.",
+              "users": "Volunteers",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Emergency response volunteers",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/local-emergency-programs/volunteers"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/local-emergency-programs/volunteers"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Understand and plan for climate and disaster risk",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Explore climate and disaster hazard maps and data (ClimateReadyBC)",
+              "desc": "ClimateReadyBC is a one-stop online platform with hazard maps, data, funding and tools to help communities and people prepare for climate-driven disaster risks.",
+              "users": "General public, local governments, businesses",
+              "user_groups": [
+                "General public",
+                "Municipalities & local governments",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "ClimateReadyBC",
+                  "url": "https://climatereadybc.gov.bc.ca/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "tip": "Lead cross-ministry coordination to enhance B.C.'s resilience, including the Climate Preparedness and Adaptation Strategy and BC Flood Strategy"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://climatereadybc.gov.bc.ca/"
+              }
+            },
+            {
+              "name": "Access the Disaster and Climate Risk and Resilience Assessment (DCRRA)",
+              "desc": "The DCRRA provides information on different hazards and how they could affect the province, to support risk-informed planning.",
+              "users": "Local governments, Indigenous communities, planners",
+              "user_groups": [
+                "Municipalities & local governments",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "DCRRA on ClimateReadyBC",
+                  "url": "https://climatereadybc.gov.bc.ca/pages/dcrra"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 5,
+                  "tip": "Develop provincial and regional hazard risk assessments, including modernized tools for access and preparedness planning"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/safety/emergency-management"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Lead provincial emergency management coordination and planning",
+      "desc": "The Provincial Emergency Management Organization provides oversight, leadership and coordination of mitigation, preparation, response and recovery activities across government.",
+      "users": "Internal program staff, partner ministries",
+      "channels": [],
+      "legislation": [
+        {
+          "abbrev": "EDMA",
+          "color": "#1565c0",
+          "full_name": "Emergency and Disaster Management Act - Provincial Emergency Management Organization"
+        }
+      ],
+      "mandate_tags": [
+        {
+          "number": 1,
+          "tip": "Review ministry programs and initiatives to ensure they remain relevant, efficient and cost-effective"
+        },
+        {
+          "number": 3,
+          "tip": "Advance efficient, effective emergency service delivery through cost-effective technology innovations"
+        }
+      ],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "safety_emergencies",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/23037"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Coordinate emergency management agreements with Indigenous governing bodies",
+      "desc": "Negotiates and administers coordination, decision-making and statutory power agreements with Indigenous governing bodies under the Emergency and Disaster Management Act and the Declaration on the Rights of Indigenous Peoples Act.",
+      "users": "Internal program staff, Indigenous governing bodies",
+      "channels": [],
+      "legislation": [
+        {
+          "abbrev": "EDMA",
+          "color": "#1565c0",
+          "full_name": "Emergency and Disaster Management Act - Agreements with Indigenous Governing Bodies"
+        }
+      ],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "safety_emergencies",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/23037"
+      }
+    },
+    {
+      "id": "f-3",
+      "name": "Administer disaster financial assistance program operations",
+      "desc": "Processes DFA applications, assigns evaluators to assess damage, issues determinations, and manages the appeals process for private-sector and community claims.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [
+        {
+          "abbrev": "EDMA",
+          "color": "#1565c0",
+          "full_name": "Emergency and Disaster Management Act - Financial assistance (Part 7, Division 3)"
+        }
+      ],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "safety_emergencies",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc/evacuation-recovery/disaster-financial-assistance"
+      }
+    }
+  ],
+  "mandate_date": "January 16, 2025",
+  "mandate_minister": "Kelly Greene",
+  "mandate_pdf": "https://www2.gov.bc.ca/assets/gov/government/ministries-organizations/premier-cabinet-mlas/minister-letter/mandate_letter_kelly_greene.pdf",
+  "cross_cutting": [
+    "Growing the economy and creating jobs",
+    "Reducing costs for families",
+    "Strengthening health care",
+    "Community safety",
+    "Climate action",
+    "Reconciliation with Indigenous peoples"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Work with the Minister of Finance to review all existing ministry programs and initiatives to ensure they remain relevant, efficient, grow the economy, and help keep costs low for British Columbians",
+      "mapping": "-> Foundational: lead provincial emergency management coordination and planning"
+    },
+    {
+      "number": 2,
+      "text": "Support the Minister of Forests to identify ways to mitigate wildfire risk while ensuring a consistent fibre supply to wood product businesses",
+      "mapping": "-> Apply for disaster mitigation and community emergency funding"
+    },
+    {
+      "number": 3,
+      "text": "Ensure the efficient and effective delivery of emergency services to British Columbians everywhere in the province by leveraging cost-effective technology innovations",
+      "mapping": "-> Foundational: lead provincial emergency management coordination and planning"
+    },
+    {
+      "number": 4,
+      "text": "Lead cross-ministry coordination to enhance B.C.'s resilience, including through the Climate Preparedness and Adaptation Strategy and the BC Flood Strategy, and seek a more appropriate level of federal support",
+      "mapping": "-> Explore climate and disaster hazard maps and data (ClimateReadyBC)"
+    },
+    {
+      "number": 5,
+      "text": "Develop provincial and regional hazard risk assessments, including modernized tools for access, to improve transparency, awareness and informed planning and preparedness",
+      "mapping": "-> Access the Disaster and Climate Risk and Resilience Assessment (DCRRA)"
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-email",
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Families & caregivers",
+    "Students & learners",
+    "Property owners",
+    "Businesses & employers",
+    "Producers & ranchers",
+    "Municipalities & local governments",
+    "Indigenous communities"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

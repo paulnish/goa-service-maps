@@ -1,0 +1,461 @@
+{
+  "prefix": "wge",
+  "full_name": "Office of Women and Gender Equity",
+  "short_name": "Women & Gender Equity",
+  "blurb": "Advances gender equality in New Brunswick — supporting violence prevention, pay equity, and organizations working for women and gender-diverse people.",
+  "nav_name": "Office of Women and Gender Equity",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "title": "GOAL 1",
+      "short_name": "Women and gender-diverse people live safely and equitably",
+      "legend_label": "Gender equity",
+      "description": "The office funds equality organizations, supports violence prevention, and advances pay equity in workplaces.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get support and drive change",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Find help for intimate partner and family violence",
+              "desc": "Information and referrals to shelters, outreach, and supports for people experiencing intimate partner or family violence.",
+              "users": "People experiencing violence",
+              "user_groups": [
+                "Individuals",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Office of Women and Gender Equity",
+                  "url": "https://www.gnb.ca/en/org/womens-equality.html"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Violence prevention outreach",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "IPVIA",
+                  "color": "#2e7d32",
+                  "full_name": "Intimate Partner Violence Intervention Act  -  Emergency intervention order"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 2,
+                  "tip": "Fund transition homes and frontline domestic violence services sustainably"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Apply for equality and violence-prevention funding",
+              "desc": "Grants for organizations advancing women's equality and preventing gender-based violence.",
+              "users": "Equality and community organizations",
+              "user_groups": [
+                "Non-profit organizations"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Office of Women and Gender Equity",
+                  "url": "https://www.gnb.ca/en/org/womens-equality.html"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Grant application",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Get pay equity guidance for your workplace",
+              "desc": "Tools and guidance help employers evaluate and correct gender-based pay gaps.",
+              "users": "Employers and HR professionals",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Pay Equity Bureau",
+                  "url": "https://www.gnb.ca/en/org/paye-equity-bureau.html"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PEA",
+                  "color": "#0070c0",
+                  "full_name": "Pay Equity Act, 2009  -  Duty to implement and process"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Phase in pay equity in the private and care sectors, on the Quebec/Ontario model"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "people_employment",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Learn how to recognize and respond to human trafficking",
+              "desc": "Awareness information and resources on human trafficking and how to get help.",
+              "users": "General public, service providers",
+              "user_groups": [
+                "General public",
+                "Organizations"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Human trafficking response",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/women/Violence_Prevention_and_Community_Partnerships/content/Response-to-Human-Trafficking.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/women/Violence_Prevention_and_Community_Partnerships/content/Response-to-Human-Trafficking.html"
+              }
+            },
+            {
+              "name": "Get information and support after sexual violence",
+              "desc": "Information on sexual violence and harassment, their effects, and where to turn for support.",
+              "users": "Survivors, general public",
+              "user_groups": [
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Sexual violence support",
+                  "url": "https://www2.gnb.ca/content/gnb/en/corporate/promo/sexual_violence.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/corporate/promo/sexual_violence.html"
+              }
+            },
+            {
+              "name": "Find supports and resources for Indigenous women",
+              "desc": "Resources specific to the safety, equality, and wellbeing of Indigenous women.",
+              "users": "Indigenous women, communities",
+              "user_groups": [
+                "Indigenous communities",
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Indigenous women's resources",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/women/aboriginal_women.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/women/aboriginal_women.html"
+              }
+            },
+            {
+              "name": "Explore data on women and gender-diverse people",
+              "desc": "Provincial statistics on income, health, education, and leadership for women and gender-diverse people.",
+              "users": "Researchers, organizations",
+              "user_groups": [
+                "Researchers",
+                "Organizations"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Equality profile data",
+                  "url": "https://www2.gnb.ca/content/gnb/en/corporate/promo/equality-profile.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/corporate/promo/equality-profile.html"
+              }
+            },
+            {
+              "name": "Get guidance on gender-based analysis for policies and programs",
+              "desc": "Guidance on using gender-based analysis to assess how policies affect diverse groups.",
+              "users": "Organizations, policy makers",
+              "user_groups": [
+                "Organizations"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Gender-based analysis",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/women/Gender-Based-Analysis-Plus.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/women/Gender-Based-Analysis-Plus.html"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Advise government on gender-based analysis of policy",
+      "desc": "Gender-based analysis and advice on legislation, budgets, and programs.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "core_human_needs",
+        "domain": "family_relationships",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    }
+  ],
+  "mandate_date": "November 13, 2024",
+  "mandate_minister": "Lyne Chantal Boudreau",
+  "mandate_pdf": "https://www.gnb.ca/en/gov/contacts/members-executive-council/mandates-letters/mandates-boudreau.html",
+  "cross_cutting": [
+    "Healthcare",
+    "Affordability and Housing",
+    "Education",
+    "Economic Development",
+    "Environment",
+    "Leadership You Can Trust"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Phase in pay equity in the private and care sectors, on the Quebec/Ontario model",
+      "mapping": "-> Get pay equity guidance for your workplace"
+    },
+    {
+      "number": 2,
+      "text": "Fund transition homes and frontline domestic violence services sustainably",
+      "mapping": "-> Find help for intimate partner and family violence"
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "Individuals",
+    "Families",
+    "Non-profit organizations",
+    "Businesses & employers",
+    "General public",
+    "Organizations",
+    "Indigenous communities",
+    "Researchers"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

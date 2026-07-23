@@ -1,0 +1,424 @@
+{
+  "prefix": "wlrs",
+  "name": "Water, Land and Resource Stewardship",
+  "short_name": "Water, Land & Resource Stewardship",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "British Columbians have secure, sustainably managed water",
+      "legend_label": "Water stewardship",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get a licence to use water"
+        },
+        {
+          "number": 2,
+          "name": "Manage drought, flood and dam risk"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#8d6e63",
+      "short_name": "Provincial public land is used and stewarded sustainably",
+      "legend_label": "Land stewardship",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get authorization to use Crown land"
+        },
+        {
+          "number": 2,
+          "name": "Plan and map provincial public land"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#2e7d32",
+      "short_name": "B.C.'s fish and wildlife are healthy and sustainably used",
+      "legend_label": "Fish & wildlife",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Hunt in B.C."
+        },
+        {
+          "number": 2,
+          "name": "Fish in B.C. waters"
+        },
+        {
+          "number": 3,
+          "name": "Protect and manage wildlife"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "WSA",
+      "full_name": "Water Sustainability Act",
+      "color": "#0070c0",
+      "citation": "SBC 2014, c 15",
+      "summary": "Governs the authorization, allocation and use of surface water and groundwater in B.C., including licensing, change approvals, groundwater protection and dam safety. Replaced most of the former Water Act on February 29, 2016.",
+      "sections": [
+        {
+          "ref": "Water licences and approvals",
+          "title": "Water licences and approvals",
+          "description": "Authorizes the diversion and use of surface water and non-domestic groundwater through water licences and short-term use approvals.",
+          "anchor_id": "WSA-Licences",
+          "services": [
+            {
+              "name": "Apply for a water licence",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Get a licence to use water"
+            },
+            {
+              "name": "Apply for a short-term water use approval",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Get a licence to use water"
+            }
+          ]
+        },
+        {
+          "ref": "Working around water",
+          "title": "Change approvals and notification of in-stream work",
+          "description": "Requires a licence, change approval or notification before making changes in and about a stream.",
+          "anchor_id": "WSA-Changes",
+          "services": [
+            {
+              "name": "Apply for a change approval or notify the ministry of in-stream work",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Get a licence to use water"
+            }
+          ]
+        },
+        {
+          "ref": "Groundwater Protection Regulation",
+          "title": "Groundwater use and well registration",
+          "description": "Requires a water licence for non-domestic groundwater use and sets standards for well construction, maintenance and registration.",
+          "anchor_id": "WSA-Groundwater",
+          "services": [
+            {
+              "name": "Register your domestic water well",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Get a licence to use water"
+            },
+            {
+              "name": "Get a groundwater licence for non-domestic use",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Get a licence to use water"
+            }
+          ]
+        },
+        {
+          "ref": "Dam Safety Regulation",
+          "title": "Dam safety requirements",
+          "description": "Sets construction, inspection, emergency planning and reporting requirements for regulated dams.",
+          "anchor_id": "WSA-DamSafety",
+          "services": [
+            {
+              "name": "Meet dam safety inspection and reporting requirements",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Manage drought, flood and dam risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "WUCA",
+      "full_name": "Water Users' Communities Act",
+      "color": "#ad1457",
+      "citation": "RSBC 1996, c 483",
+      "summary": "Governs the incorporation, membership and management of water users' communities — groups of six or more water licensees who share a diversion, storage or delivery system. Formerly Part 3 of the Water Act.",
+      "sections": [
+        {
+          "ref": "Formation and governance",
+          "title": "Formation and governance of water users' communities",
+          "description": "Sets out how a water users' community is incorporated, named and managed by the Comptroller of Water Rights.",
+          "anchor_id": "WUCA-Governance",
+          "services": [
+            {
+              "name": "Join or manage a Water Users' Community",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Manage drought, flood and dam risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "WUA",
+      "full_name": "Water Utility Act",
+      "color": "#00838f",
+      "citation": "RSBC 1996, c 485",
+      "summary": "Regulates privately owned and operated water utilities that deliver water for domestic use, alongside the Utilities Commission Act.",
+      "sections": [
+        {
+          "ref": "Regulation of private water utilities",
+          "title": "Regulation of private water utilities",
+          "description": "Requires private water utilities to provide safe, clean water to the households they serve.",
+          "anchor_id": "WUA-Utilities",
+          "services": [
+            {
+              "name": "Get water service from a private water utility",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Manage drought, flood and dam risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "LA",
+      "full_name": "Land Act",
+      "color": "#8d6e63",
+      "citation": "RSBC 1996, c 245",
+      "summary": "Governs the administration, disposition and registration of provincial Crown land, including leases, licences of occupation and Crown grants.",
+      "sections": [
+        {
+          "ref": "Part 2",
+          "title": "Disposition of Crown land",
+          "description": "Sets out how the minister may dispose of surveyed or unsurveyed Crown land by lease, licence of occupation, right of way or Crown grant.",
+          "anchor_id": "LA-Part2",
+          "services": [
+            {
+              "name": "Apply to lease, purchase or use Crown land",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#8d6e63",
+              "ms_number": 1,
+              "ms_name": "Get authorization to use Crown land"
+            }
+          ]
+        },
+        {
+          "ref": "s.7",
+          "title": "Crown land registry",
+          "description": "Continues the Crown land registry that records all Crown land administered by the government and its disposition.",
+          "anchor_id": "LA-s7",
+          "services": [
+            {
+              "name": "Search the Crown land registry",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#8d6e63",
+              "ms_number": 1,
+              "ms_name": "Get authorization to use Crown land"
+            }
+          ]
+        },
+        {
+          "ref": "Crown land uses",
+          "title": "Authorized Crown land uses",
+          "description": "Establishes tenure categories and application processes for specific Crown land uses.",
+          "anchor_id": "LA-Uses",
+          "services": [
+            {
+              "name": "Get a Crown land tenure for aggregate or quarry material extraction",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#8d6e63",
+              "ms_number": 1,
+              "ms_name": "Get authorization to use Crown land"
+            },
+            {
+              "name": "Get a Crown land tenure for a recreation or tourism business",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#8d6e63",
+              "ms_number": 1,
+              "ms_name": "Get authorization to use Crown land"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "WA",
+      "full_name": "Wildlife Act",
+      "color": "#2e7d32",
+      "citation": "RSBC 1996, c 488",
+      "summary": "Governs the licensing of hunting, trapping, guiding and freshwater fishing in B.C., and sets rules for wildlife management, compulsory reporting and inspection.",
+      "sections": [
+        {
+          "ref": "Hunting licences",
+          "title": "Hunting licences",
+          "description": "Requires a valid hunting licence and Fish and Wildlife ID to hunt in B.C.",
+          "anchor_id": "WA-Hunting",
+          "services": [
+            {
+              "name": "Buy a hunting licence",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Hunt in B.C."
+            }
+          ]
+        },
+        {
+          "ref": "Limited entry hunting regulation",
+          "title": "Limited Entry Hunting",
+          "description": "Authorizes controlled-draw hunting authorizations for specific species, areas and time periods.",
+          "anchor_id": "WA-LEH",
+          "services": [
+            {
+              "name": "Apply for Limited Entry Hunting",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Hunt in B.C."
+            }
+          ]
+        },
+        {
+          "ref": "Commercial Activities Regulation, Div. 1",
+          "title": "Guide outfitter licensing",
+          "description": "Sets eligibility, exam and fee requirements for guide outfitter licences and assistant hunting guides.",
+          "anchor_id": "WA-Guiding",
+          "services": [
+            {
+              "name": "Get a guide outfitter licence",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Hunt in B.C."
+            },
+            {
+              "name": "Hire or become an assistant hunting guide",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Hunt in B.C."
+            }
+          ]
+        },
+        {
+          "ref": "Compulsory reporting and inspection",
+          "title": "Compulsory reporting and inspection",
+          "description": "Requires hunters to report harvests and submit certain species for compulsory inspection or disease testing.",
+          "anchor_id": "WA-Reporting",
+          "services": [
+            {
+              "name": "Report your hunting harvest",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Hunt in B.C."
+            },
+            {
+              "name": "Get your harvest tested for Chronic Wasting Disease",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 3,
+              "ms_name": "Protect and manage wildlife"
+            }
+          ]
+        },
+        {
+          "ref": "Trapping licences",
+          "title": "Trapping licences",
+          "description": "Requires a licence to trap fur-bearing animals in B.C.",
+          "anchor_id": "WA-Trapping",
+          "services": [
+            {
+              "name": "Trap fur-bearing animals in B.C.",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Hunt in B.C."
+            }
+          ]
+        },
+        {
+          "ref": "Freshwater fishing licensing",
+          "title": "Freshwater fishing licensing",
+          "description": "Requires a valid freshwater fishing licence to fish for any species in non-tidal waters.",
+          "anchor_id": "WA-Fishing",
+          "services": [
+            {
+              "name": "Buy a freshwater fishing licence",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Fish in B.C. waters"
+            }
+          ]
+        },
+        {
+          "ref": "Angling guide licensing",
+          "title": "Angling guide licensing",
+          "description": "Requires a valid angling guide licence to provide guided freshwater fishing services.",
+          "anchor_id": "WA-AnglingGuide",
+          "services": [
+            {
+              "name": "Get an angling guide licence",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Fish in B.C. waters"
+            }
+          ]
+        },
+        {
+          "ref": "Freshwater fishing regulations",
+          "title": "Freshwater fishing regulations",
+          "description": "Sets water- and species-specific rules, bag limits and season dates for freshwater fishing.",
+          "anchor_id": "WA-FishingRegs",
+          "services": [
+            {
+              "name": "Check freshwater fishing regulations before you fish",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Fish in B.C. waters"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 5,
+    "sections_count": 18,
+    "services_with_leg_count": 22,
+    "services_multi_act_count": 0
+  }
+}

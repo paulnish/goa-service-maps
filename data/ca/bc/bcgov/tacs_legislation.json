@@ -1,0 +1,189 @@
+{
+  "prefix": "tacs",
+  "name": "Tourism, Arts, Culture and Sport",
+  "short_name": "Tourism, Arts, Culture & Sport",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#00838f",
+      "short_name": "B.C.'s tourism industry grows and diversifies",
+      "legend_label": "Tourism growth",
+      "main_services": [
+        { "number": 1, "name": "Grow and market a tourism business" },
+        { "number": 2, "name": "Fund tourism infrastructure and community development" },
+        { "number": 3, "name": "Develop a mountain resort" }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#6a1b9a",
+      "short_name": "Arts, culture and heritage thrive in every B.C. community",
+      "legend_label": "Arts, culture & heritage",
+      "main_services": [
+        { "number": 1, "name": "Get funding for arts, culture and creative industries" },
+        { "number": 2, "name": "Protect and manage heritage sites" },
+        { "number": 3, "name": "Visit and explore B.C.'s cultural institutions" }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#2e7d32",
+      "short_name": "British Columbians participate safely in amateur sport",
+      "legend_label": "Amateur sport",
+      "main_services": [
+        { "number": 1, "name": "Get funding and support for amateur sport" },
+        { "number": 2, "name": "Compete or host events in combat sports safely" }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#e65100",
+      "short_name": "B.C. hosts world-class events and celebrates its diversity",
+      "legend_label": "Events & diversity",
+      "main_services": [
+        { "number": 1, "name": "Host sport, arts and culture events" },
+        { "number": 2, "name": "Advance multiculturalism and anti-racism" }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "ACA",
+      "full_name": "Arts Council Act",
+      "color": "#6a1b9a",
+      "citation": "RSBC 1996, c 19",
+      "summary": "Continues the British Columbia Arts Council to provide support for arts and culture, allocate grant funding appropriated by the Legislature, and report annually on the status of arts and culture in B.C.",
+      "sections": [
+        {
+          "ref": "s.2-3",
+          "title": "Purposes and powers of the council",
+          "description": "The council supports arts and culture in B.C. through public education, research, advocacy and awarding grants from money appropriated by the Legislature.",
+          "anchor_id": "ACA-s2-3",
+          "services": [
+            {
+              "name": "Apply for an arts grant",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#6a1b9a",
+              "ms_number": 1,
+              "ms_name": "Get funding for arts, culture and creative industries"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "HCA",
+      "full_name": "Heritage Conservation Act",
+      "color": "#8d6e63",
+      "citation": "RSBC 1996, c 187",
+      "summary": "Protects Provincial heritage sites and objects, archaeological sites, burial places and heritage wrecks in British Columbia, and establishes the permit system for heritage inspections, investigations and alterations.",
+      "sections": [
+        {
+          "ref": "Part 2 (s.9-12.8)",
+          "title": "Permits and heritage protection",
+          "description": "Sets out the Provincial heritage register, protections for heritage sites and objects, and the permit system administered by the Archaeology Branch for heritage inspections, investigations and alterations.",
+          "anchor_id": "HCA-Part2",
+          "services": [
+            {
+              "name": "Get a permit to alter, study or excavate a heritage site",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#6a1b9a",
+              "ms_number": 2,
+              "ms_name": "Protect and manage heritage sites"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "MCA",
+      "full_name": "Multiculturalism Act",
+      "color": "#00838f",
+      "citation": "RSBC 1996, c 321",
+      "summary": "Sets out B.C.'s multiculturalism policy, requires every ministry and government corporation to report annually on initiatives promoting that policy, and authorizes the minister to make multiculturalism and anti-racism grants.",
+      "sections": [
+        {
+          "ref": "s.8-9",
+          "title": "Application for grants / Minister may provide grants",
+          "description": "A not-for-profit organization may apply to the minister for a grant for a program, and the minister may make grants that foster or promote the multiculturalism policies set out in the Act.",
+          "anchor_id": "MCA-s8-9",
+          "services": [
+            {
+              "name": "Apply for a multiculturalism and anti-racism grant",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#e65100",
+              "ms_number": 2,
+              "ms_name": "Advance multiculturalism and anti-racism"
+            }
+          ]
+        },
+        {
+          "ref": "s.7",
+          "title": "Additional reports",
+          "description": "Every ministry and government corporation must submit an annual report on initiatives to promote the Act's multiculturalism policies, and the minister must report annually to the Legislative Assembly.",
+          "anchor_id": "MCA-s7",
+          "services": [
+            {
+              "name": "Multiculturalism and anti-racism policy, research and annual reporting",
+              "type": "foundational",
+              "goal_number": null,
+              "goal_color": null,
+              "ms_number": null,
+              "ms_name": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "ATCA",
+      "full_name": "Athletic Commissioner Act",
+      "color": "#2e7d32",
+      "citation": "SBC 2012, c 29",
+      "summary": "Establishes the Athletic Commissioner to regulate professional boxing, mixed martial arts and other prescribed combat sports through licensing of participants and event permits for promoters.",
+      "sections": [
+        {
+          "ref": "Part 3 (s.9-12)",
+          "title": "Licences",
+          "description": "A person must hold a valid licence from the commissioner to promote, conduct or hold a professional contest or exhibition, or to participate as a contestant, judge, matchmaker, referee, second or timekeeper.",
+          "anchor_id": "ATCA-Licences",
+          "services": [
+            {
+              "name": "Get a licence to promote or compete in professional combat sports",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Compete or host events in combat sports safely"
+            }
+          ]
+        },
+        {
+          "ref": "Part 3 (s.13-18)",
+          "title": "Event permits",
+          "description": "A person must hold a valid event permit from the commissioner to promote, conduct or hold a professional contest or exhibition, subject to security, fee and safety requirements.",
+          "anchor_id": "ATCA-EventPermits",
+          "services": [
+            {
+              "name": "Get a permit to host a combat sport event",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Compete or host events in combat sports safely"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 4,
+    "sections_count": 5,
+    "services_with_leg_count": 5,
+    "services_multi_act_count": 0
+  }
+}

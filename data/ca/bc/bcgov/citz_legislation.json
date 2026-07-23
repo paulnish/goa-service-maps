@@ -1,0 +1,148 @@
+{
+  "prefix": "citz",
+  "name": "Ministry of Citizens' Services",
+  "short_name": "Citizens' Services",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#234075",
+      "short_name": "British Columbians can easily get help from government in person, by phone, and online",
+      "legend_label": "Access to Service BC",
+      "main_services": [
+        { "number": 1, "name": "Get help from Service BC" },
+        { "number": 2, "name": "Get government ID and life event documents" },
+        { "number": 3, "name": "Keep your information up to date with government" }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#0072ce",
+      "short_name": "People and businesses have secure digital identity to access government services online",
+      "legend_label": "Digital identity & access",
+      "main_services": [
+        { "number": 1, "name": "Set up secure digital ID" },
+        { "number": 2, "name": "Access government services online" }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#2e7d32",
+      "short_name": "Government information is open, protected, and accountable to the public",
+      "legend_label": "Open & accountable government",
+      "main_services": [
+        { "number": 1, "name": "Request government records" },
+        { "number": 2, "name": "Access open government information" }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#b45309",
+      "short_name": "B.C.'s registries, procurement, and connectivity connect people and businesses to the economy",
+      "legend_label": "Registries, procurement & connectivity",
+      "main_services": [
+        { "number": 1, "name": "Register and search a business or organization" },
+        { "number": 2, "name": "Do business with government" },
+        { "number": 3, "name": "Get connected to high-speed internet" }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "FOIPPA",
+      "full_name": "Freedom of Information and Protection of Privacy Act",
+      "color": "#2e7d32",
+      "citation": "RSBC 1996, c 165",
+      "summary": "Gives the public a right of access to records held by public bodies and protects personal privacy by governing the collection, use, and disclosure of personal information.",
+      "sections": [
+        {
+          "ref": "Part 2",
+          "title": "Right of access to records",
+          "description": "Sets out the right to request access to records in the custody or control of a public body, including access to one's own personal information and personal information about someone else.",
+          "anchor_id": "FOIPPA-Part2",
+          "services": [
+            {
+              "name": "Request information about government activities",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Request government records"
+            },
+            {
+              "name": "Request your personal information from government records",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Request government records"
+            },
+            {
+              "name": "Request personal information for someone else",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Request government records"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "ARDA",
+      "full_name": "Anti-Racism Data Act",
+      "color": "#2e7d32",
+      "citation": "SBC 2022, c 18",
+      "summary": "Enables government to collect, use, and disclose personal information to identify and eliminate systemic racism and advance racial equity, and requires annual publication of related statistics.",
+      "sections": [
+        {
+          "ref": "Part 5, s.19",
+          "title": "Publish statistics or other information",
+          "description": "Requires the director of statistics to publish statistics or other information respecting systemic racism and racial equity by June 1 each year.",
+          "anchor_id": "ARDA-Part5-s19",
+          "services": [
+            {
+              "name": "View statistics on systemic racism and racial equity",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Access open government information"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "BCA",
+      "full_name": "Business Corporations Act",
+      "color": "#b45309",
+      "citation": "SBC 2002, c 57",
+      "summary": "Governs the incorporation, recognition, and ongoing corporate filings of companies in British Columbia, administered through BC Registries.",
+      "sections": [
+        {
+          "ref": "Part 2",
+          "title": "Incorporation and corporate filings",
+          "description": "Governs how companies are incorporated, recognized, and maintained on the corporate register, including annual reports and changes to directors and share structure.",
+          "anchor_id": "BCA-Part2",
+          "services": [
+            {
+              "name": "Incorporate or manage a company",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#b45309",
+              "ms_number": 1,
+              "ms_name": "Register and search a business or organization"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 3,
+    "sections_count": 3,
+    "services_with_leg_count": 5,
+    "services_multi_act_count": 0
+  }
+}

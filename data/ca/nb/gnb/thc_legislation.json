@@ -1,0 +1,142 @@
+{
+  "prefix": "thc",
+  "name": "Tourism, Heritage and Culture",
+  "short_name": "Tourism, Heritage & Culture",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "People explore and enjoy New Brunswick",
+      "legend_label": "Parks & tourism",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Explore parks and attractions"
+        },
+        {
+          "number": 2,
+          "name": "Grow your tourism business"
+        },
+        {
+          "number": 3,
+          "name": "Get active in sport and recreation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "short_name": "Heritage and culture thrive",
+      "legend_label": "Heritage & culture",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Create, fund and experience culture"
+        },
+        {
+          "number": 2,
+          "name": "Grow film and creative industries"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "PkA",
+      "full_name": "Parks Act",
+      "color": "#0070c0",
+      "citation": "RSNB 2011, c 202",
+      "summary": "Establishment and management of provincial parks.",
+      "sections": [
+        {
+          "ref": "s.5, s.13",
+          "title": "Park powers and use",
+          "description": "Minister's powers over parks; limitations on use and occupancy.",
+          "anchor_id": "PkA-s5s13",
+          "services": [
+            {
+              "name": "Camp and explore provincial parks",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Explore parks and attractions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "HCA",
+      "full_name": "Heritage Conservation Act",
+      "color": "#2e7d32",
+      "citation": "SNB 2010, c H-4.05",
+      "summary": "Protection of heritage places and archaeological resources.",
+      "sections": [
+        {
+          "ref": "ss.38-44",
+          "title": "Alteration of provincial heritage places",
+          "description": "Approval to alter character-defining elements.",
+          "anchor_id": "HCA-ss3844",
+          "services": [
+            {
+              "name": "Get approval to alter a designated heritage place",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Create, fund and experience culture"
+            }
+          ]
+        },
+        {
+          "ref": "ss.12-17",
+          "title": "Field research permits",
+          "description": "Archaeological and palaeontological field research permits.",
+          "anchor_id": "HCA-ss1217",
+          "services": [
+            {
+              "name": "Get a permit for archaeological work",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Create, fund and experience culture"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "ArchA",
+      "full_name": "Archives Act",
+      "color": "#b45309",
+      "citation": "SNB 1977, c A-11.1",
+      "summary": "Preservation of and access to the provincial documentary record.",
+      "sections": [
+        {
+          "ref": "s.10",
+          "title": "Public inspection of public records",
+          "description": "Public inspection of transferred records, with request and review process (ss.10.1-10.8).",
+          "anchor_id": "ArchA-s10",
+          "services": [
+            {
+              "name": "Research the provincial archives",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Create, fund and experience culture"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 3,
+    "sections_count": 4,
+    "services_with_leg_count": 4,
+    "services_multi_act_count": 0
+  }
+}

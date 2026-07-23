@@ -1,0 +1,1021 @@
+{
+  "prefix": "elg",
+  "full_name": "Environment and Local Government",
+  "short_name": "Environment & Local Government",
+  "blurb": "Protects New Brunswick's environment through assessments, approvals and monitoring, leads climate change action, and supports strong, accountable local governments.",
+  "nav_name": "Environment and Local Government",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "title": "GOAL 1",
+      "short_name": "The environment is protected for current and future generations",
+      "legend_label": "Environmental protection",
+      "description": "Projects are assessed, facilities are approved and monitored, and people can see the state of their environment.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get environmental approvals for your project",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Find out if your project needs an environmental impact assessment",
+              "desc": "Screening and registration of projects that may require an environmental impact assessment before proceeding.",
+              "users": "Project proponents, developers",
+              "user_groups": [
+                "Industry",
+                "Municipalities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/environment-local-government.html",
+                  "url": "https://www.gnb.ca/en/org/environment-local-government.html"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Environmental assessment branch",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CEA",
+                  "color": "#0070c0",
+                  "full_name": "Clean Environment Act  -  Environmental impact assessment"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "environmental_requirements",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Get an approval to operate a facility with air, water or waste emissions",
+              "desc": "Approvals to construct and operate facilities with air emissions, wastewater discharges, or waste management activities, with ongoing compliance conditions.",
+              "users": "Facility operators",
+              "user_groups": [
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/environment-local-government.html",
+                  "url": "https://www.gnb.ca/en/org/environment-local-government.html"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Approval application",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CEA",
+                  "color": "#0070c0",
+                  "full_name": "Clean Environment Act  -  Registrations, licences, permits and approvals"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Update the Clean Air Act and Clean Water Act to guarantee the right to clean air and water"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "environmental_requirements",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Check air quality and environmental conditions",
+                    "ministry": "elg"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Apply for a watercourse and wetland alteration permit",
+              "desc": "Permits for any work in or near a watercourse or wetland — from shoreline stabilization at a cottage to major construction.",
+              "users": "Property owners, contractors, developers",
+              "user_groups": [
+                "Property owners",
+                "Industry & contractors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/environment-local-government.html",
+                  "url": "https://www.gnb.ca/en/org/environment-local-government.html"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Alteration permit application",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CWA",
+                  "color": "#2e7d32",
+                  "full_name": "Clean Water Act  -  Alteration of watercourse or wetland"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "scenario_dependent",
+                  "domain": "housing_property"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "environmental_requirements"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Know and report on your environment",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Check air quality and environmental conditions",
+              "desc": "Public air quality, water quality, and environmental monitoring information for communities across the province.",
+              "users": "General public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Environmental monitoring data",
+                  "url": "https://www.gnb.ca/en/org/environment-local-government.html"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CAA",
+                  "color": "#b45309",
+                  "full_name": "Clean Air Act  -  Release prohibition and air quality objectives"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Get an approval to operate a facility with air, water or waste emissions",
+                    "ministry": "elg"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Report a spill or environmental emergency",
+              "desc": "24-hour reporting of petroleum and chemical spills and other environmental emergencies.",
+              "users": "Anyone witnessing a spill",
+              "user_groups": [
+                "General public",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "24-hour spill reporting line",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CEA",
+                  "color": "#0070c0",
+                  "full_name": "Clean Environment Act  -  Requirement to notify of a release"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "societal_needs_supports",
+                  "domain": "safety_emergencies"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "environmental_requirements"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Have your well water tested",
+              "desc": "Analysis of private well water for quality and safety.",
+              "users": "Homeowners with wells",
+              "user_groups": [
+                "Property owners",
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Sample drop-off",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Well water testing",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/elg/services/services_renderer.3877.Water_Well_Testing.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/elg/services/services_renderer.3877.Water_Well_Testing.html"
+              }
+            },
+            {
+              "name": "Request environmental records for a property",
+              "desc": "A search of environmental records — spills, tanks, contamination — tied to a specific property.",
+              "users": "Property buyers, lawyers, lenders",
+              "user_groups": [
+                "Property owners",
+                "Legal professionals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Environmental records requests",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "scenario_dependent",
+                  "domain": "housing_property"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "environmental_requirements"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Reduce and recycle waste",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Return beverage containers and recycle household materials",
+              "desc": "The deposit-refund system for beverage containers and regulated recycling programs divert waste from landfills.",
+              "users": "Households",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Redemption centre",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/environment-local-government.html",
+                  "url": "https://www.gnb.ca/en/org/environment-local-government.html"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CEA",
+                  "color": "#0070c0",
+                  "full_name": "Clean Environment Act  -  Designated materials"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "name": "Work with regulated substances and sites",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get certified as a pesticide applicator",
+              "desc": "Certification exam required to apply pesticides in regulated settings.",
+              "users": "Applicators, growers, businesses",
+              "user_groups": [
+                "Workers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Certification exam",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Applicator certification",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/elg/services/services_renderer.2915.Pesticide_Applicator_Certificate.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "professional_credentials",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/elg/services/services_renderer.2915.Pesticide_Applicator_Certificate.html"
+              }
+            },
+            {
+              "name": "License a pesticide application or sales business",
+              "desc": "Operator and vendor licences for commercially applying or selling pesticides.",
+              "users": "Pest control and retail businesses",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Pesticide business licence",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/elg/services/services_renderer.2876.Pesticide_Operator_Licence.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/elg/services/services_renderer.2876.Pesticide_Operator_Licence.html"
+              }
+            },
+            {
+              "name": "Get a permit to drill or construct water wells",
+              "desc": "Driller and contractor permits required to construct water wells.",
+              "users": "Well drilling contractors",
+              "user_groups": [
+                "Industry & contractors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Well driller permit",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/elg/services/services_renderer.3876.Water_Well_Driller_Permit.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/elg/services/services_renderer.3876.Water_Well_Driller_Permit.html"
+              }
+            },
+            {
+              "name": "License a petroleum storage site",
+              "desc": "Licences and environmental approvals for operating fuel storage sites.",
+              "users": "Fuel retailers, site owners",
+              "user_groups": [
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Storage site licence",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/elg/services/services_renderer.2896.Petroleum_Storage_Site_Licence.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "environmental_requirements",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/elg/services/services_renderer.2896.Petroleum_Storage_Site_Licence.html"
+              }
+            },
+            {
+              "name": "Get licensed to install petroleum storage tanks",
+              "desc": "Installer licences for installing or removing petroleum storage tank systems.",
+              "users": "Tank installation contractors",
+              "user_groups": [
+                "Industry & contractors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Installer licence",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/elg/services/services_renderer.4336.Petroleum_Storage_Tank_Installer_s_Licence.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "safety_codes_standards",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/elg/services/services_renderer.4336.Petroleum_Storage_Tank_Installer_s_Licence.html"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "title": "GOAL 2",
+      "short_name": "New Brunswick acts on climate change",
+      "legend_label": "Climate action",
+      "description": "The province reduces emissions and helps communities adapt to a changing climate, including coastal flooding and extreme weather.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Reduce emissions and adapt to climate change",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Access climate change adaptation information and funding",
+              "desc": "Flood mapping, coastal adaptation guidance, and funding that helps communities and organizations prepare for climate impacts.",
+              "users": "Municipalities, organizations, residents",
+              "user_groups": [
+                "General public",
+                "Municipalities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/environment-local-government.html",
+                  "url": "https://www.gnb.ca/en/org/environment-local-government.html"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CCA",
+                  "color": "#6a1b9a",
+                  "full_name": "Climate Change Act  -  Climate Change Fund"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "tip": "Implement a coastal erosion plan to protect communities"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Check flood hazard maps for your property",
+              "desc": "Flood hazard mapping shows historical and projected flood risk so property owners and buyers can make informed decisions.",
+              "users": "Property owners and buyers",
+              "user_groups": [
+                "Property owners",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Flood hazard maps",
+                  "url": "https://www.gnb.ca/en/org/environment-local-government.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Get funding for a community environmental project",
+              "desc": "Provincial funding for community projects that protect, restore, or raise awareness of the environment.",
+              "users": "Non-profits, municipalities, schools",
+              "user_groups": [
+                "Non-profit organizations",
+                "Municipalities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Environmental project funding",
+                  "url": "https://www.gnb.ca/en/topic/environment-resources/air-quality-environmental-programs/environmental-trust-fund.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/en/topic/environment-resources/air-quality-environmental-programs/environmental-trust-fund.html"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#b45309",
+      "title": "GOAL 3",
+      "short_name": "Local governance is strong and accountable",
+      "legend_label": "Local governance",
+      "description": "Following local governance reform, the department supports municipalities and rural districts and the citizens they serve.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Engage with your local government",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Find information about your local government and its services",
+              "desc": "Information on municipalities, rural districts, and regional service commissions — boundaries, governance, and the services they deliver.",
+              "users": "Residents, property owners",
+              "user_groups": [
+                "General public",
+                "Municipalities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Local government directory",
+                  "url": "https://www.gnb.ca/en/org/environment-local-government.html"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "LGA",
+                  "color": "#c62828",
+                  "full_name": "Local Governance Act  -  Legal status, purposes and powers"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 5,
+                  "tip": "Work with municipalities to implement comprehensive and fair fiscal reform"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Participate in local land use planning decisions",
+              "desc": "Residents can take part in community plans, rezoning processes, and planning appeals in their local government or rural district.",
+              "users": "Residents, property owners",
+              "user_groups": [
+                "General public",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Local government or regional service commission",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/environment-local-government.html",
+                  "url": "https://www.gnb.ca/en/org/environment-local-government.html"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CPA",
+                  "color": "#00695c",
+                  "full_name": "Community Planning Act  -  Municipal plan adoption and public notice"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "License your dog in a rural district",
+              "desc": "Registration and licensing of dogs in unincorporated areas.",
+              "users": "Rural dog owners",
+              "user_groups": [
+                "Individuals",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Service New Brunswick centre",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Get a licence to run a kennel, pet shop or animal shelter",
+              "desc": "Pet establishment licences for boarding, breeding, selling, or sheltering animals.",
+              "users": "Pet businesses, shelters",
+              "user_groups": [
+                "Business owners",
+                "Non-profit organizations"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Pet establishment licence",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/elg/services/services_renderer.2955.Pet_Establishment_Licence.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/elg/services/services_renderer.2955.Pet_Establishment_Licence.html"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Administer local governance legislation and community funding",
+      "desc": "Legislative framework, community funding, and equalization support for local governments.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "identity_credentials_access",
+        "domain": "privacy_government_access",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Monitor and enforce environmental compliance",
+      "desc": "Inspections, investigations, and enforcement of environmental legislation.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "regulatory_compliance",
+        "domain": "environmental_requirements",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    }
+  ],
+  "mandate_date": "November 2024",
+  "mandate_minister": "Gilles LePage (Environment and Climate Change); Aaron Kennedy (Local Government)",
+  "mandate_pdf": "https://www.gnb.ca/en/gov/contacts/members-executive-council/mandates-letters.html",
+  "cross_cutting": [
+    "Healthcare",
+    "Affordability and Housing",
+    "Education",
+    "Economic Development",
+    "Environment",
+    "Leadership You Can Trust"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Update the Clean Air Act and Clean Water Act to guarantee the right to clean air and water",
+      "mapping": "-> Get an approval to operate a facility with air, water or waste emissions"
+    },
+    {
+      "number": 2,
+      "text": "Increase restrictions on pesticide and herbicide use, including examining an aerial spraying ban"
+    },
+    {
+      "number": 3,
+      "text": "Re-evaluate glyphosate safety with new, NB-specific data"
+    },
+    {
+      "number": 4,
+      "text": "Implement a coastal erosion plan to protect communities",
+      "mapping": "-> Access climate change adaptation information and funding"
+    },
+    {
+      "number": 5,
+      "text": "Work with municipalities to implement comprehensive and fair fiscal reform",
+      "mapping": "-> Find information about your local government and its services"
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "Industry",
+    "Municipalities",
+    "Property owners",
+    "Industry & contractors",
+    "General public",
+    "Individuals",
+    "Legal professionals",
+    "Workers",
+    "Businesses & employers",
+    "Non-profit organizations",
+    "Business owners"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "prefix": "elg",
+  "name": "Environment and Local Government",
+  "short_name": "Environment & Local Government",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "The environment is protected for current and future generations",
+      "legend_label": "Environmental protection",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get environmental approvals for your project"
+        },
+        {
+          "number": 2,
+          "name": "Know and report on your environment"
+        },
+        {
+          "number": 3,
+          "name": "Reduce and recycle waste"
+        },
+        {
+          "number": 4,
+          "name": "Work with regulated substances and sites"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "short_name": "New Brunswick acts on climate change",
+      "legend_label": "Climate action",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Reduce emissions and adapt to climate change"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#b45309",
+      "short_name": "Local governance is strong and accountable",
+      "legend_label": "Local governance",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Engage with your local government"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "CEA",
+      "full_name": "Clean Environment Act",
+      "color": "#0070c0",
+      "citation": "RSNB 1973, c C-6",
+      "summary": "Core environmental protection statute — assessments, approvals, spills, and designated materials.",
+      "sections": [
+        {
+          "ref": "s.31.1",
+          "title": "Environmental impact assessment",
+          "description": "EIA regime — registration, review, and approval of undertakings; detail in NB Reg 87-83.",
+          "anchor_id": "CEA-s311",
+          "services": [
+            {
+              "name": "Find out if your project needs an environmental impact assessment",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Get environmental approvals for your project"
+            }
+          ]
+        },
+        {
+          "ref": "s.12",
+          "title": "Registrations, licences, permits and approvals",
+          "description": "Operative approvals provision for facilities with emissions or discharges.",
+          "anchor_id": "CEA-s12",
+          "services": [
+            {
+              "name": "Get an approval to operate a facility with air, water or waste emissions",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Get environmental approvals for your project"
+            }
+          ]
+        },
+        {
+          "ref": "s.4.3",
+          "title": "Requirement to notify of a release",
+          "description": "Duty to notify the Minister of a contaminant release (added 2023).",
+          "anchor_id": "CEA-s43",
+          "services": [
+            {
+              "name": "Report a spill or environmental emergency",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Know and report on your environment"
+            }
+          ]
+        },
+        {
+          "ref": "NB Reg 2024-37",
+          "title": "Designated materials",
+          "description": "Extended producer responsibility for beverage containers and other designated materials (replaced the repealed Beverage Containers Act, April 2024).",
+          "anchor_id": "CEA-NBReg202437",
+          "services": [
+            {
+              "name": "Return beverage containers and recycle household materials",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 3,
+              "ms_name": "Reduce and recycle waste"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CWA",
+      "full_name": "Clean Water Act",
+      "color": "#2e7d32",
+      "citation": "SNB 1989, c C-6.1",
+      "summary": "Protects water sources, watercourses, and wetlands.",
+      "sections": [
+        {
+          "ref": "s.15",
+          "title": "Alteration of watercourse or wetland",
+          "description": "Permit required for alterations; detail in NB Reg 90-80.",
+          "anchor_id": "CWA-s15",
+          "services": [
+            {
+              "name": "Apply for a watercourse and wetland alteration permit",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Get environmental approvals for your project"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CAA",
+      "full_name": "Clean Air Act",
+      "color": "#b45309",
+      "citation": "SNB 1997, c C-5.2",
+      "summary": "Air quality management and emission controls.",
+      "sections": [
+        {
+          "ref": "s.6, s.8",
+          "title": "Release prohibition and air quality objectives",
+          "description": "Prohibition on contaminant release; Minister establishes air quality objectives; detail in NB Reg 97-133.",
+          "anchor_id": "CAA-s6s8",
+          "services": [
+            {
+              "name": "Check air quality and environmental conditions",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Know and report on your environment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CCA",
+      "full_name": "Climate Change Act",
+      "color": "#6a1b9a",
+      "citation": "SNB 2018, c 11",
+      "summary": "Climate targets and the Climate Change Fund.",
+      "sections": [
+        {
+          "ref": "s.4",
+          "title": "Climate Change Fund",
+          "description": "Establishes the Climate Change Fund for mitigation and adaptation.",
+          "anchor_id": "CCA-s4",
+          "services": [
+            {
+              "name": "Access climate change adaptation information and funding",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Reduce emissions and adapt to climate change"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "LGA",
+      "full_name": "Local Governance Act",
+      "color": "#c62828",
+      "citation": "SNB 2017, c 18",
+      "summary": "Framework for municipalities and rural districts.",
+      "sections": [
+        {
+          "ref": "Part 2",
+          "title": "Legal status, purposes and powers",
+          "description": "Local governments as bodies corporate; purposes and by-law powers (ss.4-10).",
+          "anchor_id": "LGA-Part2",
+          "services": [
+            {
+              "name": "Find information about your local government and its services",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#b45309",
+              "ms_number": 1,
+              "ms_name": "Engage with your local government"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CPA",
+      "full_name": "Community Planning Act",
+      "color": "#00695c",
+      "citation": "SNB 2017, c 19",
+      "summary": "Land use planning and development approval framework.",
+      "sections": [
+        {
+          "ref": "s.21, s.25",
+          "title": "Municipal plan adoption and public notice",
+          "description": "Plan adoption and approval; public presentation and 30-day objection window; zoning by-laws (s.53).",
+          "anchor_id": "CPA-s21s25",
+          "services": [
+            {
+              "name": "Participate in local land use planning decisions",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#b45309",
+              "ms_number": 1,
+              "ms_name": "Engage with your local government"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 6,
+    "sections_count": 9,
+    "services_with_leg_count": 9,
+    "services_multi_act_count": 0
+  }
+}

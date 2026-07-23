@@ -1,0 +1,236 @@
+{
+  "prefix": "ecc",
+  "name": "Ministry of Education and Child Care",
+  "short_name": "Education & Child Care",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "Every child in B.C. can access a K-12 education that fits their family",
+      "legend_label": "K-12 access & choice",
+      "main_services": [
+        { "number": 1, "name": "Enrol your child in school" },
+        { "number": 2, "name": "Choose an independent or alternative school" },
+        { "number": 3, "name": "Support your child's safety and wellbeing at school" }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "short_name": "Students progress through school and graduate prepared for what's next",
+      "legend_label": "Graduation & records",
+      "main_services": [
+        { "number": 1, "name": "Manage your student record" },
+        { "number": 2, "name": "Graduate and plan your next step" }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#6a1b9a",
+      "short_name": "Families can access affordable, quality early learning and child care",
+      "legend_label": "Affordable child care",
+      "main_services": [
+        { "number": 1, "name": "Find and pay for child care" },
+        { "number": 2, "name": "Access inclusive and Indigenous child care supports" }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#b45309",
+      "short_name": "B.C.'s child care sector is safe, staffed and growing",
+      "legend_label": "Child care workforce & growth",
+      "main_services": [
+        { "number": 1, "name": "Work as an early childhood educator" },
+        { "number": 2, "name": "Operate a licensed child care facility" }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "SA",
+      "full_name": "School Act",
+      "color": "#0070c0",
+      "citation": "RSBC 1996, c 412",
+      "summary": "Governs B.C.'s public K-12 school system, including student enrolment, homeschool registration, online learning, standard educational programs, early learning programs, and the B.C. Certificate of Graduation and Adult Graduation Diploma.",
+      "sections": [
+        {
+          "ref": "s.3",
+          "title": "Eligibility to enrol in an educational program",
+          "description": "Sets out when a child is permitted to enrol in an educational program provided by a board.",
+          "anchor_id": "SA-s3",
+          "services": [
+            { "name": "Register your child for kindergarten or elementary school", "type": "supporting", "goal_number": 1, "goal_color": "#0070c0", "ms_number": 1, "ms_name": "Enrol your child in school" }
+          ]
+        },
+        {
+          "ref": "s.1",
+          "title": "Online learning and online learning school definitions",
+          "description": "Defines online learning and online learning schools; a student ordinarily resident in B.C. may enrol with a Provincial or District Online Learning School.",
+          "anchor_id": "SA-s1-online",
+          "services": [
+            { "name": "Enrol in online learning for Kindergarten to Grade 12", "type": "supporting", "goal_number": 1, "goal_color": "#0070c0", "ms_number": 1, "ms_name": "Enrol your child in school" }
+          ]
+        },
+        {
+          "ref": "s.13",
+          "title": "Registration of children educated at home",
+          "description": "A public school principal must register the child of any parent who wishes the child to be educated at home; the principal offers evaluation services and loan of resource materials free of charge.",
+          "anchor_id": "SA-s13",
+          "services": [
+            { "name": "Register your child as a homeschooler", "type": "supporting", "goal_number": 1, "goal_color": "#0070c0", "ms_number": 1, "ms_name": "Enrol your child in school" }
+          ]
+        },
+        {
+          "ref": "s.82",
+          "title": "Standard educational program",
+          "description": "Defines the standard educational program, including programs provided according to an individual education plan for students with additional learning needs.",
+          "anchor_id": "SA-s82",
+          "services": [
+            { "name": "Get support for a child with additional learning needs", "type": "supporting", "goal_number": 1, "goal_color": "#0070c0", "ms_number": 3, "ms_name": "Support your child's safety and wellbeing at school" }
+          ]
+        },
+        {
+          "ref": "s.168(6)(a)",
+          "title": "British Columbia Certificate of Graduation",
+          "description": "Authorizes the minister to issue the British Columbia Certificate of Graduation (Dogwood Diploma) to students who meet graduation requirements.",
+          "anchor_id": "SA-s168-6a",
+          "services": [
+            { "name": "Meet B.C. graduation requirements for the Dogwood Diploma", "type": "supporting", "goal_number": 2, "goal_color": "#2e7d32", "ms_number": 2, "ms_name": "Graduate and plan your next step" }
+          ]
+        },
+        {
+          "ref": "s.168(6)(b)",
+          "title": "British Columbia Adult Graduation Diploma",
+          "description": "Authorizes the minister to issue the British Columbia Adult Graduation Diploma (Adult Dogwood) to eligible adult learners.",
+          "anchor_id": "SA-s168-6b",
+          "services": [
+            { "name": "Get an Adult Graduation Diploma", "type": "supporting", "goal_number": 2, "goal_color": "#2e7d32", "ms_number": 2, "ms_name": "Graduate and plan your next step" }
+          ]
+        },
+        {
+          "ref": "s.1",
+          "title": "Early learning program definition",
+          "description": "Defines an early learning program as one for children who are less than school age, designed to improve readiness for kindergarten, that a parent or designated caregiver must attend with the child (the basis for StrongStart BC).",
+          "anchor_id": "SA-s1-earlylearning",
+          "services": [
+            { "name": "Attend a free StrongStart BC early learning program", "type": "supporting", "goal_number": 3, "goal_color": "#6a1b9a", "ms_number": 1, "ms_name": "Find and pay for child care" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "ISA",
+      "full_name": "Independent School Act",
+      "color": "#6a1b9a",
+      "citation": "RSBC 1996, c 216",
+      "summary": "Provides for the classification, certification and funding of independent schools in B.C., and for registration of homeschooled children with independent school authorities.",
+      "sections": [
+        {
+          "ref": "s.10",
+          "title": "Registration of home schooled children",
+          "description": "An independent school authority may register a homeschooled child and may set a registration fee; the school offers evaluation services and loan of resource materials free of charge.",
+          "anchor_id": "ISA-s10",
+          "services": [
+            { "name": "Register your child as a homeschooler", "type": "supporting", "goal_number": 1, "goal_color": "#0070c0", "ms_number": 1, "ms_name": "Enrol your child in school" }
+          ]
+        },
+        {
+          "ref": "s.4 and Schedule",
+          "title": "Classification of independent schools",
+          "description": "Sets out the Group 1-4 classification system and the requirements a prospective independent school authority must satisfy for certification.",
+          "anchor_id": "ISA-s4-schedule",
+          "services": [
+            { "name": "Establish a new independent school", "type": "supporting", "goal_number": 1, "goal_color": "#0070c0", "ms_number": 2, "ms_name": "Choose an independent or alternative school" }
+          ]
+        },
+        {
+          "ref": "s.12, s.13",
+          "title": "Grant; Special purpose grants",
+          "description": "Authorizes per-student operating grants and special purpose grants to certified independent school authorities.",
+          "anchor_id": "ISA-s12-13",
+          "services": [
+            { "name": "Get funding as a certified independent school", "type": "supporting", "goal_number": 1, "goal_color": "#0070c0", "ms_number": 2, "ms_name": "Choose an independent or alternative school" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "TA",
+      "full_name": "Teachers Act",
+      "color": "#b45309",
+      "citation": "SBC 2011, c 19",
+      "summary": "Establishes the Commissioner and Director of Certification, the B.C. Teachers' Council, and the certification framework required to teach in B.C. public and most independent schools.",
+      "sections": [
+        {
+          "ref": "Part 4",
+          "title": "Certification and Letters of Permission",
+          "description": "Section 30 (Issuance of certificate) and section 35 (Issuance of letter of permission) set out the process for obtaining a certificate of qualification to teach in B.C.",
+          "anchor_id": "TA-Part4",
+          "services": [
+            { "name": "Get certified to teach in B.C. schools", "type": "supporting", "goal_number": 2, "goal_color": "#2e7d32", "ms_number": 2, "ms_name": "Graduate and plan your next step" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CCALA",
+      "full_name": "Community Care and Assisted Living Act",
+      "color": "#c62828",
+      "citation": "SBC 2002, c 75",
+      "summary": "Requires a licence to provide care to 3 or more children (a child care program) and governs inspection, compliance and enforcement of licensed community care facilities; detail is set out in the Child Care Licensing Regulation.",
+      "sections": [
+        {
+          "ref": "s.34",
+          "title": "Licensing of community care facilities",
+          "description": "Requires a person providing a prescribed child care program to hold a licence issued under the Act; regulation-making authority for the Child Care Licensing Regulation.",
+          "anchor_id": "CCALA-s34",
+          "services": [
+            { "name": "Open a licensed child care facility", "type": "supporting", "goal_number": 4, "goal_color": "#b45309", "ms_number": 2, "ms_name": "Operate a licensed child care facility" }
+          ]
+        },
+        {
+          "ref": "Inspection and enforcement",
+          "title": "Inspection, compliance and complaints",
+          "description": "Health authority licensing officers inspect licensed facilities and investigate complaints about the health, safety or well-being of children in care.",
+          "anchor_id": "CCALA-inspection",
+          "services": [
+            { "name": "Make a complaint about a licensed child care facility", "type": "supporting", "goal_number": 3, "goal_color": "#6a1b9a", "ms_number": 2, "ms_name": "Access inclusive and Indigenous child care supports" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CCLR",
+      "full_name": "Child Care Licensing Regulation",
+      "color": "#c62828",
+      "citation": "B.C. Reg. 332/2007 (under the Community Care and Assisted Living Act, S.B.C. 2002, c. 75)",
+      "summary": "Sets out facility, health, safety, staffing and early childhood educator qualification requirements for licensed child care programs, and exemptions such as StrongStart BC and school-age summer camps.",
+      "sections": [
+        {
+          "ref": "s.3",
+          "title": "Early childhood educator qualification requirements",
+          "description": "Requires staff providing care in a licensed child care facility to hold the applicable ECE Registry certification.",
+          "anchor_id": "CCLR-s3-ece",
+          "services": [
+            { "name": "Get certified as an early childhood educator", "type": "supporting", "goal_number": 4, "goal_color": "#b45309", "ms_number": 1, "ms_name": "Work as an early childhood educator" }
+          ]
+        },
+        {
+          "ref": "Facility standards",
+          "title": "Facility, health, safety and staffing requirements",
+          "description": "Sets minimum requirements for facility design, ratios, health and safety that a licensee must meet to obtain and keep a child care licence.",
+          "anchor_id": "CCLR-facility",
+          "services": [
+            { "name": "Open a licensed child care facility", "type": "supporting", "goal_number": 4, "goal_color": "#b45309", "ms_number": 2, "ms_name": "Operate a licensed child care facility" }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 5,
+    "sections_count": 15,
+    "services_with_leg_count": 13,
+    "services_multi_act_count": 2
+  }
+}

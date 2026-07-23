@@ -1,0 +1,459 @@
+{
+  "prefix": "env",
+  "name": "Ministry of Environment and Parks",
+  "short_name": "Environment & Parks",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#2e7d32",
+      "short_name": "British Columbians enjoy safe, well-managed parks and protected areas",
+      "legend_label": "Parks & outdoor recreation",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Camp and visit BC Parks"
+        },
+        {
+          "number": 2,
+          "name": "Get authorization to operate or hold an event in a park"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#1565c0",
+      "short_name": "B.C.'s air, land and water are protected from pollution and contamination",
+      "legend_label": "Pollution prevention & waste",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get authorization to discharge waste to the environment"
+        },
+        {
+          "number": 2,
+          "name": "Investigate and remediate a contaminated site"
+        },
+        {
+          "number": 3,
+          "name": "Respond to spills and pollution"
+        },
+        {
+          "number": 4,
+          "name": "Reduce waste and recycle"
+        },
+        {
+          "number": 5,
+          "name": "Sell, use or manage pesticides safely"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#e65100",
+      "short_name": "Major projects undergo rigorous, efficient environmental assessment",
+      "legend_label": "Environmental assessments",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get an environmental assessment for a major project"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#00838f",
+      "short_name": "B.C.'s air quality is monitored and natural resource laws are enforced",
+      "legend_label": "Air quality & enforcement",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Check air quality before you go outside"
+        },
+        {
+          "number": 2,
+          "name": "Get help with human-wildlife conflict and natural resource enforcement"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "EMA",
+      "full_name": "Environmental Management Act",
+      "color": "#1565c0",
+      "citation": "SBC 2003, c. 53",
+      "summary": "The province's core environmental protection statute. Governs waste discharge authorizations, contaminated site remediation, spill prevention and response, air contaminant controls, recycling regulation, and establishes the Conservation Officer Service.",
+      "sections": [
+        {
+          "ref": "s. 6",
+          "title": "Waste disposal authorizations",
+          "description": "Prohibits introducing waste into the environment except as authorized by permit, approval or regulation.",
+          "anchor_id": "EMA-s6",
+          "services": [
+            {
+              "name": "Apply for a waste discharge permit or approval",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Get authorization to discharge waste to the environment"
+            },
+            {
+              "name": "Check the status of a waste discharge authorization application",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Get authorization to discharge waste to the environment"
+            }
+          ]
+        },
+        {
+          "ref": "Part 9.1",
+          "title": "Compliance and enforcement",
+          "description": "Inspection, seizure, administrative penalty and other compliance tools used to enforce authorizations.",
+          "anchor_id": "EMA-Part9-1",
+          "services": [
+            {
+              "name": "Comply with and report under a waste discharge authorization",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Get authorization to discharge waste to the environment"
+            }
+          ]
+        },
+        {
+          "ref": "s. 40",
+          "title": "Site disclosure statements",
+          "description": "Requires disclosure of information when a site changes use, ownership or zoning in circumstances that may indicate contamination.",
+          "anchor_id": "EMA-s40",
+          "services": [
+            {
+              "name": "Identify and disclose a potentially contaminated site",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Investigate and remediate a contaminated site"
+            }
+          ]
+        },
+        {
+          "ref": "Part 4",
+          "title": "Contaminated site remediation",
+          "description": "Framework for identifying, investigating and remediating contaminated sites and allocating liability.",
+          "anchor_id": "EMA-Part4",
+          "services": [
+            {
+              "name": "Apply for contaminated site remediation services",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Investigate and remediate a contaminated site"
+            }
+          ]
+        },
+        {
+          "ref": "s. 53",
+          "title": "Approvals in principle and certificates of compliance",
+          "description": "Provides for certificates confirming a contaminated site has been remediated to the required standard.",
+          "anchor_id": "EMA-s53",
+          "services": [
+            {
+              "name": "Get a certificate of compliance for a remediated site",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#1565c0",
+              "ms_number": 2,
+              "ms_name": "Investigate and remediate a contaminated site"
+            }
+          ]
+        },
+        {
+          "ref": "s. 79",
+          "title": "Spill prevention and reporting",
+          "description": "Requires responsible persons to report spills and take reasonable measures to prevent and mitigate them.",
+          "anchor_id": "EMA-s79",
+          "services": [
+            {
+              "name": "Report a spill or environmental emergency",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#1565c0",
+              "ms_number": 3,
+              "ms_name": "Respond to spills and pollution"
+            }
+          ]
+        },
+        {
+          "ref": "Part 9",
+          "title": "Conservation Officer Service",
+          "description": "Establishes the Conservation Officer Service and its powers to investigate and enforce fisheries, wildlife and environmental protection laws.",
+          "anchor_id": "EMA-Part9",
+          "services": [
+            {
+              "name": "Report a poacher, polluter or environmental violation (RAPP)",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#1565c0",
+              "ms_number": 3,
+              "ms_name": "Respond to spills and pollution"
+            },
+            {
+              "name": "Contact the Conservation Officer Service",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#00838f",
+              "ms_number": 2,
+              "ms_name": "Get help with human-wildlife conflict and natural resource enforcement"
+            }
+          ]
+        },
+        {
+          "ref": "Recycling Regulation",
+          "title": "Extended Producer Responsibility",
+          "description": "Regulation under the EMA requiring producers of designated products to fund and manage end-of-life recycling programs.",
+          "anchor_id": "EMA-RecyclingReg",
+          "services": [
+            {
+              "name": "Find where to recycle a product",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#1565c0",
+              "ms_number": 4,
+              "ms_name": "Reduce waste and recycle"
+            },
+            {
+              "name": "Develop and file an extended producer responsibility stewardship plan",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#1565c0",
+              "ms_number": 4,
+              "ms_name": "Reduce waste and recycle"
+            }
+          ]
+        },
+        {
+          "ref": "s. 72",
+          "title": "Control of air contaminants",
+          "description": "Authority to regulate the release of air contaminants to protect air quality.",
+          "anchor_id": "EMA-s72",
+          "services": [
+            {
+              "name": "Check current air quality and health index readings",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#00838f",
+              "ms_number": 1,
+              "ms_name": "Check air quality before you go outside"
+            }
+          ]
+        },
+        {
+          "ref": "s. 76",
+          "title": "Burning regulations",
+          "description": "Regulates open burning, including ventilation index restrictions on when burning is permitted.",
+          "anchor_id": "EMA-s76",
+          "services": [
+            {
+              "name": "Get a permit to conduct open burning",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#00838f",
+              "ms_number": 1,
+              "ms_name": "Check air quality before you go outside"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "PA",
+      "full_name": "Park Act",
+      "color": "#2e7d32",
+      "citation": "RSBC 1996, c. 344",
+      "summary": "Governs the establishment, classification and management of provincial parks, conservancies and recreation areas, including permits for occupancy, commercial activity and film production.",
+      "sections": [
+        {
+          "ref": "s. 20",
+          "title": "Issuing permits",
+          "description": "Authority for the director to issue permits for the use and occupancy of park land.",
+          "anchor_id": "PA-s20",
+          "services": [
+            {
+              "name": "Reserve a provincial park campsite",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Camp and visit BC Parks"
+            },
+            {
+              "name": "Reserve a backcountry campsite, shelter or canoe circuit",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Camp and visit BC Parks"
+            },
+            {
+              "name": "Apply for a park use permit",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Get authorization to operate or hold an event in a park"
+            }
+          ]
+        },
+        {
+          "ref": "s. 16",
+          "title": "Occupancy and use of land restricted",
+          "description": "Restricts occupancy and use of park land except as authorized, the basis for day-use pass and capacity management measures.",
+          "anchor_id": "PA-s16",
+          "services": [
+            {
+              "name": "Get a day-use pass for a busy provincial park",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Camp and visit BC Parks"
+            }
+          ]
+        },
+        {
+          "ref": "s. 9.2",
+          "title": "Film production",
+          "description": "Provides authority for the minister to regulate film production activity in parks.",
+          "anchor_id": "PA-s9-2",
+          "services": [
+            {
+              "name": "Apply for a commercial filming permit in a provincial park",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Get authorization to operate or hold an event in a park"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "EAA",
+      "full_name": "Environmental Assessment Act",
+      "color": "#e65100",
+      "citation": "SBC 2018, c. 51",
+      "summary": "Establishes the environmental assessment process for reviewable major projects in B.C., led by the Environmental Assessment Office, including public and Indigenous participation requirements.",
+      "sections": [
+        {
+          "ref": "Assessment process",
+          "title": "Assessment of reviewable projects",
+          "description": "Sets out the process for assessing a reviewable project's potential environmental, economic, social, cultural and health effects.",
+          "anchor_id": "EAA-process",
+          "services": [
+            {
+              "name": "Apply for an environmental assessment certificate",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#e65100",
+              "ms_number": 1,
+              "ms_name": "Get an environmental assessment for a major project"
+            },
+            {
+              "name": "Check the status of a project under environmental assessment",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#e65100",
+              "ms_number": 1,
+              "ms_name": "Get an environmental assessment for a major project"
+            }
+          ]
+        },
+        {
+          "ref": "Participation requirements",
+          "title": "Public and Indigenous participation",
+          "description": "Requires opportunities for public comment and consultation with Indigenous nations during an assessment.",
+          "anchor_id": "EAA-participation",
+          "services": [
+            {
+              "name": "Comment on a project undergoing environmental assessment",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#e65100",
+              "ms_number": 1,
+              "ms_name": "Get an environmental assessment for a major project"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "IPMA",
+      "full_name": "Integrated Pest Management Act",
+      "color": "#6a1b9a",
+      "citation": "SBC 2003, c. 58",
+      "summary": "Regulates the sale, use, storage and transportation of pesticides in B.C., including certification, licensing and compliance requirements.",
+      "sections": [
+        {
+          "ref": "s. 5",
+          "title": "Certificate for sale or use of pesticides",
+          "description": "Requires individuals to hold a certificate to sell or use most pesticides.",
+          "anchor_id": "IPMA-s5",
+          "services": [
+            {
+              "name": "Get certified to sell or use pesticides",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#1565c0",
+              "ms_number": 5,
+              "ms_name": "Sell, use or manage pesticides safely"
+            }
+          ]
+        },
+        {
+          "ref": "ss. 4, 6",
+          "title": "Licence and permit for pesticide use",
+          "description": "Requires a licence to sell pesticides and a permit for certain uses of pesticides.",
+          "anchor_id": "IPMA-s4-6",
+          "services": [
+            {
+              "name": "Apply for a permit to use pesticides commercially",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#1565c0",
+              "ms_number": 5,
+              "ms_name": "Sell, use or manage pesticides safely"
+            }
+          ]
+        },
+        {
+          "ref": "Part 5",
+          "title": "Compliance",
+          "description": "Inspection, suspension, revocation and administrative penalty tools to enforce the Act.",
+          "anchor_id": "IPMA-Part5",
+          "services": [
+            {
+              "name": "Report a pesticide-related concern",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#1565c0",
+              "ms_number": 5,
+              "ms_name": "Sell, use or manage pesticides safely"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 4,
+    "sections_count": 18,
+    "services_with_leg_count": 24,
+    "services_multi_act_count": 0
+  }
+}

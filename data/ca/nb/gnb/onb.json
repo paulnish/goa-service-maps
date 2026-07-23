@@ -1,0 +1,463 @@
+{
+  "prefix": "onb",
+  "full_name": "Opportunities New Brunswick",
+  "short_name": "Opportunities NB",
+  "blurb": "The province's economic development agency — helps businesses start, grow, export, and invest in New Brunswick through financing, advice, and investment attraction.",
+  "nav_name": "Opportunities New Brunswick",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "title": "GOAL 1",
+      "short_name": "Businesses start, grow and invest in New Brunswick",
+      "legend_label": "Business growth",
+      "description": "Companies get financing and advisory support to grow, export, and create jobs in the province.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Grow your business",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get business growth financing and support",
+              "desc": "Loans, payroll rebates, and advisory services help New Brunswick companies expand and create jobs.",
+              "users": "Growing businesses",
+              "user_groups": [
+                "Businesses & employers",
+                "Business owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/opportunities-nb.html",
+                  "url": "https://www.gnb.ca/en/org/opportunities-nb.html"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Business development officer",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ONBA",
+                  "color": "#0070c0",
+                  "full_name": "Opportunities New Brunswick Act  -  Objects, purposes and powers"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Invest in the right sectors at the right time — energy, technology, agriculture, manufacturing"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "economic-development",
+                "note": "Primary provincial lever for private-sector job growth"
+              }
+            },
+            {
+              "name": "Get help exporting to new markets",
+              "desc": "Export readiness support, market intelligence, and trade connections for companies selling outside the province.",
+              "users": "Exporters and export-ready businesses",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/opportunities-nb.html",
+                  "url": "https://www.gnb.ca/en/org/opportunities-nb.html"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ONBA",
+                  "color": "#0070c0",
+                  "full_name": "Opportunities New Brunswick Act  -  Objects, purposes and powers"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 2,
+                  "tip": "Increase exports by diversifying markets and removing trade and credential barriers"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "exporting_trade",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Get support to invest or locate in New Brunswick",
+              "desc": "Site selection, workforce, and incentive support for companies considering investing or establishing operations in the province.",
+              "users": "Investors and expanding companies",
+              "user_groups": [
+                "Investors",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/opportunities-nb.html",
+                  "url": "https://www.gnb.ca/en/org/opportunities-nb.html"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ONBA",
+                  "color": "#0070c0",
+                  "full_name": "Opportunities New Brunswick Act  -  Objects, purposes and powers"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "exporting_trade",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Get one-on-one help navigating business regulations and permits",
+              "desc": "A concierge service answers questions on registration, licences, funding, and regulatory requirements.",
+              "users": "Entrepreneurs, small businesses, newcomers",
+              "user_groups": [
+                "Business owners",
+                "Newcomers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Business navigator service",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Business navigation",
+                  "url": "https://onbcanada.ca/businesses/navigate/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "registration_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://onbcanada.ca/businesses/navigate/"
+              }
+            },
+            {
+              "name": "Get advice on responding to trade disruptions and tariffs",
+              "desc": "Guidance on regulations, relief programs, and next steps for businesses affected by tariffs.",
+              "users": "Exporting businesses",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Trade disruption advice",
+                  "url": "https://onbcanada.ca/businesses/navigate/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "exporting_trade",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://onbcanada.ca/businesses/navigate/"
+              }
+            },
+            {
+              "name": "Get help recruiting local and international talent",
+              "desc": "Support to attract local talent, international skills, and new graduates to fill workforce gaps.",
+              "users": "Employers",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Talent recruitment support",
+                  "url": "https://onbcanada.ca/businesses/grow/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "people_employment",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://onbcanada.ca/businesses/grow/"
+              }
+            },
+            {
+              "name": "Get guidance to make business operations more sustainable",
+              "desc": "Education and development support for transitioning toward sustainable operations.",
+              "users": "Businesses",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Sustainability guidance",
+                  "url": "https://onbcanada.ca/businesses/grow/sustainability/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "environmental_requirements",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://onbcanada.ca/businesses/grow/sustainability/"
+              }
+            },
+            {
+              "name": "Get help building a resilient local supply chain",
+              "desc": "Support to explore province-based supply chain solutions.",
+              "users": "Manufacturers, businesses",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Supply chain support",
+                  "url": "https://onbcanada.ca/businesses/optimize/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "scenario_dependent",
+                "domain": "exporting_trade",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://onbcanada.ca/businesses/optimize/"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Attract and manage strategic investment projects",
+      "desc": "Investment attraction, deal management, and accountability for provincial economic development support.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "core_business_needs",
+        "domain": "finances_taxes",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    }
+  ],
+  "mandate_date": "November 13, 2024",
+  "mandate_minister": "Luke Randall",
+  "mandate_pdf": "https://www.gnb.ca/en/gov/contacts/members-executive-council/mandates-letters/mandates-randall.html",
+  "cross_cutting": [
+    "Healthcare",
+    "Affordability and Housing",
+    "Education",
+    "Economic Development",
+    "Environment",
+    "Leadership You Can Trust"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Invest in the right sectors at the right time — energy, technology, agriculture, manufacturing",
+      "mapping": "-> Get business growth financing and support"
+    },
+    {
+      "number": 2,
+      "text": "Increase exports by diversifying markets and removing trade and credential barriers",
+      "mapping": "-> Get help exporting to new markets"
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    }
+  ],
+  "user_group_filters": [
+    "Businesses & employers",
+    "Business owners",
+    "Investors",
+    "Newcomers",
+    "Industry"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

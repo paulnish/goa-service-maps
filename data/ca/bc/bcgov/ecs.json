@@ -1,0 +1,1194 @@
+{
+  "prefix": "ecs",
+  "full_name": "Ministry of Energy and Climate Solutions",
+  "short_name": "Energy & Climate Solutions",
+  "blurb": "Leads B.C.'s energy policy and climate action — electricity supply and clean energy, energy efficiency rebates, industrial carbon pricing, and the development of petroleum, natural gas and low-carbon fuels.",
+  "nav_name": "Energy and Climate Solutions",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "title": "GOAL 1",
+      "short_name": "British Columbians have access to clean, reliable and affordable electricity",
+      "legend_label": "Clean electricity",
+      "description": "The ministry oversees B.C.'s predominantly hydro-powered electricity system, works with BC Hydro and communities to grow and diversify clean generation, and helps people switch to electric vehicles with home and workplace charging rebates.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get information about B.C.'s electricity supply and clean energy projects",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Learn about B.C.'s electricity supply and clean energy sources",
+              "desc": "Information on how B.C. generates electricity — mostly clean hydro power, plus biomass, wind, geothermal and landfill gas — and on major projects like Site C.",
+              "users": "General public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Electricity and alternative energy",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/electricity-alternative-energy"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Ministry of Energy and Climate Solutions",
+                  "url": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/energy"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CEA",
+                  "color": "#1565c0",
+                  "full_name": "Clean Energy Act - Electricity self-sufficiency and clean generation targets"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "utilities",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/electricity-alternative-energy"
+              }
+            },
+            {
+              "name": "Get involved in a community clean energy project",
+              "desc": "The Province works with local governments and Indigenous communities on district energy systems, building retrofits and clean energy generation for remote communities.",
+              "users": "Local governments, Indigenous communities",
+              "user_groups": [
+                "Municipalities & local governments",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Community Clean Energy Solutions",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/electricity-alternative-energy/community-energy-solutions"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Community Clean Energy Branch",
+                  "url": "mailto:CommunityCleanEnergy@gov.bc.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/electricity-alternative-energy/community-energy-solutions"
+              }
+            },
+            {
+              "name": "Apply for community climate action funding",
+              "desc": "The BC Community Climate Funding Guide helps local governments and Indigenous communities find funding for climate preparedness, clean energy, sustainable transportation and green infrastructure projects.",
+              "users": "Local governments, Indigenous communities",
+              "user_groups": [
+                "Municipalities & local governments",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "BC Community Climate Funding Guide",
+                  "url": "https://communityclimatefunding.gov.bc.ca/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://communityclimatefunding.gov.bc.ca/"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get a rebate for an EV charger",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for a home EV charger rebate",
+              "desc": "Get a rebate of up to 50% (up to $350) to install a Level 2 EV charging station in a single-family home, duplex or other semi-detached housing type, delivered through BC Hydro or FortisBC.",
+              "users": "Homeowners with an electric vehicle",
+              "user_groups": [
+                "Property owners",
+                "Drivers & vehicle owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Rebates for home and workplace charging",
+                  "url": "https://goelectricbc.gov.bc.ca/rebates-and-programs/for-individuals/save-on-home-and-workplace-charging"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "BC Hydro home charger rebate",
+                  "url": "https://www.bchydro.com/powersmart/electric-vehicles/rebates-incentives/rebates-home-chargers.html"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "FortisBC home charger rebate",
+                  "url": "https://www.fortisbc.com/rebates/home/ev-charging-stations-for-homes"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://goelectricbc.gov.bc.ca/rebates-and-programs/for-individuals/save-on-home-and-workplace-charging"
+              }
+            },
+            {
+              "name": "Apply for a workplace or multi-unit building EV charger rebate",
+              "desc": "Rebates for purchasing and installing EV chargers at workplaces, and for EV-ready plans, electrical upgrades and chargers in condos, apartments and townhomes. Pre-approval is required.",
+              "users": "Employers, strata corporations, building owners",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Rebates for home and workplace charging",
+                  "url": "https://goelectricbc.gov.bc.ca/rebates-and-programs/for-individuals/save-on-home-and-workplace-charging"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "BC Hydro workplace/apartment charger rebate",
+                  "url": "https://www.bchydro.com/powersmart/electric-vehicles/rebates-incentives/rebates-apartment-chargers.html"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "FortisBC EV charger rebate program",
+                  "url": "https://www.fortisbc.com/rebates/detail/cleanbc-ev-charger-rebate-program"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "utilities",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://goelectricbc.gov.bc.ca/rebates-and-programs/for-individuals/save-on-home-and-workplace-charging"
+              }
+            },
+            {
+              "name": "Apply for an EV charger rebate for your Indigenous community",
+              "desc": "Indigenous communities and organizations can apply for increased rebates of up to 75% per charging station for home, workplace and community EV charging.",
+              "users": "Indigenous communities and organizations",
+              "user_groups": [
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Rebates and support for Indigenous organizations",
+                  "url": "https://goelectricbc.gov.bc.ca/rebates-and-programs/for-indigenous-communities-and-businesses/"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "BC Hydro Indigenous community rebate top-ups",
+                  "url": "https://www.bchydro.com/powersmart/electric-vehicles/rebates-incentives/local-rebate-top-ups.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "driving_vehicles",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://goelectricbc.gov.bc.ca/rebates-and-programs/for-individuals/save-on-home-and-workplace-charging"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "title": "GOAL 2",
+      "short_name": "Homes, buildings and businesses use less energy and save money",
+      "legend_label": "Energy efficiency",
+      "description": "The ministry sets energy efficiency policy and standards and funds CleanBC rebate programs that help households and businesses switch to high-efficiency heating and reduce energy use.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Improve your home's energy efficiency",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for a home energy efficiency rebate",
+              "desc": "CleanBC's Better Homes program offers rebates for heat pumps, insulation and other home energy upgrades for households, multi-unit residential buildings and Indigenous communities.",
+              "users": "Homeowners, renters, strata corporations",
+              "user_groups": [
+                "Property owners",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Find rebates – Better Homes BC",
+                  "url": "https://betterhomesbc.ca/find-rebates/"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Energy Coach",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 2,
+                  "tip": "Develop ways to ensure costs for energy remain low for people, including through access to home energy retrofits and innovative technology solutions"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://betterhomesbc.ca/find-rebates/"
+              }
+            },
+            {
+              "name": "Get a free home energy assessment and upgrade plan",
+              "desc": "BC Home Energy Planner is a free provincial service that helps homeowners plan the right energy efficiency upgrades for their home.",
+              "users": "Homeowners",
+              "user_groups": [
+                "Property owners",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "BC Home Energy Planner",
+                  "url": "https://bchomeenergyplanner.ca/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://betterhomesbc.ca/find-rebates/"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Improve your business's or building's energy efficiency",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for a commercial building energy efficiency rebate",
+              "desc": "CleanBC's Better Buildings program offers incentives for businesses and building owners to upgrade heating equipment and building envelopes to reduce energy use and emissions.",
+              "users": "Businesses, commercial building owners",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Better Buildings BC",
+                  "url": "https://betterbuildingsbc.ca/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "utilities",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/electricity-alternative-energy/energy-efficiency-conservation/programs"
+              }
+            },
+            {
+              "name": "Apply for industrial energy management incentives",
+              "desc": "The B.C.-NRCan ISO 50001 Implementation Incentive and Innovative Clean Energy Fund support industrial operations that adopt energy management systems and higher-efficiency technologies.",
+              "users": "Industrial operators",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "ISO 50001 Implementation Incentive",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/electricity-alternative-energy/energy-efficiency-conservation/iso-50001-implementation-incentive"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Energy Efficiency Programs",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/electricity-alternative-energy/energy-efficiency-conservation/programs"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "utilities",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/electricity-alternative-energy/energy-efficiency-conservation/programs"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#b45309",
+      "title": "GOAL 3",
+      "short_name": "Industry reduces greenhouse gas emissions and B.C. tracks its climate progress",
+      "legend_label": "Industrial climate action",
+      "description": "The ministry administers B.C.'s carbon pricing system for large industry, funds emissions-reduction projects, and receives independent advice on climate action and clean economic growth.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Comply with industrial carbon pricing and emissions reporting",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Report your industrial greenhouse gas emissions",
+              "desc": "Large industrial operations required to report under the Greenhouse Gas Industrial Reporting and Control Act must submit annual emissions reports and, if regulated, meet compliance obligations under the B.C. Output-Based Pricing System.",
+              "users": "Large industrial operators",
+              "user_groups": [
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "B.C. Output-Based Pricing System",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/climate-change/industry/bc-output-based-pricing-system"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "GHG Regulator",
+                  "url": "mailto:GHGRegulator@gov.bc.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "GGIRCA",
+                  "color": "#b45309",
+                  "full_name": "Greenhouse Gas Industrial Reporting and Control Act - Reporting operations and compliance obligations"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 6,
+                  "tip": "Work with the federal government to cap emissions from the oil and gas sector while attracting investment from producers that use best-in-class emissions reduction technology"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "reporting_obligations",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/environment/climate-change/industry/bc-output-based-pricing-system"
+              }
+            },
+            {
+              "name": "Register your operation in the B.C. Industrial Emissions Reporting System",
+              "desc": "Operations regulated under the B.C. Output-Based Pricing System must register in BCIERS to report emissions and manage compliance obligations, including credits, offset purchases and payments.",
+              "users": "Large industrial operators",
+              "user_groups": [
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Launch BCIERS",
+                  "url": "http://industrialemissions.gov.bc.ca/onboarding"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "GGIRCA",
+                  "color": "#b45309",
+                  "full_name": "Greenhouse Gas Industrial Reporting and Control Act - Reporting operations and compliance obligations"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "reporting_obligations",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/environment/climate-change/industry/bc-output-based-pricing-system"
+              }
+            },
+            {
+              "name": "Apply for Clean Industry Fund emissions-reduction funding",
+              "desc": "The Clean Industry Fund supports emissions-performance projects, pre-commercial innovation trials, and feasibility studies at industrial operations regulated under the B.C. Output-Based Pricing System.",
+              "users": "OBPS-regulated industrial operators",
+              "user_groups": [
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Clean Industry Fund",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/climate-change/industry/clean-industry-fund"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "Apply for Clean Industry Fund",
+                  "url": "https://www2.gov.bc.ca/gov/content/environment/climate-change/industry/clean-industry-fund/apply-for-funding"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 8,
+                  "tip": "Identify innovative ways to help meet carbon emission goals in a manner that reduces cost burdens for B.C. families and businesses and grows the economy"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/environment/climate-change/industry/clean-industry-fund"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#6a1b9a",
+      "title": "GOAL 4",
+      "short_name": "B.C.'s oil, gas and low-carbon fuel resources are developed responsibly",
+      "legend_label": "Oil, gas & low-carbon fuels",
+      "description": "The ministry manages provincial petroleum and natural gas tenure and royalties, and administers the Low Carbon Fuel Standard that drives the supply of cleaner transportation fuels.",
+      "metrics": [],
+      "css_class": "goal-4",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Develop petroleum and natural gas resources",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Bid for petroleum and natural gas tenure rights",
+              "desc": "Private industry can develop provincially owned petroleum and natural gas resources by bidding on tenure agreements at monthly Crown dispositions.",
+              "users": "Oil and gas companies",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Petroleum & Natural Gas Tenure",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/natural-gas-oil/petroleum-natural-gas-tenure"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Bidding and disposition guide",
+                  "url": "https://www2.gov.bc.ca/assets/gov/farming-natural-resources-and-industry/natural-gas-oil/png-crown-sale/publications/biddinganddispositionguide.pdf"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PNGA",
+                  "color": "#6a1b9a",
+                  "full_name": "Petroleum and Natural Gas Act - Tenure dispositions and Crown sales"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "tip": "Help grow the profitability and success of B.C.'s clean and low-carbon energy sectors, including expanding global export markets"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/natural-gas-oil/petroleum-natural-gas-tenure"
+              }
+            },
+            {
+              "name": "Search petroleum and natural gas title records",
+              "desc": "IPSWeb is an online title search application with public access to petroleum and natural gas tenure records.",
+              "users": "Oil and gas companies, title searchers",
+              "user_groups": [
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "IPSWeb Title Search",
+                  "url": "https://a100.gov.bc.ca/pub/ipsweb/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PNGA",
+                  "color": "#6a1b9a",
+                  "full_name": "Petroleum and Natural Gas Act - Tenure dispositions and Crown sales"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/natural-gas-oil/petroleum-natural-gas-tenure"
+              }
+            },
+            {
+              "name": "Pay petroleum and natural gas royalties",
+              "desc": "The Province collects royalties on oil and gas production. A new revenue-minus-cost royalty system with price-sensitive rates takes effect January 1, 2027, replacing the current framework.",
+              "users": "Oil and gas producers",
+              "user_groups": [
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Petroleum and Natural Gas Royalties",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/natural-gas-oil/oil-gas-royalties"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "Natural Gas Pricing System",
+                  "url": "https://a100.gov.bc.ca/ext/ngps/index.xhtml"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PNGA",
+                  "color": "#6a1b9a",
+                  "full_name": "Petroleum and Natural Gas Act - Royalty and freehold production tax framework"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/natural-gas-oil/oil-gas-royalties"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Supply low-carbon and renewable transportation fuels",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Report compliance under the Low Carbon Fuel Standard",
+              "desc": "Fuel suppliers must meet renewable and low-carbon fuel targets for gasoline and diesel, and file annual compliance reports through the Low Carbon Fuel Standard Portal.",
+              "users": "Fuel suppliers and marketers",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "LCFS requirements",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/electricity-alternative-energy/transportation-energies/renewable-low-carbon-fuels/requirements"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "LCFS Portal (reporting system)",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/electricity-alternative-energy/transportation-energies/renewable-low-carbon-fuels/reporting-system"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "LCFA",
+                  "color": "#6a1b9a",
+                  "full_name": "Low Carbon Fuels Act - Fuel supplier compliance and reporting"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "reporting_obligations",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/electricity-alternative-energy/transportation-energies/renewable-low-carbon-fuels"
+              }
+            },
+            {
+              "name": "Apply to have your fuel's carbon intensity approved",
+              "desc": "Low carbon fuel producers can apply to have a carbon intensity value approved for the fuel they produce, which determines the compliance credits it can generate under the Low Carbon Fuel Standard.",
+              "users": "Low carbon fuel producers",
+              "user_groups": [
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Carbon intensities",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/electricity-alternative-energy/transportation-energies/renewable-low-carbon-fuels/carbon-intensities"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "Low Carbon Fuels Branch",
+                  "url": "mailto:LCFS@gov.bc.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "LCFA",
+                  "color": "#6a1b9a",
+                  "full_name": "Low Carbon Fuels Act - Fuel supplier compliance and reporting"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/electricity-alternative-energy/transportation-energies/renewable-low-carbon-fuels"
+              }
+            },
+            {
+              "name": "Trade Low Carbon Fuel Standard credits",
+              "desc": "Registered parties can buy, sell and transfer Low Carbon Fuel Standard compliance credits through the credit market; all transfers require government approval through the LCFS Portal.",
+              "users": "Fuel suppliers and credit market participants",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Low Carbon Fuel Standard credit market",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/electricity-alternative-energy/transportation-energies/renewable-low-carbon-fuels/credit-market"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "LCFS Compliance Unit Calculator",
+                  "url": "https://lowcarbonfuels.gov.bc.ca/credit-calculator"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "LCFA",
+                  "color": "#6a1b9a",
+                  "full_name": "Low Carbon Fuels Act - Credit market and compliance units"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "energy_minerals",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/electricity-alternative-energy/transportation-energies/renewable-low-carbon-fuels/credit-market"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Provide independent advice on climate action and clean economic growth",
+      "desc": "The Climate Solutions Council, an independent expert advisory body with members from Indigenous Peoples, environmental organizations, industry, academia and local government, advises government on climate policy and clean economic growth.",
+      "users": "Internal policy staff, Minister",
+      "channels": [
+        {
+          "type": "ch-web",
+          "label": "Climate Solutions Council",
+          "url": "https://www2.gov.bc.ca/gov/content/environment/climate-change/planning-and-action/advisory-council"
+        }
+      ],
+      "legislation": [
+        {
+          "abbrev": "CCAA",
+          "color": "#b45309",
+          "full_name": "Climate Change Accountability Act - Independent advisory body"
+        }
+      ],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "environment_land",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/environment/climate-change/planning-and-action/advisory-council"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Report annually on B.C.'s climate change accountability progress",
+      "desc": "Tracks and publicly reports on B.C.'s progress toward legislated greenhouse gas reduction targets through the annual Climate Change Accountability Report.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [
+        {
+          "abbrev": "CCAA",
+          "color": "#b45309",
+          "full_name": "Climate Change Accountability Act - Targets and accountability reporting"
+        }
+      ],
+      "mandate_tags": [
+        {
+          "number": 1,
+          "tip": "Work with the Minister of Finance to review all existing ministry programs and initiatives to ensure they remain relevant, efficient, grow the economy, and help keep costs low for British Columbians"
+        }
+      ],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "environment_land",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-3",
+      "name": "Plan and oversee provincial electricity system growth and reliability",
+      "desc": "Works with BC Hydro, First Nations and the renewable power industry through competitive calls for power, permitting coordination, and utility rate oversight to grow and diversify B.C.'s electricity generation while protecting ratepayers.",
+      "users": "Internal program staff",
+      "channels": [
+        {
+          "type": "ch-web",
+          "label": "Electricity and alternative energy",
+          "url": "https://www2.gov.bc.ca/gov/content/industry/electricity-alternative-energy"
+        }
+      ],
+      "legislation": [
+        {
+          "abbrev": "CEA",
+          "color": "#1565c0",
+          "full_name": "Clean Energy Act - Electricity self-sufficiency and clean generation targets"
+        },
+        {
+          "abbrev": "UCA",
+          "color": "#1565c0",
+          "full_name": "Utilities Commission Act - Regulation of public utilities and rates"
+        }
+      ],
+      "mandate_tags": [
+        {
+          "number": 3,
+          "tip": "Work with BC Hydro, First Nations, and the renewable power industry through frequent competitive calls for power to increase and diversify B.C.'s generation of electricity"
+        },
+        {
+          "number": 5,
+          "tip": "Work with relevant ministries, First Nations, other governments and stakeholders to dramatically accelerate permit approval for clean and low-carbon energy infrastructure"
+        },
+        {
+          "number": 7,
+          "tip": "Ensure BC Hydro is responsive to changing market conditions and demand for large load capacity while protecting residential ratepayers"
+        }
+      ],
+      "taxonomy": {
+        "track": "business",
+        "tier": "industry_specific",
+        "domain": "energy_minerals",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-4",
+      "name": "Set and enforce minimum energy performance standards for products and equipment",
+      "desc": "Develops and enforces regulations requiring products, equipment and appliances sold or manufactured in B.C. to meet minimum energy performance standards, and supports energy performance requirements in the B.C. Building Code.",
+      "users": "Manufacturers, retailers, internal program staff",
+      "channels": [
+        {
+          "type": "ch-web",
+          "label": "Energy Efficiency",
+          "url": "https://www2.gov.bc.ca/gov/content/industry/electricity-alternative-energy/energy-efficiency-conservation"
+        },
+        {
+          "type": "ch-email",
+          "label": "Energy efficiency",
+          "url": "mailto:energy.efficiency@gov.bc.ca"
+        }
+      ],
+      "legislation": [
+        {
+          "abbrev": "EEA",
+          "color": "#2e7d32",
+          "full_name": "Energy Efficiency Act - Minimum energy performance standards"
+        }
+      ],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "regulatory_compliance",
+        "domain": "safety_codes_standards",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/industry/electricity-alternative-energy/energy-efficiency-conservation"
+      }
+    }
+  ],
+  "mandate_date": "January 16, 2025",
+  "mandate_minister": "Adrian Dix",
+  "mandate_pdf": "https://www2.gov.bc.ca/assets/gov/government/ministries-organizations/premier-cabinet-mlas/minister-letter/mandate_letter_adrian_dix.pdf",
+  "cross_cutting": [
+    "Growing the economy and creating jobs",
+    "Reducing costs for families",
+    "Strengthening health care",
+    "Community safety",
+    "Climate action",
+    "Reconciliation with Indigenous peoples"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Work with the Minister of Finance to review all existing ministry programs and initiatives to ensure they remain relevant, efficient, grow the economy, and help keep costs low for British Columbians",
+      "mapping": "-> Foundational: report annually on B.C.'s climate change accountability progress"
+    },
+    {
+      "number": 2,
+      "text": "Develop ways to ensure costs for energy remain low for people, including through access to home energy retrofits and innovative technology solutions",
+      "mapping": "-> Apply for a home energy efficiency rebate"
+    },
+    {
+      "number": 3,
+      "text": "Work with BC Hydro, First Nations, and the renewable power industry through frequent competitive calls for power to increase and diversify B.C.'s generation of electricity as the economy continues to grow",
+      "mapping": "-> Foundational: plan and oversee provincial electricity system growth and reliability"
+    },
+    {
+      "number": 4,
+      "text": "Help grow the profitability and success of B.C.'s clean and low-carbon energy sectors, including advocating against proposed U.S. tariffs, expanding global export markets, and preparing contingency plans for energy exporters",
+      "mapping": "-> Bid for petroleum and natural gas tenure rights"
+    },
+    {
+      "number": 5,
+      "text": "Work with relevant ministries, First Nations, other governments, project proponents, and key stakeholders to dramatically accelerate permit approval for clean and low-carbon energy infrastructure while preserving environmental standards",
+      "mapping": "-> Foundational: plan and oversee provincial electricity system growth and reliability"
+    },
+    {
+      "number": 6,
+      "text": "Work with the federal government to cap emissions from the oil and gas sector while attracting investment from producers that use best-in-class emissions reduction technology",
+      "mapping": "-> Report your industrial greenhouse gas emissions"
+    },
+    {
+      "number": 7,
+      "text": "Ensure BC Hydro is responsive to changing market conditions and demands for large load capacity while protecting residential ratepayers",
+      "mapping": "-> Foundational: plan and oversee provincial electricity system growth and reliability"
+    },
+    {
+      "number": 8,
+      "text": "Identify innovative ways to help meet carbon emission goals in a manner that reduces cost burdens for B.C. families and businesses, grows the economy, and positions B.C. for trade diversification",
+      "mapping": "-> Apply for Clean Industry Fund emissions-reduction funding"
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-email",
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Property owners",
+    "Drivers & vehicle owners",
+    "Businesses & employers",
+    "Industry",
+    "Municipalities & local governments",
+    "Indigenous communities"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

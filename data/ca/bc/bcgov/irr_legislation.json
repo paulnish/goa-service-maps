@@ -1,0 +1,113 @@
+{
+  "prefix": "irr",
+  "name": "Ministry of Indigenous Relations and Reconciliation",
+  "short_name": "Indigenous Relations & Reconciliation",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#234075",
+      "short_name": "British Columbia's laws and relationships with Indigenous Peoples reflect the Declaration Act",
+      "legend_label": "Declaration Act & treaties",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Implement the Declaration on the Rights of Indigenous Peoples Act"
+        },
+        {
+          "number": 2,
+          "name": "Negotiate a treaty or reconciliation agreement"
+        },
+        {
+          "number": 3,
+          "name": "Get support for consultation on land and resource decisions"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "short_name": "Indigenous communities and businesses share in economic growth and reconciliation",
+      "legend_label": "Economic reconciliation",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Grow an Indigenous business"
+        },
+        {
+          "number": 2,
+          "name": "Access community and cultural support programs"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#6a1b9a",
+      "short_name": "Indigenous women, languages and cultures are respected and represented",
+      "legend_label": "Women, language & culture",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get advice and representation as an Indigenous woman"
+        },
+        {
+          "number": 2,
+          "name": "Protect and revitalize Indigenous languages and culture"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "DA",
+      "full_name": "Declaration on the Rights of Indigenous Peoples Act",
+      "color": "#234075",
+      "citation": "SBC 2019, c 44",
+      "summary": "Establishes the United Nations Declaration on the Rights of Indigenous Peoples as B.C.'s framework for reconciliation. Requires alignment of provincial laws with the UN Declaration, a five-year cross-government action plan, annual reporting to the legislature, and enables agreements with Indigenous governing bodies, including joint decision-making.",
+      "sections": [
+        {
+          "ref": "Sections 3-5",
+          "title": "Alignment of laws, action plan and annual reporting",
+          "description": "Requires government to bring provincial laws into alignment with the UN Declaration, develop and implement a five-year action plan in consultation and cooperation with Indigenous Peoples, and report annually to the legislature on progress.",
+          "anchor_id": "DA-s3-5",
+          "services": [
+            {
+              "name": "Track progress on Declaration Act implementation",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#234075",
+              "ms_number": 1,
+              "ms_name": "Implement the Declaration on the Rights of Indigenous Peoples Act"
+            },
+            {
+              "name": "Lead cross-government implementation of the Declaration Act",
+              "type": "foundational",
+              "foundational_id": "f-1"
+            }
+          ]
+        },
+        {
+          "ref": "Sections 6-7",
+          "title": "Agreements and joint decision-making",
+          "description": "Allows the Province flexibility to enter into agreements with a broader range of Indigenous governing bodies and to exercise statutory decision-making authority together with them.",
+          "anchor_id": "DA-s6-7",
+          "services": [
+            {
+              "name": "Enter into a shared decision-making agreement with the Province",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#234075",
+              "ms_number": 1,
+              "ms_name": "Implement the Declaration on the Rights of Indigenous Peoples Act"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 1,
+    "sections_count": 2,
+    "services_with_leg_count": 3,
+    "services_multi_act_count": 0
+  }
+}

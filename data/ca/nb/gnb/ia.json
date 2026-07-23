@@ -1,0 +1,525 @@
+{
+  "prefix": "ia",
+  "full_name": "Indigenous Affairs",
+  "short_name": "Indigenous Affairs",
+  "blurb": "Leads the province's relationships with First Nations in New Brunswick — coordinating consultation, negotiating agreements, and advancing reconciliation across government.",
+  "nav_name": "Indigenous Affairs",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "title": "GOAL 1",
+      "short_name": "The Province and Indigenous Peoples advance reconciliation together",
+      "legend_label": "Reconciliation",
+      "description": "The department coordinates the Crown's duty to consult, negotiates agreements with First Nations, and builds public understanding of treaty relationships.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Engage with the Province on rights and decisions",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Participate in consultation on Crown land and resource decisions",
+              "desc": "First Nations engage through established consultation processes on provincial decisions that may affect Aboriginal and treaty rights.",
+              "users": "First Nations governments and organizations",
+              "user_groups": [
+                "First Nations",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Consultation coordination office",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/indigenous-affairs.html",
+                  "url": "https://www.gnb.ca/en/org/indigenous-affairs.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "environment_land",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Negotiate agreements between First Nations and the Province",
+              "desc": "Government-to-government negotiation of agreements on services, revenue sharing, and other shared priorities.",
+              "users": "First Nations governments",
+              "user_groups": [
+                "First Nations"
+              ],
+              "channels": [
+                {
+                  "type": "ch-inperson",
+                  "label": "Department of Indigenous Affairs",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/indigenous-affairs.html",
+                  "url": "https://www.gnb.ca/en/org/indigenous-affairs.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Rebuild nation-to-nation relationships and renegotiate tax agreements for a fair deal"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Learn how to access services for First Nations children",
+              "desc": "Information on ensuring First Nations children get the health, social, and educational services they need.",
+              "users": "First Nations families",
+              "user_groups": [
+                "First Nations",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Services for First Nations children",
+                  "url": "https://www.gnb.ca/en/topic/culture-heritage/indigenous-peoples/jordans-principle.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/en/topic/culture-heritage/indigenous-peoples/jordans-principle.html"
+              }
+            },
+            {
+              "name": "Find information on missing and murdered Indigenous women and girls",
+              "desc": "Information and programs addressing missing and murdered Indigenous women, girls, and gender-diverse people.",
+              "users": "Indigenous peoples, families, communities",
+              "user_groups": [
+                "Indigenous communities",
+                "Families"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "MMIWG2S+ information",
+                  "url": "https://www.gnb.ca/en/topic/culture-heritage/indigenous-peoples/mmiwg2splus.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/en/topic/culture-heritage/indigenous-peoples/mmiwg2splus.html"
+              }
+            },
+            {
+              "name": "Find mental health supports for Indigenous people",
+              "desc": "A guide to programs and services supporting mental health in Indigenous communities.",
+              "users": "Indigenous individuals and families",
+              "user_groups": [
+                "Indigenous communities",
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Mental health supports",
+                  "url": "https://www.gnb.ca/en/topic/culture-heritage/indigenous-peoples/mental-health.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "health_wellbeing",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/en/topic/culture-heritage/indigenous-peoples/mental-health.html"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Learn about treaty relationships",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Learn about the Peace and Friendship Treaties",
+              "desc": "Public education on the Peace and Friendship Treaties and the Wolastoqey, Mi'kmaq, and Peskotomuhkati Peoples in New Brunswick.",
+              "users": "General public, educators",
+              "user_groups": [
+                "General public",
+                "Teachers & educators"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/indigenous-affairs.html",
+                  "url": "https://www.gnb.ca/en/org/indigenous-affairs.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Access programs and cultural resources",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for a grant for a small-scale Indigenous project or event",
+              "desc": "Funding of $250 to $5,000 for not-for-profit Indigenous projects, gatherings, and cultural awareness events.",
+              "users": "Indigenous organizations, First Nations",
+              "user_groups": [
+                "Indigenous communities",
+                "First Nations"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Indigenous grants",
+                  "url": "https://www.gnb.ca/en/topic/culture-heritage/indigenous-peoples/indigenous-affairs-grants-program.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/en/topic/culture-heritage/indigenous-peoples/indigenous-affairs-grants-program.html"
+              }
+            },
+            {
+              "name": "Find powwows and cultural celebrations across the province",
+              "desc": "A provincial schedule of powwows open to people of all ages.",
+              "users": "Indigenous communities, general public",
+              "user_groups": [
+                "Indigenous communities",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Powwow schedule",
+                  "url": "https://www.gnb.ca/en/topic/culture-heritage/indigenous-peoples/2026-powwow-schedule.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/en/topic/culture-heritage/indigenous-peoples/2026-powwow-schedule.html"
+              }
+            },
+            {
+              "name": "Explore Indigenous language resources",
+              "desc": "Resources on Passamaquoddy-Maliseet, Mi'gmaq/Mi'kmaq, and Wolastoqey languages.",
+              "users": "Learners, educators, communities",
+              "user_groups": [
+                "Indigenous communities",
+                "Teachers & educators"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Language resources",
+                  "url": "https://www.gnb.ca/en/topic/culture-heritage/indigenous-peoples/languages.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/en/topic/culture-heritage/indigenous-peoples/languages.html"
+              }
+            },
+            {
+              "name": "Learn about First Nations communities in New Brunswick",
+              "desc": "Information about the Wolastoqey, Mi'gmaw, and Peskotomuhkati communities.",
+              "users": "General public, researchers",
+              "user_groups": [
+                "General public",
+                "Researchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "First Nations communities",
+                  "url": "https://www.gnb.ca/en/topic/culture-heritage/indigenous-peoples/first-nations-communities.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/en/topic/culture-heritage/indigenous-peoples/first-nations-communities.html"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Coordinate the duty to consult across government",
+      "desc": "Advice and coordination so departments meet the Crown's consultation obligations.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "environment_land",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    }
+  ],
+  "mandate_date": "November 5, 2024",
+  "mandate_minister": "Keith Chiasson",
+  "mandate_pdf": "https://www.gnb.ca/en/gov/contacts/members-executive-council/mandates-letters/mandates-keith-chiasson.html",
+  "cross_cutting": [
+    "Healthcare",
+    "Affordability and Housing",
+    "Education",
+    "Economic Development",
+    "Environment",
+    "Leadership You Can Trust"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Rebuild nation-to-nation relationships and renegotiate tax agreements for a fair deal",
+      "mapping": "-> Negotiate agreements between First Nations and the Province"
+    },
+    {
+      "number": 2,
+      "text": "Create a bilateral forum with First Nations leaders toward culturally safe, equitable healthcare"
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "First Nations",
+    "Indigenous communities",
+    "Families",
+    "Individuals",
+    "General public",
+    "Teachers & educators",
+    "Researchers"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

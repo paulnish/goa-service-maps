@@ -1,0 +1,771 @@
+{
+  "prefix": "thc",
+  "full_name": "Tourism, Heritage and Culture",
+  "short_name": "Tourism, Heritage & Culture",
+  "blurb": "Grows New Brunswick's tourism economy, operates provincial parks and attractions, and supports arts, culture, heritage, sport, and the provincial archives.",
+  "nav_name": "Tourism, Heritage and Culture",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "title": "GOAL 1",
+      "short_name": "People explore and enjoy New Brunswick",
+      "legend_label": "Parks & tourism",
+      "description": "Residents and visitors experience provincial parks and attractions, and tourism operators grow a stronger visitor economy.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Explore parks and attractions",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Camp and explore provincial parks",
+              "desc": "Camping reservations, day use, trails, and seasonal programming across New Brunswick's provincial parks.",
+              "users": "Campers, families, outdoor enthusiasts",
+              "user_groups": [
+                "General public",
+                "Families",
+                "Visitors & tourists"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "nbparks.ca reservations",
+                  "url": "https://www.nbparks.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "PkA",
+                  "color": "#0070c0",
+                  "full_name": "Parks Act  -  Park powers and use"
+                }
+              ],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "tip": "Give NB residents 25% off provincial park passes"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "tourism-economy",
+                "note": "Mandate: 25% off park passes for residents"
+              },
+              "reach": {
+                "tier": "high",
+                "estimate": "est. 1M+ park visits/yr",
+                "basis": "annual"
+              }
+            },
+            {
+              "name": "Plan a trip in New Brunswick",
+              "desc": "Trip planning information on attractions, itineraries, festivals, and places to stay.",
+              "users": "Visitors and residents",
+              "user_groups": [
+                "Visitors & tourists",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "tourismnewbrunswick.ca",
+                  "url": "https://tourismnewbrunswick.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Grow your tourism business",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Access tourism industry development support",
+              "desc": "Product development, marketing partnerships, and sector support for tourism operators and destinations.",
+              "users": "Tourism operators",
+              "user_groups": [
+                "Industry",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/tourism-heritage-culture.html",
+                  "url": "https://www.gnb.ca/en/org/tourism-heritage-culture.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "tourism_hospitality",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Get active in sport and recreation",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Access sport and recreation programs and funding",
+              "desc": "Funding and support for sport organizations, athletes, coaches, and community recreation, including provincial teams for national games.",
+              "users": "Athletes, coaches, sport organizations",
+              "user_groups": [
+                "Individuals",
+                "Organizations",
+                "Youth"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/tourism-heritage-culture.html",
+                  "url": "https://www.gnb.ca/en/org/tourism-heritage-culture.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Apply for trail construction and improvement funding",
+              "desc": "Funding to build and enhance motorized and non-motorized recreational trails.",
+              "users": "Trail organizations, communities",
+              "user_groups": [
+                "Non-profit organizations",
+                "Communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Trail funding",
+                  "url": "https://www.gnb.ca/en/topic/driving-transportation/off-road-vehicles-boating/trail-infrastructure-fund.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/en/topic/driving-transportation/off-road-vehicles-boating/trail-infrastructure-fund.html"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "title": "GOAL 2",
+      "short_name": "Heritage and culture thrive",
+      "legend_label": "Heritage & culture",
+      "description": "Artists and cultural organizations are supported, heritage places are protected and shared, and the province's documentary record is preserved.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Create, fund and experience culture",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for arts, culture and heritage funding",
+              "desc": "Grants for artists, cultural organizations, museums, and heritage projects across the province.",
+              "users": "Artists and cultural organizations",
+              "user_groups": [
+                "Individuals",
+                "Non-profit organizations"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/tourism-heritage-culture.html",
+                  "url": "https://www.gnb.ca/en/org/tourism-heritage-culture.html"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Grant application",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 1,
+                  "tip": "Treat arts and culture as economic drivers; invest in creative industries"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Visit living heritage sites and museums",
+              "desc": "Provincial heritage attractions bring New Brunswick's Acadian, Loyalist, and Indigenous stories to life.",
+              "users": "Visitors, families, school groups",
+              "user_groups": [
+                "General public",
+                "Visitors & tourists"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "kingslanding.nb.ca",
+                  "url": "https://kingslanding.nb.ca/"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "villagehistoriqueacadien.com",
+                  "url": "https://www.villagehistoriqueacadien.com/en"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Research the provincial archives",
+              "desc": "Access genealogical records, government documents, photographs, and private papers at the Provincial Archives.",
+              "users": "Genealogists, researchers, public",
+              "user_groups": [
+                "Researchers",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Provincial Archives",
+                  "url": "https://www.gnb.ca/en/topic/your-gov/data-records/archives.html"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Provincial Archives, Fredericton",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ArchA",
+                  "color": "#b45309",
+                  "full_name": "Archives Act  -  Public inspection of public records"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "identity_credentials_access",
+                "domain": "privacy_government_access",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Get a permit for archaeological work",
+              "desc": "Permits for archaeological fieldwork and protection of heritage and archaeological sites.",
+              "users": "Archaeologists, developers",
+              "user_groups": [
+                "Researchers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/tourism-heritage-culture.html",
+                  "url": "https://www.gnb.ca/en/org/tourism-heritage-culture.html"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Archaeological permit application",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HCA",
+                  "color": "#2e7d32",
+                  "full_name": "Heritage Conservation Act  -  Field research permits"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Get approval to alter a designated heritage place",
+              "desc": "Owners of designated heritage properties get approval and conservation advice before altering protected features.",
+              "users": "Heritage property owners",
+              "user_groups": [
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/tourism-heritage-culture.html",
+                  "url": "https://www.gnb.ca/en/org/tourism-heritage-culture.html"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Heritage branch",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HCA",
+                  "color": "#2e7d32",
+                  "full_name": "Heritage Conservation Act  -  Alteration of provincial heritage places"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "scenario_dependent",
+                  "domain": "housing_property"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "licences_permits"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Apply for a property tax abatement on a heritage property",
+              "desc": "A property tax incentive for restoring and re-using designated historic places.",
+              "users": "Heritage property owners",
+              "user_groups": [
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Heritage tax abatement",
+                  "url": "https://www.gnb.ca/en/topic/culture-heritage/grants-finance/property-tax-abatement.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "scenario_dependent",
+                "domain": "housing_property",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/en/topic/culture-heritage/grants-finance/property-tax-abatement.html"
+              }
+            },
+            {
+              "name": "Apply for funding to commemorate a historical event",
+              "desc": "Funding for community initiatives commemorating historical events.",
+              "users": "Communities, organizations",
+              "user_groups": [
+                "Non-profit organizations",
+                "Communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Commemoration funding",
+                  "url": "https://www.gnb.ca/en/topic/culture-heritage/grants-finance/commemorations-celebrations-program.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/en/topic/culture-heritage/grants-finance/commemorations-celebrations-program.html"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Grow film and creative industries",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for funding to develop or produce a film or media project",
+              "desc": "Funding for local producers developing and producing film, television, and new media projects.",
+              "users": "Film and media producers",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Production funding",
+                  "url": "https://www.gnb.ca/en/topic/culture-heritage/grants-finance/investment-production.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "film_media",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/en/topic/culture-heritage/grants-finance/investment-production.html"
+              }
+            },
+            {
+              "name": "Apply for funding to create a first short film",
+              "desc": "Support for emerging filmmakers creating a showcase short film.",
+              "users": "Emerging filmmakers",
+              "user_groups": [
+                "Individuals"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Short film funding",
+                  "url": "https://www.gnb.ca/en/topic/culture-heritage/grants-finance/short-film.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/en/topic/culture-heritage/grants-finance/short-film.html"
+              }
+            },
+            {
+              "name": "Partner a school with a professional artist",
+              "desc": "Schools bring a professional artist into the classroom for a creative project with students.",
+              "users": "Schools, artists, students",
+              "user_groups": [
+                "Teachers & educators",
+                "Students"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Artists in schools",
+                  "url": "https://www.gnb.ca/en/topic/culture-heritage/grants-finance/artists-in-school-program.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www.gnb.ca/en/topic/culture-heritage/grants-finance/artists-in-school-program.html"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Operate provincial parks and attractions",
+      "desc": "Park operations, maintenance, and visitor services across the provincial system.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "recreation_culture",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    }
+  ],
+  "mandate_date": "November 7, 2024",
+  "mandate_minister": "Isabelle Thériault",
+  "mandate_pdf": "https://www.gnb.ca/en/gov/contacts/members-executive-council/mandates-letters/mandates-theriault.html",
+  "cross_cutting": [
+    "Healthcare",
+    "Affordability and Housing",
+    "Education",
+    "Economic Development",
+    "Environment",
+    "Leadership You Can Trust"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Treat arts and culture as economic drivers; invest in creative industries",
+      "mapping": "-> Apply for arts, culture and heritage funding"
+    },
+    {
+      "number": 2,
+      "text": "Support the Status of the Artist transition committee"
+    },
+    {
+      "number": 3,
+      "text": "Increase active transportation infrastructure including walking and cycling trails"
+    },
+    {
+      "number": 4,
+      "text": "Give NB residents 25% off provincial park passes",
+      "mapping": "-> Camp and explore provincial parks"
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Families",
+    "Visitors & tourists",
+    "Industry",
+    "Businesses & employers",
+    "Individuals",
+    "Organizations",
+    "Youth",
+    "Non-profit organizations",
+    "Communities",
+    "Researchers",
+    "Property owners",
+    "Teachers & educators",
+    "Students"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

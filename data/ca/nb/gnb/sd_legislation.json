@@ -1,0 +1,256 @@
+{
+  "prefix": "sd",
+  "name": "Social Development",
+  "short_name": "Social Development",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "People have income security and a place to live",
+      "legend_label": "Income & housing",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get financial help"
+        },
+        {
+          "number": 2,
+          "name": "Find affordable housing"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "short_name": "Children, youth and families are safe and supported",
+      "legend_label": "Child & family wellbeing",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Protect and support children and families"
+        },
+        {
+          "number": 2,
+          "name": "Get family and crisis supports"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#b45309",
+      "short_name": "Seniors live with dignity and the right level of care",
+      "legend_label": "Seniors & long-term care",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get care and support as a senior"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "FISA",
+      "full_name": "Family Income Security Act",
+      "color": "#0070c0",
+      "citation": "RSNB 2011, c 154",
+      "summary": "Social assistance and related benefits.",
+      "sections": [
+        {
+          "ref": "ss.3-6",
+          "title": "Application for and provision of assistance",
+          "description": "Application, eligibility, and Minister's discretion; detail in NB Reg 95-61.",
+          "anchor_id": "FISA-ss36",
+          "services": [
+            {
+              "name": "Apply for social assistance",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Get financial help"
+            },
+            {
+              "name": "Get emergency help with heating costs",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Get financial help"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CYWBA",
+      "full_name": "Child and Youth Well-Being Act",
+      "color": "#2e7d32",
+      "citation": "SNB 2022, c 35",
+      "summary": "The current child protection statute — protection, foster care, and adoption (replaced the Family Services Act's child provisions in 2023).",
+      "sections": [
+        {
+          "ref": "s.35",
+          "title": "Duty to report",
+          "description": "Duty to report a child or youth at risk.",
+          "anchor_id": "CYWBA-s35",
+          "services": [
+            {
+              "name": "Report a child at risk of abuse or neglect",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Protect and support children and families"
+            }
+          ]
+        },
+        {
+          "ref": "Part 5",
+          "title": "Protection services and placement",
+          "description": "Placement priority (s.54), foster and kinship care.",
+          "anchor_id": "CYWBA-Part5",
+          "services": [
+            {
+              "name": "Become a foster or kinship caregiver",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Protect and support children and families"
+            }
+          ]
+        },
+        {
+          "ref": "Part 6 (ss.79-99)",
+          "title": "Adoption",
+          "description": "Adoption of children in care; detail in NB Reg 2024-5.",
+          "anchor_id": "CYWBA-Part6ss7999",
+          "services": [
+            {
+              "name": "Adopt a child",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Protect and support children and families"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "FSA",
+      "full_name": "Family Services Act",
+      "color": "#b45309",
+      "citation": "SNB 1980, c F-2.2",
+      "summary": "Adult protection and community social services (child provisions moved to the Child and Youth Well-Being Act).",
+      "sections": [
+        {
+          "ref": "Part III (ss.34-39)",
+          "title": "Adult protection services",
+          "description": "Protection of neglected or abused disabled and elderly persons.",
+          "anchor_id": "FSA-PartIIIss3439",
+          "services": [
+            {
+              "name": "Report suspected abuse of a senior or vulnerable adult",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#b45309",
+              "ms_number": 1,
+              "ms_name": "Get care and support as a senior"
+            }
+          ]
+        },
+        {
+          "ref": "Part I",
+          "title": "Community social services",
+          "description": "Provision and contracting of community social services.",
+          "anchor_id": "FSA-PartI",
+          "services": [
+            {
+              "name": "Access disability support services",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Get financial help"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "NHA",
+      "full_name": "Nursing Homes Act",
+      "color": "#6a1b9a",
+      "citation": "RSNB 2014, c 125",
+      "summary": "Licensing and standards for nursing homes.",
+      "sections": [
+        {
+          "ref": "ss.3-7",
+          "title": "Licensing of nursing homes",
+          "description": "Licence requirement, issuance, and revocation; care standards in NB Reg 2001-59.",
+          "anchor_id": "NHA-ss37",
+          "services": [
+            {
+              "name": "Get a long-term care needs assessment",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#b45309",
+              "ms_number": 1,
+              "ms_name": "Get care and support as a senior"
+            },
+            {
+              "name": "Get home support services",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#b45309",
+              "ms_number": 1,
+              "ms_name": "Get care and support as a senior"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "NBHA",
+      "full_name": "New Brunswick Housing Act",
+      "color": "#c62828",
+      "citation": "RSNB 1973, c N-6",
+      "summary": "Constitutes the Housing Corporation and its programs.",
+      "sections": [
+        {
+          "ref": "ss.9-10",
+          "title": "Objects and powers of the Corporation",
+          "description": "Financial assistance, rental supplements, and shelter allowances (s.10(1)(g)-(i)).",
+          "anchor_id": "NBHA-ss910",
+          "services": [
+            {
+              "name": "Apply for public housing or a rent supplement",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Find affordable housing"
+            },
+            {
+              "name": "Get help with emergency housing and homelessness",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Find affordable housing"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 5,
+    "sections_count": 8,
+    "services_with_leg_count": 11,
+    "services_multi_act_count": 0
+  }
+}

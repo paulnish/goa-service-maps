@@ -1,0 +1,1550 @@
+{
+  "prefix": "ag",
+  "full_name": "Ministry of Attorney General",
+  "short_name": "Attorney General",
+  "blurb": "Provides legal services to government, oversees the justice system and courts administration, and protects rights through legal aid, human rights, and family justice services.",
+  "nav_name": "Attorney General",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "title": "GOAL 1",
+      "short_name": "B.C.'s courts are fair, safe and accessible",
+      "legend_label": "Courts & registries",
+      "description": "The ministry administers court registries, sheriff services and court processes across 90 court locations, and helps people resolve civil, small claims and traffic matters.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Resolve a civil or small claims dispute",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Resolve a small claims dispute",
+              "desc": "Small Claims Court settles disputes worth up to $35,000, with simpler and less formal rules and procedures than Supreme Court. Most people are encouraged to settle by agreement before a trial is needed.",
+              "users": "People and businesses with a civil dispute up to $35,000",
+              "user_groups": [
+                "General public",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gov.bc.ca/small-claims",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/courthouse-services/small-claims"
+                },
+                {
+                  "type": "ch-apply",
+                  "label": "Small claims Filing Assistant",
+                  "url": "https://justice.gov.bc.ca/FilingAssistant/index.do"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SCA",
+                  "color": "#e65100",
+                  "full_name": "Small Claims Act  -  Small Claims Court procedures and monetary jurisdiction"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/courthouse-services/small-claims"
+              }
+            },
+            {
+              "name": "Resolve a low-value dispute through the Civil Resolution Tribunal",
+              "desc": "The Civil Resolution Tribunal resolves most small claims disputes up to $5,000, along with strata property, societies and cooperative association disputes, mostly online.",
+              "users": "People and businesses with a low-value civil, strata or society dispute",
+              "user_groups": [
+                "General public",
+                "Businesses & employers",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "civilresolutionbc.ca",
+                  "url": "https://civilresolutionbc.ca/solution-explorer/vehicle-accidents/"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "gov.bc.ca/small-claims",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/courthouse-services/small-claims"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CRTA",
+                  "color": "#01579b",
+                  "full_name": "Civil Resolution Tribunal Act  -  Tribunal jurisdiction over small claims, strata and society disputes"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": [
+                  {
+                    "type": "shared_infrastructure",
+                    "service": "Resolve a strata property dispute",
+                    "ministry": "hma"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/courthouse-services/small-claims"
+              }
+            },
+            {
+              "name": "Pay or dispute a traffic ticket",
+              "desc": "Provincial violation tickets and federal contravention tickets can be paid online through PayBC, or disputed at a court registry.",
+              "users": "Drivers, vehicle owners",
+              "user_groups": [
+                "Drivers & vehicle owners",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Pay e-tickets on PayBC",
+                  "url": "https://pay.gov.bc.ca/"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "gov.bc.ca/courthouse-services",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/courthouse-services"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice"
+              }
+            },
+            {
+              "name": "File court documents and get court records or transcripts",
+              "desc": "Court documents and forms can be filed in person, by mail, fax, or electronically through Court Services Online. People can also request court file information and transcripts.",
+              "users": "Litigants, legal professionals, members of the public",
+              "user_groups": [
+                "General public",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Court Services Online",
+                  "url": "https://justice.gov.bc.ca/cso/index.do"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "gov.bc.ca/courthouse-services",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/courthouse-services/documents-forms-records"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/courthouse-services"
+              }
+            },
+            {
+              "name": "Find a court location or book a virtual registry appointment",
+              "desc": "There are 90 court locations across B.C., 43 with registries. A virtual counter lets people book an appointment to speak with a court registry employee by phone or video.",
+              "users": "Members of the public, litigants",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Book a virtual counter appointment",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/courthouse-services/virtual-counter"
+                },
+                {
+                  "type": "ch-find",
+                  "label": "Courthouse locations",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/courthouse-services/courthouse-locations"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/courthouse-services"
+              }
+            },
+            {
+              "name": "Find daily court schedules and case lists",
+              "desc": "Daily court lists show the location and time of civil, family and criminal court proceedings happening across the province, including completed case results.",
+              "users": "Members of the public, litigants, media",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Daily court lists",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/courthouse-services/daily-court-lists"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/courthouse-services"
+              }
+            },
+            {
+              "name": "Serve on a jury",
+              "desc": "A jury is a group of people selected to hear a criminal or civil trial, or a Coroner's inquest, and reach a decision on the case.",
+              "users": "Members of the public called for jury duty",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Jury duty",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/courthouse-services/jury-duty"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/courthouse-services"
+              }
+            },
+            {
+              "name": "Get a court interpreter",
+              "desc": "Interpreters help people who have difficulty understanding or speaking English, or who are deaf or hard of hearing, understand and participate in court proceedings.",
+              "users": "Litigants, witnesses, newcomers, deaf and hard of hearing people",
+              "user_groups": [
+                "General public",
+                "Newcomers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Arrange an interpreter",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/courthouse-services/interpreters"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/courthouse-services"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get help filling out and filing court forms",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for a Family Law Act order online",
+              "desc": "An online service helps people fill out Provincial Court family forms to apply for a Family Law Act order, with video tutorials on how it works.",
+              "users": "Separating or divorcing parents",
+              "user_groups": [
+                "Families & caregivers",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply for a family court order",
+                  "url": "https://justice.gov.bc.ca/apply-for-family-order/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FLA",
+                  "color": "#2e7d32",
+                  "full_name": "Family Law Act  -  Provincial Court Family Law Act orders"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/courthouse-services"
+              }
+            },
+            {
+              "name": "Apply for a joint, uncontested divorce online",
+              "desc": "Couples who agree on all family law issues, such as property division and support, can use the Online Divorce Assistant to jointly apply for a simple, uncontested divorce.",
+              "users": "Separating couples who agree on all issues",
+              "user_groups": [
+                "Families & caregivers",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply for a joint divorce",
+                  "url": "https://justice.gov.bc.ca/divorce"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/life-events/divorce/family-justice"
+              }
+            },
+            {
+              "name": "Get help completing small claims forms online",
+              "desc": "The Filing Assistant takes information entered online and generates completed Small Claims Court forms, developed by the ministry and the Provincial Court of B.C.",
+              "users": "People filing or responding to a small claim",
+              "user_groups": [
+                "General public",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Use the small claims Filing Assistant",
+                  "url": "https://justice.gov.bc.ca/FilingAssistant/index.do"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/courthouse-services/small-claims"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "title": "GOAL 2",
+      "short_name": "Families can resolve family law matters and keep children safe",
+      "legend_label": "Family justice",
+      "description": "The ministry's Family Justice Services Division helps British Columbians resolve separation, divorce and parenting disputes, and enforces child and spousal support.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Resolve a separation, divorce or parenting dispute",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get in-person, phone or video help with a family law issue",
+              "desc": "Family Justice Centres and Justice Access Centres offer free help with parenting arrangements, guardianship, child and spousal support, contact with a child, and property division involving companion animals.",
+              "users": "Separating or divorcing families",
+              "user_groups": [
+                "Families & caregivers",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Family Justice Centre and Justice Access Centre locations",
+                  "url": "https://www2.gov.bc.ca/gov/content/life-events/divorce/family-justice/who-can-help/family-justice-services-division/family-justice-centres"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Family Justice Services Division",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FLA",
+                  "color": "#2e7d32",
+                  "full_name": "Family Law Act  -  Resolution of family law disputes"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/life-events/divorce/family-justice/who-can-help/family-justice-services-division/justice-access-centres"
+              }
+            },
+            {
+              "name": "Take a Parenting After Separation course",
+              "desc": "A free course helps separating or divorcing parents understand how separation affects children and how to focus on their children's needs.",
+              "users": "Separating or divorcing parents",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Parenting After Separation course",
+                  "url": "https://www2.gov.bc.ca/gov/content/life-events/divorce/family-justice/who-can-help/family-justice-services-division/pas"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/life-events/divorce/family-justice"
+              }
+            },
+            {
+              "name": "Resolve a family dispute through mediation",
+              "desc": "Justice Access Centre staff can refer families to mediation and other dispute resolution options as an alternative to going to court.",
+              "users": "Separating or divorcing families",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Justice Access Centres - Mediation",
+                  "url": "https://www2.gov.bc.ca/gov/content/life-events/divorce/family-justice/who-can-help/family-justice-services-division/justice-access-centres"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FLA",
+                  "color": "#2e7d32",
+                  "full_name": "Family Law Act  -  Out-of-court dispute resolution"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/life-events/divorce/family-justice/who-can-help/family-justice-services-division/justice-access-centres"
+              }
+            },
+            {
+              "name": "Get help keeping your family safe from violence",
+              "desc": "Justice Access Centre staff can refer people to safety planning, VictimLinkBC and protection orders for family violence, including help registering a protection order.",
+              "users": "People experiencing family violence",
+              "user_groups": [
+                "Families & caregivers",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "VictimLinkBC",
+                  "url": "https://victimlinkbc.ca/"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Keeping yourself and your family safe",
+                  "url": "https://www2.gov.bc.ca/gov/content/life-events/divorce/keeping-your-family-safe"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FLA",
+                  "color": "#2e7d32",
+                  "full_name": "Family Law Act  -  Protection orders"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/life-events/divorce/family-justice/who-can-help/family-justice-services-division/justice-access-centres"
+              }
+            },
+            {
+              "name": "Get help if your child has been taken to another country without permission",
+              "desc": "B.C.'s central authority for international child abduction helps parents when a child has been taken to, or wrongfully retained in, another country without permission.",
+              "users": "Parents and guardians",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "International child abduction",
+                  "url": "https://www2.gov.bc.ca/gov/content/life-events/divorce/international-child-abduction"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/life-events/divorce/family-justice"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get child or spousal support calculated and enforced",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Calculate the amount of child support owed",
+              "desc": "The federal child support table look-up helps parents find the base amount of child support owed based on income and number of children.",
+              "users": "Separating or divorced parents",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Child support table look-up",
+                  "url": "http://www.justice.gc.ca/eng/fl-df/child-enfant/look-rech.asp"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/life-events/divorce/family-justice"
+              }
+            },
+            {
+              "name": "Enrol a support order or agreement for enforcement",
+              "desc": "The BC Family Maintenance Agency collects and forwards support payments owed under a court order or agreement, calculates arrears, and takes collection action against people who don't pay.",
+              "users": "People owed or paying child or spousal support",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "BC Family Maintenance Agency",
+                  "url": "https://www.bcfma.ca/"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "gov.bc.ca/bc-family-maintenance-agency",
+                  "url": "https://www2.gov.bc.ca/gov/content/life-events/divorce/family-justice/who-can-help/bc-family-maintenance-agency"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FMEA",
+                  "color": "#1b5e20",
+                  "full_name": "Family Maintenance Enforcement Act  -  Enforcement of support orders and agreements"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/life-events/divorce/family-justice/who-can-help/bc-family-maintenance-agency"
+              }
+            },
+            {
+              "name": "Recalculate child support each year without going to court",
+              "desc": "The Child Support Recalculation Service updates the amount of child support owed each year, based on current income, without requiring a court application.",
+              "users": "Parents with a child support order",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Child Support Recalculation Service",
+                  "url": "https://childsupportrecalc.gov.bc.ca/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "family_relationships",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/life-events/divorce/family-justice"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#b45309",
+      "title": "GOAL 3",
+      "short_name": "People are protected and supported through the criminal justice system",
+      "legend_label": "Criminal justice & victims",
+      "description": "The BC Prosecution Service conducts fair, independent prosecutions, and victim services help people cope with the emotional, physical and financial effects of crime.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get support as a victim or witness of crime",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get 24-hour crisis support and referrals after a crime",
+              "desc": "VictimLinkBC is a confidential, multilingual phone service available 24 hours a day that refers victims of crime and family or sexual violence to help in their community.",
+              "users": "Victims of crime, family members, witnesses",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "VictimLinkBC",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/victims-of-crime/victimlinkbc"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/victims-of-crime"
+              }
+            },
+            {
+              "name": "Access victim services in your community",
+              "desc": "Victim services help anyone who has been a victim of crime, their family members, and witnesses understand their options and get emotional and practical support.",
+              "users": "Victims of crime, family members, witnesses",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Victim services",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/victims-of-crime"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/victims-of-crime"
+              }
+            },
+            {
+              "name": "Apply for financial assistance as a victim of violent crime",
+              "desc": "The Crime Victim Assistance Program helps victims, immediate family members and some witnesses cope with the financial effects of violent crime.",
+              "users": "Victims of violent crime and their immediate family",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Crime Victim Assistance Program",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/victims-of-crime"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/victims-of-crime"
+              }
+            },
+            {
+              "name": "Get notified about an offender's custody or release status",
+              "desc": "The Victim Safety Unit provides eligible victims with information about the accused or offender, such as release dates and conditions.",
+              "users": "Victims of crime",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Victim Safety Unit",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/victims-of-crime"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/victims-of-crime"
+              }
+            },
+            {
+              "name": "Get help with travel costs to attend a justice proceeding",
+              "desc": "The Victim Travel Fund provides funds so a victim or family member can attend a justice-related proceeding in B.C.",
+              "users": "Victims of crime and family members",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Victim Travel Fund",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/victims-of-crime"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/victims-of-crime"
+              }
+            },
+            {
+              "name": "Register a protection order",
+              "desc": "The Protection Order Registry is a database of civil and criminal protection orders that helps reduce violence against vulnerable people.",
+              "users": "People with a protection order, police",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Protection Order Registry",
+                  "url": "https://www2.gov.bc.ca/gov/content/safety/crime-prevention/protection-order-registry"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "FLA",
+                  "color": "#2e7d32",
+                  "full_name": "Family Law Act  -  Registration of protection orders"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/victims-of-crime"
+              }
+            },
+            {
+              "name": "Prepare a victim impact statement",
+              "desc": "Victims can prepare a statement describing how a crime affected them, to be considered by the court at sentencing, with a guide available from the BC Prosecution Service.",
+              "users": "Victims of crime",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Victim Impact Statement and Guide",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/bc-prosecution-service/victim-impact-statements"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CCA",
+                  "color": "#b71c1c",
+                  "full_name": "Crown Counsel Act  -  Preparing victims for court"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/bc-prosecution-service"
+              }
+            },
+            {
+              "name": "Get information as a witness in a criminal case",
+              "desc": "Witnesses can find out what to expect when testifying in a criminal court case, including how Crown Counsel prepares witnesses before trial.",
+              "users": "Witnesses in a criminal case",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "What to Expect: Information for Witnesses",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/bc-prosecution-service/witness-information"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CCA",
+                  "color": "#b71c1c",
+                  "full_name": "Crown Counsel Act  -  Preparing witnesses for court"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/bc-prosecution-service"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Understand how criminal charges are assessed and prosecuted",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Learn how a criminal charge is assessed and prosecuted",
+              "desc": "The BC Prosecution Service explains the four phases of a criminal case: investigation, charge assessment, prosecution and appeals, and the charge assessment standard Crown Counsel apply.",
+              "users": "Accused persons, victims, members of the public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Criminal Court Process",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/bc-prosecution-service"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "CCA",
+                  "color": "#b71c1c",
+                  "full_name": "Crown Counsel Act  -  Charge assessment and conduct of prosecutions"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/bc-prosecution-service"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#6a1b9a",
+      "title": "GOAL 4",
+      "short_name": "British Columbians can access justice and have their human rights protected",
+      "legend_label": "Human rights & access to justice",
+      "description": "The ministry protects human rights under the Human Rights Code and funds legal aid and free legal help so people can resolve legal problems regardless of income.",
+      "metrics": [],
+      "css_class": "goal-4",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get help with a human rights complaint or protection",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "File a human rights complaint",
+              "desc": "The independent Human Rights Tribunal mediates and adjudicates complaints of discrimination and harassment under the B.C. Human Rights Code.",
+              "users": "People who believe they've experienced discrimination or harassment",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "BC Human Rights Tribunal",
+                  "url": "http://www.bchrt.bc.ca/"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "gov.bc.ca/human-rights-protection",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/human-rights/human-rights-protection"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HRC",
+                  "color": "#6a1b9a",
+                  "full_name": "Human Rights Code  -  Complaints and Human Rights Tribunal"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/human-rights/human-rights-protection"
+              }
+            },
+            {
+              "name": "Certify a guide dog or service dog team",
+              "desc": "Guide and service dog handlers can apply for certification, which increases public safety, raises training standards, and improves public access and tenancy protections for certified teams.",
+              "users": "People with disabilities who use a guide or service dog",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Guide Dog and Service Dog Certification",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/human-rights/guide-and-service-dog"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Security Programs",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "GDSDA",
+                  "color": "#8e24aa",
+                  "full_name": "Guide Dog and Service Dog Act  -  Certification of dog and handler teams"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/human-rights/guide-and-service-dog"
+              }
+            },
+            {
+              "name": "Get information about your rights under the Human Rights Code",
+              "desc": "Information about the B.C. Human Rights Code is available in multiple languages, explaining protections from discrimination and harassment in employment, housing, and services.",
+              "users": "General public",
+              "user_groups": [
+                "General public",
+                "Newcomers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Human rights protection",
+                  "url": "https://www2.gov.bc.ca/gov/content/justice/human-rights/human-rights-protection"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HRC",
+                  "color": "#6a1b9a",
+                  "full_name": "Human Rights Code  -  Protected characteristics and prohibited discrimination"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/human-rights/human-rights-protection"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Get free or low-cost legal help",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for legal aid",
+              "desc": "Legal Aid BC provides free legal help for eligible B.C. residents with criminal, family and immigration law matters, funded by the Ministry of Attorney General.",
+              "users": "People who cannot afford a lawyer",
+              "user_groups": [
+                "General public",
+                "Newcomers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Legal Aid BC",
+                  "url": "https://legalaid.bc.ca/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "LSSA",
+                  "color": "#004d40",
+                  "full_name": "Legal Services Society Act  -  Provision of legal aid"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/life-events/divorce/family-justice/who-can-help/family-justice-services-division/justice-access-centres"
+              }
+            },
+            {
+              "name": "Get free self-help legal information at a Justice Access Centre",
+              "desc": "Justice Access Centres provide self-help resource rooms, legal information, needs assessment, and referrals for family and civil legal issues, in person, by phone or by videoconference.",
+              "users": "People with a family or civil legal issue",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Justice Access Centres",
+                  "url": "https://www2.gov.bc.ca/gov/content/life-events/divorce/family-justice/who-can-help/family-justice-services-division/justice-access-centres"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Family Justice Services Division",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/life-events/divorce/family-justice/who-can-help/family-justice-services-division/justice-access-centres"
+              }
+            },
+            {
+              "name": "Get a referral to a lawyer",
+              "desc": "The BC Legal Referral Service (formerly the Lawyer Referral Service) connects people with a lawyer for a free initial consultation.",
+              "users": "General public",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "BC Legal Referral Service",
+                  "url": "https://bclegal.help/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/about-bcs-justice-system"
+              }
+            },
+            {
+              "name": "Get free legal help through a pro bono program",
+              "desc": "Access Pro Bono connects eligible people who cannot afford a lawyer with free legal help and volunteer lawyers across B.C.",
+              "users": "People who cannot afford legal representation",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Access Pro Bono",
+                  "url": "https://accessprobono.ca/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/justice/about-bcs-justice-system"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Provide legal advice and representation to government",
+      "desc": "The Legal Services Branch provides legal advice, drafts legislation, and represents government ministries and agencies in litigation.",
+      "users": "Government ministries and agencies",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "justice_legal",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/attorney-general"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Conduct criminal prosecutions independent of political direction",
+      "desc": "The BC Prosecution Service makes charge assessment decisions and conducts prosecutions and appeals independently of police and government, guided by the Crown Counsel Act.",
+      "users": "Internal program staff, Crown Counsel",
+      "channels": [],
+      "legislation": [
+        {
+          "abbrev": "CCA",
+          "color": "#b71c1c",
+          "full_name": "Crown Counsel Act  -  Independence of Crown Counsel"
+        }
+      ],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "justice_legal",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/bc-prosecution-service"
+      }
+    },
+    {
+      "id": "f-3",
+      "name": "Coordinate justice system reform through the Justice and Public Safety Council",
+      "desc": "The Justice and Public Safety Council develops a strategic vision and plan for the justice and public safety sector and advises the minister on reform priorities.",
+      "users": "Internal program staff, justice system partners",
+      "channels": [],
+      "legislation": [
+        {
+          "abbrev": "JRTA",
+          "color": "#616161",
+          "full_name": "Justice Reform and Transparency Act  -  Justice and Public Safety Council"
+        }
+      ],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "justice_legal",
+        "relationships": []
+      },
+      "validation": {
+        "status": "agent_verified",
+        "by": "claude-agent",
+        "date": "2026-07-23",
+        "source": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/13007"
+      }
+    }
+  ],
+  "mandate_date": "July 17, 2025",
+  "mandate_minister": "Niki Sharma",
+  "mandate_pdf": "https://www2.gov.bc.ca/assets/gov/government/ministries-organizations/premier-cabinet-mlas/minister-letter/mandate_letter_niki_sharma.pdf",
+  "cross_cutting": [
+    "Grow the economy and create jobs",
+    "Reduce costs for families, including housing",
+    "Strengthen health care",
+    "Make neighbourhoods and communities safer"
+  ],
+  "mandate_legend": [],
+  "channel_filters": [
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Families & caregivers",
+    "Businesses & employers",
+    "Drivers & vehicle owners",
+    "Newcomers",
+    "Property owners"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

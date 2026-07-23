@@ -22,6 +22,61 @@
   to = "/calgary"
   status = 301
 
+[[redirects]]
+  from = "/gnb"
+  to = "/data/ca/nb/gnb/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/gnb/"
+  to = "/gnb"
+  status = 301
+
+# ── GNB department pages (path-scoped under /nb/ to avoid
+#    prefix collisions with GoA wildcard) ─────────────────────
+[[redirects]]
+  from = "/nb/:prefix/service-map"
+  to = "/data/ca/nb/gnb/:prefix/service-map.html"
+  status = 200
+
+[[redirects]]
+  from = "/nb/:prefix/legislation"
+  to = "/data/ca/nb/gnb/:prefix/legislation.html"
+  status = 200
+
+[[redirects]]
+  from = "/nb/:prefix"
+  to = "/nb/:prefix/service-map"
+  status = 301
+
+
+[[redirects]]
+  from = "/bcgov"
+  to = "/data/ca/bc/bcgov/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/bcgov/"
+  to = "/bcgov"
+  status = 301
+
+# ── BC ministry pages (path-scoped under /bc/ to avoid
+#    prefix collisions with GoA wildcard) ─────────────────────
+[[redirects]]
+  from = "/bc/:prefix/service-map"
+  to = "/data/ca/bc/bcgov/:prefix/service-map.html"
+  status = 200
+
+[[redirects]]
+  from = "/bc/:prefix/legislation"
+  to = "/data/ca/bc/bcgov/:prefix/legislation.html"
+  status = 200
+
+[[redirects]]
+  from = "/bc/:prefix"
+  to = "/bc/:prefix/service-map"
+  status = 301
+
 # ── GoA ministry pages (service-map + legislation) ───────────
 # /prefix → service map (shortcut)
 # /prefix/service-map → service map page

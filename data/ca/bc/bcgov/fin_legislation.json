@@ -1,0 +1,344 @@
+{
+  "prefix": "fin",
+  "name": "Ministry of Finance",
+  "short_name": "Finance",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#234075",
+      "short_name": "British Columbians and businesses can pay provincial taxes easily and accurately",
+      "legend_label": "Tax administration",
+      "main_services": [
+        { "number": 1, "name": "Register and pay provincial sales tax" },
+        { "number": 2, "name": "Claim income tax credits" },
+        { "number": 3, "name": "Pay tax on property transactions" }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#0072ce",
+      "short_name": "Property owners get fair assessments and the tax relief they qualify for",
+      "legend_label": "Property tax & housing measures",
+      "main_services": [
+        { "number": 1, "name": "Reduce your annual property tax bill" },
+        { "number": 2, "name": "Appeal your property assessment" },
+        { "number": 3, "name": "Comply with the speculation and vacancy tax" }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#2e7d32",
+      "short_name": "Financial services and the public sector operate with sound oversight and transparency",
+      "legend_label": "Financial sector & public sector oversight",
+      "main_services": [
+        { "number": 1, "name": "Access regulated financial services with confidence" },
+        { "number": 2, "name": "Oversee public sector compensation and governance" },
+        { "number": 3, "name": "Comply with pay transparency requirements" }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#b45309",
+      "short_name": "Government's budget and finances are transparent and well managed",
+      "legend_label": "Budget & public accounts",
+      "main_services": [
+        { "number": 1, "name": "Track the provincial budget and financial results" },
+        { "number": 2, "name": "Pay amounts owed to government" }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "PSTA",
+      "full_name": "Provincial Sales Tax Act",
+      "color": "#234075",
+      "citation": "SBC 2012, c 35",
+      "summary": "Imposes and administers the provincial sales tax (PST) on taxable goods, software, and services acquired in or brought into B.C., including registration, collection, and remittance obligations.",
+      "sections": [
+        {
+          "ref": "Division 1",
+          "title": "Registration to collect tax",
+          "description": "Requires businesses that sell, lease, or provide taxable goods, software, or services in B.C. to register to collect and remit PST.",
+          "anchor_id": "PSTA-reg",
+          "services": [
+            { "name": "Register to collect PST", "type": "supporting", "goal_number": 1, "goal_color": "#234075", "ms_number": 1, "ms_name": "Register and pay provincial sales tax" }
+          ]
+        },
+        {
+          "ref": "Division 1",
+          "title": "Accommodation and MRDT registration",
+          "description": "Requires accommodation providers, including short-term rental operators, to register to collect PST and, where applicable, the Municipal and Regional District Tax.",
+          "anchor_id": "PSTA-accom",
+          "services": [
+            { "name": "Register to collect tax on short-term accommodation", "type": "supporting", "goal_number": 1, "goal_color": "#234075", "ms_number": 1, "ms_name": "Register and pay provincial sales tax" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "PTTA",
+      "full_name": "Property Transfer Tax Act",
+      "color": "#234075",
+      "citation": "RSBC 1996, c 378",
+      "summary": "Imposes property transfer tax on registered transfers of an interest in B.C. land, sets exemptions, and imposes an additional tax on residential property acquired by foreign nationals, foreign corporations, and taxable trustees in specified areas.",
+      "sections": [
+        {
+          "ref": "Part 1",
+          "title": "Tax on registration of property transfers",
+          "description": "Imposes property transfer tax based on the fair market value of a property at the time of registration.",
+          "anchor_id": "PTTA-part1",
+          "services": [
+            { "name": "Pay property transfer tax when you buy property", "type": "supporting", "goal_number": 1, "goal_color": "#234075", "ms_number": 3, "ms_name": "Pay tax on property transactions" }
+          ]
+        },
+        {
+          "ref": "Part 1",
+          "title": "Exemptions",
+          "description": "Sets out exemptions from property transfer tax, including the first time home buyers' program, newly built home exemption, and family and farm transfers.",
+          "anchor_id": "PTTA-exempt",
+          "services": [
+            { "name": "Claim a property transfer tax exemption", "type": "supporting", "goal_number": 1, "goal_color": "#234075", "ms_number": 3, "ms_name": "Pay tax on property transactions" }
+          ]
+        },
+        {
+          "ref": "Part 2",
+          "title": "Additional tax for foreign entities",
+          "description": "Imposes an additional property transfer tax on foreign nationals, foreign corporations, and taxable trustees acquiring residential property in specified areas of B.C.",
+          "anchor_id": "PTTA-additional",
+          "services": [
+            { "name": "Pay the additional property transfer tax as a foreign buyer", "type": "supporting", "goal_number": 1, "goal_color": "#234075", "ms_number": 3, "ms_name": "Pay tax on property transactions" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "HFTA",
+      "full_name": "Residential Property (Short-Term Holding) Profit Tax Act",
+      "color": "#234075",
+      "citation": "SBC 2024, c 14",
+      "summary": "Imposes the BC home flipping tax on profit earned from disposing of a taxable residential property, including presale contract assignments, owned for less than 730 days, effective January 1, 2025.",
+      "sections": [
+        {
+          "ref": "Act",
+          "title": "Tax on profit from short-term property sales",
+          "description": "Imposes a tax on net taxable income from the disposition of a taxable property owned for less than 730 days, with the rate declining over the holding period.",
+          "anchor_id": "HFTA-tax",
+          "services": [
+            { "name": "File a BC home flipping tax return", "type": "supporting", "goal_number": 1, "goal_color": "#234075", "ms_number": 3, "ms_name": "Pay tax on property transactions" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "ITA",
+      "full_name": "Income Tax Act",
+      "color": "#234075",
+      "citation": "RSBC 1996, c 215",
+      "summary": "Imposes B.C. personal and corporate income tax and establishes provincial income tax credits, administered under a collection agreement with the Government of Canada.",
+      "sections": [
+        {
+          "ref": "Part 3",
+          "title": "Personal tax credits",
+          "description": "Establishes personal income tax credits, including the renter's tax credit, training credit, and climate action credit.",
+          "anchor_id": "ITA-personal",
+          "services": [
+            { "name": "Claim a personal income tax credit", "type": "supporting", "goal_number": 1, "goal_color": "#234075", "ms_number": 2, "ms_name": "Claim income tax credits" }
+          ]
+        },
+        {
+          "ref": "Part 4",
+          "title": "Corporate tax credits",
+          "description": "Establishes corporate income tax credits, including scientific research and experimental development, film and television, and manufacturing and processing investment credits.",
+          "anchor_id": "ITA-corporate",
+          "services": [
+            { "name": "Claim a corporate income tax credit", "type": "supporting", "goal_number": 1, "goal_color": "#234075", "ms_number": 2, "ms_name": "Claim income tax credits" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "HOGA",
+      "full_name": "Home Owner Grant Act",
+      "color": "#0072ce",
+      "citation": "RSBC 1996, c 194",
+      "summary": "Establishes the home owner grant, which reduces the annual property tax homeowners pay on their principal residence, including an additional grant for seniors, veterans, and people with disabilities.",
+      "sections": [
+        {
+          "ref": "Act",
+          "title": "Home owner grant",
+          "description": "Sets eligibility, grant amounts, and the grant threshold for the regular and additional home owner grant.",
+          "anchor_id": "HOGA-grant",
+          "services": [
+            { "name": "Claim the home owner grant", "type": "supporting", "goal_number": 2, "goal_color": "#0072ce", "ms_number": 1, "ms_name": "Reduce your annual property tax bill" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "SVTA",
+      "full_name": "Speculation and Vacancy Tax Act",
+      "color": "#0072ce",
+      "citation": "SBC 2018, c 46",
+      "summary": "Imposes an annual speculation and vacancy tax on residential property in designated taxable areas of B.C. based on how owners use the property, with annual declaration, exemption, credit, and payment requirements.",
+      "sections": [
+        {
+          "ref": "Part 1",
+          "title": "Designated taxable areas",
+          "description": "Designates the taxable areas of B.C. where the speculation and vacancy tax applies.",
+          "anchor_id": "SVTA-areas",
+          "services": [
+            { "name": "Check if your property is subject to the speculation and vacancy tax", "type": "supporting", "goal_number": 2, "goal_color": "#0072ce", "ms_number": 3, "ms_name": "Comply with the speculation and vacancy tax" }
+          ]
+        },
+        {
+          "ref": "Part 2",
+          "title": "Annual declaration requirement",
+          "description": "Requires owners of residential property in taxable areas to declare annually by March 31.",
+          "anchor_id": "SVTA-declare",
+          "services": [
+            { "name": "File a speculation and vacancy tax declaration", "type": "supporting", "goal_number": 2, "goal_color": "#0072ce", "ms_number": 3, "ms_name": "Comply with the speculation and vacancy tax" }
+          ]
+        },
+        {
+          "ref": "Part 3",
+          "title": "Exemptions and tax credits",
+          "description": "Sets out exemptions from the tax and tax credits available to owners who do not qualify for an exemption.",
+          "anchor_id": "SVTA-exempt",
+          "services": [
+            { "name": "Claim a speculation and vacancy tax exemption or credit", "type": "supporting", "goal_number": 2, "goal_color": "#0072ce", "ms_number": 3, "ms_name": "Comply with the speculation and vacancy tax" }
+          ]
+        },
+        {
+          "ref": "Part 4",
+          "title": "Payment of tax",
+          "description": "Requires payment of assessed speculation and vacancy tax by the first business day of July.",
+          "anchor_id": "SVTA-pay",
+          "services": [
+            { "name": "Pay the speculation and vacancy tax", "type": "supporting", "goal_number": 2, "goal_color": "#0072ce", "ms_number": 3, "ms_name": "Comply with the speculation and vacancy tax" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "FIA",
+      "full_name": "Financial Institutions Act",
+      "color": "#2e7d32",
+      "citation": "RSBC 1996, c 141",
+      "summary": "Establishes the regulatory framework for credit unions, trust companies, and insurance companies in B.C. and, with related statutes, underpins the BC Financial Services Authority's oversight of mortgage brokers, real estate professionals, and pensions.",
+      "sections": [
+        {
+          "ref": "Part 1",
+          "title": "Regulation of financial services sector",
+          "description": "Defines financial institutions, financial services, and the powers of the Superintendent of Financial Institutions and BC Financial Services Authority.",
+          "anchor_id": "FIA-regulate",
+          "services": [
+            { "name": "Get information about a regulated mortgage broker, real estate professional, or financial institution", "type": "supporting", "goal_number": 3, "goal_color": "#2e7d32", "ms_number": 1, "ms_name": "Access regulated financial services with confidence" }
+          ]
+        },
+        {
+          "ref": "Part 9",
+          "title": "Public protection and complaints",
+          "description": "Provides for supervision, investigation, and enforcement action against regulated entities to protect the public.",
+          "anchor_id": "FIA-protect",
+          "services": [
+            { "name": "Report a concern about a regulated financial services provider", "type": "supporting", "goal_number": 3, "goal_color": "#2e7d32", "ms_number": 1, "ms_name": "Access regulated financial services with confidence" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "PSEA",
+      "full_name": "Public Sector Employers Act",
+      "color": "#2e7d32",
+      "citation": "RSBC 1996, c 384",
+      "summary": "Establishes the Public Sector Employers' Council and requires public sector employers to disclose executive compensation annually.",
+      "sections": [
+        {
+          "ref": "Act",
+          "title": "Executive compensation disclosure",
+          "description": "Requires organizations defined as public sector employers to disclose compensation paid to their CEO and next four highest-paid executives.",
+          "anchor_id": "PSEA-disclose",
+          "services": [
+            { "name": "Access public sector executive compensation disclosures", "type": "supporting", "goal_number": 3, "goal_color": "#2e7d32", "ms_number": 2, "ms_name": "Oversee public sector compensation and governance" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "PTA",
+      "full_name": "Pay Transparency Act",
+      "color": "#2e7d32",
+      "citation": "SBC 2023, c 18",
+      "summary": "Requires B.C. employers to include pay information in job postings, prohibits asking applicants about pay history, protects employees from reprisal for pay discussions, and requires larger reporting employers to publish annual pay transparency reports.",
+      "sections": [
+        {
+          "ref": "Part 3",
+          "title": "Employer reporting obligations",
+          "description": "Requires reporting employers to prepare and publish an annual pay transparency report by November 1 each year.",
+          "anchor_id": "PTA-report",
+          "services": [
+            { "name": "Publish a pay transparency report as an employer", "type": "supporting", "goal_number": 3, "goal_color": "#2e7d32", "ms_number": 3, "ms_name": "Comply with pay transparency requirements" }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "BTAA",
+      "full_name": "Budget Transparency and Accountability Act",
+      "color": "#b45309",
+      "citation": "SBC 2000, c 23",
+      "summary": "Requires government to publish the annual Budget, quarterly financial reports, and the Public Accounts, and sets out reporting requirements for Crown corporations.",
+      "sections": [
+        {
+          "ref": "Part 2",
+          "title": "Budget documents",
+          "description": "Requires the government to table an annual budget with revenue, expense, and forecast information.",
+          "anchor_id": "BTAA-budget",
+          "services": [
+            { "name": "Review the B.C. budget", "type": "supporting", "goal_number": 4, "goal_color": "#b45309", "ms_number": 1, "ms_name": "Track the provincial budget and financial results" }
+          ]
+        },
+        {
+          "ref": "s.9",
+          "title": "Public Accounts",
+          "description": "Requires government to publish the Public Accounts annually, comparing actual financial results to the budget plan.",
+          "anchor_id": "BTAA-s9",
+          "services": [
+            { "name": "Access Public Accounts and government financial statements", "type": "supporting", "goal_number": 4, "goal_color": "#b45309", "ms_number": 1, "ms_name": "Track the provincial budget and financial results" }
+          ]
+        },
+        {
+          "ref": "Act",
+          "title": "Financial reporting requirements",
+          "description": "Sets accounting and reporting standards that government ministries and public sector organizations must follow.",
+          "anchor_id": "BTAA-reporting",
+          "services": []
+        }
+      ]
+    },
+    {
+      "abbrev": "BBMAA",
+      "full_name": "Balanced Budget and Ministerial Accountability Act, 2002",
+      "color": "#b45309",
+      "citation": "SBC 2001, c 28",
+      "summary": "Requires a Ministerial Accountability Report comparing expected and actual performance results for members of the Executive Council to be released alongside the Public Accounts each year.",
+      "sections": [
+        {
+          "ref": "s.6",
+          "title": "Ministerial Accountability Report",
+          "description": "Requires a comparison of expected and actual performance results for members of the Executive Council to be released with the Public Accounts.",
+          "anchor_id": "BBMAA-s6",
+          "services": [
+            { "name": "Access Public Accounts and government financial statements", "type": "supporting", "goal_number": 4, "goal_color": "#b45309", "ms_number": 1, "ms_name": "Track the provincial budget and financial results" }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 11,
+    "sections_count": 21,
+    "services_with_leg_count": 19,
+    "services_multi_act_count": 1
+  }
+}

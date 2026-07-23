@@ -1,0 +1,104 @@
+[
+  {
+    "prefix": "aaf",
+    "name": "Agriculture, Aquaculture and Fisheries",
+    "short_name": "Agriculture, Aquaculture & Fisheries",
+    "blurb": "Supports the sustainable growth of New Brunswick's agriculture, aquaculture and fisheries sectors — from farm business development and crop insurance to aquaculture licensing and seafood processing."
+  },
+  {
+    "prefix": "eecd",
+    "name": "Education and Early Childhood Development",
+    "short_name": "Education & Early Childhood Development",
+    "blurb": "Leads New Brunswick's anglophone and francophone K-12 school systems and the early learning and child care sector, supporting children from birth through Grade 12."
+  },
+  {
+    "prefix": "nrg",
+    "name": "Energy",
+    "short_name": "Energy",
+    "blurb": "Leads provincial energy policy — reliable and affordable electricity, energy efficiency, renewables, and clean energy development including nuclear innovation."
+  },
+  {
+    "prefix": "elg",
+    "name": "Environment and Local Government",
+    "short_name": "Environment & Local Government",
+    "blurb": "Protects New Brunswick's environment through assessments, approvals and monitoring, leads climate change action, and supports strong, accountable local governments."
+  },
+  {
+    "prefix": "ftb",
+    "name": "Finance and Treasury Board",
+    "short_name": "Finance & Treasury Board",
+    "blurb": "Manages the province's finances — the budget, taxation, borrowing, and treasury — and oversees the public service as employer."
+  },
+  {
+    "prefix": "hlth",
+    "name": "Health",
+    "short_name": "Health",
+    "blurb": "Funds and oversees New Brunswick's health system — Medicare coverage, hospitals delivered through the Horizon and Vitalité health networks, public health, and mental health and addiction services."
+  },
+  {
+    "prefix": "ia",
+    "name": "Indigenous Affairs",
+    "short_name": "Indigenous Affairs",
+    "blurb": "Leads the province's relationships with First Nations in New Brunswick — coordinating consultation, negotiating agreements, and advancing reconciliation across government."
+  },
+  {
+    "prefix": "jps",
+    "name": "Justice and Public Safety",
+    "short_name": "Justice & Public Safety",
+    "blurb": "Supports the courts and justice services, keeps communities safe through policing oversight, corrections, and emergency management, and regulates activities from liquor sales to private security."
+  },
+  {
+    "prefix": "nr",
+    "name": "Natural Resources",
+    "short_name": "Natural Resources",
+    "blurb": "Manages New Brunswick's Crown lands, forests, fish and wildlife, and mineral resources — half the province is Crown land held in trust for its people."
+  },
+  {
+    "prefix": "petl",
+    "name": "Post-Secondary Education, Training and Labour",
+    "short_name": "Post-Secondary Education, Training & Labour",
+    "blurb": "Helps people get the education and skills for good jobs — student financial assistance, apprenticeship, employment services, employment standards, and immigration and settlement."
+  },
+  {
+    "prefix": "sd",
+    "name": "Social Development",
+    "short_name": "Social Development",
+    "blurb": "Supports New Brunswickers who need help most — income assistance, affordable housing, child protection, disability supports, and long-term care for seniors."
+  },
+  {
+    "prefix": "thc",
+    "name": "Tourism, Heritage and Culture",
+    "short_name": "Tourism, Heritage & Culture",
+    "blurb": "Grows New Brunswick's tourism economy, operates provincial parks and attractions, and supports arts, culture, heritage, sport, and the provincial archives."
+  },
+  {
+    "prefix": "ti",
+    "name": "Transportation and Infrastructure",
+    "short_name": "Transportation & Infrastructure",
+    "blurb": "Builds and maintains New Brunswick's highways, bridges, and ferries, and constructs and manages public buildings including schools and hospitals."
+  },
+  {
+    "prefix": "snb",
+    "name": "Service New Brunswick",
+    "short_name": "Service New Brunswick",
+    "blurb": "The government's service delivery organization — one-stop access to licences, registrations, vital statistics, property assessment, and hundreds of other services online, by phone, and in service centres."
+  },
+  {
+    "prefix": "onb",
+    "name": "Opportunities New Brunswick",
+    "short_name": "Opportunities NB",
+    "blurb": "The province's economic development agency — helps businesses start, grow, export, and invest in New Brunswick through financing, advice, and investment attraction."
+  },
+  {
+    "prefix": "eco",
+    "name": "Executive Council Office",
+    "short_name": "Executive Council Office",
+    "blurb": "Supports the Premier and Cabinet, coordinates government-wide policy and intergovernmental relations, and oversees openness obligations including right to information."
+  },
+  {
+    "prefix": "wge",
+    "name": "Office of Women and Gender Equity",
+    "short_name": "Women & Gender Equity",
+    "blurb": "Advances gender equality in New Brunswick — supporting violence prevention, pay equity, and organizations working for women and gender-diverse people."
+  }
+]

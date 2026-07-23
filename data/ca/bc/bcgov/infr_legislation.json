@@ -1,0 +1,127 @@
+{
+  "prefix": "infr",
+  "name": "Ministry of Infrastructure",
+  "short_name": "Infrastructure",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "Schools, hospitals and campuses are built for B.C.'s growing communities",
+      "legend_label": "Capital projects",
+      "main_services": [
+        { "number": 1, "name": "Find out about capital projects in your community" },
+        { "number": 2, "name": "Access government real estate and facilities services" }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#00838f",
+      "short_name": "Major infrastructure projects are delivered faster and more efficiently",
+      "legend_label": "Faster project delivery",
+      "main_services": [
+        { "number": 1, "name": "Get faster approvals for a provincially significant infrastructure project" },
+        { "number": 2, "name": "Partner with government on complex capital project procurement" }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#b45309",
+      "short_name": "Construction workers and businesses are paid fairly and safely employed",
+      "legend_label": "Fair construction industry",
+      "main_services": [
+        { "number": 1, "name": "Get paid on time on a construction project" },
+        { "number": 2, "name": "Work on a major public construction project" }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "IPA",
+      "full_name": "Infrastructure Projects Act",
+      "color": "#00838f",
+      "citation": "Bill 15, 2025 (43rd Parliament, 1st Session) — introduced May 2025",
+      "summary": "Formalizes the powers of the Ministry of Infrastructure and creates up to six tools — priority permitting reviews, qualified professional certifications, expedited environmental assessment, automatic low-risk permits, local government planning flexibility, and faster agreement frameworks — to speed up review and delivery of projects designated as provincially significant, without reducing environmental, safety or Indigenous consultation standards.",
+      "sections": [
+        {
+          "ref": "Provincial Permits",
+          "title": "Priority permitting reviews and qualified professional certifications",
+          "description": "Designated projects go to the front of the line for permit reviews, and over time qualified professionals may be allowed to certify compliance with provincial standards.",
+          "anchor_id": "IPA-permits",
+          "services": [
+            {
+              "name": "Request priority permitting review for a designated infrastructure project",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00838f",
+              "ms_number": 1,
+              "ms_name": "Get faster approvals for a provincially significant infrastructure project"
+            }
+          ]
+        },
+        {
+          "ref": "Local Government Approvals",
+          "title": "Local government planning flexibility and agreements",
+          "description": "Local governments can ask the province to temporarily waive provincial land use planning rules (such as official community plan updates) for designated projects, and use a framework to reach faster agreements with proponents.",
+          "anchor_id": "IPA-localgov",
+          "services": [
+            {
+              "name": "Request local government planning flexibility for a designated project",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#00838f",
+              "ms_number": 1,
+              "ms_name": "Get faster approvals for a provincially significant infrastructure project"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CPPA",
+      "full_name": "Construction Prompt Payment Act",
+      "color": "#b45309",
+      "citation": "Bill 20, 2025 (43rd Parliament, 1st Session) — Royal Assent November 27, 2025; not yet in force",
+      "summary": "Sets mandatory payment deadlines and a fast-track adjudication process for payment disputes between owners, contractors and subcontractors on construction projects. Responsibility for the Act moved from the Ministry of Attorney General to the Ministry of Infrastructure; regulations and an adjudication authority are being developed before the Act comes into force.",
+      "sections": [
+        {
+          "ref": "Payment Deadlines",
+          "title": "Proper invoices and payment deadlines",
+          "description": "Contractors deliver a 'proper invoice'; owners must pay in full within 28 days or notify of non/partial payment within 14 days; contractors must then pay subcontractors within 7 days of receiving payment.",
+          "anchor_id": "CPPA-payment",
+          "services": [
+            {
+              "name": "Get paid on time as a contractor or subcontractor",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#b45309",
+              "ms_number": 1,
+              "ms_name": "Get paid on time on a construction project"
+            }
+          ]
+        },
+        {
+          "ref": "Adjudication",
+          "title": "Adjudication of payment disputes",
+          "description": "Payment-related disputes can be referred to an adjudicator drawn from a registry of qualified professionals, with determinations issued within weeks and enforcement backed by interest charges or work suspension.",
+          "anchor_id": "CPPA-adjudication",
+          "services": [
+            {
+              "name": "Resolve a construction payment dispute through adjudication",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#b45309",
+              "ms_number": 1,
+              "ms_name": "Get paid on time on a construction project"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 2,
+    "sections_count": 4,
+    "services_with_leg_count": 4,
+    "services_multi_act_count": 0
+  }
+}

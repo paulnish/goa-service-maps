@@ -1,0 +1,315 @@
+{
+  "prefix": "ecs",
+  "name": "Energy and Climate Solutions",
+  "short_name": "Energy & Climate Solutions",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#1565c0",
+      "short_name": "British Columbians have access to clean, reliable and affordable electricity",
+      "legend_label": "Clean electricity",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get information about B.C.'s electricity supply and clean energy projects"
+        },
+        {
+          "number": 2,
+          "name": "Get a rebate for an EV charger"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "short_name": "Homes, buildings and businesses use less energy and save money",
+      "legend_label": "Energy efficiency",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Improve your home's energy efficiency"
+        },
+        {
+          "number": 2,
+          "name": "Improve your business's or building's energy efficiency"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#b45309",
+      "short_name": "Industry reduces greenhouse gas emissions and B.C. tracks its climate progress",
+      "legend_label": "Industrial climate action",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Comply with industrial carbon pricing and emissions reporting"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#6a1b9a",
+      "short_name": "B.C.'s oil, gas and low-carbon fuel resources are developed responsibly",
+      "legend_label": "Oil, gas & low-carbon fuels",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Develop petroleum and natural gas resources"
+        },
+        {
+          "number": 2,
+          "name": "Supply low-carbon and renewable transportation fuels"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "CEA",
+      "full_name": "Clean Energy Act",
+      "color": "#1565c0",
+      "citation": "SBC 2010, c 22",
+      "summary": "Sets B.C.'s electricity self-sufficiency and clean/renewable generation targets and guides provincial energy planning.",
+      "sections": [
+        {
+          "ref": "Part 1",
+          "title": "Electricity self-sufficiency and clean generation targets",
+          "description": "Requires the Province to plan for electricity self-sufficiency and sets clean and renewable energy generation targets.",
+          "anchor_id": "CEA-Part1",
+          "services": [
+            {
+              "name": "Learn about B.C.'s electricity supply and clean energy sources",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#1565c0",
+              "ms_number": 1,
+              "ms_name": "Get information about B.C.'s electricity supply and clean energy projects"
+            },
+            {
+              "name": "Plan and oversee provincial electricity system growth and reliability",
+              "type": "foundational",
+              "foundational_id": "f-3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "UCA",
+      "full_name": "Utilities Commission Act",
+      "color": "#1565c0",
+      "citation": "RSBC 1996, c 473",
+      "summary": "Regulates public utilities in B.C., including BC Hydro rates, service standards, and infrastructure approvals.",
+      "sections": [
+        {
+          "ref": "Part 3",
+          "title": "Regulation of public utilities and rates",
+          "description": "Establishes the B.C. Utilities Commission's authority to regulate utility rates, service and infrastructure approvals.",
+          "anchor_id": "UCA-Part3",
+          "services": [
+            {
+              "name": "Plan and oversee provincial electricity system growth and reliability",
+              "type": "foundational",
+              "foundational_id": "f-3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "CCAA",
+      "full_name": "Climate Change Accountability Act",
+      "color": "#b45309",
+      "citation": "SBC 2007, c 42",
+      "summary": "Sets legislated greenhouse gas reduction targets and an accountability framework, including annual public reporting and an independent advisory body. Renamed from the Greenhouse Gas Reduction Targets Act in 2019.",
+      "sections": [
+        {
+          "ref": "Part 2",
+          "title": "Independent advisory body",
+          "description": "Provides for an independent expert advisory body — the Climate Solutions Council — to advise government on climate action and clean economic growth.",
+          "anchor_id": "CCAA-Part2",
+          "services": [
+            {
+              "name": "Provide independent advice on climate action and clean economic growth",
+              "type": "foundational",
+              "foundational_id": "f-1"
+            }
+          ]
+        },
+        {
+          "ref": "Part 1",
+          "title": "Targets and accountability reporting",
+          "description": "Sets 2030, 2040 and 2050 emissions reduction targets and requires an annual Climate Change Accountability Report on progress.",
+          "anchor_id": "CCAA-Part1",
+          "services": [
+            {
+              "name": "Report annually on B.C.'s climate change accountability progress",
+              "type": "foundational",
+              "foundational_id": "f-2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "GGIRCA",
+      "full_name": "Greenhouse Gas Industrial Reporting and Control Act",
+      "color": "#b45309",
+      "citation": "SBC 2014, c 29",
+      "summary": "Requires large industrial operations to report greenhouse gas emissions and establishes the B.C. Output-Based Pricing System compliance framework.",
+      "sections": [
+        {
+          "ref": "Part 2",
+          "title": "Reporting operations and compliance obligations",
+          "description": "Defines reporting and regulated operations and their emissions reporting and compliance obligations.",
+          "anchor_id": "GGIRCA-Part2",
+          "services": [
+            {
+              "name": "Report your industrial greenhouse gas emissions",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#b45309",
+              "ms_number": 1,
+              "ms_name": "Comply with industrial carbon pricing and emissions reporting"
+            },
+            {
+              "name": "Register your operation in the B.C. Industrial Emissions Reporting System",
+              "type": "supporting",
+              "goal_number": 3,
+              "goal_color": "#b45309",
+              "ms_number": 1,
+              "ms_name": "Comply with industrial carbon pricing and emissions reporting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "LCFA",
+      "full_name": "Low Carbon Fuels Act",
+      "color": "#6a1b9a",
+      "citation": "SBC 2022, c 21",
+      "summary": "Establishes B.C.'s Low Carbon Fuel Standard, requiring fuel suppliers to meet renewable and low-carbon fuel targets and enabling a compliance credit market. Replaced the Greenhouse Gas Reduction (Renewable and Low Carbon Fuel Requirements) Act effective January 1, 2024.",
+      "sections": [
+        {
+          "ref": "Part 2",
+          "title": "Fuel supplier compliance and reporting",
+          "description": "Sets fuel supplier targets, carbon intensity approval process, and annual compliance reporting requirements.",
+          "anchor_id": "LCFA-Part2",
+          "services": [
+            {
+              "name": "Report compliance under the Low Carbon Fuel Standard",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#6a1b9a",
+              "ms_number": 2,
+              "ms_name": "Supply low-carbon and renewable transportation fuels"
+            },
+            {
+              "name": "Apply to have your fuel's carbon intensity approved",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#6a1b9a",
+              "ms_number": 2,
+              "ms_name": "Supply low-carbon and renewable transportation fuels"
+            }
+          ]
+        },
+        {
+          "ref": "Part 3",
+          "title": "Credit market and compliance units",
+          "description": "Enables registered parties to generate, transfer and trade compliance credits and debits.",
+          "anchor_id": "LCFA-Part3",
+          "services": [
+            {
+              "name": "Trade Low Carbon Fuel Standard credits",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#6a1b9a",
+              "ms_number": 2,
+              "ms_name": "Supply low-carbon and renewable transportation fuels"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "PNGA",
+      "full_name": "Petroleum and Natural Gas Act",
+      "color": "#6a1b9a",
+      "citation": "RSBC 1996, c 361",
+      "summary": "Governs provincial ownership and disposition of petroleum and natural gas resources, including tenure agreements and royalties.",
+      "sections": [
+        {
+          "ref": "Part 2",
+          "title": "Tenure dispositions and Crown sales",
+          "description": "Governs monthly Crown tenure dispositions, bidding, and title administration for petroleum and natural gas rights.",
+          "anchor_id": "PNGA-Part2",
+          "services": [
+            {
+              "name": "Bid for petroleum and natural gas tenure rights",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#6a1b9a",
+              "ms_number": 1,
+              "ms_name": "Develop petroleum and natural gas resources"
+            },
+            {
+              "name": "Search petroleum and natural gas title records",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#6a1b9a",
+              "ms_number": 1,
+              "ms_name": "Develop petroleum and natural gas resources"
+            }
+          ]
+        },
+        {
+          "ref": "Part 4",
+          "title": "Royalty and freehold production tax framework",
+          "description": "Establishes the royalty and freehold production tax regime for petroleum and natural gas production.",
+          "anchor_id": "PNGA-Part4",
+          "services": [
+            {
+              "name": "Pay petroleum and natural gas royalties",
+              "type": "supporting",
+              "goal_number": 4,
+              "goal_color": "#6a1b9a",
+              "ms_number": 1,
+              "ms_name": "Develop petroleum and natural gas resources"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "EEA",
+      "full_name": "Energy Efficiency Act",
+      "color": "#2e7d32",
+      "citation": "RSBC 1996, c 114",
+      "summary": "Sets minimum energy performance standards for prescribed products, equipment and appliances sold or manufactured in B.C.",
+      "sections": [
+        {
+          "ref": "Part 1",
+          "title": "Minimum energy performance standards",
+          "description": "Authorizes regulations prescribing energy devices and minimum energy performance standards, and information/reporting requirements for manufacturers.",
+          "anchor_id": "EEA-Part1",
+          "services": [
+            {
+              "name": "Set and enforce minimum energy performance standards for products and equipment",
+              "type": "foundational",
+              "foundational_id": "f-4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 7,
+    "sections_count": 10,
+    "services_with_leg_count": 13,
+    "services_multi_act_count": 1
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "prefix": "aaf",
+  "name": "Agriculture, Aquaculture and Fisheries",
+  "short_name": "Agriculture, Aquaculture & Fisheries",
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "short_name": "New Brunswick's agriculture sector is competitive and sustainable",
+      "legend_label": "Agriculture growth",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Grow and manage a farm business"
+        },
+        {
+          "number": 2,
+          "name": "Keep crops and livestock healthy"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "short_name": "Aquaculture and fisheries are sustainable and competitive",
+      "legend_label": "Aquaculture & fisheries",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Operate an aquaculture site"
+        },
+        {
+          "number": 2,
+          "name": "Process and sell seafood"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#b45309",
+      "short_name": "New Brunswickers benefit from safe, local food",
+      "legend_label": "Local food",
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Buy and learn about local food"
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "abbrev": "AQA",
+      "full_name": "Aquaculture Act",
+      "color": "#0070c0",
+      "citation": "SNB 2019, c 40",
+      "summary": "Governs licensing and leasing of aquaculture sites and operations. Replaced RSNB 2011, c 112 in 2022.",
+      "sections": [
+        {
+          "ref": "Part 3",
+          "title": "Leases, permits and licences",
+          "description": "Divisions A-C cover site leases, permits, and aquaculture licences.",
+          "anchor_id": "AQA-Part3",
+          "services": [
+            {
+              "name": "Apply for an aquaculture licence and site lease",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 1,
+              "ms_name": "Operate an aquaculture site"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "SPA",
+      "full_name": "Seafood Processing Act",
+      "color": "#2e7d32",
+      "citation": "SNB 2006, c S-5.3",
+      "summary": "Licenses seafood processing plants and fish buyers.",
+      "sections": [
+        {
+          "ref": "Part 1",
+          "title": "Primary processing plant licences",
+          "description": "Licensing of primary seafood processing plants.",
+          "anchor_id": "SPA-Part1",
+          "services": [
+            {
+              "name": "Get a seafood processing licence",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Process and sell seafood"
+            }
+          ]
+        },
+        {
+          "ref": "Part 4",
+          "title": "Fish buying licence",
+          "description": "Licensing of fish buyers.",
+          "anchor_id": "SPA-Part4",
+          "services": [
+            {
+              "name": "Get a seafood processing licence",
+              "type": "supporting",
+              "goal_number": 2,
+              "goal_color": "#2e7d32",
+              "ms_number": 2,
+              "ms_name": "Process and sell seafood"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "ADA",
+      "full_name": "Agricultural Development Act",
+      "color": "#b45309",
+      "citation": "RSNB 2011, c 106",
+      "summary": "Enables provincial financial assistance and leases for agricultural development.",
+      "sections": [
+        {
+          "ref": "s.13",
+          "title": "Provision of financial assistance",
+          "description": "Minister may provide financial assistance to aid and encourage agricultural development.",
+          "anchor_id": "ADA-s13",
+          "services": [
+            {
+              "name": "Apply for agriculture business development funding",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Grow and manage a farm business"
+            },
+            {
+              "name": "Apply for farm business financing",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Grow and manage a farm business"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "BeeA",
+      "full_name": "Bee Act",
+      "color": "#6a1b9a",
+      "citation": "SNB 2021, c 30",
+      "summary": "Registration of beekeepers and disease control. Replaced the Apiary Inspection Act effective March 2023.",
+      "sections": [
+        {
+          "ref": "Part 2",
+          "title": "Registration of beekeepers",
+          "description": "Division A requires registration of beekeepers; detail in NB Reg 2023-13.",
+          "anchor_id": "BeeA-Part2",
+          "services": [
+            {
+              "name": "Register your bees and apiary",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 2,
+              "ms_name": "Keep crops and livestock healthy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "RPTA",
+      "full_name": "Real Property Tax Act",
+      "color": "#c62828",
+      "citation": "RSNB 1973, c R-2",
+      "summary": "Provincial property taxation, including farm land identification deferral.",
+      "sections": [
+        {
+          "ref": "s.5(6)-(9.2)",
+          "title": "Farm land identification program",
+          "description": "Provincial tax deferred on registered farmland; detail in NB Reg 84-75.",
+          "anchor_id": "RPTA-s5692",
+          "services": [
+            {
+              "name": "Register farmland to defer property tax",
+              "type": "supporting",
+              "goal_number": 1,
+              "goal_color": "#0070c0",
+              "ms_number": 1,
+              "ms_name": "Grow and manage a farm business"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "acts_count": 5,
+    "sections_count": 6,
+    "services_with_leg_count": 6,
+    "services_multi_act_count": 0
+  }
+}

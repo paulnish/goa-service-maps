@@ -1,0 +1,945 @@
+{
+  "prefix": "aaf",
+  "full_name": "Agriculture, Aquaculture and Fisheries",
+  "short_name": "Agriculture, Aquaculture & Fisheries",
+  "blurb": "Supports the sustainable growth of New Brunswick's agriculture, aquaculture and fisheries sectors — from farm business development and crop insurance to aquaculture licensing and seafood processing.",
+  "nav_name": "Agriculture, Aquaculture and Fisheries",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#0070c0",
+      "title": "GOAL 1",
+      "short_name": "New Brunswick's agriculture sector is competitive and sustainable",
+      "legend_label": "Agriculture growth",
+      "description": "The department helps farm businesses start, grow, and manage risk, and protects crop and livestock health across the province.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Grow and manage a farm business",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for agriculture business development funding",
+              "desc": "Funding and advisory support to help farm businesses start up, expand, adopt new practices, and improve productivity.",
+              "users": "Farm businesses, new entrants to agriculture",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/agriculture-aquaculture-fisheries.html",
+                  "url": "https://www.gnb.ca/en/org/agriculture-aquaculture-fisheries.html"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Regional agriculture office",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ADA",
+                  "color": "#b45309",
+                  "full_name": "Agricultural Development Act  -  Provision of financial assistance"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Register farmland to defer property tax",
+              "desc": "Owners of registered farmland can defer the provincial property tax on eligible agricultural land while it stays in production.",
+              "users": "Farmland owners",
+              "user_groups": [
+                "Producers & ranchers",
+                "Property owners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/agriculture-aquaculture-fisheries.html",
+                  "url": "https://www.gnb.ca/en/org/agriculture-aquaculture-fisheries.html"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Service New Brunswick centre",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "RPTA",
+                  "color": "#c62828",
+                  "full_name": "Real Property Tax Act  -  Farm land identification program"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Get crop insurance and income protection for your farm",
+              "desc": "Production insurance and business risk management programs protect farm income against crop loss, weather damage, and market downturns.",
+              "users": "Crop and livestock producers",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/agriculture-aquaculture-fisheries.html",
+                  "url": "https://www.gnb.ca/en/org/agriculture-aquaculture-fisheries.html"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Regional agriculture office",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "insurance_risk",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Apply for farm business financing",
+              "desc": "Provincial lending and loan guarantees help farmers buy land, livestock, and equipment when conventional financing falls short.",
+              "users": "Farm businesses",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/agriculture-aquaculture-fisheries.html",
+                  "url": "https://www.gnb.ca/en/org/agriculture-aquaculture-fisheries.html"
+                },
+                {
+                  "type": "ch-inperson",
+                  "label": "Regional agriculture office",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ADA",
+                  "color": "#b45309",
+                  "full_name": "Agricultural Development Act  -  Provision of financial assistance"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Register your farm business",
+              "desc": "Registration of farm operations in the provincial farm business registry.",
+              "users": "Farmers",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Farm business registry",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/10/services/services_renderer.201447.Farm_Business_Registry.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/10/services/services_renderer.201447.Farm_Business_Registry.html"
+              }
+            },
+            {
+              "name": "Lease Crown land for farming",
+              "desc": "Leases of Crown land for agricultural purposes.",
+              "users": "Farmers",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Agricultural Crown lease",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/10/services/services_renderer.554.Crown_Lands_-_Lease_for_Agricultural_Purposes_(other_than_blueberry).html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/10/services/services_renderer.554.Crown_Lands_-_Lease_for_Agricultural_Purposes_(other_than_blueberry).html"
+              }
+            },
+            {
+              "name": "Get compensation for wildlife damage to crops or livestock",
+              "desc": "Compensation when wildlife damages crops, livestock, or beehives.",
+              "users": "Farmers and beekeepers",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Wildlife damage compensation",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/10/services/services_renderer.201341.Wildlife_Damage_Compensation_Program.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/10/services/services_renderer.201341.Wildlife_Damage_Compensation_Program.html"
+              }
+            },
+            {
+              "name": "Get help with the cost of transporting agricultural lime",
+              "desc": "Assistance with transportation costs of agricultural limestone used to improve soil.",
+              "users": "Farmers",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Lime transportation help",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/10/services/services_renderer.201573.New_Brunswick_Lime_Transportation_Assistance_Program.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/10/services/services_renderer.201573.New_Brunswick_Lime_Transportation_Assistance_Program.html"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Keep crops and livestock healthy",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get veterinary services for your livestock",
+              "desc": "Provincial veterinarians and diagnostic laboratory services support livestock health, disease prevention, and animal welfare on New Brunswick farms.",
+              "users": "Livestock producers",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Provincial veterinary services",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/agriculture-aquaculture-fisheries.html",
+                  "url": "https://www.gnb.ca/en/org/agriculture-aquaculture-fisheries.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Report and manage crop pests and plant health risks",
+              "desc": "Surveillance, advice, and response support for crop pests, invasive species, and plant diseases affecting New Brunswick growers.",
+              "users": "Crop producers, agronomists",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/agriculture-aquaculture-fisheries.html",
+                  "url": "https://www.gnb.ca/en/org/agriculture-aquaculture-fisheries.html"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "Regional agriculture office",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Register your bees and apiary",
+              "desc": "Beekeepers register hives and apiary locations to support disease surveillance and pollination services.",
+              "users": "Beekeepers",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Apiary registration",
+                  "url": null
+                },
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/agriculture-aquaculture-fisheries.html",
+                  "url": "https://www.gnb.ca/en/org/agriculture-aquaculture-fisheries.html"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "BeeA",
+                  "color": "#6a1b9a",
+                  "full_name": "Bee Act  -  Registration of beekeepers"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Register animal premises for livestock and poultry traceability",
+              "desc": "Registration of locations where livestock or poultry are kept, supporting disease traceability.",
+              "users": "Livestock and poultry owners",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Premises registration",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/10/services/services_renderer.201363.Register_Animal_Premises_for_Livestock_and_Poultry_Traceability.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/10/services/services_renderer.201363.Register_Animal_Premises_for_Livestock_and_Poultry_Traceability.html"
+              }
+            },
+            {
+              "name": "Get a licence to process or sell dairy products",
+              "desc": "Licences for processing, grading, and distributing dairy products.",
+              "users": "Dairy processors and distributors",
+              "user_groups": [
+                "Businesses & processors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Dairy licences",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/10/services/services_renderer.535.Dairy_Licences.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/10/services/services_renderer.535.Dairy_Licences.html"
+              }
+            },
+            {
+              "name": "Get dairy products lab tested",
+              "desc": "Milk and dairy sample testing for quality and safety at the provincial dairy lab.",
+              "users": "Dairy farmers and processors",
+              "user_groups": [
+                "Producers & ranchers",
+                "Businesses & processors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Dairy lab testing",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/10/services/services_renderer.536.Dairy_Lab_Testing.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/10/services/services_renderer.536.Dairy_Lab_Testing.html"
+              }
+            },
+            {
+              "name": "Get a licence for a confined livestock operation",
+              "desc": "Licences for establishing or expanding regulated livestock operations.",
+              "users": "Livestock producers",
+              "user_groups": [
+                "Producers & ranchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Regional agriculture office",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Buy certified potato varieties for propagation",
+              "desc": "Disease-tested potato varieties from the national repository for breeding and seed production.",
+              "users": "Potato growers, seed producers",
+              "user_groups": [
+                "Producers & ranchers",
+                "Researchers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Potato variety repository",
+                  "url": "https://www2.gnb.ca/content/gnb/en/departments/10/services/services_renderer.2816.Canadian_Potato_Variety_Repository_(AA).html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude",
+                "date": "2026-07-21",
+                "source": "https://www2.gnb.ca/content/gnb/en/departments/10/services/services_renderer.2816.Canadian_Potato_Variety_Repository_(AA).html"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#2e7d32",
+      "title": "GOAL 2",
+      "short_name": "Aquaculture and fisheries are sustainable and competitive",
+      "legend_label": "Aquaculture & fisheries",
+      "description": "The department licenses and supports aquaculture operations and the seafood sector, in a province where seafood is a leading export.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Operate an aquaculture site",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for an aquaculture licence and site lease",
+              "desc": "Licensing and leasing for marine and land-based aquaculture operations, including salmon, shellfish, and seaweed sites.",
+              "users": "Aquaculture operators",
+              "user_groups": [
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/agriculture-aquaculture-fisheries.html",
+                  "url": "https://www.gnb.ca/en/org/agriculture-aquaculture-fisheries.html"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Aquaculture licence application",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "AQA",
+                  "color": "#0070c0",
+                  "full_name": "Aquaculture Act  -  Leases, permits and licences"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              },
+              "economic_impact": {
+                "tag": "enabling",
+                "category": "direct-economic",
+                "note": "Salmon and shellfish aquaculture are major NB exports"
+              }
+            },
+            {
+              "name": "Get fish health lab testing",
+              "desc": "Diagnostic testing of fish diseases at the provincial fish health laboratory.",
+              "users": "Aquaculture operators",
+              "user_groups": [
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-phone",
+                  "label": "Fish health laboratory",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Process and sell seafood",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get a seafood processing licence",
+              "desc": "Licensing for primary seafood processing plants and live seafood storage facilities operating in New Brunswick.",
+              "users": "Seafood processors, buyers",
+              "user_groups": [
+                "Industry",
+                "Businesses & processors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/agriculture-aquaculture-fisheries.html",
+                  "url": "https://www.gnb.ca/en/org/agriculture-aquaculture-fisheries.html"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Processing licence application",
+                  "url": null
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "SPA",
+                  "color": "#2e7d32",
+                  "full_name": "Seafood Processing Act  -  Primary processing plant licences"
+                },
+                {
+                  "abbrev": "SPA",
+                  "color": "#2e7d32",
+                  "full_name": "Seafood Processing Act  -  Fish buying licence"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            },
+            {
+              "name": "Access seafood and fisheries sector development support",
+              "desc": "Programs and advisory services that help fisheries and seafood businesses innovate, add value, and reach new markets.",
+              "users": "Fish harvesters, seafood businesses",
+              "user_groups": [
+                "Industry",
+                "Businesses & processors"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/agriculture-aquaculture-fisheries.html",
+                  "url": "https://www.gnb.ca/en/org/agriculture-aquaculture-fisheries.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "agriculture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#b45309",
+      "title": "GOAL 3",
+      "short_name": "New Brunswickers benefit from safe, local food",
+      "legend_label": "Local food",
+      "description": "The department promotes local food and supports the connection between producers and consumers.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Buy and learn about local food",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Find local food, farmers markets and seafood",
+              "desc": "Information connecting consumers with New Brunswick-grown food, local farmers markets, and locally harvested seafood.",
+              "users": "Consumers, local food shoppers",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "gnb.ca/en/org/agriculture-aquaculture-fisheries.html",
+                  "url": "https://www.gnb.ca/en/org/agriculture-aquaculture-fisheries.html"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "unvalidated"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Agricultural land use policy and advice",
+      "desc": "Policy, mapping, and advisory work on agricultural land protection and use.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "industry_specific",
+        "domain": "agriculture",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Fish and animal health laboratory services",
+      "desc": "Diagnostic laboratory services supporting aquatic and terrestrial animal health surveillance.",
+      "users": "Internal program staff",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "industry_specific",
+        "domain": "agriculture",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    }
+  ],
+  "mandate_date": "November 13, 2024",
+  "mandate_minister": "Pat Finnigan",
+  "mandate_pdf": "https://www.gnb.ca/en/gov/contacts/members-executive-council/mandates-letters/mandates-finnigan.html",
+  "cross_cutting": [
+    "Healthcare",
+    "Affordability and Housing",
+    "Education",
+    "Economic Development",
+    "Environment",
+    "Leadership You Can Trust"
+  ],
+  "mandate_legend": [],
+  "channel_filters": [
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-inperson",
+      "label": "In person",
+      "bg_color": "#e3f2fd",
+      "text_color": "#1565c0"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "Producers & ranchers",
+    "Property owners",
+    "Businesses & processors",
+    "Researchers",
+    "Industry",
+    "General public"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}

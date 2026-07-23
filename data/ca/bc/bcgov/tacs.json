@@ -1,0 +1,1401 @@
+{
+  "prefix": "tacs",
+  "full_name": "Ministry of Tourism, Arts, Culture and Sport",
+  "short_name": "Tourism, Arts, Culture & Sport",
+  "blurb": "Champions B.C.'s tourism industry and grows the arts, culture, heritage and creative sectors — while funding amateur sport, advancing multiculturalism and anti-racism, and helping communities host world-class events.",
+  "nav_name": "Tourism, Arts, Culture and Sport",
+  "has_registry_agents": false,
+  "goals": [
+    {
+      "number": 1,
+      "color": "#00838f",
+      "title": "GOAL 1",
+      "short_name": "B.C.'s tourism industry grows and diversifies",
+      "legend_label": "Tourism growth",
+      "description": "The ministry works with Destination BC, Indigenous Tourism BC and Regional Destination Management Organizations to grow tourism as a pillar of B.C.'s economy, fund resort communities and events, and help businesses and communities develop new tourism experiences.",
+      "metrics": [],
+      "css_class": "goal-1",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Grow and market a tourism business",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get tourism business advice, market data and planning resources",
+              "desc": "Destination BC provides tourism business guides, market research, workshops and the Learning Centre to help tourism operators start, manage and grow their business.",
+              "users": "Tourism business owners and operators",
+              "user_groups": [
+                "General public",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Tourism Resources",
+                  "url": "https://www2.gov.bc.ca/gov/content/tourism-immigration/tourism-resources"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Destination BC",
+                  "url": "https://www.destinationbc.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 5,
+                  "tip": "Continue to support tourism as a strong pillar of the B.C. economy"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "tourism_hospitality",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/tourism-immigration/tourism-resources"
+              }
+            },
+            {
+              "name": "Get guidance to attract tourism investment in your community",
+              "desc": "The Tourism Investment Attraction Guidance brings together best practices and resources to help communities attract tourism investment and support sustainable tourism growth.",
+              "users": "Local governments, Indigenous communities, tourism organizations",
+              "user_groups": [
+                "Municipalities & local governments",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Tourism Investment Attraction Guidance",
+                  "url": "https://www2.gov.bc.ca/gov/content/tourism-immigration/tourism-resources/tourism-funding-programs/tourism-investment-attraction-guide"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "tourism_hospitality",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/tourism-immigration/tourism-resources/tourism-funding-programs"
+              }
+            },
+            {
+              "name": "Get help adding tourism experiences to your farm",
+              "desc": "The Farm Tourism Guide helps farmers understand the regulatory landscape and opportunities for diversifying their farm with tourism experiences such as tours, tastings and agritourism events.",
+              "users": "Farmers, agritourism operators",
+              "user_groups": [
+                "Producers & ranchers",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-pdf",
+                  "label": "Farm Tourism Guide (PDF)",
+                  "url": "https://www2.gov.bc.ca/assets/gov/tourism-and-immigration/tourism-industry-resources/funding-supports/farm_tourism_guide_september_2024_final.pdf"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "tourism_hospitality",
+                "relationships": [
+                  {
+                    "type": "shared_information",
+                    "service": "Protect farmland through the Agricultural Land Reserve",
+                    "ministry": "af"
+                  }
+                ]
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/tourism-immigration/tourism-resources/tourism-funding-programs"
+              }
+            },
+            {
+              "name": "Get micro-grants to build climate resiliency for your tourism business",
+              "desc": "The B.C. Tourism Climate Resiliency Initiative, delivered through Destination BC, funds sustainability and climate adaptation planning and micro-grants to implement those plans.",
+              "users": "Tourism businesses",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "B.C. Tourism Climate Resiliency Initiative",
+                  "url": "https://www.destinationbc.ca/what-we-do/destination-management/bc-tourism-climate-resiliency-initiative/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "tourism_hospitality",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/tourism-immigration/tourism-resources/tourism-funding-programs"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Fund tourism infrastructure and community development",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for Resort Municipality Initiative funding",
+              "desc": "The Resort Municipality Initiative funds projects in small, tourism-based municipalities to diversify tourism seasons, increase visitation, and improve the sustainability of the tourism sector. RMI funding is part of the ministry's core budget.",
+              "users": "Resort-based municipalities",
+              "user_groups": [
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Resort Municipality Initiative",
+                  "url": "https://www2.gov.bc.ca/gov/content/tourism-immigration/tourism-resources/tourism-funding-programs/resort-municipality-funding-rmi"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "tourismbranch@gov.bc.ca",
+                  "url": "mailto:tourismbranch@gov.bc.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "tourism_hospitality",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/tourism-immigration/tourism-resources/tourism-funding-programs/resort-municipality-funding-rmi"
+              }
+            },
+            {
+              "name": "Search for tourism and economic development funding",
+              "desc": "A searchable funding and grants database helps tourism operators, local governments and Indigenous communities find provincial and other funding opportunities.",
+              "users": "Tourism businesses, local governments",
+              "user_groups": [
+                "Businesses & employers",
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-find",
+                  "label": "Economic development funding and grants search tool",
+                  "url": "https://www2.gov.bc.ca/gov/content/employment-business/economic-development/funding-and-grants"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "core_business_needs",
+                "domain": "finances_taxes",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/tourism-immigration/tourism-resources/tourism-funding-programs"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Develop a mountain resort",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply to develop or expand a mountain resort",
+              "desc": "The Province reviews new mountain resort proposals, major resort expansions and other projects on Crown land under the All-Seasons Resort Policy, working with local and provincial governments to provide timely decisions.",
+              "users": "Resort developers and operators",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "All-seasons Resorts",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/natural-resource-use/resort-development"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "MountainResortsBranch@gov.bc.ca",
+                  "url": "mailto:MountainResortsBranch@gov.bc.ca"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/natural-resource-use/resort-development"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "color": "#6a1b9a",
+      "title": "GOAL 2",
+      "short_name": "Arts, culture and heritage thrive in every B.C. community",
+      "legend_label": "Arts, culture & heritage",
+      "description": "Through the BC Arts Council, Creative BC, Community Gaming Grants and the Archaeology Branch, the ministry funds artists and cultural organizations, grows the creative industries, and protects heritage sites and objects across the province.",
+      "metrics": [],
+      "css_class": "goal-2",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get funding for arts, culture and creative industries",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for an arts grant",
+              "desc": "The BC Arts Council offers individual arts grants, project assistance and operating assistance grants to artists, collectives and not-for-profit arts and cultural organizations across B.C.",
+              "users": "Artists, arts and cultural organizations",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply Online (BC Arts Council)",
+                  "url": "https://bcac.smartsimple.ca/s_Login.jsp"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "BC Arts Council Grant Programs",
+                  "url": "https://www.bcartscouncil.ca/program/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ACA",
+                  "color": "#6a1b9a",
+                  "full_name": "Arts Council Act  -  Purposes and powers of the council"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.bcartscouncil.ca/"
+              }
+            },
+            {
+              "name": "Apply for creative industries funding or a motion picture tax credit",
+              "desc": "Creative BC, an independent society supported by the Province, delivers funding programs for book publishing, interactive digital media, music, magazine publishing and motion picture, plus the Production Services Tax Credit and Film Incentive BC.",
+              "users": "Creative industries businesses, producers",
+              "user_groups": [
+                "Businesses & employers",
+                "Industry"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Creative BC Funding Programs",
+                  "url": "https://creativebc.com/funding-programs/"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Motion Picture Tax Credits",
+                  "url": "https://creativebc.com/services/motion-picture-tax-credits"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 4,
+                  "tip": "Continue to support BC's film, television and animation sectors"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "film_media",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.creativebc.com/"
+              }
+            },
+            {
+              "name": "Apply for a community gaming grant for your nonprofit program",
+              "desc": "Community Gaming Grants fund not-for-profit organizations delivering ongoing community programs and services, including arts, culture, sport, and other community benefit categories.",
+              "users": "Not-for-profit organizations",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply Now (Community Gaming Grants)",
+                  "url": "https://www2.gov.bc.ca/gov/content/sports-culture/gambling-fundraising/gaming-grants/cggapply"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "250-356-1081",
+                  "url": null
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/sports-culture/gambling-fundraising/gaming-grants/community-gaming-grants"
+              }
+            },
+            {
+              "name": "Apply for a heritage conservation grant",
+              "desc": "The Heritage Legacy Fund, delivered through Heritage BC, provides grants to conserve and celebrate heritage places, including conservation projects and community heritage planning.",
+              "users": "Heritage organizations, local governments, property owners",
+              "user_groups": [
+                "General public",
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Heritage Legacy Fund (Heritage BC)",
+                  "url": "https://heritagebc.ca/funding/heritage-legacy-fund/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/sports-culture/arts-culture/funding"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Protect and manage heritage sites",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get a permit to alter, study or excavate a heritage site",
+              "desc": "Archaeological sites on public and private land are protected under the Heritage Conservation Act. A permit is required to alter, excavate or conduct research at a protected heritage site or object.",
+              "users": "Developers, property owners, archaeologists",
+              "user_groups": [
+                "Property owners",
+                "Businesses & employers",
+                "Indigenous communities"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Archaeology permits and assessments",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/natural-resource-use/archaeology/assessments-studies"
+                },
+                {
+                  "type": "ch-check",
+                  "label": "Permitting and data systems",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/natural-resource-use/archaeology/systems"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "HCA",
+                  "color": "#8d6e63",
+                  "full_name": "Heritage Conservation Act  -  Permits and heritage protection"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "societal_needs_supports",
+                  "domain": "recreation_culture"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "licences_permits"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/natural-resource-use/archaeology"
+              }
+            },
+            {
+              "name": "Report an archaeological find or artifact",
+              "desc": "Anyone who finds an archaeological site, artifact or human remains is asked to report it, and violations of heritage site protection can be reported as a natural resource violation.",
+              "users": "General public, landowners",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Report a find",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/natural-resource-use/archaeology/report-a-find"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "1-877-952-7277 (Natural Resource Violation line)",
+                  "url": "tel:1-877-952-7277"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/natural-resource-use/archaeology"
+              }
+            },
+            {
+              "name": "Request archaeological information about a property",
+              "desc": "Property owners, developers and researchers can request archaeological site information for a property from the Provincial heritage register before planning land use changes.",
+              "users": "Property owners, developers, researchers",
+              "user_groups": [
+                "Property owners",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-check",
+                  "label": "Request archaeological information about a property",
+                  "url": "https://www2.gov.bc.ca/gov/content/industry/natural-resource-use/archaeology/systems/request-arch-info"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "societal_needs_supports",
+                  "domain": "recreation_culture"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "licences_permits"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/industry/natural-resource-use/archaeology"
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Visit and explore B.C.'s cultural institutions",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Plan a visit to the Royal BC Museum",
+              "desc": "The Royal BC Museum in Victoria is B.C.'s largest museum, with human history and natural history collections including archaeology exhibits.",
+              "users": "General public, visitors, families",
+              "user_groups": [
+                "General public",
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "RoyalBCMuseum.bc.ca",
+                  "url": "http://www.royalbcmuseum.bc.ca/"
+                },
+                {
+                  "type": "ch-phone",
+                  "label": "250-356-7226",
+                  "url": "tel:250-356-7226"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/sports-culture/arts-culture"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "color": "#2e7d32",
+      "title": "GOAL 3",
+      "short_name": "British Columbians participate safely in amateur sport",
+      "legend_label": "Amateur sport",
+      "description": "Working through viaSport, the ministry funds provincial sport organizations, athlete development, coach training and community sport programs, and regulates combat sports through the BC Athletic Commissioner.",
+      "metrics": [],
+      "css_class": "goal-3",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Get funding and support for amateur sport",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for sport participation or performance funding through viaSport",
+              "desc": "viaSport allocates provincial government funding to province-wide sport and multi-sport organizations for participation and performance initiatives, and administers grants directly to individuals and community groups.",
+              "users": "Sport organizations, athletes, community sport groups",
+              "user_groups": [
+                "General public",
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "viaSport Grants",
+                  "url": "https://viasport.ca/grants/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://viasport.ca/"
+              }
+            },
+            {
+              "name": "Get a grant to help your child play sport",
+              "desc": "KidSport BC offers grants of $150 to $400 to help families of children in financial need pay for registration in local sport activities.",
+              "users": "Families with children in need",
+              "user_groups": [
+                "Families & caregivers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "KidSport BC",
+                  "url": "http://www.kidsportcanada.ca/british-columbia/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 6,
+                  "tip": "Continue to support accessibility of amateur sport for all British Columbians"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/sports-culture/sports/sport-funding"
+              }
+            },
+            {
+              "name": "Apply for funding to host a sport event",
+              "desc": "Hosting BC (up to $35,000) and the Major Sport Event Hosting program (up to $500,000 annually, grants of $25,000-$150,000) support Canadian championships, world cups and other sanctioned sport events across B.C.",
+              "users": "Sport event organizers, local governments",
+              "user_groups": [
+                "Municipalities & local governments",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Hosting BC (viaSport)",
+                  "url": "https://viasport.ca/grants/hosting-bc/"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Major Sport Event Hosting",
+                  "url": "https://www2.gov.bc.ca/gov/content/sports-culture/events-hosting/event-funding/major-sport-event-hosting"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 7,
+                  "tip": "Leverage major event opportunities like the FIFA World Cup and Invictus Games to maximize economic development and tourism impact"
+                }
+              ],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "societal_needs_supports",
+                  "domain": "recreation_culture"
+                },
+                "business": {
+                  "tier": "industry_specific",
+                  "domain": "tourism_hospitality"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/sports-culture/events-hosting/event-funding"
+              }
+            },
+            {
+              "name": "Get coach training and certification",
+              "desc": "viaSport delivers National Coaching Certification Program (NCCP) courses, with over 21,000 coaches trained in B.C. since 2013.",
+              "users": "Coaches, sport organizations",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Take Coach Training",
+                  "url": "https://viasport.ca/take-coach-training/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "core_human_needs",
+                "domain": "education_training",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://viasport.ca/"
+              }
+            },
+            {
+              "name": "Get travel support for amateur athletes and teams",
+              "desc": "The BC Ferries Sport Experience, a partnership between viaSport and BC Ferries, provides coastal ferry travel support for amateur sport organizations and athletes travelling to provincial and national championships.",
+              "users": "Amateur athletes, sport organizations",
+              "user_groups": [
+                "General public",
+                "Students & learners"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "BC Ferries Sport Experience",
+                  "url": "https://viasport.ca/grants/bc-ferries-sport-experience-program/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 6,
+                  "tip": "Continue to support accessibility of amateur sport for all British Columbians"
+                }
+              ],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/sports-culture/sports/sport-funding"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Compete or host events in combat sports safely",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Get a licence to promote or compete in professional combat sports",
+              "desc": "The BC Athletic Commissioner licenses promoters, contestants, matchmakers, seconds and officials for professional boxing and mixed martial arts, and amateur kickboxing, Muay Thai, MMA and pankration.",
+              "users": "Athletes, promoters, officials",
+              "user_groups": [
+                "General public",
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Apply - Professional",
+                  "url": "https://www.bcathleticcommission.ca/apply/professional/"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Apply - Amateur",
+                  "url": "https://www.bcathleticcommission.ca/apply/amateur/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ATCA",
+                  "color": "#2e7d32",
+                  "full_name": "Athletic Commissioner Act  -  Licences"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "identity_credentials_access",
+                  "domain": "professional_credentials"
+                },
+                "business": {
+                  "tier": "regulatory_compliance",
+                  "domain": "licences_permits"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.bcathleticcommission.ca/about/"
+              }
+            },
+            {
+              "name": "Get a permit to host a combat sport event",
+              "desc": "A promoter must hold a valid event permit from the BC Athletic Commissioner to hold a professional boxing, MMA or other regulated combat sport contest or exhibition, and follow the applicable unified rules.",
+              "users": "Event promoters",
+              "user_groups": [
+                "Businesses & employers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Apply - Professional",
+                  "url": "https://www.bcathleticcommission.ca/apply/professional/"
+                },
+                {
+                  "type": "ch-pdf",
+                  "label": "Event Rules",
+                  "url": "https://www.bcathleticcommission.ca/rules/"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "ATCA",
+                  "color": "#2e7d32",
+                  "full_name": "Athletic Commissioner Act  -  Event permits"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "business",
+                "tier": "regulatory_compliance",
+                "domain": "licences_permits",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www.bcathleticcommission.ca/rules/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "color": "#e65100",
+      "title": "GOAL 4",
+      "short_name": "B.C. hosts world-class events and celebrates its diversity",
+      "legend_label": "Events & diversity",
+      "description": "The ministry supports communities hosting sport, arts and cultural events, and leads B.C.'s multiculturalism and anti-racism programs to build a more inclusive province.",
+      "metrics": [],
+      "css_class": "goal-4",
+      "foundational_services": [],
+      "main_services": [
+        {
+          "number": 1,
+          "name": "Host sport, arts and culture events",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for funding to host a major or marquee event",
+              "desc": "Marquee event funding supports formal requests of $250,000 or more for high-profile international events such as the FIFA Women's World Cup or major multi-sport events like the North American Indigenous Games.",
+              "users": "Major event organizers, local governments",
+              "user_groups": [
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-email",
+                  "label": "eventsupport@gov.bc.ca (Marquee events)",
+                  "url": "mailto:eventsupport@gov.bc.ca"
+                },
+                {
+                  "type": "ch-web",
+                  "label": "Major Sport Event Hosting",
+                  "url": "https://www2.gov.bc.ca/gov/content/sports-culture/events-hosting/event-funding/major-sport-event-hosting"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 7,
+                  "tip": "Leverage major event opportunities like the FIFA World Cup and Invictus Games to maximize economic development and tourism impact"
+                }
+              ],
+              "taxonomy": {
+                "track": "both",
+                "individual": {
+                  "tier": "societal_needs_supports",
+                  "domain": "recreation_culture"
+                },
+                "business": {
+                  "tier": "industry_specific",
+                  "domain": "tourism_hospitality"
+                },
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/sports-culture/events-hosting/event-funding"
+              }
+            },
+            {
+              "name": "Get planning resources to host a sport, arts or culture event",
+              "desc": "The Hosting Toolkit provides resources to guide event organizers through preparing a bid package, planning logistics, and tracking the economic impact of sport, arts and culture events.",
+              "users": "Event organizers, communities",
+              "user_groups": [
+                "Municipalities & local governments",
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Hosting Toolkit",
+                  "url": "https://www2.gov.bc.ca/gov/content/sports-culture/events-hosting/hosting-toolkit"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 3,
+                  "tip": "Support communities in delivering community events such as fairs and festivals that bring people together"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "tourism_hospitality",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/sports-culture/events-hosting"
+              }
+            },
+            {
+              "name": "Apply for Destination Events Program funding",
+              "desc": "The Destination Events Program funds event organizers to enhance B.C.'s reputation as an events destination, foster economic growth and increase visitation across the province.",
+              "users": "Event organizers, tourism businesses",
+              "user_groups": [
+                "Businesses & employers",
+                "Municipalities & local governments"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Destination Events Program",
+                  "url": "https://www2.gov.bc.ca/gov/content/tourism-immigration/tourism-resources/tourism-funding-programs/destination-events-program"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [
+                {
+                  "number": 5,
+                  "tip": "Continue to support tourism as a strong pillar of the B.C. economy"
+                }
+              ],
+              "taxonomy": {
+                "track": "business",
+                "tier": "industry_specific",
+                "domain": "tourism_hospitality",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/tourism-immigration/tourism-resources/tourism-funding-programs"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Advance multiculturalism and anti-racism",
+          "validation": {
+            "status": "unvalidated"
+          },
+          "foundational_services": [],
+          "supporting": [
+            {
+              "name": "Apply for a multiculturalism and anti-racism grant",
+              "desc": "Annual grants of up to $5,000, offered under the Multiculturalism Act, support registered non-profits and other eligible organizations running projects that build intercultural understanding or challenge racism and hate.",
+              "users": "Non-profit organizations, Indigenous governments",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-apply",
+                  "label": "Apply Online",
+                  "url": "https://forms.gov.bc.ca/sports-culture/b-c-multiculturalism-anti-racism-grant-application/"
+                },
+                {
+                  "type": "ch-email",
+                  "label": "multiculturalism@gov.bc.ca",
+                  "url": "mailto:multiculturalism@gov.bc.ca"
+                }
+              ],
+              "legislation": [
+                {
+                  "abbrev": "MCA",
+                  "color": "#00838f",
+                  "full_name": "Multiculturalism Act  -  Application for grants / Minister may provide grants"
+                }
+              ],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "recreation_culture",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/multiculturalism-anti-racism/multiculturalism/multiculturalismgrants"
+              }
+            },
+            {
+              "name": "Get anti-racism data, research and reporting supports",
+              "desc": "The Anti-Racism Data Act allows government to collect demographic data to identify barriers people face accessing services, with research findings published on racial diversity, education and health outcomes.",
+              "users": "General public, researchers, ministries",
+              "user_groups": [
+                "General public"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "antiracism.gov.bc.ca",
+                  "url": "https://antiracism.gov.bc.ca/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "justice_legal",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/multiculturalism-anti-racism/anti-racism"
+              }
+            },
+            {
+              "name": "Connect with anti-racism and hate crime supports",
+              "desc": "Resilience BC: Anti-Racism Network offers a province-wide network of community connections, resources for responding to hate crimes and incidents, and tools to challenge racism.",
+              "users": "General public, newcomers, community organizations",
+              "user_groups": [
+                "General public",
+                "Newcomers"
+              ],
+              "channels": [
+                {
+                  "type": "ch-web",
+                  "label": "Resilience BC: Anti-Racism Network",
+                  "url": "https://www.resiliencebc.ca/"
+                }
+              ],
+              "legislation": [],
+              "mandate_tags": [],
+              "taxonomy": {
+                "track": "individual",
+                "tier": "societal_needs_supports",
+                "domain": "safety_emergencies",
+                "relationships": []
+              },
+              "validation": {
+                "status": "agent_verified",
+                "by": "claude-agent",
+                "date": "2026-07-23",
+                "source": "https://www2.gov.bc.ca/gov/content/governments/multiculturalism-anti-racism/anti-racism"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foundational_services": [
+    {
+      "id": "f-1",
+      "name": "Provincial tourism, arts, culture and sport sector policy and planning",
+      "desc": "Policy development, sector research, and destination development planning with Destination BC and Regional Destination Management Organizations that underpin the ministry's funding programs across tourism, arts, culture, heritage and sport.",
+      "users": "Internal program staff, sector partners",
+      "channels": [],
+      "legislation": [],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "business",
+        "tier": "industry_specific",
+        "domain": "tourism_hospitality",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    },
+    {
+      "id": "f-2",
+      "name": "Multiculturalism and anti-racism policy, research and annual reporting",
+      "desc": "Coordinates the annual multiculturalism reporting required of every ministry and Crown corporation under the Multiculturalism Act, and leads anti-racism data and research priorities across government.",
+      "users": "Internal program staff, ministries",
+      "channels": [],
+      "legislation": [
+        {
+          "abbrev": "MCA",
+          "color": "#00838f",
+          "full_name": "Multiculturalism Act  -  Additional reports"
+        }
+      ],
+      "mandate_tags": [],
+      "taxonomy": {
+        "track": "individual",
+        "tier": "societal_needs_supports",
+        "domain": "recreation_culture",
+        "relationships": []
+      },
+      "validation": {
+        "status": "unvalidated"
+      }
+    }
+  ],
+  "mandate_date": "July 17, 2025",
+  "mandate_minister": "Anne Kang",
+  "mandate_pdf": "https://www2.gov.bc.ca/assets/gov/government/ministries-organizations/premier-cabinet-mlas/minister-letter/mandate_letter_anne_kang.pdf",
+  "cross_cutting": [
+    "Growing the economy",
+    "Reducing costs for families",
+    "Strengthening health care",
+    "Safer communities"
+  ],
+  "mandate_legend": [
+    {
+      "number": 1,
+      "text": "Work with the Minister of Finance to review all existing ministry programs and initiatives to ensure they remain relevant, are efficient, and respond to the needs of tourism service providers and arts organizations"
+    },
+    {
+      "number": 2,
+      "text": "Work with communities to support the development of recreation centres, community centres, arts and cultural centres, sports fields and other critical social infrastructure"
+    },
+    {
+      "number": 3,
+      "text": "Support communities in delivering community events such as fairs and festivals that bring people together"
+    },
+    {
+      "number": 4,
+      "text": "Continue to support BC's film, television and animation sectors, and support the Minister of Jobs and Economic Growth to maximize film and motion picture investment and employment opportunities"
+    },
+    {
+      "number": 5,
+      "text": "Continue to support tourism as a strong pillar of the BC economy, sustainably promoting BC's geography and experiences and continuing to support rural and Indigenous tourism opportunities"
+    },
+    {
+      "number": 6,
+      "text": "Continue to support accessibility of amateur sport for all British Columbians"
+    },
+    {
+      "number": 7,
+      "text": "Leverage the opportunities provided by the Invictus Games, the FIFA World Cup in 2026 and other major event bid proposals to maximize the economic development and tourism impact of major events"
+    },
+    {
+      "number": 8,
+      "text": "Support the work led by the Minister of Agriculture and Food to grow the economy by supporting food and beverage producers, farmers, restaurants and the tourism sector with flexible liquor, land use and cannabis regulations"
+    }
+  ],
+  "channel_filters": [
+    {
+      "code": "ch-web",
+      "label": "Website",
+      "bg_color": "#e8eaf6",
+      "text_color": "#283593"
+    },
+    {
+      "code": "ch-apply",
+      "label": "Apply",
+      "bg_color": "#b2dfdb",
+      "text_color": "#004d40"
+    },
+    {
+      "code": "ch-find",
+      "label": "Find / search",
+      "bg_color": "#e8f5e9",
+      "text_color": "#2e7d32"
+    },
+    {
+      "code": "ch-check",
+      "label": "Check / portal",
+      "bg_color": "#b3e5fc",
+      "text_color": "#01579b"
+    },
+    {
+      "code": "ch-email",
+      "label": "Email",
+      "bg_color": "#fce4ec",
+      "text_color": "#c62828"
+    },
+    {
+      "code": "ch-phone",
+      "label": "Phone",
+      "bg_color": "#fff3e0",
+      "text_color": "#e65100"
+    },
+    {
+      "code": "ch-pdf",
+      "label": "PDF / form",
+      "bg_color": "#ffebee",
+      "text_color": "#b71c1c"
+    }
+  ],
+  "user_group_filters": [
+    "General public",
+    "Businesses & employers",
+    "Municipalities & local governments",
+    "Producers & ranchers",
+    "Industry",
+    "Property owners",
+    "Indigenous communities",
+    "Families & caregivers",
+    "Students & learners",
+    "Newcomers"
+  ],
+  "channel_types": {
+    "ch-transact": {
+      "label": "Online transaction",
+      "bg": "#c8e6c9",
+      "fg": "#1b5e20",
+      "digital": true
+    },
+    "ch-apply": {
+      "label": "Apply",
+      "bg": "#b2dfdb",
+      "fg": "#004d40",
+      "digital": true
+    },
+    "ch-check": {
+      "label": "Check / portal",
+      "bg": "#b3e5fc",
+      "fg": "#01579b",
+      "digital": true
+    },
+    "ch-find": {
+      "label": "Find / search",
+      "bg": "#e8f5e9",
+      "fg": "#2e7d32",
+      "digital": true
+    },
+    "ch-engage": {
+      "label": "Engage",
+      "bg": "#e1bee7",
+      "fg": "#6a1b9a",
+      "digital": true
+    },
+    "ch-app": {
+      "label": "Mobile app",
+      "bg": "#e0f2f1",
+      "fg": "#00695c",
+      "digital": true
+    },
+    "ch-web": {
+      "label": "Website",
+      "bg": "#e8eaf6",
+      "fg": "#283593",
+      "digital": true
+    },
+    "ch-email": {
+      "label": "Email",
+      "bg": "#fce4ec",
+      "fg": "#c62828",
+      "digital": true
+    },
+    "ch-phone": {
+      "label": "Phone",
+      "bg": "#fff3e0",
+      "fg": "#e65100",
+      "digital": false
+    },
+    "ch-mail": {
+      "label": "Mail",
+      "bg": "#f3e5f5",
+      "fg": "#6a1b9a",
+      "digital": false
+    },
+    "ch-inperson": {
+      "label": "In person",
+      "bg": "#e3f2fd",
+      "fg": "#1565c0",
+      "digital": false
+    },
+    "ch-pdf": {
+      "label": "PDF / form",
+      "bg": "#ffebee",
+      "fg": "#b71c1c",
+      "digital": false
+    },
+    "ch-pub": {
+      "label": "Publication",
+      "bg": "#f5f5f5",
+      "fg": "#616161",
+      "digital": false
+    }
+  },
+  "digital_channels": [
+    "ch-transact",
+    "ch-apply",
+    "ch-check",
+    "ch-find",
+    "ch-engage",
+    "ch-app",
+    "ch-web",
+    "ch-email"
+  ]
+}
