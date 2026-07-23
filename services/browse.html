@@ -73,6 +73,11 @@
 </head>
 <body>
 <div class="nav-bar"><a href="/">All Service Maps</a> <span class="sep">/</span> <span class="current">Find a Service</span></div>
+<div class="scope-bar" style="max-width:1100px;margin:0 auto;padding:12px 24px 0;display:flex;align-items:center;gap:8px;font-size:14px;color:#555;">
+  <label for="jur-scope">Showing services for</label>
+  <select id="jur-scope" style="font-size:14px;padding:6px 10px;border:1px solid #ccc;border-radius:6px;background:white;color:#1a1a1a;"></select>
+</div>
+
 
 <div class="header">
   <div class="header-inner">
@@ -116,6 +121,38 @@ const DOMAIN_ICONS = {
   tourism_hospitality: '✈️', film_media: '🎬', transport_carriers: '🚛'
 };
 
+
+// ── Jurisdiction scope (citizen mode vs compare mode) ──────────
+// A citizen interacts with one province (plus its municipalities);
+// "All jurisdictions" is the explicit cross-government comparison mode.
+const JUR_SCOPE_KEY = 'smd-jurisdiction-scope';
+let jurisdictionsList = [];
+let currentScope = localStorage.getItem(JUR_SCOPE_KEY) || 'goa';
+function scopeCodes() {
+  if (currentScope === 'all') return null;
+  const codes = new Set([currentScope]);
+  for (const j of jurisdictionsList) if (j.parent === currentScope) codes.add(j.code);
+  return codes;
+}
+function visibleServices() {
+  const codes = scopeCodes();
+  return codes ? allServices.filter(s => codes.has(s.jCode)) : allServices;
+}
+function renderScopeBar(onScopeChange) {
+  const el = document.getElementById('jur-scope');
+  if (!el) return;
+  const tops = jurisdictionsList.filter(j => !j.parent);
+  el.innerHTML = '<option value="all">All jurisdictions (compare)</option>' +
+    tops.map(j => `<option value="${j.code}">${j.short_name || j.name}</option>`).join('');
+  if (![...el.options].some(o => o.value === currentScope)) currentScope = 'all';
+  el.value = currentScope;
+  el.addEventListener('change', () => {
+    currentScope = el.value;
+    localStorage.setItem(JUR_SCOPE_KEY, currentScope);
+    onScopeChange();
+  });
+}
+
 let taxonomy = null;
 let allServices = [];
 let currentTrack = 'individual';
@@ -144,6 +181,7 @@ async function init() {
   ]);
   taxonomy = await taxResp.json();
   const jurisdictions = await jResp.json();
+  jurisdictionsList = jurisdictions;
 
   for (const j of jurisdictions) {
     const jName = j.short_name || j.name;
@@ -158,6 +196,7 @@ async function init() {
     }
   }
 
+  renderScopeBar(() => renderTiers(currentTrack));
   renderTiers('individual');
   setupTabs();
 }
@@ -222,7 +261,7 @@ function renderTiers(track) {
 }
 
 function countServices(track, tier, domain) {
-  return allServices.filter(s => {
+  return visibleServices().filter(s => {
     const t = s.taxonomy;
     if (t.track === track) return t.tier === tier && t.domain === domain;
     if (t.track === 'both') {
@@ -234,7 +273,7 @@ function countServices(track, tier, domain) {
 }
 
 function getServicesForDomain(track, tier, domain) {
-  return allServices.filter(s => {
+  return visibleServices().filter(s => {
     const t = s.taxonomy;
     if (t.track === track) return t.tier === tier && t.domain === domain;
     if (t.track === 'both') {

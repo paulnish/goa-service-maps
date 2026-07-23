@@ -493,6 +493,11 @@
 </head>
 <body>
 <div class="nav-bar"><a href="/">All Service Maps</a> <span class="sep">/</span> <span class="current">Find a Service</span></div>
+<div class="scope-bar" style="max-width:1100px;margin:0 auto;padding:12px 24px 0;display:flex;align-items:center;gap:8px;font-size:14px;color:#555;">
+  <label for="jur-scope">Showing services for</label>
+  <select id="jur-scope" style="font-size:14px;padding:6px 10px;border:1px solid #ccc;border-radius:6px;background:white;color:#1a1a1a;"></select>
+</div>
+
 
 <div class="header">
   <div class="header-badge">Service Directory</div>
@@ -644,6 +649,38 @@ const CHANNEL_META = [
 
 // ── State ────────────────────────────────────────
 let taxonomy = null;
+
+// ── Jurisdiction scope (citizen mode vs compare mode) ──────────
+// A citizen interacts with one province (plus its municipalities);
+// "All jurisdictions" is the explicit cross-government comparison mode.
+const JUR_SCOPE_KEY = 'smd-jurisdiction-scope';
+let jurisdictionsList = [];
+let currentScope = localStorage.getItem(JUR_SCOPE_KEY) || 'goa';
+function scopeCodes() {
+  if (currentScope === 'all') return null;
+  const codes = new Set([currentScope]);
+  for (const j of jurisdictionsList) if (j.parent === currentScope) codes.add(j.code);
+  return codes;
+}
+function visibleServices() {
+  const codes = scopeCodes();
+  return codes ? allServices.filter(s => codes.has(s.jCode)) : allServices;
+}
+function renderScopeBar(onScopeChange) {
+  const el = document.getElementById('jur-scope');
+  if (!el) return;
+  const tops = jurisdictionsList.filter(j => !j.parent);
+  el.innerHTML = '<option value="all">All jurisdictions (compare)</option>' +
+    tops.map(j => `<option value="${j.code}">${j.short_name || j.name}</option>`).join('');
+  if (![...el.options].some(o => o.value === currentScope)) currentScope = 'all';
+  el.value = currentScope;
+  el.addEventListener('change', () => {
+    currentScope = el.value;
+    localStorage.setItem(JUR_SCOPE_KEY, currentScope);
+    onScopeChange();
+  });
+}
+
 let allServices = [];
 let currentTrack = 'individual';
 const activeChannels = new Set();
@@ -671,6 +708,7 @@ async function init() {
   ]);
   taxonomy = await taxResp.json();
   const jurisdictions = await jResp.json();
+  jurisdictionsList = jurisdictions;
 
   // For each jurisdiction, load its entities then each entity's data
   for (const j of jurisdictions) {
@@ -686,6 +724,13 @@ async function init() {
     await Promise.all(loads);
   }
 
+  renderScopeBar(() => {
+    buildFilterChips();
+    updateCounts();
+    renderTiers(currentTrack);
+    const q = document.getElementById('search-input');
+    if (q && q.value) q.dispatchEvent(new Event('input'));
+  });
   buildFilterChips();
   updateCounts();
   renderTiers(currentTrack);
@@ -738,7 +783,7 @@ function filtersActive() {
 
 // ── Counting ─────────────────────────────────────
 function countForTrack(track) {
-  return allServices.filter(s => {
+  return visibleServices().filter(s => {
     const t = s.taxonomy.track;
     return (t === track || t === 'both') && serviceMatchesFilters(s);
   }).length;
@@ -749,7 +794,7 @@ function countServices(track, tier, domain) {
 }
 
 function getServicesForDomain(track, tier, domain) {
-  return allServices.filter(s => {
+  return visibleServices().filter(s => {
     const t = s.taxonomy;
     let inDomain = false;
     if (t.track === track) inDomain = t.tier === tier && t.domain === domain;
@@ -771,7 +816,7 @@ function buildFilterChips() {
   // Channel chips — only show channels that actually exist in data
   const usedChannels = new Set();
   const ugCounts = {};
-  allServices.forEach(s => {
+  visibleServices().forEach(s => {
     (s.channels || []).forEach(c => usedChannels.add(c.type));
     (s.user_groups || []).forEach(g => { ugCounts[g] = (ugCounts[g] || 0) + 1; });
   });
@@ -1072,7 +1117,7 @@ function searchServices(query) {
   const terms = expandQuery(query);
   const originalWords = query.toLowerCase().split(/\s+/);
 
-  let scored = allServices.map(svc => {
+  let scored = visibleServices().map(svc => {
     const name = svc.name.toLowerCase();
     const desc = (svc.desc || '').toLowerCase();
     const groups = (svc.user_groups || []).join(' ').toLowerCase();

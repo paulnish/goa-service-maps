@@ -67,6 +67,11 @@
 </head>
 <body>
 <div class="nav-bar"><a href="/">All Service Maps</a> <span class="sep">/</span> <span class="current">Find a Service</span></div>
+<div class="scope-bar" style="max-width:1100px;margin:0 auto;padding:12px 24px 0;display:flex;align-items:center;gap:8px;font-size:14px;color:#555;">
+  <label for="jur-scope">Showing services for</label>
+  <select id="jur-scope" style="font-size:14px;padding:6px 10px;border:1px solid #ccc;border-radius:6px;background:white;color:#1a1a1a;"></select>
+</div>
+
 
 <div class="header">
   <h1>Service Directory</h1>
@@ -219,6 +224,38 @@ for (const ev of LIFE_EVENTS) {
   ev._res = ev.keywords.map(kw => new RegExp('\\b' + escapeRegExp(kw.toLowerCase())));
 }
 
+
+// ── Jurisdiction scope (citizen mode vs compare mode) ──────────
+// A citizen interacts with one province (plus its municipalities);
+// "All jurisdictions" is the explicit cross-government comparison mode.
+const JUR_SCOPE_KEY = 'smd-jurisdiction-scope';
+let jurisdictionsList = [];
+let currentScope = localStorage.getItem(JUR_SCOPE_KEY) || 'goa';
+function scopeCodes() {
+  if (currentScope === 'all') return null;
+  const codes = new Set([currentScope]);
+  for (const j of jurisdictionsList) if (j.parent === currentScope) codes.add(j.code);
+  return codes;
+}
+function visibleServices() {
+  const codes = scopeCodes();
+  return codes ? allServices.filter(s => codes.has(s.jCode)) : allServices;
+}
+function renderScopeBar(onScopeChange) {
+  const el = document.getElementById('jur-scope');
+  if (!el) return;
+  const tops = jurisdictionsList.filter(j => !j.parent);
+  el.innerHTML = '<option value="all">All jurisdictions (compare)</option>' +
+    tops.map(j => `<option value="${j.code}">${j.short_name || j.name}</option>`).join('');
+  if (![...el.options].some(o => o.value === currentScope)) currentScope = 'all';
+  el.value = currentScope;
+  el.addEventListener('change', () => {
+    currentScope = el.value;
+    localStorage.setItem(JUR_SCOPE_KEY, currentScope);
+    onScopeChange();
+  });
+}
+
 let taxonomy = null;
 let allServices = [];
 const svcIndex = new Map(); // "jCode|prefix|service name" → service
@@ -247,6 +284,7 @@ async function init() {
   ]);
   taxonomy = await taxResp.json();
   const jurisdictions = await jResp.json();
+  jurisdictionsList = jurisdictions;
 
   for (const j of jurisdictions) {
     const jName = j.short_name || j.name;
@@ -263,6 +301,7 @@ async function init() {
 
   for (const s of allServices) svcIndex.set(`${s.jCode}|${s.ministry}|${s.name}`, s);
 
+  renderScopeBar(renderEvents);
   renderEvents();
 }
 
@@ -342,7 +381,7 @@ function getConnectedServices(matched) {
 }
 
 function getEventServices(event) {
-  return allServices
+  return visibleServices()
     .map(svc => ({ svc, score: matchEvent(svc, event) }))
     .filter(r => r.score > 0)
     .sort((a, b) => b.score - a.score)
