@@ -36,6 +36,13 @@
   .journey-header { background: #0a3161; color: white; padding: 24px 28px; flex-shrink: 0; }
   .journey-header h3 { font-size: 22px; font-weight: 700; display: flex; align-items: center; gap: 12px; }
   .journey-header p { font-size: 14px; opacity: 0.8; margin-top: 4px; }
+
+  /* Region filter chips inside a life-event listing */
+  .region-chips { display: flex; gap: 6px; margin-top: 12px; flex-wrap: wrap; }
+  .rchip { font-size: 12px; padding: 4px 12px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.45); color: white; background: transparent; cursor: pointer; transition: all 0.12s; }
+  .rchip:hover:not(.active) { background: rgba(255,255,255,0.15); }
+  .rchip.active { background: white; color: #0a3161; font-weight: 600; border-color: white; }
+  .rchip .rcount { opacity: 0.7; margin-left: 4px; }
   .journey-close { position: absolute; top: 16px; right: 20px; background: none; border: none; color: white; font-size: 28px; cursor: pointer; }
   .journey-body { overflow-y: auto; padding: 24px 28px; flex: 1; }
 
@@ -92,6 +99,7 @@
       <button class="journey-close" id="journey-close">&times;</button>
       <h3 id="journey-title"></h3>
       <p id="journey-subtitle"></p>
+      <div class="region-chips" id="journey-chips"></div>
     </div>
     <div class="journey-body" id="journey-body"></div>
     <div class="journey-footer">
@@ -380,8 +388,16 @@ function getConnectedServices(matched) {
   return [...connected.values()].slice(0, 12);
 }
 
-function getEventServices(event) {
-  return visibleServices()
+function servicesForScope(scope) {
+  if (scope === 'all') return allServices;
+  const codes = new Set([scope]);
+  for (const j of jurisdictionsList) if (j.parent === scope) codes.add(j.code);
+  return allServices.filter(s => codes.has(s.jCode));
+}
+
+function getEventServices(event, scope) {
+  const pool = scope ? servicesForScope(scope) : visibleServices();
+  return pool
     .map(svc => ({ svc, score: matchEvent(svc, event) }))
     .filter(r => r.score > 0)
     .sort((a, b) => b.score - a.score)
@@ -406,12 +422,40 @@ function renderEvents() {
   });
 }
 
+let journeyScope = 'all';   // per-journey region filter, seeded from the page scope
+let journeyEventId = null;
+
 function openJourney(eventId) {
-  const event = LIFE_EVENTS.find(e => e.id === eventId);
-  const services = getEventServices(event);
+  journeyEventId = eventId;
+  journeyScope = currentScope;   // start from the page's scope; chips can change it locally
+  renderJourney();
+  document.getElementById('journey-overlay').classList.add('open');
+}
+
+function renderJourneyChips(event) {
+  const options = [{ code: 'all', label: 'All regions' }]
+    .concat(jurisdictionsList.filter(j => !j.parent)
+      .map(j => ({ code: j.code, label: j.short_name || j.name })));
+  const el = document.getElementById('journey-chips');
+  el.innerHTML = options.map(o => {
+    const count = getEventServices(event, o.code).length;
+    return `<button class="rchip${o.code === journeyScope ? ' active' : ''}" data-scope="${o.code}">${o.label}<span class="rcount">${count}</span></button>`;
+  }).join('');
+  el.querySelectorAll('.rchip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      journeyScope = chip.dataset.scope;
+      renderJourney();
+    });
+  });
+}
+
+function renderJourney() {
+  const event = LIFE_EVENTS.find(e => e.id === journeyEventId);
+  const services = getEventServices(event, journeyScope);
 
   document.getElementById('journey-title').innerHTML = `${event.icon} ${event.title}`;
   document.getElementById('journey-subtitle').textContent = `${services.length} government services that may help`;
+  renderJourneyChips(event);
 
   // Group by domain
   const byDomain = {};
@@ -461,7 +505,6 @@ function openJourney(eventId) {
         ${connected.map(c => serviceCard(c.svc, `${c.relLabel} — linked from “${c.via}”`)).join('')}
       </div>` : '');
 
-  document.getElementById('journey-overlay').classList.add('open');
   body.scrollTop = 0;
 }
 
